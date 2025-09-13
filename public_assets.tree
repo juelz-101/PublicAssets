@@ -1,9 +1,262 @@
 PublicAssets/
+├── .git/
+│   ├── COMMIT_EDITMSG
+│   ├── HEAD
+│   ├── config
+│   ├── description
+│   ├── hooks/
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info/
+│   │   └── exclude
+│   ├── logs/
+│   │   ├── HEAD
+│   │   └── refs/
+│   │       ├── heads/
+│   │       │   └── main
+│   │       └── remotes/
+│   │           └── origin/
+│   │               └── main
+│   ├── objects/
+│   │   ├── 00/
+│   │   │   └── a8142aeac4b178f76ae017d8107f685035a56f
+│   │   ├── 03/
+│   │   │   └── 168f7683fe2218b78324e031eaa14fd4675e7c
+│   │   ├── 07/
+│   │   │   └── 5defe9f0e3c02a28043c2829b58a5f1aa6bf5a
+│   │   ├── 0f/
+│   │   │   └── cb36037b7f8ffce45a05f537e98376947d21c3
+│   │   ├── 15/
+│   │   │   ├── 0f14ca73ce0a175672ea0f191fc05d69f100b5
+│   │   │   ├── 179bf1154113672baa212048903c6dd796bd15
+│   │   │   └── 501696b822cedae305af465e65fea6af2dcf96
+│   │   ├── 24/
+│   │   │   └── cd0b023c81abf396335ed70030bf2b4fc23e38
+│   │   ├── 31/
+│   │   │   └── ec1c32f871e86e24a71f9614f98a1dcd1e8029
+│   │   ├── 33/
+│   │   │   └── db2a975b95485330723ae390430e430a21bbaa
+│   │   ├── 35/
+│   │   │   ├── 06abcef4c46b491abd254f462ba450b3db0032
+│   │   │   └── 9430d78c300420c6b6daaa87f1446c75e2c906
+│   │   ├── 38/
+│   │   │   └── 202caf5dfd5bfdd55d6dc6b53ad72eca59160d
+│   │   ├── 3f/
+│   │   │   └── 23c5cbff6652922493d6271aec10e8043ce6d6
+│   │   ├── 46/
+│   │   │   └── 096465e877a1cc72e1896e0675ca2dc2d39f42
+│   │   ├── 48/
+│   │   │   ├── 6d65b459fb7da22eaba2ebc97cb8a217371308
+│   │   │   └── b481bd0b5309e0ba179381bc0d84bf121f5bfd
+│   │   ├── 4b/
+│   │   │   └── 935c40480abce6b726358cf764b310855ae406
+│   │   ├── 4e/
+│   │   │   └── 0ed046bf3c4b16db445c103a61255c3eb675f6
+│   │   ├── 4f/
+│   │   │   └── c110cc08833b39d4e9fa72aa2011fde9be9288
+│   │   ├── 50/
+│   │   │   ├── 313255011d44c9ded266004de51a935c86d892
+│   │   │   └── 5e2f30688b9b19aa6a187ab3929814e4ceea4d
+│   │   ├── 51/
+│   │   │   └── b2cb044e452915a4298674e43883f2b3ef032d
+│   │   ├── 67/
+│   │   │   └── e5db7a63b630662b802d0e2dbd941734f4f03a
+│   │   ├── 73/
+│   │   │   └── 5c1fe748c52d5ce0dddd3df542bc18e9e40dd5
+│   │   ├── 7a/
+│   │   │   └── d59f32dcd36babc7e5e3e938d5161a0525ec83
+│   │   ├── 7c/
+│   │   │   └── 8baeccaab6d12be43c4779166e5fc7ef6f6c62
+│   │   ├── 85/
+│   │   │   └── 74f761b6964189e56e927755f07820635f0c36
+│   │   ├── 87/
+│   │   │   └── 1d9d1c9384b0b45e81a3339af7e294ab8e955e
+│   │   ├── 89/
+│   │   │   └── 40e8ddaad0aa5059a7713f10ed3b43f3d0a2f9
+│   │   ├── 8b/
+│   │   │   └── 276bdae535f6d6925f7a0104310e9cfeeb5d84
+│   │   ├── 94/
+│   │   │   └── 53fbe81a7c45f93e054a86dc7996fc71801396
+│   │   ├── 95/
+│   │   │   └── b10d5452fbf10a21f84ee0c1d677a7099e626e
+│   │   ├── 9a/
+│   │   │   ├── 864fb86ddec5a0e2126e101d40e2a583b6b00d
+│   │   │   └── 9e4a75e43d81822cc13aea49dd7dfb28d1a61b
+│   │   ├── 9d/
+│   │   │   └── 40a4ac130eda1f7f10344325f3262699307bd3
+│   │   ├── a2/
+│   │   │   └── f05737b800c0ea218efb6a0176c95ed27e5875
+│   │   ├── a3/
+│   │   │   └── 59d9ad5b741ff282ff206cb8fb8cf6bb736013
+│   │   ├── a5/
+│   │   │   └── a245d6d58e7253f46016a08d12b9965a83d5b4
+│   │   ├── a9/
+│   │   │   └── 5386c147b908b50b26778dd5e6c6ffff4991ea
+│   │   ├── aa/
+│   │   │   └── 91059658fdd66ab27c26a0c7126f41b078edd1
+│   │   ├── b4/
+│   │   │   └── 179c77cc968ae05cc2d706786449ebbb1ec9de
+│   │   ├── ca/
+│   │   │   └── 15b340f32cb85f140650af596c8e0672e78916
+│   │   ├── d0/
+│   │   │   └── 16f81f2a2da6820575c7c2a8334152376e4bb9
+│   │   ├── d2/
+│   │   │   └── 883bcd6b0dc524650b4aac05fbcd7d50dc1608
+│   │   ├── d9/
+│   │   │   └── f77838f1667233fe853cafd50758e1ac621467
+│   │   ├── da/
+│   │   │   └── bcaa4d70597accf01b240b77b620c8d1d90f78
+│   │   ├── db/
+│   │   │   ├── ed701c162de75387d0d3215f66e6c74b720c50
+│   │   │   └── f3d6e2705af71aac84dccffe75acc6f0705fe2
+│   │   ├── dc/
+│   │   │   └── a13b559babe3f8d7b3200b1841d555b97f97b2
+│   │   ├── e0/
+│   │   │   └── 519fd4336d435d0c9917547419c7eb3ed150af
+│   │   ├── e6/
+│   │   │   ├── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   │   │   └── 9ecf9d18f848d21fc83d6aa952a97b657ce774
+│   │   ├── e7/
+│   │   │   └── 5f0dd6bb27f19e41f222630150ffbae6e1d34d
+│   │   ├── ea/
+│   │   │   └── b5f0903b8e12e6e89b531e96a661cb33d071dc
+│   │   ├── ec/
+│   │   │   └── dc15209ab4c9a4c154c51bb5af34c0d51ed949
+│   │   ├── ee/
+│   │   │   └── faec38c683fed4530a3c001b6fc1754bf2adf6
+│   │   ├── f0/
+│   │   │   └── 1b8ca199e9a987153ab2648bf4e3b24ecd2148
+│   │   ├── f6/
+│   │   │   └── d5718c1b6036352c4047aece8689c9a0fbca2f
+│   │   ├── fd/
+│   │   │   └── 7ff3cb8672d6ba09edbb9aa5b99ac8527b90c8
+│   │   ├── ff/
+│   │   │   └── a51873a688515dd29d3c0ecfbe852466d7f1bc
+│   │   ├── info/
+│   │   └── pack/
+│   └── refs/
+│       ├── heads/
+│       │   └── main
+│       ├── remotes/
+│       │   └── origin/
+│       │       └── main
+│       └── tags/
+├── .git.json
+├── .git_hooks.json
+├── .git_info.json
+├── .git_logs.json
+├── .git_logs_refs_heads.json
+├── .git_logs_refs_remotes_origin.json
+├── .git_objects_00.json
+├── .git_objects_03.json
+├── .git_objects_07.json
+├── .git_objects_0f.json
+├── .git_objects_15.json
+├── .git_objects_24.json
+├── .git_objects_31.json
+├── .git_objects_33.json
+├── .git_objects_35.json
+├── .git_objects_38.json
+├── .git_objects_3f.json
+├── .git_objects_46.json
+├── .git_objects_48.json
+├── .git_objects_4b.json
+├── .git_objects_4e.json
+├── .git_objects_4f.json
+├── .git_objects_50.json
+├── .git_objects_51.json
+├── .git_objects_67.json
+├── .git_objects_73.json
+├── .git_objects_7a.json
+├── .git_objects_7c.json
+├── .git_objects_85.json
+├── .git_objects_87.json
+├── .git_objects_89.json
+├── .git_objects_8b.json
+├── .git_objects_94.json
+├── .git_objects_95.json
+├── .git_objects_9a.json
+├── .git_objects_9d.json
+├── .git_objects_a2.json
+├── .git_objects_a3.json
+├── .git_objects_a5.json
+├── .git_objects_a9.json
+├── .git_objects_aa.json
+├── .git_objects_b4.json
+├── .git_objects_ca.json
+├── .git_objects_d0.json
+├── .git_objects_d2.json
+├── .git_objects_d9.json
+├── .git_objects_da.json
+├── .git_objects_db.json
+├── .git_objects_dc.json
+├── .git_objects_e0.json
+├── .git_objects_e6.json
+├── .git_objects_e7.json
+├── .git_objects_ea.json
+├── .git_objects_ec.json
+├── .git_objects_ee.json
+├── .git_objects_f0.json
+├── .git_objects_f6.json
+├── .git_objects_fd.json
+├── .git_objects_ff.json
+├── .git_refs_heads.json
+├── .git_refs_remotes_origin.json
+├── .gitignore
 ├── Images/
-│   ├── Logos/
-│   │   ├── UserData.json
-│   │   └── AppData.json
-│   └── Projects/
-│       ├── Project_001.json
-│       ├── Project_002.json
-│       └── ...
+│   └── Logos/
+│       ├── App/
+│       │   ├── [C]ZIKYinc_3D.png
+│       │   ├── [C]ZIKYinc_Node.png
+│       │   ├── [C]ZIKYinc_Node3.png
+│       │   ├── [C]ZIKYinc_Square.png
+│       │   ├── [C]ZIKYinc_Wave.png
+│       │   ├── [C]ZIKYinc_Wave2.png
+│       │   ├── [D]ZIKYinc_Bracket.png
+│       │   ├── [D]ZIKYinc_Node2.png
+│       │   └── [L]ZIKYinc_Infinite.png
+│       └── Tings/
+│           ├── Explict.png
+│           ├── J101-2a.png
+│           ├── Juelz-101-RIP-Ziky-barcode - Copy.png
+│           ├── Juelz-FM-Blue.png
+│           ├── Juelz-FM-Blue2.png
+│           ├── Juelz-FM-Glitch.png
+│           ├── Juelz-FM-Logo-2-Juelz-101-ZIKYinc.png
+│           ├── Juelz-FM-Rec-Glitch.png
+│           ├── Juelz-FM-Rec.png
+│           ├── Juelz-FM-Zikyinc_Circle.png
+│           ├── Juelz-FM.png
+│           ├── NPlate-Front.png
+│           ├── NPlate-Rear.png
+│           ├── New-QR-Code-Ziky-Inc.png
+│           ├── New-QR-Code-Ziky-Inc2.png
+│           ├── OutNow.png
+│           ├── RIPZIKY.png
+│           ├── SimpleNoteDark.png
+│           ├── SimpleNoteLight.png
+│           ├── ZIKYinc-Logo-Z-1-Dark.png
+│           ├── ZIKYinc-Logo-Z-1-Light.png
+│           ├── Zikbarcode.gif
+│           └── barcode.png
+├── Images_Logos_App.json
+├── Images_Logos_Tings.json
+├── README.md
+├── asset_register.json
+├── auto_update.py
+├── public_assets.tree
+├── root.json
+└── run_auto_update.bat

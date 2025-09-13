@@ -1,0 +1,86 @@
+[
+  {
+    "name": "applypatch-msg.sample",
+    "ext": "sample",
+    "path": ".git/hooks/applypatch-msg.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/applypatch-msg.sample"
+  },
+  {
+    "name": "commit-msg.sample",
+    "ext": "sample",
+    "path": ".git/hooks/commit-msg.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/commit-msg.sample"
+  },
+  {
+    "name": "fsmonitor-watchman.sample",
+    "ext": "sample",
+    "path": ".git/hooks/fsmonitor-watchman.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/fsmonitor-watchman.sample"
+  },
+  {
+    "name": "post-update.sample",
+    "ext": "sample",
+    "path": ".git/hooks/post-update.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/post-update.sample"
+  },
+  {
+    "name": "pre-applypatch.sample",
+    "ext": "sample",
+    "path": ".git/hooks/pre-applypatch.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/pre-applypatch.sample"
+  },
+  {
+    "name": "pre-commit.sample",
+    "ext": "sample",
+    "path": ".git/hooks/pre-commit.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/pre-commit.sample"
+  },
+  {
+    "name": "pre-merge-commit.sample",
+    "ext": "sample",
+    "path": ".git/hooks/pre-merge-commit.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/pre-merge-commit.sample"
+  },
+  {
+    "name": "pre-push.sample",
+    "ext": "sample",
+    "path": ".git/hooks/pre-push.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/pre-push.sample"
+  },
+  {
+    "name": "pre-rebase.sample",
+    "ext": "sample",
+    "path": ".git/hooks/pre-rebase.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/pre-rebase.sample"
+  },
+  {
+    "name": "pre-receive.sample",
+    "ext": "sample",
+    "path": ".git/hooks/pre-receive.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/pre-receive.sample"
+  },
+  {
+    "name": "prepare-commit-msg.sample",
+    "ext": "sample",
+    "path": ".git/hooks/prepare-commit-msg.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/prepare-commit-msg.sample"
+  },
+  {
+    "name": "push-to-checkout.sample",
+    "ext": "sample",
+    "path": ".git/hooks/push-to-checkout.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/push-to-checkout.sample"
+  },
+  {
+    "name": "sendemail-validate.sample",
+    "ext": "sample",
+    "path": ".git/hooks/sendemail-validate.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/sendemail-validate.sample"
+  },
+  {
+    "name": "update.sample",
+    "ext": "sample",
+    "path": ".git/hooks/update.sample",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/.git/hooks/update.sample"
+  }
+]
