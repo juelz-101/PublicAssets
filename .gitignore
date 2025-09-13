@@ -1,3 +1,6 @@
 # Ignore Windows system files
 desktop.ini
 Thumbs.db
+#Ignore update script
+auto_update.py
+run_auto_update.bat
