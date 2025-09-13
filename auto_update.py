@@ -7,7 +7,7 @@ Platform: Python
 Desc: Run to automatically update the repo, gitignore, asset register, per-folder JSONs, and tree file.
 Creator: Juelz-101
 Organization: ZIKYinc
-Version: 1.2
+Version: 1.3
 """
 
 import os
@@ -20,23 +20,35 @@ USER = "juelz-101"
 REPO = "PublicAssets"
 BRANCH = "main"
 
+IGNORE_FOLDERS = {".git", "__pycache__", ".github"}  # add more if needed
+
 # --- Helper Functions ---
-def run_git(*args, cwd=REPO_PATH, **kwargs):
-    """Run git commands in the repo, pass extra kwargs to subprocess.run."""
-    return subprocess.run(["git"] + list(args), cwd=cwd, **kwargs)
+def run_git(*args, cwd=REPO_PATH, suppress_errors=False):
+    """Run git commands safely."""
+    try:
+        kwargs = {"cwd": cwd, "check": True}
+        if suppress_errors:
+            kwargs["stderr"] = subprocess.DEVNULL
+        return subprocess.run(["git"] + list(args), **kwargs)
+    except subprocess.CalledProcessError as e:
+        print(f"⚠️ Git command failed: {e}")
 
 def build_register(base_path):
-    """Scan all folders/files and build a register with URLs."""
+    """Scan all folders/files and build a register with URLs, ignoring system folders."""
     register = {}
     for root, dirs, files in os.walk(base_path):
+        # Skip ignored folders
+        dirs[:] = [d for d in dirs if d not in IGNORE_FOLDERS]
+
         rel_path = os.path.relpath(root, base_path).replace("\\", "/")
         rel_path = "" if rel_path == "." else rel_path
         folder_items = []
 
         for f in files:
+            if f.startswith("."):  # skip hidden files
+                continue
             ext = os.path.splitext(f)[1].lstrip(".")
-            file_path = os.path.join(root, f)
-            url_path = os.path.relpath(file_path, base_path).replace("\\", "/")
+            url_path = os.path.relpath(os.path.join(root, f), base_path).replace("\\", "/")
             folder_items.append({
                 "name": f,
                 "ext": ext,
@@ -55,10 +67,10 @@ def build_register(base_path):
     return register
 
 def write_tree_unicode(base_path, prefix=""):
-    """Generate a Unicode tree representation of folders and files."""
+    """Generate a Unicode tree representation, ignoring system folders."""
     lines = []
     entries = sorted(os.listdir(base_path))
-    entries = [e for e in entries if os.path.isdir(os.path.join(base_path, e)) or os.path.isfile(os.path.join(base_path, e))]
+    entries = [e for e in entries if e not in IGNORE_FOLDERS and (os.path.isdir(os.path.join(base_path, e)) or os.path.isfile(os.path.join(base_path, e)))]
     count = len(entries)
 
     for i, entry in enumerate(entries):
@@ -78,8 +90,8 @@ try:
 
     print("📂 Checking for local changes...")
     run_git("add", ".")
-    run_git("commit", "-m", "Auto-update assets", stderr=subprocess.DEVNULL)
-    run_git("push")
+    run_git("commit", "-m", "Auto-update assets", suppress_errors=True)
+    run_git("push", suppress_errors=True)
 
     print("🌐 Building asset register and per-folder JSONs...")
     register = build_register(REPO_PATH)
@@ -95,8 +107,8 @@ try:
 
     print("📤 Committing updates...")
     run_git("add", "asset_register.json", "*.json", "public_assets.tree")
-    run_git("commit", "-m", "Update asset register, per-folder JSONs, and tree", stderr=subprocess.DEVNULL)
-    run_git("push")
+    run_git("commit", "-m", "Update asset register, per-folder JSONs, and tree", suppress_errors=True)
+    run_git("push", suppress_errors=True)
 
     print("✅ Done! All registry files updated and pushed.")
 
