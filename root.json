@@ -40,5 +40,11 @@
     "ext": "json",
     "path": "Images_Logos_App.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Logos_App.json"
+  },
+  {
+    "name": "root.json",
+    "ext": "json",
+    "path": "root.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/root.json"
   }
 ]
