@@ -246,5 +246,569 @@
       "path": "Images/Logos/App/[C]ZIKYinc_Node3.png",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/[C]ZIKYinc_Node3.png"
     }
+  ],
+  "Website": [],
+  "Website/lib": [
+    {
+      "name": "music.json",
+      "ext": "json",
+      "path": "Website/lib/music.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music.json"
+    }
+  ],
+  "Website/img": [],
+  "Website/img/misc": [
+    {
+      "name": "placeholder.jpg",
+      "ext": "jpg",
+      "path": "Website/img/misc/placeholder.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/placeholder.jpg"
+    },
+    {
+      "name": "ZIKYinc-Neon-Street-Art.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/misc/ZIKYinc-Neon-Street-Art.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/ZIKYinc-Neon-Street-Art.jpeg"
+    },
+    {
+      "name": "ZIKY-Inc-BGClear2.png",
+      "ext": "png",
+      "path": "Website/img/misc/ZIKY-Inc-BGClear2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/ZIKY-Inc-BGClear2.png"
+    },
+    {
+      "name": "Draw-8.png",
+      "ext": "png",
+      "path": "Website/img/misc/Draw-8.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/Draw-8.png"
+    },
+    {
+      "name": "ZIKYinc-BG-Clear.png",
+      "ext": "png",
+      "path": "Website/img/misc/ZIKYinc-BG-Clear.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/ZIKYinc-BG-Clear.png"
+    },
+    {
+      "name": "Draw2.png",
+      "ext": "png",
+      "path": "Website/img/misc/Draw2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/Draw2.png"
+    },
+    {
+      "name": "ZIKYinc-PaintGirl.png",
+      "ext": "png",
+      "path": "Website/img/misc/ZIKYinc-PaintGirl.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/ZIKYinc-PaintGirl.png"
+    },
+    {
+      "name": "Draw5.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/misc/Draw5.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/Draw5.jpeg"
+    },
+    {
+      "name": "Draw6.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/misc/Draw6.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/Draw6.jpeg"
+    },
+    {
+      "name": "Draw7.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/misc/Draw7.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/Draw7.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Random-FaceFX.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/misc/ZIKYinc-Random-FaceFX.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/ZIKYinc-Random-FaceFX.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Header_FX.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/misc/ZIKYinc-Header_FX.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/misc/ZIKYinc-Header_FX.jpeg"
+    }
+  ],
+  "Website/img/photos": [
+    {
+      "name": "ZIKYinc-Header_FX.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/ZIKYinc-Header_FX.jpeg"
+    },
+    {
+      "name": "ZikyGroup.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/ZikyGroup.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/ZikyGroup.jpeg"
+    },
+    {
+      "name": "Imperial-P.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Imperial-P.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Imperial-P.jpeg"
+    },
+    {
+      "name": "ZIKYHide.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/ZIKYHide.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/ZIKYHide.jpeg"
+    },
+    {
+      "name": "ZIKYHide2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/ZIKYHide2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/ZIKYHide2.jpeg"
+    },
+    {
+      "name": "ZIKYHide3.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/ZIKYHide3.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/ZIKYHide3.jpeg"
+    },
+    {
+      "name": "ZIKYHide4.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/ZIKYHide4.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/ZIKYHide4.jpeg"
+    },
+    {
+      "name": "ZIKYHide5.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/ZIKYHide5.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/ZIKYHide5.jpeg"
+    },
+    {
+      "name": "ZIKYHide6.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/ZIKYHide6.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/ZIKYHide6.jpeg"
+    },
+    {
+      "name": "ZIKYHide7.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/ZIKYHide7.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/ZIKYHide7.jpeg"
+    },
+    {
+      "name": "Emma.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Emma.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Emma.jpeg"
+    },
+    {
+      "name": "emma2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/emma2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma2.jpeg"
+    },
+    {
+      "name": "emma3.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/emma3.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma3.jpeg"
+    },
+    {
+      "name": "Emma4.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Emma4.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Emma4.jpeg"
+    },
+    {
+      "name": "Kyles.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Kyles.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Kyles.jpeg"
+    },
+    {
+      "name": "Kyle.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Kyle.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Kyle.jpeg"
+    },
+    {
+      "name": "Kyles3.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Kyles3.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Kyles3.jpeg"
+    },
+    {
+      "name": "Kyles4.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Kyles4.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Kyles4.jpeg"
+    },
+    {
+      "name": "Kyles5.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Kyles5.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Kyles5.jpeg"
+    },
+    {
+      "name": "Imperial-P2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Imperial-P2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Imperial-P2.jpeg"
+    },
+    {
+      "name": "Damian.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Damian.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Damian.jpeg"
+    },
+    {
+      "name": "WelshHotdog2010.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/WelshHotdog2010.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/WelshHotdog2010.jpeg"
+    },
+    {
+      "name": "pete.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/pete.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/pete.jpeg"
+    },
+    {
+      "name": "pete2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/pete2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/pete2.jpeg"
+    },
+    {
+      "name": "Codie.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Codie.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Codie.jpeg"
+    },
+    {
+      "name": "Imperial-P2.xcf",
+      "ext": "xcf",
+      "path": "Website/img/photos/Imperial-P2.xcf",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Imperial-P2.xcf"
+    },
+    {
+      "name": "mum.avif",
+      "ext": "avif",
+      "path": "Website/img/photos/mum.avif",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/mum.avif"
+    },
+    {
+      "name": "Em.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Em.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Em.jpeg"
+    },
+    {
+      "name": "Em2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Em2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Em2.jpeg"
+    },
+    {
+      "name": "Em3.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Em3.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Em3.jpeg"
+    },
+    {
+      "name": "em4.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/em4.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/em4.jpeg"
+    },
+    {
+      "name": "Alice.png",
+      "ext": "png",
+      "path": "Website/img/photos/Alice.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Alice.png"
+    },
+    {
+      "name": "EmForest.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/EmForest.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/EmForest.jpeg"
+    },
+    {
+      "name": "Imperial-P-Photo.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/Imperial-P-Photo.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/Imperial-P-Photo.jpeg"
+    },
+    {
+      "name": "KymPhoto.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/KymPhoto.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/KymPhoto.jpeg"
+    }
+  ],
+  "Website/img/photos/emma": [
+    {
+      "name": "Emma-MT-Rave-ZIKYinc-5.jpg",
+      "ext": "jpg",
+      "path": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-5.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-5.jpg"
+    },
+    {
+      "name": "Emma-MT-Rave-ZIKYinc-6.jpg",
+      "ext": "jpg",
+      "path": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-6.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-6.jpg"
+    },
+    {
+      "name": "Emma-MT-Rave-ZIKYinc.jpg",
+      "ext": "jpg",
+      "path": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma/Emma-MT-Rave-ZIKYinc.jpg"
+    },
+    {
+      "name": "Emma-MT-Rave-ZIKYinc-8.jpg",
+      "ext": "jpg",
+      "path": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-8.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-8.jpg"
+    },
+    {
+      "name": "Emma-MT-Rave-ZIKYinc-2.jpg",
+      "ext": "jpg",
+      "path": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-2.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-2.jpg"
+    },
+    {
+      "name": "Emma-MT-Rave-ZIKYinc-4.jpg",
+      "ext": "jpg",
+      "path": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-4.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-4.jpg"
+    },
+    {
+      "name": "Emma-MT-Rave-ZIKYinc-3.jpg",
+      "ext": "jpg",
+      "path": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-3.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-3.jpg"
+    },
+    {
+      "name": "Emma-MT-Rave-ZIKYinc-7.jpg",
+      "ext": "jpg",
+      "path": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-7.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-7.jpg"
+    }
+  ],
+  "Website/img/zikyinc": [
+    {
+      "name": "Ziky-Poly-3.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/Ziky-Poly-3.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/Ziky-Poly-3.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Poly-2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-Poly-2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Poly-2.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Skull.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-Skull.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Skull.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Poly-1.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-Poly-1.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Poly-1.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Wall.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-Wall.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Wall.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Block.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-Block.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Block.jpeg"
+    },
+    {
+      "name": "ZikyGirlRain.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZikyGirlRain.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZikyGirlRain.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Girl-Rain.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-Girl-Rain.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Girl-Rain.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Girl-Graffiti.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-Girl-Graffiti.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Girl-Graffiti.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Girl-Graffiti-2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-Girl-Graffiti-2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Girl-Graffiti-2.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Graffiti-Blue-1.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Graffiti-Blue-1.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Graffiti-Blue-1.png"
+    },
+    {
+      "name": "ZIKYinc-Graffiti-Blue-2.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Graffiti-Blue-2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Graffiti-Blue-2.png"
+    },
+    {
+      "name": "ZIKYinc-Graffiti-Blue-4.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Graffiti-Blue-4.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Graffiti-Blue-4.png"
+    },
+    {
+      "name": "ZIKYinc-Graffiti-Blue-3.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Graffiti-Blue-3.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Graffiti-Blue-3.png"
+    },
+    {
+      "name": "ZIKYinc_Dog2.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc_Dog2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc_Dog2.png"
+    },
+    {
+      "name": "ZIKYinc_Dog3.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc_Dog3.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc_Dog3.png"
+    },
+    {
+      "name": "ZIKYinc_Dog.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc_Dog.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc_Dog.png"
+    },
+    {
+      "name": "ZIKYinc_Dog4.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc_Dog4.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc_Dog4.png"
+    },
+    {
+      "name": "ZIKYinc-WildStyle-BG1.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-WildStyle-BG1.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-WildStyle-BG1.jpeg"
+    },
+    {
+      "name": "ZIKYinc-WildStyle-BG2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-WildStyle-BG2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-WildStyle-BG2.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Dog5.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-Dog5.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Dog5.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Dog6.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Dog6.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Dog6.png"
+    },
+    {
+      "name": "ZIKYinc-Water-1.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Water-1.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Water-1.png"
+    },
+    {
+      "name": "ZIKYinc-Water-2.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Water-2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Water-2.png"
+    },
+    {
+      "name": "ZIKYinc-Water-3.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Water-3.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Water-3.png"
+    },
+    {
+      "name": "ZIKYinc-Paint-1.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Paint-1.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Paint-1.png"
+    },
+    {
+      "name": "ZIKYinc-Paint-3.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Paint-3.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Paint-3.png"
+    },
+    {
+      "name": "ZIKYinc-Paint-4.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Paint-4.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Paint-4.png"
+    },
+    {
+      "name": "ZIKYinc-Paint-5.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-Paint-5.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Paint-5.png"
+    },
+    {
+      "name": "ZIKYinc-King-3.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-King-3.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-King-3.png"
+    },
+    {
+      "name": "ZIKYinc-King-2.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-King-2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-King-2.png"
+    },
+    {
+      "name": "ZIKYinc-King-1.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-King-1.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-King-1.png"
+    },
+    {
+      "name": "ZIKYinc-King-4.png",
+      "ext": "png",
+      "path": "Website/img/zikyinc/ZIKYinc-King-4.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-King-4.png"
+    },
+    {
+      "name": "ZIKYinc-DragRace-Angel.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-DragRace-Angel.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-DragRace-Angel.jpeg"
+    },
+    {
+      "name": "ZIKYinc-DragRace-Girl-2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-DragRace-Girl-2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-DragRace-Girl-2.jpeg"
+    },
+    {
+      "name": "ZIKYinc-Elephunk2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/zikyinc/ZIKYinc-Elephunk2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Elephunk2.jpeg"
+    }
   ]
 }

@@ -1,0 +1,856 @@
+{
+	"intro": "<h2>Music Introduction</h2>\n<p>Welcome to the ZIKYinc Music section, where creativity knows no bounds! Here, we celebrate our vibrant musical journey and invite you to explore the incredible sounds we’ve curated.</p>\n<p>At ZIKYinc, we pride ourselves on collaborating with underground artists from all corners of the globe, bringing fresh perspectives and unique voices to the forefront of the music scene. Our diverse roster spans a wide array of genres, ensuring that there’s something for every listener.</p>\n<p>In addition to our work with emerging talent, we specialize in crafting captivating film scores and immersive sound effects that enhance storytelling across various media. Our team is constantly juggling multiple projects, each one a testament to our commitment to innovation and artistry.</p>\n<p>Through these collaborations, we’ve built strong, lasting relationships with artists and creators alike. Each partnership enriches our community and fuels our passion for music. Join us on this exciting journey as we continue to push boundaries and redefine what music can be!</p>",
+	"new_releases": [
+		{"type": "songs", "link":"/html/music/songs/ssos.html"},
+		{"type": "albums", "link":"/html/music/html/music/songs/ssos.html"}
+	],
+	"albums": [
+		{
+			"album": "Between the Concrete",
+			"thumbnail": "/assets/images/music/albums/Juelz-101-Between-The-Concrete-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+			"link": "/html/music/albums/btwn.html",
+			"genre": ["Grime", "Hip-Hop", "Drum and Bass"],
+			"artists": [
+				{"artist": "Imperial-P", "link": "/html/music/artists/imp.html"},
+				{"artist": "Kyles Mum From The School Gates", "link": "/html/music/artists/kylm.html"},
+				{"artist": "Gekko Boi", "link": "/html/music/artists/gekk.html"},
+				{"artist": "Teecha", "link": "/html/music/artists/teec.html"},
+				{"artist": "Juelz-101", "link": "/html/music/artists/juelz.html"},
+				{"artist": "Faceless", "link": "/html/music/artists/face.html"},
+				{"artist": "Miss Take", "link": "/html/music/artists/miss.html"}
+			],
+			"tracklist": {
+				"CD1": [
+					{
+						"number": 1,
+						"title": "The Take Over",
+						"artists": [
+							{"artist": "Juelz-101", "link": "/html/music/artists/juel.html"},
+							{"artist": "Imperial-P", "link": "/html/music/artists/imp.html"}
+						],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 2,
+						"title": "Getaway",
+						"artists": [
+							{"artist": "Teecha", "link": "/html/music/artists/teec.html"},
+							{"artist": "Kyles Mum From The School Gates", "link": "/html/music/artists/kylm.html"}
+						],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 3,
+						"title": "One More Job",
+						"artists": [
+							{"artist": "Gekko Boi", "link": "/html/music/artists/gekk.html"}
+						],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 8,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 9,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 10,
+						"title": "Together",
+						"artists": [
+							{"artist": "Kyles Mum From The School Gates", "link": "/html/music/artists/kylm.html"}
+						],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 11,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 12,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 13,
+						"title": "Unstoppable",
+						"artists": [
+							{"artist": "Kyles Mum From The School Gates", "link": "/html/music/artists/kylm.html"}
+						],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 14,
+						"title": "Four Man Tank",
+						"artists": [
+							{"artist": "Teecha", "link": "/html/music/artists/teec.html"}
+						],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 15,
+						"title": "Own Space",
+						"artists": [
+							{"artist": "Faceless", "link": "/html/music/artists/face.html"}
+						],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 16,
+						"title": "Suzannes Story",
+						"artists": [
+							{"artist": "Kyles Mum From The School Gates", "link": "/html/music/artists/kylm.html"}
+						],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 17,
+						"title": "Blank Disk Beat",
+						"artists": [
+							{"artist": "Juelz-101", "link": "/html/music/artists/juelz.html"}
+						],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 18,
+						"title": "We Wont Stop",
+						"artists": [
+							{"artist": "Juelz-101", "link": "/html/music/artists/juelz.html"},
+							{"artist": "Gekko Boi", "link": "/html/music/artists/gekk.html"}
+						],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 19,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 20,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					}
+				]
+			},
+			"featured": true
+		},
+		{
+			"album": "Juelz-FM Live from London '24",
+			"thumbnail": "/assets/images/music/albums/Juelz-FM-Live-From-London-Volume-24-rip-ziky-juelz-101-ZIKYinc-Inc.jpeg",
+			"link": "/html/music/albums/lfl24.html",
+			"genre": ["Drum and Bass", "Liquid DNB"],
+			"artists": [
+				{"artist": "Emma MT", "song": "Dancing in the Sunlight", "track": 2, "cd": 1, "link": "/html/music/artists/emma.html"}
+			],
+			"tracklist": {
+				"CD1": [
+					{
+						"number": 1,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 2,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 3,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 8,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 9,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 10,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 11,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 12,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 13,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 14,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 15,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 16,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 17,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 18,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 19,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 20,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					}
+				]
+			},
+			"featured": true
+		},
+		{
+			"album": "Brutalistening",
+			"thumbnail": "/assets/images/music/albums/Brut-Case.jpeg",
+			"link": "/html/music/albums/brut.html",
+			"genre": ["Drum and Bass", "Hip-Hop", "Liquid Drum and Bass"],
+			"artists": [
+				{"artist": "Emma MT", "link": "/html/music/artists/emma.html"},
+				{"artist": "Juelz-101", "link": "/html/music/artists/juelz.html"}
+			],
+			"tracklist": {
+				"CD1": [
+					{
+						"number": 1,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 2,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 3,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 8,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 9,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 10,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 11,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 12,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 13,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 14,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 15,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 16,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 17,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 18,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 19,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 20,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					}
+				]
+			},
+			"featured": true
+		},
+		{
+			"album": "One Final Vinyl",
+			"thumbnail": "/assets/images/music/albums/Juelz-101-One-Final-Vinyl-Rave-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+			"link": "/html/music/albums/brut.html",
+			"genre": ["Trance", "House", "EDM"],
+			"artists": [
+				{"artist": "Alice-S-Cape", "link": "/html/music/artists/alic.html"},
+				{"artist": "Emily Castle", "link": "/html/music/artists/emil.html"},
+				{"artist": "E-Stacy", "link": "/html/music/artists/esta.html"}
+			],
+			"tracklist": {
+				"CD1": [
+					{
+						"number": 1,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 2,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 3,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 8,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 9,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 10,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 11,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 12,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 13,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 14,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 15,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 16,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 17,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 18,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 19,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 20,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					}
+				]
+			},
+			"featured": true
+		},
+		{
+			"album": "It Aint Much, But It's Home",
+			"thumbnail": "/assets/images/music/albums/FX-Aint-Much-But-Its-Home-Kyles-Mum-From-The-School-Gates-Juelz-101-RIP-ZIKY.jpg",
+			"link": "/html/music/albums/ambh.html",
+			"genre": ["Hip-Hop", "R&B", "Grime"],
+			"artists": [
+				{"artist": "Kyles Mum From The School Gates", "link": "/html/music/artists/kylm.html"},
+				{"artist": "Juelz-101", "link": "/html/music/artists/juelz.html"}
+			],
+			"tracklist": {
+				"CD1": [
+					{
+						"number": 1,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 2,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 3,
+						"title": "Summer Nights",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/sumn.html",
+						"thumbnail": "/assets/music/albums/FX-Aint-Much-But-Its-Home-Kyles-Mum-From-The-School-Gates-Juelz-101-RIP-ZIKY.jpg"
+					},
+					{
+						"number": 4,
+						"title": "Together",
+						"artists": [],
+						"link": "/html/music/songs/togr.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 5,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 6,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 7,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 8,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 9,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 10,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 11,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 12,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 13,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 14,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 15,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 16,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 17,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 18,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 19,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					},
+					{
+						"number": 20,
+						"title": "",
+						"artists": [],
+						"link": "/html/music/songs/takeov.html",
+						"thumbnail": "/assets/music/albums/placeholder.jpg"
+					}
+				]
+			},
+			"featured": true
+		}
+	],
+	"artists": [
+		{
+			"artist": "Emma MT",
+			"thumbnail": "/assets/images/emma/Emma-MT-Rave-ZIKYinc-5.jpg",
+			"link": "/html/music/artists/emma.html",
+			"genre": ["Drum and Bass", "Hip-Hop"],
+			"albums": [
+				{"album": "Juelz-FM Live from London Volume '24", "song": "Dancing in the Sunlight", "track": 2, "cd": 1, "link": "/html/music/albums/lfl04.html"},
+				{"album": "Brutalistening", "song": "Dancing in the Sunlight", "track": 3, "cd": 1, "link": "/html/music/albums/brut.html"},
+				{"album": "Brutalistening", "song": "Concrete Heart", "track": 2, "cd": 1, "link": "/html/music/albums/brut.html"}
+			],
+			"featured": true
+		},
+		{
+			"artist": "Imperial-P",
+			"thumbnail": "/assets/images/photos/Imperial-P-Photo.jpeg",
+			"link": "/html/music/artists/imp.html",
+			"genre": ["Hip-Hop"],
+			"albums": [
+				{"album": "Between the Concrete", "song": "The Takeover", "track": 1, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Between the Concrete", "song": "The Silent Streets (of Swanscombe)", "track": 5, "cd": 1, "link": "/html/music/albums/btwn.html"}
+			],
+			"featured": true
+		},
+		{
+			"artist": "Kyles Mum from the School Gates",
+			"thumbnail": "/assets/images/photos/KymPhoto.jpeg",
+			"link": "/html/music/artists/kylm.html",
+			"genre": ["Hip-Hop, R&B"],
+			"albums": [
+				{"album": "Between the Concrete", "song": "Summer Nights", "track": 6, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Aint Much But Its Home", "song": "Summer Nights", "track": 3, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Between the Concrete", "song": "Together", "track": 10, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Aint Much But Its Home", "song": "Together", "track": 4, "cd": 1, "link": "/html/music/albums/ainm.html"},
+				{"album": "Between the Concrete", "song": "Unstoppable", "track": 13, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Aint Much But Its Home", "song": "Unstoppable", "track": 9, "cd": 1, "link": "/html/music/albums/ainm.html"},
+				{"album": "Between the Concrete", "song": "Suzannes Story", "track": 16, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Aint Much But Its Home", "song": "Suzannes Story", "track": 10, "cd": 1, "link": "/html/music/albums/ainm.html"}
+			],
+			"featured": true
+		},
+		{
+			"artist": "Alice-S-Cape",
+			"thumbnail": "/assets/images/photos/Alice.png",
+			"link": "/html/music/artists/alic.html",
+			"genre": ["Trance, House, EDM"],
+			"albums": [
+				{"album": "Between the Concrete", "song": "Summer Nights", "track": 6, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Aint Much But Its Home", "song": "Summer Nights", "track": 3, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Between the Concrete", "song": "Together", "track": 10, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Aint Much But Its Home", "song": "Together", "track": 4, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Between the Concrete", "song": "Unstoppable", "track": 13, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Aint Much But Its Home", "song": "Unstoppable", "track": 9, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Between the Concrete", "song": "Suzannes Story", "track": 16, "cd": 1, "link": "/html/music/albums/btwn.html"},
+				{"album": "Aint Much But Its Home", "song": "Suzannes Story", "track": 10, "cd": 1, "link": "/html/music/albums/btwn.html"}
+			],
+			"featured": true
+		}
+	],
+	"songs": [
+		{
+			"title": "The Silent Streets (of Swanscombe)",
+			"artist": "Juelz-101 ft Imperial-P",
+			"description": "There's a reason why Swanscombe is so quiet.",
+			"thumbnail": "/assets/images/music/songs/The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+			"link": "/html/music/songs/ssos.html",
+			"genre": ["rap", "grime"],
+			"albums": [
+				{"album": "Between the Concrete", "track": 5, "cd": 1}
+			],
+			"soundcloud": "https://soundcloud.com/juelz-101/the-silent-streets-of-swanscombe",
+			"youtube": null,
+			"other_links": [],
+			"featured": true
+		},
+		{
+			"title": "The Take Over",
+			"artist": "Juelz-101 ft Imperial-P",
+			"description": "Taking over. RIP ZIKY.",
+			"thumbnail": "/assets/images/music/songs/TheTakeOver-ImperialP-Juelz-FM_Blockbusters-Juelz-101-RIP-ZIKY-ZIKYinc-Inc.jpeg",
+			"link": "/html/music/songs/takeov.html",
+			"genre": ["rap", "grime"],
+			"albums": [
+				{"album": "Between the Concrete", "track": 1, "cd": 1}
+			],
+			"soundcloud": "https://soundcloud.com/juelz-101/the-takeover",
+			"youtube": null,
+			"other_links": [],
+			"featured": false
+		},
+		{
+			"title": "Dancing in the Sunlight",
+			"artist": "Juelz-101 ft Emma MT",
+			"description": "Part of the 'Brutalistening' album.",
+			"thumbnail": "/assets/images/music/songs/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
+			"link": "/html/music/songs/disl.html",
+			"genre": ["Drum and Bass"],
+			"albums": [
+				{"album": "Brutalistening", "track": 2, "cd": 1},
+				{"album": "Juelz-FM Live from London Volume '24", "track": 2, "cd": 1}
+			],
+			"soundcloud": "https://soundcloud.com/juelz-101/dancing-in-the-sunlight-ft-emma-mt",
+			"youtube": "https://www.youtube.com/watch?v=24mGoAPCVzo&list=PL9XZUncvkEMAWoQ9ZdL3VhZuOTVFeJPUx",
+			"other_links": [],
+			"featured": true
+		},
+		{
+			"title": "Summer Nights",
+			"artist": "Juelz-101 ft Kyles Mum From The School Gates",
+			"description": "Lovin' the summer vibes this year.",
+			"thumbnail": "assets/images/music/songs/Juelz-101-Summer-Nights-Kyles-Mum-From-The-School-Gates-RIP-Ziky-ZIKYinc-Inc.jpg",
+			"link": "/html/music/songs/sumn.html",
+			"genre": ["R&B"],
+			"albums": [
+				{"album": "Between the Concrete", "track": 6, "cd": 1},
+				{"album": "Aint Much But Its Home", "track": 3, "cd": 1}
+			],
+			"soundcloud": "https://soundcloud.com/juelz-101/summer-nights",
+			"youtube": null,
+			"other_links": [],
+			"featured": true
+		},
+		{
+			"title": "Together",
+			"artist": "Juelz-101 ft Kyles Mum From The School Gates",
+			"description": "Funky beat.",
+			"thumbnail": "/assets/images/music/albums/Juelz-101-Kyles-Mum-From-The-School-Gates-Together-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+			"link":"/html/music/songs/togr.html",
+			"genre":["R&B"],
+			"albums":[
+				{"album":"Between the Concrete","track":"10","cd":"1"},
+				{"album":"Aint Much But Its Home","track":"4","cd":"1"}
+			],
+			"soundcloud":"https://soundcloud.com/juelz-101/together",
+			"youtube":"null",
+			"other_links":[]
+		}	
+	],
+	"film_music": [],
+	"game_music": []
+}
