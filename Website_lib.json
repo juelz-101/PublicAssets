@@ -12,10 +12,10 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/misc.json"
   },
   {
-    "name": "apps.json",
+    "name": "tools.json",
     "ext": "json",
-    "path": "Website/lib/apps.json",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/apps.json"
+    "path": "Website/lib/tools.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/tools.json"
   },
   {
     "name": "art.json",
@@ -46,5 +46,11 @@
     "ext": "json",
     "path": "Website/lib/home.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/home.json"
+  },
+  {
+    "name": "about.json",
+    "ext": "json",
+    "path": "Website/lib/about.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/about.json"
   }
 ]

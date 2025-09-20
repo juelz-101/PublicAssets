@@ -76,5 +76,89 @@
     "ext": "json",
     "path": "Website_img_zikyinc.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_zikyinc.json"
+  },
+  {
+    "name": "Website_lib_html_apps.json",
+    "ext": "json",
+    "path": "Website_lib_html_apps.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_apps.json"
+  },
+  {
+    "name": "Website_lib_html_gallery.json",
+    "ext": "json",
+    "path": "Website_lib_html_gallery.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_gallery.json"
+  },
+  {
+    "name": "Website_lib_html_games.json",
+    "ext": "json",
+    "path": "Website_lib_html_games.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_games.json"
+  },
+  {
+    "name": "Website_lib_html_music_albums.json",
+    "ext": "json",
+    "path": "Website_lib_html_music_albums.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_music_albums.json"
+  },
+  {
+    "name": "Website_lib_html_music_artists.json",
+    "ext": "json",
+    "path": "Website_lib_html_music_artists.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_music_artists.json"
+  },
+  {
+    "name": "Website_lib_html_music_songs.json",
+    "ext": "json",
+    "path": "Website_lib_html_music_songs.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_music_songs.json"
+  },
+  {
+    "name": "Website_img_logos.json",
+    "ext": "json",
+    "path": "Website_img_logos.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_logos.json"
+  },
+  {
+    "name": "Website_img_bg_zikyinc.json",
+    "ext": "json",
+    "path": "Website_img_bg_zikyinc.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_zikyinc.json"
+  },
+  {
+    "name": "Website_img_bg_art.json",
+    "ext": "json",
+    "path": "Website_img_bg_art.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_art.json"
+  },
+  {
+    "name": "Website_img_bg_jfm.json",
+    "ext": "json",
+    "path": "Website_img_bg_jfm.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_jfm.json"
+  },
+  {
+    "name": "Website_img_bg_dev.json",
+    "ext": "json",
+    "path": "Website_img_bg_dev.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_dev.json"
+  },
+  {
+    "name": "Website_img_bg_focused_j101.json",
+    "ext": "json",
+    "path": "Website_img_bg_focused_j101.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_focused_j101.json"
+  },
+  {
+    "name": "Website_img_bg_focused_mellowd.json",
+    "ext": "json",
+    "path": "Website_img_bg_focused_mellowd.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_focused_mellowd.json"
+  },
+  {
+    "name": "Templates_PromptData.json",
+    "ext": "json",
+    "path": "Templates_PromptData.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates_PromptData.json"
   }
 ]
