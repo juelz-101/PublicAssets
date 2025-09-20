@@ -161,6 +161,48 @@
       "ext": "json",
       "path": "Templates_PromptData.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates_PromptData.json"
+    },
+    {
+      "name": "Images_Covers_AlbumArt.json",
+      "ext": "json",
+      "path": "Images_Covers_AlbumArt.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Covers_AlbumArt.json"
+    },
+    {
+      "name": "Website_lib_apps.json",
+      "ext": "json",
+      "path": "Website_lib_apps.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_apps.json"
+    },
+    {
+      "name": "Website_lib_gallery.json",
+      "ext": "json",
+      "path": "Website_lib_gallery.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_gallery.json"
+    },
+    {
+      "name": "Website_lib_games.json",
+      "ext": "json",
+      "path": "Website_lib_games.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_games.json"
+    },
+    {
+      "name": "Website_lib_music_albums.json",
+      "ext": "json",
+      "path": "Website_lib_music_albums.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_music_albums.json"
+    },
+    {
+      "name": "Website_lib_music_artists.json",
+      "ext": "json",
+      "path": "Website_lib_music_artists.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_music_artists.json"
+    },
+    {
+      "name": "Website_lib_music_songs.json",
+      "ext": "json",
+      "path": "Website_lib_music_songs.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_music_songs.json"
     }
   ],
   "Images": [],
