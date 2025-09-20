@@ -1,0 +1,62 @@
+{
+	"meta": {
+        "type": "file", "name": "DefaultPrompts: Template", "name_finalized": true,
+        "desc": "Template to show how DefaultPrompts should be laid out.",
+		"file": { "platform": "", "root": "ZIKYinc_Data", "path": "PublicAssets/Templates/PromptData", "this_file": "DefaultPrompts.json" }, 
+        "creator": "Juelz-101", "organization": "ZIKYinc",
+        "started": "20/9/25", "version": "0.0.01", "edited": {"date": "", "time": "", "edited_by": "", "edit_number": 0, "changelog": [] },
+		"mgr": { "use": "true", "workspace": {"web": "", "file": "", "priority": "web", "has_internal_file": false },
+		"cfg": { "allow_autofill": "If Blank", "auto_version": "Minor Only", "edit_track": true, "auto_merging": false },
+		"ref": { "meta_layout": "FI_MTA1" },
+		"current_status": "Planning.", "complete": false
+    },
+	"d_prompts": [
+		{
+			"id": "chat-001",
+			"name": "Daily Motivation",
+			"intended_for": "Chatbot AI",
+			"prompt": "Provide a daily motivational quote for [field].",
+			"description": "Get a daily motivational quote tailored to the user's name or role.",
+			"category": "Motivation",
+			"tags": [ "daily", "motivation", "quote" ],
+			"fields": [
+				{
+					"id": "field-001",
+					"name": "User Role",
+					"description": "The role or name of the user to tailor the motivational quote.",
+					"category": "Input",
+					"tags": [
+						"string",
+						"input"
+					],
+					"types": [
+						"string"
+					],
+					"strict_types": false,
+					"values": [
+						"friend",
+						"team member"
+					],
+					"strict_values": false,
+					"default_value": "friend",
+					"notes": [
+						"[system:Juelz]: Any remarks regarding usage, edits, etc."
+					]
+				}
+			],
+			"notes": [
+				"[system:Juelz]: Any remarks regarding usage, edits, etc."
+			],
+			"meta": {
+				"fields_count": 1,
+				"creator": "[System:AI]",
+				"length": 43,
+				"times_used": 0,
+				"date_created": "2024-08-03T00:00:00Z",
+				"date_modified": "2024-08-03T00:00:00Z",
+				"total_likes": 0,
+				"overallRating": 0.0
+			}
+		}
+	]
+}

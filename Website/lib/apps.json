@@ -1,0 +1,49 @@
+{
+    "intro": "Welcome to the Applications section of ZIKYinc. Here you'll find a variety of tools and software developed by our team to enhance creativity and productivity.",
+    "devs": [
+		{
+			"artist": "Juelz-101",
+			"thumbnail": "/assets/images/photos/mum.avif",
+			"link": "/devs/juelz.html",
+			"genre": ["ue5", "fivem"],
+			"games": [
+				{"game": "Test", "link": "/games/lfl04.html"}
+			],
+			"featured": true
+		}
+	],
+    "windows_tools": [
+        {
+            "title": "AudioMixer Pro",
+            "developer": "Damian",
+            "description": "A powerful audio mixing tool for Windows, designed for both beginners and professionals.",
+            "thumbnail": "/assets/images/apps/audiomixer_pro.png",
+            "link": "/apps/audiomixer_pro.html",
+            "category": ["audio", "production"],
+            "featured": true
+        }
+    ],
+    "ai_tools": [
+        {
+            "title": "LyricGen AI",
+            "developer": "Juelz-101",
+            "description": "An AI-powered lyric generator that helps songwriters overcome writer's block.",
+            "thumbnail": "/assets/images/apps/lyricgen_ai.png",
+            "link": "/apps/lyricgen_ai.html",
+            "category": ["music", "ai"],
+            "featured": true
+        }
+    ],
+    "generators": [],
+    "misc": [
+        {
+            "title": "ZIKYTracker",
+            "developer": "Emma MT",
+            "description": "A project management tool tailored for music and art collaborations.",
+            "thumbnail": "/assets/images/apps/zikytracker.png",
+            "link": "/apps/zikytracker.html",
+            "category": ["productivity"],
+            "featured": false
+        }
+    ]
+}

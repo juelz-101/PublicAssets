@@ -1,0 +1,82 @@
+{
+	"meta_info": {},
+	"dev_ref": {
+		"info": [
+			"Need to remember/figure out how i expected this system to work",
+			"Gonna use my Producers case strategy for now.",
+			"Remove this and all notes above once implimented a working fiield system."
+		],
+	},
+	"data": {
+		"prompt": {
+			"prompts": [],
+			"tags": [],
+			"categories": [],
+			"fields": [],
+			"usefors": [],
+			"favs": [],
+			"recent": [],
+			"settings": []
+		},
+		"characters": {
+			"base": [],
+			"chars": [],
+			"handlers": [],
+			"roles": [],
+			"rulebooks": [],
+			"toolbag": [],
+			"settings": []
+
+		},
+		"scenarios": [],
+		"worlds": [],
+		"vaults": [
+			{
+				"name": "Juelz-FM 101.1", "id": "vau_jfm",
+				"desc": "GTA-Style Pirate radio for my games and apps.",
+				"levels": [
+					{
+						"id": "G", "name": "G Flr: Base", "num": 0,
+						"desc": "Base Prompts and setups",
+						"sections": [
+							{	
+								"id": "Mus_P", "name": "Music Prompts",
+								"desc": "Base-Level Prompts",
+								"prompts": [
+									{
+									  "id": "JFM-001", "name": "First Prompt",
+									  "prompt": "Generate subtle, comedic melody-driven background music designed for modern apps and games, featuring skillful DJ-style mixing and seamless blending of different tracks every two minutes. The music should draw from popular, upbeat UK genres such as hip-hop, drill, drum and bass, trap, dubstep, UK garage, trance, house, bassline, dancehall, and reggae. Avoid full singing or rapping, but incorporate vocal effects, DJ drops, radio speech snippets, and occasional short vocal samples to add character. The setting is 'Joolz-FM 101.1,' a fictional UK pirate radio station broadcasting from a London tower block. Periodically include retro-style UK pirate radio ads (inspired by classic Force FM spots), and sprinkle in comedic GTA-style radio events-like fake caller segments, competitions, or over-the-top news headlines-to create an immersive, authentic pirate radio vibe..",
+									  "desc": ".",
+									  "cat": "Music", "tags": [],
+									  "fields": [
+										{
+										  "id": "field-001",
+										  "name": "User Role",
+										  "description": "The role or name of the user to tailor the motivational quote.",
+										  "category": "", "tags": [], "types": ["string"],
+										  "defaults": [],
+										  "isStrict": false,
+										  "values": [],
+										  "isStrictValues": false,
+										  "defaultValue": "friend",
+										  "userNotes": [
+											"[system]: Tailor the motivational quote to specific roles or names."
+										  ]
+										}
+									  ],
+									  "meta": {},
+									  "notes": [
+										"[system]: Useful for daily check-ins and positive reinforcement."
+									  ],
+									  "yourNotes": [],
+									  "hidden": false
+									},
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

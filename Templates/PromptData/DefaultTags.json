@@ -1,0 +1,1035 @@
+{
+    "d_tags": [
+    {
+      "id": "tag-002",
+      "name": "Machine Learning",
+      "description": "Related to machine learning techniques and topics.",
+      "sidenotes": [
+        "[SYSTEM]: Used for discussing algorithms and models.",
+        "[SYSTEM]: Includes supervised and unsupervised learning."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-003",
+      "name": "Natural Language Processing",
+      "description": "Related to NLP and text analysis.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about text processing.",
+        "[SYSTEM]: Includes sentiment analysis and language models."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-004",
+      "name": "Data Science",
+      "description": "Related to data science techniques and applications.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about data analysis.",
+        "[SYSTEM]: Includes data visualization and statistics."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-005",
+      "name": "Big Data",
+      "description": "Related to big data technologies and topics.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts involving large datasets.",
+        "[SYSTEM]: Includes Hadoop and Spark."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-006",
+      "name": "Blockchain",
+      "description": "Related to blockchain technology.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about cryptocurrencies.",
+        "[SYSTEM]: Includes blockchain applications and security."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-007",
+      "name": "Cybersecurity",
+      "description": "Related to cybersecurity and data protection.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about security measures.",
+        "[SYSTEM]: Includes hacking and network security."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-008",
+      "name": "Cloud Computing",
+      "description": "Related to cloud computing services and platforms.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about cloud infrastructure.",
+        "[SYSTEM]: Includes AWS, Azure, and Google Cloud."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-009",
+      "name": "IoT",
+      "description": "Related to the Internet of Things.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about connected devices.",
+        "[SYSTEM]: Includes smart homes and industrial IoT."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-010",
+      "name": "Robotics",
+      "description": "Related to robotics and automation.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about robots and automation.",
+        "[SYSTEM]: Includes industrial robots and autonomous systems."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-011",
+      "name": "Augmented Reality",
+      "description": "Related to augmented reality technology.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about AR applications.",
+        "[SYSTEM]: Includes AR in gaming and education."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-012",
+      "name": "Virtual Reality",
+      "description": "Related to virtual reality technology.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about VR experiences.",
+        "[SYSTEM]: Includes VR in gaming and training."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-013",
+      "name": "3D Printing",
+      "description": "Related to 3D printing technology.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about additive manufacturing.",
+        "[SYSTEM]: Includes applications and materials."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-014",
+      "name": "Quantum Computing",
+      "description": "Related to quantum computing.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about quantum algorithms.",
+        "[SYSTEM]: Includes qubits and quantum supremacy."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-015",
+      "name": "Self-Driving Cars",
+      "description": "Related to autonomous vehicles.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about self-driving technology.",
+        "[SYSTEM]: Includes sensors and AI for driving."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-016",
+      "name": "Biotechnology",
+      "description": "Related to biotechnology and life sciences.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about genetic engineering.",
+        "[SYSTEM]: Includes biotech applications in medicine."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-017",
+      "name": "Renewable Energy",
+      "description": "Related to renewable energy sources.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about solar and wind power.",
+        "[SYSTEM]: Includes energy storage and sustainability."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-018",
+      "name": "Sustainability",
+      "description": "Related to sustainability practices.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about sustainable development.",
+        "[SYSTEM]: Includes environmental conservation."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-019",
+      "name": "Artificial Intelligence",
+      "description": "Related to AI technologies.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about AI advancements.",
+        "[SYSTEM]: Includes AI ethics and applications."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-020",
+      "name": "Coding",
+      "description": "Related to programming and software development.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about coding practices.",
+        "[SYSTEM]: Includes languages and frameworks."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-021",
+      "name": "Software Engineering",
+      "description": "Related to software engineering principles.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about software design.",
+        "[SYSTEM]: Includes testing and maintenance."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-022",
+      "name": "Web Development",
+      "description": "Related to web development technologies.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about building websites.",
+        "[SYSTEM]: Includes front-end and back-end development."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-023",
+      "name": "Mobile Development",
+      "description": "Related to mobile app development.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about creating mobile apps.",
+        "[SYSTEM]: Includes iOS and Android development."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-024",
+      "name": "DevOps",
+      "description": "Related to DevOps practices.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about CI/CD pipelines.",
+        "[SYSTEM]: Includes infrastructure as code."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-025",
+      "name": "Agile",
+      "description": "Related to agile methodologies.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about agile practices.",
+        "[SYSTEM]: Includes Scrum and Kanban."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-026",
+      "name": "Project Management",
+      "description": "Related to project management techniques.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about managing projects.",
+        "[SYSTEM]: Includes planning and resource allocation."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-027",
+      "name": "UI/UX",
+      "description": "Related to user interface and user experience design.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about design principles.",
+        "[SYSTEM]: Includes usability and accessibility."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-028",
+      "name": "Product Management",
+      "description": "Related to product management.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about product development.",
+        "[SYSTEM]: Includes product lifecycle and roadmaps."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-029",
+      "name": "Marketing",
+      "description": "Related to marketing strategies.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about digital marketing.",
+        "[SYSTEM]: Includes SEO and social media marketing."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-030",
+      "name": "Sales",
+      "description": "Related to sales techniques.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about sales strategies.",
+        "[SYSTEM]: Includes customer acquisition and retention."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-031",
+      "name": "Customer Service",
+      "description": "Related to customer service practices.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about customer support.",
+        "[SYSTEM]: Includes customer satisfaction and feedback."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-032",
+      "name": "Entrepreneurship",
+      "description": "Related to starting and running a business.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about business ideas.",
+        "[SYSTEM]: Includes startup advice and funding."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-033",
+      "name": "Leadership",
+      "description": "Related to leadership and management.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about leadership skills.",
+        "[SYSTEM]: Includes team management and communication."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-034",
+      "name": "Career Development",
+      "description": "Related to career growth and development.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about career planning.",
+        "[SYSTEM]: Includes job search and interview tips."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-035",
+      "name": "Finance",
+      "description": "Related to financial management.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about budgeting.",
+        "[SYSTEM]: Includes investment and savings advice."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-036",
+      "name": "Investing",
+      "description": "Related to investment strategies.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about stock market.",
+        "[SYSTEM]: Includes real estate and cryptocurrency."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-037",
+      "name": "Economics",
+      "description": "Related to economic theories and principles.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about economic policies.",
+        "[SYSTEM]: Includes macroeconomics and microeconomics."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-038",
+      "name": "Personal Finance",
+      "description": "Related to managing personal finances.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about budgeting and saving.",
+        "[SYSTEM]: Includes debt management and retirement planning."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-039",
+      "name": "Health",
+      "description": "Related to health and wellness.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about physical health.",
+        "[SYSTEM]: Includes nutrition and exercise."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-040",
+      "name": "Fitness",
+      "description": "Related to physical fitness.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about workout routines.",
+        "[SYSTEM]: Includes strength training and cardio."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-041",
+      "name": "Nutrition",
+      "description": "Related to diet and nutrition.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about healthy eating.",
+        "[SYSTEM]: Includes meal planning and dietary advice."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-042",
+      "name": "Mental Health",
+      "description": "Related to mental health and well-being.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about mental health tips.",
+        "[SYSTEM]: Includes stress management and self-care."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-043",
+      "name": "Mindfulness",
+      "description": "Related to mindfulness practices.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about meditation.",
+        "[SYSTEM]: Includes breathing exercises and relaxation techniques."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-044",
+      "name": "Self-Care",
+      "description": "Related to self-care activities.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about self-care routines.",
+        "[SYSTEM]: Includes relaxation and stress relief."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-045",
+      "name": "Productivity",
+      "description": "Related to productivity tips and techniques.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about time management.",
+        "[SYSTEM]: Includes task prioritization and efficiency tips."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-046",
+      "name": "Time Management",
+      "description": "Related to managing time effectively.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about scheduling.",
+        "[SYSTEM]: Includes tips for avoiding procrastination."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-047",
+      "name": "Goal Setting",
+      "description": "Related to setting and achieving goals.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about goal planning.",
+        "[SYSTEM]: Includes SMART goals and milestones."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-048",
+      "name": "Motivation",
+      "description": "Related to finding and maintaining motivation.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about motivational techniques.",
+        "[SYSTEM]: Includes inspirational quotes and stories."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-049",
+      "name": "Education",
+      "description": "Related to learning and education.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about study tips.",
+        "[SYSTEM]: Includes online courses and academic advice."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-050",
+      "name": "Language Learning",
+      "description": "Related to learning new languages.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about language practice.",
+        "[SYSTEM]: Includes vocabulary building and grammar tips."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-051",
+      "name": "Teaching",
+      "description": "Related to teaching and education methods.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about teaching strategies.",
+        "[SYSTEM]: Includes lesson planning and classroom management."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-052",
+      "name": "Writing",
+      "description": "Related to writing techniques.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about writing skills.",
+        "[SYSTEM]: Includes creative writing and technical writing."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-053",
+      "name": "Reading",
+      "description": "Related to reading and literature.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about book recommendations.",
+        "[SYSTEM]: Includes reading techniques and literary analysis."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-054",
+      "name": "Art",
+      "description": "Related to visual arts.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about art techniques.",
+        "[SYSTEM]: Includes drawing, painting, and sculpture."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-055",
+      "name": "Music",
+      "description": "Related to music and musical instruments.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about music practice.",
+        "[SYSTEM]: Includes music theory and composition."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-056",
+      "name": "Movies",
+      "description": "Related to films and cinema.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about movie reviews.",
+        "[SYSTEM]: Includes film analysis and recommendations."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-057",
+      "name": "Television",
+      "description": "Related to TV shows and series.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about TV show recommendations.",
+        "[SYSTEM]: Includes reviews and analysis."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-058",
+      "name": "Gaming",
+      "description": "Related to video games and gaming.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about game reviews.",
+        "[SYSTEM]: Includes gaming tips and strategies."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-059",
+      "name": "Sports",
+      "description": "Related to sports and athletics.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about sports news.",
+        "[SYSTEM]: Includes fitness and training tips."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-060",
+      "name": "Travel",
+      "description": "Related to travel and tourism.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about travel tips.",
+        "[SYSTEM]: Includes destination recommendations and itineraries."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-061",
+      "name": "Food",
+      "description": "Related to cooking and cuisine.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about recipes.",
+        "[SYSTEM]: Includes cooking tips and restaurant reviews."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-062",
+      "name": "Photography",
+      "description": "Related to photography techniques.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about photo tips.",
+        "[SYSTEM]: Includes camera settings and editing."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-063",
+      "name": "Gardening",
+      "description": "Related to gardening and plants.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about gardening tips.",
+        "[SYSTEM]: Includes plant care and landscaping."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-064",
+      "name": "DIY",
+      "description": "Related to do-it-yourself projects.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about DIY ideas.",
+        "[SYSTEM]: Includes home improvement and crafting."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-065",
+      "name": "Fashion",
+      "description": "Related to fashion and style.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about fashion tips.",
+        "[SYSTEM]: Includes outfit ideas and trend analysis."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-066",
+      "name": "Beauty",
+      "description": "Related to beauty and skincare.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about beauty tips.",
+        "[SYSTEM]: Includes makeup and skincare routines."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-067",
+      "name": "Home Decor",
+      "description": "Related to interior design and home decor.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about decorating ideas.",
+        "[SYSTEM]: Includes design tips and trends."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-068",
+      "name": "Pets",
+      "description": "Related to pet care and animals.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about pet care tips.",
+        "[SYSTEM]: Includes training and health advice."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-069",
+      "name": "Parenting",
+      "description": "Related to parenting and child care.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about parenting tips.",
+        "[SYSTEM]: Includes child development and education advice."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-070",
+      "name": "Relationships",
+      "description": "Related to relationships and dating.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about relationship advice.",
+        "[SYSTEM]: Includes dating tips and communication skills."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-071",
+      "name": "Weddings",
+      "description": "Related to wedding planning.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about wedding tips.",
+        "[SYSTEM]: Includes planning and decor ideas."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-072",
+      "name": "Finance Management",
+      "description": "Related to managing personal finances.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about budgeting and saving.",
+        "[SYSTEM]: Includes debt management and retirement planning."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-073",
+      "name": "Cooking",
+      "description": "Related to culinary arts.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about cooking techniques.",
+        "[SYSTEM]: Includes recipes and kitchen tips."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-074",
+      "name": "Cultural Studies",
+      "description": "Related to studying different cultures.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about cultural traditions.",
+        "[SYSTEM]: Includes anthropology and history."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-075",
+      "name": "Philosophy",
+      "description": "Related to philosophical concepts and theories.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about philosophical discussions.",
+        "[SYSTEM]: Includes ethics and logic."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-076",
+      "name": "History",
+      "description": "Related to historical events and periods.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about historical analysis.",
+        "[SYSTEM]: Includes ancient and modern history."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-077",
+      "name": "Science",
+      "description": "Related to scientific topics and discoveries.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about scientific research.",
+        "[SYSTEM]: Includes physics, chemistry, and biology."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-078",
+      "name": "Astronomy",
+      "description": "Related to the study of celestial objects.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about space exploration.",
+        "[SYSTEM]: Includes stars, planets, and galaxies."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-079",
+      "name": "Physics",
+      "description": "Related to physical sciences.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about physics theories.",
+        "[SYSTEM]: Includes mechanics and quantum physics."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-080",
+      "name": "Chemistry",
+      "description": "Related to chemical sciences.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about chemistry experiments.",
+        "[SYSTEM]: Includes organic and inorganic chemistry."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-081",
+      "name": "Biology",
+      "description": "Related to biological sciences.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about biology studies.",
+        "[SYSTEM]: Includes genetics and microbiology."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-082",
+      "name": "Engineering",
+      "description": "Related to engineering disciplines.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about engineering projects.",
+        "[SYSTEM]: Includes civil, mechanical, and electrical engineering."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-083",
+      "name": "Architecture",
+      "description": "Related to architecture and design.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about building design.",
+        "[SYSTEM]: Includes architectural styles and planning."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-084",
+      "name": "Mathematics",
+      "description": "Related to mathematical concepts.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about math problems.",
+        "[SYSTEM]: Includes algebra, calculus, and statistics."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-085",
+      "name": "Statistics",
+      "description": "Related to statistical analysis.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about data analysis.",
+        "[SYSTEM]: Includes probability and inferential statistics."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-086",
+      "name": "Economics",
+      "description": "Related to economic theories and principles.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about economic policies.",
+        "[SYSTEM]: Includes macroeconomics and microeconomics."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-087",
+      "name": "Geography",
+      "description": "Related to geographical studies.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about world regions.",
+        "[SYSTEM]: Includes physical and human geography."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-088",
+      "name": "Political Science",
+      "description": "Related to political theories and systems.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about political analysis.",
+        "[SYSTEM]: Includes government and international relations."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-089",
+      "name": "Sociology",
+      "description": "Related to the study of society and social behavior.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about social structures.",
+        "[SYSTEM]: Includes cultural and social dynamics."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-090",
+      "name": "Psychology",
+      "description": "Related to psychological theories and practices.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about mental processes.",
+        "[SYSTEM]: Includes cognitive and behavioral psychology."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-091",
+      "name": "Anthropology",
+      "description": "Related to the study of humans and cultures.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about cultural anthropology.",
+        "[SYSTEM]: Includes archaeology and linguistic anthropology."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-092",
+      "name": "Philosophy",
+      "description": "Related to philosophical concepts and theories.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about philosophical discussions.",
+        "[SYSTEM]: Includes ethics and logic."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-093",
+      "name": "Literature",
+      "description": "Related to literary works and analysis.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about literary analysis.",
+        "[SYSTEM]: Includes classic and modern literature."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-094",
+      "name": "Art History",
+      "description": "Related to the history of art.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about art movements.",
+        "[SYSTEM]: Includes analysis of famous artworks."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-095",
+      "name": "Music Theory",
+      "description": "Related to the theoretical aspects of music.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about music composition.",
+        "[SYSTEM]: Includes harmony and rhythm analysis."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-096",
+      "name": "Film Studies",
+      "description": "Related to the analysis of films.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about film genres.",
+        "[SYSTEM]: Includes film theory and criticism."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-097",
+      "name": "Theater",
+      "description": "Related to theatrical performances.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about theater production.",
+        "[SYSTEM]: Includes acting techniques and play analysis."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-098",
+      "name": "Dance",
+      "description": "Related to dance and choreography.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about dance styles.",
+        "[SYSTEM]: Includes performance and technique tips."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-099",
+      "name": "Graphic Design",
+      "description": "Related to visual design principles.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about design tools.",
+        "[SYSTEM]: Includes branding and visual communication."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-100",
+      "name": "Web Development",
+      "description": "Related to building websites.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about coding languages.",
+        "[SYSTEM]: Includes front-end and back-end development."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-101",
+      "name": "Mobile Development",
+      "description": "Related to creating mobile applications.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about app development.",
+        "[SYSTEM]: Includes iOS and Android development."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-102",
+      "name": "Data Science",
+      "description": "Related to data analysis and interpretation.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about data modeling.",
+        "[SYSTEM]: Includes machine learning and statistical analysis."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-103",
+      "name": "Artificial Intelligence",
+      "description": "Related to AI and machine learning.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about AI applications.",
+        "[SYSTEM]: Includes neural networks and deep learning."
+      ], 
+      "createdby" : "system"
+    },
+    {
+      "id": "tag-104",
+      "name": "Blockchain",
+      "description": "Related to blockchain technology.",
+      "sidenotes": [
+        "[SYSTEM]: Used for prompts about cryptocurrency.",
+        "[SYSTEM]: Includes smart contracts and decentralized applications."
+      ], 
+      "createdby" : "system"
+    }
+  ], 
+  "styles": []
+}

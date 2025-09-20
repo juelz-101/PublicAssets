@@ -39,8 +39,89 @@ PublicAssets/
 ├── Images_Logos_App.json
 ├── Images_Logos_Tings.json
 ├── README.md
+├── Templates/
+│   └── PromptData/
+│       ├── AITypes.json
+│       ├── Copy of MyPromptData.txt
+│       ├── Copy of ProjectPrompts.json
+│       ├── DefaultCategories.json
+│       ├── DefaultChars.json
+│       ├── DefaultPrompts.json
+│       ├── DefaultScens.json
+│       ├── DefaultTags.json
+│       ├── DefaultTools.json
+│       ├── DefaultVaults.json
+│       ├── DefaultWorlds.json
+│       ├── MyPromptData.json
+│       ├── ProjectExample.json
+│       ├── ProjectPrompts.json
+│       └── UserData.json
+├── Templates_PromptData.json
+├── Test/
 ├── Website/
 │   ├── img/
+│   │   ├── bg/
+│   │   │   ├── art/
+│   │   │   │   └── f36fb9e60c30497cb4269c1fa8de42d8.jpeg
+│   │   │   ├── dev/
+│   │   │   │   └── Draw5.jpeg
+│   │   │   ├── focused/
+│   │   │   │   ├── j101/
+│   │   │   │   │   ├── J.jfif
+│   │   │   │   │   ├── Whisk_3effbbf126.jpg
+│   │   │   │   │   ├── Whisk_52f680812f.jpg
+│   │   │   │   │   ├── Whisk_e7dedfbadb.jpg
+│   │   │   │   │   ├── Whisk_ece1a3220e.jpg
+│   │   │   │   │   ├── Whisk_f0397bfc69.jpg
+│   │   │   │   │   └── Whisk_fe60f975a4.jpg
+│   │   │   │   └── mellowd/
+│   │   │   │       └── Mellow-D.jfif
+│   │   │   ├── jfm/
+│   │   │   │   └── 2b07b5bdadd54beb847930ab21952ade.jpeg
+│   │   │   └── zikyinc/
+│   │   │       ├── ZIKYinc-Block.jpeg
+│   │   │       ├── ZIKYinc-Dog5.jpeg
+│   │   │       ├── ZIKYinc-Dog6.png
+│   │   │       ├── ZIKYinc-DragRace-Angel.jpeg
+│   │   │       ├── ZIKYinc-DragRace-Girl-2.jpeg
+│   │   │       ├── ZIKYinc-Elephunk2.jpeg
+│   │   │       ├── ZIKYinc-Girl-Graffiti-2.jpeg
+│   │   │       ├── ZIKYinc-Girl-Graffiti.jpeg
+│   │   │       ├── ZIKYinc-Girl-Rain.jpeg
+│   │   │       ├── ZIKYinc-Graffiti-Blue-1.png
+│   │   │       ├── ZIKYinc-Graffiti-Blue-2.png
+│   │   │       ├── ZIKYinc-Graffiti-Blue-3.png
+│   │   │       ├── ZIKYinc-Graffiti-Blue-4.png
+│   │   │       ├── ZIKYinc-King-1.png
+│   │   │       ├── ZIKYinc-King-2.png
+│   │   │       ├── ZIKYinc-King-3.png
+│   │   │       ├── ZIKYinc-King-4.png
+│   │   │       ├── ZIKYinc-Paint-1.png
+│   │   │       ├── ZIKYinc-Paint-3.png
+│   │   │       ├── ZIKYinc-Paint-4.png
+│   │   │       ├── ZIKYinc-Paint-5.png
+│   │   │       ├── ZIKYinc-Poly-1.jpeg
+│   │   │       ├── ZIKYinc-Poly-2.jpeg
+│   │   │       ├── ZIKYinc-Skull.jpeg
+│   │   │       ├── ZIKYinc-Wall.jpeg
+│   │   │       ├── ZIKYinc-Water-1.png
+│   │   │       ├── ZIKYinc-Water-2.png
+│   │   │       ├── ZIKYinc-Water-3.png
+│   │   │       ├── ZIKYinc-WildStyle-BG1.jpeg
+│   │   │       ├── ZIKYinc-WildStyle-BG2.jpeg
+│   │   │       ├── ZIKYinc_Dog.png
+│   │   │       ├── ZIKYinc_Dog2.png
+│   │   │       ├── ZIKYinc_Dog3.png
+│   │   │       ├── ZIKYinc_Dog4.png
+│   │   │       ├── Ziky-Poly-3.jpeg
+│   │   │       └── ZikyGirlRain.jpeg
+│   │   ├── logos/
+│   │   │   ├── Juelz-FM-Logo.png
+│   │   │   ├── Juelz-FM-Logo2.png
+│   │   │   ├── ZIKYinc-Music-Logo-Dark.png
+│   │   │   ├── ZIKYinc-Music-Logo-Light.png
+│   │   │   ├── ZIKYinc_Art-Logo.png
+│   │   │   └── ZIKYinc_DevLogo.png
 │   │   ├── misc/
 │   │   │   ├── Draw-8.png
 │   │   │   ├── Draw2.png
@@ -54,95 +135,132 @@ PublicAssets/
 │   │   │   ├── ZIKYinc-PaintGirl.png
 │   │   │   ├── ZIKYinc-Random-FaceFX.jpeg
 │   │   │   └── placeholder.jpg
-│   │   ├── photos/
-│   │   │   ├── Alice.png
-│   │   │   ├── Codie.jpeg
-│   │   │   ├── Damian.jpeg
-│   │   │   ├── Em.jpeg
-│   │   │   ├── Em2.jpeg
-│   │   │   ├── Em3.jpeg
-│   │   │   ├── EmForest.jpeg
-│   │   │   ├── Emma.jpeg
-│   │   │   ├── Emma4.jpeg
-│   │   │   ├── Imperial-P-Photo.jpeg
-│   │   │   ├── Imperial-P.jpeg
-│   │   │   ├── Imperial-P2.jpeg
-│   │   │   ├── Imperial-P2.xcf
-│   │   │   ├── Kyle.jpeg
-│   │   │   ├── Kyles.jpeg
-│   │   │   ├── Kyles3.jpeg
-│   │   │   ├── Kyles4.jpeg
-│   │   │   ├── Kyles5.jpeg
-│   │   │   ├── KymPhoto.jpeg
-│   │   │   ├── WelshHotdog2010.jpeg
-│   │   │   ├── ZIKYHide.jpeg
-│   │   │   ├── ZIKYHide2.jpeg
-│   │   │   ├── ZIKYHide3.jpeg
-│   │   │   ├── ZIKYHide4.jpeg
-│   │   │   ├── ZIKYHide5.jpeg
-│   │   │   ├── ZIKYHide6.jpeg
-│   │   │   ├── ZIKYHide7.jpeg
-│   │   │   ├── ZIKYinc-Header_FX.jpeg
-│   │   │   ├── ZikyGroup.jpeg
-│   │   │   ├── em4.jpeg
-│   │   │   ├── emma/
-│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-2.jpg
-│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-3.jpg
-│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-4.jpg
-│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-5.jpg
-│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-6.jpg
-│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-7.jpg
-│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-8.jpg
-│   │   │   │   └── Emma-MT-Rave-ZIKYinc.jpg
-│   │   │   ├── emma2.jpeg
-│   │   │   ├── emma3.jpeg
-│   │   │   ├── mum.avif
-│   │   │   ├── pete.jpeg
-│   │   │   └── pete2.jpeg
-│   │   └── zikyinc/
-│   │       ├── ZIKYinc-Block.jpeg
-│   │       ├── ZIKYinc-Dog5.jpeg
-│   │       ├── ZIKYinc-Dog6.png
-│   │       ├── ZIKYinc-DragRace-Angel.jpeg
-│   │       ├── ZIKYinc-DragRace-Girl-2.jpeg
-│   │       ├── ZIKYinc-Elephunk2.jpeg
-│   │       ├── ZIKYinc-Girl-Graffiti-2.jpeg
-│   │       ├── ZIKYinc-Girl-Graffiti.jpeg
-│   │       ├── ZIKYinc-Girl-Rain.jpeg
-│   │       ├── ZIKYinc-Graffiti-Blue-1.png
-│   │       ├── ZIKYinc-Graffiti-Blue-2.png
-│   │       ├── ZIKYinc-Graffiti-Blue-3.png
-│   │       ├── ZIKYinc-Graffiti-Blue-4.png
-│   │       ├── ZIKYinc-King-1.png
-│   │       ├── ZIKYinc-King-2.png
-│   │       ├── ZIKYinc-King-3.png
-│   │       ├── ZIKYinc-King-4.png
-│   │       ├── ZIKYinc-Paint-1.png
-│   │       ├── ZIKYinc-Paint-3.png
-│   │       ├── ZIKYinc-Paint-4.png
-│   │       ├── ZIKYinc-Paint-5.png
-│   │       ├── ZIKYinc-Poly-1.jpeg
-│   │       ├── ZIKYinc-Poly-2.jpeg
-│   │       ├── ZIKYinc-Skull.jpeg
-│   │       ├── ZIKYinc-Wall.jpeg
-│   │       ├── ZIKYinc-Water-1.png
-│   │       ├── ZIKYinc-Water-2.png
-│   │       ├── ZIKYinc-Water-3.png
-│   │       ├── ZIKYinc-WildStyle-BG1.jpeg
-│   │       ├── ZIKYinc-WildStyle-BG2.jpeg
-│   │       ├── ZIKYinc_Dog.png
-│   │       ├── ZIKYinc_Dog2.png
-│   │       ├── ZIKYinc_Dog3.png
-│   │       ├── ZIKYinc_Dog4.png
-│   │       ├── Ziky-Poly-3.jpeg
-│   │       └── ZikyGirlRain.jpeg
+│   │   └── photos/
+│   │       ├── Alice.png
+│   │       ├── Codie.jpeg
+│   │       ├── Damian.jpeg
+│   │       ├── Em.jpeg
+│   │       ├── Em2.jpeg
+│   │       ├── Em3.jpeg
+│   │       ├── EmForest.jpeg
+│   │       ├── Emma.jpeg
+│   │       ├── Emma4.jpeg
+│   │       ├── Imperial-P-Photo.jpeg
+│   │       ├── Imperial-P.jpeg
+│   │       ├── Imperial-P2.jpeg
+│   │       ├── Imperial-P2.xcf
+│   │       ├── Kyle.jpeg
+│   │       ├── Kyles.jpeg
+│   │       ├── Kyles3.jpeg
+│   │       ├── Kyles4.jpeg
+│   │       ├── Kyles5.jpeg
+│   │       ├── KymPhoto.jpeg
+│   │       ├── WelshHotdog2010.jpeg
+│   │       ├── ZIKYHide.jpeg
+│   │       ├── ZIKYHide2.jpeg
+│   │       ├── ZIKYHide3.jpeg
+│   │       ├── ZIKYHide4.jpeg
+│   │       ├── ZIKYHide5.jpeg
+│   │       ├── ZIKYHide6.jpeg
+│   │       ├── ZIKYHide7.jpeg
+│   │       ├── ZIKYinc-Header_FX.jpeg
+│   │       ├── ZikyGroup.jpeg
+│   │       ├── em4.jpeg
+│   │       ├── emma/
+│   │       │   ├── Emma-MT-Rave-ZIKYinc-2.jpg
+│   │       │   ├── Emma-MT-Rave-ZIKYinc-3.jpg
+│   │       │   ├── Emma-MT-Rave-ZIKYinc-4.jpg
+│   │       │   ├── Emma-MT-Rave-ZIKYinc-5.jpg
+│   │       │   ├── Emma-MT-Rave-ZIKYinc-6.jpg
+│   │       │   ├── Emma-MT-Rave-ZIKYinc-7.jpg
+│   │       │   ├── Emma-MT-Rave-ZIKYinc-8.jpg
+│   │       │   └── Emma-MT-Rave-ZIKYinc.jpg
+│   │       ├── emma2.jpeg
+│   │       ├── emma3.jpeg
+│   │       ├── mum.avif
+│   │       ├── pete.jpeg
+│   │       └── pete2.jpeg
 │   └── lib/
-│       └── music.json
+│       ├── apps.json
+│       ├── art.json
+│       ├── cur_projects.json
+│       ├── gaming.json
+│       ├── home.json
+│       ├── html/
+│       │   ├── apps/
+│       │   │   └── test.html
+│       │   ├── gallery/
+│       │   │   └── test.html
+│       │   ├── games/
+│       │   │   └── test.html
+│       │   └── music/
+│       │       ├── albums/
+│       │       │   ├── brut.html
+│       │       │   ├── btwn.html
+│       │       │   ├── final.html
+│       │       │   ├── ftbt.html
+│       │       │   ├── hith.html
+│       │       │   ├── lfl04.html
+│       │       │   ├── lfl24.html
+│       │       │   ├── ofrv.html
+│       │       │   ├── totb.html
+│       │       │   └── www.html
+│       │       ├── artists/
+│       │       │   ├── alic.html
+│       │       │   ├── cams.html
+│       │       │   ├── egbx.html
+│       │       │   ├── emil.html
+│       │       │   ├── emma.html
+│       │       │   ├── esta.html
+│       │       │   ├── face.html
+│       │       │   ├── gekk.html
+│       │       │   ├── hotc.html
+│       │       │   ├── imp.html
+│       │       │   ├── jayc.html
+│       │       │   ├── jevh.html
+│       │       │   ├── juelz.html
+│       │       │   ├── kenf.html
+│       │       │   ├── kevh.html
+│       │       │   ├── kris.html
+│       │       │   ├── kurv.html
+│       │       │   ├── kylm.html
+│       │       │   ├── mark.html
+│       │       │   ├── mayc.html
+│       │       │   ├── meld.html
+│       │       │   ├── mick.html
+│       │       │   ├── miss.html
+│       │       │   ├── plam.html
+│       │       │   ├── synt.html
+│       │       │   ├── teec.html
+│       │       │   ├── tina.html
+│       │       │   └── vect.html
+│       │       └── songs/
+│       │           ├── disl.html
+│       │           ├── placeholder.html
+│       │           ├── ssos.html
+│       │           ├── sumn.html
+│       │           └── takeov.html
+│       ├── misc.json
+│       ├── music.json
+│       └── webdata.json
+├── Website_img_bg_art.json
+├── Website_img_bg_dev.json
+├── Website_img_bg_focused_j101.json
+├── Website_img_bg_focused_mellowd.json
+├── Website_img_bg_jfm.json
+├── Website_img_bg_zikyinc.json
+├── Website_img_logos.json
 ├── Website_img_misc.json
 ├── Website_img_photos.json
 ├── Website_img_photos_emma.json
 ├── Website_img_zikyinc.json
 ├── Website_lib.json
+├── Website_lib_html_apps.json
+├── Website_lib_html_gallery.json
+├── Website_lib_html_games.json
+├── Website_lib_html_music_albums.json
+├── Website_lib_html_music_artists.json
+├── Website_lib_html_music_songs.json
 ├── asset_register.json
 ├── auto_update.py
 ├── public_assets.tree

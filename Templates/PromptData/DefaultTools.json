@@ -1,0 +1,140 @@
+{
+	"d_tools": {
+		"base": [
+			{
+				"id": "logo-001",
+				"name": "Sleek Modern Logo Design",
+				"intended_for": "Image AI",
+				"prompt": "Design a sleek, modern [<ref:design_usages[1]>] for the [app_name] [usage]. [main_design]. [additional_design]. [text]. [character[inc_in_design:true]] Prominently display the text [app_name], [<tp_b>]. Incorporate clean lines, refined brushed metal with a bright gleaming edge giving off a hint of [Colour1]. Set the [type] against a transparent/black glass background. [<con1>]",
+				"description": ".",
+				"category": "Logo Design",
+				"tags": [ "logo", "modern", "design" ],
+				"auto_merge": ["ZIKYinc"],
+				"fields": [],
+				"notes": [
+					"For creating detailed historical scenes. [System:AI]"
+				],
+				"meta": {
+					"fields_count": 3,
+					"creator": "[System:AI]",
+					"length": 60,
+					"times_used": 0,
+					"date_created": "2024-08-01T00:00:00Z",
+					"date_modified": "2024-08-01T00:00:00Z",
+					"total_likes": 0,
+					"overallRating": 0.0
+				}
+			}
+		],
+		"ufa": [
+			{
+				"name": "ZIKYinc",
+				"id": "ufa-001",
+				"intended_for": "Image AI",
+				"array": [
+					{
+						"app_name": "ZikKit",
+						"id": "zik",
+						"app_desc": "Various handy tools to have nearby at any time.",
+						"main_design": "A tool bag with racing tools coming out of the top",
+						"additional_design": "A windows logo present",
+						"character": [],
+						"banner": "A vibrant tool bag overflowing with colorful racing tools, set against a subtle gradient background that complements the primary colors.",
+						"wallpaper": "A dynamic pattern of various tools and gears, all interconnected in a playful manner, emphasizing functionality and accessibility.",
+			   
+						"text": "",
+						"chatguide": "",
+						"color1": "#32CD32",
+						"color2": "#008080",
+						"color3": "#4B0082",
+						"color_d1": "ZikKit features a vibrant lime green (#32CD32) as the primary color, offering energy and freshness.",
+						"color_d2": "A balanced teal (#008080) adds a calm, mid-brightness tone that complements the vibrancy of lime green.",
+						"color_d3": "A rich deep purple (#4B0082) provides depth and a striking contrast, anchoring the overall color scheme.",
+						"font_family": "Segoe UI",
+						"heading_font": "Segoe UI Bold"
+					},
+					{
+						"app_name": "PowerPrompt",
+						"id": "pwp",
+						"app_desc": "A complex prompt making tool with character building and story immersion",
+						"main_design": "A hollow metallic globe with visible landmasses, housing a red-hot, glowing core. From one side, a spout of molten lava shoots out, forming a speech bubble with three glowing dots.",
+						"additional_design": "The globe has subtle engravings, hinting at the app's capabilities. The speech bubble adds a dynamic and powerful visual element.",
+						"character": [
+							{
+								"name": "Peter Planet",
+								"design": "A hollow metallic globe with visible landmasses, housing a red-hot, glowing core, spitting out lava that blow up to be speech bubbles",
+								"age": 500000,
+								"items": "",
+								"variations": "His size can vary depending on the current story line, he can be planet-sided, or he can be human sized. If he is playing an assistant then it is unlikely that his size will ever be relivant, but we will add logic to his traits to deal with the event that he is asked how big he is but answering depending on the current setup and previous convo.",
+								"roles": "The apps mascot, Common villan in PowerPrompts generated worlds, can be used as an assistant but he gets mad very easily and all hell will break loose.",
+								"initial_mood": "Firey, easily excitable, hyper, loud, quick to anger",
+								"traits": {
+									"general": "",
+									"likes": "",
+									"dislikes": ""
+								},
+								"char_prompts": {},
+								"inc_in_design": false,
+								"flag": {},
+								"extras": [],
+								"notes": {}
+							},
+							{
+								"name": "Emma",
+								"design": "A smart and well dressed woman, who has dark hair, big green eyes and nerdy glasses.",
+								"age": 24,
+								"items": "",
+								"variations": ".",
+								"roles": "Is the base assistant for the user in powerprompt, cannot be used as a world companion as she is too easily scared. She is an easy target for villains.",
+								"initial_mood": "Happy, content, curious.",
+								"char_prompts": {},
+								"inc_in_design": false,
+								"flags": {},
+								"extras": [],
+								"notes": []
+							}
+						],
+						"banner": "An intense scene featuring a hollow metallic globe with glowing core elements, surrounded by fiery accents and molten lava flows.",
+						"wallpaper": "A dramatic cosmic landscape with the globe at the center, radiating heat and light, while speech bubbles float around it, creating a sense of dialogue and interaction.",
+			   
+						"text": "",
+						"chatguide": "",
+						"color1": "#FF4500",
+						"color2": "#DAA520",
+						"color3": "#483D8B",
+						"color_d1": "PowerPrompt is driven by a bold red (#FF4500) primary color, symbolizing power and urgency.",
+						"color_d2": "Description: A warm goldenrod (#DAA520) provides a mid-brightness tone that adds warmth and richness without overpowering the bold red.",
+						"color_d3": "A dark slate blue (#483D8B) adds depth and a cool contrast, balancing the fiery red tones.",
+						"font_family": "Segoe UI",
+						"heading_font": "Segoe UI Bold"
+					}
+				]
+			}
+		],
+		
+		
+		"adders": [
+			{
+				"name": "IMG-Fit",
+				"id": "ad-img-fit",
+				"category": "Consitancy",
+				"intended_for": "Image AI",
+				"desc": "Used to help with consistancy when creating images",
+				"example": "(Create an icon for a new folder button, using a bubble style) Ensure the design takes up the whole image.",
+	
+				"prompt": "Ensure the design fits within the canvas, with no elements extending beyond the boundaries"
+			}
+			
+		],
+		"ref": [
+			{
+				"name": "design_usages",
+				"options": [
+					["Button", "Digital button for an app/game"],
+					["Logo", "Proffesional company logo"],
+					["WPF", "Component/tool for WPF application"]
+				]
+			}
+		]
+	}
+}

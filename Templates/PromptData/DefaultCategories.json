@@ -1,0 +1,504 @@
+{
+  "d_cats": [
+    {
+      "id": "cat-001",
+      "name": "Chatbot",
+      "description": "General prompts for interacting with a chatbot.",
+      "sidenotes": [
+        "Use for general chatbot inquiries.",
+        "Includes a wide range of topics."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-002",
+      "name": "Instructions",
+      "description": "Prompts for giving instructions to the chatbot.",
+      "sidenotes": [
+        "Use for directing the chatbot to perform specific tasks.",
+        "Includes commands and procedural instructions."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-003",
+      "name": "Roleplay",
+      "description": "Prompts for engaging in roleplay scenarios with the chatbot.",
+      "sidenotes": [
+        "Use for interactive storytelling and roleplay.",
+        "Includes character-based prompts and scenarios."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-004",
+      "name": "Small Talk",
+      "description": "Prompts for casual conversation with the chatbot.",
+      "sidenotes": [
+        "Use for friendly, everyday chat.",
+        "Includes greetings, farewells, and general chit-chat."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-005",
+      "name": "Jokes",
+      "description": "Prompts for telling jokes or asking for jokes from the chatbot.",
+      "sidenotes": [
+        "Use for humor and entertainment.",
+        "Includes joke requests and funny anecdotes."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-006",
+      "name": "Advice",
+      "description": "Prompts for seeking advice from the chatbot.",
+      "sidenotes": [
+        "Use for personal guidance and suggestions.",
+        "Includes life advice, relationship tips, and more."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-007",
+      "name": "Trivia",
+      "description": "Prompts for asking trivia questions or participating in trivia games with the chatbot.",
+      "sidenotes": [
+        "Use for testing knowledge and learning new facts.",
+        "Includes various trivia topics and quizzes."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-008",
+      "name": "Storytelling",
+      "description": "Prompts for telling or listening to stories from the chatbot.",
+      "sidenotes": [
+        "Use for narrative-based interactions.",
+        "Includes story requests and creative writing prompts."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-009",
+      "name": "Quotes",
+      "description": "Prompts for requesting quotes from the chatbot.",
+      "sidenotes": [
+        "Use for inspirational and famous quotes.",
+        "Includes motivational sayings and historical quotes."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-010",
+      "name": "News",
+      "description": "Prompts for discussing current events and news with the chatbot.",
+      "sidenotes": [
+        "Use for staying updated with the latest news.",
+        "Includes news summaries and discussions."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-011",
+      "name": "Weather",
+      "description": "Prompts for inquiring about the weather.",
+      "sidenotes": [
+        "Use for weather updates and forecasts.",
+        "Includes current weather conditions and future predictions."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-012",
+      "name": "Games",
+      "description": "Prompts for playing games with the chatbot.",
+      "sidenotes": [
+        "Use for interactive and fun activities.",
+        "Includes word games, puzzles, and challenges."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-013",
+      "name": "Health",
+      "description": "Prompts for discussing health-related topics.",
+      "sidenotes": [
+        "Use for health tips and medical information.",
+        "Includes wellness advice and fitness prompts."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-014",
+      "name": "Fitness",
+      "description": "Prompts for discussing fitness routines and exercises.",
+      "sidenotes": [
+        "Use for workout advice and exercise routines.",
+        "Includes fitness tips and motivation."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-015",
+      "name": "Diet",
+      "description": "Prompts for discussing diet and nutrition.",
+      "sidenotes": [
+        "Use for healthy eating tips and dietary advice.",
+        "Includes meal planning and nutrition information."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-016",
+      "name": "Cooking",
+      "description": "Prompts for discussing cooking and recipes.",
+      "sidenotes": [
+        "Use for culinary tips and recipe suggestions.",
+        "Includes cooking techniques and meal ideas."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-017",
+      "name": "Travel",
+      "description": "Prompts for discussing travel and destinations.",
+      "sidenotes": [
+        "Use for travel tips and destination information.",
+        "Includes travel planning and recommendations."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-018",
+      "name": "Language Learning",
+      "description": "Prompts for language learning and practice.",
+      "sidenotes": [
+        "Use for practicing and learning new languages.",
+        "Includes vocabulary, grammar, and conversation practice."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-019",
+      "name": "History",
+      "description": "Prompts for discussing historical events and figures.",
+      "sidenotes": [
+        "Use for learning about history and historical figures.",
+        "Includes historical trivia and educational prompts."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-020",
+      "name": "Science",
+      "description": "Prompts for discussing scientific topics and discoveries.",
+      "sidenotes": [
+        "Use for science education and exploration.",
+        "Includes explanations of scientific concepts and discoveries."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-021",
+      "name": "Technology",
+      "description": "Prompts for discussing technology and innovations.",
+      "sidenotes": [
+        "Use for tech news and discussions.",
+        "Includes gadget reviews and tech tips."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-022",
+      "name": "Art",
+      "description": "Prompts for discussing art and creativity.",
+      "sidenotes": [
+        "Use for artistic inspiration and discussion.",
+        "Includes art history and creative prompts."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-023",
+      "name": "Music",
+      "description": "Prompts for discussing music and musicians.",
+      "sidenotes": [
+        "Use for music recommendations and discussions.",
+        "Includes genres, artists, and song suggestions."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-024",
+      "name": "Movies",
+      "description": "Prompts for discussing movies and films.",
+      "sidenotes": [
+        "Use for movie recommendations and reviews.",
+        "Includes genres, actors, and film trivia."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-025",
+      "name": "Books",
+      "description": "Prompts for discussing books and literature.",
+      "sidenotes": [
+        "Use for book recommendations and reviews.",
+        "Includes genres, authors, and literary analysis."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-026",
+      "name": "Fashion",
+      "description": "Prompts for discussing fashion and style.",
+      "sidenotes": [
+        "Use for fashion tips and trends.",
+        "Includes style advice and outfit ideas."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-027",
+      "name": "Beauty",
+      "description": "Prompts for discussing beauty and skincare.",
+      "sidenotes": [
+        "Use for beauty tips and product recommendations.",
+        "Includes skincare routines and makeup advice."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-028",
+      "name": "DIY",
+      "description": "Prompts for discussing do-it-yourself projects and crafts.",
+      "sidenotes": [
+        "Use for DIY project ideas and instructions.",
+        "Includes craft techniques and creative prompts."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-029",
+      "name": "Gardening",
+      "description": "Prompts for discussing gardening and plant care.",
+      "sidenotes": [
+        "Use for gardening tips and plant advice.",
+        "Includes garden planning and plant care instructions."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-030",
+      "name": "Pets",
+      "description": "Prompts for discussing pets and pet care.",
+      "sidenotes": [
+        "Use for pet care tips and advice.",
+        "Includes pet training and health information."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-031",
+      "name": "Parenting",
+      "description": "Prompts for discussing parenting and child care.",
+      "sidenotes": [
+        "Use for parenting tips and advice.",
+        "Includes child development and educational prompts."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-032",
+      "name": "Education",
+      "description": "Prompts for discussing educational topics and learning.",
+      "sidenotes": [
+        "Use for educational advice and information.",
+        "Includes study tips and learning resources."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-033",
+      "name": "Career",
+      "description": "Prompts for discussing career advice and job searching.",
+      "sidenotes": [
+        "Use for career tips and job search advice.",
+        "Includes resume tips and interview preparation."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-034",
+      "name": "Finance",
+      "description": "Prompts for discussing financial advice and money management.",
+      "sidenotes": [
+        "Use for financial tips and advice.",
+        "Includes budgeting and investment information."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-035",
+      "name": "Motivation",
+      "description": "Prompts for seeking motivation and inspiration.",
+      "sidenotes": [
+        "Use for motivational quotes and advice.",
+        "Includes goal-setting and productivity tips."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-036",
+      "name": "Mental Health",
+      "description": "Prompts for discussing mental health and well-being.",
+      "sidenotes": [
+        "Use for mental health tips and advice.",
+        "Includes self-care and stress management techniques."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-037",
+      "name": "Relationships",
+      "description": "Prompts for discussing relationships and social interactions.",
+      "sidenotes": [
+        "Use for relationship advice and tips.",
+        "Includes friendship and dating prompts."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-038",
+      "name": "Events",
+      "description": "Prompts for discussing upcoming events and planning.",
+      "sidenotes": [
+        "Use for event planning tips and ideas.",
+        "Includes event invitations and logistics."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-039",
+      "name": "Holidays",
+      "description": "Prompts for discussing holidays and celebrations.",
+      "sidenotes": [
+        "Use for holiday tips and traditions.",
+        "Includes holiday planning and celebration ideas."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-040",
+      "name": "Crafts",
+      "description": "Prompts for discussing crafting projects and techniques.",
+      "sidenotes": [
+        "Use for craft project ideas and instructions.",
+        "Includes crafting techniques and material recommendations."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-041",
+      "name": "Philosophy",
+      "description": "Prompts for discussing philosophical ideas and questions.",
+      "sidenotes": [
+        "Use for philosophical discussions and debates.",
+        "Includes ethical dilemmas and philosophical quotes."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-042",
+      "name": "Religion",
+      "description": "Prompts for discussing religious beliefs and practices.",
+      "sidenotes": [
+        "Use for religious discussions and information.",
+        "Includes religious quotes and practices."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-043",
+      "name": "Spirituality",
+      "description": "Prompts for discussing spirituality and personal growth.",
+      "sidenotes": [
+        "Use for spiritual tips and advice.",
+        "Includes meditation and mindfulness prompts."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-044",
+      "name": "Self-Improvement",
+      "description": "Prompts for discussing self-improvement and personal development.",
+      "sidenotes": [
+        "Use for self-improvement tips and advice.",
+        "Includes goal-setting and productivity techniques."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-045",
+      "name": "Environment",
+      "description": "Prompts for discussing environmental topics and sustainability.",
+      "sidenotes": [
+        "Use for environmental tips and advice.",
+        "Includes sustainability practices and conservation information."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-046",
+      "name": "Politics",
+      "description": "Prompts for discussing political topics and opinions.",
+      "sidenotes": [
+        "Use for political discussions and debates.",
+        "Includes political news and analysis."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-047",
+      "name": "Social Issues",
+      "description": "Prompts for discussing social issues and activism.",
+      "sidenotes": [
+        "Use for social issue discussions and information.",
+        "Includes activism tips and social justice topics."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-048",
+      "name": "Science Fiction",
+      "description": "Prompts for discussing science fiction topics and stories.",
+      "sidenotes": [
+        "Use for science fiction discussions and story ideas.",
+        "Includes sci-fi books, movies, and concepts."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-049",
+      "name": "Fantasy",
+      "description": "Prompts for discussing fantasy topics and stories.",
+      "sidenotes": [
+        "Use for fantasy discussions and story ideas.",
+        "Includes fantasy books, movies, and concepts."
+      ], 
+      "createdby": "[system:AI]"
+    },
+    {
+      "id": "cat-050",
+      "name": "Mystery",
+      "description": "Prompts for discussing mystery topics and stories.",
+      "sidenotes": [
+        "Use for mystery discussions and story ideas.",
+        "Includes mystery books, movies, and concepts."
+      ], 
+      "createdby": "[system:AI]"
+    }
+  ]
+}

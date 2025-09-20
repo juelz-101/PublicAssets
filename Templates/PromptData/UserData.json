@@ -1,0 +1,45 @@
+{
+    "prompt": {
+        "prompts": [],
+        "tags": [],
+        "categories": [],
+        "fields": [],
+        "usefors": [],
+        "favs": [],
+        "recent": [],
+        "settings": []
+    },
+    "characters": {
+        "base": [],
+        "chars": [],
+        "handlers": [],
+        "roles": [],
+        "rulebooks": [],
+        "toolbag": [],
+        "settings": []
+
+    },
+    "scenarios": [],
+    "worlds": [],
+    "rooms": [],
+
+    "userconfig": {
+        "currentcfg": "",
+        "cgfs": []
+    },
+    "settings": {
+        "profilemgr": {
+            "_comment": "This is just a template showing how it will be laid out in the app savedata",
+            "default": "Default",
+            "profiles": [
+                {
+                    "name": "Default",
+                    "canedit": false,
+                    "file": ""
+                }
+            ]
+        },
+        "recentOverlap": 20,
+        "wanddirectory": ""
+    }
+}

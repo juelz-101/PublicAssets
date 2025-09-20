@@ -1,0 +1,29 @@
+{
+	"meta": {
+        "type": "file", "name": "AI Types: Template", "name_finalized": true,
+        "desc": "Template to show how AITypes.json should be laid out.",
+		"file": { "platform": "", "root": "ZIKYinc_Data", "path": "PublicAssets/Templates/PromptData", "this_file": "AITypes.json" }, 
+        "creator": "Juelz-101", "organization": "ZIKYinc",
+        "started": "20/9/25", "version": "0.0.01", "edited": {"date": "", "time": "", "edited_by": "", "edit_number": 0, "changelog": [] },
+		"mgr": { "use": "true", "workspace": {"web": "", "file": "", "priority": "web", "has_internal_file": false },
+		"cfg": { "allow_autofill": "If Blank", "auto_version": "Minor Only", "edit_track": true, "auto_merging": false },
+		"ref": { "meta_layout": "FI_MTA1" },
+		"current_status": "Planning.", "complete": false
+    },
+	"ai_types": [
+		{
+			"type": "Chatbot",
+			"description": "AI systems designed for conversational interactions and customer support.",
+			"examplePrompt": "Tell me about the weather in New York today.",
+			"cfg": { "idGeneration": "chat-", "icon": "" },
+			"examples": [
+				{
+					"name": "ChatGPT",
+					"url": "https://chat.openai.com",
+					"platforms": ["web", "app"],
+					"pricing": ""
+				}
+			]
+		}
+	]
+}

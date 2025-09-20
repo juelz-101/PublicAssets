@@ -1,0 +1,69 @@
+[
+	"intro": "Contents of introduction page goes here",
+	"new_releases": [],
+	"devs": [
+		{
+			"artist": "Juelz-101",
+			"thumbnail": "/assets/images/photos/mum.avif",
+			"link": "/devs/juelz.html",
+			"genre": ["ue5", "fivem"],
+			"games": [
+				{"game": "Test", "link": "/games/lfl04.html"}
+			],
+			"featured": true
+		}
+	],
+	
+	"games": {
+		"ue5": [
+			{
+				"title": "Test",
+				"artist": "Juelz-101",
+				"description": "Description Goes Here.",
+				"thumbnail":  "/assets/images/albums/The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+				"link": "/gallery/test.html",
+				"genre": ["rap", "grime"],
+				"albums": [
+					{"album": "Brutalistening"}
+				],
+				"link": null,
+				"other_links": [],
+				"featured": true
+			}
+		],
+		"misc": [
+			{
+				"title": "Test",
+				"dev": "Juelz-101",
+				"description": "Description Goes Here.",
+				"thumbnail":  "/assets/images/albums/The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+				"link": "/games/misctest.html",
+				"genre": ["misc"],
+				"albums": [
+					{"album": "Brutalistening"}
+				],
+				"link": null,
+				"other_links": [],
+				"featured": true
+			}
+		]
+	},
+	"mods": {
+		"fivem": [
+			{
+				"title": "Test",
+				"dev": "Juelz-101",
+				"description": "Description Goes Here.",
+				"thumbnail":  "/assets/images/albums/The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+				"link": "/games/misctest.html",
+				"genre": ["misc"],
+				"albums": [
+					{"album": "Brutalistening"}
+				],
+				"link": null,
+				"other_links": [],
+				"featured": true
+			}
+		]
+	}
+]

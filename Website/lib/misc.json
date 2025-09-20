@@ -1,0 +1,79 @@
+[
+    {
+        "title": "The Silent Streets (of Swanscombe)",
+        "artist": "Juelz-101 ft Imperial-P",
+        "description": "There's a reason why Swanscombe is so quiet.",
+        "thumbnail": "/assets/images/albums/The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+        "link": "/songs/ssos.html",
+        "genre": ["rap", "grime"],
+        "albums": [
+            {"album": "Between the Concrete", "track": 5, "cd": 1}
+        ],
+        "soundcloud": "https://soundcloud.com/juelz-101/the-silent-streets-of-swanscombe",
+        "youtube": null,
+        "other_links": [],
+        "featured": true
+    },
+    {
+        "title": "The Take Over",
+        "artist": "Juelz-101 ft Imperial-P",
+        "description": "Taking over. RIP ZIKY.",
+        "thumbnail": "/assets/images/albums/TheTakeOver-ImperialP-Juelz-FM_Blockbusters-Juelz-101-RIP-ZIKY-ZIKYinc-Inc.jpeg",
+        "link": "/songs/takeov.html",
+        "genre": ["rap", "grime"],
+        "albums": [
+            {"album": "Between the Concrete", "track": 1, "cd": 1}
+        ],
+        "soundcloud": "https://soundcloud.com/juelz-101/the-takeover",
+        "youtube": null,
+        "other_links": [],
+        "featured": false
+    },
+    {
+        "title": "Dancing in the Sunlight",
+        "artist": "Juelz-101 ft Emma MT",
+        "description": "Part of the 'Brutalistening' album.",
+        "thumbnail": "/assets/images/albums/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
+        "link": "/songs/disl.html",
+        "genre": ["Drum and Bass"],
+        "albums": [
+            {"album": "Brutalistening", "track": 2, "cd": 1},
+            {"album": "Juelz-FM Live from London Volume '24", "track": 2, "cd": 1}
+        ],
+        "soundcloud": "https://soundcloud.com/juelz-101/dancing-in-the-sunlight-ft-emma-mt",
+        "youtube": "https://www.youtube.com/watch?v=24mGoAPCVzo&list=PL9XZUncvkEMAWoQ9ZdL3VhZuOTVFeJPUx",
+        "other_links": [],
+        "featured": true
+    },
+    {
+        "title": "Summer Nights",
+        "artist": "Juelz-101 ft Kyles Mum From The School Gates",
+        "description": "Lovin' the summer vibes this year.",
+        "thumbnail": "assets/images/albums/Juelz-101-Summer-Nights-Kyles-Mum-From-The-School-Gates-RIP-Ziky-ZIKYinc-Inc.jpg",
+        "link": "/songs/sumn.html",
+        "genre": ["R&B"],
+        "albums": [
+            {"album": "Between the Concrete", "track": 6, "cd": 1},
+            {"album": "Aint Much But Its Home", "track": 3, "cd": 1}
+        ],
+        "soundcloud": "https://soundcloud.com/juelz-101/summer-nights",
+        "youtube": null,
+        "other_links": [],
+        "featured": true
+    },
+    {
+        "title": "Together",
+        "artist": "Juelz-101 ft Kyles Mum From The School Gates",
+        "description": "Funky beat.",
+        "thumbnail": "/assets/images/albums/Juelz-101-Kyles-Mum-From-The-School-Gates-Together-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+		"link":"/songs/togr.html",
+		"genre":["R&B"],
+		"albums":[
+			{"album":"Between the Concrete","track":"10","cd":"1"},
+			{"album":"Aint Much But Its Home","track":"4","cd":"1"}
+		],
+		"soundcloud":"https://soundcloud.com/juelz-101/together",
+		"youtube":"null",
+		"other_links":[]
+    }
+]

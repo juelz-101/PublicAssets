@@ -46,5 +46,35 @@
     "ext": "json",
     "path": "root.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/root.json"
+  },
+  {
+    "name": "Website_lib.json",
+    "ext": "json",
+    "path": "Website_lib.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib.json"
+  },
+  {
+    "name": "Website_img_misc.json",
+    "ext": "json",
+    "path": "Website_img_misc.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_misc.json"
+  },
+  {
+    "name": "Website_img_photos.json",
+    "ext": "json",
+    "path": "Website_img_photos.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_photos.json"
+  },
+  {
+    "name": "Website_img_photos_emma.json",
+    "ext": "json",
+    "path": "Website_img_photos_emma.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_photos_emma.json"
+  },
+  {
+    "name": "Website_img_zikyinc.json",
+    "ext": "json",
+    "path": "Website_img_zikyinc.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_zikyinc.json"
   }
 ]

@@ -1,0 +1,73 @@
+{
+	"d_chars": {
+		"personalities": [],
+		"bases": [],
+		"roles": [],
+		"rulebooks": [],
+		"handlers": {
+			"description": "Handlers are applied to make the AI aware of any tools, websites or anything else that will be using it's generated responses and ensure that it follows any related instructions.",
+			"custom": [
+				{
+					"title": "Image AI",
+					"description": "This is applied if you want to use a Image Generator.",
+					"variables": [
+						{
+							"name": "IMG AI of choice",
+							"ref": "HV-01",
+							"answer_type": "Choose+",
+							"default": "Bing",
+							"suggestions": [
+								{ "name": "Any" },
+								{ "name": "Bing" },
+								{ "name": "stable_diffusion" },
+								{ "name": "dall-E" }
+							],
+							"outputs": {
+								"setup_prompts": [{"out": "Responses generated will be given to [answer]."}],
+								"if_instructions": [{"out": "Please listen closely to the following instructions."}, {"out": "The following instructions apply: "}]
+
+							}
+						}
+					],
+					"instructions": [
+						{
+							"prompt": "^^MXC^^[f1:597]",
+							"applies_to": "Bing"
+						}
+					]
+				}
+			],
+			"presets": [
+				{
+					"title": "MX_CHARS",
+					"id": "MXC,",
+					"description": "State how many character inputs allowed to the AI.",
+					"prompt": "The max text characters that can be given is [f1], so dont go above this.",
+					"fields": [
+						{
+							"name": "f1",
+							"answer_type": "free",
+							"input_required": "int",
+							"default": "587"
+						}
+					]
+
+				}
+			],
+			"preset_caller": {
+				"method": "ID Inside",
+				"initial_chars": "^^",
+				"closed_chars": "^^",
+				"methods": [
+					"ID Inside",
+					"ID As END"
+				],
+				"description": "Presets can be called by calling the initial chars followed by the PresetID. 'Closed_chars' only applies if 'ID Inside' is selected. Once closed you can anser the fields by using [FIELDNAME:TheAnswer] or 'F' followed by field number (eg: [f1:TheAnswer]). NOTE: Code logic will be applied to differenciate between preset names and numbers, although they are likely to be the same."
+			},
+			"tags": [],
+			"categories": []
+		},
+		"toolbag": [],
+		"settings": {}
+	}
+}

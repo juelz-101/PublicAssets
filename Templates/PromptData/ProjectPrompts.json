@@ -1,0 +1,154 @@
+{
+	"meta_info": {},
+	"dev_ref": {
+		"info": [
+			"Ok so plan is, basically to atleast document the tags and how we plan to get this working here, and also upda... Wait nah you aint gonna update the json lol.",
+			"Firstly, cant be bothered to deal with setting the scope, so if no scope is used, then the scope is the root of our current location (ie: PowerPromt)",
+			"Oh and we need to sort the naming of different types of prompts out as we go.",
+			"SO DEFINE THEM HERE!!!!",
+			"Prompt Types:",
+				"Flat Prompts: Box standard, single variation prompts - | Type: Flat | - Additionally Flat Prompts can be added to dynamic prompts in a seperate key (flat: [] - referencing flat1, flat2, etc), reasoning being for easy usage when only having access to the json files.",
+				"Base Prompts: The foundational prompts that allow for variations to be added are added. - | Type: Base | - There will be 2 types of base prompts, we will have 'v1' (just a codename, we'll sort the name out later) and 'v2', as I would like to enhance and streamline the current base-prompt layout, but we already have so many default prompts made using the old layout, so we'll just add both systems.",
+				"Adders: Prompts intended to attach onto main prompts to give additional information or instructions.", 
+				"Guide: A variable paired with instructions on how to adjust results accordingly and when the value should change",
+				
+			"Field Structuring:",
+				"Fields: These refer to the variations that can be added to prompts, this is a loose term but can sometimes refer to the user-input areas and components within the UI. - | Type: Field | - Loosely refers to any customizable/interchangable part of a prompt, that hasnt been assigned a seperate name.",
+				"Field Callers: These are used within the prompts string to tell the system that a variation is used. - |   | - Loosely refers to any customizable/interchangable part of a prompt, that hasnt been assigned a seperate name.",
+				"Field Options: The choices that the field allows. - | fields[].options[] | - Many types and systems will be added for retrieving data, locking fields to certain types, or .",
+				"Local Fields: Local fields are fields that are defined within the prompt. - | prompts[].fields[] | - Note: We will add functions to easily extract local fields from prompts and add them as data fields",
+				"Data Fields: Fields that are set to external arrays of data. Can reference the array in the prompt or use the dedicated key for more control - | data: []/[data] or reference  | - ",
+				"Data Pools: Array of items with identical keys that are added as fields to allow modular results depending on the values of the items keys",
+			
+			"Prompt Calling:",
+				"Hard Grab: Referring to copying a prompt that has its fields defined already.",
+				"Soft Grab: Referring to copying/retrieving a prompt with no fields set yet.",
+				"Lucky Dip: Quick option to call prompt with all field set to randomized results.",
+			
+			"Work spaces:",
+				"Prompt Library: The main space for browsing, managing, searching and filtering prompts",
+				"Prompt Builder: The area where prompts are created, users can set the type and each type will have its own set of options and parameters based on what the type does.",
+				"Character Builder: Area for building AI Characters",
+				"Scene Builder: Area for creating RP scenes for AI Characters.",
+				"World Builder: Area for creating the top-level details for scenes to be played out in",
+				"Stations: Saved sets of hard/soft prompts that can easily be accessed.",
+				"Vaults: Like stations but allow for far more flexability and integration from data from all areas of the app.",
+				"Floors: Floors act as sub-Sections to Vaults, allowing data to be grouped for all manner of purposes.",
+				"Cabinets: Cabinets are the final sub-section within vaults, this is where the actual data will be stored.",
+				"Flows: Add prompts to an array and cycle through them in a sequence. Will include different triggers to tell it when to copy the next prompt.", 
+			
+			"AI Characters:",
+				"Setup: ",
+				": ",
+			
+			"Cant remember:",
+				"Jotters: ", 
+				"Temple: ",
+		]
+	},
+	"data": {
+		"prompt": {
+			"prompts": [
+				{
+				  "id": "ZKY-001", "name": "ZIKY: Create Module-Guide for Library",
+				  "prompt": "Ok so next can we get a well presented, well documented [field] document for our library that fully explains. Be as descriptive as possible, give multiple usage examples, and include things like pages, a contents and index, and other techniques to make it look professional and clean.",
+				  "desc": "Get AI to fully explain the module created in a professional way and store it as a document.",
+				  "type": "Base", "cat": "Documentation", "tags": ["Docs", "Register", "Project Management"],
+				  "how": "Once "
+				  "fields": [
+					{
+					  "id": "01",
+					  "name": "Doc type",
+					  "description": "Type of doc you want AI to make.",
+					  "category": "", "tags": [], "types": ["string"],
+					  "defaults": [],
+					  "isStrict": false,
+					  "values": [],
+					  "isStrictValues": false,
+					  "defaultValue": "friend",
+					  "userNotes": [
+						"[system]: Tailor the motivational quote to specific roles or names."
+					  ]
+					}
+				  ],
+				  "flat": [
+					  "Ok so next can we get a well presented, well documented Markdown document for our library that fully explains our module. Be as descriptive as possible, give multiple usage examples, and include things like pages, a contents and index, and other techniques to make it look professional and clean.",
+				  ],
+				  "meta": {},
+				  "notes": [
+					"[system]: Useful for daily check-ins and positive reinforcement."
+				  ],
+				  "yourNotes": [],
+				  "hidden": false
+				}
+			],
+			"tags": [],
+			"categories": [],
+			"fields": [],
+			"usefors": [],
+			"favs": [],
+			"recent": [],
+			"settings": []
+		},
+		"characters": {
+			"base": [],
+			"chars": [],
+			"handlers": [],
+			"roles": [],
+			"rulebooks": [],
+			"toolbag": [],
+			"settings": []
+
+		},
+		"scenarios": [],
+		"worlds": [],
+		"vaults": [
+			{
+				"name": "App Project Prompts", "id": "vau_zik_data",
+				"desc": "Prompts used to give to AI to assist with the ZIKYinc Data project and Project builder.",
+				"levels": [
+					{
+						"id": "G", "name": "G Flr: Base", "num": 0,
+						"desc": "Base Prompts and setups",
+						"sections": [
+							{	
+								"id": "Reg", "name": "Register Handling Prompts",
+								"desc": "Prompts to instruct AI to add to the project registers",
+								"prompts": [
+									{
+									  "id": "JFM-001", "name": "First Prompt",
+									  "prompt": "Generate subtle, comedic melody-driven background music designed for modern apps and games, featuring skillful DJ-style mixing and seamless blending of different tracks every two minutes. The music should draw from popular, upbeat UK genres such as hip-hop, drill, drum and bass, trap, dubstep, UK garage, trance, house, bassline, dancehall, and reggae. Avoid full singing or rapping, but incorporate vocal effects, DJ drops, radio speech snippets, and occasional short vocal samples to add character. The setting is 'Joolz-FM 101.1,' a fictional UK pirate radio station broadcasting from a London tower block. Periodically include retro-style UK pirate radio ads (inspired by classic Force FM spots), and sprinkle in comedic GTA-style radio events-like fake caller segments, competitions, or over-the-top news headlines-to create an immersive, authentic pirate radio vibe..",
+									  "desc": ".",
+									  "cat": "Music", "tags": [],
+									  "fields": [
+										{
+										  "id": "field-001",
+										  "name": "User Role",
+										  "description": "The role or name of the user to tailor the motivational quote.",
+										  "category": "", "tags": [], "types": ["string"],
+										  "defaults": [],
+										  "isStrict": false,
+										  "values": [],
+										  "isStrictValues": false,
+										  "defaultValue": "friend",
+										  "userNotes": [
+											"[system]: Tailor the motivational quote to specific roles or names."
+										  ]
+										}
+									  ],
+									  "meta": {},
+									  "notes": [
+										"[system]: Useful for daily check-ins and positive reinforcement."
+									  ],
+									  "yourNotes": [],
+									  "hidden": false
+									},
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

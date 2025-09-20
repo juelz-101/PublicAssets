@@ -1,0 +1,189 @@
+{
+	"meta": {
+		"type": "file", "name": "ProjectExample: Example", "name_finalized": true,
+		"desc": "Example of how a PowerPrompt project save file will look.",
+		"file": { "platform": "", "root": "ZIKYinc_Data", "path": "PublicAssets/Templates/PromptData", "this_file": "projectExample.json" }, 
+		"creator": "Juelz-101", "organization": "ZIKYinc",
+		"started": "20/9/25", "version": "0.0.01", "edited": {"date": "", "time": "", "edited_by": "", "edit_number": 0, "changelog": [] },
+		"mgr": { "use": "true", "workspace": {"web": "", "file": "", "priority": "web", "has_internal_file": false },
+		"cfg": { "allow_autofill": "If Blank", "auto_version": "Minor Only", "edit_track": true, "auto_merging": false },
+		"ref": { "meta_layout": "FI_MTA1" },
+		"current_status": "Planning.", "complete": false
+	},
+	"dev_ref": {
+		"info": [
+			"This section documents the schema and conventions for the PowerPrompt app.",
+			"## Prompt Types",
+			"- **Flat Prompts:** Single-variation prompts. Can be used standalone or referenced by dynamic prompts.",
+			"- **Base Prompts:** Foundational prompts that can include field variations.",
+			"- **Adders:** Prompts designed to attach onto main prompts for additional info or instructions.",
+			"- **Guide:** A variable paired with instructions for adjusting results.",
+			"- **Variants:** Different versions of the same prompt.",
+			"## Fields & Data Structuring",
+			"- **Fields:** Customizable/interchangeable parts of a prompt, often corresponding to UI input areas.",
+			"- **Field Callers:** Tags used within a prompt's string to reference a field.",
+			"- **Local Fields:** Fields defined within a specific prompt.",
+			"- **Data Fields:** Fields that reference external data arrays.",
+			"- **Data Pools:** Arrays of items with identical keys, used to create modular fields.",
+			"- **Palettes:** Field data for categorizing and defining similar fields.",
+			"## Text-Level Navigation (Tags)",
+			"Tags are used at a text level to direct the app to data within the database. The structure is `[<scope>.<section>.<type>.<id>.<additional_nav>]`",
+			"1.  **Scope:** Database to use.",
+			"    - `u`: User's IndexedDB.",
+			"    - `d`: Default database.",
+			"    - `w`: Web database.",
+			"    - `i`: Current imported file.",
+			"2.  **Section:** Area of the app to get data from.",
+			"    - `p`: Prompts.",
+			"    - `c`: Characters.",
+			"    - `s`: Scenes.",
+			"    - `w`: Worlds.",
+			"    - `v`: Vaults.",
+			"3.  **Type:** Type of data to get, followed by the item's ID.",
+			"    - **Prompts:** `pr` (Prompt), `df` (Data Field), `dp` (Data Pool), `ad` (Adder), `pal` (Palette).",
+			"4.  **Additional Navigation (Optional):**",
+			"    - `var`: Item variant.",
+			"    - `lf`: An item's local fields.",
+			"## Example Field Callers",
+			"- **Data Pool:** `[i.p.dp.dp-001]` (refers to Data Pool with ID 'dp-001' in the imported file's prompt section)."
+		]
+	},
+	"data": {
+		"prompt": {
+			"prompts": [
+				{
+				  "id": "ZKY-001", "name": "ZIKY: Create Module-Guide for Library",
+				  "prompt": "Ok so next can we get a well presented, well documented [field] document for our library that fully explains. Be as descriptive as possible, give multiple usage examples, and include things like pages, a contents and index, and other techniques to make it look professional and clean.",
+				  "desc": "Get AI to fully explain the module created in a professional way and store it as a document.",
+				  "type": "Base", "cat": "Documentation", "tags": ["Docs", "Register", "Project Management"],
+				  "how": "Once "
+				  "fields": [
+					{
+					  "id": "01",
+					  "name": "Doc type",
+					  "description": "Type of doc you want AI to make.",
+					  "category": "", "tags": [], "types": ["string"],
+					  "defaults": [],
+					  "isStrict": false,
+					  "values": [],
+					  "isStrictValues": false,
+					  "defaultValue": "friend",
+					  "userNotes": [
+						"[system]: Tailor the motivational quote to specific roles or names."
+					  ]
+					}
+				  ],
+				  "flat": [
+					  "Ok so next can we get a well presented, well documented Markdown document for our library that fully explains our module. Be as descriptive as possible, give multiple usage examples, and include things like pages, a contents and index, and other techniques to make it look professional and clean.",
+				  ],
+				  "meta": {},
+				  "notes": [
+					"[system]: Useful for daily check-ins and positive reinforcement."
+				  ],
+				  "yourNotes": [],
+				  "hidden": false
+				}
+			],
+			"tags": [
+				{
+				  "id": "",
+				  "name": "Machine Learning",
+				  "description": "Related to machine learning techniques and topics.",
+				  "sidenotes": [
+					"[SYSTEM]: Used for discussing algorithms and models.",
+					"[SYSTEM]: Includes supervised and unsupervised learning."
+				  ], 
+				  "createdby" : "Juelz"
+				},
+			],
+			"categories": [
+				{
+				  "id": "cat-001",
+				  "name": "Chatbot",
+				  "description": "General prompts for interacting with a chatbot.",
+				  "sidenotes": [
+					"Use for general chatbot inquiries.",
+					"Includes a wide range of topics."
+				  ], 
+				  "createdby": "[system:AI]"
+				},
+			],
+			"fields": [],
+			"pools": []
+			"adders": [],
+			"palettes": [],
+			"favs": [],
+			"recent": [],
+			"settings": []
+		},
+		"characters": {
+			"base": [],
+			"chars": [],
+			"handlers": [],
+			"roles": [],
+			"rulebooks": [],
+			"toolbag": [],
+			"settings": []
+
+		},
+		"scenarios": [],
+		"worlds": [],
+		"stations": [
+			{
+				"name": "App Project Prompts", "id": "vau_zik_data",
+				"desc": "Prompts used to give to AI to assist with the ZIKYinc Data project and Project builder.",
+				"prompts": [
+					
+				]
+			}
+		],
+		"vaults": [
+			{
+				"name": "App Project Prompts", "id": "vau_zik_data",
+				"desc": "Prompts used to give to AI to assist with the ZIKYinc Data project and Project builder.",
+				"floors": [
+					{
+						"id": "G", "name": "G Flr: Base", "num": 0,
+						"desc": "Base Prompts and setups",
+						"sections": [
+							{	
+								"id": "Reg", "name": "Register Handling Prompts",
+								"desc": "Prompts to instruct AI to add to the project registers",
+								"prompts": [
+									{
+									  "id": "JFM-001", "name": "First Prompt",
+									  "prompt": "Generate subtle, comedic melody-driven background music designed for modern apps and games, featuring skillful DJ-style mixing and seamless blending of different tracks every two minutes. The music should draw from popular, upbeat UK genres such as hip-hop, drill, drum and bass, trap, dubstep, UK garage, trance, house, bassline, dancehall, and reggae. Avoid full singing or rapping, but incorporate vocal effects, DJ drops, radio speech snippets, and occasional short vocal samples to add character. The setting is 'Joolz-FM 101.1,' a fictional UK pirate radio station broadcasting from a London tower block. Periodically include retro-style UK pirate radio ads (inspired by classic Force FM spots), and sprinkle in comedic GTA-style radio events-like fake caller segments, competitions, or over-the-top news headlines-to create an immersive, authentic pirate radio vibe..",
+									  "desc": ".",
+									  "cat": "Music", "tags": [],
+									  "fields": [
+										{
+										  "id": "field-001",
+										  "name": "User Role",
+										  "description": "The role or name of the user to tailor the motivational quote.",
+										  "category": "", "tags": [], "types": ["string"],
+										  "defaults": [],
+										  "isStrict": false,
+										  "values": [],
+										  "isStrictValues": false,
+										  "defaultValue": "friend",
+										  "userNotes": [
+											"[system]: Tailor the motivational quote to specific roles or names."
+										  ]
+										}
+									  ],
+									  "meta": {},
+									  "notes": [
+										"[system]: Useful for daily check-ins and positive reinforcement."
+									  ],
+									  "yourNotes": [],
+									  "hidden": false
+									},
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

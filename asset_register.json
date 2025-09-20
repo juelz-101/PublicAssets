@@ -47,6 +47,36 @@
       "ext": "json",
       "path": "root.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/root.json"
+    },
+    {
+      "name": "Website_lib.json",
+      "ext": "json",
+      "path": "Website_lib.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib.json"
+    },
+    {
+      "name": "Website_img_misc.json",
+      "ext": "json",
+      "path": "Website_img_misc.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_misc.json"
+    },
+    {
+      "name": "Website_img_photos.json",
+      "ext": "json",
+      "path": "Website_img_photos.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_photos.json"
+    },
+    {
+      "name": "Website_img_photos_emma.json",
+      "ext": "json",
+      "path": "Website_img_photos_emma.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_photos_emma.json"
+    },
+    {
+      "name": "Website_img_zikyinc.json",
+      "ext": "json",
+      "path": "Website_img_zikyinc.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_zikyinc.json"
     }
   ],
   "Images": [],
@@ -254,6 +284,338 @@
       "ext": "json",
       "path": "Website/lib/music.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music.json"
+    },
+    {
+      "name": "misc.json",
+      "ext": "json",
+      "path": "Website/lib/misc.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/misc.json"
+    },
+    {
+      "name": "apps.json",
+      "ext": "json",
+      "path": "Website/lib/apps.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/apps.json"
+    },
+    {
+      "name": "art.json",
+      "ext": "json",
+      "path": "Website/lib/art.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/art.json"
+    },
+    {
+      "name": "cur_projects.json",
+      "ext": "json",
+      "path": "Website/lib/cur_projects.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/cur_projects.json"
+    },
+    {
+      "name": "gaming.json",
+      "ext": "json",
+      "path": "Website/lib/gaming.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/gaming.json"
+    },
+    {
+      "name": "webdata.json",
+      "ext": "json",
+      "path": "Website/lib/webdata.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/webdata.json"
+    },
+    {
+      "name": "home.json",
+      "ext": "json",
+      "path": "Website/lib/home.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/home.json"
+    }
+  ],
+  "Website/lib/html": [],
+  "Website/lib/html/apps": [
+    {
+      "name": "test.html",
+      "ext": "html",
+      "path": "Website/lib/html/apps/test.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/apps/test.html"
+    }
+  ],
+  "Website/lib/html/gallery": [
+    {
+      "name": "test.html",
+      "ext": "html",
+      "path": "Website/lib/html/gallery/test.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/gallery/test.html"
+    }
+  ],
+  "Website/lib/html/games": [
+    {
+      "name": "test.html",
+      "ext": "html",
+      "path": "Website/lib/html/games/test.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/games/test.html"
+    }
+  ],
+  "Website/lib/html/music": [],
+  "Website/lib/html/music/albums": [
+    {
+      "name": "ftbt.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/albums/ftbt.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/ftbt.html"
+    },
+    {
+      "name": "hith.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/albums/hith.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/hith.html"
+    },
+    {
+      "name": "lfl04.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/albums/lfl04.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/lfl04.html"
+    },
+    {
+      "name": "lfl24.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/albums/lfl24.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/lfl24.html"
+    },
+    {
+      "name": "ofrv.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/albums/ofrv.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/ofrv.html"
+    },
+    {
+      "name": "totb.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/albums/totb.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/totb.html"
+    },
+    {
+      "name": "www.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/albums/www.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/www.html"
+    },
+    {
+      "name": "brut.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/albums/brut.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/brut.html"
+    },
+    {
+      "name": "btwn.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/albums/btwn.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/btwn.html"
+    },
+    {
+      "name": "final.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/albums/final.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/final.html"
+    }
+  ],
+  "Website/lib/html/music/artists": [
+    {
+      "name": "imp.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/imp.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/imp.html"
+    },
+    {
+      "name": "gekk.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/gekk.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/gekk.html"
+    },
+    {
+      "name": "kenf.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/kenf.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/kenf.html"
+    },
+    {
+      "name": "face.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/face.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/face.html"
+    },
+    {
+      "name": "esta.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/esta.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/esta.html"
+    },
+    {
+      "name": "jevh.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/jevh.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/jevh.html"
+    },
+    {
+      "name": "tina.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/tina.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/tina.html"
+    },
+    {
+      "name": "mick.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/mick.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/mick.html"
+    },
+    {
+      "name": "hotc.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/hotc.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/hotc.html"
+    },
+    {
+      "name": "alic.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/alic.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/alic.html"
+    },
+    {
+      "name": "emil.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/emil.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/emil.html"
+    },
+    {
+      "name": "plam.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/plam.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/plam.html"
+    },
+    {
+      "name": "mark.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/mark.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/mark.html"
+    },
+    {
+      "name": "synt.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/synt.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/synt.html"
+    },
+    {
+      "name": "kevh.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/kevh.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/kevh.html"
+    },
+    {
+      "name": "kylm.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/kylm.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/kylm.html"
+    },
+    {
+      "name": "meld.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/meld.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/meld.html"
+    },
+    {
+      "name": "juelz.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/juelz.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/juelz.html"
+    },
+    {
+      "name": "cams.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/cams.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/cams.html"
+    },
+    {
+      "name": "kris.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/kris.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/kris.html"
+    },
+    {
+      "name": "kurv.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/kurv.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/kurv.html"
+    },
+    {
+      "name": "miss.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/miss.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/miss.html"
+    },
+    {
+      "name": "vect.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/vect.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/vect.html"
+    },
+    {
+      "name": "mayc.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/mayc.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/mayc.html"
+    },
+    {
+      "name": "teec.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/teec.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/teec.html"
+    },
+    {
+      "name": "egbx.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/egbx.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/egbx.html"
+    },
+    {
+      "name": "jayc.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/jayc.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/jayc.html"
+    },
+    {
+      "name": "emma.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/artists/emma.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/emma.html"
+    }
+  ],
+  "Website/lib/html/music/songs": [
+    {
+      "name": "disl.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/songs/disl.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/songs/disl.html"
+    },
+    {
+      "name": "takeov.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/songs/takeov.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/songs/takeov.html"
+    },
+    {
+      "name": "placeholder.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/songs/placeholder.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/songs/placeholder.html"
+    },
+    {
+      "name": "sumn.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/songs/sumn.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/songs/sumn.html"
+    },
+    {
+      "name": "ssos.html",
+      "ext": "html",
+      "path": "Website/lib/html/music/songs/ssos.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/songs/ssos.html"
     }
   ],
   "Website/img": [],
@@ -593,222 +955,432 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-7.jpg"
     }
   ],
-  "Website/img/zikyinc": [
+  "Website/img/logos": [
+    {
+      "name": "ZIKYinc_DevLogo.png",
+      "ext": "png",
+      "path": "Website/img/logos/ZIKYinc_DevLogo.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/logos/ZIKYinc_DevLogo.png"
+    },
+    {
+      "name": "Juelz-FM-Logo2.png",
+      "ext": "png",
+      "path": "Website/img/logos/Juelz-FM-Logo2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/logos/Juelz-FM-Logo2.png"
+    },
+    {
+      "name": "ZIKYinc-Music-Logo-Dark.png",
+      "ext": "png",
+      "path": "Website/img/logos/ZIKYinc-Music-Logo-Dark.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/logos/ZIKYinc-Music-Logo-Dark.png"
+    },
+    {
+      "name": "ZIKYinc-Music-Logo-Light.png",
+      "ext": "png",
+      "path": "Website/img/logos/ZIKYinc-Music-Logo-Light.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/logos/ZIKYinc-Music-Logo-Light.png"
+    },
+    {
+      "name": "Juelz-FM-Logo.png",
+      "ext": "png",
+      "path": "Website/img/logos/Juelz-FM-Logo.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/logos/Juelz-FM-Logo.png"
+    },
+    {
+      "name": "ZIKYinc_Art-Logo.png",
+      "ext": "png",
+      "path": "Website/img/logos/ZIKYinc_Art-Logo.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/logos/ZIKYinc_Art-Logo.png"
+    }
+  ],
+  "Website/img/bg": [],
+  "Website/img/bg/zikyinc": [
     {
       "name": "Ziky-Poly-3.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/Ziky-Poly-3.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/Ziky-Poly-3.jpeg"
+      "path": "Website/img/bg/zikyinc/Ziky-Poly-3.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/Ziky-Poly-3.jpeg"
     },
     {
       "name": "ZIKYinc-Poly-2.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-Poly-2.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Poly-2.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Poly-2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Poly-2.jpeg"
     },
     {
       "name": "ZIKYinc-Skull.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-Skull.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Skull.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Skull.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Skull.jpeg"
     },
     {
       "name": "ZIKYinc-Poly-1.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-Poly-1.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Poly-1.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Poly-1.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Poly-1.jpeg"
     },
     {
       "name": "ZIKYinc-Wall.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-Wall.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Wall.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Wall.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Wall.jpeg"
     },
     {
       "name": "ZIKYinc-Block.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-Block.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Block.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Block.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Block.jpeg"
     },
     {
       "name": "ZikyGirlRain.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZikyGirlRain.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZikyGirlRain.jpeg"
+      "path": "Website/img/bg/zikyinc/ZikyGirlRain.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZikyGirlRain.jpeg"
     },
     {
       "name": "ZIKYinc-Girl-Rain.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-Girl-Rain.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Girl-Rain.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Girl-Rain.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Girl-Rain.jpeg"
     },
     {
       "name": "ZIKYinc-Girl-Graffiti.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-Girl-Graffiti.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Girl-Graffiti.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Girl-Graffiti.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Girl-Graffiti.jpeg"
     },
     {
       "name": "ZIKYinc-Girl-Graffiti-2.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-Girl-Graffiti-2.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Girl-Graffiti-2.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Girl-Graffiti-2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Girl-Graffiti-2.jpeg"
     },
     {
       "name": "ZIKYinc-Graffiti-Blue-1.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Graffiti-Blue-1.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Graffiti-Blue-1.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Graffiti-Blue-1.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Graffiti-Blue-1.png"
     },
     {
       "name": "ZIKYinc-Graffiti-Blue-2.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Graffiti-Blue-2.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Graffiti-Blue-2.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Graffiti-Blue-2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Graffiti-Blue-2.png"
     },
     {
       "name": "ZIKYinc-Graffiti-Blue-4.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Graffiti-Blue-4.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Graffiti-Blue-4.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Graffiti-Blue-4.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Graffiti-Blue-4.png"
     },
     {
       "name": "ZIKYinc-Graffiti-Blue-3.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Graffiti-Blue-3.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Graffiti-Blue-3.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Graffiti-Blue-3.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Graffiti-Blue-3.png"
     },
     {
       "name": "ZIKYinc_Dog2.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc_Dog2.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc_Dog2.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc_Dog2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc_Dog2.png"
     },
     {
       "name": "ZIKYinc_Dog3.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc_Dog3.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc_Dog3.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc_Dog3.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc_Dog3.png"
     },
     {
       "name": "ZIKYinc_Dog.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc_Dog.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc_Dog.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc_Dog.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc_Dog.png"
     },
     {
       "name": "ZIKYinc_Dog4.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc_Dog4.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc_Dog4.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc_Dog4.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc_Dog4.png"
     },
     {
       "name": "ZIKYinc-WildStyle-BG1.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-WildStyle-BG1.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-WildStyle-BG1.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-WildStyle-BG1.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-WildStyle-BG1.jpeg"
     },
     {
       "name": "ZIKYinc-WildStyle-BG2.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-WildStyle-BG2.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-WildStyle-BG2.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-WildStyle-BG2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-WildStyle-BG2.jpeg"
     },
     {
       "name": "ZIKYinc-Dog5.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-Dog5.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Dog5.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Dog5.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Dog5.jpeg"
     },
     {
       "name": "ZIKYinc-Dog6.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Dog6.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Dog6.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Dog6.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Dog6.png"
     },
     {
       "name": "ZIKYinc-Water-1.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Water-1.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Water-1.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Water-1.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Water-1.png"
     },
     {
       "name": "ZIKYinc-Water-2.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Water-2.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Water-2.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Water-2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Water-2.png"
     },
     {
       "name": "ZIKYinc-Water-3.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Water-3.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Water-3.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Water-3.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Water-3.png"
     },
     {
       "name": "ZIKYinc-Paint-1.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Paint-1.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Paint-1.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Paint-1.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Paint-1.png"
     },
     {
       "name": "ZIKYinc-Paint-3.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Paint-3.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Paint-3.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Paint-3.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Paint-3.png"
     },
     {
       "name": "ZIKYinc-Paint-4.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Paint-4.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Paint-4.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Paint-4.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Paint-4.png"
     },
     {
       "name": "ZIKYinc-Paint-5.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-Paint-5.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Paint-5.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Paint-5.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Paint-5.png"
     },
     {
       "name": "ZIKYinc-King-3.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-King-3.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-King-3.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-King-3.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-King-3.png"
     },
     {
       "name": "ZIKYinc-King-2.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-King-2.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-King-2.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-King-2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-King-2.png"
     },
     {
       "name": "ZIKYinc-King-1.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-King-1.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-King-1.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-King-1.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-King-1.png"
     },
     {
       "name": "ZIKYinc-King-4.png",
       "ext": "png",
-      "path": "Website/img/zikyinc/ZIKYinc-King-4.png",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-King-4.png"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-King-4.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-King-4.png"
     },
     {
       "name": "ZIKYinc-DragRace-Angel.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-DragRace-Angel.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-DragRace-Angel.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-DragRace-Angel.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-DragRace-Angel.jpeg"
     },
     {
       "name": "ZIKYinc-DragRace-Girl-2.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-DragRace-Girl-2.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-DragRace-Girl-2.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-DragRace-Girl-2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-DragRace-Girl-2.jpeg"
     },
     {
       "name": "ZIKYinc-Elephunk2.jpeg",
       "ext": "jpeg",
-      "path": "Website/img/zikyinc/ZIKYinc-Elephunk2.jpeg",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/zikyinc/ZIKYinc-Elephunk2.jpeg"
+      "path": "Website/img/bg/zikyinc/ZIKYinc-Elephunk2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/zikyinc/ZIKYinc-Elephunk2.jpeg"
     }
-  ]
+  ],
+  "Website/img/bg/art": [
+    {
+      "name": "f36fb9e60c30497cb4269c1fa8de42d8.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/bg/art/f36fb9e60c30497cb4269c1fa8de42d8.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/art/f36fb9e60c30497cb4269c1fa8de42d8.jpeg"
+    }
+  ],
+  "Website/img/bg/jfm": [
+    {
+      "name": "2b07b5bdadd54beb847930ab21952ade.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/bg/jfm/2b07b5bdadd54beb847930ab21952ade.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/jfm/2b07b5bdadd54beb847930ab21952ade.jpeg"
+    }
+  ],
+  "Website/img/bg/dev": [
+    {
+      "name": "Draw5.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/bg/dev/Draw5.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/dev/Draw5.jpeg"
+    }
+  ],
+  "Website/img/bg/focused": [],
+  "Website/img/bg/focused/j101": [
+    {
+      "name": "Whisk_3effbbf126.jpg",
+      "ext": "jpg",
+      "path": "Website/img/bg/focused/j101/Whisk_3effbbf126.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/focused/j101/Whisk_3effbbf126.jpg"
+    },
+    {
+      "name": "Whisk_52f680812f.jpg",
+      "ext": "jpg",
+      "path": "Website/img/bg/focused/j101/Whisk_52f680812f.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/focused/j101/Whisk_52f680812f.jpg"
+    },
+    {
+      "name": "Whisk_e7dedfbadb.jpg",
+      "ext": "jpg",
+      "path": "Website/img/bg/focused/j101/Whisk_e7dedfbadb.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/focused/j101/Whisk_e7dedfbadb.jpg"
+    },
+    {
+      "name": "Whisk_ece1a3220e.jpg",
+      "ext": "jpg",
+      "path": "Website/img/bg/focused/j101/Whisk_ece1a3220e.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/focused/j101/Whisk_ece1a3220e.jpg"
+    },
+    {
+      "name": "Whisk_f0397bfc69.jpg",
+      "ext": "jpg",
+      "path": "Website/img/bg/focused/j101/Whisk_f0397bfc69.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/focused/j101/Whisk_f0397bfc69.jpg"
+    },
+    {
+      "name": "Whisk_fe60f975a4.jpg",
+      "ext": "jpg",
+      "path": "Website/img/bg/focused/j101/Whisk_fe60f975a4.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/focused/j101/Whisk_fe60f975a4.jpg"
+    },
+    {
+      "name": "J.jfif",
+      "ext": "jfif",
+      "path": "Website/img/bg/focused/j101/J.jfif",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/focused/j101/J.jfif"
+    }
+  ],
+  "Website/img/bg/focused/mellowd": [
+    {
+      "name": "Mellow-D.jfif",
+      "ext": "jfif",
+      "path": "Website/img/bg/focused/mellowd/Mellow-D.jfif",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/focused/mellowd/Mellow-D.jfif"
+    }
+  ],
+  "Templates": [],
+  "Templates/PromptData": [
+    {
+      "name": "ProjectPrompts.json",
+      "ext": "json",
+      "path": "Templates/PromptData/ProjectPrompts.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/ProjectPrompts.json"
+    },
+    {
+      "name": "Copy of ProjectPrompts.json",
+      "ext": "json",
+      "path": "Templates/PromptData/Copy of ProjectPrompts.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/Copy of ProjectPrompts.json"
+    },
+    {
+      "name": "UserData.json",
+      "ext": "json",
+      "path": "Templates/PromptData/UserData.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/UserData.json"
+    },
+    {
+      "name": "DefaultPrompts.json",
+      "ext": "json",
+      "path": "Templates/PromptData/DefaultPrompts.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/DefaultPrompts.json"
+    },
+    {
+      "name": "AITypes.json",
+      "ext": "json",
+      "path": "Templates/PromptData/AITypes.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/AITypes.json"
+    },
+    {
+      "name": "DefaultTools.json",
+      "ext": "json",
+      "path": "Templates/PromptData/DefaultTools.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/DefaultTools.json"
+    },
+    {
+      "name": "DefaultVaults.json",
+      "ext": "json",
+      "path": "Templates/PromptData/DefaultVaults.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/DefaultVaults.json"
+    },
+    {
+      "name": "DefaultWorlds.json",
+      "ext": "json",
+      "path": "Templates/PromptData/DefaultWorlds.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/DefaultWorlds.json"
+    },
+    {
+      "name": "DefaultCategories.json",
+      "ext": "json",
+      "path": "Templates/PromptData/DefaultCategories.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/DefaultCategories.json"
+    },
+    {
+      "name": "DefaultScens.json",
+      "ext": "json",
+      "path": "Templates/PromptData/DefaultScens.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/DefaultScens.json"
+    },
+    {
+      "name": "DefaultChars.json",
+      "ext": "json",
+      "path": "Templates/PromptData/DefaultChars.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/DefaultChars.json"
+    },
+    {
+      "name": "DefaultTags.json",
+      "ext": "json",
+      "path": "Templates/PromptData/DefaultTags.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/DefaultTags.json"
+    },
+    {
+      "name": "MyPromptData.json",
+      "ext": "json",
+      "path": "Templates/PromptData/MyPromptData.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/MyPromptData.json"
+    },
+    {
+      "name": "Copy of MyPromptData.txt",
+      "ext": "txt",
+      "path": "Templates/PromptData/Copy of MyPromptData.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/Copy of MyPromptData.txt"
+    },
+    {
+      "name": "ProjectExample.json",
+      "ext": "json",
+      "path": "Templates/PromptData/ProjectExample.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates/PromptData/ProjectExample.json"
+    }
+  ],
+  "Test": []
 }
