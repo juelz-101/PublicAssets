@@ -90,6 +90,12 @@ PublicAssets/
 │   │       ├── Why-Did-You-Show-Me-Juelz-101-Emma MT-Juelz-FM-ZIKYinc.png
 │   │       ├── XmasEveryDay.jpeg
 │   │       └── baldlash.png
+│   ├── Icons/
+│   │   └── Hex/
+│   │       ├── PB_PlaceHolder1.png
+│   │       ├── PB_PlaceHolder2.png
+│   │       ├── PB_PlaceHolder3.png
+│   │       └── PB_PlaceHolder4.png
 │   └── Logos/
 │       ├── App/
 │       │   ├── [C]ZIKYinc_3D.png
@@ -126,6 +132,7 @@ PublicAssets/
 │           ├── Zikbarcode.gif
 │           └── barcode.png
 ├── Images_Covers_AlbumArt.json
+├── Images_Icons_Hex.json
 ├── Images_Logos_App.json
 ├── Images_Logos_Tings.json
 ├── README.md
