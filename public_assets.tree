@@ -1,6 +1,95 @@
 PublicAssets/
 ├── .gitignore
 ├── Images/
+│   ├── Covers/
+│   │   └── AlbumArt/
+│   │       ├── 90s.jpeg
+│   │       ├── Border.jpeg
+│   │       ├── Brut-Case.jpeg
+│   │       ├── Brut-Case2.jpeg
+│   │       ├── Dancing-In-The-Sunlight-Juelz-101-Emma-MT-RIP-ZIKY-ZIKYinc-Brutalistening.png
+│   │       ├── Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg
+│   │       ├── Do-Or-Die-Eg-Boxx-Ft-Lady-Limbo-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png
+│   │       ├── FX-Aint-Much-But-Its-Home-Kyles-Mum-From-The-School-Gates-Juelz-101-RIP-ZIKY.jpg
+│   │       ├── FX-ConcreteHeart-Torn-Remix-Background-Juelz-101-Emma-MT-ZIKYinc.png
+│   │       ├── FX-Every-Word-Juelz-101-Kelly-Kue-RIP-ZIKY.jpg
+│   │       ├── FX_Breaking-Through-Juelz-101-Emma-MT-Brutalistening.png
+│   │       ├── FX_ConcreteHeart.png
+│   │       ├── FX_ConcreteHeart_Low.png
+│   │       ├── FX_Juelz-101-Feelin-The-Beat-Emma-MT-Faceless-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.png
+│   │       ├── FX_~Brut_NOTFIN.jpg
+│   │       ├── FindingSolace.jpeg
+│   │       ├── For-A-Ride-Miss-Take-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png
+│   │       ├── Four-Man-Tank-Juelz-101-ft-Raemon-ZIKYinc-JuelzFM.png
+│   │       ├── Groove-Nights-Juelz-101-ft-Jack-Michaels-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png
+│   │       ├── Groovin-Through-The-Night-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg
+│   │       ├── H2s.jpeg
+│   │       ├── In-The-Depths-of-Dreams-Juelz-101-ft-Kev-Foundry-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png
+│   │       ├── InThisPeace.jpeg
+│   │       ├── Juelz-101-Back-To-Mine-Cover-JuelzFM-RIP-ZIKY-ZIKYinc-Inc.png
+│   │       ├── Juelz-101-Back-To-Mine-JuelzFM-RIP-ZIKY-ZIKYinc-Inc.png
+│   │       ├── Juelz-101-Between-The-Concrete-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Beyond-My-Hands-Juelz-FM-ZIKYinc-Inc.png
+│   │       ├── Juelz-101-Bru-C-Midnight-Hustle-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Drilla-On-The-Dancefloor-Album-Juelz-FM-ZIKYinc-Inc.png
+│   │       ├── Juelz-101-Emma-MT-Concrete-Heart-Gamemode-Remix.png
+│   │       ├── Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix-UPS.png
+│   │       ├── Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix.png
+│   │       ├── Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix2-UP.jpeg
+│   │       ├── Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix2.jpeg
+│   │       ├── Juelz-101-Emma-MT-The-Diamond-Snatch-Kaching-RIP-ZIKY-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Feelin-The-Beat-Emma-MT-Faceless-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Feelin-The-Beat-Emma-MT-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.png
+│   │       ├── Juelz-101-Ft-Dog-Robinson-Kickflippin-in-the-Sunshine-RIP-ZIKY-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Hanging-in-the-Halfpipe-RIP-ZIKY-Juelz-FM-ZIKYinc-Inc.jfif
+│   │       ├── Juelz-101-Hanging-in-the-Halfpipe-old-Juelz-FM-ZIKYinc-Inc.jfif
+│   │       ├── Juelz-101-Kyles-Mum-From-The-School-Gates-Together-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Lost-in-Trance-Alice-S-Cape-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-MC-Markdown-Juelz-FM-DarkWorld-RIP-ZIKY-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Mountain-On-The-Moon-RIP-Ziky-Juelz-FM-ZIKYinc-Gaming.jpg
+│   │       ├── Juelz-101-My-Block-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-New-Releases-Sun-Daze-Why-Do-We-Let-It-Burn-Juelz-FM-ZIKYinc-RIP-ZIKY.jpg
+│   │       ├── Juelz-101-No-Return-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-One-Final-Vinyl-Rave-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Reload-That-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Rhythms-of-Victory-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-She-Flies-RIP-Ziky-Juelz-FM-ZIKYinc-Gaming.jpg
+│   │       ├── Juelz-101-Summer-Nights-Kyles-Mum-From-The-School-Gates-RIP-Ziky-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Summer-Sessions-Mekka-Char4-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Sunlit-RIP-Ziky-Juelz-FM-ZIKYinc-Inc-Cover.jpg
+│   │       ├── Juelz-101-Sunlit-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Suzannes-Story-Kyles-Mum-From-School-Gates-RIP-ZIKY-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-TAS-Nice-Little-Beat-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-Why-Do-We-Lola-Hills-Cellar-Man-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-ft-Sara-Rising-Above-RIP-ZIKY-ZIKYinc-Inc.png
+│   │       ├── Juelz-101-ft-Teech-Passing-The-Time-Juelz-FM-RIP-Ziky-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-ft-Teecha-Here-To-Stay-Juelz-FM-RIP-Ziky-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-101-ft-Tina-Triad-Move-To-The-Rhythm-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg
+│   │       ├── Juelz-FM-Live-From-London-Volume-04-rip-ziky-juelz-101-ZIKYinc-Inc.jpeg
+│   │       ├── Juelz-FM-Live-From-London-Volume-24-rip-ziky-juelz-101-ZIKYinc-Inc.jpeg
+│   │       ├── KurV-Juelz-FM-RIP-ZIKY.jpg
+│   │       ├── LALCase.jpeg
+│   │       ├── Learn-To-Fly-Juelz-101-Gemini.png
+│   │       ├── Let-It-Burn-Juelz-101-ft-Luuna-RIP-ZIKY-ZIKYinc-Juelz-FM.png
+│   │       ├── London-Rhythm-Juelz-101-Kyles-Mum-From-The-School-Gates.png
+│   │       ├── Lyric-Bomb.jpeg
+│   │       ├── Mellow-D-Live-From-London-JuelzFM-RIP-ZIKY-Juelz-101-ZIKYinc-Inc.png
+│   │       ├── No-AC-Juelz-101-ft-Jaydee-RIP-ZIKY-ZIKYinc-Juelz-FM.png
+│   │       ├── Notes-To-Remember-Juelz-FM-Maggie-Loxx-Juelz-101-RIP-ziky.jpeg
+│   │       ├── Overground-Pro-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png
+│   │       ├── OwnSpaceCase.jpeg
+│   │       ├── Run-Run-Hot-Coffee-Juelz-101-RIP-Ziky-ZIKYinc-Inc.png
+│   │       ├── Run-Run-Hot-Coffee-Juelz-101-RIP-Ziky.png
+│   │       ├── Set-Me-Free-Jay-Craver-Cam-Strong-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg
+│   │       ├── Sun-Daze-Juelz-101-ft-Jaydee-RIP-ZIKY-ZIKYinc-Juelz-FM.png
+│   │       ├── The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png
+│   │       ├── TheTakeOver-ImperialP-Juelz-FM_Blockbusters-Juelz-101-RIP-ZIKY-ZIKYinc-Inc.jpeg
+│   │       ├── Thru-The-Ends-Juelz-101-ZIKYinc.png
+│   │       ├── Urban-Menace-Juelz-101-Juelz-FM-RIP-ZIKY-inc-ZIKYinc--ZIKYinc-Inc.jpg
+│   │       ├── We-Wont-Stop-Juelz-101-Gekko-boi-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg
+│   │       ├── Why-Did-You-Show-Me-Juelz-101-Emma MT-Juelz-FM-ZIKYinc.png
+│   │       ├── XmasEveryDay.jpeg
+│   │       └── baldlash.png
 │   └── Logos/
 │       ├── App/
 │       │   ├── [C]ZIKYinc_3D.png
@@ -36,6 +125,7 @@ PublicAssets/
 │           ├── ZIKYinc-Logo-Z-1-Light.png
 │           ├── Zikbarcode.gif
 │           └── barcode.png
+├── Images_Covers_AlbumArt.json
 ├── Images_Logos_App.json
 ├── Images_Logos_Tings.json
 ├── README.md
@@ -182,65 +272,64 @@ PublicAssets/
 │   │       └── pete2.jpeg
 │   └── lib/
 │       ├── about.json
+│       ├── apps/
+│       │   └── test.html
 │       ├── art.json
 │       ├── cur_projects.json
+│       ├── gallery/
+│       │   └── test.html
+│       ├── games/
+│       │   └── test.html
 │       ├── gaming.json
 │       ├── home.json
-│       ├── html/
-│       │   ├── apps/
-│       │   │   └── test.html
-│       │   ├── gallery/
-│       │   │   └── test.html
-│       │   ├── games/
-│       │   │   └── test.html
-│       │   └── music/
-│       │       ├── albums/
-│       │       │   ├── brut.html
-│       │       │   ├── btwn.html
-│       │       │   ├── final.html
-│       │       │   ├── ftbt.html
-│       │       │   ├── hith.html
-│       │       │   ├── lfl04.html
-│       │       │   ├── lfl24.html
-│       │       │   ├── ofrv.html
-│       │       │   ├── totb.html
-│       │       │   └── www.html
-│       │       ├── artists/
-│       │       │   ├── alic.html
-│       │       │   ├── cams.html
-│       │       │   ├── egbx.html
-│       │       │   ├── emil.html
-│       │       │   ├── emma.html
-│       │       │   ├── esta.html
-│       │       │   ├── face.html
-│       │       │   ├── gekk.html
-│       │       │   ├── hotc.html
-│       │       │   ├── imp.html
-│       │       │   ├── jayc.html
-│       │       │   ├── jevh.html
-│       │       │   ├── juelz.html
-│       │       │   ├── kenf.html
-│       │       │   ├── kevh.html
-│       │       │   ├── kris.html
-│       │       │   ├── kurv.html
-│       │       │   ├── kylm.html
-│       │       │   ├── mark.html
-│       │       │   ├── mayc.html
-│       │       │   ├── meld.html
-│       │       │   ├── mick.html
-│       │       │   ├── miss.html
-│       │       │   ├── plam.html
-│       │       │   ├── synt.html
-│       │       │   ├── teec.html
-│       │       │   ├── tina.html
-│       │       │   └── vect.html
-│       │       └── songs/
-│       │           ├── disl.html
-│       │           ├── placeholder.html
-│       │           ├── ssos.html
-│       │           ├── sumn.html
-│       │           └── takeov.html
 │       ├── misc.json
+│       ├── music/
+│       │   ├── albums/
+│       │   │   ├── brut.html
+│       │   │   ├── btwn.html
+│       │   │   ├── final.html
+│       │   │   ├── ftbt.html
+│       │   │   ├── hith.html
+│       │   │   ├── lfl04.html
+│       │   │   ├── lfl24.html
+│       │   │   ├── ofrv.html
+│       │   │   ├── totb.html
+│       │   │   └── www.html
+│       │   ├── artists/
+│       │   │   ├── alic.html
+│       │   │   ├── cams.html
+│       │   │   ├── egbx.html
+│       │   │   ├── emil.html
+│       │   │   ├── emma.html
+│       │   │   ├── esta.html
+│       │   │   ├── face.html
+│       │   │   ├── gekk.html
+│       │   │   ├── hotc.html
+│       │   │   ├── imp.html
+│       │   │   ├── jayc.html
+│       │   │   ├── jevh.html
+│       │   │   ├── juelz.html
+│       │   │   ├── kenf.html
+│       │   │   ├── kevh.html
+│       │   │   ├── kris.html
+│       │   │   ├── kurv.html
+│       │   │   ├── kylm.html
+│       │   │   ├── mark.html
+│       │   │   ├── mayc.html
+│       │   │   ├── meld.html
+│       │   │   ├── mick.html
+│       │   │   ├── miss.html
+│       │   │   ├── plam.html
+│       │   │   ├── synt.html
+│       │   │   ├── teec.html
+│       │   │   ├── tina.html
+│       │   │   └── vect.html
+│       │   └── songs/
+│       │       ├── disl.json
+│       │       ├── placeholder.html
+│       │       ├── ssos.html
+│       │       ├── sumn.html
+│       │       └── takeov.html
 │       ├── music.json
 │       ├── tools.json
 │       └── webdata.json
@@ -256,12 +345,18 @@ PublicAssets/
 ├── Website_img_photos_emma.json
 ├── Website_img_zikyinc.json
 ├── Website_lib.json
+├── Website_lib_apps.json
+├── Website_lib_gallery.json
+├── Website_lib_games.json
 ├── Website_lib_html_apps.json
 ├── Website_lib_html_gallery.json
 ├── Website_lib_html_games.json
 ├── Website_lib_html_music_albums.json
 ├── Website_lib_html_music_artists.json
 ├── Website_lib_html_music_songs.json
+├── Website_lib_music_albums.json
+├── Website_lib_music_artists.json
+├── Website_lib_music_songs.json
 ├── asset_register.json
 ├── auto_update.py
 ├── public_assets.tree

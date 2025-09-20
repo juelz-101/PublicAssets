@@ -1,0 +1,97 @@
+{
+	"title": "Dancing in the Sunlight",
+	"artist": "Juelz-101 ft Emma MT",
+	"artist_links": [
+		{
+			"name": "Juelz-101",
+			"link": "Website/lib/artists/juelz.json"
+		},
+		{
+			"name": "Emma MT",
+			"link": "Website/lib/artists/emma.json"
+		}
+	],
+	"thumbnail": "Images/Covers/AlbumArt/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
+	"description": "A hypnotic blend of atmospheric drum and bass, Dancing in the Sunlight showcases Emma MT's evocative artistry. Beneath its shimmering layers lies a haunting narrative—every beat and melody whispering secrets of resilience, solitude, and finding light in the shadows of a brutalist world.",
+	"albums": [
+		{
+			"name": "Brutalistening",
+			"link": "Website/lib/albums/brut.json",
+			"track": 3,
+			"cd": 1
+		},
+		{
+			"name": "Between the Concrete",
+			"link": "Website/lib/albums/btwn.json",
+			"track": 5,
+			"cd": 1
+		}
+	],
+	"genres": [
+		"Rap",
+		"Grime"
+	],
+	"audio": {
+		"soundcloud_embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1894909869&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+	},
+	"lyrics": {
+		"intro": "Feel the summer, feel the heat (oh)\nRays are shining, life’s complete (yeah)\nAll around us, laughter flows\nAs the gentle sea breeze blows",
+		"chorus": "We’re dancing in the sunlight\nTogether, it just feels right\nEvery heartbeat with the baseline\nOur troubles out of sight",
+		"bridge": "Feel the summer [x6]",
+		"verse_1": "Feel the summer, feel the heat (oh)\nRays are shining, life’s complete (yeah)\nAll around us, laughter flows\nAs the gentle sea breeze blows",
+		"chorus_2": "We’re dancing in the sunlight\nTogether, it just feels right\nEvery heartbeat with the baseline\nOur troubles out of sight",
+		"transition_1": "Bass drops, rhythms collide\nLet the funky beats be your guide",
+		"verse_2": "Feel the pulse, electric vibe\nGroove united, side by side\nHeavy beats, our feet align\nSky so blue, our spirits soar\nLet the music give us more\nUnder stars, we come alive\nWith every note, our souls revive",
+		"chorus_3": "We’re dancing in the limelight\nTogether, it just feels right\nEvery heartbeat with the baseline\nOur troubles out of sight",
+		"bridge_2": "The night's melody, takes us high\nIn this moment, you and I\nWith the music in the air\nEvery moment, so rare",
+		"verse_3": "As the final notes draw near\nIn each whisper, I hold you dear\nFeel the summer, feel the heat\nIn each other, we are complete\n’Til the dawn breaks, in delight\nWe’ll be dancing through the night\nA kiss to all, a wave goodbye\nUnderneath the star-lit sky\nWith every word, she stole the night\nWith every song, she made it right\nNow she’s vanished with the breeze\nBut her melody…. ?",
+		"transition_2": "Feel the summer [x3]",
+		"bridge_3": "We’re dancing in the twilight\nStars reflecting in our eyes\nEvery heartbeat in the spotlight\nThe night where dreams arise",
+		"chorus_4": "We’re dancing in the limelight\nTogether, it just feels right\nEvery heartbeat with the baseline\nOur troubles out of sight",
+		"transition_3": "The night's melody, takes us high\nIn this moment, you and I\nWith the music in the air\nEvery moment, so rare",
+		"verse_4": "As the final notes draw near\nIn each whisper, I hold you dear\nFeel the summer, feel the heat\nIn each other, we are complete\n’Til the dawn breaks, in delight\nWe’ll be dancing through the night\nA kiss to all, a wave goodbye\nUnderneath the star-lit sky\nWith every word, she stole the night\nWith every song, she made it right\nNow she’s vanished with the breeze\nBut her melody…. ?",
+		"transition_4": "Bass drops, rhythms collide\nLet the funky beats be your guide",
+		"outro": "She’s signing off, the lights are dimmed\nLast call from Juelz-FM\nGoodnight from the queen of air\nThe fans wave for the moments we shared"
+	},
+	"behind_the_scenes": {
+		"interview": [
+			{
+				"speaker": "Codie",
+				"dialogue": "Hello Emma MT, let's begin by talking about your first release \"Dancing in the Sunlight\", can you tell us what it is about?"
+			},
+			{
+				"speaker": "Emma MT",
+				"dialogue": "Hi Codie. On the surface the song is about, well dancing in the sunlight, but it has a much deeper meaning for those who listen closely."
+			},
+			{
+				"speaker": "Codie",
+				"dialogue": "Sounds interesting, can you give us an insight to the production of the track?"
+			},
+			{
+				"speaker": "Emma MT",
+				"dialogue": "Well as a DNB raver, I always want to stick to my routes, but I wanted to evolved from beat focused conventional DNB and shift towards a more story driven style. After brainstorming with Juelz-101, we decided on a new album called \"Brutalistening\", which will be story driven and have a more atmospheric feel. This is the first song that we have made for the album."
+			},
+			{
+				"speaker": "Codie",
+				"dialogue": "That sounds like a very exciting project. Is there any risk involved with releasing such an unconventional album?"
+			},
+			{
+				"speaker": "Emma MT",
+				"dialogue": "Risk? From a corperate standpoint, of course. This album wouldn't see the light of day. We are artists, with a passion for the art that we make. We have no concerns with profits or statistics, if I can speak to 1 listener then I have succeeded, which I have already achived because this album speaks to me on a deep level."
+			},
+			{
+				"speaker": "Codie",
+				"dialogue": "In regards to the album, can we get a sneak-peak of what else is to come?"
+			},
+			{
+				"speaker": "Emma MT",
+				"dialogue": "Well I don't want to say too much, but just last week Juelz and I were brainstorming lyrics for a song for the album called \"Concrete Heart\" and it almost brought me to tears. We begin recording on Monday and I am so excited for this one."
+			},
+			{
+				"speaker": "Codie",
+				"dialogue": "I look forward to checking in once that song is complete."
+			}
+		],
+		"additional_notes": "Here you can add any additional content specific to this song, such as:\n* Written interviews with the artists\n* The story behind the song\n* Lyrics\n* Related media or articles\n"
+	}
+}

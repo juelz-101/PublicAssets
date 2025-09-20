@@ -361,6 +361,531 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/[C]ZIKYinc_Node3.png"
     }
   ],
+  "Images/Covers": [],
+  "Images/Covers/AlbumArt": [
+    {
+      "name": "The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "TheTakeOver-ImperialP-Juelz-FM_Blockbusters-Juelz-101-RIP-ZIKY-ZIKYinc-Inc.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/TheTakeOver-ImperialP-Juelz-FM_Blockbusters-Juelz-101-RIP-ZIKY-ZIKYinc-Inc.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/TheTakeOver-ImperialP-Juelz-FM_Blockbusters-Juelz-101-RIP-ZIKY-ZIKYinc-Inc.jpeg"
+    },
+    {
+      "name": "Juelz-101-Hanging-in-the-Halfpipe-old-Juelz-FM-ZIKYinc-Inc.jfif",
+      "ext": "jfif",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Hanging-in-the-Halfpipe-old-Juelz-FM-ZIKYinc-Inc.jfif",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Hanging-in-the-Halfpipe-old-Juelz-FM-ZIKYinc-Inc.jfif"
+    },
+    {
+      "name": "Overground-Pro-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Overground-Pro-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Overground-Pro-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "No-AC-Juelz-101-ft-Jaydee-RIP-ZIKY-ZIKYinc-Juelz-FM.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/No-AC-Juelz-101-ft-Jaydee-RIP-ZIKY-ZIKYinc-Juelz-FM.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/No-AC-Juelz-101-ft-Jaydee-RIP-ZIKY-ZIKYinc-Juelz-FM.png"
+    },
+    {
+      "name": "Juelz-101-New-Releases-Sun-Daze-Why-Do-We-Let-It-Burn-Juelz-FM-ZIKYinc-RIP-ZIKY.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-New-Releases-Sun-Daze-Why-Do-We-Let-It-Burn-Juelz-FM-ZIKYinc-RIP-ZIKY.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-New-Releases-Sun-Daze-Why-Do-We-Let-It-Burn-Juelz-FM-ZIKYinc-RIP-ZIKY.jpg"
+    },
+    {
+      "name": "Juelz-101-Why-Do-We-Lola-Hills-Cellar-Man-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Why-Do-We-Lola-Hills-Cellar-Man-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Why-Do-We-Lola-Hills-Cellar-Man-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Let-It-Burn-Juelz-101-ft-Luuna-RIP-ZIKY-ZIKYinc-Juelz-FM.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Let-It-Burn-Juelz-101-ft-Luuna-RIP-ZIKY-ZIKYinc-Juelz-FM.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Let-It-Burn-Juelz-101-ft-Luuna-RIP-ZIKY-ZIKYinc-Juelz-FM.png"
+    },
+    {
+      "name": "Sun-Daze-Juelz-101-ft-Jaydee-RIP-ZIKY-ZIKYinc-Juelz-FM.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Sun-Daze-Juelz-101-ft-Jaydee-RIP-ZIKY-ZIKYinc-Juelz-FM.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Sun-Daze-Juelz-101-ft-Jaydee-RIP-ZIKY-ZIKYinc-Juelz-FM.png"
+    },
+    {
+      "name": "Juelz-101-Reload-That-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Reload-That-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Reload-That-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Thru-The-Ends-Juelz-101-ZIKYinc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Thru-The-Ends-Juelz-101-ZIKYinc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Thru-The-Ends-Juelz-101-ZIKYinc.png"
+    },
+    {
+      "name": "Juelz-101-Sunlit-RIP-Ziky-Juelz-FM-ZIKYinc-Inc-Cover.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Sunlit-RIP-Ziky-Juelz-FM-ZIKYinc-Inc-Cover.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Sunlit-RIP-Ziky-Juelz-FM-ZIKYinc-Inc-Cover.jpg"
+    },
+    {
+      "name": "Juelz-101-Sunlit-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Sunlit-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Sunlit-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-Beyond-My-Hands-Juelz-FM-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Beyond-My-Hands-Juelz-FM-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Beyond-My-Hands-Juelz-FM-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "Juelz-101-No-Return-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-No-Return-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-No-Return-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-Back-To-Mine-Cover-JuelzFM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Back-To-Mine-Cover-JuelzFM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Back-To-Mine-Cover-JuelzFM-RIP-ZIKY-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "Juelz-101-Drilla-On-The-Dancefloor-Album-Juelz-FM-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Drilla-On-The-Dancefloor-Album-Juelz-FM-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Drilla-On-The-Dancefloor-Album-Juelz-FM-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "Juelz-101-Back-To-Mine-JuelzFM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Back-To-Mine-JuelzFM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Back-To-Mine-JuelzFM-RIP-ZIKY-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "Juelz-101-Summer-Sessions-Mekka-Char4-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Summer-Sessions-Mekka-Char4-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Summer-Sessions-Mekka-Char4-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-My-Block-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-My-Block-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-My-Block-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Why-Did-You-Show-Me-Juelz-101-Emma MT-Juelz-FM-ZIKYinc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Why-Did-You-Show-Me-Juelz-101-Emma MT-Juelz-FM-ZIKYinc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Why-Did-You-Show-Me-Juelz-101-Emma MT-Juelz-FM-ZIKYinc.png"
+    },
+    {
+      "name": "Juelz-101-Feelin-The-Beat-Emma-MT-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Feelin-The-Beat-Emma-MT-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Feelin-The-Beat-Emma-MT-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "FX_Juelz-101-Feelin-The-Beat-Emma-MT-Faceless-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/FX_Juelz-101-Feelin-The-Beat-Emma-MT-Faceless-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/FX_Juelz-101-Feelin-The-Beat-Emma-MT-Faceless-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "baldlash.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/baldlash.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/baldlash.png"
+    },
+    {
+      "name": "Juelz-101-ft-Sara-Rising-Above-RIP-ZIKY-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Juelz-101-ft-Sara-Rising-Above-RIP-ZIKY-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-ft-Sara-Rising-Above-RIP-ZIKY-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "FX_Breaking-Through-Juelz-101-Emma-MT-Brutalistening.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/FX_Breaking-Through-Juelz-101-Emma-MT-Brutalistening.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/FX_Breaking-Through-Juelz-101-Emma-MT-Brutalistening.png"
+    },
+    {
+      "name": "Four-Man-Tank-Juelz-101-ft-Raemon-ZIKYinc-JuelzFM.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Four-Man-Tank-Juelz-101-ft-Raemon-ZIKYinc-JuelzFM.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Four-Man-Tank-Juelz-101-ft-Raemon-ZIKYinc-JuelzFM.png"
+    },
+    {
+      "name": "Dancing-In-The-Sunlight-Juelz-101-Emma-MT-RIP-ZIKY-ZIKYinc-Brutalistening.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Dancing-In-The-Sunlight-Juelz-101-Emma-MT-RIP-ZIKY-ZIKYinc-Brutalistening.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Dancing-In-The-Sunlight-Juelz-101-Emma-MT-RIP-ZIKY-ZIKYinc-Brutalistening.png"
+    },
+    {
+      "name": "Notes-To-Remember-Juelz-FM-Maggie-Loxx-Juelz-101-RIP-ziky.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/Notes-To-Remember-Juelz-FM-Maggie-Loxx-Juelz-101-RIP-ziky.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Notes-To-Remember-Juelz-FM-Maggie-Loxx-Juelz-101-RIP-ziky.jpeg"
+    },
+    {
+      "name": "Learn-To-Fly-Juelz-101-Gemini.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Learn-To-Fly-Juelz-101-Gemini.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Learn-To-Fly-Juelz-101-Gemini.png"
+    },
+    {
+      "name": "London-Rhythm-Juelz-101-Kyles-Mum-From-The-School-Gates.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/London-Rhythm-Juelz-101-Kyles-Mum-From-The-School-Gates.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/London-Rhythm-Juelz-101-Kyles-Mum-From-The-School-Gates.png"
+    },
+    {
+      "name": "Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix2-UP.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix2-UP.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix2-UP.jpeg"
+    },
+    {
+      "name": "Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix2.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix2.jpeg"
+    },
+    {
+      "name": "XmasEveryDay.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/XmasEveryDay.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/XmasEveryDay.jpeg"
+    },
+    {
+      "name": "FindingSolace.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/FindingSolace.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/FindingSolace.jpeg"
+    },
+    {
+      "name": "Lyric-Bomb.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/Lyric-Bomb.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Lyric-Bomb.jpeg"
+    },
+    {
+      "name": "InThisPeace.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/InThisPeace.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/InThisPeace.jpeg"
+    },
+    {
+      "name": "LALCase.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/LALCase.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/LALCase.jpeg"
+    },
+    {
+      "name": "Juelz-101-Emma-MT-Concrete-Heart-Gamemode-Remix.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Emma-MT-Concrete-Heart-Gamemode-Remix.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Emma-MT-Concrete-Heart-Gamemode-Remix.png"
+    },
+    {
+      "name": "Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix-UPS.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix-UPS.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix-UPS.png"
+    },
+    {
+      "name": "Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Emma-MT-Concrete-Heart-Torn-Remix.png"
+    },
+    {
+      "name": "FX-ConcreteHeart-Torn-Remix-Background-Juelz-101-Emma-MT-ZIKYinc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/FX-ConcreteHeart-Torn-Remix-Background-Juelz-101-Emma-MT-ZIKYinc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/FX-ConcreteHeart-Torn-Remix-Background-Juelz-101-Emma-MT-ZIKYinc.png"
+    },
+    {
+      "name": "Border.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/Border.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Border.jpeg"
+    },
+    {
+      "name": "90s.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/90s.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/90s.jpeg"
+    },
+    {
+      "name": "OwnSpaceCase.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/OwnSpaceCase.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/OwnSpaceCase.jpeg"
+    },
+    {
+      "name": "FX_ConcreteHeart_Low.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/FX_ConcreteHeart_Low.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/FX_ConcreteHeart_Low.png"
+    },
+    {
+      "name": "FX_ConcreteHeart.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/FX_ConcreteHeart.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/FX_ConcreteHeart.png"
+    },
+    {
+      "name": "KurV-Juelz-FM-RIP-ZIKY.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/KurV-Juelz-FM-RIP-ZIKY.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/KurV-Juelz-FM-RIP-ZIKY.jpg"
+    },
+    {
+      "name": "Juelz-101-Feelin-The-Beat-Emma-MT-Faceless-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Feelin-The-Beat-Emma-MT-Faceless-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Feelin-The-Beat-Emma-MT-Faceless-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-Bru-C-Midnight-Hustle-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Bru-C-Midnight-Hustle-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Bru-C-Midnight-Hustle-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-TAS-Nice-Little-Beat-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-TAS-Nice-Little-Beat-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-TAS-Nice-Little-Beat-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-She-Flies-RIP-Ziky-Juelz-FM-ZIKYinc-Gaming.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-She-Flies-RIP-Ziky-Juelz-FM-ZIKYinc-Gaming.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-She-Flies-RIP-Ziky-Juelz-FM-ZIKYinc-Gaming.jpg"
+    },
+    {
+      "name": "Juelz-101-Mountain-On-The-Moon-RIP-Ziky-Juelz-FM-ZIKYinc-Gaming.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Mountain-On-The-Moon-RIP-Ziky-Juelz-FM-ZIKYinc-Gaming.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Mountain-On-The-Moon-RIP-Ziky-Juelz-FM-ZIKYinc-Gaming.jpg"
+    },
+    {
+      "name": "Juelz-101-ft-Teecha-Here-To-Stay-Juelz-FM-RIP-Ziky-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-ft-Teecha-Here-To-Stay-Juelz-FM-RIP-Ziky-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-ft-Teecha-Here-To-Stay-Juelz-FM-RIP-Ziky-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "H2s.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/H2s.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/H2s.jpeg"
+    },
+    {
+      "name": "FX-Every-Word-Juelz-101-Kelly-Kue-RIP-ZIKY.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/FX-Every-Word-Juelz-101-Kelly-Kue-RIP-ZIKY.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/FX-Every-Word-Juelz-101-Kelly-Kue-RIP-ZIKY.jpg"
+    },
+    {
+      "name": "FX-Aint-Much-But-Its-Home-Kyles-Mum-From-The-School-Gates-Juelz-101-RIP-ZIKY.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/FX-Aint-Much-But-Its-Home-Kyles-Mum-From-The-School-Gates-Juelz-101-RIP-ZIKY.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/FX-Aint-Much-But-Its-Home-Kyles-Mum-From-The-School-Gates-Juelz-101-RIP-ZIKY.jpg"
+    },
+    {
+      "name": "Brut-Case2.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/Brut-Case2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Brut-Case2.jpeg"
+    },
+    {
+      "name": "Brut-Case.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/Brut-Case.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Brut-Case.jpeg"
+    },
+    {
+      "name": "FX_~Brut_NOTFIN.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/FX_~Brut_NOTFIN.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/FX_~Brut_NOTFIN.jpg"
+    },
+    {
+      "name": "Run-Run-Hot-Coffee-Juelz-101-RIP-Ziky-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Run-Run-Hot-Coffee-Juelz-101-RIP-Ziky-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Run-Run-Hot-Coffee-Juelz-101-RIP-Ziky-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "Mellow-D-Live-From-London-JuelzFM-RIP-ZIKY-Juelz-101-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Mellow-D-Live-From-London-JuelzFM-RIP-ZIKY-Juelz-101-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Mellow-D-Live-From-London-JuelzFM-RIP-ZIKY-Juelz-101-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "Juelz-FM-Live-From-London-Volume-24-rip-ziky-juelz-101-ZIKYinc-Inc.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/Juelz-FM-Live-From-London-Volume-24-rip-ziky-juelz-101-ZIKYinc-Inc.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-FM-Live-From-London-Volume-24-rip-ziky-juelz-101-ZIKYinc-Inc.jpeg"
+    },
+    {
+      "name": "Juelz-FM-Live-From-London-Volume-04-rip-ziky-juelz-101-ZIKYinc-Inc.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/Juelz-FM-Live-From-London-Volume-04-rip-ziky-juelz-101-ZIKYinc-Inc.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-FM-Live-From-London-Volume-04-rip-ziky-juelz-101-ZIKYinc-Inc.jpeg"
+    },
+    {
+      "name": "Juelz-101-Summer-Nights-Kyles-Mum-From-The-School-Gates-RIP-Ziky-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Summer-Nights-Kyles-Mum-From-The-School-Gates-RIP-Ziky-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Summer-Nights-Kyles-Mum-From-The-School-Gates-RIP-Ziky-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-One-Final-Vinyl-Rave-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-One-Final-Vinyl-Rave-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-One-Final-Vinyl-Rave-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-Hanging-in-the-Halfpipe-RIP-ZIKY-Juelz-FM-ZIKYinc-Inc.jfif",
+      "ext": "jfif",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Hanging-in-the-Halfpipe-RIP-ZIKY-Juelz-FM-ZIKYinc-Inc.jfif",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Hanging-in-the-Halfpipe-RIP-ZIKY-Juelz-FM-ZIKYinc-Inc.jfif"
+    },
+    {
+      "name": "Juelz-101-ft-Tina-Triad-Move-To-The-Rhythm-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-ft-Tina-Triad-Move-To-The-Rhythm-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-ft-Tina-Triad-Move-To-The-Rhythm-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-ft-Teech-Passing-The-Time-Juelz-FM-RIP-Ziky-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-ft-Teech-Passing-The-Time-Juelz-FM-RIP-Ziky-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-ft-Teech-Passing-The-Time-Juelz-FM-RIP-Ziky-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-Ft-Dog-Robinson-Kickflippin-in-the-Sunshine-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Ft-Dog-Robinson-Kickflippin-in-the-Sunshine-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Ft-Dog-Robinson-Kickflippin-in-the-Sunshine-RIP-ZIKY-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-Emma-MT-The-Diamond-Snatch-Kaching-RIP-ZIKY-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Emma-MT-The-Diamond-Snatch-Kaching-RIP-ZIKY-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Emma-MT-The-Diamond-Snatch-Kaching-RIP-ZIKY-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
+      "ext": "jpeg",
+      "path": "Images/Covers/AlbumArt/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg"
+    },
+    {
+      "name": "Groovin-Through-The-Night-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Groovin-Through-The-Night-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Groovin-Through-The-Night-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Run-Run-Hot-Coffee-Juelz-101-RIP-Ziky.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Run-Run-Hot-Coffee-Juelz-101-RIP-Ziky.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Run-Run-Hot-Coffee-Juelz-101-RIP-Ziky.png"
+    },
+    {
+      "name": "Juelz-101-Kyles-Mum-From-The-School-Gates-Together-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Kyles-Mum-From-The-School-Gates-Together-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Kyles-Mum-From-The-School-Gates-Together-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-Rhythms-of-Victory-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Rhythms-of-Victory-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Rhythms-of-Victory-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-Between-The-Concrete-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Between-The-Concrete-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Between-The-Concrete-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Set-Me-Free-Jay-Craver-Cam-Strong-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Set-Me-Free-Jay-Craver-Cam-Strong-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Set-Me-Free-Jay-Craver-Cam-Strong-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Urban-Menace-Juelz-101-Juelz-FM-RIP-ZIKY-inc-ZIKYinc--ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Urban-Menace-Juelz-101-Juelz-FM-RIP-ZIKY-inc-ZIKYinc--ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Urban-Menace-Juelz-101-Juelz-FM-RIP-ZIKY-inc-ZIKYinc--ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "We-Wont-Stop-Juelz-101-Gekko-boi-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/We-Wont-Stop-Juelz-101-Gekko-boi-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/We-Wont-Stop-Juelz-101-Gekko-boi-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-Suzannes-Story-Kyles-Mum-From-School-Gates-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Suzannes-Story-Kyles-Mum-From-School-Gates-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Suzannes-Story-Kyles-Mum-From-School-Gates-RIP-ZIKY-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-MC-Markdown-Juelz-FM-DarkWorld-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-MC-Markdown-Juelz-FM-DarkWorld-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-MC-Markdown-Juelz-FM-DarkWorld-RIP-ZIKY-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Juelz-101-Lost-in-Trance-Alice-S-Cape-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "ext": "jpg",
+      "path": "Images/Covers/AlbumArt/Juelz-101-Lost-in-Trance-Alice-S-Cape-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Juelz-101-Lost-in-Trance-Alice-S-Cape-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg"
+    },
+    {
+      "name": "Groove-Nights-Juelz-101-ft-Jack-Michaels-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Groove-Nights-Juelz-101-ft-Jack-Michaels-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Groove-Nights-Juelz-101-ft-Jack-Michaels-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "In-The-Depths-of-Dreams-Juelz-101-ft-Kev-Foundry-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/In-The-Depths-of-Dreams-Juelz-101-ft-Kev-Foundry-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/In-The-Depths-of-Dreams-Juelz-101-ft-Kev-Foundry-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "For-A-Ride-Miss-Take-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/For-A-Ride-Miss-Take-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/For-A-Ride-Miss-Take-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "Do-Or-Die-Eg-Boxx-Ft-Lady-Limbo-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "ext": "png",
+      "path": "Images/Covers/AlbumArt/Do-Or-Die-Eg-Boxx-Ft-Lady-Limbo-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Do-Or-Die-Eg-Boxx-Ft-Lady-Limbo-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png"
+    }
+  ],
   "Website": [],
   "Website/lib": [
     {
@@ -418,294 +943,293 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/about.json"
     }
   ],
-  "Website/lib/html": [],
-  "Website/lib/html/apps": [
+  "Website/lib/apps": [
     {
       "name": "test.html",
       "ext": "html",
-      "path": "Website/lib/html/apps/test.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/apps/test.html"
+      "path": "Website/lib/apps/test.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/apps/test.html"
     }
   ],
-  "Website/lib/html/gallery": [
+  "Website/lib/gallery": [
     {
       "name": "test.html",
       "ext": "html",
-      "path": "Website/lib/html/gallery/test.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/gallery/test.html"
+      "path": "Website/lib/gallery/test.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/gallery/test.html"
     }
   ],
-  "Website/lib/html/games": [
+  "Website/lib/games": [
     {
       "name": "test.html",
       "ext": "html",
-      "path": "Website/lib/html/games/test.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/games/test.html"
+      "path": "Website/lib/games/test.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/games/test.html"
     }
   ],
-  "Website/lib/html/music": [],
-  "Website/lib/html/music/albums": [
+  "Website/lib/music": [],
+  "Website/lib/music/albums": [
     {
       "name": "ftbt.html",
       "ext": "html",
-      "path": "Website/lib/html/music/albums/ftbt.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/ftbt.html"
+      "path": "Website/lib/music/albums/ftbt.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/ftbt.html"
     },
     {
       "name": "hith.html",
       "ext": "html",
-      "path": "Website/lib/html/music/albums/hith.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/hith.html"
+      "path": "Website/lib/music/albums/hith.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/hith.html"
     },
     {
       "name": "lfl04.html",
       "ext": "html",
-      "path": "Website/lib/html/music/albums/lfl04.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/lfl04.html"
+      "path": "Website/lib/music/albums/lfl04.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/lfl04.html"
     },
     {
       "name": "lfl24.html",
       "ext": "html",
-      "path": "Website/lib/html/music/albums/lfl24.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/lfl24.html"
+      "path": "Website/lib/music/albums/lfl24.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/lfl24.html"
     },
     {
       "name": "ofrv.html",
       "ext": "html",
-      "path": "Website/lib/html/music/albums/ofrv.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/ofrv.html"
+      "path": "Website/lib/music/albums/ofrv.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/ofrv.html"
     },
     {
       "name": "totb.html",
       "ext": "html",
-      "path": "Website/lib/html/music/albums/totb.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/totb.html"
+      "path": "Website/lib/music/albums/totb.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/totb.html"
     },
     {
       "name": "www.html",
       "ext": "html",
-      "path": "Website/lib/html/music/albums/www.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/www.html"
+      "path": "Website/lib/music/albums/www.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/www.html"
     },
     {
       "name": "brut.html",
       "ext": "html",
-      "path": "Website/lib/html/music/albums/brut.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/brut.html"
+      "path": "Website/lib/music/albums/brut.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/brut.html"
     },
     {
       "name": "btwn.html",
       "ext": "html",
-      "path": "Website/lib/html/music/albums/btwn.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/btwn.html"
+      "path": "Website/lib/music/albums/btwn.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/btwn.html"
     },
     {
       "name": "final.html",
       "ext": "html",
-      "path": "Website/lib/html/music/albums/final.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/albums/final.html"
+      "path": "Website/lib/music/albums/final.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/final.html"
     }
   ],
-  "Website/lib/html/music/artists": [
+  "Website/lib/music/artists": [
     {
       "name": "imp.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/imp.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/imp.html"
+      "path": "Website/lib/music/artists/imp.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/imp.html"
     },
     {
       "name": "gekk.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/gekk.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/gekk.html"
+      "path": "Website/lib/music/artists/gekk.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/gekk.html"
     },
     {
       "name": "kenf.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/kenf.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/kenf.html"
+      "path": "Website/lib/music/artists/kenf.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/kenf.html"
     },
     {
       "name": "face.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/face.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/face.html"
+      "path": "Website/lib/music/artists/face.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/face.html"
     },
     {
       "name": "esta.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/esta.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/esta.html"
+      "path": "Website/lib/music/artists/esta.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/esta.html"
     },
     {
       "name": "jevh.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/jevh.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/jevh.html"
+      "path": "Website/lib/music/artists/jevh.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/jevh.html"
     },
     {
       "name": "tina.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/tina.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/tina.html"
+      "path": "Website/lib/music/artists/tina.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/tina.html"
     },
     {
       "name": "mick.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/mick.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/mick.html"
+      "path": "Website/lib/music/artists/mick.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/mick.html"
     },
     {
       "name": "hotc.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/hotc.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/hotc.html"
+      "path": "Website/lib/music/artists/hotc.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/hotc.html"
     },
     {
       "name": "alic.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/alic.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/alic.html"
+      "path": "Website/lib/music/artists/alic.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/alic.html"
     },
     {
       "name": "emil.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/emil.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/emil.html"
+      "path": "Website/lib/music/artists/emil.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/emil.html"
     },
     {
       "name": "plam.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/plam.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/plam.html"
+      "path": "Website/lib/music/artists/plam.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/plam.html"
     },
     {
       "name": "mark.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/mark.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/mark.html"
+      "path": "Website/lib/music/artists/mark.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/mark.html"
     },
     {
       "name": "synt.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/synt.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/synt.html"
+      "path": "Website/lib/music/artists/synt.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/synt.html"
     },
     {
       "name": "kevh.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/kevh.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/kevh.html"
+      "path": "Website/lib/music/artists/kevh.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/kevh.html"
     },
     {
       "name": "kylm.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/kylm.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/kylm.html"
+      "path": "Website/lib/music/artists/kylm.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/kylm.html"
     },
     {
       "name": "meld.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/meld.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/meld.html"
+      "path": "Website/lib/music/artists/meld.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/meld.html"
     },
     {
       "name": "juelz.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/juelz.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/juelz.html"
+      "path": "Website/lib/music/artists/juelz.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/juelz.html"
     },
     {
       "name": "cams.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/cams.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/cams.html"
+      "path": "Website/lib/music/artists/cams.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/cams.html"
     },
     {
       "name": "kris.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/kris.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/kris.html"
+      "path": "Website/lib/music/artists/kris.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/kris.html"
     },
     {
       "name": "kurv.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/kurv.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/kurv.html"
+      "path": "Website/lib/music/artists/kurv.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/kurv.html"
     },
     {
       "name": "miss.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/miss.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/miss.html"
+      "path": "Website/lib/music/artists/miss.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/miss.html"
     },
     {
       "name": "vect.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/vect.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/vect.html"
+      "path": "Website/lib/music/artists/vect.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/vect.html"
     },
     {
       "name": "mayc.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/mayc.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/mayc.html"
+      "path": "Website/lib/music/artists/mayc.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/mayc.html"
     },
     {
       "name": "teec.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/teec.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/teec.html"
+      "path": "Website/lib/music/artists/teec.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/teec.html"
     },
     {
       "name": "egbx.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/egbx.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/egbx.html"
+      "path": "Website/lib/music/artists/egbx.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/egbx.html"
     },
     {
       "name": "jayc.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/jayc.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/jayc.html"
+      "path": "Website/lib/music/artists/jayc.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/jayc.html"
     },
     {
       "name": "emma.html",
       "ext": "html",
-      "path": "Website/lib/html/music/artists/emma.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/artists/emma.html"
+      "path": "Website/lib/music/artists/emma.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/emma.html"
     }
   ],
-  "Website/lib/html/music/songs": [
+  "Website/lib/music/songs": [
     {
-      "name": "disl.html",
-      "ext": "html",
-      "path": "Website/lib/html/music/songs/disl.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/songs/disl.html"
+      "name": "disl.json",
+      "ext": "json",
+      "path": "Website/lib/music/songs/disl.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/disl.json"
     },
     {
       "name": "takeov.html",
       "ext": "html",
-      "path": "Website/lib/html/music/songs/takeov.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/songs/takeov.html"
+      "path": "Website/lib/music/songs/takeov.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/takeov.html"
     },
     {
       "name": "placeholder.html",
       "ext": "html",
-      "path": "Website/lib/html/music/songs/placeholder.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/songs/placeholder.html"
+      "path": "Website/lib/music/songs/placeholder.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/placeholder.html"
     },
     {
       "name": "sumn.html",
       "ext": "html",
-      "path": "Website/lib/html/music/songs/sumn.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/songs/sumn.html"
+      "path": "Website/lib/music/songs/sumn.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/sumn.html"
     },
     {
       "name": "ssos.html",
       "ext": "html",
-      "path": "Website/lib/html/music/songs/ssos.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/html/music/songs/ssos.html"
+      "path": "Website/lib/music/songs/ssos.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/ssos.html"
     }
   ],
   "Website/img": [],

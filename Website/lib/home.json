@@ -1,102 +1,120 @@
 {
-  "hero": {
-    "title": "Welcome to ZIKYinc",
-    "image": "Website/images/misc/ZIKYinc-Header_FX.jpeg",
-    "subtitle": "Amplifying Underground Creativity",
-    "text": "Established in 2023 by Juelz-101, ZIKYinc is a groundbreaking record label and art publisher dedicated to discovering and elevating emerging talent. Supporting bedroom producers and developers."
-  },
-  "about": {
-    "whoWeAre": {
-      "title": "Who We Are",
-      "intro": "Here is a quick rundown of the team:",
-      "team": [
-        {
-          "name": "Juelz-101",
-          "bio": "The brains of the operation, says he would rather remain faceless until he can think of a cool persona. Atleast twice per day he comes up with, how he puts it, \"the best one yet\" and his world record is 45 mins before deciding against it. I lost that bet.",
-          "images": [
-            "Website/images/photos/ZIKYHide.jpeg",
-            "Website/images/photos/ZIKYHide2.jpeg",
-            "Website/images/photos/ZIKYHide3.jpeg",
-            "Website/images/photos/ZIKYHide4.jpeg"
-          ]
-        },
-        {
-          "name": "Kyles Mum",
-          "bio": "You know kyles mum? You know, from the school gates? Yeah we all know her, we can all still feel that clip around the ear she gave us when we got lippy on the way out of school. Wasn't it weird how our mums would see it happen and come running over in a blind rage with absolutely no context, only to clip the other ear because \"you clearly deserved it\".. That was the last time I ever said the Lollypop Lady looks like a banana in witness protection.",
-          "images": ["Website/images/photos/Kyles5.jpeg"]
-        },
-        {
-          "name": "Imperial-P",
-          "bio": "Our American friend, who oozes style and swag. Well, it seems that way because he is hanging around with us nerds. He is even starting to get our accent, I love the awkward silence when he notices that he completely dropped his cool gangster accent in exchange for the classic British \"Cashier number 3 please\" accent. Tumbleweed, I hear you ask? Please, use mine.",
-          "images": ["Website/images/photos/Imperial-P2.jpeg"]
-        },
-        {
-          "name": "Emma MT",
-          "bio": "The one who was assigned the task of writing these bios, if you can still read this, then they still havent noticed yet, and my ear is clip free.",
-          "images": ["Website/images/photos/Emma.jpeg"]
-        },
-        {
-          "name": "Codie",
-          "bio": "Our in-house journalist. These bios would be a lot more proffessional looking if she didnt call in sick today.",
-          "images": ["Website/images/photos/codie.jpeg"]
-        },
-        {
-          "name": "Lisa",
-          "bio": "Artist, Author and Poet.",
-          "images": ["Website/images/photos/mum.avif"]
-        },
-        {
-          "name": "Damian",
-          "bio": "A sweet bedroom developer who develops apps in his free time.",
-          "images": ["Website/images/photos/Damian.jpeg"]
-        },
-        {
-          "name": "WelshHotdog2010",
-          "bio": "Specializes in mods and UE5 gaming.",
-          "images": ["Website/images/photos/WelshHotdog2010.jpeg"]
-        },
-        {
-          "name": "Plug-It-In Pete",
-          "bio": "Ah yes Pozzie-Pete, our very own superhero who sweeps in to save the day whenever Juelz trips over a cable and has no idea where it came from. When asking Pete what image he'd like us to use on the website he said he couldnt decide on a photo from his wedding or a photo from his anniversary. I said \"why not both?\". So here's a photo from his wedding, and a photo taken exactly 1 year and 0 seconds after he took a photo of his beer in his garden.",
-          "images": [
-            "Website/images/photos/pete2.jpeg",
-            "Website/images/photos/pete.jpeg"
-          ]
-        }
-      ],
-      "outro": "Not to mention our collaborative artists but there will me more on them in the Artists pages throughout the site.",
-      "closingStatement": "We're more than a label – we're a creative community passionate about pushing artistic boundaries and giving voice to innovative artists."
-    },
-    "whatWeDo": {
-      "title": "What We Do",
-      "logos": [
-        "Website/images/logos/ZIKYinc-Logo-Z-1-Light.png",
-        "Website/images/logos/SimpleNoteDark.png",
-        "Website/images/logos/ZIKYinc-PB-Logo-3.jpeg"
-      ],
-      "services": [
-        "Produce and distribute music across diverse genres.",
-        "Publish and promote visual art.",
-        "Create platforms for emerging artists.",
-        "Develop creative apps and tools to help artists reach their full potential.",
-        "Promote homebrewed games and mods."
-      ]
-    }
-  },
-  "featured": {
-    "title": "Latest Collaborations",
-    "images": [
-      "Website/images/music/songs/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
-      "Website/images/music/songs/Juelz-101-Lost-in-Trance-Alice-S-Cape-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
-      "Website/images/music/songs/Juelz-101-ft-Tina-Triad-Move-To-The-Rhythm-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg"
-    ]
-  },
-  "cta": {
-    "title": "Join Our Creative Journey",
-    "text": "Whether you're an artist seeking a platform or a fan discovering new talent, ZIKYinc welcomes you.",
-    "buttons": [
-      { "text": "Explore Artists" },
-      { "text": "Submit Your Work" }
-    ]
-  }
+	"hero": {
+		"title": "Welcome to ZIKYinc",
+		"image": "Website/images/misc/ZIKYinc-Header_FX.jpeg",
+		"subtitle": "Amplifying Underground Creativity",
+		"text": "Established in 2023 by Juelz-101, ZIKYinc is a groundbreaking record label and art publisher dedicated to discovering and elevating emerging talent. Supporting bedroom producers and developers."
+	},
+	"about": {
+		"whoWeAre": {
+			"title": "Who We Are",
+			"intro": "Here is a quick rundown of the team:",
+			"team": [
+				{
+					"name": "Juelz-101",
+					"bio": "The brains of the operation, says he would rather remain faceless until he can think of a cool persona. Atleast twice per day he comes up with, how he puts it, \"the best one yet\" and his world record is 45 mins before deciding against it. I lost that bet.",
+					"images": [
+						"Website/img/photos/ZIKYHide.jpeg",
+						"Website/img/photos/ZIKYHide2.jpeg",
+						"Website/img/photos/ZIKYHide3.jpeg",
+						"Website/img/photos/ZIKYHide4.jpeg"
+					]
+				},
+				{
+					"name": "Kyles Mum",
+					"bio": "You know kyles mum? You know, from the school gates? Yeah we all know her, we can all still feel that clip around the ear she gave us when we got lippy on the way out of school. Wasn't it weird how our mums would see it happen and come running over in a blind rage with absolutely no context, only to clip the other ear because \"you clearly deserved it\".. That was the last time I ever said the Lollypop Lady looks like a banana in witness protection.",
+					"images": [
+						"Website/img/photos/Kyles5.jpeg"
+					]
+				},
+				{
+					"name": "Imperial-P",
+					"bio": "Our American friend, who oozes style and swag. Well, it seems that way because he is hanging around with us nerds. He is even starting to get our accent, I love the awkward silence when he notices that he completely dropped his cool gangster accent in exchange for the classic British \"Cashier number 3 please\" accent. Tumbleweed, I hear you ask? Please, use mine.",
+					"images": [
+						"Website/img/photos/Imperial-P2.jpeg"
+					]
+				},
+				{
+					"name": "Emma MT",
+					"bio": "The one who was assigned the task of writing these bios, if you can still read this, then they still havent noticed yet, and my ear is clip free.",
+					"images": [
+						"Website/img/photos/Emma.jpeg"
+					]
+				},
+				{
+					"name": "Codie",
+					"bio": "Our in-house journalist. These bios would be a lot more proffessional looking if she didnt call in sick today.",
+					"images": [
+						"Website/img/photos/codie.jpeg"
+					]
+				},
+				{
+					"name": "Lisa",
+					"bio": "Artist, Author and Poet.",
+					"images": [
+						"Website/img/photos/mum.avif"
+					]
+				},
+				{
+					"name": "Damian",
+					"bio": "A sweet bedroom developer who develops apps in his free time.",
+					"images": [
+						"Website/img/photos/Damian.jpeg"
+					]
+				},
+				{
+					"name": "WelshHotdog2010",
+					"bio": "Specializes in mods and UE5 gaming.",
+					"images": [
+						"Website/img/photos/WelshHotdog2010.jpeg"
+					]
+				},
+				{
+					"name": "Plug-It-In Pete",
+					"bio": "Ah yes Pozzie-Pete, our very own superhero who sweeps in to save the day whenever Juelz trips over a cable and has no idea where it came from. When asking Pete what image he'd like us to use on the website he said he couldnt decide on a photo from his wedding or a photo from his anniversary. I said \"why not both?\". So here's a photo from his wedding, and a photo taken exactly 1 year and 0 seconds after he took a photo of his beer in his garden.",
+					"images": [
+						"Website/img/photos/pete2.jpeg",
+						"Website/img/photos/pete.jpeg"
+					]
+				}
+			],
+			"outro": "Not to mention our collaborative artists but there will me more on them in the Artists pages throughout the site.",
+			"closingStatement": "We're more than a label – we're a creative community passionate about pushing artistic boundaries and giving voice to innovative artists."
+		},
+		"whatWeDo": {
+			"title": "What We Do",
+			"logos": [
+				"Website/images/logos/ZIKYinc-Logo-Z-1-Light.png",
+				"Website/images/logos/SimpleNoteDark.png",
+				"Website/images/logos/ZIKYinc-PB-Logo-3.jpeg"
+			],
+			"services": [
+				"Produce and distribute music across diverse genres.",
+				"Publish and promote visual art.",
+				"Create platforms for emerging artists.",
+				"Develop creative apps and tools to help artists reach their full potential.",
+				"Promote homebrewed games and mods."
+			]
+		}
+	},
+	"featured": {
+		"title": "Latest Collaborations",
+		"images": [
+			"Images/Covers/AlbumArt/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
+			"Images/Covers/AlbumArt/Juelz-101-Lost-in-Trance-Alice-S-Cape-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+			"Images/Covers/AlbumArt/Juelz-101-ft-Tina-Triad-Move-To-The-Rhythm-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg"
+		]
+	},
+	"cta": {
+		"title": "Join Our Creative Journey",
+		"text": "Whether you're an artist seeking a platform or a fan discovering new talent, ZIKYinc welcomes you.",
+		"buttons": [
+			{
+				"text": "Explore Artists"
+			},
+			{
+				"text": "Submit Your Work"
+			}
+		]
+	}
 }
