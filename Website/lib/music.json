@@ -772,7 +772,7 @@
 			"description": "There's a reason why Swanscombe is so quiet.",
 			"thumbnail": "Images/Covers/AlbumArt/The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
 			"link": "Website/lib/music/songs/ssos.json",
-			"genre": ["rap", "grime", "hip-hop"],
+			"genre": ["Rap", "Grime", "Hip-Hop"],
 			"albums": [
 				{"album": "Between the Concrete", "track": 5, "cd": 1}
 			],
@@ -787,7 +787,7 @@
 			"description": "Taking over. RIP ZIKY.",
 			"thumbnail": "Images/Covers/AlbumArt/TheTakeOver-ImperialP-Juelz-FM_Blockbusters-Juelz-101-RIP-ZIKY-ZIKYinc-Inc.jpeg",
 			"link": "Website/lib/music/songs/takeov.json",
-			"genre": ["rap", "grime"],
+			"genre": ["Rap", "Hip-Hop"],
 			"albums": [
 				{"album": "Between the Concrete", "track": 1, "cd": 1}
 			],

@@ -1,9 +1,9 @@
 [
   {
-    "name": "imp.html",
-    "ext": "html",
-    "path": "Website/lib/music/artists/imp.html",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/imp.html"
+    "name": "imp.json",
+    "ext": "json",
+    "path": "Website/lib/music/artists/imp.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/imp.json"
   },
   {
     "name": "gekk.html",
@@ -162,9 +162,9 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/jayc.html"
   },
   {
-    "name": "emma.html",
-    "ext": "html",
-    "path": "Website/lib/music/artists/emma.html",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/emma.html"
+    "name": "emma.json",
+    "ext": "json",
+    "path": "Website/lib/music/artists/emma.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/emma.json"
   }
 ]

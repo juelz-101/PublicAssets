@@ -999,7 +999,14 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Icons/Hex/Blank.txt"
     }
   ],
-  "Website": [],
+  "Website": [
+    {
+      "name": "AI_Setup.txt",
+      "ext": "txt",
+      "path": "Website/AI_Setup.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/AI_Setup.txt"
+    }
+  ],
   "Website/lib": [
     {
       "name": "music.json",
@@ -1145,10 +1152,10 @@
   ],
   "Website/lib/music/artists": [
     {
-      "name": "imp.html",
-      "ext": "html",
-      "path": "Website/lib/music/artists/imp.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/imp.html"
+      "name": "imp.json",
+      "ext": "json",
+      "path": "Website/lib/music/artists/imp.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/imp.json"
     },
     {
       "name": "gekk.html",
@@ -1307,10 +1314,10 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/jayc.html"
     },
     {
-      "name": "emma.html",
-      "ext": "html",
-      "path": "Website/lib/music/artists/emma.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/emma.html"
+      "name": "emma.json",
+      "ext": "json",
+      "path": "Website/lib/music/artists/emma.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/emma.json"
     }
   ],
   "Website/lib/music/songs": [
@@ -1339,10 +1346,10 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/sumn.html"
     },
     {
-      "name": "ssos.html",
-      "ext": "html",
-      "path": "Website/lib/music/songs/ssos.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/ssos.html"
+      "name": "ssos.json",
+      "ext": "json",
+      "path": "Website/lib/music/songs/ssos.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/ssos.json"
     }
   ],
   "Website/img": [],

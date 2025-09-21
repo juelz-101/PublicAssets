@@ -24,9 +24,9 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/sumn.html"
   },
   {
-    "name": "ssos.html",
-    "ext": "html",
-    "path": "Website/lib/music/songs/ssos.html",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/ssos.html"
+    "name": "ssos.json",
+    "ext": "json",
+    "path": "Website/lib/music/songs/ssos.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/ssos.json"
   }
 ]

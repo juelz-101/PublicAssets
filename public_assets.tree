@@ -162,6 +162,7 @@ PublicAssets/
 ├── Templates_PromptData.json
 ├── Test/
 ├── Website/
+│   ├── AI_Setup.txt
 │   ├── img/
 │   │   ├── bg/
 │   │   │   ├── art/
@@ -313,12 +314,12 @@ PublicAssets/
 │       │   │   ├── cams.html
 │       │   │   ├── egbx.html
 │       │   │   ├── emil.html
-│       │   │   ├── emma.html
+│       │   │   ├── emma.json
 │       │   │   ├── esta.html
 │       │   │   ├── face.html
 │       │   │   ├── gekk.html
 │       │   │   ├── hotc.html
-│       │   │   ├── imp.html
+│       │   │   ├── imp.json
 │       │   │   ├── jayc.html
 │       │   │   ├── jevh.html
 │       │   │   ├── juelz.html
@@ -340,12 +341,13 @@ PublicAssets/
 │       │   └── songs/
 │       │       ├── disl.json
 │       │       ├── placeholder.html
-│       │       ├── ssos.html
+│       │       ├── ssos.json
 │       │       ├── sumn.html
 │       │       └── takeov.html
 │       ├── music.json
 │       ├── tools.json
 │       └── webdata.json
+├── Website.json
 ├── Website_img_bg_art.json
 ├── Website_img_bg_dev.json
 ├── Website_img_bg_focused_j101.json
