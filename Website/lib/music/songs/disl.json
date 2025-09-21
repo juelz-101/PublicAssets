@@ -12,7 +12,7 @@
 		}
 	],
 	"thumbnail": "Images/Covers/AlbumArt/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
-	"description": "A hypnotic blend of atmospheric drum and bass, Dancing in the Sunlight showcases Emma MT's evocative artistry. Beneath its shimmering layers lies a haunting narrative—every beat and melody whispering secrets of resilience, solitude, and finding light in the shadows of a brutalist world.",
+	"description": "A hypnotic blend of atmospheric drum and bass, Dancing in the Sunlight showcases  Juelz-101 & Emma MT's evocative artistry. Beneath its shimmering layers lies a haunting narrative—every beat and melody whispering secrets of resilience, solitude, and finding light in the shadows of a brutalist world.",
 	"albums": [
 		{
 			"name": "Brutalistening",
@@ -28,8 +28,7 @@
 		}
 	],
 	"genres": [
-		"Rap",
-		"Grime"
+		"Drum & Bass"
 	],
 	"audio": {
 	  "soundcloud_embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2040549429&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
