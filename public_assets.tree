@@ -4,6 +4,7 @@ PublicAssets/
 │   ├── Covers/
 │   │   ├── AlbumArt/
 │   │   │   ├── 90s.jpeg
+│   │   │   ├── Blank.txt
 │   │   │   ├── Border.jpeg
 │   │   │   ├── Brut-Case.jpeg
 │   │   │   ├── Brut-Case2.jpeg
@@ -94,6 +95,7 @@ PublicAssets/
 │   ├── Icons/
 │   │   ├── Blank.txt
 │   │   └── Hex/
+│   │       ├── Blank.txt
 │   │       ├── PB_PlaceHolder1.png
 │   │       ├── PB_PlaceHolder2.png
 │   │       ├── PB_PlaceHolder3.png

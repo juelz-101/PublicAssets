@@ -209,6 +209,18 @@
       "ext": "json",
       "path": "Images_Icons_Hex.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Icons_Hex.json"
+    },
+    {
+      "name": "Images_Covers.json",
+      "ext": "json",
+      "path": "Images_Covers.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Covers.json"
+    },
+    {
+      "name": "Images_Icons.json",
+      "ext": "json",
+      "path": "Images_Icons.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Icons.json"
     }
   ],
   "Images": [],
@@ -939,6 +951,12 @@
       "ext": "png",
       "path": "Images/Covers/AlbumArt/Do-Or-Die-Eg-Boxx-Ft-Lady-Limbo-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Do-Or-Die-Eg-Boxx-Ft-Lady-Limbo-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png"
+    },
+    {
+      "name": "Blank.txt",
+      "ext": "txt",
+      "path": "Images/Covers/AlbumArt/Blank.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Blank.txt"
     }
   ],
   "Images/Icons": [
@@ -973,6 +991,12 @@
       "ext": "png",
       "path": "Images/Icons/Hex/PB_PlaceHolder3.png",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Icons/Hex/PB_PlaceHolder3.png"
+    },
+    {
+      "name": "Blank.txt",
+      "ext": "txt",
+      "path": "Images/Icons/Hex/Blank.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Icons/Hex/Blank.txt"
     }
   ],
   "Website": [],

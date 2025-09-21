@@ -22,5 +22,11 @@
     "ext": "png",
     "path": "Images/Icons/Hex/PB_PlaceHolder3.png",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Icons/Hex/PB_PlaceHolder3.png"
+  },
+  {
+    "name": "Blank.txt",
+    "ext": "txt",
+    "path": "Images/Icons/Hex/Blank.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Icons/Hex/Blank.txt"
   }
 ]
