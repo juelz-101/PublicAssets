@@ -760,14 +760,7 @@
 			"link": "Website/lib/music/artists/alic.json",
 			"genre": ["Trance, House, EDM"],
 			"albums": [
-				{"album": "Between the Concrete", "song": "Summer Nights", "track": 6, "cd": 1, "link": "Website/lib/music/albums/btwn.json"},
-				{"album": "Aint Much But Its Home", "song": "Summer Nights", "track": 3, "cd": 1, "link": "Website/lib/music/albums/btwn.json"},
-				{"album": "Between the Concrete", "song": "Together", "track": 10, "cd": 1, "link": "Website/lib/music/albums/btwn.json"},
-				{"album": "Aint Much But Its Home", "song": "Together", "track": 4, "cd": 1, "link": "Website/lib/music/albums/btwn.json"},
-				{"album": "Between the Concrete", "song": "Unstoppable", "track": 13, "cd": 1, "link": "Website/lib/music/albums/btwn.json"},
-				{"album": "Aint Much But Its Home", "song": "Unstoppable", "track": 9, "cd": 1, "link": "Website/lib/music/albums/btwn.json"},
-				{"album": "Between the Concrete", "song": "Suzannes Story", "track": 16, "cd": 1, "link": "Website/lib/music/albums/btwn.json"},
-				{"album": "Aint Much But Its Home", "song": "Suzannes Story", "track": 10, "cd": 1, "link": "Website/lib/music/albums/btwn.json"}
+				{"album": "One Final Vinyl", "song": "Lost In Trance", "track": 6, "cd": 1, "link": "Website/lib/music/albums/final.json"}
 			],
 			"featured": true
 		}
@@ -779,11 +772,11 @@
 			"description": "There's a reason why Swanscombe is so quiet.",
 			"thumbnail": "Images/Covers/AlbumArt/The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
 			"link": "Website/lib/music/songs/ssos.json",
-			"genre": ["rap", "grime"],
+			"genre": ["rap", "grime", "hip-hop"],
 			"albums": [
 				{"album": "Between the Concrete", "track": 5, "cd": 1}
 			],
-			"soundcloud": "https://soundcloud.com/juelz-101/the-silent-streets-of-swanscombe",
+			"soundcloud": "https://soundcloud.com/ziky_inc/the-silent-streets-of-swanscombe",
 			"youtube": null,
 			"other_links": [],
 			"featured": true
@@ -798,7 +791,7 @@
 			"albums": [
 				{"album": "Between the Concrete", "track": 1, "cd": 1}
 			],
-			"soundcloud": "https://soundcloud.com/juelz-101/the-takeover",
+			"soundcloud": "https://soundcloud.com/ziky_inc/the-takeover",
 			"youtube": null,
 			"other_links": [],
 			"featured": false
@@ -814,7 +807,7 @@
 				{"album": "Brutalistening", "track": 2, "cd": 1},
 				{"album": "Juelz-FM Live from London Volume '24", "track": 2, "cd": 1}
 			],
-			"soundcloud": "https://soundcloud.com/juelz-101/dancing-in-the-sunlight-ft-emma-mt",
+			"soundcloud": "https://soundcloud.com/ziky_inc/dancing-in-the-sunlight-ft-emma-mt",
 			"youtube": "https://www.youtube.com/watch?v=24mGoAPCVzo&list=PL9XZUncvkEMAWoQ9ZdL3VhZuOTVFeJPUx",
 			"other_links": [],
 			"featured": true
@@ -830,7 +823,7 @@
 				{"album": "Between the Concrete", "track": 6, "cd": 1},
 				{"album": "Aint Much But Its Home", "track": 3, "cd": 1}
 			],
-			"soundcloud": "https://soundcloud.com/juelz-101/summer-nights",
+			"soundcloud": "https://soundcloud.com/ziky_inc/summer-nights",
 			"youtube": null,
 			"other_links": [],
 			"featured": true
@@ -846,7 +839,7 @@
 				{"album":"Between the Concrete","track":"10","cd":"1"},
 				{"album":"Aint Much But Its Home","track":"4","cd":"1"}
 			],
-			"soundcloud":"https://soundcloud.com/juelz-101/together",
+			"soundcloud":"https://soundcloud.com/ziky_inc/together",
 			"youtube":"null",
 			"other_links":[]
 		}	

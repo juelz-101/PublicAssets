@@ -2,7 +2,7 @@
 	"meta": {
 		"type": "file", "name": "ProjectExample: Example", "name_finalized": true,
 		"desc": "Example of how a PowerPrompt project save file will look.",
-		"file": { "platform": "", "root": "ZIKYinc_Data", "path": "PublicAssets/Templates/PromptData", "this_file": "projectExample.json" }, 
+		"file": { "platform": "", "root": "ZIKYinc_Data", "path": "PublicAssets/Templates/PromptData", "this_file": "projectExample.json" },
 		"creator": "Juelz-101", "organization": "ZIKYinc",
 		"started": "20/9/25", "version": "0.0.01", "edited": {"date": "", "time": "", "edited_by": "", "edit_number": 0, "changelog": [] },
 		"mgr": { "use": "true", "workspace": {"web": "", "file": "", "priority": "web", "has_internal_file": false },
@@ -14,104 +14,376 @@
 		"info": [
 			"This section documents the schema and conventions for the PowerPrompt app.",
 			"## Prompt Types",
-			"- **Flat Prompts:** Single-variation prompts. Can be used standalone or referenced by dynamic prompts.",
-			"- **Base Prompts:** Foundational prompts that can include field variations.",
-			"- **Adders:** Prompts designed to attach onto main prompts for additional info or instructions.",
-			"- **Guide:** A variable paired with instructions for adjusting results.",
-			"- **Variants:** Different versions of the same prompt.",
+			"- 	**Flat Prompts:** Single-variation prompts. Can be used standalone or referenced by dynamic prompts.",
+			"- 	**Base Prompts:** Foundational prompts that can include field variations.",
+			"- 	**Adders:** Prompts designed to attach onto main prompts for additional info or instructions.",
+			"- 	**Guide:** A variable paired with instructions for adjusting results.",
+			"- 	**Variants:** Different versions of the same prompt.",
 			"## Fields & Data Structuring",
-			"- **Fields:** Customizable/interchangeable parts of a prompt, often corresponding to UI input areas.",
-			"- **Field Callers:** Tags used within a prompt's string to reference a field.",
-			"- **Local Fields:** Fields defined within a specific prompt.",
-			"- **Data Fields:** Fields that reference external data arrays.",
-			"- **Data Pools:** Arrays of items with identical keys, used to create modular fields.",
-			"- **Palettes:** Field data for categorizing and defining similar fields.",
+			"- 	**Fields:** Customizable/interchangeable parts of a prompt, often corresponding to UI input areas.",
+			"- 	**Field Callers:** Tags used within a prompt's string to reference a field.",
+			"- 	**Local Fields:** Fields defined within a specific prompt.",
+			"- 	**Data Fields:** Fields that reference external data arrays.",
+			"- 	**Data Pools:** Arrays of items with identical keys, used to create modular fields.",
+			"- 	**Palettes:** Field data for categorizing and defining similar fields.",
+			"- 	**Field Types & Parameters:**",
+			"	- `string`: Select from a predefined array or allow user input.",
+			"	- `number`: Set a minimum and maximum value for a UI slider.",
+			"	- `boolean`: A true/false toggle.",
+			"	- `input`: Forces the user to provide a custom value when the prompt is called.",
 			"## Text-Level Navigation (Tags)",
 			"Tags are used at a text level to direct the app to data within the database. The structure is `[<scope>.<section>.<type>.<id>.<additional_nav>]`",
-			"1.  **Scope:** Database to use.",
-			"    - `u`: User's IndexedDB.",
-			"    - `d`: Default database.",
-			"    - `w`: Web database.",
-			"    - `i`: Current imported file.",
-			"2.  **Section:** Area of the app to get data from.",
-			"    - `p`: Prompts.",
-			"    - `c`: Characters.",
-			"    - `s`: Scenes.",
-			"    - `w`: Worlds.",
-			"    - `v`: Vaults.",
-			"3.  **Type:** Type of data to get, followed by the item's ID.",
-			"    - **Prompts:** `pr` (Prompt), `df` (Data Field), `dp` (Data Pool), `ad` (Adder), `pal` (Palette).",
-			"4.  **Additional Navigation (Optional):**",
-			"    - `var`: Item variant.",
-			"    - `lf`: An item's local fields.",
+			"1.  **Scope:** Database to use.",
+			"    	- `u`: User's IndexedDB.",
+			"    	- `d`: Default database.",
+			"    	- `w`: Web database.",
+			"    	- `i`: Current imported file.",
+			"2.  **Section:** Area of the app to get data from.",
+			"    	- `p`: Prompts.",
+			"    	- `c`: Characters.",
+			"    	- `s`: Scenes.",
+			"    	- `w`: Worlds.",
+			"    	- `v`: Vaults.",
+			"3.  **Type:** Type of data to get, followed by the item's ID.",
+			"    	- **Prompts:** `pr` (Prompt), `df` (Data Field), `dp` (Data Pool), `ad` (Adder), `pal` (Palette).",
+			"4.  **Additional Navigation (Optional):**",
+			"    	- `var`: Item variant.",
+			"    	- `lf`: An item's local fields.",
+			"    	- `*`: Step up out of current array, allowing you to follow this with the key of the value you want to get.",
+			"5.  **Field Values Manual Set:**",
+			"    	- `{value}`: Set value.",
+			"    	- `(int)`: Integar to get by array number.",
+			"    	- `d`: Default value.",
+			"    	- `r`: Random value.",
+			"## Field Value Types:",
+			"    	- `string`: Set from an array of strings.",
+			"    		- `default`: A pre-set value, usually set to clearest and simplest usage example to help users understand its purpose.",
+			"    		- `values`: List of strings to select from. Can be standard or referencing other data. Can also use (num), (r>num), (num<^) -> (1): List ID, (r>3): Random but greater than num, (2<^): num less than max", 
+			"    		- `block`: Optional - List of value results that will be hidden/blocked before processing prompt.",
+			"    	- `number`: Set a number value.",
+			"    		- `default`: A pre-set value, usually set to around mid range.",
+			"    		- `step`: Adjustment sensitivity", 
+			"    		- `min`: Optional - Min value that can be set", 
+			"    		- `max`: Optional - Max value that can be set", 
+			"    	- `merge`: Set a number value.",
+			"    		- `link`: The root array in the datapool.",
+			"    		- `nest`: Which sub-array to use to merge", 
+			"    		- `min`: Optional - Min value that can be set", 
+			"    		- `max`: Optional - Max value that can be set", 
+			"    		- `block`: Optional - List of nest ID's that will be hidden/blocked before processing prompt.",
+			"    	- `boolean`: Set a toggle value.",
+			"    		- `default`: A state to be the default.",
+			"    	- `input`: Force user input.",
+			"    		- `types`: Optional - Array of allowed types, they can then be followed up with parameters",
+			"    		- `placeholder_text`: Optional - Text displayed as a usable example and gets cleared when user types.",
+			"    		- `default`: Optional - Not sure if this is useful.",
+			
+			"## Datapool Merging:",
+			"    	- `{value}`: Set value.",
 			"## Example Field Callers",
-			"- **Data Pool:** `[i.p.dp.dp-001]` (refers to Data Pool with ID 'dp-001' in the imported file's prompt section)."
+			"- 	**Data Pool:** `[i.p.dp.dp-001]` (refers to Data Pool with ID 'dp-001' in the imported file's prompt section)."
+			"- 	**Manual Set:** `[u.p.df.df-output:{1}]`, `[u.p.df.df-output:{HTML}]`, `[u.p.df.df-output:r]` (Sets value automatically when called)."
 		]
 	},
 	"data": {
 		"prompt": {
 			"prompts": [
 				{
-				  "id": "ZKY-001", "name": "ZIKY: Create Module-Guide for Library",
-				  "prompt": "Ok so next can we get a well presented, well documented [field] document for our library that fully explains. Be as descriptive as possible, give multiple usage examples, and include things like pages, a contents and index, and other techniques to make it look professional and clean.",
-				  "desc": "Get AI to fully explain the module created in a professional way and store it as a document.",
-				  "type": "Base", "cat": "Documentation", "tags": ["Docs", "Register", "Project Management"],
-				  "how": "Once "
-				  "fields": [
-					{
-					  "id": "01",
-					  "name": "Doc type",
-					  "description": "Type of doc you want AI to make.",
-					  "category": "", "tags": [], "types": ["string"],
-					  "defaults": [],
-					  "isStrict": false,
-					  "values": [],
-					  "isStrictValues": false,
-					  "defaultValue": "friend",
-					  "userNotes": [
-						"[system]: Tailor the motivational quote to specific roles or names."
-					  ]
-					}
-				  ],
-				  "flat": [
-					  "Ok so next can we get a well presented, well documented Markdown document for our library that fully explains our module. Be as descriptive as possible, give multiple usage examples, and include things like pages, a contents and index, and other techniques to make it look professional and clean.",
-				  ],
-				  "meta": {},
-				  "notes": [
-					"[system]: Useful for daily check-ins and positive reinforcement."
-				  ],
-				  "yourNotes": [],
-				  "hidden": false
-				}
+					"id": "u.p.pr.ZKY-001",
+					"name": "ZIKY: Create Module-Guide for Library",
+					"desc": "Get AI to fully explain the module created in a professional way and store it as a document.",
+					"intended_for": "Image AI",
+					"type": "Base",
+					"cat": "Documentation",
+					"tags": [ "Docs", "Register", "Project Management" ],
+					"prompt": "Ok so next can we get a well presented, well documented {doc_type} for our library that fully explains. Be as descriptive as possible, give multiple usage examples, and include things like pages, a contents and index, and other techniques to make it look professional and clean.",
+					"fields": [
+						{
+							"id": "doc_type", "name": "Document type",
+							"description": "Type of doc you want AI to make.",
+							"category": "Format", "tags": ["Output", "Structure"],
+							"type": "string", "allowCustom": true,
+							"i": {"default": "Markdown", "values": [ "Markdown", "PDF", "Web page" ] },
+							"notes": [ "[system]: x." ]
+						}
+					],
+					"flat": ["Ok so next can we get a well presented, well documented Markdown document for our library that fully explains our module. Be as descriptive as possible, give multiple usage examples, and include things like pages, a contents and index, and other techniques to make it look professional and clean."],
+					"variants": [],
+					"meta": {},
+					"notes": [],
+					"hidden": false
+				},
+				{
+					"id": "u.p.pr.sleek-apps",
+					"name": "ZIKY: Brand Design for our apps",
+					"desc": "Easy image prompting by merging our app design with modular prompts.",
+					"intended_for": "Image AI",
+					"type": "Base",
+					"cat": "Brand Design",
+					"tags": [ "branding", "modern", "design" ],
+					"prompt": "Design a sleek, modern {u.p.pal.apps} for the [app_name] [usage]. [main_design]. [additional_design]. [text]. [character[inc_in_design:true]] Prominently display the text [app_name], [<tp_b>]. Incorporate clean lines, refined brushed metal with a bright gleaming edge giving off a hint of [Colour1]. Set the [type] against a transparent/black glass background. [<con1>]","fields": [
+						{
+							"id": "merge_design",
+							"name": "Merge",
+							"allowCustom": true, "type": "merge",
+							"i": { "link": "u.p.dp.apps", "array": "r"},
+							"notes": [ "[system]: x." ]
+						}
+					],
+					"flat": "Ok so next can we get a well presented, well documented Markdown document for our library that fully explains our module. Be as descriptive as possible, give multiple usage examples, and include things like pages, a contents and index, and other techniques to make it look professional and clean.",
+					"variants": [],
+					"meta": {},
+					"notes": [],
+					"hidden": false
+				},
+				
 			],
 			"tags": [
 				{
-				  "id": "",
-				  "name": "Machine Learning",
-				  "description": "Related to machine learning techniques and topics.",
-				  "sidenotes": [
-					"[SYSTEM]: Used for discussing algorithms and models.",
-					"[SYSTEM]: Includes supervised and unsupervised learning."
-				  ], 
-				  "createdby" : "Juelz"
+					"id": "tag-001",
+					"name": "Machine Learning",
+					"description": "Related to machine learning techniques and topics.",
+					"notes": [
+						"[SYSTEM]: Used for discussing algorithms and models.",
+						"[SYSTEM]: Includes supervised and unsupervised learning."
+					],
+					"createdby": "Juelz"
 				},
+				{ "id": "tag-002", "name": "Docs", "description": "Related to documentation generation.", "createdby": "Juelz" },
+				{ "id": "tag-003", "name": "Register", "description": "Used for tracking project changes and items.", "createdby": "Juelz" },
+				{ "id": "tag-004", "name": "Project Management", "description": "Tags related to project management and tracking.", "createdby": "Juelz" },
+				{ "id": "tag-005", "name": "Output", "description": "Pertaining to the format of the output.", "createdby": "Juelz" },
+				{ "id": "tag-006", "name": "Structure", "description": "Used for defining the structure of the output.", "createdby": "Juelz" }
 			],
 			"categories": [
 				{
-				  "id": "cat-001",
-				  "name": "Chatbot",
-				  "description": "General prompts for interacting with a chatbot.",
-				  "sidenotes": [
-					"Use for general chatbot inquiries.",
-					"Includes a wide range of topics."
-				  ], 
-				  "createdby": "[system:AI]"
+					"id": "cat-001",
+					"name": "Chatbot",
+					"description": "General prompts for interacting with a chatbot.",
+					"sidenotes": [ "Use for general chatbot inquiries.", "Includes a wide range of topics." ],
+					"createdby": "[system:AI]"
 				},
+				{ "id": "cat-002", "name": "Documentation", "description": "Prompts for generating documentation, guides, or reports.", "createdby": "Juelz" },
+				{ "id": "cat-003", "name": "Format", "description": "Fields for controlling the output format.", "createdby": "Juelz" }
 			],
-			"fields": [],
-			"pools": []
-			"adders": [],
-			"palettes": [],
+			"fields": [
+				{
+					"id": "df-tone",
+					"name": "Tone",
+					"desc": "The overall tone of the response.",
+					"type": "string",
+					"i": {
+						"default": "Professional",
+						"values": [ "Formal", "Casual", "Humorous", "Sarcastic", "Empathetic", "Professional", "Enthusiastic" ]
+					},
+					"cat": "Style",
+					"tags": [ "Writing Style", "Tone of Voice" ],
+					"notes": []
+				},
+				{
+					"id": "df-output",
+					"name": "Output Format",
+					"desc": "The desired format for the AI's response.",
+					"type": "string",
+					"i": {
+						"default": "Markdown",
+						"values": [ "Markdown", "Plain Text", "HTML", "JSON", "YAML", "Numbered List", "Bullet Points" ]
+					},
+					"cat": "Format",
+					"tags": [ "Output", "Structure", "Data" ],
+					"notes": []
+				},
+				{
+					"id": "df-audience",
+					"name": "Target Audience",
+					"desc": "Who the content is intended for.",
+					"type": "string",
+					"i": {
+						"default": "General Public",
+						"values": [ "Beginners", "Experts", "General Public", "Students", "Children", "Business Professionals" ]
+					},
+					"cat": "Audience",
+					"tags": [ "Target", "User" ],
+					"notes": []
+				},
+				{
+					"id": "df-num_words",
+					"name": "Number of Words",
+					"desc": "The desired word count for the response.",
+					"type": "number",
+					"i": {
+						"default": 500,
+						"min": 100,
+						"max": 1000,
+						"step": 50
+					},
+					"cat": "Parameters",
+					"tags": [ "Length", "Size" ],
+					"notes": []
+				},
+				{
+					"id": "df-is_creative",
+					"name": "Creative Mode",
+					"desc": "Toggle for a more creative or imaginative response.",
+					"type": "boolean",
+					"i": {
+						"default": false,
+						"values": [ true, false ]
+					},
+					"cat": "Style",
+					"tags": [ "Creativity", "Writing Style" ],
+					"notes": []
+				},
+				{
+					"id": "df-project_name",
+					"name": "Project Name",
+					"desc": "The name of the project to reference.",
+					"type": "input",
+					"i": {
+						"placeholder_test": "",
+						"default": "",
+						"values": []
+					},
+					"cat": "Parameters",
+					"tags": [ "Project", "Reference" ],
+					"notes": []
+				}
+			],
+
+			"pools": [
+				{
+					"name": "Our Apps",
+					"id": "u.p.dp.apps",
+					"intended_for": "Image AI",
+					"array": [
+						{
+							"app_name": "ZikKit",
+							"id": "zik",
+							"app_desc": "Various handy tools to have nearby at any time.",
+							"main_design": "A tool bag with racing tools coming out of the top",
+							"additional_design": "A windows logo present",
+							"character": [],
+							"banner": "A vibrant tool bag overflowing with colorful racing tools, set against a subtle gradient background that complements the primary colors.",
+							"wallpaper": "A dynamic pattern of various tools and gears, all interconnected in a playful manner, emphasizing functionality and accessibility.",
+				   
+							"text": "",
+							"chatguide": "",
+							"color1": "#32CD32",
+							"color2": "#008080",
+							"color3": "#4B0082",
+							"color_d1": "ZikKit features a vibrant lime green (#32CD32) as the primary color, offering energy and freshness.",
+							"color_d2": "A balanced teal (#008080) adds a calm, mid-brightness tone that complements the vibrancy of lime green.",
+							"color_d3": "A rich deep purple (#4B0082) provides depth and a striking contrast, anchoring the overall color scheme.",
+							"font_family": "Segoe UI",
+							"heading_font": "Segoe UI Bold"
+						},
+						{
+							"app_name": "PowerPrompt",
+							"id": "pwp",
+							"app_desc": "A complex prompt making tool with character building and story immersion",
+							"main_design": "A hollow metallic globe with visible landmasses, housing a red-hot, glowing core. From one side, a spout of molten lava shoots out, forming a speech bubble with three glowing dots.",
+							"additional_design": "The globe has subtle engravings, hinting at the app's capabilities. The speech bubble adds a dynamic and powerful visual element.",
+							"character": [
+								{
+									"name": "Peter Planet",
+									"design": "A hollow metallic globe with visible landmasses, housing a red-hot, glowing core, spitting out lava that blow up to be speech bubbles",
+									"age": 500000,
+									"items": "",
+									"variations": "His size can vary depending on the current story line, he can be planet-sided, or he can be human sized. If he is playing an assistant then it is unlikely that his size will ever be relivant, but we will add logic to his traits to deal with the event that he is asked how big he is but answering depending on the current setup and previous convo.",
+									"roles": "The apps mascot, Common villan in PowerPrompts generated worlds, can be used as an assistant but he gets mad very easily and all hell will break loose.",
+									"initial_mood": "Firey, easily excitable, hyper, loud, quick to anger",
+									"traits": {
+										"general": "",
+										"likes": "",
+										"dislikes": ""
+									},
+									"char_prompts": {},
+									"inc_in_design": false,
+									"flag": {},
+									"extras": [],
+									"notes": {}
+								},
+								{
+									"name": "Emma",
+									"design": "A smart and well dressed woman, who has dark hair, big green eyes and nerdy glasses.",
+									"age": 24,
+									"items": "",
+									"variations": ".",
+									"roles": "Is the base assistant for the user in powerprompt, cannot be used as a world companion as she is too easily scared. She is an easy target for villains.",
+									"initial_mood": "Happy, content, curious.",
+									"char_prompts": {},
+									"inc_in_design": false,
+									"flags": {},
+									"extras": [],
+									"notes": []
+								}
+							],
+							"banner": "An intense scene featuring a hollow metallic globe with glowing core elements, surrounded by fiery accents and molten lava flows.",
+							"wallpaper": "A dramatic cosmic landscape with the globe at the center, radiating heat and light, while speech bubbles float around it, creating a sense of dialogue and interaction.",
+				   
+							"text": "",
+							"chatguide": "",
+							"color1": "#FF4500",
+							"color2": "#DAA520",
+							"color3": "#483D8B",
+							"color_d1": "PowerPrompt is driven by a bold red (#FF4500) primary color, symbolizing power and urgency.",
+							"color_d2": "Description: A warm goldenrod (#DAA520) provides a mid-brightness tone that adds warmth and richness without overpowering the bold red.",
+							"color_d3": "A dark slate blue (#483D8B) adds depth and a cool contrast, balancing the fiery red tones.",
+							"font_family": "Segoe UI",
+							"heading_font": "Segoe UI Bold"
+						}
+					]
+				}
+			],
+			"adders": [
+				{
+					"name": "Image Fit",
+					"id": "u.p.ad-img-fit",
+					"category": "Consitancy",
+					"intended_for": "Image AI",
+					"desired_position": "end",
+					"desc": "Used to help with consistancy when creating images to ensure image takes up entire space but doesnt extend out of bounds",
+					"example": "(Create an icon for a new folder button, using a bubble style) Ensure the design takes up the whole image.",
+					"prompt": "Ensure the design fits within the canvas, with no elements extending beyond the boundaries."
+				}
+			],
+			"palettes": [
+				{
+					"id": "pal-uic",
+					"name": "UI Components",
+					"desc": "Common UI building blocks for apps, games, and software",
+					"options": [
+						{ "id": "but", "name": "Button", "desc": "Digital button for interaction" },
+						{ "id": "tog", "name": "Toggle Switch", "desc": "Switch for on/off states" },
+						{ "id": "chk", "name": "Checkbox", "desc": "Square option box for selections" },
+						{ "id": "rad", "name": "Radio Button", "desc": "Circular selector for exclusive choices" },
+						{ "id": "slid", "name": "Slider", "desc": "Adjustable slider for values" },
+						{ "id": "inp", "name": "Input Field", "desc": "Field for text entry" },
+						{ "id": "drp", "name": "Dropdown", "desc": "Expandable menu for multiple options" },
+						{ "id": "nav", "name": "Navigation Bar", "desc": "UI strip for moving between sections" },
+						{ "id": "mod", "name": "Modal/Popup", "desc": "Floating dialog for alerts or forms" },
+						{ "id": "tab", "name": "Tab Control", "desc": "Tabbed interface for switching views" }
+					]
+				},
+				{
+					"id": "pal-brand",
+					"name": "Branding",
+					"desc": "Visual identity elements for companies, games, and products",
+					"options": [
+						{ "id": "logo", "name": "Logo", "desc": "Primary company or product logo" },
+						{ "id": "ico", "name": "App Icon", "desc": "Icon for apps or executables" },
+						{ "id": "clr", "name": "Color Palette", "desc": "Defined brand color scheme" },
+						{ "id": "typ", "name": "Typography", "desc": "Font styles used in branding" },
+						{ "id": "masc", "name": "Mascot", "desc": "Character or symbol representing brand" },
+						{ "id": "pat", "name": "Pattern/Texture", "desc": "Custom branded background style" },
+						{ "id": "tag", "name": "Tagline", "desc": "Short phrase expressing the brand" },
+						{ "id": "ban", "name": "Banner", "desc": "Wide-format promotional graphic" },
+						{ "id": "stk", "name": "Sticker/Decal", "desc": "Small branded graphic asset" },
+						{ "id": "bac", "name": "Wallpaper/Background", "desc": "Background Image representing brand." }
+						{ "id": "snd", "name": "Brand Sound", "desc": "Audio identity like a jingle or cue" }
+					]
+				}
+			],
 			"favs": [],
 			"recent": [],
 			"settings": []
@@ -124,60 +396,63 @@
 			"rulebooks": [],
 			"toolbag": [],
 			"settings": []
-
 		},
 		"scenarios": [],
 		"worlds": [],
 		"stations": [
 			{
-				"name": "App Project Prompts", "id": "vau_zik_data",
+				"name": "App Project Prompts",
+				"id": "vau_zik_data",
 				"desc": "Prompts used to give to AI to assist with the ZIKYinc Data project and Project builder.",
 				"prompts": [
-					
+					{
+						"id": "i.v.pr.Reg-001",
+						"name": "Log Item to Register",
+						"ref": "i.p.pr.ZKY-001",
+						"config": {
+							"action": "prompt",
+							"pre_set_fields": {
+								"doc_type": "Project Register"
+							},
+							"blocked_values": {
+								"doc_type": [ "Web page", "PDF document" ]
+							}
+						}
+					}
 				]
 			}
 		],
 		"vaults": [
 			{
-				"name": "App Project Prompts", "id": "vau_zik_data",
+				"name": "App Project Prompts",
+				"id": "vau_zik_data",
 				"desc": "Prompts used to give to AI to assist with the ZIKYinc Data project and Project builder.",
 				"floors": [
 					{
-						"id": "G", "name": "G Flr: Base", "num": 0,
+						"id": "G",
+						"name": "G Flr: Base",
+						"num": 0,
 						"desc": "Base Prompts and setups",
 						"sections": [
-							{	
-								"id": "Reg", "name": "Register Handling Prompts",
+							{
+								"id": "Reg",
+								"name": "Register Handling Prompts",
 								"desc": "Prompts to instruct AI to add to the project registers",
 								"prompts": [
 									{
-									  "id": "JFM-001", "name": "First Prompt",
-									  "prompt": "Generate subtle, comedic melody-driven background music designed for modern apps and games, featuring skillful DJ-style mixing and seamless blending of different tracks every two minutes. The music should draw from popular, upbeat UK genres such as hip-hop, drill, drum and bass, trap, dubstep, UK garage, trance, house, bassline, dancehall, and reggae. Avoid full singing or rapping, but incorporate vocal effects, DJ drops, radio speech snippets, and occasional short vocal samples to add character. The setting is 'Joolz-FM 101.1,' a fictional UK pirate radio station broadcasting from a London tower block. Periodically include retro-style UK pirate radio ads (inspired by classic Force FM spots), and sprinkle in comedic GTA-style radio events-like fake caller segments, competitions, or over-the-top news headlines-to create an immersive, authentic pirate radio vibe..",
-									  "desc": ".",
-									  "cat": "Music", "tags": [],
-									  "fields": [
-										{
-										  "id": "field-001",
-										  "name": "User Role",
-										  "description": "The role or name of the user to tailor the motivational quote.",
-										  "category": "", "tags": [], "types": ["string"],
-										  "defaults": [],
-										  "isStrict": false,
-										  "values": [],
-										  "isStrictValues": false,
-										  "defaultValue": "friend",
-										  "userNotes": [
-											"[system]: Tailor the motivational quote to specific roles or names."
-										  ]
+										"id": "i.v.pr.Reg-001",
+										"name": "Log Item to Register",
+										"ref": "i.p.pr.ZKY-001",
+										"config": {
+											"action": "prompt",
+											"pre_set_fields": {
+												"doc_type": "Project Register"
+											},
+											"blocked_values": {
+												"doc_type": [ "Web page", "PDF document" ]
+											}
 										}
-									  ],
-									  "meta": {},
-									  "notes": [
-										"[system]: Useful for daily check-ins and positive reinforcement."
-									  ],
-									  "yourNotes": [],
-									  "hidden": false
-									},
+									}
 								]
 							}
 						]
