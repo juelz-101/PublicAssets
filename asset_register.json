@@ -409,7 +409,14 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/[C]ZIKYinc_Node3.png"
     }
   ],
-  "Images/Covers": [],
+  "Images/Covers": [
+    {
+      "name": "Blank.txt",
+      "ext": "txt",
+      "path": "Images/Covers/Blank.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/Blank.txt"
+    }
+  ],
   "Images/Covers/AlbumArt": [
     {
       "name": "The-Silent-Streets-Of-Swanscombe-Juelz-101-ft-Imperial-P-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png",
@@ -934,7 +941,14 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Covers/AlbumArt/Do-Or-Die-Eg-Boxx-Ft-Lady-Limbo-Juelz-101-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.png"
     }
   ],
-  "Images/Icons": [],
+  "Images/Icons": [
+    {
+      "name": "Blank.txt",
+      "ext": "txt",
+      "path": "Images/Icons/Blank.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Icons/Blank.txt"
+    }
+  ],
   "Images/Icons/Hex": [
     {
       "name": "PB_PlaceHolder4.png",
