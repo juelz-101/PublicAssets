@@ -227,6 +227,12 @@
       "ext": "json",
       "path": "Website.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website.json"
+    },
+    {
+      "name": "Images_Logos_Main.json",
+      "ext": "json",
+      "path": "Images_Logos_Main.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Logos_Main.json"
     }
   ],
   "Images": [],
