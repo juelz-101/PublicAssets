@@ -25,5 +25,9 @@
 			"link": "Website/lib/songs/disl.json",
 			"thumbnail": "Images/Covers/AlbumArt/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg"
 		}
-	]
+	],
+	"behind_the_scenes": {
+		"interview": {},
+		"artists_vision": {}
+	}
 }

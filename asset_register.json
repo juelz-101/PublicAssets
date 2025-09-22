@@ -1138,10 +1138,10 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/www.html"
     },
     {
-      "name": "brut.html",
-      "ext": "html",
-      "path": "Website/lib/music/albums/brut.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/brut.html"
+      "name": "brut.json",
+      "ext": "json",
+      "path": "Website/lib/music/albums/brut.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/albums/brut.json"
     },
     {
       "name": "btwn.html",

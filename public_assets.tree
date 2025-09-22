@@ -299,7 +299,7 @@ PublicAssets/
 │       ├── misc.json
 │       ├── music/
 │       │   ├── albums/
-│       │   │   ├── brut.html
+│       │   │   ├── brut.json
 │       │   │   ├── btwn.html
 │       │   │   ├── final.html
 │       │   │   ├── ftbt.html

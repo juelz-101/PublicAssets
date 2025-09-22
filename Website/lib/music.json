@@ -6,6 +6,137 @@
 	],
 	"albums": [
 		{
+			"album": "Brutalistening",
+			"thumbnail": "Images/Covers/AlbumArt/Brut-Case.jpeg",
+			"link": "Website/lib/music/albums/brut.json",
+			"genre": ["Drum and Bass", "Hip-Hop", "Liquid Drum and Bass"],
+			"artists": [
+				{"artist": "Emma MT", "link": "Website/lib/music/artists/emma.json"},
+				{"artist": "Juelz-101", "link": "Website/lib/music/artists/juelz.json"}
+			],
+			"tracklist": {
+				"CD1": [
+					{
+						"number": 1,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 2,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 3,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 8,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 9,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 10,
+						"title": "",
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 11,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 12,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 13,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 14,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 15,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 16,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 17,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 18,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 19,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					},
+					{
+						"number": 20,
+						"title": "",
+						"artists": [],
+						"link": "Website/lib/music/songs/takeov.json",
+						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
+					}
+				]
+			},
+			"featured": true
+		},
+		{
 			"album": "Between the Concrete",
 			"thumbnail": "Images/Covers/AlbumArt/Juelz-101-Between-The-Concrete-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg",
 			"link": "Website/lib/music/albums/btwn.json",
@@ -290,137 +421,7 @@
 			},
 			"featured": true
 		},
-		{
-			"album": "Brutalistening",
-			"thumbnail": "Images/Covers/AlbumArt/Brut-Case.jpeg",
-			"link": "Website/lib/music/albums/brut.json",
-			"genre": ["Drum and Bass", "Hip-Hop", "Liquid Drum and Bass"],
-			"artists": [
-				{"artist": "Emma MT", "link": "Website/lib/music/artists/emma.json"},
-				{"artist": "Juelz-101", "link": "Website/lib/music/artists/juelz.json"}
-			],
-			"tracklist": {
-				"CD1": [
-					{
-						"number": 1,
-						"title": "",
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 2,
-						"title": "",
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 3,
-						"title": "",
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 8,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 9,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 10,
-						"title": "",
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 11,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 12,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 13,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 14,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 15,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 16,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 17,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 18,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 19,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					},
-					{
-						"number": 20,
-						"title": "",
-						"artists": [],
-						"link": "Website/lib/music/songs/takeov.json",
-						"thumbnail": "Images/Covers/AlbumArt/placeholder.jpg"
-					}
-				]
-			},
-			"featured": true
-		},
+
 		{
 			"album": "One Final Vinyl",
 			"thumbnail": "Images/Covers/AlbumArt/Juelz-101-One-Final-Vinyl-Rave-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
@@ -767,6 +768,22 @@
 	],
 	"songs": [
 		{
+			"title": "Dancing in the Sunlight",
+			"artist": "Juelz-101 ft Emma MT",
+			"description": "Part of the 'Brutalistening' album.",
+			"thumbnail": "Images/Covers/AlbumArt/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
+			"link": "Website/lib/music/songs/disl.json",
+			"genre": ["Drum and Bass"],
+			"albums": [
+				{"album": "Brutalistening", "track": 2, "cd": 1},
+				{"album": "Juelz-FM Live from London Volume '24", "track": 2, "cd": 1}
+			],
+			"soundcloud": "https://soundcloud.com/ziky_inc/dancing-in-the-sunlight-ft-emma-mt",
+			"youtube": "https://www.youtube.com/watch?v=24mGoAPCVzo&list=PL9XZUncvkEMAWoQ9ZdL3VhZuOTVFeJPUx",
+			"other_links": [],
+			"featured": true
+		},
+		{
 			"title": "The Silent Streets (of Swanscombe)",
 			"artist": "Juelz-101 ft Imperial-P",
 			"description": "There's a reason why Swanscombe is so quiet.",
@@ -795,22 +812,6 @@
 			"youtube": null,
 			"other_links": [],
 			"featured": false
-		},
-		{
-			"title": "Dancing in the Sunlight",
-			"artist": "Juelz-101 ft Emma MT",
-			"description": "Part of the 'Brutalistening' album.",
-			"thumbnail": "Images/Covers/AlbumArt/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
-			"link": "Website/lib/music/songs/disl.json",
-			"genre": ["Drum and Bass"],
-			"albums": [
-				{"album": "Brutalistening", "track": 2, "cd": 1},
-				{"album": "Juelz-FM Live from London Volume '24", "track": 2, "cd": 1}
-			],
-			"soundcloud": "https://soundcloud.com/ziky_inc/dancing-in-the-sunlight-ft-emma-mt",
-			"youtube": "https://www.youtube.com/watch?v=24mGoAPCVzo&list=PL9XZUncvkEMAWoQ9ZdL3VhZuOTVFeJPUx",
-			"other_links": [],
-			"featured": true
 		},
 		{
 			"title": "Summer Nights",

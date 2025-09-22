@@ -1,0 +1,33 @@
+{
+	"title": "Brutalistening",
+	"artists": [
+		"Emma-MT",
+		"Juelz-101",
+		"Various Artists"
+	],
+	"description": "Brutalistening is a dark, atmospheric journey into the depths of drum and bass, crafted by the visionary Emma MT and produced by Juelz-101. Inspired by the stark architecture and haunting isolation of an abandoned brutalist city—loosely based on London’s iconic Thamesmead estate—this album tells the gripping story of a 26-year-old woman struggling to survive in a concrete labyrinth. With only her loyal dog for companionship and hungry wolves lurking in the shadows, the music evokes a visceral sense of tension, resilience, and eerie beauty. Each track is a sonic exploration of desolation and determination, delivering hard-hitting beats that echo through the skeletal remains of urban decay. This is D&B at its most raw and cinematic—an unforgettable experience for those who dare to listen.",
+	"release_date": "Incomplete",
+	"banner": "Website/img/photos/Emma-MT-Rave-ZIKYinc-5.jpg",
+	"links": [ {"title": "Testing", "link": "www.google.com" } ],
+	"tags": [],
+	"image_gallery": [
+		"Images/Covers/AlbumArt/Brut.jpg",
+		"Images/Covers/AlbumArt/Brut1.jpg",
+		"Images/Covers/AlbumArt/BrutBG2.jpeg",
+		"Images/Covers/AlbumArt/BrutBGRoof3.jpeg",
+		"Images/Covers/AlbumArt/Cov7.jpeg",
+		"Images/Covers/AlbumArt/Cov8.jpeg",
+		"Images/Covers/AlbumArt/Cova.jpeg",
+		"Images/Covers/AlbumArt/Covb.jpeg",
+		"Images/Covers/AlbumArt/Covd.jpeg",
+		"Images/Covers/AlbumArt/Dog.jpeg",
+		"Images/Covers/AlbumArt/Dog2.jpeg",
+		"Images/Covers/AlbumArt/Sounder.jpg",
+		"Images/Covers/AlbumArt/Sounder2.jpg",
+		"Images/Covers/AlbumArt/Text.png"
+	],
+	"behind_the_scenes": {
+		"interview": {},
+		"artists_vision": {}
+	}
+}
