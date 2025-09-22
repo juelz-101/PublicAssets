@@ -427,6 +427,44 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/[C]ZIKYinc_Node3.png"
     }
   ],
+  "Images/Logos/Main": [
+    {
+      "name": "[C]Juelz-FM-Glitch.png",
+      "ext": "png",
+      "path": "Images/Logos/Main/[C]Juelz-FM-Glitch.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/Main/[C]Juelz-FM-Glitch.png"
+    },
+    {
+      "name": "[D]SimpleNoteDark.png",
+      "ext": "png",
+      "path": "Images/Logos/Main/[D]SimpleNoteDark.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/Main/[D]SimpleNoteDark.png"
+    },
+    {
+      "name": "[L]SimpleNoteLight.png",
+      "ext": "png",
+      "path": "Images/Logos/Main/[L]SimpleNoteLight.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/Main/[L]SimpleNoteLight.png"
+    },
+    {
+      "name": "[C]ZIKYinc_Wave2.png",
+      "ext": "png",
+      "path": "Images/Logos/Main/[C]ZIKYinc_Wave2.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/Main/[C]ZIKYinc_Wave2.png"
+    },
+    {
+      "name": "[C]ZIKYinc_Node.png",
+      "ext": "png",
+      "path": "Images/Logos/Main/[C]ZIKYinc_Node.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/Main/[C]ZIKYinc_Node.png"
+    },
+    {
+      "name": "[L]Juelz-FM-Logo.png",
+      "ext": "png",
+      "path": "Images/Logos/Main/[L]Juelz-FM-Logo.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/Main/[L]Juelz-FM-Logo.png"
+    }
+  ],
   "Images/Covers": [
     {
       "name": "Blank.txt",

@@ -111,6 +111,13 @@ PublicAssets/
 │       │   ├── [D]ZIKYinc_Bracket.png
 │       │   ├── [D]ZIKYinc_Node2.png
 │       │   └── [L]ZIKYinc_Infinite.png
+│       ├── Main/
+│       │   ├── [C]Juelz-FM-Glitch.png
+│       │   ├── [C]ZIKYinc_Node.png
+│       │   ├── [C]ZIKYinc_Wave2.png
+│       │   ├── [D]SimpleNoteDark.png
+│       │   ├── [L]Juelz-FM-Logo.png
+│       │   └── [L]SimpleNoteLight.png
 │       └── Tings/
 │           ├── Explict.png
 │           ├── J101-2a.png
@@ -140,6 +147,7 @@ PublicAssets/
 ├── Images_Icons.json
 ├── Images_Icons_Hex.json
 ├── Images_Logos_App.json
+├── Images_Logos_Main.json
 ├── Images_Logos_Tings.json
 ├── README.md
 ├── Templates/

@@ -84,9 +84,10 @@
 		"whatWeDo": {
 			"title": "What We Do",
 			"logos": [
-				"Website/images/logos/ZIKYinc-Logo-Z-1-Light.png",
-				"Website/images/logos/SimpleNoteDark.png",
-				"Website/images/logos/ZIKYinc-PB-Logo-3.jpeg"
+				"Images/Logos/Main/[D]SimpleNoteDark.png",
+				"Images/Logos/Main/[C]ZIKYinc_Wave2.png",
+				"Images/Logos/Main/[C]ZIKYinc_Node.jpeg",
+				"Images/Logos/Main/[L]Juelz-FM-Logo.jpeg"
 			],
 			"services": [
 				"Produce and distribute music across diverse genres.",
