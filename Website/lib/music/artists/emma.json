@@ -1,18 +1,24 @@
 {
 	"artist": "Emma MT",
-	"banner_image": "Website/img/photos/Emma3.jpeg",
+	"banner_image": "Website/img/photos/emma3.jpeg",
 	"bio": "Emma MT, an ex-raver from South London, has a deep-rooted love for drum and bass that has always shaped her creative journey. While she’s stepped away from the rave scene, Emma continues to channel her passion for the genre into her art, crafting evocative, atmospheric music that resonates with her South London roots.",
 	"gallery_images": [
-		"Website/img/photos/Emma-MT-Rave-ZIKYinc-5.jpg",
+		"Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-5.jpg",
+		"Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-4.jpg",
+		"Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-6.jpg",
 		"Website/img/photos/Em2.jpeg",
 		"Website/img/photos/Em3.jpeg",
-		"Website/img/photos/EmForest.jpeg"
+		"Website/img/photos/emma2.jpeg",
+		"Website/img/photos/emma3.jpeg",
+		"Website/img/photos/em4.jpeg",
+		"Website/img/photos/EmForest.jpeg",
+		"Website/img/photos/EmForest.jpeg",
 	],
 	"songs": [
 		{
 			"title": "Concrete Heart",
 			"link": "Website/lib/songs/conc.json",
-			"thumbnail": "Images/Covers/AlbumArt/concbg.jpg"
+			"thumbnail": "Images/Covers/AlbumArt/FX_ConcreteHeart.png"
 		},
 		{
 			"title": "Dancing in the Sunlight",

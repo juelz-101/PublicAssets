@@ -220,5 +220,11 @@
     "ext": "json",
     "path": "Images_Icons.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Icons.json"
+  },
+  {
+    "name": "Website.json",
+    "ext": "json",
+    "path": "Website.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website.json"
   }
 ]
