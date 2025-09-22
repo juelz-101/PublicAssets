@@ -1,0 +1,5 @@
+
+Conversion Instructions:
+- All HTML files are now .json files, and their directories have changed to have Website/lib/ put infront of them (HMTL folder removed).
+- Song/album thumbnails keeping file names but the path now being: Images/Covers/AlbumArt/
+- Artist thumbnails being Website/img/photos/ instead of assets/images/
