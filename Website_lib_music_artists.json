@@ -166,5 +166,11 @@
     "ext": "json",
     "path": "Website/lib/music/artists/emma.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/emma.json"
+  },
+  {
+    "name": "juelz.json",
+    "ext": "json",
+    "path": "Website/lib/music/artists/juelz.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/artists/juelz.json"
   }
 ]

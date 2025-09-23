@@ -716,6 +716,18 @@
 	],
 	"artists": [
 		{
+			"artist": "Juelz-101",
+			"thumbnail": "Website/img/photos/J2.jpg",
+			"link": "Website/lib/music/artists/juelz.json",
+			"genre": ["Drum and Bass", "Hip-Hop", "Grime", "Garage"],
+			"albums": [
+				{"album": "Juelz-FM Live from London Volume '24", "song": "Dancing in the Sunlight", "track": 2, "cd": 1, "link": "Website/lib/music/albums/lfl04.json"},
+				{"album": "Brutalistening", "song": "Dancing in the Sunlight", "track": 3, "cd": 1, "link": "Website/lib/music/albums/brut.json"},
+				{"album": "Brutalistening", "song": "Concrete Heart", "track": 2, "cd": 1, "link": "Website/lib/music/albums/brut.json"}
+			],
+			"featured": true
+		},
+		{
 			"artist": "Emma MT",
 			"thumbnail": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-5.jpg",
 			"link": "Website/lib/music/artists/emma.json",

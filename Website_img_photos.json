@@ -208,5 +208,23 @@
     "ext": "jpeg",
     "path": "Website/img/photos/KymPhoto.jpeg",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/KymPhoto.jpeg"
+  },
+  {
+    "name": "J2.jpg",
+    "ext": "jpg",
+    "path": "Website/img/photos/J2.jpg",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/J2.jpg"
+  },
+  {
+    "name": "J1.jpg",
+    "ext": "jpg",
+    "path": "Website/img/photos/J1.jpg",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/J1.jpg"
+  },
+  {
+    "name": "J.png",
+    "ext": "png",
+    "path": "Website/img/photos/J.png",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/J.png"
   }
 ]

@@ -1,0 +1,46 @@
+{
+	"artist": "Juelz-101",
+	"banner_image": "Website/img/bg/music/artists/juelz/b.jpeg",
+	"bio": "Emma MT, an ex-raver from South London, has a deep-rooted love for drum and bass that has always shaped her creative journey. While she’s stepped away from the rave scene, Emma continues to channel her passion for the genre into her art, crafting evocative, atmospheric music that resonates with her South London roots.",
+	"image_gallery": [
+		"Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-5.jpg",
+		"Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-4.jpg",
+		"Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-6.jpg",
+		"Website/img/photos/Em2.jpeg",
+		"Website/img/photos/Em3.jpeg",
+		"Website/img/photos/emma3.jpeg",
+		"Website/img/photos/em4.jpeg",
+		"Website/img/photos/EmForest.jpeg",
+		"Website/img/photos/EmForest.jpeg"
+	],
+	"songs": [
+		{
+			"title": "Concrete Heart",
+			"link": "Website/lib/songs/conc.json",
+			"thumbnail": "Images/Covers/AlbumArt/FX_ConcreteHeart.png"
+		},
+		{
+			"title": "Dancing in the Sunlight",
+			"link": "Website/lib/songs/disl.json",
+			"thumbnail": "Images/Covers/AlbumArt/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg"
+		}
+	],
+	"behind_the_scenes": {
+		"interview": {},
+		"artists_vision": {}
+	},
+	"bg": [
+		"Website/img/bg/music/artists/juelz/b.jpeg",
+		"Website/img/bg/music/artists/juelz/1.jpeg",
+		"Website/img/bg/music/artists/juelz/2.jpg",
+		"Website/img/bg/music/artists/juelz/3.jpg",
+		"Website/img/bg/music/artists/juelz/4.jpg",
+		"Website/img/bg/music/artists/juelz/5.jpeg",
+		"Website/img/bg/music/artists/juelz/6.jpeg",
+		"Website/img/bg/music/artists/juelz/7.jpeg",
+		"Website/img/bg/music/artists/juelz/8.jpg",
+		"Website/img/bg/music/artists/juelz/9.jpg",
+		"Website/img/bg/music/artists/juelz/10.jpg",
+		"Website/img/bg/music/artists/juelz/11.jpg"
+	]
+}

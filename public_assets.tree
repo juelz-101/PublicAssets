@@ -190,43 +190,35 @@ PublicAssets/
 │   │   │   │       └── Mellow-D.jfif
 │   │   │   ├── jfm/
 │   │   │   │   └── 2b07b5bdadd54beb847930ab21952ade.jpeg
+│   │   │   ├── music/
+│   │   │   │   └── artists/
+│   │   │   │       └── juelz/
+│   │   │   │           ├── 1.jpeg
+│   │   │   │           ├── 10.jpg
+│   │   │   │           ├── 11.jpg
+│   │   │   │           ├── 2.jpeg
+│   │   │   │           ├── 3.jpg
+│   │   │   │           ├── 4.jpg
+│   │   │   │           ├── 5.jpeg
+│   │   │   │           ├── 6.jpeg
+│   │   │   │           ├── 7.jpeg
+│   │   │   │           ├── 8.jpg
+│   │   │   │           ├── 9.jpg
+│   │   │   │           └── b.jpeg
 │   │   │   └── zikyinc/
-│   │   │       ├── ZIKYinc-Block.jpeg
-│   │   │       ├── ZIKYinc-Dog5.jpeg
+│   │   │       ├── 7xrromprQt2TM6KHC3kJvQ.webp
 │   │   │       ├── ZIKYinc-Dog6.png
-│   │   │       ├── ZIKYinc-DragRace-Angel.jpeg
 │   │   │       ├── ZIKYinc-DragRace-Girl-2.jpeg
-│   │   │       ├── ZIKYinc-Elephunk2.jpeg
 │   │   │       ├── ZIKYinc-Girl-Graffiti-2.jpeg
-│   │   │       ├── ZIKYinc-Girl-Graffiti.jpeg
 │   │   │       ├── ZIKYinc-Girl-Rain.jpeg
-│   │   │       ├── ZIKYinc-Graffiti-Blue-1.png
 │   │   │       ├── ZIKYinc-Graffiti-Blue-2.png
-│   │   │       ├── ZIKYinc-Graffiti-Blue-3.png
-│   │   │       ├── ZIKYinc-Graffiti-Blue-4.png
-│   │   │       ├── ZIKYinc-King-1.png
-│   │   │       ├── ZIKYinc-King-2.png
-│   │   │       ├── ZIKYinc-King-3.png
 │   │   │       ├── ZIKYinc-King-4.png
-│   │   │       ├── ZIKYinc-Paint-1.png
-│   │   │       ├── ZIKYinc-Paint-3.png
-│   │   │       ├── ZIKYinc-Paint-4.png
 │   │   │       ├── ZIKYinc-Paint-5.png
-│   │   │       ├── ZIKYinc-Poly-1.jpeg
-│   │   │       ├── ZIKYinc-Poly-2.jpeg
 │   │   │       ├── ZIKYinc-Skull.jpeg
-│   │   │       ├── ZIKYinc-Wall.jpeg
 │   │   │       ├── ZIKYinc-Water-1.png
-│   │   │       ├── ZIKYinc-Water-2.png
 │   │   │       ├── ZIKYinc-Water-3.png
 │   │   │       ├── ZIKYinc-WildStyle-BG1.jpeg
-│   │   │       ├── ZIKYinc-WildStyle-BG2.jpeg
-│   │   │       ├── ZIKYinc_Dog.png
-│   │   │       ├── ZIKYinc_Dog2.png
-│   │   │       ├── ZIKYinc_Dog3.png
-│   │   │       ├── ZIKYinc_Dog4.png
-│   │   │       ├── Ziky-Poly-3.jpeg
-│   │   │       └── ZikyGirlRain.jpeg
+│   │   │       └── ZIKYinc-WildStyle-BG2.jpeg
 │   │   ├── logos/
 │   │   │   ├── Juelz-FM-Logo.png
 │   │   │   ├── Juelz-FM-Logo2.png
@@ -261,6 +253,9 @@ PublicAssets/
 │   │       ├── Imperial-P.jpeg
 │   │       ├── Imperial-P2.jpeg
 │   │       ├── Imperial-P2.xcf
+│   │       ├── J.png
+│   │       ├── J1.jpg
+│   │       ├── J2.jpg
 │   │       ├── Kyle.jpeg
 │   │       ├── Kyles.jpeg
 │   │       ├── Kyles3.jpeg
@@ -331,6 +326,7 @@ PublicAssets/
 │       │   │   ├── jayc.html
 │       │   │   ├── jevh.html
 │       │   │   ├── juelz.html
+│       │   │   ├── juelz.json
 │       │   │   ├── kenf.html
 │       │   │   ├── kevh.html
 │       │   │   ├── kris.html
@@ -361,6 +357,7 @@ PublicAssets/
 ├── Website_img_bg_focused_j101.json
 ├── Website_img_bg_focused_mellowd.json
 ├── Website_img_bg_jfm.json
+├── Website_img_bg_music_artists_juelz.json
 ├── Website_img_bg_zikyinc.json
 ├── Website_img_logos.json
 ├── Website_img_misc.json
