@@ -102,6 +102,10 @@ PublicAssets/
 │   │       └── PB_PlaceHolder4.png
 │   └── Logos/
 │       ├── App/
+│       │   ├── QRGem/
+│       │   │   ├── QRGem_Icon.png
+│       │   │   ├── QRGem_Icon_Tx.png
+│       │   │   └── QRGem_Tx.png
 │       │   ├── [C]ZIKYinc_3D.png
 │       │   ├── [C]ZIKYinc_Node.png
 │       │   ├── [C]ZIKYinc_Node3.png
@@ -147,6 +151,7 @@ PublicAssets/
 ├── Images_Icons.json
 ├── Images_Icons_Hex.json
 ├── Images_Logos_App.json
+├── Images_Logos_App_QRGem.json
 ├── Images_Logos_Main.json
 ├── Images_Logos_Tings.json
 ├── README.md
@@ -289,8 +294,6 @@ PublicAssets/
 │   │       └── pete2.jpeg
 │   └── lib/
 │       ├── about.json
-│       ├── apps/
-│       │   └── test.html
 │       ├── art.json
 │       ├── cur_projects.json
 │       ├── gallery/
@@ -349,6 +352,8 @@ PublicAssets/
 │       │       ├── sumn.html
 │       │       └── takeov.html
 │       ├── music.json
+│       ├── tools/
+│       │   └── test.html
 │       ├── tools.json
 │       └── webdata.json
 ├── Website.json
@@ -377,6 +382,7 @@ PublicAssets/
 ├── Website_lib_music_albums.json
 ├── Website_lib_music_artists.json
 ├── Website_lib_music_songs.json
+├── Website_lib_tools.json
 ├── asset_register.json
 ├── auto_update.py
 ├── public_assets.tree

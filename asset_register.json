@@ -233,6 +233,12 @@
       "ext": "json",
       "path": "Images_Logos_Main.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Logos_Main.json"
+    },
+    {
+      "name": "Website_img_bg_music_artists_juelz.json",
+      "ext": "json",
+      "path": "Website_img_bg_music_artists_juelz.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_music_artists_juelz.json"
     }
   ],
   "Images": [],
@@ -431,6 +437,26 @@
       "ext": "png",
       "path": "Images/Logos/App/[C]ZIKYinc_Node3.png",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/[C]ZIKYinc_Node3.png"
+    }
+  ],
+  "Images/Logos/App/QRGem": [
+    {
+      "name": "QRGem_Icon_Tx.png",
+      "ext": "png",
+      "path": "Images/Logos/App/QRGem/QRGem_Icon_Tx.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/QRGem/QRGem_Icon_Tx.png"
+    },
+    {
+      "name": "QRGem_Icon.png",
+      "ext": "png",
+      "path": "Images/Logos/App/QRGem/QRGem_Icon.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/QRGem/QRGem_Icon.png"
+    },
+    {
+      "name": "QRGem_Tx.png",
+      "ext": "png",
+      "path": "Images/Logos/App/QRGem/QRGem_Tx.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/QRGem/QRGem_Tx.png"
     }
   ],
   "Images/Logos/Main": [
@@ -1113,12 +1139,12 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/about.json"
     }
   ],
-  "Website/lib/apps": [
+  "Website/lib/tools": [
     {
       "name": "test.html",
       "ext": "html",
-      "path": "Website/lib/apps/test.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/apps/test.html"
+      "path": "Website/lib/tools/test.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/tools/test.html"
     }
   ],
   "Website/lib/gallery": [

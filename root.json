@@ -232,5 +232,11 @@
     "ext": "json",
     "path": "Images_Logos_Main.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Logos_Main.json"
+  },
+  {
+    "name": "Website_img_bg_music_artists_juelz.json",
+    "ext": "json",
+    "path": "Website_img_bg_music_artists_juelz.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_music_artists_juelz.json"
   }
 ]
