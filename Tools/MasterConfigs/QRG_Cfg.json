@@ -1,0 +1,106 @@
+{
+  "title": "QR-Gem",
+  "description": "Todo",
+  "version": "1.0",
+  "dev_version": 1.7,
+  "debug_mode": true,
+  "company": "ZIKYinc London",
+  "git": {"user": "juelz-101", "repo": "PublicAssets", "branch": "main"},
+  "master_config": {"use": true, "source": "git", "url": "Tools/MasterConfigs/QRG_Cfg.json"},
+  "theme": {
+    "backgroundColor": "#111827",
+    "textColor": "#ffffff",
+    "primaryColor": "#8E2DE2",
+    "secondaryColor": "#4A00E0",
+    "accentColor": "#4f46e5",
+    "cardBackgroundColor": "#1f2937",
+    "inputBackgroundColor": "#374151",
+    "borderColor": "#4b5563"
+  },
+  "bannerImageUrl": {"source": "git", "url": "Images/Logos/App/QRGem/QRGem_Tx.png"},
+  "headerLogoUrl": {"source": "git", "url": "Images/Logos/App/QRGem/QRGem_Icon.png"},
+  "bannerConfig": {
+    "desktop": {
+      "maxHeight": 80
+    },
+    "mobile": {
+      "maxHeight": 50
+    }
+  },
+  "headerLogoConfig": {
+    "desktop": {
+      "maxHeight": 146,
+      "top": -10,
+      "left": 279
+    },
+    "mobile": {
+      "maxHeight": 40,
+      "top": 4,
+      "left": 8
+    }
+  },
+  "defaultLogoUrl": {"source": "git", "url": "Images/Logos/App/QRGem/QRGem_Icon_Tx.png"},
+  "initialUrl": "https://gemini.google.com/",
+  "initialLogoOn": false,
+  "initialLogoShape": "square",
+  "initialLogoSizeRatio": 0.36,
+  "initialLogoMargin": 5,
+  "initialBorderOptions": {
+    "style": "solid",
+    "width": 20,
+    "color": "#ffffff",
+    "cornerLength": 30
+  },
+  "initialExperimentalOptions": {
+    "enabled": false,
+    "presetName": "Diamond",
+    "dotSvg": "M50 0L100 50L50 100L0 50Z",
+    "cornerSquareEnabled": false,
+    "cornerSquarePresetName": "Square",
+    "cornerSquareSvg": "M0 0 H100 V100 H0Z"
+  },
+  "initialQrOptions": {
+    "data": "https://gemini.google.com/",
+    "image": "",
+    "margin": 10,
+    "qrOptions": {
+      "typeNumber": 0,
+      "mode": "Byte",
+      "errorCorrectionLevel": "Q"
+    },
+    "imageOptions": {
+      "hideBackgroundDots": true,
+      "imageSize": 0.4,
+      "margin": 5,
+      "crossOrigin": "anonymous"
+    },
+    "dotsOptions": {
+      "color": "#4A00E0",
+      "type": "rounded",
+      "gradient": {
+        "type": "linear",
+        "rotation": 0.7853981633974483,
+        "colorStops": [
+          { "offset": 0, "color": "#8E2DE2" },
+          { "offset": 1, "color": "#4A00E0" }
+        ]
+      }
+    },
+    "backgroundOptions": {
+      "color": "#ffffff"
+    },
+    "cornersSquareOptions": {
+      "color": "#38006b",
+      "type": "extra-rounded"
+    },
+    "cornersDotOptions": {
+      "color": "#38006b",
+      "type": "dot"
+    }
+  },
+  "indexeddb": {
+    "db": "ZIKYinc",
+    "store": "QRGem",
+    "max_recent": 10
+  }
+}

@@ -238,5 +238,17 @@
     "ext": "json",
     "path": "Website_img_bg_music_artists_juelz.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_music_artists_juelz.json"
+  },
+  {
+    "name": "Images_Logos_App_QRGem.json",
+    "ext": "json",
+    "path": "Images_Logos_App_QRGem.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Logos_App_QRGem.json"
+  },
+  {
+    "name": "Website_lib_tools.json",
+    "ext": "json",
+    "path": "Website_lib_tools.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_tools.json"
   }
 ]

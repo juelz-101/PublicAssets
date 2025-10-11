@@ -1,5 +1,7 @@
 PublicAssets/
 ├── .gitignore
+├── Data/
+│   └── AI/
 ├── Images/
 │   ├── Covers/
 │   │   ├── AlbumArt/
@@ -174,6 +176,11 @@ PublicAssets/
 │       └── UserData.json
 ├── Templates_PromptData.json
 ├── Test/
+├── Tools/
+│   ├── Apps/
+│   └── MasterConfigs/
+│       └── QRG_Cfg.json
+├── Tools_MasterConfigs.json
 ├── Website/
 │   ├── AI_Setup.txt
 │   ├── img/
