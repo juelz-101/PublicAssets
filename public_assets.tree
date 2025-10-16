@@ -1,7 +1,56 @@
 PublicAssets/
 ├── .gitignore
+├── Audio/
+│   ├── Music/
+│   │   └── BG/
+│   │       └── Breaking Point.wav
+│   ├── SoundFX/
+│   │   ├── Break1.mp3
+│   │   ├── DistantSirens1.mp3
+│   │   ├── DistantSirens2.mp3
+│   │   ├── ElecBreak.mp3
+│   │   ├── ElecBreak2.mp3
+│   │   ├── PolHeliNope.mp3
+│   │   ├── Scissors.mp3
+│   │   ├── Scissors2.mp3
+│   │   ├── Skate4.mp3
+│   │   ├── Skate5.mp3
+│   │   ├── Skate6.mp3
+│   │   ├── Splash2.mp3
+│   │   ├── SplashOk.mp3
+│   │   └── splash3.mp3
+│   └── Speech/
+│       └── JuelzFM/
+│           └── LeaveItThere.mp3
+├── Audio_Music_BG.json
+├── Audio_SoundFX.json
+├── Audio_Speech_JuelzFM.json
 ├── Data/
 │   └── AI/
+│       └── CodeAssistant/
+│           └── ai_dev/
+│               ├── ai_commands.ts
+│               ├── ai_rules.ts
+│               ├── data/
+│               │   └── userData.ts
+│               ├── log/
+│               │   ├── checkpoints/
+│               │   │   └── checkpoints.ts
+│               │   ├── dependencies/
+│               │   │   └── dependencies.ts
+│               │   ├── layout/
+│               │   │   └── layout.ts
+│               │   ├── todo.ts
+│               │   └── update_log/
+│               │       └── update.ts
+│               └── startup_instructions.ts
+├── Data_AI_CodeAssistant_ai_dev.json
+├── Data_AI_CodeAssistant_ai_dev_data.json
+├── Data_AI_CodeAssistant_ai_dev_log.json
+├── Data_AI_CodeAssistant_ai_dev_log_checkpoints.json
+├── Data_AI_CodeAssistant_ai_dev_log_dependencies.json
+├── Data_AI_CodeAssistant_ai_dev_log_layout.json
+├── Data_AI_CodeAssistant_ai_dev_log_update_log.json
 ├── Images/
 │   ├── Covers/
 │   │   ├── AlbumArt/
@@ -104,6 +153,10 @@ PublicAssets/
 │   │       └── PB_PlaceHolder4.png
 │   └── Logos/
 │       ├── App/
+│       │   ├── Alldio/
+│       │   │   ├── QRGem_Icon.png
+│       │   │   ├── QRGem_Icon_Tx.png
+│       │   │   └── QRGem_Tx.png
 │       │   ├── QRGem/
 │       │   │   ├── QRGem_Icon.png
 │       │   │   ├── QRGem_Icon_Tx.png
@@ -148,11 +201,13 @@ PublicAssets/
 │           ├── ZIKYinc-Logo-Z-1-Light.png
 │           ├── Zikbarcode.gif
 │           └── barcode.png
+├── Images (P.Ass).lnk
 ├── Images_Covers.json
 ├── Images_Covers_AlbumArt.json
 ├── Images_Icons.json
 ├── Images_Icons_Hex.json
 ├── Images_Logos_App.json
+├── Images_Logos_App_Alldio.json
 ├── Images_Logos_App_QRGem.json
 ├── Images_Logos_Main.json
 ├── Images_Logos_Tings.json
@@ -179,10 +234,13 @@ PublicAssets/
 ├── Tools/
 │   ├── Apps/
 │   └── MasterConfigs/
-│       └── QRG_Cfg.json
+│       ├── Alldio_Cfg.json
+│       ├── QRG_Cfg.json
+│       └── config.json
 ├── Tools_MasterConfigs.json
 ├── Website/
 │   ├── AI_Setup.txt
+│   ├── Website IMG (P.Ass).lnk
 │   ├── img/
 │   │   ├── bg/
 │   │   │   ├── art/
@@ -360,7 +418,7 @@ PublicAssets/
 │       │       └── takeov.html
 │       ├── music.json
 │       ├── tools/
-│       │   └── test.html
+│       │   └── qrg.json
 │       ├── tools.json
 │       └── webdata.json
 ├── Website.json

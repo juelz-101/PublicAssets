@@ -4,13 +4,14 @@
 		"web": [
 			{
 				"name": "QR Gem",
-				"thumbnail": "Website/images/tools/Chroma-Palette-Thumb.png",
-				"link": "Website/lib/html/tools/chroma-palette.json",
-				"category": "Web Tool",
-				"summary": "Instantly generate beautiful, accessible color palettes for your design projects.",
-				"tags": ["design", "color", "utility", "web"],
-				"featured": true
-			},
+				"thumbnail": "Images/Logos/App/QRGem/QRGem_Icon_Tx.png",
+				"link": "Website/lib/tools/qrg.json",
+				"category": "Generators",
+				"summary": "Free QR Code generator with advanced tools for creating professional QR Codes.",
+				"tags": ["design", "branding", "qr", "free"],
+				"featured": true,
+				"dev": { "available": true, "finished": false }
+			}
 		],
 		"win": [],
 		"scripts": {

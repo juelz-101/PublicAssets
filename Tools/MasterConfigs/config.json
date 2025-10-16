@@ -1,0 +1,47 @@
+{
+  "title": "All-Dio",
+  "description": "Todo",
+  "version": "1.0",
+  "dev_version": 1.0,
+  "debug_mode": false,
+  "company": "ZIKYinc London",
+  "git": {"user": "juelz-101", "repo": "PublicAssets", "branch": "main"},
+  "master_config": {"use": true, "source": "git", "url": "Tools/MasterConfigs/Alldio_Cfg.json"},
+  "theme": {
+    "backgroundColor": "#111827",
+    "textColor": "#ffffff",
+    "primaryColor": "#8E2DE2",
+    "secondaryColor": "#4A00E0",
+    "accentColor": "#4f46e5",
+    "cardBackgroundColor": "#1f2937",
+    "inputBackgroundColor": "#374151",
+    "borderColor": "#4b5563"
+  },
+  "bannerImageUrl": {"source": "git", "url": "Images/Logos/App/Alldio/QRGem_Tx.png"},
+  "headerLogoUrl": {"source": "git", "url": "Images/Logos/App/Alldio/QRGem_Icon.png"},
+  "bannerConfig": {
+    "desktop": {
+      "maxHeight": 80
+    },
+    "mobile": {
+      "maxHeight": 50
+    }
+  },
+  "headerLogoConfig": {
+    "desktop": {
+      "maxHeight": 146,
+      "top": -10,
+      "left": 279
+    },
+    "mobile": {
+      "maxHeight": 40,
+      "top": 4,
+      "left": 8
+    }
+  },
+  "indexeddb": {
+    "db": "ZIKYinc",
+    "store": "Alldio",
+    "max_recent": 10
+  }
+}

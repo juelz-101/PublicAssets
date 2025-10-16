@@ -251,6 +251,12 @@
       "ext": "json",
       "path": "Website_lib_tools.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_tools.json"
+    },
+    {
+      "name": "Tools_MasterConfigs.json",
+      "ext": "json",
+      "path": "Tools_MasterConfigs.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools_MasterConfigs.json"
     }
   ],
   "Images": [],
@@ -469,6 +475,26 @@
       "ext": "png",
       "path": "Images/Logos/App/QRGem/QRGem_Tx.png",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/QRGem/QRGem_Tx.png"
+    }
+  ],
+  "Images/Logos/App/Alldio": [
+    {
+      "name": "QRGem_Icon_Tx.png",
+      "ext": "png",
+      "path": "Images/Logos/App/Alldio/QRGem_Icon_Tx.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/Alldio/QRGem_Icon_Tx.png"
+    },
+    {
+      "name": "QRGem_Icon.png",
+      "ext": "png",
+      "path": "Images/Logos/App/Alldio/QRGem_Icon.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/Alldio/QRGem_Icon.png"
+    },
+    {
+      "name": "QRGem_Tx.png",
+      "ext": "png",
+      "path": "Images/Logos/App/Alldio/QRGem_Tx.png",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images/Logos/App/Alldio/QRGem_Tx.png"
     }
   ],
   "Images/Logos/Main": [
@@ -1153,10 +1179,10 @@
   ],
   "Website/lib/tools": [
     {
-      "name": "test.html",
-      "ext": "html",
-      "path": "Website/lib/tools/test.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/tools/test.html"
+      "name": "qrg.json",
+      "ext": "json",
+      "path": "Website/lib/tools/qrg.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/tools/qrg.json"
     }
   ],
   "Website/lib/gallery": [
@@ -2175,8 +2201,194 @@
       "ext": "json",
       "path": "Tools/MasterConfigs/QRG_Cfg.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/QRG_Cfg.json"
+    },
+    {
+      "name": "Alldio_Cfg.json",
+      "ext": "json",
+      "path": "Tools/MasterConfigs/Alldio_Cfg.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/Alldio_Cfg.json"
+    },
+    {
+      "name": "config.json",
+      "ext": "json",
+      "path": "Tools/MasterConfigs/config.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/config.json"
     }
   ],
   "Data": [],
-  "Data/AI": []
+  "Data/AI": [],
+  "Data/AI/CodeAssistant": [],
+  "Data/AI/CodeAssistant/ai_dev": [
+    {
+      "name": "ai_rules.ts",
+      "ext": "ts",
+      "path": "Data/AI/CodeAssistant/ai_dev/ai_rules.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/AI/CodeAssistant/ai_dev/ai_rules.ts"
+    },
+    {
+      "name": "ai_commands.ts",
+      "ext": "ts",
+      "path": "Data/AI/CodeAssistant/ai_dev/ai_commands.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/AI/CodeAssistant/ai_dev/ai_commands.ts"
+    },
+    {
+      "name": "startup_instructions.ts",
+      "ext": "ts",
+      "path": "Data/AI/CodeAssistant/ai_dev/startup_instructions.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/AI/CodeAssistant/ai_dev/startup_instructions.ts"
+    }
+  ],
+  "Data/AI/CodeAssistant/ai_dev/data": [
+    {
+      "name": "userData.ts",
+      "ext": "ts",
+      "path": "Data/AI/CodeAssistant/ai_dev/data/userData.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/AI/CodeAssistant/ai_dev/data/userData.ts"
+    }
+  ],
+  "Data/AI/CodeAssistant/ai_dev/log": [
+    {
+      "name": "todo.ts",
+      "ext": "ts",
+      "path": "Data/AI/CodeAssistant/ai_dev/log/todo.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/AI/CodeAssistant/ai_dev/log/todo.ts"
+    }
+  ],
+  "Data/AI/CodeAssistant/ai_dev/log/checkpoints": [
+    {
+      "name": "checkpoints.ts",
+      "ext": "ts",
+      "path": "Data/AI/CodeAssistant/ai_dev/log/checkpoints/checkpoints.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/AI/CodeAssistant/ai_dev/log/checkpoints/checkpoints.ts"
+    }
+  ],
+  "Data/AI/CodeAssistant/ai_dev/log/dependencies": [
+    {
+      "name": "dependencies.ts",
+      "ext": "ts",
+      "path": "Data/AI/CodeAssistant/ai_dev/log/dependencies/dependencies.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/AI/CodeAssistant/ai_dev/log/dependencies/dependencies.ts"
+    }
+  ],
+  "Data/AI/CodeAssistant/ai_dev/log/layout": [
+    {
+      "name": "layout.ts",
+      "ext": "ts",
+      "path": "Data/AI/CodeAssistant/ai_dev/log/layout/layout.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/AI/CodeAssistant/ai_dev/log/layout/layout.ts"
+    }
+  ],
+  "Data/AI/CodeAssistant/ai_dev/log/update_log": [
+    {
+      "name": "update.ts",
+      "ext": "ts",
+      "path": "Data/AI/CodeAssistant/ai_dev/log/update_log/update.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/AI/CodeAssistant/ai_dev/log/update_log/update.ts"
+    }
+  ],
+  "Audio": [],
+  "Audio/Music": [],
+  "Audio/Music/BG": [
+    {
+      "name": "Breaking Point.wav",
+      "ext": "wav",
+      "path": "Audio/Music/BG/Breaking Point.wav",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/Music/BG/Breaking Point.wav"
+    }
+  ],
+  "Audio/Speech": [],
+  "Audio/Speech/JuelzFM": [
+    {
+      "name": "LeaveItThere.mp3",
+      "ext": "mp3",
+      "path": "Audio/Speech/JuelzFM/LeaveItThere.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/Speech/JuelzFM/LeaveItThere.mp3"
+    }
+  ],
+  "Audio/SoundFX": [
+    {
+      "name": "Break1.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/Break1.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/Break1.mp3"
+    },
+    {
+      "name": "DistantSirens1.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/DistantSirens1.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/DistantSirens1.mp3"
+    },
+    {
+      "name": "DistantSirens2.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/DistantSirens2.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/DistantSirens2.mp3"
+    },
+    {
+      "name": "ElecBreak.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/ElecBreak.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/ElecBreak.mp3"
+    },
+    {
+      "name": "ElecBreak2.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/ElecBreak2.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/ElecBreak2.mp3"
+    },
+    {
+      "name": "PolHeliNope.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/PolHeliNope.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/PolHeliNope.mp3"
+    },
+    {
+      "name": "Scissors.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/Scissors.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/Scissors.mp3"
+    },
+    {
+      "name": "Scissors2.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/Scissors2.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/Scissors2.mp3"
+    },
+    {
+      "name": "Skate4.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/Skate4.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/Skate4.mp3"
+    },
+    {
+      "name": "Skate5.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/Skate5.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/Skate5.mp3"
+    },
+    {
+      "name": "Skate6.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/Skate6.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/Skate6.mp3"
+    },
+    {
+      "name": "Splash2.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/Splash2.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/Splash2.mp3"
+    },
+    {
+      "name": "splash3.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/splash3.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/splash3.mp3"
+    },
+    {
+      "name": "SplashOk.mp3",
+      "ext": "mp3",
+      "path": "Audio/SoundFX/SplashOk.mp3",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/SplashOk.mp3"
+    }
+  ]
 }

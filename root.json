@@ -250,5 +250,11 @@
     "ext": "json",
     "path": "Website_lib_tools.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_tools.json"
+  },
+  {
+    "name": "Tools_MasterConfigs.json",
+    "ext": "json",
+    "path": "Tools_MasterConfigs.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools_MasterConfigs.json"
   }
 ]
