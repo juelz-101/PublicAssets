@@ -1,0 +1,327 @@
+# `.gitignore` Reference & Guide
+
+**Version:** 1.0
+**Author:** Chatsir, ZIKYinc
+**Approved by:** Juelz-101
+**Created:** 2025-10-17
+**Location:** London, UK
+
+---
+
+## Table of Contents
+
+* [Page 1: Introduction](#page-1-introduction)
+* [Page 2: What is .gitignore?](#page-2-what-is-gitignore)
+* [Page 3: Why Use .gitignore?](#page-3-why-use-gitignore)
+* [Page 4: File and Folder Patterns](#page-4-file-and-folder-patterns)
+* [Page 5: Ignoring File Types](#page-5-ignoring-file-types)
+* [Page 6: Ignoring Folders](#page-6-ignoring-folders)
+* [Page 7: Exceptions & Negation Rules](#page-7-exceptions--negation-rules)
+* [Page 8: Common Examples](#page-8-common-examples)
+* [Page 9: Platform-Specific Ignores](#page-9-platform-specific-ignores)
+* [Page 10: Managing Existing Tracked Files](#page-10-managing-existing-tracked-files)
+* [Page 11: Best Practices](#page-11-best-practices)
+* [Page 12: Common Mistakes](#page-12-common-mistakes)
+* [Page 13: Example Templates](#page-13-example-templates)
+* [Page 14: Tools & References](#page-14-tools--references)
+* [Page 15: License](#page-15-license)
+
+---
+
+## Page 1: Introduction
+
+The `.gitignore` file tells **Git which files and folders to ignore** in a repository.
+It prevents unnecessary, temporary, or sensitive files from being tracked or committed.
+
+It’s a simple but vital tool for maintaining **clean, secure, and efficient** repositories.
+
+---
+
+## Page 2: What is .gitignore?
+
+A `.gitignore` file is a plain text list of patterns.
+Each line defines a rule that tells Git which files or directories **not** to track.
+
+Git will skip any file or folder that matches those patterns when adding, committing, or pushing.
+
+**Example:**
+
+```gitignore
+node_modules/
+*.log
+.env
+```
+
+---
+
+## Page 3: Why Use .gitignore?
+
+### Benefits:
+
+* Keeps your repository free of build files and system junk
+* Prevents committing sensitive information (e.g., API keys, `.env` files)
+* Reduces repo size and improves performance
+* Keeps team collaboration clean and consistent
+
+### Without `.gitignore`:
+
+* Repos can quickly bloat with cache files, logs, or user-specific configs
+* Sensitive files might leak if accidentally committed
+
+---
+
+## Page 4: File and Folder Patterns
+
+The `.gitignore` file uses pattern-matching syntax to determine which files or folders Git should ignore.  
+Patterns can include wildcards, directory indicators, and negations for flexible control.
+
+| **Symbol / Pattern** | **Example** | **Explanation** |
+| --------------------- | ----------- | ---------------- |
+| `*` | `*.log` | Matches any number of characters. This ignores **all files ending in `.log`** (e.g., `debug.log`, `server.log`). |
+| `*` | `temp*` | Ignores all files or folders **starting with** “temp”, such as `temp.txt`, `temp1.log`, or `tempFolder/`. |
+| `?` | `file?.txt` | Matches **exactly one character**. This would ignore `file1.txt` or `fileA.txt`, but **not** `file10.txt`. |
+| `/` | `build/` | Indicates a **folder**. This ignores the entire `build` directory and all its contents. |
+| `/` | `/docs/` | Ignores only the `docs` folder **in the root** of the repository (not nested ones). |
+| `**` | `**/temp/` | Matches directories **at any depth**. This ignores all folders named `temp`, whether in root or nested. |
+| `**` | `**/*.bak` | Ignores every `.bak` file anywhere in the repository, regardless of folder level. |
+| `!` | `!example.env` | **Negates** a rule. If `*.env` is ignored, this re-includes `example.env` so it’s still tracked. |
+| `!` | `!docs/README.md` | Keeps `README.md` in the `docs` folder even if the folder is ignored. |
+| `#` | `# Ignore OS files` | Marks a **comment**. Git ignores everything after `#` on that line. Use for grouping and clarity. |
+| _(blank line)_ | _(none)_ | Has **no effect**, used only for spacing and readability between sections. |
+
+### ✅ Notes
+* Always include a `/` at the end of folder names to specify it’s a directory.  
+* You can combine symbols, e.g., `**/*.tmp` ignores all `.tmp` files anywhere.  
+* Patterns apply **relative to the .gitignore’s location** — nested `.gitignore` files can override parent rules.
+* To test whether a pattern matches a file, use:  
+  ```bash
+  git check-ignore -v <filename>
+
+---
+
+## Page 5: Ignoring File Types
+
+You can ignore all files of a specific type by using the `*.<extension>` pattern.
+
+```gitignore
+# Ignore all .log and .tmp files
+*.log
+*.tmp
+
+# Ignore all Windows shortcuts
+*.lnk
+```
+
+You can group them logically with headers and empty lines for clarity — Git ignores blank lines and `#` comments.
+
+---
+
+## Page 6: Ignoring Folders
+
+You can ignore specific folders or all folders matching a name.
+
+```gitignore
+# Ignore a single folder
+build/
+
+# Ignore all 'logs' folders anywhere
+**/logs/
+
+# Ignore multiple
+cache/
+temp/
+dist/
+```
+
+> 💡 Tip: Always include the trailing slash (`/`) for folders.
+
+If a folder was already committed before being ignored, remove it from tracking:
+
+```bash
+git rm -r --cached foldername
+```
+
+---
+
+## Page 7: Exceptions & Negation Rules
+
+Use `!` to *re-include* files that would otherwise be ignored.
+
+```gitignore
+# Ignore all .env files
+*.env
+
+# But keep example.env
+!example.env
+```
+
+You can also ignore everything in a folder **except** one file:
+
+```gitignore
+docs/*
+!docs/README.md
+```
+
+---
+
+## Page 8: Common Examples
+
+```gitignore
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Development
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+logs/
+**/error.log
+
+# Environments & configs
+.env
+*.env.local
+
+# Build output
+dist/
+build/
+out/
+```
+
+---
+
+## Page 9: Platform-Specific Ignores
+
+### Windows
+
+```gitignore
+Thumbs.db
+desktop.ini
+*.lnk
+```
+
+### macOS
+
+```gitignore
+.DS_Store
+.AppleDouble
+```
+
+### Linux
+
+```gitignore
+*~
+.nfs*
+```
+
+---
+
+## Page 10: Managing Existing Tracked Files
+
+If files were added **before** being ignored, Git will still track them until removed.
+
+To untrack them without deleting from disk:
+
+```bash
+git rm -r --cached .
+git add .
+git commit -m "Apply .gitignore and remove cached files"
+```
+
+This resets tracking based on your `.gitignore`.
+
+---
+
+## Page 11: Best Practices
+
+* Keep `.gitignore` at the **root** of your repo
+* Add comments and group rules logically
+* Use **project-specific** and **global** `.gitignore` files
+* Test new patterns with `git check-ignore -v <file>`
+* Never rely solely on `.gitignore` for security — it only prevents tracking, not visibility in commits
+
+---
+
+## Page 12: Common Mistakes
+
+* Forgetting to remove already tracked files (`git rm --cached`)
+* Ignoring folder without trailing slash (`cache` vs `cache/`)
+* Overusing global ignores that block required files
+* Forgetting `.gitignore` inheritance — nested `.gitignore` files override parent rules
+
+---
+
+## Page 13: Example Templates
+
+### 🧱 Basic Project
+
+```gitignore
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# Output
+build/
+dist/
+```
+
+### 🐍 Python
+
+```gitignore
+__pycache__/
+*.pyc
+venv/
+.env
+```
+
+### ⚛️ Node.js
+
+```gitignore
+node_modules/
+npm-debug.log*
+.env
+dist/
+```
+++++++++++++++++
+### 💻 Windows + General
+
+```gitignore
+*.lnk
+desktop.ini
+Thumbs.db
+*.tmp
+```
+
+---
+
+## Page 14: Tools & References
+
+* [gitignore.io](https://www.toptal.com/developers/gitignore) – Auto-generate `.gitignore` files
+* [Git Documentation – gitignore](https://git-scm.com/docs/gitignore)
+* [GitHub gitignore Templates](https://github.com/github/gitignore)
+* [Git Cheat Sheet (GitHub Education)](https://education.github.com/git-cheat-sheet-education.pdf)
+
+---
+
+## Page 15: License
+
+MIT License
+© 2025 Chatsir, ZIKYinc
+Approved by Juelz-101
+
+---
+
+*For documentation updates, contact [helpdesk@zikyinc.com](mailto:helpdesk@zikyinc.com) or visit our GitHub organization.*
+
+---

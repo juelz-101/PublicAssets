@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Git_GuildAndReference.txt",
+    "ext": "txt",
+    "path": "Library/Coding/Git/Git_GuildAndReference.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/Git/Git_GuildAndReference.txt"
+  },
+  {
+    "name": "Git_Gitignore_Guide.txt",
+    "ext": "txt",
+    "path": "Library/Coding/Git/Git_Gitignore_Guide.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/Git/Git_Gitignore_Guide.txt"
+  },
+  {
+    "name": "Git_LocalRepo_Tutorial.txt",
+    "ext": "txt",
+    "path": "Library/Coding/Git/Git_LocalRepo_Tutorial.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/Git/Git_LocalRepo_Tutorial.txt"
+  }
+]

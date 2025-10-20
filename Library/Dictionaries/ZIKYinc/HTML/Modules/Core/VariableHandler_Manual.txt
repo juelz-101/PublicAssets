@@ -1,0 +1,248 @@
+
+---
+
+```markdown
+# Variable Handler Library
+
+**Version:** 1.0.0  
+**Author:** Mojula Patel  
+**Created:** 2025-05-04  
+**Location:** London, UK  
+
+---
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Quick Start](#quick-start)
+5. [API Reference](#api-reference)
+    - [Type Validation](#type-validation)
+    - [File & Directory Validation](#file--directory-validation)
+    - [Exposure Checks](#exposure-checks)
+    - [Path Utilities](#path-utilities)
+    - [File Input Utilities](#file-input-utilities)
+6. [Usage Examples](#usage-examples)
+7. [Best Practices](#best-practices)
+8. [Changelog](#changelog)
+9. [Index](#index)
+10. [License](#license)
+
+---
+
+## Introduction
+
+The **Variable Handler** library is a modular, browser-friendly JavaScript utility for robust variable, file, and directory validation. Designed for web projects, it streamlines input validation, path manipulation, and resource exposure checks-without Node.js or third-party dependencies.
+
+---
+
+## Features
+
+- **Type validation:** Strings, numbers, booleans, emails, URLs, and non-empty checks.
+- **File & directory validation:** Checks for valid file and directory paths.
+- **Exposure checks:** Asynchronously verifies if files or directories are accessible via HTTP.
+- **Path utilities:** Absolute path detection, extension extraction, and URL formatting.
+- **File input utilities:** Extracts metadata from HTML file inputs.
+- **Lightweight:** Pure ES6+, no dependencies, works in all modern browsers.
+
+---
+
+## Installation
+
+Just include `variable_handler.js` in your project.
+
+```
+
+```
+
+Or import as a module (if using ES6 modules):
+
+```
+import { VariableHandling } from './variable_handler.js';
+```
+
+---
+
+## Quick Start
+
+```
+// Check if a value is a valid email
+VariableHandling.isEmail('mo@zikyinc.com'); // true
+
+// Validate a file path
+VariableHandling.isValidFileInput('assets/logo.png'); // true
+
+// Asynchronously check if a file is exposed
+VariableHandling.isFileExposed('/assets/logo.png').then(console.log); // true or false
+
+// Get file extension
+VariableHandling.getFileExtension('report.pdf'); // 'pdf'
+
+// Check if a file input element has valid files
+const input = document.getElementById('myFileInput');
+const metadata = VariableHandling.getFileMetadataFromInput(input);
+console.log(metadata);
+```
+
+---
+
+## API Reference
+
+### Type Validation
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `isString(value)` | Checks if value is a non-empty string. | `boolean` |
+| `isNumber(value)` | Checks if value is a finite number. | `boolean` |
+| `isBoolean(value)` | Checks if value is a boolean. | `boolean` |
+| `isEmail(value)` | Checks if value is a valid email address. | `boolean` |
+| `isURL(value)` | Checks if value is a valid URL. | `boolean` |
+| `isNotEmpty(value)` | Checks if value is not undefined, null, or empty. | `boolean` |
+
+---
+
+### File & Directory Validation
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `isValidFileInput(path)` | Validates a file path string for format and illegal characters. | `boolean` |
+| `isValidDirInput(path)` | Validates a directory path string for format and illegal characters. | `boolean` |
+
+---
+
+### Exposure Checks
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `isFileExposed(url)` | Asynchronously checks if a file is accessible from the server. | `Promise` |
+| `isDirExposed(url)` | Asynchronously checks if a directory or its index.html is accessible. | `Promise` |
+
+---
+
+### Path Utilities
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `isAbsolutePath(path)` | Checks if a path is absolute (starts with `/` or protocol). | `boolean` |
+| `toAbsoluteUrl(path, baseUrl?)` | Converts a path to an absolute URL. | `string \| null` |
+| `getFileExtension(filename)` | Extracts the file extension from a filename. | `string` |
+| `isSupportedFileType(filename, allowedExtensions)` | Checks if a file extension is in the allowed list. | `boolean` |
+| `isValidUrlFormat(url)` | Checks if a string is a valid URL format. | `boolean` |
+
+---
+
+### File Input Utilities
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `getFileMetadataFromInput(fileInput)` | Returns name, size, and type for each file selected in a file input element. | `Array` |
+
+---
+
+## Usage Examples
+
+### 1. Validate User Input Types
+
+```
+VariableHandling.isString('Hello World'); // true
+VariableHandling.isNumber(123.45); // true
+VariableHandling.isBoolean(false); // true
+VariableHandling.isEmail('test@domain.com'); // true
+VariableHandling.isURL('https://example.com'); // true
+VariableHandling.isNotEmpty('Non-empty'); // true
+```
+
+### 2. File and Directory Path Validation
+
+```
+VariableHandling.isValidFileInput('images/photo.jpg'); // true
+VariableHandling.isValidDirInput('images/gallery'); // true
+VariableHandling.isValidFileInput('invalid/'); // false
+VariableHandling.isValidDirInput('file.txt'); // false
+```
+
+### 3. Check File/Directory Exposure
+
+```
+await VariableHandling.isFileExposed('/assets/logo.png'); // true or false
+await VariableHandling.isDirExposed('/assets/'); // true or false
+```
+
+### 4. Path and Extension Utilities
+
+```
+VariableHandling.isAbsolutePath('/images/photo.jpg'); // true
+VariableHandling.isAbsolutePath('images/photo.jpg'); // false
+VariableHandling.toAbsoluteUrl('images/photo.jpg'); // 'http://yourdomain.com/images/photo.jpg'
+VariableHandling.getFileExtension('archive.tar.gz'); // 'gz'
+VariableHandling.isSupportedFileType('photo.jpg', ['jpg', 'png']); // true
+VariableHandling.isValidUrlFormat('ftp://example.com/resource'); // true
+```
+
+### 5. File Input Metadata
+
+```
+
+
+	const input = document.getElementById('fileInput');
+	input.addEventListener('change', () => {
+		const meta = VariableHandling.getFileMetadataFromInput(input);
+		console.log(meta);
+	});
+
+```
+
+---
+
+## Best Practices
+
+- **Always validate user input** before processing or sending to a server.
+- **Use exposure checks** to confirm resource availability before referencing in your app.
+- **Combine methods** for layered validation (e.g., check both path format and exposure).
+- **Handle async methods** with `await` or `.then()` for reliable results.
+- **Keep your library up to date**-track the version in your project.
+
+---
+
+## Changelog
+
+**1.0.0**  
+- Initial release with full suite of type, file, directory, and exposure validation methods.
+
+---
+
+## Index
+
+| Method | Section |
+|--------|---------|
+| isString | [Type Validation](#type-validation) |
+| isNumber | [Type Validation](#type-validation) |
+| isBoolean | [Type Validation](#type-validation) |
+| isEmail | [Type Validation](#type-validation) |
+| isURL | [Type Validation](#type-validation) |
+| isNotEmpty | [Type Validation](#type-validation) |
+| isValidFileInput | [File & Directory Validation](#file--directory-validation) |
+| isValidDirInput | [File & Directory Validation](#file--directory-validation) |
+| isFileExposed | [Exposure Checks](#exposure-checks) |
+| isDirExposed | [Exposure Checks](#exposure-checks) |
+| isAbsolutePath | [Path Utilities](#path-utilities) |
+| toAbsoluteUrl | [Path Utilities](#path-utilities) |
+| getFileExtension | [Path Utilities](#path-utilities) |
+| isSupportedFileType | [Path Utilities](#path-utilities) |
+| isValidUrlFormat | [Path Utilities](#path-utilities) |
+| getFileMetadataFromInput | [File Input Utilities](#file-input-utilities) |
+
+---
+
+## License
+
+MIT License.  
+Copyright © 2025  
+Mojula Patel, ZIKYinc
+
+---
+
+*For questions, suggestions, or contributions, please contact mojula.patel@zikyinc.com or open an issue on the project repository.*
+```
+---

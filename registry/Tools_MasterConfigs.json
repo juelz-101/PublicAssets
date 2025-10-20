@@ -1,0 +1,20 @@
+[
+  {
+    "name": "QRG_Cfg.json",
+    "ext": "json",
+    "path": "Tools/MasterConfigs/QRG_Cfg.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/QRG_Cfg.json"
+  },
+  {
+    "name": "Alldio_Cfg.json",
+    "ext": "json",
+    "path": "Tools/MasterConfigs/Alldio_Cfg.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/Alldio_Cfg.json"
+  },
+  {
+    "name": "config.json",
+    "ext": "json",
+    "path": "Tools/MasterConfigs/config.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/config.json"
+  }
+]

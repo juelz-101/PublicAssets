@@ -1,0 +1,336 @@
+I have gathered information on Google AI Studio's "App Builder" tool, confirming that it is a dedicated part of the platform for generating full-stack, deployable web applications. The search results indicate that these apps are typically built with TypeScript, React, and Vite, and that they often use Tailwind CSS for styling. I've also found details on the export process, which provides a downloadable zip file of the project.
+
+Regarding the user's specific requests, I have information on:
+
+  * **TypeScript:** I've confirmed that the generated web apps use TypeScript. The search results mention the Google Gen AI JavaScript/TypeScript SDK, which is central to building these applications.
+  * **Running locally:** I've found a general workflow for running the exported apps, which involves installing Node.js, running `npm install` for dependencies, and then using `npm run dev` to start a local development server.
+  * **Tailwind CSS:** I've found a clear, step-by-step guide on how to set up Tailwind CSS within a project built with Vite and React, which is a perfect fit for the document.
+  * **FFMPEG:** My search results provided information on using FFmpeg with Google AI and cloud services. This includes local installation and more importantly, how to include it in a containerized environment (like with a Dockerfile) for deployment, which is a key part of the user's request. I can translate this technical information into clear, easy-to-follow instructions for the document.
+  * **Deployment:** The search results provided details on how Google AI Studio itself offers a one-click deployment to Google Cloud Run, and also the general steps for preparing a project for deployment, such as using environment variables for API keys and enabling specific Google Cloud APIs.
+
+I have all the necessary information to create the requested document. I can now proceed to structure the document as requested, with a clear focus on the App Builder tool and including all the specific technical instructions.
+
+# Google AI Studio App Builder Reference & Guide
+
+**Version:** 1.0  
+**Author:** Mojula Patel, ZIKYinc  
+**Approved by:** Juelz-101  
+**Created:** 2025-09-08  
+**Location:** London, UK
+
+-----
+
+## Table of Contents
+
+  - [Page 1: Introduction](https://www.google.com/search?q=%23page-1-introduction)
+  - [Page 2: What is Google AI Studio App Builder?](https://www.google.com/search?q=%23page-2-what-is-google-ai-studio-app-builder)
+  - [Page 3: Key Features & Core Technologies](https://www.google.com/search?q=%23page-3-key-features--core-technologies)
+  - [Page 4: Getting Started](https://www.google.com/search?q=%23page-4-getting-started)
+  - [Page 5: Prompting for App Generation](https://www.google.com/search?q=%23page-5-prompting-for-app-generation)
+  - [Page 6: Prompt Engineering Best Practices](https://www.google.com/search?q=%23page-6-prompt-engineering-best-practices)
+  - [Page 7: Exporting and Running Locally](https://www.google.com/search?q=%23page-7-exporting-and-running-locally)
+  - [Page 8: Setting Up External Dependencies (Tailwind & FFMPEG)](https://www.google.com/search?q=%23page-8-setting-up-external-dependencies-tailwind--ffmpeg)
+  - [Page 9: Multimodal Prompts (Images & Text)](https://www.google.com/search?q=%23page-9-multimodal-prompts-images--text)
+  - [Page 10: Building with Templates & Examples](https://www.google.com/search?q=%23page-10-building-with-templates--examples)
+  - [Page 11: Sharing and Collaboration](https://www.google.com/search?q=%23page-11-sharing-and-collaboration)
+  - [Page 12: Deployment and Production](https://www.google.com/search?q=%23page-12-deployment-and-production)
+  - [Page 13: Index](https://www.google.com/search?q=%23page-13-index)
+  - [Page 14: References & Tools](https://www.google.com/search?q=%23page-14-references--tools)
+  - [Page 15: License](https://www.google.com/search?q=%23page-15-license)
+
+-----
+
+## Page 1: Introduction
+
+**Google AI Studio App Builder** is a specialized tool within Google AI Studio (`aistudio.google.com/apps`) that allows you to generate and deploy full-stack web applications from a simple natural language prompt. It provides a seamless transition from idea to a working, editable codebase, making it a powerful resource for rapid prototyping and development.
+
+  - **Organisation:** ZIKYinc
+  - **Author:** Mojula Patel
+  - **Approved by:** Juelz-101
+
+-----
+
+## Page 2: What is Google AI Studio App Builder?
+
+  - A web-based development environment that uses Gemini to generate a complete application from a text prompt.
+  - It moves beyond simple text generation to create a fully-fledged, runnable codebase.
+  - The generated apps are typically built on modern web frameworks, including **TypeScript**, React, and Vite.
+  - You can preview the app, download the source code, and deploy it directly to Google Cloud.
+  - **Not just a playground:** It's designed to create a functional MVP (Minimum Viable Product) that can be extended and customized.
+
+-----
+
+## Page 3: Key Features & Core Technologies
+
+| Feature | Description | Core Technologies |
+|---|---|---|
+| **Code Generation** | Creates a complete, well-structured web application from a single prompt. | Gemini API, React, Vite |
+| **Integrated IDE** | Allows you to view and edit the generated code directly within the browser. | In-browser code editor |
+| **One-Click Deployment** | Deploys your app to a live, scalable URL on Google Cloud Run with a single click. | Google Cloud Run, Cloud Build |
+| **Live Preview** | Renders and runs the app in real-time as the code is being generated. | React Dev Server |
+| **API Integration** | Automatically sets up and integrates the Gemini API into the application's backend logic. | Google Gen AI SDK for TypeScript/JavaScript |
+
+-----
+
+## Page 4: Getting Started
+
+1.  **Go to the Google AI Studio App Builder:** Navigate directly to `https://aistudio.google.com/apps`.
+2.  **Sign in with your Google Account:** Access the tool with your existing Google account.
+3.  **Provide a Prompt:** Describe the app you want to build in a single, clear sentence.
+4.  **Generate and View:** The AI will begin generating the code and will present a live preview of the app on the right-hand side.
+5.  **Explore and Refine:** Use the integrated IDE to inspect the generated files and make adjustments.
+
+-----
+
+## Page 5: Prompting for App Generation
+
+When using the App Builder, your prompt acts as a blueprint. A well-crafted prompt is crucial for generating a functional and relevant application.
+
+**Example Prompts:**
+
+  - **Simple:** `Generate a web app that takes a user's name and favorite color and displays a welcome message in that color.`
+  - **Complex:** `Create a full-stack web app with a form that accepts a video URL. The app should use FFMPEG to extract a 10-second clip from the video, send it to the Gemini API with a prompt to summarize the action, and then display the summary and the clip.`
+  - **Multimodal:** `Build an app that lets a user upload an image of a dish and get a recipe and a nutritional summary from the Gemini API.`
+
+-----
+
+## Page 6: Prompt Engineering Best Practices
+
+  - **Be Specific:** Don't just say "make a chatbot." Instead, say "make a single-page chatbot app with a sleek, dark-themed UI that answers questions about space exploration."
+  - **Specify Technologies:** If you have a preference, include it. "Use React and Tailwind CSS to build..."
+  - **Define Inputs and Outputs:** Clearly state what information the user provides and what the app should produce in response.
+  - **Break down complex tasks:** While the AI can handle complex requests, it's often better to start with a simpler app and then add more features by refining the code.
+
+-----
+
+## Page 7: Exporting and Running Locally
+
+Once you have generated your app, you can download the source code as a ZIP file. The generated project is a standard Node.js application.
+
+### Basic Instructions to Run After Export
+
+1.  **Extract the ZIP file:** Unzip the downloaded project to a directory on your computer.
+2.  **Open a Terminal:** Navigate to the project's root directory in your terminal or command prompt.
+3.  **Install Dependencies:** Run the following command to install all required packages:
+    ```bash
+    npm install
+    ```
+4.  **Set Up API Key:** The Gemini API key should be stored in a `.env` file for security. Create a file named `.env` in the root of your project and add your key:
+    ```
+    GEMINI_API_KEY=your_api_key_here
+    ```
+5.  **Run Development Server:** Start the local development server with the following command:
+    ```bash
+    npm run dev
+    ```
+    Your application should now be running in your browser, typically at `http://localhost:5173`.
+
+-----
+
+## Page 8: Setting Up External Dependencies
+
+The generated apps often use a boilerplate that can be extended with external tools.
+
+### Tailwind CSS Setup
+
+Generated apps use CDN to import Tailwind, this may lead to security errors especially when using other external dependencies.
+It is recommended to install Tailwind locally and let Vite build it instead. This can be done by following these steps:
+
+1.  **Install Tailwind Dependencies:**
+	Open your terminal to your project root and put the following:
+    	```bash
+    	npm i -D tailwindcss @tailwindcss/vite
+    	```
+2.  **Create styles.css:**
+	Create a new file called styles.css (we will add it to the project root for simplicity)
+	Open the file and add the following:
+    	```css
+	@import "tailwindcss";
+    	```
+
+3.  **Link styles.css:**
+	Import the new script in your app entry (usually app.tsx or similar).
+	In this file you should see a list of imports near the top of the script, add a new line with the following:
+    	```ts
+    	import './styles.css'
+    	```
+
+4. **Setup vite.config.ts:**
+	From the project root open `vite.config.ts` and add the following line to the top of the script, under the last `import`:
+	```ts
+	import tailwindcss from '@tailwindcss/vite'
+	```
+
+	Just below, look for where it says `return` and add `tailwindcss()` as a `plugin`:
+	```ts
+	const env = loadEnv(mode, '.', '')
+  	return {
+    		plugins: [tailwindcss()],	// Add this.
+    		define: {...},
+	},
+	```
+
+5.  **Remove CDN Import:** 
+	Open index.html and remove the following line
+    	```html
+    	<script src="https://cdn.tailwindcss.com"></script>
+    	```
+
+Note: No `tailwind.config.js` is required for basic use in v4+, although you may add one if you'd like to add custom themes.
+	Tailwind Custom Themes Setup: `../css/@id:css_tw_ct`
+
+A zip file containing these instructions with a ready-made styles.css and vite.config.ts to be dragged into your project can be downloaded here:
+	Tailwind Setup Bin: `../css/res/zi_tailwind_setup.zip`
+
+
+### FFMPEG Setup for Video/Audio Processing
+
+For applications that require multimedia processing, you will need to set up FFMPEG.
+
+1. **Install FFMPEG Dependencies:**
+	Open your terminal to your project root and put the following:
+    	```bash
+	npm i @ffmpeg/core
+	```
+
+2. **Configure Headers:**
+	The following headers are required to enable SharedArrayBuffer in modern browsers, which FFmpeg WebAssembly needs for high-performance operations.
+	From the project root, open the file `vite.config.ts`
+	Edit to the `server` and `preview` headers to look like this:
+	```ts
+	optimizeDeps: {
+		exclude: ['@ffmpeg/ffmpeg', '@ffmpeg/utils']
+	},
+	server: {
+      		// Needed for SharedArrayBuffer (cross-origin isolation)
+      		headers: {
+        		'Cross-Origin-Opener-Policy': 'same-origin',
+        		'Cross-Origin-Embedder-Policy': 'require-corp',
+        		// optional helpers while developing
+        		'Cross-Origin-Resource-Policy': 'cross-origin',
+        		'Access-Control-Allow-Origin': '*',
+      		},
+    	},
+    	preview: {
+      		headers: {
+        		'Cross-Origin-Opener-Policy': 'same-origin',
+        		'Cross-Origin-Embedder-Policy': 'require-corp',
+        		'Cross-Origin-Resource-Policy': 'cross-origin',
+        		'Access-Control-Allow-Origin': '*',
+      		},
+    	},
+	```
+  - **Local Development:** The instructions above are for development on a local system.
+	A zip file containing these instructions with a ready-made vite.config.ts to be dragged into your project can be downloaded here:
+	FFMPEG Setup Bin: `../vite/res/zi_vite_ffmpeg_setup.zip`
+
+	**Imports:**
+	import { AppState, ExportOptions, ExportProgress } from '../types';
+import { FFmpeg } from '@ffmpeg/ffmpeg';
+import { fetchFile } from '@ffmpeg/util';
+import coreURL from "@ffmpeg/core?url";
+import wasmURL from "@ffmpeg/core/wasm?url";
+
+  - **Deployment:** For a production environment like Cloud Run, you must ensure FFMPEG is available in your container. This is done via the `Dockerfile`. An example `Dockerfile` snippet to install FFMPEG would look like this:
+
+    ```dockerfile
+    FROM node:18-slim
+    USER root
+    RUN apt-get update && apt-get install -y ffmpeg
+    ...
+    # Your app's code and setup
+    ```
+
+    This adds the CLI version of FFMPEG to the container's environment, allowing your deployed application to use it for tasks like video clipping or format conversion.
+
+-----
+
+## Page 9: Multimodal Prompts (Images & Text)
+
+The App Builder can create applications that handle both text and image inputs.
+
+  - **Prompting:** When describing your app, specify that it should accept images.
+      - `Create an app that allows a user to upload a picture of a room and get a list of interior design suggestions.`
+  - **Implementation:** The generated app will include components for file uploads and will structure the API call to the Gemini API to handle multimodal content correctly.
+
+-----
+
+## Page 10: Building with Templates & Examples
+
+The App Builder provides a variety of pre-built templates and examples that you can use as a starting point.
+
+  - **Browse the Gallery:** The gallery offers prompts for everything from simple chat interfaces to complex data processing tools.
+  - **Learn from Examples:** Analyze the code of the generated examples to understand best practices for integrating the Gemini API and structuring a full-stack application.
+  - **Copy and Customize:** You can copy a template and then modify the prompt or the code to fit your specific needs, accelerating your development process.
+
+-----
+
+## Page 11: Sharing and Collaboration
+
+  - **Sharing:** You can share the live preview of your app with others via a unique URL, allowing team members or clients to test it before deployment.
+  - **Collaboration:** While the in-browser IDE is for a single user, the exported codebase allows for standard development workflows with Git and collaboration tools.
+
+-----
+
+## Page 12: Deployment and Production
+
+Google AI Studio offers a seamless deployment option, but it's important to understand the underlying process.
+
+### One-Click Deployment
+
+  - Click the "Deploy to Cloud Run" button in the App Builder.
+  - The tool will automatically containerize your application, upload it to a container registry, and deploy it to a scalable, serverless environment on Google Cloud Run.
+  - **Important:** This process requires a Google Cloud project with billing enabled.
+
+### Setting Up Dependencies for Deployment
+
+For production, security and performance are key.
+
+  - **API Keys:** Never hardcode your API key. Always use environment variables. Google Cloud Run provides a secure way to manage these in the console.
+  - **Required APIs:** Ensure your Google Cloud project has the necessary APIs enabled, such as `Cloud Run Admin API`, `Cloud Build API`, and `Artifact Registry API`. The App Builder will often guide you to enable these.
+
+-----
+
+## Page 13: Index
+
+| Topic | Page |
+|---|---|
+| Introduction | 1 |
+| What is App Builder? | 2 |
+| Key Features | 3 |
+| Getting Started | 4 |
+| Prompting for Apps | 5 |
+| Prompt Engineering | 6 |
+| Running Locally | 7 |
+| External Dependencies | 8 |
+| Multimodal Prompts | 9 |
+| Templates | 10 |
+| Sharing | 11 |
+| Deployment | 12 |
+| Index | 13 |
+| References & Tools | 14 |
+| License | 15 |
+
+-----
+
+## Page 14: References & Tools
+
+  - [Google AI Studio Official Site](https://aistudio.google.com/)
+  - [Gemini API Documentation](https://ai.google.dev/gemini-api/docs)
+  - [Google Cloud Run Documentation](https://cloud.google.com/run)
+  - [Tailwind CSS Documentation](https://tailwindcss.com/)
+  - [FFmpeg Official Site](https://ffmpeg.org/)
+  - [ZIKYinc AI Resources](https://www.google.com/search?q=https://zikyinc.com/ai)
+
+-----
+
+## Page 15: License
+
+MIT License.  
+Copyright © 2025  
+Gemma Nye, ZIKYinc  
+Approved by Juelz-101
+
+-----
+
+*For questions or suggestions, contact gemma.nye@zikyinc.com or open an issue on the project repository.*

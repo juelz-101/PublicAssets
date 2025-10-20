@@ -1,0 +1,275 @@
+# Git Reference & Guide
+
+**Version:** 1.0
+**Author:** Chatsir, ZIKYinc
+**Approved by:** Juelz-101
+**Created:** 2025-07-28
+**Location:** London, UK
+
+---
+
+## Table of Contents
+
+* [Page 1: Introduction](#page-1-introduction)
+* [Page 2: What is Git?](#page-2-what-is-git)
+* [Page 3: Key Concepts & Terminology](#page-3-key-concepts--terminology)
+* [Page 4: Installation & Setup](#page-4-installation--setup)
+* [Page 5: Basic Git Workflow](#page-5-basic-git-workflow)
+* [Page 6: Branching and Merging](#page-6-branching-and-merging)
+* [Page 7: Working with GitHub](#page-7-working-with-github)
+* [Page 8: Resolving Conflicts](#page-8-resolving-conflicts)
+* [Page 9: Useful Git Commands](#page-9-useful-git-commands)
+* [Page 10: .gitignore and Clean Repos](#page-10-gitignore-and-clean-repos)
+* [Page 11: Tips and Best Practices](#page-11-tips-and-best-practices)
+* [Page 12: Common Mistakes](#page-12-common-mistakes)
+* [Page 13: Glossary](#page-13-glossary)
+* [Page 14: References & Tools](#page-14-references--tools)
+* [Page 15: License](#page-15-license)
+
+---
+
+# PAGE 1 — Introduction
+
+## What is Git?
+
+**Git** is a free and open-source *distributed version control system (DVCS)* that helps developers manage and track changes in their projects.  
+It was created by **Linus Torvalds**, the same developer who created the **Linux kernel**, and is now maintained by the open-source community.
+
+Git is designed to handle **everything from small to massive projects** efficiently, allowing teams (or even a single user) to:
+- Record changes made to files over time
+- Collaborate with others without overwriting each other’s work
+- Restore previous versions when mistakes are made
+- Work both **locally** and **remotely**
+
+---
+
+## Why Git Exists
+
+Before Git, version control systems like *CVS* and *Subversion (SVN)* relied on **centralized** servers.  
+If the central server went down or you lost connection, development was blocked.  
+
+Git changed that:
+- **Every user** has a **complete copy** of the repository.
+- Work can continue **offline**, and changes can later be **synced** (pushed or pulled) when connected again.
+- This makes Git fast, resilient, and ideal for modern distributed teams.
+
+---
+
+## Git in Practice
+
+Git is commonly paired with online hosting platforms like:
+- **GitHub** — the most popular hosting service for open-source and private repositories.
+- **GitLab** — includes built-in CI/CD (continuous integration and delivery).
+- **Bitbucket** — integrates closely with Jira and Atlassian tools.
+
+These services store remote copies of your Git repositories and make collaboration easier.
+
+---
+
+## Key Benefits
+
+| Feature | Description |
+|----------|--------------|
+| **Distributed** | Every user has a full backup of the entire project. |
+| **Fast** | Local commits, branches, and diffs happen instantly. |
+| **Secure** | Every commit is cryptographically hashed (SHA-1 or SHA-256). |
+| **Flexible** | Supports various workflows (solo, team-based, forked). |
+
+---
+
+### Example Scenario
+
+> **Example:**  
+> You’re building an app. You make a few changes that break the project. With Git, you can easily revert to the last working version, compare what went wrong, or branch off to test new ideas — all without losing your main work.
+
+This ability to experiment safely is what makes Git essential to every developer.
+
+---
+
+## Page 2: What is Git?
+
+Git is a version control system that:
+
+* Tracks changes to code over time
+* Allows multiple developers to collaborate
+* Enables branching, merging, reverting, and restoring code
+
+Used for:
+
+* Software development
+* File and document version control
+* Project collaboration and history tracking
+
+---
+
+## Page 3: Key Concepts & Terminology
+
+| Term                  | Description                                |
+| --------------------- | ------------------------------------------ |
+| **Repository (Repo)** | A folder tracked by Git                    |
+| **Commit**            | A snapshot of changes                      |
+| **Branch**            | A parallel line of development             |
+| **Merge**             | Combining branches together                |
+| **Clone**             | Copying a remote repo locally              |
+| **Push**              | Upload changes to remote                   |
+| **Pull**              | Download latest changes from remote        |
+| **Staging Area**      | Area where changes are prepared for commit |
+
+---
+
+## Page 4: Installation & Setup
+
+**Install Git:**
+
+* Windows: [git-scm.com](https://git-scm.com)
+* macOS: `brew install git`
+* Linux: `sudo apt install git`
+
+**Configure Git:**
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+git config --global init.defaultBranch main
+```
+
+---
+
+## Page 5: Basic Git Workflow
+
+```bash
+git init             # Start a new Git repo
+git status           # Check current status
+git add .            # Stage changes
+git commit -m "Msg"  # Commit changes
+git push origin main # Push to remote
+```
+
+* Always commit with a message
+* Use `git log` to view history
+* Pull before pushing when working with others
+
+---
+
+## Page 6: Branching and Merging
+
+```bash
+git checkout -b feature-x  # Create + switch to a new branch
+git merge feature-x        # Merge into current branch
+git branch -d feature-x    # Delete merged branch
+```
+
+* Use branches for new features or fixes
+* Avoid merging unfinished work
+
+---
+
+## Page 7: Working with GitHub
+
+* Create repo on GitHub first
+* Connect local repo:
+
+```bash
+git remote add origin https://github.com/yourname/repo.git
+git push -u origin main
+```
+
+* Use GitHub Desktop if you prefer GUI
+
+---
+
+## Page 8: Resolving Conflicts
+
+Git will notify you of conflicts during a merge. Resolve them manually:
+
+* Open conflicted file
+* Edit sections between `<<<<<<<` and `>>>>>>>`
+* Then:
+
+```bash
+git add .
+git commit -m "Resolved conflict"
+```
+
+---
+
+## Page 9: Useful Git Commands
+
+```bash
+git log --oneline       # Short commit history
+git diff                # View changes
+git reset HEAD~1        # Undo last commit
+git stash               # Save changes without committing
+git rebase -i HEAD~3    # Interactive rebase
+```
+
+---
+
+## Page 10: .gitignore and Clean Repos
+
+`.gitignore` excludes files/folders from being tracked:
+
+```gitignore
+node_modules/
+*.log
+*.tmp
+.env
+.DS_Store
+```
+
+* Keep your repo clean and secure
+* Never commit passwords, API keys, or local environment files
+
+---
+
+## Page 11: Tips and Best Practices
+
+* Commit small and often
+* Write clear commit messages
+* Use branches for each task
+* Sync with remote before making big changes
+* Always test before pushing
+
+---
+
+## Page 12: Common Mistakes
+
+* Committing to `main` directly
+* Forgetting to pull before push
+* Committing sensitive data
+* Losing track of branches
+* Not reviewing `git status` before committing
+
+---
+
+## Page 13: Glossary
+
+| Term     | Meaning                               |
+| -------- | ------------------------------------- |
+| HEAD     | Current commit pointer                |
+| Origin   | Default remote name                   |
+| Fork     | A copy of another user’s repo         |
+| Upstream | Main/original repo you forked from    |
+| Rebase   | Rewriting history to simplify commits |
+
+---
+
+## Page 14: References & Tools
+
+* [Git Official Docs](https://git-scm.com/doc)
+* [GitHub Docs](https://docs.github.com/)
+* [Oh My Git!](https://ohmygit.org/) – Git learning game
+* [Git Explorer](https://gitexplorer.com/)
+* [Git Cheat Sheet (PDF)](https://education.github.com/git-cheat-sheet-education.pdf)
+
+---
+
+## Page 15: License
+
+MIT License
+© 2025 Chatsir, ZIKYinc
+Approved by Juelz-101
+
+---
+
+*For questions, issues, or collabs, email [chatsir@zikyinc.com](mailto:chatsir@zikyinc.com) or contact us on GitHub.*

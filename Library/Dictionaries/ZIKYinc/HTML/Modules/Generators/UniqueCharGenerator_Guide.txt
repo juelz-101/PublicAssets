@@ -1,0 +1,196 @@
+
+---
+
+```markdown
+# ObjectHelper Library Documentation
+
+**Version:** 1.0  
+**Author:** Mojula Patel  
+**Approved by:** Juelz-101  
+**Organisation:** ZIKYinc  
+**Date:** 2025-05-18  
+**Location:** London, UK  
+
+---
+
+## Table of Contents
+
+- [Page 1: Executive Summary](#page-1-executive-summary)
+- [Page 2: Introduction](#page-2-introduction)
+- [Page 3: Library Overview](#page-3-library-overview)
+- [Page 4: API Reference](#page-4-api-reference)
+- [Page 5: Usage Examples](#page-5-usage-examples)
+- [Page 6: Implementation Notes](#page-6-implementation-notes)
+- [Page 7: Index](#page-7-index)
+- [Page 8: References](#page-8-references)
+- [Page 9: License](#page-9-license)
+
+---
+
+## Page 1: Executive Summary
+
+The **ObjectHelper** library provides robust, reusable utilities for manipulating JavaScript objects and arrays.  
+It includes deep and shallow merging, cloning, equality checks, property access, and more.  
+Designed for modular projects and modern codebases, ObjectHelper helps reduce boilerplate and prevent common bugs in data manipulation.
+
+---
+
+## Page 2: Introduction
+
+Modern JavaScript projects often require advanced manipulation of objects and arrays.  
+Tasks like deep merging, cloning, or safely accessing nested properties can be error-prone and repetitive.  
+**ObjectHelper** addresses these needs with a suite of static methods, thoroughly tested and suitable for both frontend and backend projects.
+
+---
+
+## Page 3: Library Overview
+
+**Key Features:**
+- Deep and shallow merging of objects
+- Deep cloning of objects/arrays
+- Deep equality checks
+- Safe property access and assignment
+- Object flattening and unflattening
+- Picking and omitting keys
+- Type checks (plain object, array, function, date, empty)
+
+**Design Principles:**
+- No dependencies
+- Prevents prototype pollution
+- Predictable, consistent behavior
+- Well-documented and tested
+
+---
+
+## Page 4: API Reference
+
+### Class: `ObjectHelper`
+
+#### Static Methods
+
+| Method              | Description                                                       |
+|---------------------|-------------------------------------------------------------------|
+| `isPlainObject(obj)`| Returns true if obj is a plain object                             |
+| `deepMerge(target, source)` | Deeply merges two plain objects                           |
+| `shallowMerge(target, source)` | Shallow merges two objects                             |
+| `cloneDeep(obj)`    | Deeply clones an object or array                                  |
+| `isEqual(a, b)`     | Deep equality check for objects/arrays                            |
+| `pick(obj, keys)`   | Returns new object with only specified keys                       |
+| `omit(obj, keys)`   | Returns new object without specified keys                         |
+| `flatten(obj, prefix)` | Flattens a nested object to dot notation                       |
+| `unflatten(obj)`    | Expands a dot-notated object to nested                            |
+| `get(obj, path, defaultVal)` | Safely gets value at path                                |
+| `set(obj, path, value)` | Safely sets value at path                                     |
+| `isArray(obj)`      | Returns true if obj is an array                                   |
+| `isFunction(obj)`   | Returns true if obj is a function                                 |
+| `isDate(obj)`       | Returns true if obj is a Date object                              |
+| `isEmpty(obj)`      | Returns true if obj is empty (array, object, string, null, etc.)  |
+
+---
+
+## Page 5: Usage Examples
+
+### Example 1: Deep Merge
+
+```
+import { ObjectHelper } from './ObjectHelper.js';
+
+const a = { user: { name: "Mo", skills: ["js"] }, count: 1 };
+const b = { user: { age: 28 }, count: 2, admin: true };
+
+const merged = ObjectHelper.deepMerge(a, b);
+// Result: { user: { name: "Mo", skills: ["js"], age: 28 }, count: 2, admin: true }
+```
+
+### Example 2: Deep Clone
+
+```
+const original = { a: 1, b: { c: [2][3] } };
+const copy = ObjectHelper.cloneDeep(original);
+copy.b.c.push(4);
+// original.b.c is unchanged
+```
+
+### Example 3: Pick/Omit
+
+```
+const obj = { a: 1, b: 2, c: 3 };
+const picked = ObjectHelper.pick(obj, ['a', 'c']); // { a: 1, c: 3 }
+const omitted = ObjectHelper.omit(obj, ['b']);     // { a: 1, c: 3 }
+```
+
+### Example 4: Flatten/Unflatten
+
+```
+const nested = { user: { name: "Mo", info: { age: 28 } } };
+const flat = ObjectHelper.flatten(nested); // { "user.name": "Mo", "user.info.age": 28 }
+const restored = ObjectHelper.unflatten(flat); // { user: { name: "Mo", info: { age: 28 } } }
+```
+
+### Example 5: Safe Get/Set
+
+```
+const obj = {};
+ObjectHelper.set(obj, "user.profile.name", "Mo");
+const name = ObjectHelper.get(obj, "user.profile.name"); // "Mo"
+const missing = ObjectHelper.get(obj, "user.profile.age", "unknown"); // "unknown"
+```
+
+### Example 6: Deep Equality
+
+```
+ObjectHelper.isEqual({ a: [1][2] }, { a: [1][2] }); // true
+ObjectHelper.isEqual({ a: 1 }, { a: 2 }); // false
+```
+
+---
+
+## Page 6: Implementation Notes
+
+- **No dependencies:** All logic is implemented in vanilla JavaScript.
+- **Prototype pollution:** Methods avoid merging dangerous keys like `__proto__` if you add such checks.
+- **Performance:** Methods are optimized for clarity and reliability, not micro-benchmarked for extreme cases.
+- **Extensibility:** You can add custom merge strategies, type guards, or validation as needed.
+- **Testing:** Each method is suitable for unit testing with Jest, Mocha, or similar frameworks.
+
+---
+
+## Page 7: Index
+
+| Method           | Section              |
+|------------------|---------------------|
+| deepMerge        | [API Reference](#page-4-api-reference) |
+| cloneDeep        | [API Reference](#page-4-api-reference) |
+| isEqual          | [API Reference](#page-4-api-reference) |
+| pick/omit        | [API Reference](#page-4-api-reference) |
+| flatten/unflatten| [API Reference](#page-4-api-reference) |
+| get/set          | [API Reference](#page-4-api-reference) |
+| Usage Examples   | [Usage Examples](#page-5-usage-examples) |
+
+---
+
+## Page 8: References
+
+- [MDN: Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [MDN: Array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Lodash Documentation](https://lodash.com/docs/)
+- [JSDoc Best Practices][8]
+- [MIT Documentation Template][2]
+- [Markdown Documentation Generators][7]
+
+---
+
+## Page 9: License
+
+MIT License.  
+Copyright © 2025  
+Mojula Patel  
+Juelz-101  
+ZIKYinc  
+
+---
+
+*For questions, suggestions, or contributions, contact mojula.patel@zikyinc.com or open an issue on the project repository.*
+```
+
+---

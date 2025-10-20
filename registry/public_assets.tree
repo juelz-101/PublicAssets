@@ -303,35 +303,6 @@ PublicAssets/
 │       │       └── ZIKYinc_Data-Protocols.txt
 │       └── PYTHON/
 │           └── SoundbarAntiMuteHelper_Guide.txt
-├── Library_Coding_AHK.json
-├── Library_Coding_Git.json
-├── Library_Coding_GoogleAIStudio.json
-├── Library_Coding_HTML.json
-├── Library_Coding_JSON.json
-├── Library_Coding_Markdown.json
-├── Library_Coding_PY_Basics.json
-├── Library_Coding_PY_TelegramBots.json
-├── Library_Dictionaries.json
-├── Library_Dictionaries_Coding_AHK.json
-├── Library_Dictionaries_Coding_HTML.json
-├── Library_Dictionaries_Coding_JSON.json
-├── Library_Dictionaries_Coding_Markdown.json
-├── Library_Dictionaries_Coding_PY.json
-├── Library_Dictionaries_GeneralComputing.json
-├── Library_Dictionaries_ZIKYinc_HTML_Modules_Core.json
-├── Library_Dictionaries_ZIKYinc_HTML_Modules_Generators.json
-├── Library_Dictionaries_ZIKYinc_HTML_Modules_Helpers.json
-├── Library_Dictionaries_ZIKYinc_HTML_Modules_Testing.json
-├── Library_Dictionaries_ZIKYinc_Tools_Apps.json
-├── Library_Schemas_ZIKYinc.json
-├── Library_ZIKYinc_Dev.json
-├── Library_ZIKYinc_Dev_HTML_Modules_Core.json
-├── Library_ZIKYinc_Dev_HTML_Modules_Generators.json
-├── Library_ZIKYinc_Dev_HTML_Modules_Helpers.json
-├── Library_ZIKYinc_Dev_HTML_Modules_Testing.json
-├── Library_ZIKYinc_Dev_MKU.json
-├── Library_ZIKYinc_Dev_ZIKYinc_Protocols.json
-├── Library_ZIKYinc_PYTHON.json
 ├── README.md
 ├── Templates/
 │   └── PromptData/
@@ -572,79 +543,5 @@ PublicAssets/
 ├── asset_register.json
 ├── auto_update.py
 ├── public_assets.tree
-├── registry/
-│   ├── Audio_Music_BG.json
-│   ├── Audio_SoundFX.json
-│   ├── Audio_Speech_JuelzFM.json
-│   ├── Data_AI_CodeAssistant_ai_dev.json
-│   ├── Data_AI_CodeAssistant_ai_dev_data.json
-│   ├── Data_AI_CodeAssistant_ai_dev_log.json
-│   ├── Data_AI_CodeAssistant_ai_dev_log_checkpoints.json
-│   ├── Data_AI_CodeAssistant_ai_dev_log_dependencies.json
-│   ├── Data_AI_CodeAssistant_ai_dev_log_layout.json
-│   ├── Data_AI_CodeAssistant_ai_dev_log_update_log.json
-│   ├── Images_Covers.json
-│   ├── Images_Covers_AlbumArt.json
-│   ├── Images_Icons.json
-│   ├── Images_Icons_Hex.json
-│   ├── Images_Logos_App.json
-│   ├── Images_Logos_App_Alldio.json
-│   ├── Images_Logos_App_QRGem.json
-│   ├── Images_Logos_Main.json
-│   ├── Images_Logos_Tings.json
-│   ├── Library_Coding_AHK.json
-│   ├── Library_Coding_Git.json
-│   ├── Library_Coding_GoogleAIStudio.json
-│   ├── Library_Coding_HTML.json
-│   ├── Library_Coding_JSON.json
-│   ├── Library_Coding_Markdown.json
-│   ├── Library_Coding_PY_Basics.json
-│   ├── Library_Coding_PY_TelegramBots.json
-│   ├── Library_Dictionaries.json
-│   ├── Library_Dictionaries_Coding_AHK.json
-│   ├── Library_Dictionaries_Coding_HTML.json
-│   ├── Library_Dictionaries_Coding_JSON.json
-│   ├── Library_Dictionaries_Coding_Markdown.json
-│   ├── Library_Dictionaries_Coding_PY.json
-│   ├── Library_Dictionaries_GeneralComputing.json
-│   ├── Library_Dictionaries_ZIKYinc_HTML_Modules_Core.json
-│   ├── Library_Dictionaries_ZIKYinc_HTML_Modules_Generators.json
-│   ├── Library_Dictionaries_ZIKYinc_HTML_Modules_Helpers.json
-│   ├── Library_Dictionaries_ZIKYinc_HTML_Modules_Testing.json
-│   ├── Library_Dictionaries_ZIKYinc_Tools_Apps.json
-│   ├── Library_Schemas_ZIKYinc.json
-│   ├── Library_ZIKYinc_Dev.json
-│   ├── Library_ZIKYinc_Dev_HTML_Modules_Core.json
-│   ├── Library_ZIKYinc_Dev_HTML_Modules_Generators.json
-│   ├── Library_ZIKYinc_Dev_HTML_Modules_Helpers.json
-│   ├── Library_ZIKYinc_Dev_HTML_Modules_Testing.json
-│   ├── Library_ZIKYinc_Dev_MKU.json
-│   ├── Library_ZIKYinc_Dev_ZIKYinc_Protocols.json
-│   ├── Library_ZIKYinc_PYTHON.json
-│   ├── Templates_PromptData.json
-│   ├── Tools_MasterConfigs.json
-│   ├── Website.json
-│   ├── Website_img_bg_art.json
-│   ├── Website_img_bg_dev.json
-│   ├── Website_img_bg_focused_j101.json
-│   ├── Website_img_bg_focused_mellowd.json
-│   ├── Website_img_bg_jfm.json
-│   ├── Website_img_bg_music_artists_juelz.json
-│   ├── Website_img_bg_zikyinc.json
-│   ├── Website_img_logos.json
-│   ├── Website_img_misc.json
-│   ├── Website_img_photos.json
-│   ├── Website_img_photos_emma.json
-│   ├── Website_lib.json
-│   ├── Website_lib_gallery.json
-│   ├── Website_lib_games.json
-│   ├── Website_lib_music_albums.json
-│   ├── Website_lib_music_artists.json
-│   ├── Website_lib_music_songs.json
-│   ├── Website_lib_tools.json
-│   ├── asset_register.json
-│   ├── public_assets.tree
-│   └── root.json
-├── registry.json
 ├── root.json
 └── run_auto_update.bat

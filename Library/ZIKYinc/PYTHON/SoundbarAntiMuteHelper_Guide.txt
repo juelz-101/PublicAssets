@@ -1,0 +1,219 @@
+
+# \[PY]SoundbarAntiStandby_Guide.mku
+
+---
+
+# Soundbar Anti-Standby Helper — Library Documentation
+
+**Version:** 1.0
+**Author:** Juelz-101
+**Approved by:** Life
+**Organisation:** ZIKYinc
+**Date:** 2025-08-24
+**Location:** London, UK
+
+---
+
+## Table of Contents
+
+* [Page 1: Executive Summary](#page-1-executive-summary)
+* [Page 2: Introduction](#page-2-introduction)
+* [Page 3: Library Overview](#page-3-library-overview)
+* [Page 4: API Reference](#page-4-api-reference)
+* [Page 5: Usage Examples](#page-5-usage-examples)
+* [Page 6: Advanced Configuration & Presets](#page-6-advanced-configuration--presets)
+* [Page 7: Implementation Notes](#page-7-implementation-notes)
+* [Page 8: Best Practices & Tricks](#page-8-best-practices--tricks)
+* [Page 9: Index](#page-9-index)
+* [Page 10: References](#page-10-references)
+* [Page 11: License](#page-11-license)
+
+---
+
+## Page 1: Executive Summary
+
+The **Soundbar Anti-Standby Helper** is a lightweight Python tool (distributable as `.exe`) that prevents external speakers and soundbars from entering standby mode during silence.
+It works by **injecting inaudible frequencies** only when silence is detected, keeping devices “awake” without disrupting the user experience.
+
+This tool is useful for:
+
+* Musicians and producers fine-tuning audio.
+* Home users frustrated by aggressive soundbar standby modes.
+* Developers integrating audio “keep-alive” solutions into larger systems.
+
+---
+
+## Page 2: Introduction
+
+Many soundbars and external speakers auto-power-off after a few seconds of silence.
+This can be disruptive in **music editing**, **gaming**, or **general PC usage** where pauses are normal.
+
+**Soundbar Anti-Standby Helper** automates the process of keeping audio channels active. Instead of constant noise, it:
+
+* Detects silence on the output stream.
+* Plays a configurable “keep-alive” tone.
+* Stops the tone when real sound resumes.
+
+This strikes a balance between preventing unwanted cut-offs and keeping CPU usage minimal.
+
+---
+
+## Page 3: Library Overview
+
+**Key Features:**
+
+* Silence detection with user-defined thresholds.
+* Play low-frequency or high-frequency inaudible tones.
+* Taskbar tray integration with live status indicators:
+
+  * ⚪ Grey = Off
+  * 🟢 Green = Running (active keep-alive)
+  * 🟠 Orange = Pending (waiting for silence)
+* Full GUI for parameters (frequency, amplitude, buffer size).
+* Presets for quick setup.
+* Optional Windows startup registry entry.
+* JSON-based config persistence.
+
+**Design Principles:**
+
+* **Non-intrusive:** Only active when silence is detected.
+* **Customizable:** Parameters and presets for any sound system.
+* **Portable:** Can run standalone or be bundled into ZIKYinc toolchains.
+* **Minimal overhead:** Efficient with low memory footprint.
+
+---
+
+## Page 4: API Reference
+
+### Class: `SoundbarAntiStandby`
+
+#### Core Methods
+
+| Method                      | Description                                                            |
+| --------------------------- | ---------------------------------------------------------------------- |
+| `start_keep_alive()`        | Starts monitoring silence and playing the keep-alive tone when needed. |
+| `stop_keep_alive()`         | Stops all output immediately.                                          |
+| `set_frequency(f)`          | Sets the frequency of the keep-alive tone (Hz).                        |
+| `set_amplitude(a)`          | Sets output amplitude (safe defaults applied).                         |
+| `set_threshold(level)`      | Adjusts silence detection sensitivity.                                 |
+| `toggle_startup(enable)`    | Adds/removes Windows registry startup entry.                           |
+| `save_preset(name, config)` | Saves a configuration under a named preset.                            |
+| `load_preset(name)`         | Applies a saved preset.                                                |
+
+#### GUI/Tray Methods
+
+| Method                     | Description                                          |
+| -------------------------- | ---------------------------------------------------- |
+| `create_tray_icon()`       | Spawns the tray icon with menu and status indicator. |
+| `update_tray_state(state)` | Updates tray icon state (grey, green, orange).       |
+| `open_settings_window()`   | Opens full Tkinter GUI for parameter editing.        |
+
+---
+
+## Page 5: Usage Examples
+
+### Example 1: Basic Run
+
+```python
+from SoundbarAntiStandby import SoundbarAntiStandby  
+
+app = SoundbarAntiStandby()  
+app.start_keep_alive()  
+```
+
+### Example 2: Adjusting Parameters
+
+```python
+app.set_frequency(18000)   # Inaudible high freq tone
+app.set_amplitude(0.02)    # Very low amplitude
+app.set_threshold(0.01)    # Sensitive silence detection
+```
+
+### Example 3: Preset Usage
+
+```python
+app.save_preset("Studio", {"freq": 18000, "amp": 0.02, "threshold": 0.01})
+app.load_preset("Studio")
+```
+
+### Example 4: Startup Toggle
+
+```python
+app.toggle_startup(True)   # Enable auto-start with Windows
+app.toggle_startup(False)  # Remove auto-start
+```
+
+---
+
+## Page 6: Advanced Configuration & Presets
+
+**Included Presets:**
+
+* **Default (Safe Mode):** 17 kHz, amplitude 0.02, silence threshold 0.02.
+* **Studio Mode:** 18.5 kHz, amplitude 0.015, silence threshold 0.01.
+* **TV Mode:** 80 Hz, amplitude 0.05, silence threshold 0.03.
+* **Aggressive Mode:** 16.5 kHz, amplitude 0.025, silence threshold 0.005.
+
+**Custom Options:**
+
+* **Buffer size:** Tune responsiveness vs CPU usage.
+* **Output device selection:** Direct output to headphones, speakers, or external DAC.
+* **Taskbar integration:** Quick toggle between presets.
+
+---
+
+## Page 7: Implementation Notes
+
+* **Cross-platform note:** Designed for Windows; may require tweaks for Linux/Mac.
+* **Frequency choice:** Many soundbars ignore <30 Hz and >18 kHz, but still detect activity. Test your device.
+* **Startup registry:** Uses `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`. Safe for user-level install.
+* **Config persistence:** Stored as JSON in `%AppData%/ZIKYinc/SoundbarAntiStandby/config.json`.
+* **Threading:** Tone generation runs on a worker thread, so UI remains responsive.
+
+---
+
+## Page 8: Best Practices & Tricks
+
+* **Pick the right frequency:** For music production, use **ultrasonic (17–19 kHz)** so it doesn’t affect mixdowns. For TV/home theater, **low freq (50–100 Hz)** may be more reliable.
+* **Test thresholds:** If your soundbar cuts out too early, lower the silence threshold.
+* **Low amplitude is safer:** Keep amplitude minimal to avoid unnecessary driver wear.
+* **Combine with DAWs:** Run this app alongside Ableton/FL Studio to prevent monitoring cut-offs.
+* **Portable mode:** Store presets in the same folder as the `.exe` to carry configs between PCs.
+* **Integration with ZIKYinc tools:** Can be linked with “Workspace Mgr” for global audio environment setups.
+
+---
+
+## Page 9: Index
+
+| Feature                  | Section                                                    |
+| ------------------------ | ---------------------------------------------------------- |
+| Presets                  | [Advanced Config](#page-6-advanced-configuration--presets) |
+| Tray Icon States         | [Overview](#page-3-library-overview)                       |
+| Silence Threshold        | [API Reference](#page-4-api-reference)                     |
+| Startup Registry         | [Usage Examples](#page-5-usage-examples)                   |
+| Preset Save/Load         | [Usage Examples](#page-5-usage-examples)                   |
+| Inaudible Frequency Tips | [Best Practices](#page-8-best-practices--tricks)           |
+
+---
+
+## Page 10: References
+
+* Microsoft Docs: [Windows Registry — Run Key](https://learn.microsoft.com/en-us/windows/win32/setupapi/run-key)
+* Sounddevice Docs: [Python Sounddevice](https://python-sounddevice.readthedocs.io/)
+* PyStray Docs: [Taskbar Integration](https://pypi.org/project/pystray/)
+* ZIKYinc Dev Notes: Audio Hardware Helpers, Internal Reference MTA04
+
+---
+
+## Page 11: License
+
+MIT License.
+Copyright © 2025
+Juelz-101
+ZIKYinc
+
+---
+
+*For contributions, presets, or bug reports, submit via ZIKYinc library portal.*
+
+---

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "music.json",
+    "ext": "json",
+    "path": "Website/lib/music.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music.json"
+  },
+  {
+    "name": "misc.json",
+    "ext": "json",
+    "path": "Website/lib/misc.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/misc.json"
+  },
+  {
+    "name": "tools.json",
+    "ext": "json",
+    "path": "Website/lib/tools.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/tools.json"
+  },
+  {
+    "name": "art.json",
+    "ext": "json",
+    "path": "Website/lib/art.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/art.json"
+  },
+  {
+    "name": "cur_projects.json",
+    "ext": "json",
+    "path": "Website/lib/cur_projects.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/cur_projects.json"
+  },
+  {
+    "name": "gaming.json",
+    "ext": "json",
+    "path": "Website/lib/gaming.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/gaming.json"
+  },
+  {
+    "name": "webdata.json",
+    "ext": "json",
+    "path": "Website/lib/webdata.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/webdata.json"
+  },
+  {
+    "name": "home.json",
+    "ext": "json",
+    "path": "Website/lib/home.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/home.json"
+  },
+  {
+    "name": "about.json",
+    "ext": "json",
+    "path": "Website/lib/about.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/about.json"
+  }
+]

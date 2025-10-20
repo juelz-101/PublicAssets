@@ -1,0 +1,38 @@
+{
+	"meta": {
+        "type": "data", "name": "ZIKYinc Master Dictionary", "name_finalized": true,
+        "desc": "Master file that all dictionary files get merged into.",
+        "creator": "Juelz-101", "organization": "ZIKYinc",
+		"file": { "platform": "Any", "root": "ZIKYinc_Shared", "path": "Library/Dictionary/", "this_file": "MasterDictionary.mld" }, 
+		"started": "20/10/25", "version": 1.0, "edited": {"date": "", "edited_by": "", "edit_number": 0, "changelog": []},
+		"ref": {"meta_layout": "MTA04", "project_layout": "JS03"},
+        "mgr": { "allow_autofill": "If Blank", "auto_version": "Minor Only", "track_edits": true, "auto_merging": false },
+		"defaults": {"load_defaults": true, "web": "", "file": "", "priority": "web"},
+		"current_status": "Literally just started.", "complete": false,
+		"notes": [
+			["Juelz-101", "25/4/25", ["Keys labelled 'info' are for dev ref and will be removed once complete.", "Keys labelled 'desc' are perminant and will be used for tooltips and descriptions." ]]
+		]
+    },
+	"data": {
+		"dictionary": {
+			"desc": "This is where you can find definitions for relivent terms/data used within the app. You can also find tags and triggers to enhance text to do many powerful things.",
+			"info": {
+				"levels": [
+					{"name": "User", "desc": "This level indicates that the knowledge involved is within the knowledge required to use the application and its basic features", "example": "Adding data to the app as intended."},
+					{"name": "Curious User", "desc": "This level indicates that the knowledge involved is for somebody who has became curious and is looking for alternate ways to achive their goal.", "example": "Teaking or adding data from JSON files rather than in the app."},
+					{"name": "Focused User", "desc": "This level indicates that knowledge involved may require more in-depth understanding of the app's functionality and some technical skills.", "example": "Using advanced features or customizing the app's behavior through configuration files."},
+					{"name": "Advanced User", "desc": "This level indicates a high degree of familiarity with the app and its underlying systems, often involving scripting or API usage.", "example": "Creating custom scripts to automate complex tasks within the app."},
+					{"name": "Developer", "desc": "This level involves deep technical knowledge and the ability to modify or extend the app's core functionality.", "example": "Making changes to the ID management system."}
+				],
+				"difficulties": [
+					{"name": "Basic", "desc": "Tasks that require minimal knowledge and effort, often involving straightforward actions.", "example": "Navigating the app's main menu."},
+					{"name": "Easy", "desc": "Tasks that are simple but may require some basic understanding of the app's functionality.", "example": "Creating a new item within the app."},
+					{"name": "Medium", "desc": "Tasks that require a moderate level of understanding and some technical skills, possibly involving configuration or customization.", "example": "Configuring settings to achieve a specific outcome."},
+					{"name": "Hard", "desc": "Tasks that demand a significant level of technical knowledge and may involve troubleshooting or advanced customization.", "example": "Debugging issues with custom scripts or integrations."},
+					{"name": "Expert", "desc": "Tasks that require deep technical expertise and often involve complex problem-solving or advanced development skills.", "example": "Developing new features or integrating third-party APIs."}
+				]
+			},
+			"collections": {}
+		}
+	}
+}

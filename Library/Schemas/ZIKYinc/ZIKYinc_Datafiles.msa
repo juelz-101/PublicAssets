@@ -1,0 +1,451 @@
+{
+	"meta": {
+        "type": "data", "name": "ZIKYinc Datafiles Schemas", "name_finalized": true,
+        "desc": "Schemas for the datafiles used within our projects.",
+        "creator": "Juelz-101", "organization": "ZIKYinc",
+		"file": { "platform": "Any", "root": "ZIKYinc_Shared", "path": "Library/Schemas/ZIKYinc/", "this_file": "ZIKYinc_Datafiles.msa" }, 
+		"started": "20/10/25", "version": 1.0, "edited": {"date": "", "edited_by": "", "edit_number": 0, "changelog": []},
+		"ref": {"meta_layout": "MTA04", "project_layout": "JS03"},
+        "mgr": { "allow_autofill": "If Blank", "auto_version": "Minor Only", "track_edits": true, "auto_merging": false },
+		"defaults": {"load_defaults": true, "web": "", "file": "", "priority": "web"},
+		"modules": {"modules_to_add": [], "modules_to_ignore_update": []},
+		"current_status": "Literally just started.", "complete": false,
+		"notes": [
+			["Juelz-101", "25/4/25", ["Keys labelled 'info' are for dev ref and will be removed once complete.", "Keys labelled 'desc' are perminant and will be used for tooltips and descriptions." ]]
+		]
+    },
+	"data": {
+		"schemas": {
+			"zikyinc": {
+				"data": {
+					"data_files": [
+						{
+							"name": "JSON Datafiles", "id": "z_d_d_json",
+							"desc": "Schemas for the root structure of our json-based datafiles",
+							"version": "MTA04",
+							"schema": {
+								"meta": {
+									"desc": "The files/projects meta info",
+									"type": "array", "is_required": false,
+									"schema_id": "z_d_m_json"
+								},
+								"data": {
+									"desc": "The app/tools data",
+									"type": "array", "is_required": false
+								},
+								"settings":
+									"desc": "The app/tools dev level settings",
+									"type": "array", "is_required": false
+								},
+								"user_data": 
+									"desc": "The files/projects meta info",
+									"type": "array", "is_required": false,
+									"schema_id": "z_d_u_idb_json"
+								}
+							}
+						}
+					],
+					"metas": [
+						{
+							"name": "JSON Metas", "id": "z_d_m_json",
+							"desc": "Schemas for the meta info at the top of our json-based datafiles",
+							"version": "MTA04",
+							"schema": {
+								"type": {
+									"desc": "the type of data file this is.",
+									"type": "combobox", "is_required": true,
+									"options": {
+										"project": "datafile for a project like an app or tool.",
+										"module": "datafile for a modular script that will be used in multiple places.",
+										"file": "datafile for a specific file/script.",
+										"data": "datafile only containing information and does not control anything."
+									}
+								},
+								"name": {
+									"desc": "a full title for this file, or the parent app.",
+									"type": "textbox", "is_required": true
+								},
+								"name_finalized": {
+									"desc": "is the name/title finalised and is unlikely to be changed.",
+									"type": "checkbox", "is_required": false
+								},
+								"desc": {
+									"desc": "a brief description on what this file, or parent app, is for.",
+									"type": "textbox", "is_required": true
+								},
+								"creator": {
+									"desc": "the name/alias of the creator.",
+									"type": "textbox", "is_required": false
+								},
+								"organization": {
+									"desc": "the name of the organization or team.",
+									"type": "textbox", "is_required": false
+								},
+								"file": {
+									"desc": "this contains info about the file.",
+									"type": "array", "is_required": false,
+									"variables": {
+										"platform": {
+											"desc": "intended platform that this, and its parent files are made for.",
+											"type": "textbox", "is_required": false,
+											"presets": ["any", "html", "typescript", "python", "wpf", "ahk"]
+										},
+										"root": {
+											"desc": "the main root where the parent project, etc is located.",
+											"type": "textbox", "is_required": false
+										},
+										"path": {
+											"desc": "path to this parent folder of this file.",
+											"type": "path", "is_required": false
+										},
+										"this_file": {
+											"desc": "the name of this file (including extension).",
+											"type": "name", "is_required": false
+										},
+										"modules_root": {
+											"desc": "path to a modules folder that will be used (from file.root).",
+											"type": "path", "is_required": false
+										}
+									}
+								},
+								"started": {
+									"desc": "date that this file was created.",
+									"type": "date", "is_required": false
+								},
+								"version": {
+									"desc": "version number of this datafile or project. used for update tracking.",
+									"type": "textbox", "is_required": false
+								},
+								"edited": {
+									"desc": "information about the last edit made to this file.",
+									"type": "array", "is_required": false,
+									"variables": {
+										"last": {
+											"desc": "date the file was last edited.",
+											"type": "date", "is_required": false
+										},
+										"edited_by": {
+											"desc": "name or alias of the person who last edited this file.",
+											"type": "textbox", "is_required": false
+										},
+										"edit_number": {
+											"desc": "how many times this file has been edited.",
+											"type": "number", "is_required": false
+										},
+										"changelog": {
+											"desc": "array listing major changes made in each edit.",
+											"type": "array", "is_required": false
+										}
+									}
+								},
+								"ref": {
+									"desc": "reference links to layouts, handlers, and templates used by this file.",
+									"type": "array", "is_required": false,
+									"variables": {
+										"meta_layout": {
+											"desc": "id reference to the layout used by this metadata section.",
+											"type": "textbox", "is_required": false
+										},
+										"project_layout": {
+											"desc": "id reference to the general structure/layout used for this project.",
+											"type": "textbox", "is_required": false
+										},
+										"db_handling": {
+											"desc": "id reference to the database handling configuration.",
+											"type": "textbox", "is_required": false
+										},
+										"theme_loader": {
+											"desc": "id reference to the theme system or visual handler.",
+											"type": "textbox", "is_required": false
+										}
+									}
+								},
+								"mgr": {
+									"desc": "Settings for our Project Management tool.",
+									"type": "array", "is_required": false,
+									"variables": {
+										"allow_autofill": {
+											"desc": "defines when autofill is allowed to populate blank fields.",
+											"type": "combobox", "is_required": false,
+											"options": {
+												"always": "autofill will replace empty fields and add missing keys.",
+												"if blank": "autofill will only fill empty fields.",
+												"never": "autofill is disabled completely."
+											}
+										},
+										"auto_version": {
+											"desc": "defines how version numbers are automatically incremented.",
+											"type": "combobox", "is_required": false,
+											"options": {
+												"major only": "increment only the major version.",
+												"minor only": "increment only the minor version.",
+												"patch only": "increment only the patch version.",
+												"disabled": "disable automatic version incrementing."
+											}
+										},
+										"track_edits": {
+											"desc": "tracks changes and edit history automatically.",
+											"type": "checkbox", "is_required": false
+										},
+										"auto_merging": {
+											"desc": "automatically merges updates with remote or web versions.",
+											"type": "checkbox", "is_required": false
+										}
+									}
+								},
+								"defaults": {
+									"desc": "defines default data sources or templates that can be loaded by this project.",
+									"type": "array", "is_required": false,
+									"variables": {
+										"load_defaults": {
+											"desc": "whether to automatically load default data on startup.",
+											"type": "checkbox", "is_required": false
+										},
+										"web": {
+											"desc": "web link or url pointing to the default data source.",
+											"type": "url", "is_required": false
+										},
+										"file": {
+											"desc": "local file path to a default data source.",
+											"type": "path", "is_required": false
+										},
+										"priority": {
+											"desc": "defines which default source to prioritize (web or file).",
+											"type": "combobox", "is_required": false,
+											"options": {
+												"web": "use web source as default.",
+												"file": "use local file as default.",
+												"none": "do not use defaults automatically."
+											}
+										}
+									}
+								},
+								"modules": {
+									"desc": "controls which modules are added or excluded during loading.",
+									"type": "array", "is_required": false,
+									"variables": {
+										"modules_to_add": {
+											"desc": "list of modules to include when building or running the project.",
+											"type": "array", "is_required": false
+										},
+										"modules_to_ignore_update": {
+											"desc": "list of modules that should not be updated automatically.",
+											"type": "array", "is_required": false
+										}
+									}
+								},
+								"current_status": {
+									"desc": "a short text describing the current state of the project.",
+									"type": "textbox", "is_required": false
+								},
+								"complete": {
+									"desc": "indicates if this project is considered finished.",
+									"type": "checkbox", "is_required": false
+								},
+								"notes": {
+									"desc": "general developer notes and remarks attached to this file.",
+									"type": "array", "is_required": false,
+									"variables": {
+										"author": {
+											"desc": "name or alias of the note's author.",
+											"type": "textbox", "is_required": false
+										},
+										"date": {
+											"desc": "date the note was added.",
+											"type": "date", "is_required": false
+										},
+										"entries": {
+											"desc": "array of individual notes or comments.",
+											"type": "array", "is_required": false
+										}
+									}
+								}
+							}
+						}
+					],
+					"user_data": {
+						"indexed_db": [
+							{
+								"name": "JSON IndexedDb Data", "id": "z_d_u_idb_json",
+								"desc": "Schemas for the user data for the IndexedDB defined without our json-based datafiles",
+								"version": "IDB02",
+								"schema": {
+									"user_database": {
+										"desc": "Contains infomation about the databases and stores used.",
+										"type": "array", "is_required": true,
+										"variables": {
+											"type": { "desc": "The type of database (e.g. IndexedDB, LocalStorage).", "type": "textbox", "is_required": true },
+											"db_name": { "desc": "Full name of the database.", "type": "textbox", "is_required": true },
+											"db_id": { "desc": "Unique short identifier for the database.", "type": "textbox", "is_required": true },
+											"version": { "desc": "Current schema version for this database.", "type": "number", "is_required": true },
+											"mark_as": { "desc": "How this database should be treated (default/shared/etc).", "type": "combobox", "is_required": true,
+												"options": {
+													"default": "Primary default user database.",
+													"shared": "Shared database accessible by multiple apps.",
+													"temporary": "Temporary database for sessions or testing."
+												}
+											},
+											"stores": {
+												"desc": "List of stores contained in this database.",
+												"type": "array", "is_required": true,
+												"variables": {
+													"store_name": { "desc": "Readable name of the store.", "type": "textbox", "is_required": true },
+													"store_id": { "desc": "Unique ID for this store.", "type": "textbox", "is_required": true },
+													"mark_as": { "desc": "Defines how this store is used (default/additional/etc).", "type": "combobox", "is_required": false,
+														"options": {
+															"default": "Used by default when accessing this database.",
+															"additional": "Secondary or supporting store."
+														}
+													},
+													"indexes": {
+														"desc": "Array of key indexes used for querying the store.",
+														"type": "array", "is_required": false,
+														"variables": {
+															"name": { "desc": "Name of the index.", "type": "textbox", "is_required": true },
+															"key_path": { "desc": "The key path of the index.", "type": "textbox", "is_required": true },
+															"unique": { "desc": "If true, prevents duplicate values.", "type": "checkbox", "is_required": false }
+														}
+													}
+												}
+											}
+										}
+									},
+									"user_defaults": {
+										"desc": "Contains infomation about the databases and stores used.",
+										"type": "array", "is_required": true,
+										"variables": {
+											"db_id": { "desc": "Target database ID where defaults will be applied.", "type": "textbox", "is_required": true },
+											"store_id": { "desc": "Target store ID within that database.", "type": "textbox", "is_required": true },
+											"data": {
+												"desc": "Default user data template that gets added to the indexed db if it doesnt exist already.",
+												"type": "array", "is_required": true
+											}
+										}
+									}
+								}
+							},
+							{
+								"name": "User IndexedDb Data", "id": "z_d_u_idb_json",
+								"desc": "Schemas for the user data for the IndexedDB defined without our json-based datafiles",
+								"version": "IDB02",
+								"schema": {
+									"db_id": { "desc": "Target database ID where defaults will be applied.", "type": "textbox", "is_required": true },
+									"store_id": { "desc": "Target store ID within that database.", "type": "textbox", "is_required": true },
+									"data": {
+										"desc": "Default user data object containing account, settings, and system defaults.",
+										"type": "array", "is_required": true,
+										"variables": {
+											"account": {
+												"desc": "Default user profile information.",
+												"type": "array", "is_required": true,
+												"variables": {
+													"name": { "desc": "User's display name.", "type": "textbox", "is_required": true },
+													"bio": { "desc": "User biography or short description.", "type": "textbox", "is_required": false },
+													"country": { "desc": "User's country or region.", "type": "textbox", "is_required": false },
+													"status": {
+														"desc": "Tracks current online indicator, mood, and posts.",
+														"type": "array", "is_required": false,
+														"variables": {
+															"indicator": { "desc": "Online indicator (e.g. Online, Busy, Away).", "type": "textbox", "is_required": false },
+															"mood": { "desc": "Current user mood.", "type": "textbox", "is_required": false },
+															"task": { "desc": "Current task or focus.", "type": "textbox", "is_required": false },
+															"post": { "desc": "Latest user post data.", "type": "array", "is_required": false,
+																"variables": {
+																	"date_time": { "desc": "Date and time of post.", "type": "date", "is_required": false },
+																	"post": { "desc": "Text content of the post.", "type": "textbox", "is_required": false },
+																	"reactions": { "desc": "List of reactions received.", "type": "array", "is_required": false },
+																	"responses": { "desc": "List of user responses.", "type": "array", "is_required": false }
+																}
+															},
+															"post_history": { "desc": "Array of previous posts.", "type": "array", "is_required": false }
+														}
+													},
+													"avatar": {
+														"desc": "User avatar configuration and overrides.",
+														"type": "array", "is_required": false,
+														"variables": {
+															"character": { "desc": "Avatar character or preset name.", "type": "textbox", "is_required": false },
+															"art_style": { "desc": "Visual art style for avatar.", "type": "textbox", "is_required": false },
+															"background": { "desc": "Background type or context.", "type": "textbox", "is_required": false },
+															"shape_and_border": { "desc": "Shape and border styling parameters.", "type": "array", "is_required": false,
+																"variables": {
+																	"shape_params": { "desc": "Shape configuration.", "type": "array", "is_required": false },
+																	"border_params": { "desc": "Border configuration.", "type": "array", "is_required": false }
+																}
+															},
+															"overrides": { "desc": "Mood/task override settings for avatar.", "type": "array", "is_required": false,
+																"variables": {
+																	"mood": { "desc": "Override mood (blank = use user mood).", "type": "textbox", "is_required": false },
+																	"task": { "desc": "Override task (blank = use user task).", "type": "textbox", "is_required": false }
+																}
+															}
+														}
+													}
+												}
+											},
+											"settings": {
+												"desc": "Default user settings configuration.",
+												"type": "array", "is_required": true,
+												"variables": {
+													"display": {
+														"desc": "Display and visual preferences.",
+														"type": "array", "is_required": false,
+														"variables": {
+															"theme": { "desc": "Theme preference and usage flag.", "type": "array", "is_required": false,
+																"variables": {
+																	"fav_theme": { "desc": "Preferred theme name.", "type": "textbox", "is_required": false },
+																	"use_where_possible": { "desc": "Whether to use the theme wherever possible.", "type": "checkbox", "is_required": false }
+																}
+															},
+															"font_size_mult": { "desc": "Multiplier for font scaling.", "type": "number", "is_required": false }
+														}
+													},
+													"data": {
+														"desc": "Data handling and caching preferences.",
+														"type": "array", "is_required": false,
+														"variables": {
+															"overwrite_recent": { "desc": "Max number of recent entries before overwriting.", "type": "number", "is_required": false },
+															"file_caching": { "desc": "Caching policy or mode.", "type": "combobox", "is_required": false,
+																"options": {
+																	"Auto": "Cache automatically when needed.",
+																	"Manual": "Cache only when explicitly set."
+																}
+															},
+															"accepted_permission": { "desc": "Whether user has accepted data permissions.", "type": "checkbox", "is_required": false },
+															"cache_type": { "desc": "Preferred caching backend (e.g. IndexedDB, LocalStorage).", "type": "textbox", "is_required": false },
+															"local_location": { "desc": "Default local path or db reference for cache data.", "type": "array", "is_required": false,
+																"variables": {
+																	"db_id": { "desc": "Database ID used for local cache.", "type": "textbox", "is_required": false },
+																	"store_id": { "desc": "Store ID used within the cache database.", "type": "textbox", "is_required": false },
+																	"nest": { "desc": "Nested path or subdirectory within the cache.", "type": "textbox", "is_required": false }
+																}
+															}
+														}
+													}
+												}
+											},
+											"system": {
+												"desc": "System-specific user data (non-editable by user).",
+												"type": "array", "is_required": true,
+												"variables": {
+													"custom_field_data": { "desc": "List of custom user-defined fields.", "type": "array", "is_required": false },
+													"file_cache": { "desc": "Local file cache of data and scripts.", "type": "array", "is_required": false,
+														"variables": {
+															"data": { "desc": "Cached general data items.", "type": "array", "is_required": false },
+															"scripts": { "desc": "Cached script references.", "type": "array", "is_required": false }
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						]	
+					}
+				}
+				
+			}
+		}
+	}
+}
