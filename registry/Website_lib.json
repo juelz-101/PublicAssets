@@ -52,5 +52,17 @@
     "ext": "json",
     "path": "Website/lib/about.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/about.json"
+  },
+  {
+    "name": "library.json",
+    "ext": "json",
+    "path": "Website/lib/library.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/library.json"
+  },
+  {
+    "name": "community.json",
+    "ext": "json",
+    "path": "Website/lib/community.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community.json"
   }
 ]

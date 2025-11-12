@@ -1,0 +1,457 @@
+{
+	"dev_ref": "Any keys labelled 'dev_ref' are development notes that will be removed once its no longer needed or before release",
+	"meta": {
+        "type": "project", "name": "Producers Case", "name_finalized": false,
+        "desc": ".",
+        "creator": "Juelz-101", "organization": "ZIKYinc",
+		"file": { "platform": "HTML", "root": "ZIKYinc_Data", "path": "HTML/Apps/ProducersCase/", "this_file": "appdata.json", "modules_root": "" }, 
+		"started": "20/4/25", "version": "0.1.0", "edited": {"date": "", "time": "", "edited_by": "", "edit_number": 0, "changelog": []},
+		"ref": {"meta_layout": "MTA04", "project_layout": "JS03", "db_handling": "DB04", "theme_loader": "THM02"},
+        "mgr": { "allow_autofill": "If Blank", "auto_version": "Minor Only", "track_edits": true, "auto_merging": false },
+		"defaults": {"load_defaults": false, "web": "https://raw.githubusercontent.com/juelz-101/ZIKYinc_Data/refs/heads/main/HTML/defaults/html_project_defaults.json?token=GHSAT0AAAAAADDLV7LK7TS3PFRLNRQIRG4K2AZLLWA", "file": "", "priority": "web"},
+		"files": {
+			"desc": "Files to import. These files will have the same JSON structure as this file, if not then set to_nest (eg: data/), types: new_data_only, overwrite_item, overwrite_array or new_store.",
+			"load_files": false,
+			"files": [
+				{"use": true, "location": "in_project", "name": "PC Presets", "path": "data/presets/pc_presets1.json", "type": "new_data_only", "from_nest": "", "to_nest": ""},
+				{"use": true, "location": "from_git", "name": "PC Presets2", "path": "", "type": "new_data_only", "from_nest": "", "to_nest": ""}
+			]
+		}
+	},
+	"data": {
+		"add_new": {
+			"dev_ref": "This contains arrays that are duplicated when creating a new item and adjusted accordingly before being inserted.",
+			"meta": {
+				"profile": {"created_on": "", "latest_edit": "--/--/--, --:--", "changelog": []},
+				"item": {"current_owner": "", "version": 1.0, "original_creator": "", "created_on": "", "latest_edit": "--/--/--, --:--", "changelog": []},
+				"changelog": {"versions": {"old": 1.0, "new": 1.1}, "edited_on": "--/--/--, --:--", "edited_by": "", "flagged_as_version_update": false, "notes_left": [] }
+			},
+			"profile": { 
+				"base": {"name": "", "id": "", "bio": "", "companies": [], "data": {}, "meta": {} },
+				"data": { "structures": {}, "productions": [], "presets": {}, "themes": [], "categories": [], "tags": [] },
+				"presets": { "sections": [], "tables": [], "columns": [], "arrays": [] },
+				"company": { "id": "", "name": "", "desc": "" },
+				"category": { "id": "", "name": "", "desc": "" },
+				"tag": { "id": "", "name": "", "desc": "" }
+			},
+			"production": { 
+				"base": { "name": "", "desc": "", "company": "", "id": "", "structure": "", "data": [], "meta": [], "params": {} },
+				"params": { "main_theme": "Default_Theme_01", "zoom": 100, "marked_as_read_only": false }
+			},
+			"structure": {
+				"base": { "name": "", "id": "", "desc": "", "category": "", "tags": [], "meta": {}, "params": {}, "sections": [] },
+				"params": { "loaded_as_preset": false, "created_by_user": true, "is_loaded_on_startup": false, "created_by_user": true },
+				"section": {
+					"base": { "id": "", "name": "", "desc": "", "category": "", "tags": [], "icon": "⚪", "params": {}, "tables": {} },
+					"params": { "loaded_as_preset": false, "created_by_user": true }
+				},
+				"table": {
+					"base": { "id": "", "name": "", "desc": "", "category": "", "tags": [], "icon": "⚪", "params": {}, "column": {} },
+					"params": { "loaded_as_preset": false, "created_by_user": true, "triggers_theme": "" }
+				},
+				"column": {
+					"base": { "id": "", "name": "", "desc": "", "type": "", "params": {}, "i": {} },
+					"params": { "data_link": {}, "triggers": [], "loaded_as_preset": false, "created_by_user": true, "mark_as_required": false },
+					"data_link": { "link_type": "match", "link_to_table": "", "properties": [] },
+					"i": {
+						"select": { "use_preset": "", "options": [] },
+						"array_object": { "item_schema": [], "default": 1 }
+					}	
+				}
+			},
+			"array": {
+				"base": { "id": "", "name": "", "desc": "", "params": {}, "options": [] },
+				"params": { "allow_icon_display": true },
+				"option": { "id": "", "name": "", "desc": "" },
+				"option_icon": { "id": "", "name": "", "icon": "", "desc": "" },
+			}
+		},
+		"types": {
+			"desc": "Defines all supported data types for various components, used when creating custom columns.",
+			"column_types": [
+				{ "id": "text", "name": "Text", "desc": "A standard, single-line text input for short strings (e.g., names, short notes, single words)." },
+				{ "id": "long_text", "name": "Paragraph", "desc": "A multi-line text area used for long-form content, paragraphs, or detailed descriptions." },
+				{ "id": "boolean", "name": "Switch", "desc": "A binary toggle (True/False, Yes/No) used for simple flags or checks." },
+				{ "id": "number", "name": "Number", "desc": "A numerical input field for integers or decimals, typically used for quantities, years, or counts." },
+				{ "id": "date", "name": "Date", "desc": "A date and/or time picker for tracking specific moments in time." },
+				{ "id": "array_object", "name": "Array of Objects", "desc": "A flexible, repeatable group of fields used to create lists of complex items (e.g., a list of files, notes, or sub-items)." },
+				{ "id": "file_url", "name": "File URL", "desc": "A specialized field for links to files, often used for internal asset management or file uploads." },
+				{ "id": "url", "name": "Web URL", "desc": "A field for external web links or resource URLs." },
+				{ "id": "select", "name": "Dropdown Select", "desc": "A list of predefined options allowing the user to select one choice from a set (uses Array Presets)." },
+				{ "id": "image_url", "name": "Image URL", "desc": "A specialized URL field for images, often with a built-in preview feature." },
+				{ "id": "icon_picker", "name": "Icon Picker", "desc": "Allows a user to select a symbolic icon (e.g., emoji or library icon) for a visual indicator." },
+				{ "id": "array_table", "name": "Linked Items", "desc": "A list of items dynamically linked from another table or structure. Used for one-to-many relationships (e.g., Songs on an Album)." }
+			],
+			"data_link_types": [
+				{ "id": "match", "name": "Match Link", "desc": "Returns a list of matching items from the linked table. Used for creating relationship links." },
+				{ "id": "count", "name": "Count Total", "desc": "Returns a number representing how many items in the linked table match the criteria." },
+				{ "id": "confirm", "name": "Confirm Existence", "desc": "Returns a boolean (True/False) indicating if at least one item matching the criteria exists in the linked table." }
+			]
+		},
+		"default_data": {
+			"categories": [
+				{ "id": "general", "name": "General", "desc": "Default category for items that don't fit specific domains." },
+				{ "id": "core_data", "name": "Core Data", "desc": "Essential entities required for the main function of a structure (e.g., songs, artists, movies)." },
+				{ "id": "third_party", "name": "3rd Party Entities", "desc": "External entities or platforms (e.g., accounts, labels, websites)." },
+				{ "id": "people", "name": "People", "desc": "Items related to individuals or groups (e.g., cast, crew, users)." },
+				{ "id": "media", "name": "Media", "desc": "Items focused on visual or audio assets (e.g., art, files, videos)." },
+				{ "id": "events", "name": "Events", "desc": "Items related to scheduled or historical occurrences (e.g., releases, exhibitions)." },
+				{ "id": "misc", "name": "Miscellaneous", "desc": "Items that are non-essential or highly variable." }
+			],
+			"tags": [
+				{ "id": "default", "name": "Default", "desc": "A general tag indicating system or default content." },
+				{ "id": "example", "name": "Example", "desc": "Content used purely for demonstration or reference." },
+				{ "id": "music", "name": "Music", "desc": "Related to audio production or release." },
+				{ "id": "visual", "name": "Visual", "desc": "Related to image or video assets." },
+				{ "id": "social", "name": "Social", "desc": "Related to social media or web platforms." },
+				{ "id": "post_production", "name": "Post-Production", "desc": "Related to final stages of creation (e.g., mixing, mastering, publishing)." },
+				{ "id": "internal", "name": "Internal", "desc": "Content managed exclusively within the application." }
+			]
+		},
+		"presets": {
+			"dev_ref": "All complete, reusable items (Structures, Sections, Tables, Columns, Arrays) must be fully defined here.",
+			"structures": [
+				{
+					"name": "ProducersCase_Default Starting", "id": "EX_Struc01",
+					"desc": "Default startup structure",
+					"category": "system", "tags": [ "default", "empty", "basic" ],
+					"meta": { "current_owner": "System", "version": 1.0, "original_creator": "ZIKYinc", "created_on": "25/10/25 24:56", "latest_edit": "--/--/--, --:--", "changelog": [] },
+					"params": { "loaded_as_preset": true, "is_loaded_on_startup": true, "created_by_user": false },
+					"sections": [
+						{ "id": "def_section_01", "is_preset": true }
+					]
+				},
+				{
+					"name": "ProducersCase_Example_Structure", "id": "EX_Struc01",
+					"desc": "A functioning example structure",
+					"category": "reference", "tags": [ "default", "example", "basic" ],
+					"meta": { "current_owner": "System", "version": 1.0, "original_creator": "ZIKYinc", "created_on": "25/10/25 24:56", "latest_edit": "--/--/--, --:--", "changelog": [] },
+					"params": { "loaded_as_preset": true, "is_loaded_on_startup": false, "created_by_user": false },
+					"sections": [
+						{ "id": "def_music_section_01", "is_preset": true },
+						{ "id": "def_movies_section_01", "is_preset": true },
+						{ "id": "def_galleries_section_01", "is_preset": true },
+						{ "id": "def_social_accounts_01", "is_preset": true }
+					]
+				}
+			],
+			"sections": [
+				{
+					"id": "def_section_01",
+					"name": "Section_01",
+					"desc": "Define your section",
+					"icon": "⚪",
+					"params": { "loaded_as_preset": true, "created_by_user": false },
+					"tables": [
+						{ "id": "def_table_01", "is_preset": true },
+					]
+				},
+				{
+					"id": "def_music_section_01",
+					"name": "Music",
+					"desc": "Add your music, artists and albums here",
+					"icon": "🎶",
+					"params": { "loaded_as_preset": true, "created_by_user": false },
+					"tables": [
+						{ "id": "def_music_songs_table_01", "is_preset": true },
+						{ "id": "def_music_artists_table_01", "is_preset": true },
+						{ "id": "def_music_albums_table_01", "is_preset": true },
+						{ "id": "def_music_labels_table_01", "is_preset": true }
+					]
+				},
+				{
+					"id": "def_movies_section_01",
+					"name": "Movies",
+					"icon": "🎬",
+					"desc": "Define movie and cast/crew data.",
+					"params": { "loaded_as_preset": true, "created_by_user": false },
+					"tables": [
+						{ "id": "def_movies_movies_table_01", "is_preset": true },
+						{ "id": "def_movies_cast_crew_table_01", "is_preset": true },
+						{ "id": "def_misc_resources_table_01", "is_preset": true }
+					]
+				},
+				{
+					"id": "def_galleries_section_01",
+					"name": "Galleries",
+					"icon": "🖼️",
+					"desc": "Track and manage art, artists, and exhibitions.",
+					"params": { "loaded_as_preset": true, "created_by_user": false },
+					"tables": [
+						{ "id": "def_galleries_art_table_01", "is_preset": true },
+						{ "id": "def_galleries_artists_table_01", "is_preset": true },
+						{ "id": "def_galleries_exhibition_table_01", "is_preset": true }
+					]
+				},
+				{
+					"id": "def_social_accounts_01",
+					"name": "Accounts",
+					"icon": "👤",
+					"desc": "Manage your social media accounts and websites.",
+					"params": { "loaded_as_preset": true, "created_by_user": false },
+					"tables": [
+						{ "id": "def_social_accounts_table_01", "is_preset": true },
+						{ "id": "def_social_websites_table_01", "is_preset": true }
+					]
+				}
+			],
+			"tables": [
+				{
+					"id": "def_table_01",
+					"name": "Table_1",
+					"desc": "Add description.",
+					"category": "System", "tags": [ "external", "post-production", "3rd-party" ],
+					"params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" },
+					"columns": [
+						{ "id": "def_columns_title", "is_preset": true }
+					]
+				},
+				{
+					"id": "def_music_labels_table_01",
+					"name": "Labels",
+					"desc": "Log each label you use and then assigns items to them.",
+					"category": "3rd Party Entities", "tags": [ "external", "post-production", "3rd-party" ],
+					"params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" },
+					"columns": [
+						{ "id": "def_columns_title", "is_preset": true }
+					]
+				},
+				{
+					"id": "def_music_songs_table_01",
+					"name": "Songs",
+					"desc": "Tracks detailed information for individual songs.",
+					"category": "Core Data", "tags": [ "music", "song" ],
+					"params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" },
+					"columns": [
+						{ "id": "def_columns_title", "is_preset": true },
+						{ "id": "def_column_song_status", "is_preset": true },
+						{ "id": "def_column_song_album_link", "is_preset": true },
+						{ "id": "def_column_song_artist_link", "is_preset": true },
+						{ "id": "def_column_song_files", "is_preset": true },
+						{ "id": "def_column_song_account_link", "is_preset": true },
+						{ "id": "def_column_song_art", "is_preset": true },
+						{ "id": "def_column_song_videos", "is_preset": true },
+						{ "id": "def_column_song_lyrics", "is_preset": true },
+						{ "id": "def_column_song_notes", "is_preset": true },
+						{ "id": "def_column_song_indicators", "is_preset": true }
+					]
+				},
+				{
+					"id": "def_music_artists_table_01",
+					"name": "Artists",
+					"desc": "A list of all artists associated with your productions.",
+					"category": "Core Data", "tags": [ "music", "artist" ],
+					"params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" },
+					"columns": [
+						{ "id": "def_columns_name", "is_preset": true }
+					]
+				},
+				{
+					"id": "def_music_albums_table_01",
+					"name": "Albums",
+					"desc": "Tracks albums and EPs.",
+					"category": "Core Data", "tags": [ "music", "album" ],
+					"params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" },
+					"columns": [
+						{ "id": "def_columns_title", "is_preset": true },
+						{ "id": "def_column_album_artist_link", "is_preset": true },
+						{ "id": "def_column_album_coverart", "is_preset": true }
+					]
+				},
+				{
+					"id": "def_movies_movies_table_01",
+					"name": "Movies",
+					"desc": "Tracks key details about film projects.",
+					"category": "Core Data", "tags": [ "movie", "film" ],
+					"params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" },
+					"columns": [
+						{ "id": "def_columns_title", "is_preset": true },
+						{ "id": "def_column_movie_release_year", "is_preset": true },
+						{ "id": "def_column_movie_director", "is_preset": true },
+						{ "id": "def_column_movie_status", "is_preset": true }
+					]
+				},
+				{ "id": "def_movies_cast_crew_table_01", "name": "Cast & Crew", "desc": "", "category": "People", "tags": ["movie", "people"], "params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" }, "columns": [] },
+				{ "id": "def_misc_resources_table_01", "name": "Resources", "desc": "", "category": "Misc", "tags": ["files"], "params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" }, "columns": [] },
+				{ "id": "def_galleries_art_table_01", "name": "Art Pieces", "desc": "", "category": "Art", "tags": ["art"], "params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" }, "columns": [] },
+				{ "id": "def_galleries_artists_table_01", "name": "Gallery Artists", "desc": "", "category": "People", "tags": ["artist"], "params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" }, "columns": [] },
+				{ "id": "def_galleries_exhibition_table_01", "name": "Exhibitions", "desc": "", "category": "Events", "tags": ["exhibition"], "params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" }, "columns": [] },
+				{
+					"id": "def_social_accounts_table_01",
+					"name": "Accounts",
+					"desc": "Tracks various social media accounts.",
+					"category": "3rd Party Entities", "tags": [ "social", "account" ],
+					"params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" },
+					"columns": [
+						{ "id": "def_column_account_platform", "is_preset": true },
+						{ "id": "def_column_account_username", "is_preset": true },
+						{ "id": "def_column_account_link", "is_preset": true }
+					]
+				},
+				{ "id": "def_social_websites_table_01", "name": "Websites", "desc": "", "category": "3rd Party Entities", "tags": ["website"], "params": { "loaded_as_preset": true, "created_by_user": false, "triggers_theme": "" }, "columns": [] }
+			],
+			"columns": [
+				{ "id": "def_columns_title", "name": "Title", "type": "text", "desc": "The primary name or title for the data item.", "params": { "mark_as_required": true, "loaded_as_preset": true } },
+				{ "id": "def_columns_name", "name": "Name", "type": "text", "desc": "The proper or formal name of a person, entity, or object.", "params": { "mark_as_required": true, "loaded_as_preset": true } },
+
+				{ "id": "def_column_song_status", "name": "Status", "type": "select", "desc": "The current production stage of the song.", "params": { "loaded_as_preset": true }, "i": { "select": { "use_preset": "def_arr_music_production_status", "allowCustom": true } } },
+				{ "id": "def_column_song_album_link", "name": "Album(s)", "type": "array_table", "desc": "Links the song to one or more albums or EPs.", "params": { "loaded_as_preset": true, "data_link": { "link_type": "match", "link_to_table": "albums" } } },
+				{ "id": "def_column_song_artist_link", "name": "Artist(s)", "type": "array_table", "desc": "Links to artists involved in the song, including their role.", "params": { "loaded_as_preset": true, "data_link": { "link_type": "match", "link_to_table": "artists", "properties": [ { "id": "role", "name": "Role", "type": "select", "options": [ "", "ft.", "with", "and" ] } ] } } },
+				{ "id": "def_column_song_files", "name": "Files", "type": "array_object", "desc": "Collection of various downloadable or reference files (e.g., masters, stems).", "params": { "loaded_as_preset": true }, "i": { "array_object": { "item_schema": [ { "id": "url", "name": "File", "type": "file_url" }, { "id": "type", "name": "Type", "type": "select", "i": { "select": { "use_preset": "def_arr_file_types", "allowCustom": true } } } ] } } },
+				{ "id": "def_column_song_account_link", "name": "Account", "type": "array_table", "desc": "Links the song to a specific platform or social account.", "params": { "loaded_as_preset": true, "data_link": { "link_type": "match", "link_to_table": "accounts" } } },
+				{ "id": "def_column_song_art", "name": "Art", "type": "array_object", "desc": "Collection of visual assets (cover art, concept art, promotional images).", "params": { "loaded_as_preset": true }, "i": { "array_object": { "item_schema": [ { "id": "url", "name": "Image", "type": "file_url" }, { "id": "type", "name": "Type", "type": "select", "i": { "select": { "use_preset": "def_arr_image_types", "allowCustom": true } } } ] } } },
+				{ "id": "def_column_song_videos", "name": "Videos", "type": "array_object", "desc": "Collection of video files (e.g., music videos, short promotional clips).", "params": { "loaded_as_preset": true }, "i": { "array_object": { "item_schema": [ { "id": "url", "name": "File", "type": "file_url" }, { "id": "type", "name": "Type", "type": "select", "i": { "select": { "use_preset": "def_arr_image_types", "allowCustom": true } } } ] } } },
+				{ "id": "def_column_song_lyrics", "name": "Lyrics", "type": "long_text", "desc": "The full text content of the song lyrics.", "params": { "loaded_as_preset": true } },
+				{ "id": "def_column_song_notes", "name": "Notes", "type": "array_object", "desc": "A flexible collection of custom notes and long-form content.", "params": { "loaded_as_preset": true }, "i": { "array_object": { "item_schema": [ { "id": "title", "name": "Title", "type": "text" }, { "id": "content", "name": "Content", "type": "long_text" } ] } } },
+				{ "id": "def_column_song_indicators", "name": "Indicators", "type": "array_object", "desc": "Customizable list of key flags or markers for the song.", "params": { "loaded_as_preset": true }, "i": { "array_object": { "item_schema": [ { "id": "name", "name": "Name", "type": "text", "params": { "mark_as_required": true } }, { "id": "icon", "name": "Icon", "type": "icon_picker" }, { "id": "description", "name": "Description", "type": "text" }, { "id": "notes", "name": "Notes", "type": "array_object", "i": { "array_object": { "item_schema": [ { "id": "title", "name": "Title", "type": "text" }, { "id": "content", "name": "Content", "type": "long_text" } ] } } }, { "id": "pinned", "name": "Pinned", "type": "boolean" } ] } } },
+				
+				{ "id": "def_column_album_artist_link", "name": "Artist(s)", "type": "array_table", "desc": "Links the album to its primary and contributing artists.", "params": { "loaded_as_preset": true, "data_link": { "link_type": "match", "link_to_table": "artists" } } },
+				{ "id": "def_column_album_coverart", "name": "Cover Art", "type": "image_url", "desc": "Direct URL link to the official album cover image.", "params": { "loaded_as_preset": true } },
+
+				{ "id": "def_column_movie_release_year", "name": "Release Year", "type": "number", "desc": "The year the movie was officially released.", "params": { "loaded_as_preset": true } },
+				{ "id": "def_column_movie_director", "name": "Director", "type": "text", "desc": "The name of the movie's primary director.", "params": { "loaded_as_preset": true } },
+				{ "id": "def_column_movie_status", "name": "Status", "type": "select", "desc": "The production or viewing status of the movie.", "params": { "loaded_as_preset": true }, "i": { "select": { "use_preset": "def_arr_status", "allowCustom": true } } },
+
+				{ "id": "def_column_account_platform", "name": "Platform", "type": "text", "desc": "The name of the social media or web platform (e.g., 'X', 'Instagram', 'Spotify').", "params": { "mark_as_required": true, "loaded_as_preset": true } },
+				{ "id": "def_column_account_username", "name": "Username", "type": "text", "desc": "The unique handle or username for the account on the platform.", "params": { "mark_as_required": true, "loaded_as_preset": true } },
+				{ "id": "def_column_account_link", "name": "Link", "type": "url", "desc": "The full URL link to the account profile.", "params": { "loaded_as_preset": true } }
+			],
+			"arrays": [
+				{
+					"id": "def_arr_status",
+					"name": "Status",
+					"desc": "Select the current status of selected item",
+					"params": { "allow_icon_display": true },
+					"options": [
+						{ "id": "Planning", "name": "Planning", "desc": "The item is currently in the initial planning or conceptual stage.", "icon": "📝" },
+						{ "id": "Started", "name": "Started", "desc": "Work has begun on the item.", "icon": "▶️" },
+						{ "id": "Being worked on", "name": "Being worked on", "desc": "The main, active development or production phase is underway.", "icon": "🏗️" },
+						{ "id": "Finalizing", "name": "Finalizing", "desc": "The item is near completion, focusing on final checks, polish, and preparation for delivery.", "icon": "✨" },
+						{ "id": "Testing", "name": "Testing", "desc": "The item is being checked for bugs, quality, or functional errors.", "icon": "🧪" },
+						{ "id": "Complete", "name": "Complete", "desc": "The item is fully finished and ready for use or release.", "icon": "✅" }
+					]
+				},
+				{
+					"id": "def_arr_music_production_status",
+					"name": "Music Production Status",
+					"desc": "Select the current production stage of a music item",
+					"params": { "allow_icon_display": true },
+					"options": [
+						{ "id": "Writing", "name": "Writing", "desc": "Focusing on lyrics, melodies, and composition.", "icon": "✍️" },
+						{ "id": "Recording", "name": "Recording", "desc": "Capturing vocal and instrument performances.", "icon": "🎙️" },
+						{ "id": "Mixing", "name": "Mixing", "desc": "Balancing and blending the recorded tracks (volume, panning, effects).", "icon": "🎚️" },
+						{ "id": "Mastering", "name": "Mastering", "desc": "Applying final polish to the mixed track for distribution.", "icon": "🔊" },
+						{ "id": "Finishing", "name": "Finishing", "desc": "Final administrative checks before release.", "icon": "🏁" },
+						{ "id": "Creating cover-art", "name": "Creating cover-art", "desc": "Designing or finalizing the visual album artwork.", "icon": "🎨" },
+						{ "id": "Creating promotional content", "name": "Creating promotional content", "desc": "Developing trailers, short videos, or social media assets.", "icon": "📣" },
+						{ "id": "Complete", "name": "Complete", "desc": "The final product is ready for submission or release.", "icon": "💿" }
+					]
+				},
+				{
+					"id": "def_arr_image_types",
+					"name": "Image Types",
+					"desc": "Select the type or purpose of the image asset",
+					"params": { "allow_icon_display": false },
+					"options": [
+						{ "id": "cover_art", "name": "Cover Art", "desc": "The primary image used for the main product.", "icon": "" },
+						{ "id": "concept_art", "name": "Concept Art", "desc": "Early visual development or sketches.", "icon": "" },
+						{ "id": "fan_art", "name": "Fan Art", "desc": "Art created by the community or fans.", "icon": "" },
+						{ "id": "promotional", "name": "Promotional", "desc": "Imagery used for advertising or marketing purposes.", "icon": "" }
+					]
+				},
+				{
+					"id": "def_arr_file_types",
+					"name": "File Types",
+					"desc": "Select the type or purpose of the attached file",
+					"params": { "allow_icon_display": false },
+					"options": [
+						{ "id": "master", "name": "Master Audio File", "desc": "The final, highest-quality version of the audio file.", "icon": "" },
+						{ "id": "stems", "name": "Stem/Multi-track Files", "desc": "Individual tracks or grouped elements used for mixing.", "icon": "" },
+						{ "id": "contract", "name": "Contract/Legal Document", "desc": "Any formal legal agreement or document.", "icon": "" },
+						{ "id": "press_kit", "name": "Press Kit/Info Sheet", "desc": "A package of promotional materials for media use.", "icon": "" },
+						{ "id": "misc", "name": "Miscellaneous", "desc": "Any file that does not fit into other defined categories.", "icon": "" }
+					]
+				}
+			]
+		}
+	},
+	"user_data": {
+		"info": "Define Databases and default params to add them on startup if they dont exist already",
+		"user_database": [
+			{ "type": "IndexedDB", "db_name": "ZIKYinc_Apps", "db_id": "ZIKA", "version": 1, "mark_as": "default", "stores": [ { "store_name": "ProducersCase", "store_id": "PC", "mark_as": "default", "indexes": [] }] },
+			{ "type": "IndexedDB", "db_name": "ZIKYinc_Master", "db_id": "SZMDB", "version": 1, "mark_as": "shared", "stores": [ { "store_name": "User", "store_id": "USER", "mark_as": "default", "indexes": [] }] },
+		],																																																																																						
+		"user_defaults": [
+			{
+				"db_id": "SZMDB",
+				"store_id": "USER",
+				"data": {
+					"account": {
+						"name": "NewUser",
+						"bio": "",
+						"country": "",
+						"status": {
+							"post": {"date_time": "", "post": "", "reactions": [], "responses": [] },
+							"indicator": "Online",
+							"mood": "Happy",
+							"task": "",
+							"post_history": []
+						},
+						"avatar": {
+							"character": "Default",
+							"art_style": "Minimal",
+							"background": "task_driven",
+							"shape_and_border": {"shape_params": {}, "border_params": {}},
+							"overrides": {
+								"desc": "Overrides allow you to set your avatars mood and tasks while still begin able to update your user mood and task.",
+								"info": "Empty string = Off (Synced to user)",
+								"mood": "",
+								"task": ""
+							}
+						}
+					},
+					"settings": {
+						"display": {
+							"theme": {"fav_theme": "H4CK3D", "use_where_possible": false},
+							"font_size_mult": 1.0
+						},
+						"data": {
+							"overwrite_recent": 50,
+							"file_caching": "Auto",
+							"accepted_permission": false,
+							"cache_type": "IndexedDB",
+							"local_location": {"db_id": "SZMDB", "store_id": "USER", "nest": "/system/file_cache"}
+						}
+					},
+					"system": {
+						"custom_field_data": [],
+						"file_cache": { "data": [], "scripts": [] }
+					}
+				}
+			},
+			{
+				"db_id": "",
+				"store_id": "",
+				"info": "This is to be merged with the projects default db and store (Strings are blank, so find default db then default store), if any keys below already exist in project data then leave them as they are.",
+				"data": {
+					"profile": {},
+					"settings": {
+						"display": {
+							"theme": "Default",
+							"allow_theme_sync": true,
+							"font_size_mult": 1.0
+						},
+						"data": {
+							"overwrite_recent": 50,
+							
+						}
+					},
+					"system": {
+						"custom_field_data": [],
+						"file_cache": { "data": [], "scripts": [] }
+					}
+				}
+			}
+		]
+	}
+}

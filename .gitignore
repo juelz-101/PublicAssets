@@ -1,6 +1,14 @@
-# Ignore Windows system files
+# Ignore Windows system files #
 desktop.ini
 Thumbs.db
-#Ignore update script
+
+# Ignore file types
+*.gdoc
+*.gsheet
+*.gslides
+*.lnk
+
+#Ignore update script #
 auto_update.py
 run_auto_update.bat
+

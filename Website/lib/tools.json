@@ -21,33 +21,4 @@
 		}
 			
 	}
-	"tools": [
-		{
-			"name": "Chroma Palette Generator",
-			"thumbnail": "Website/images/tools/Chroma-Palette-Thumb.png",
-			"link": "Website/lib/html/tools/chroma-palette.json",
-			"category": "Web Tool",
-			"summary": "Instantly generate beautiful, accessible color palettes for your design projects.",
-			"tags": ["design", "color", "utility", "web"],
-			"featured": true
-		},
-		{
-			"name": "WaveForm Audio Converter",
-			"thumbnail": "Website/images/tools/Waveform-Converter-Thumb.png",
-			"link": "Website/lib/html/tools/waveform-converter.json",
-			"category": "Windows Tool",
-			"summary": "A lightweight, powerful tool to convert, trim, and apply effects to audio files.",
-			"tags": ["audio", "utility", "converter", "windows"],
-			"featured": true
-		},
-        {
-			"name": "Pixel Sorter",
-			"thumbnail": "Website/images/tools/Pixel-Sorter-Thumb.png",
-			"link": "Website/lib/html/tools/pixel-sorter.json",
-			"category": "Web Tool",
-			"summary": "Create stunning glitch art by sorting the pixels in your images.",
-			"tags": ["art", "glitch", "image-processing", "web"],
-			"featured": false
-		}
-	]
 }

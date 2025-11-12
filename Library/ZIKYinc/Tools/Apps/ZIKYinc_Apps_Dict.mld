@@ -1,0 +1,113 @@
+{
+	"meta": {
+        "type": "data", "name": "ZIKYinc Apps Dictionary", "name_finalized": true,
+        "desc": "Definitions of words and terms used within our apps.",
+        "creator": "Juelz-101", "organization": "ZIKYinc",
+		"file": { "platform": "Any", "root": "ZIKYinc_Shared", "path": "Library/Dictionary/ZIKYinc/Tools/Apps/", "this_file": "ZIKYinc_Apps_Dict.mld" }, 
+		"started": "20/10/25", "version": 1.0, "edited": {"date": "", "edited_by": "", "edit_number": 0, "changelog": []},
+		"ref": {"meta_layout": "MTA04", "project_layout": "JS03"},
+        "mgr": { "allow_autofill": "If Blank", "auto_version": "Minor Only", "track_edits": true, "auto_merging": false },
+		"defaults": {"load_defaults": true, "web": "", "file": "", "priority": "web"},
+		"modules": {"modules_to_add": [], "modules_to_ignore_update": []},
+		"current_status": "Literally just started.", "complete": false,
+		"notes": [
+			["Juelz-101", "25/4/25", ["Keys labelled 'info' are for dev ref and will be removed once complete.", "Keys labelled 'desc' are perminant and will be used for tooltips and descriptions." ]]
+		]
+    },
+	"data": {
+		"dictionary": {
+			"collections": [
+				{
+					"name": "Producers Case", "id": "ZPC", "s_set": "app",
+					"desc": "Words and phrases used to reference various items within the app.",
+					"terms": [ 
+						{
+							"name": "Section", "others": [""],
+							"category": "Menu", "sub": "Menu-Area Name",
+							"definition": "The base pages for each type of content.",
+							"example": "This belongs in the {MUSIC} section.",
+							"level": "User", "difficulty": "Basic"
+						},
+						{
+							"name": "Page", "others": [""], 
+							"category": "Menu", "sub": "Menu-Content Name",
+							"definition": "The type of content within the section.",
+							"example": "This is a {SONG} i'm creating.",
+							"level": "User", "difficulty": "Basic"
+						},
+						{
+							"name": "Fields", "others": [""], 
+							"category": "Menu", "sub": "Menu-Content Name",
+							"definition": "Data that has multiple selectable items to choose from.",
+							"example": "The genre for this is {FIELD}.",
+							"level": "User", "difficulty": "Basic"
+						},
+						{
+							"name": "Field-Options", "others": [""], 
+							"category": "Menu", "sub": "Menu-Content Name",
+							"definition": "The list of selectable items that can be used in text.",
+							"example": "I'll put this in the {FIELD} genre.",
+							"level": "User", "difficulty": "Basic"
+						},
+						{
+							"name": "Field ID's", "others": [""], 
+							"category": "Data-Linking", "sub": "Background-Processes",
+							"definition": ".",
+							"example": ".",
+							"level": "Advanced User", "difficulty": "Medium"
+						},
+						{
+							"name": "Tag", "others": [""], 
+							"category": "Features", "sub": "Data-Editing",
+							"definition": "A tag is a character(s) that can be inputted to do many things..",
+							"example": "",
+							"level": "Focused User", "difficulty": "Easy"
+						},
+						
+					],
+					"categories": [
+						{
+							"name": "Menu", 
+							"desc": "System terms that explain items within the menu.",
+							"subs": [
+								{
+									"name": "Menu-Area Name",
+									"desc": "A main area of the app.",
+									"example": "The toolbar with file, edit, etc"
+								},
+								{
+									"name": "Menu-Content Name",
+									"desc": "Pages, lists and items that are given a less general name to segragate them from similar things.",
+									"example": "Pages, groups of items that require a more specific name"
+								}
+							]
+						},
+						{
+							"name": "Data-Linking",
+							"desc": "Terms related to how data is connected and managed within the app.",
+							"subs": [
+								{
+									"name": "Background-Processes",
+									"desc": "Operations that occur behind the scenes to manage data relationships.",
+									"example": "Field ID management and data integrity checks"
+								}
+							]
+						},
+						{
+							"name": "Features",
+							"desc": "Various functionalities and tools available within the app.",
+							"subs": [
+								{
+									"name": "Data-Editing",
+									"desc": "Tools and methods for modifying and enhancing data within the app.",
+									"example": "Using tags to add special formatting or functionality to text"
+								}
+							]
+						}
+					]
+
+				}
+			]
+		}
+	}
+}

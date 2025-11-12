@@ -22,35 +22,28 @@ PublicAssets/
 │   └── Speech/
 │       └── JuelzFM/
 │           └── LeaveItThere.mp3
-├── Audio_Music_BG.json
-├── Audio_SoundFX.json
-├── Audio_Speech_JuelzFM.json
 ├── Data/
-│   └── AI/
-│       └── CodeAssistant/
-│           └── ai_dev/
-│               ├── ai_commands.ts
-│               ├── ai_rules.ts
-│               ├── data/
-│               │   └── userData.ts
-│               ├── log/
-│               │   ├── checkpoints/
-│               │   │   └── checkpoints.ts
-│               │   ├── dependencies/
-│               │   │   └── dependencies.ts
-│               │   ├── layout/
-│               │   │   └── layout.ts
-│               │   ├── todo.ts
-│               │   └── update_log/
-│               │       └── update.ts
-│               └── startup_instructions.ts
-├── Data_AI_CodeAssistant_ai_dev.json
-├── Data_AI_CodeAssistant_ai_dev_data.json
-├── Data_AI_CodeAssistant_ai_dev_log.json
-├── Data_AI_CodeAssistant_ai_dev_log_checkpoints.json
-├── Data_AI_CodeAssistant_ai_dev_log_dependencies.json
-├── Data_AI_CodeAssistant_ai_dev_log_layout.json
-├── Data_AI_CodeAssistant_ai_dev_log_update_log.json
+│   ├── AI/
+│   │   └── CodeAssistant/
+│   │       └── ai_dev/
+│   │           ├── ai_commands.ts
+│   │           ├── ai_rules.ts
+│   │           ├── data/
+│   │           │   └── userData.ts
+│   │           ├── log/
+│   │           │   ├── checkpoints/
+│   │           │   │   └── checkpoints.ts
+│   │           │   ├── dependencies/
+│   │           │   │   └── dependencies.ts
+│   │           │   ├── layout/
+│   │           │   │   └── layout.ts
+│   │           │   ├── todo.ts
+│   │           │   └── update_log/
+│   │           │       └── update.ts
+│   │           └── startup_instructions.ts
+│   └── Tools/
+│       ├── appdata.json
+│       └── shared_indexeddb.json
 ├── Images/
 │   ├── Covers/
 │   │   ├── AlbumArt/
@@ -202,19 +195,16 @@ PublicAssets/
 │           ├── Zikbarcode.gif
 │           └── barcode.png
 ├── Images (P.Ass).lnk
-├── Images_Covers.json
-├── Images_Covers_AlbumArt.json
-├── Images_Icons.json
-├── Images_Icons_Hex.json
-├── Images_Logos_App.json
-├── Images_Logos_App_Alldio.json
-├── Images_Logos_App_QRGem.json
-├── Images_Logos_Main.json
-├── Images_Logos_Tings.json
 ├── Library/
+│   ├── AI/
+│   │   └── Experiments/
+│   │       └── CharacterConsistency-Gemini/
+│   │           └── AI ASSET CONSISTENCY TEST - Gemini (pro).gdoc
 │   ├── Coding/
 │   │   ├── AHK/
 │   │   │   └── AHK AutoHotkey V2 Reference & Guide.txt
+│   │   ├── BAT/
+│   │   │   └── WinBAT-CheatSheet.mlc
 │   │   ├── Git/
 │   │   │   ├── Git_Gitignore_Guide.txt
 │   │   │   ├── Git_GuildAndReference.txt
@@ -238,51 +228,16 @@ PublicAssets/
 │   │   │       ├── [AI_FL]-[IDX] TELE_Complete_Guide_To_Telegram_Bots.txt
 │   │   │       └── [AI_FL]-[IDX] TELE_Python CLI Cheatbook – Mastering Tools by Command.txt
 │   │   └── SVG/
-│   ├── Dictionaries/
-│   │   ├── Coding/
-│   │   │   ├── AHK/
-│   │   │   │   └── AHK AutoHotkey V2 Reference & Guide.txt
-│   │   │   ├── HTML/
-│   │   │   │   └── CSS Reference & Guide.txt
-│   │   │   ├── JSON/
-│   │   │   │   └── JSON_Reference_and_Guide.txt
-│   │   │   ├── Markdown/
-│   │   │   │   └── Markdown_Reference_and_Guide.txt
-│   │   │   ├── PY/
-│   │   │   │   ├── [=I=] TELE_10 Crazy Innovative Things You Can Do with a Telegram Bot.txt
-│   │   │   │   ├── [=I=] TELE_Complete_Guide_To_Telegram_Bots.txt
-│   │   │   │   ├── [=I=] TELE_SecureRemoteCMDs.txt
-│   │   │   │   ├── [=I=] python-cli-cheatbook.txt
-│   │   │   │   ├── [AI_FL]-[IDX] TELE_Complete_Guide_To_Telegram_Bots.txt
-│   │   │   │   └── [AI_FL]-[IDX] TELE_Python CLI Cheatbook – Mastering Tools by Command.txt
-│   │   │   └── SVG/
-│   │   ├── GeneralComputing/
-│   │   │   └── KeyboardSymbols.dic
-│   │   ├── MasterDictionary.mld
-│   │   └── ZIKYinc/
-│   │       ├── Coding/
-│   │       ├── HTML/
-│   │       │   ├── Apps/
-│   │       │   └── Modules/
-│   │       │       ├── Core/
-│   │       │       │   ├── DBManager_Manual.txt
-│   │       │       │   └── VariableHandler_Manual.txt
-│   │       │       ├── Generators/
-│   │       │       │   └── UniqueCharGenerator_Guide.txt
-│   │       │       ├── Helpers/
-│   │       │       │   └── ObjectHelper_Guide.txt
-│   │       │       ├── SVG/
-│   │       │       └── Testing/
-│   │       │           └── Master_Testing_Module-UserGuide
-│   │       └── Tools/
-│   │           └── Apps/
-│   │               └── ZIKYinc_Apps_Dict.mld
-│   ├── Fire And Security/
+│   ├── FireAndSecurity/
 │   │   └── Fire/
 │   ├── GeneralComputing/
-│   ├── Schemas/
-│   │   └── ZIKYinc/
-│   │       └── ZIKYinc_Datafiles.msa
+│   │   ├── DataManagement/
+│   │   │   └── FamilyManagement/
+│   │   │       ├── [tut]-FamilyManagement_Google - Copy.mix
+│   │   │       └── [tut]-FamilyManagement_Google.mix
+│   │   └── Hardware/
+│   │       └── KeyboardSymbols.mld
+│   ├── MasterDictionary.mld
 │   └── ZIKYinc/
 │       ├── Dev/
 │       │   ├── HTML/
@@ -297,12 +252,18 @@ PublicAssets/
 │       │   │       └── Testing/
 │       │   │           └── Master_Testing_Module-UserGuide
 │       │   ├── MKU/
+│       │   │   ├── MKU_Tags.mlp
 │       │   │   └── MKU_UserGuide.mlb
-│       │   ├── ZIKYinc_Data-Protocols.txt
+│       │   ├── ZIKYinc_Datafiles.msc
 │       │   └── ZIKYinc_Protocols/
-│       │       └── ZIKYinc_Data-Protocols.txt
-│       └── PYTHON/
-│           └── SoundbarAntiMuteHelper_Guide.txt
+│       │       ├── ZIKYinc_Data-Protocols.txt
+│       │       └── [2]-File_Management/
+│       └── Tools/
+│           ├── Apps/
+│           │   └── ZIKYinc_Apps_Dict.mld
+│           └── Scripts/
+│               └── Python/
+│                   └── SoundbarAntiMuteHelper_Guide.txt
 ├── README.md
 ├── Templates/
 │   └── PromptData/
@@ -321,15 +282,16 @@ PublicAssets/
 │       ├── ProjectExample.json
 │       ├── ProjectPrompts.json
 │       └── UserData.json
-├── Templates_PromptData.json
 ├── Test/
 ├── Tools/
 │   ├── Apps/
+│   │   └── Presets/
+│   │       ├── Shared/
+│   │       └── pc_structure_presets.json
 │   └── MasterConfigs/
 │       ├── Alldio_Cfg.json
 │       ├── QRG_Cfg.json
 │       └── config.json
-├── Tools_MasterConfigs.json
 ├── Website/
 │   ├── AI_Setup.txt
 │   ├── Website IMG (P.Ass).lnk
@@ -452,13 +414,18 @@ PublicAssets/
 │   └── lib/
 │       ├── about.json
 │       ├── art.json
+│       ├── community.json
 │       ├── cur_projects.json
+│       ├── forms/
+│       │   ├── join-us.json
+│       │   └── submit.json
 │       ├── gallery/
 │       │   └── test.html
 │       ├── games/
 │       │   └── test.html
 │       ├── gaming.json
 │       ├── home.json
+│       ├── library.json
 │       ├── misc.json
 │       ├── music/
 │       │   ├── albums/
@@ -513,35 +480,6 @@ PublicAssets/
 │       │   └── qrg.json
 │       ├── tools.json
 │       └── webdata.json
-├── Website.json
-├── Website_img_bg_art.json
-├── Website_img_bg_dev.json
-├── Website_img_bg_focused_j101.json
-├── Website_img_bg_focused_mellowd.json
-├── Website_img_bg_jfm.json
-├── Website_img_bg_music_artists_juelz.json
-├── Website_img_bg_zikyinc.json
-├── Website_img_logos.json
-├── Website_img_misc.json
-├── Website_img_photos.json
-├── Website_img_photos_emma.json
-├── Website_img_zikyinc.json
-├── Website_lib.json
-├── Website_lib_apps.json
-├── Website_lib_gallery.json
-├── Website_lib_games.json
-├── Website_lib_html_apps.json
-├── Website_lib_html_gallery.json
-├── Website_lib_html_games.json
-├── Website_lib_html_music_albums.json
-├── Website_lib_html_music_artists.json
-├── Website_lib_html_music_songs.json
-├── Website_lib_music_albums.json
-├── Website_lib_music_artists.json
-├── Website_lib_music_songs.json
-├── Website_lib_tools.json
-├── asset_register.json
 ├── auto_update.py
 ├── public_assets.tree
-├── root.json
 └── run_auto_update.bat

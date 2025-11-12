@@ -1,0 +1,207 @@
+<#mku>
+<#m>	
+	Title: 		MarkUnder Library #1        Root: 			ZIKYinc_Data	Platform: 	Markunder
+	Desc: 		The first Document for the MKU parser that contains finalized information rather than placeholders..
+	Filename: 	MarkUnder_Library-1.mlb		Path: 			SharedData/Library/ZIKYinc/Coding/MKU/ 
+	Filetype: 	Library						FileTag:        Multi          	Renderer: 	MarkUnder
+	Creator:	Juelz-101					Organization:	ZIKYinc			Created:	25/8/25 08:16
+	Version: 	2.0							TotalEdits:		0				LastEdit:	--/--/-- --:--
+	ProjectRoot: ---						FileStatus:		Mapping out tags.
+	
+	CFG:		Scope: "-"					PlanType:		Rolling			Status: 	
+
+<#mwm>	
+	
+----.
+
+	- TAGS - - - - 
+	UseWhere:
+	
+		Name:				Type:				Desc:
+		All					Any					Applies to any MKU file.
+		Viewer				Modules				Refering to the MKU document viewer/editor
+		Win					Modules				Windows-accessable Tools
+		Prompter			Modules				Power-Prompt Tools
+		HL					Modules				Our Homelearning app
+		ADJ					Modules				AI Radio-DJ Tool
+	
+	Categories:
+	
+		Name:				Types:				Desc:
+		Master				[Trigger]			Global tags that control the parser and have the same effect in all use cases.
+		Director			[Tasker]			Tags that are used to tell the parser what you intend to do.
+		Pointer				[Lander]			Tags to direct the parser to an item or location.
+		NaviTag				[Snooper]			Tags to set a current position while navigating through parameters.
+		Jobby				[Reader]			Tags that call for logic or math.
+		Formatter			[Heading]			Tags for formatting text.
+		
+	Types:
+	
+		Name:				Categories:			Desc:
+		Trigger				[Master]			An action that it is initiated by an event.
+		Tasker				[Director]			An instruction/task for the parser to carry out.
+		Lander				[Pointer]			A root, destination or end-point.
+	
+	Tags:
+			
+		Tag:		Name:			Type:			Category:		UsedWhere:		Linked:			Keys:					Params:			Desc:
+		<			Opener			Trigger			Master			All				[1, Closer]		[start, begin, tag]		[]				Begin to call a tag.
+		>			Closer			Trigger			Master			All				[2, Opener]		[end, finish, tag]		[]				Finish tag.
+	--
+		#			Initiator		Tasker			Director		All				[]				[]						[]				Begin processing an element or the parser itself.
+		:			Controller		Tasker			Director		All				[]				[]						[]				Tell controller you want to control something.
+		@			Retriever		Tasker			Director		All				[]				[]						[]				Tell controller you want to use/handle something else.
+		-			Gazer			Tasker			Director		All				[]				[]						[]				Retrieve and view info from a different location.
+		+			Adder			Tasker			Director		All				[]				[]						[]				Add/define/apply or activate elements.
+		/			Stopper			Tasker			Director		All				[]				[]						[]				Used to stop, close or remove elements.
+		=			Worker			Tasker			Director		All				[]				[]						[]				Tell controller you want to use logic and math for dynamic results.
+		~			Deco			Tasker			Director		All				[]				[]						[]				Points at display/formatting options of something.
+	--
+		mku			MarkUnder		Lander			Pointer			All				[]				[]						[Y]				The parser.
+		p			Pager			Lander			Pointer			Viewer			[]				[]						[Y]				 Refers to a MKU document page.
+		d			Dictionary		Lander			Pointer			All				[]				[]						[Y]				 the library of dictionaries within the ZIKYinc docs.
+		m			Meta			Lander			Pointer			All				[]				[]						[Y]				 The Meta info for the current file or item.
+		c			Config			Lander			Pointer			All				[]				[]						[Y]				 The Configuration parameters of the current file or item.
+		fm			Format			Lander			Pointer			Viewer			[]				[]						[Y]				 Text formatting.
+		pp			PowerPrompt		Lander			Pointer			Prompting		[]				[]						[Y]				 A powerful prompt-builder.
+		w			Windows			Lander			Pointer			All				[]				[]						[Y]				 Refers to the Windows system-level MKU control.
+	--	
+		.			Step-In			NaviTag			Snooper			All				[]				[]						[]				 Navigate into the params of current item.
+		^			Step-Back		NaviTag			Snooper			All				[]				[]						[]				 Navigate back 1 folder.
+		<			Home-Run		NaviTag			Snooper			All				[]				[]						[]				 Jump to root folder, will always jump to place of entry.
+		[			Go-Porter		NaviTag			Snooper			All				[1, Stop-Porter][]						[]				 Skip to defined key. For example: [title.text]."Im here", you can also do [title.text:"I'm here"] to set it and just back to where you was.
+		]			Stop-Porter		NaviTag			Snooper			All				[2, Go-Porter]	[]						[]				 Jump to root folder, will always jump to place of entry.
+	
+	--
+		f			Sniffer			Reader			Jobby			All				[]				[]						[]				 Search the text from this position.
+	--
+		tit			Title			Heading			Formatter		All				[]				[]						[Y]				 Title Heading. Follow by closer to use default of Step-In to edit default.
+		sub			Subtitle		Heading			Formatter		All				[]				[]						[Y]				 Subtitle Heading. Follow by closer to use default of Step-In to edit default.
+	--	
+		"			String			Label			Variable		All				[1, String]		[]						[]				 If placed in quotations all symbols inside will be ignored, useful for decimals, or slashes/dashes
+		1 or true	Switch			Variable		Settie			All				[]				[]						[]				 If type is switch, then can be set to 0 or false and 1 or true. Tags are always outputted as 1/0.
+	--
+		chk			Checkbox		Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a checkbox
+		inp			Input			Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a textbox
+		slid		Slider			Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a Slider
+		but			Button			Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a Button
+		comb		Combobox		Component		Dynamic			All				[]				[]						us[Y]				Create/Manipulate a multi-choice dropdown
+		toolb		Toolbar			Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a textbox
+		comb		Combobox		Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a multi-choice dropdown
+		
+---
+	
+	Details:
+	
+		Master:			
+			Tag: 		<					Name: 		Opener				Category: 		Master		
+			Type:		Paired[1]			LinkedTag:		>					AutoLink:		false
+			Keys:		[start, begin, tag]					
+			Desc: Caller to begin markunder parsing, when typed it will open suggestions and narrow it as they type either the next tag/caller or its name. When reading, a check will be made to ensure the next tag is a markunder tag before continuing with parsing/display.
+			
+					
+	
+			Tag:	!I!			Name: Parser				Example:
+			Desc:
+			
+	- VARIABLES - - - - 
+	* : Any with this symbol means they are required to exist in array and not be empty.
+		^ If it doesnt have a * then it can be left empty or removed. Either a default value is set or is considered as "none".
+	
+	- TAGS:
+*	"tag": 			The required character or sequence of characters assigned to this tag 
+*	"name": 		Name of tag
+*	"id": 			A unique ID for tag (min 3 chars)
+	"desc": 		Brief description of tag
+*	"type": 		A type given from a list of types
+*	"category": 	A Category given from the list of categories
+	"target": 		Target app/module
+	"blacklist":	Targets/filetypes/categories/types or tags that block this tag
+	"linked": 		Is this tag linked to another tag?
+	"req":			Requirements needed to use this tag.
+	"keys": 		Keywords (tags, but we are already using the word tags lol)
+	"params": 		Tag-specific variables
+	"flags": 		Parameter flags that can be given to any tag
+	
+	Barcodes !!IL|| for AI <-> MKU interactions
+	
+	Define 
+	
+	Global/local inserts : Data attached to item can be defined within a file and the path referenced or it can be stored in a global 
+	
+	- FEATURES - - - -
+	
+	- NOTES - - - -
+	
+	If spaces are used within a variable string then it will need to be in "", that way all spaces and tabspaces can be skipped to next variable or closed unless contained in quotation marks. This will also apply to things like ":" (to close label/key and jump to value) and obviously any markunder symbols, although as a user types a string-related symbol/tag in quotation marks, we will still display the search as they do (esc to close, enter to branch down through search or space to continue) and if they do select a result, it will automatically add an end quotation mark and place the tags/callers after it.
+	Linked tag details are [CurrentTagPlace, LinkedTagID] - ex: Opener: [1, "closer"] with 1 meaning that opener is first and "closer" being the linked ID.
+	
+	
+	DJ Thing:
+	
+	<@Target:[DJ, Caller, Caretaker]    --This'll call to set the Target to one of the characters in the array at random
+
+
+
+< : Open/Grab
+
+@ : Point/Reference
+
+Target : A name  for future refencing 
+
+:  Controller to indicate we want to change it
+
+[] : Array of possible outcomes.
+
+
+
+
+
+>@.+Mood:=[1:Energetic, Caller:Paranoid, ~<6.C: Grumpy]   -- This shows different ways of previous values influencing later outcomes:
+
+> : Pointer
+
+@ : Looking for the last referenced item using that symbol. 
+
+. : Step into items parameters
+
++ : Add parameter, by default it merges if already exists. Do ++ to overwrite existing params of same name
+
+Mood : Name of parameter
+
+: We want to control this
+
+= : Looking for similarities with the last pointed at item (>@ ) do :Target[ to call by name
+
+[1: Energetic,  : Sets to the 1st key in parent array.
+
+Caller: Paranoid, : Simple calling by name
+
+~>6.C : If (~) Greater than (>) 6.C (C= Characters):Grumpy] : Sets param if name > 6 Chars.
+
+
+
+!When>+@Woman:!^Speaks:?=1:Name<^!
+
+! : Set a task/action : !WaitFor> 
+
+> : Point ahead
+
++ : New @ : Target
+
+:  Target Actions
+
+!^ : Elevate to reference next param elsewhere
+
+Speaks : Param
+
+?= : Choose/decide
+
+1 : Amount of decisions needed
+
+: : Whats needed
+
+Name : Choose a name
+
+^! : Grab recent elevated variable
+

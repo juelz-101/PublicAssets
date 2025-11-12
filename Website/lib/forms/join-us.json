@@ -1,0 +1,19 @@
+{
+	"meta": {
+		"name": "CAREERS FORM",
+		"file": "join-us.json", "path": "website/lib/forms/",
+		"version": 1.0
+	},
+	"form_details": {
+		"title": "Join the ZIKYinc Crew",
+		"subtitle": "Submit your CV for general interest or specific openings.",
+		"action_url": "/api/careers"
+	},
+	"inputs": [
+		{"name": "name", "label": "Full Name", "type": "text", "required": true},
+		{"name": "email", "label": "Email Address", "type": "email", "required": true},
+		{"name": "area", "label": "Area of Interest (e.g., Marketing, Development, Music Curation)", "type": "text", "required": true},
+		{"name": "cv_link", "label": "Link to CV/Portfolio (Google Drive, LinkedIn, etc.)", "type": "url", "required": true},
+		{"name": "notes", "label": "Anything else we should know?", "type": "textarea", "required": false}
+	]
+}

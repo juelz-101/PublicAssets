@@ -4,5 +4,11 @@
     "ext": "mlb",
     "path": "Library/ZIKYinc/Dev/MKU/MKU_UserGuide.mlb",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/MKU/MKU_UserGuide.mlb"
+  },
+  {
+    "name": "MKU_Tags.mlp",
+    "ext": "mlp",
+    "path": "Library/ZIKYinc/Dev/MKU/MKU_Tags.mlp",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/MKU/MKU_Tags.mlp"
   }
 ]

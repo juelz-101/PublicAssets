@@ -1,3 +1,48 @@
 {
-	"title": "Gaming"
+	"introduction": "",
+	"ue5": {
+		"introduction": "",
+		"games": [],
+		"assets": [],
+		"tools": []
+	},
+	"unity": {
+		"introduction": "",
+		"games": [],
+		"assets": [],
+		"tools": []
+	},
+	"gta": {
+		"fivem": {
+			"introduction": [],
+			"servers": [],
+			"tools": [],
+			"assets": [],
+			"other": []
+		},
+		"gta5": {
+			"introduction": [],
+			"maps": [],
+			"mods": [],
+			"scripts": [],
+			"fixes": []
+		},
+		"iv": {
+			"introduction": [],
+			"maps": [],
+			"mods": [],
+			"scripts": [],
+			"fixes": []
+		},
+		"legacy": {}
+	},
+	"valve": {
+		"gmod": {},
+		"wire": {}
+	},
+	"roblox": {
+		
+	},
+	"web": {},
+	"other": {}
 }

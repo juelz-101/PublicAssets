@@ -1,0 +1,19 @@
+{
+	"meta": {
+		"name": "LIBRARY", "desc": "Our inhouse library of useful documents for our tools and anything else",
+		"file": "library.json", "root": "PublicAssets", "path": "website/lib/",
+		"version": 1.0, "change_note": "Moved 'Who We Are' to about.json", "change_date": "11/11/25"
+	},
+	"": {
+		"id": "RECEPTION",
+		"title": "ZIKYinc Library",
+		"image": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+		"subtitle": "Docs for Days",
+		"welcome": "Welcome to the ZIKYinc Document Library.",
+		"what_its_for": "",
+		"what_it_covers": "",
+		"document_types": [],
+		"adding_documents": ""
+	},
+	"aisles": []
+}

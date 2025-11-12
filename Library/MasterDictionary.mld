@@ -1,0 +1,68 @@
+{
+	"meta": {
+        "type": "data", "name": "ZIKYinc Master Dictionary", "name_finalized": true,
+        "desc": "Master file that all dictionary files get merged into.",
+        "creator": "Juelz-101", "organization": "ZIKYinc",
+		"file": { "platform": "Any", "root": "ZIKYinc_Shared", "path": "Library/Dictionary/", "this_file": "MasterDictionary.mld" }, 
+		"started": "20/10/25", "version": 1.0, "edited": {"date": "", "edited_by": "", "edit_number": 0, "changelog": []},
+		"ref": {"meta_layout": "MTA04", "project_layout": "JS03"},
+        "mgr": { "allow_autofill": "If Blank", "auto_version": "Minor Only", "track_edits": true, "auto_merging": false },
+		"defaults": {"load_defaults": true, "web": "", "file": "", "priority": "web"},
+		"current_status": "Literally just started.", "complete": false,
+		"notes": [
+			["Juelz-101", "25/4/25", ["Keys labelled 'info' are for dev ref and will be removed once complete.", "Keys labelled 'desc' are perminant and will be used for tooltips and descriptions." ]]
+		]
+    },
+	"data": {
+		"dictionary": {
+			"desc": [
+				"This is where you can find definitions for relivent terms/data used within the app.",
+				"You can also find tags and triggers to enhance text to do many powerful things.",
+				"Each dictionary item is given a level and difficulty, they can also have a 's_set' to direct to the skillset used.",
+				"If s_set isnt found in item then one will be looked for in the category of the item, if none there, then it'll look in the collections root, if none there then it'll be the default skillset.",  
+				"Level and Difficulty can also set to a non-string number between 1 and 5 and it will be paired with the name within its skillset",
+				"Level is the skill level and difficulty is how difficult it is at that level."
+			],
+			"skillsets": [
+				{
+					"name": "Default", "id": "def",
+					"desc": "A general-purpose skillset used when no specific skillset is defined. It applies to all types of content and represents a broad measure of understanding and complexity.", "force_to_col_id": [],
+					"levels": [
+						{"name": "Beginner", "desc": "Basic awareness or understanding of the subject matter. Suitable for new users or those encountering the concept for the first time.", "example": "Recognizing the name or purpose of a tool or concept."},
+						{"name": "Learner", "desc": "User has gained some familiarity and can apply basic actions or recall definitions correctly.", "example": "Being able to explain what a function or setting does in simple terms."},
+						{"name": "Competent", "desc": "User can use or explain the concept effectively and adapt it to different situations with minimal guidance.", "example": "Using a concept or method to complete a task without external help."},
+						{"name": "Proficient", "desc": "User demonstrates efficiency and precision in applying the concept, identifying edge cases and improving outcomes.", "example": "Optimizing workflows or combining multiple concepts for better results."},
+						{"name": "Expert", "desc": "Deep mastery of the concept or system, with the ability to teach others, innovate, or create new applications of the knowledge.", "example": "Developing unique methods, tools, or integrations that improve the overall system."}
+					],
+					"difficulties": [
+						{"name": "Trivial", "desc": "Effortless tasks requiring little to no understanding.", "example": "Recognizing a label or selecting an obvious option."},
+						{"name": "Simple", "desc": "Tasks that can be done with minimal attention or previous experience.", "example": "Following a short instruction or repeating a known step."},
+						{"name": "Moderate", "desc": "Tasks that require focus and understanding of key relationships or structures.", "example": "Adjusting a configuration or using a feature in a new way."},
+						{"name": "Complex", "desc": "Tasks involving multiple layers, dependencies, or systems that must be coordinated carefully.", "example": "Integrating different parts of a project or debugging interactions between systems."},
+						{"name": "Mastery", "desc": "Extremely demanding tasks requiring critical thinking, abstraction, and creative problem solving.", "example": "Designing new frameworks or solving deep logic or architectural problems."}
+					]
+				},
+				{
+					"name": "App Developer", "id": "app",
+					"desc": "App-Dev based skillsets",
+					"force_to_col_id": ["ZPC"],
+					"levels": [
+						{"name": "User", "desc": "This level indicates that the knowledge involved is within the knowledge required to use the application and its basic features", "example": "Adding data to the app as intended."},
+						{"name": "Curious User", "desc": "This level indicates that the knowledge involved is for somebody who has became curious and is looking for alternate ways to achive their goal.", "example": "Teaking or adding data from JSON files rather than in the app."},
+						{"name": "Focused User", "desc": "This level indicates that knowledge involved may require more in-depth understanding of the app's functionality and some technical skills.", "example": "Using advanced features or customizing the app's behavior through configuration files."},
+						{"name": "Advanced User", "desc": "This level indicates a high degree of familiarity with the app and its underlying systems, often involving scripting or API usage.", "example": "Creating custom scripts to automate complex tasks within the app."},
+						{"name": "Developer", "desc": "This level involves deep technical knowledge and the ability to modify or extend the app's core functionality.", "example": "Making changes to the ID management system."}
+					],
+					"difficulties": [
+						{"name": "Basic", "desc": "Tasks that require minimal knowledge and effort, often involving straightforward actions.", "example": "Navigating the app's main menu."},
+						{"name": "Easy", "desc": "Tasks that are simple but may require some basic understanding of the app's functionality.", "example": "Creating a new item within the app."},
+						{"name": "Medium", "desc": "Tasks that require a moderate level of understanding and some technical skills, possibly involving configuration or customization.", "example": "Configuring settings to achieve a specific outcome."},
+						{"name": "Hard", "desc": "Tasks that demand a significant level of technical knowledge and may involve troubleshooting or advanced customization.", "example": "Debugging issues with custom scripts or integrations."},
+						{"name": "Expert", "desc": "Tasks that require deep technical expertise and often involve complex problem-solving or advanced development skills.", "example": "Developing new features or integrating third-party APIs."}
+					]
+				}
+			],
+			"collections": {}
+		}
+	}
+}

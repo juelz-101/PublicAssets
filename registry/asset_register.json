@@ -1,12 +1,6 @@
 {
   "": [
     {
-      "name": "asset_register.json",
-      "ext": "json",
-      "path": "asset_register.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/asset_register.json"
-    },
-    {
       "name": "README.md",
       "ext": "md",
       "path": "README.md",
@@ -29,310 +23,23 @@
       "ext": "bat",
       "path": "run_auto_update.bat",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/run_auto_update.bat"
-    },
-    {
-      "name": "Images_Logos_Tings.json",
-      "ext": "json",
-      "path": "Images_Logos_Tings.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Logos_Tings.json"
-    },
-    {
-      "name": "Images_Logos_App.json",
-      "ext": "json",
-      "path": "Images_Logos_App.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Logos_App.json"
-    },
-    {
-      "name": "root.json",
-      "ext": "json",
-      "path": "root.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/root.json"
-    },
-    {
-      "name": "Website_lib.json",
-      "ext": "json",
-      "path": "Website_lib.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib.json"
-    },
-    {
-      "name": "Website_img_misc.json",
-      "ext": "json",
-      "path": "Website_img_misc.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_misc.json"
-    },
-    {
-      "name": "Website_img_photos.json",
-      "ext": "json",
-      "path": "Website_img_photos.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_photos.json"
-    },
-    {
-      "name": "Website_img_photos_emma.json",
-      "ext": "json",
-      "path": "Website_img_photos_emma.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_photos_emma.json"
-    },
-    {
-      "name": "Website_img_zikyinc.json",
-      "ext": "json",
-      "path": "Website_img_zikyinc.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_zikyinc.json"
-    },
-    {
-      "name": "Website_lib_html_apps.json",
-      "ext": "json",
-      "path": "Website_lib_html_apps.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_apps.json"
-    },
-    {
-      "name": "Website_lib_html_gallery.json",
-      "ext": "json",
-      "path": "Website_lib_html_gallery.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_gallery.json"
-    },
-    {
-      "name": "Website_lib_html_games.json",
-      "ext": "json",
-      "path": "Website_lib_html_games.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_games.json"
-    },
-    {
-      "name": "Website_lib_html_music_albums.json",
-      "ext": "json",
-      "path": "Website_lib_html_music_albums.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_music_albums.json"
-    },
-    {
-      "name": "Website_lib_html_music_artists.json",
-      "ext": "json",
-      "path": "Website_lib_html_music_artists.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_music_artists.json"
-    },
-    {
-      "name": "Website_lib_html_music_songs.json",
-      "ext": "json",
-      "path": "Website_lib_html_music_songs.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_html_music_songs.json"
-    },
-    {
-      "name": "Website_img_logos.json",
-      "ext": "json",
-      "path": "Website_img_logos.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_logos.json"
-    },
-    {
-      "name": "Website_img_bg_zikyinc.json",
-      "ext": "json",
-      "path": "Website_img_bg_zikyinc.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_zikyinc.json"
-    },
-    {
-      "name": "Website_img_bg_art.json",
-      "ext": "json",
-      "path": "Website_img_bg_art.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_art.json"
-    },
-    {
-      "name": "Website_img_bg_jfm.json",
-      "ext": "json",
-      "path": "Website_img_bg_jfm.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_jfm.json"
-    },
-    {
-      "name": "Website_img_bg_dev.json",
-      "ext": "json",
-      "path": "Website_img_bg_dev.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_dev.json"
-    },
-    {
-      "name": "Website_img_bg_focused_j101.json",
-      "ext": "json",
-      "path": "Website_img_bg_focused_j101.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_focused_j101.json"
-    },
-    {
-      "name": "Website_img_bg_focused_mellowd.json",
-      "ext": "json",
-      "path": "Website_img_bg_focused_mellowd.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_focused_mellowd.json"
-    },
-    {
-      "name": "Templates_PromptData.json",
-      "ext": "json",
-      "path": "Templates_PromptData.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Templates_PromptData.json"
-    },
-    {
-      "name": "Images_Covers_AlbumArt.json",
-      "ext": "json",
-      "path": "Images_Covers_AlbumArt.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Covers_AlbumArt.json"
-    },
-    {
-      "name": "Website_lib_apps.json",
-      "ext": "json",
-      "path": "Website_lib_apps.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_apps.json"
-    },
-    {
-      "name": "Website_lib_gallery.json",
-      "ext": "json",
-      "path": "Website_lib_gallery.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_gallery.json"
-    },
-    {
-      "name": "Website_lib_games.json",
-      "ext": "json",
-      "path": "Website_lib_games.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_games.json"
-    },
-    {
-      "name": "Website_lib_music_albums.json",
-      "ext": "json",
-      "path": "Website_lib_music_albums.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_music_albums.json"
-    },
-    {
-      "name": "Website_lib_music_artists.json",
-      "ext": "json",
-      "path": "Website_lib_music_artists.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_music_artists.json"
-    },
-    {
-      "name": "Website_lib_music_songs.json",
-      "ext": "json",
-      "path": "Website_lib_music_songs.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_music_songs.json"
-    },
-    {
-      "name": "Images_Icons_Hex.json",
-      "ext": "json",
-      "path": "Images_Icons_Hex.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Icons_Hex.json"
-    },
-    {
-      "name": "Images_Covers.json",
-      "ext": "json",
-      "path": "Images_Covers.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Covers.json"
-    },
-    {
-      "name": "Images_Icons.json",
-      "ext": "json",
-      "path": "Images_Icons.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Icons.json"
-    },
-    {
-      "name": "Website.json",
-      "ext": "json",
-      "path": "Website.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website.json"
-    },
-    {
-      "name": "Images_Logos_Main.json",
-      "ext": "json",
-      "path": "Images_Logos_Main.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Logos_Main.json"
-    },
-    {
-      "name": "Website_img_bg_music_artists_juelz.json",
-      "ext": "json",
-      "path": "Website_img_bg_music_artists_juelz.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_img_bg_music_artists_juelz.json"
-    },
-    {
-      "name": "Images_Logos_App_QRGem.json",
-      "ext": "json",
-      "path": "Images_Logos_App_QRGem.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Logos_App_QRGem.json"
-    },
-    {
-      "name": "Website_lib_tools.json",
-      "ext": "json",
-      "path": "Website_lib_tools.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website_lib_tools.json"
-    },
-    {
-      "name": "Tools_MasterConfigs.json",
-      "ext": "json",
-      "path": "Tools_MasterConfigs.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools_MasterConfigs.json"
-    },
-    {
-      "name": "Images_Logos_App_Alldio.json",
-      "ext": "json",
-      "path": "Images_Logos_App_Alldio.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Images_Logos_App_Alldio.json"
-    },
-    {
-      "name": "Data_AI_CodeAssistant_ai_dev.json",
-      "ext": "json",
-      "path": "Data_AI_CodeAssistant_ai_dev.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data_AI_CodeAssistant_ai_dev.json"
-    },
-    {
-      "name": "Data_AI_CodeAssistant_ai_dev_data.json",
-      "ext": "json",
-      "path": "Data_AI_CodeAssistant_ai_dev_data.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data_AI_CodeAssistant_ai_dev_data.json"
-    },
-    {
-      "name": "Data_AI_CodeAssistant_ai_dev_log.json",
-      "ext": "json",
-      "path": "Data_AI_CodeAssistant_ai_dev_log.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data_AI_CodeAssistant_ai_dev_log.json"
-    },
-    {
-      "name": "Data_AI_CodeAssistant_ai_dev_log_checkpoints.json",
-      "ext": "json",
-      "path": "Data_AI_CodeAssistant_ai_dev_log_checkpoints.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data_AI_CodeAssistant_ai_dev_log_checkpoints.json"
-    },
-    {
-      "name": "Data_AI_CodeAssistant_ai_dev_log_dependencies.json",
-      "ext": "json",
-      "path": "Data_AI_CodeAssistant_ai_dev_log_dependencies.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data_AI_CodeAssistant_ai_dev_log_dependencies.json"
-    },
-    {
-      "name": "Data_AI_CodeAssistant_ai_dev_log_layout.json",
-      "ext": "json",
-      "path": "Data_AI_CodeAssistant_ai_dev_log_layout.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data_AI_CodeAssistant_ai_dev_log_layout.json"
-    },
-    {
-      "name": "Data_AI_CodeAssistant_ai_dev_log_update_log.json",
-      "ext": "json",
-      "path": "Data_AI_CodeAssistant_ai_dev_log_update_log.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data_AI_CodeAssistant_ai_dev_log_update_log.json"
-    },
-    {
-      "name": "Audio_Music_BG.json",
-      "ext": "json",
-      "path": "Audio_Music_BG.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio_Music_BG.json"
-    },
-    {
-      "name": "Audio_Speech_JuelzFM.json",
-      "ext": "json",
-      "path": "Audio_Speech_JuelzFM.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio_Speech_JuelzFM.json"
-    },
-    {
-      "name": "Audio_SoundFX.json",
-      "ext": "json",
-      "path": "Audio_SoundFX.json",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio_SoundFX.json"
     }
   ],
-  "Library": [],
+  "Library": [
+    {
+      "name": "MasterDictionary.mld",
+      "ext": "mld",
+      "path": "Library/MasterDictionary.mld",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/MasterDictionary.mld"
+    }
+  ],
   "Library/ZIKYinc": [],
   "Library/ZIKYinc/Dev": [
     {
-      "name": "ZIKYinc_Data-Protocols.txt",
-      "ext": "txt",
-      "path": "Library/ZIKYinc/Dev/ZIKYinc_Data-Protocols.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_Data-Protocols.txt"
+      "name": "ZIKYinc_Datafiles.msc",
+      "ext": "msc",
+      "path": "Library/ZIKYinc/Dev/ZIKYinc_Datafiles.msc",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_Datafiles.msc"
     }
   ],
   "Library/ZIKYinc/Dev/HTML": [],
@@ -383,20 +90,37 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_Protocols/ZIKYinc_Data-Protocols.txt"
     }
   ],
+  "Library/ZIKYinc/Dev/ZIKYinc_Protocols/[2]-File_Management": [],
   "Library/ZIKYinc/Dev/MKU": [
     {
       "name": "MKU_UserGuide.mlb",
       "ext": "mlb",
       "path": "Library/ZIKYinc/Dev/MKU/MKU_UserGuide.mlb",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/MKU/MKU_UserGuide.mlb"
+    },
+    {
+      "name": "MKU_Tags.mlp",
+      "ext": "mlp",
+      "path": "Library/ZIKYinc/Dev/MKU/MKU_Tags.mlp",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/MKU/MKU_Tags.mlp"
     }
   ],
-  "Library/ZIKYinc/PYTHON": [
+  "Library/ZIKYinc/Tools": [],
+  "Library/ZIKYinc/Tools/Apps": [
+    {
+      "name": "ZIKYinc_Apps_Dict.mld",
+      "ext": "mld",
+      "path": "Library/ZIKYinc/Tools/Apps/ZIKYinc_Apps_Dict.mld",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Tools/Apps/ZIKYinc_Apps_Dict.mld"
+    }
+  ],
+  "Library/ZIKYinc/Tools/Scripts": [],
+  "Library/ZIKYinc/Tools/Scripts/Python": [
     {
       "name": "SoundbarAntiMuteHelper_Guide.txt",
       "ext": "txt",
-      "path": "Library/ZIKYinc/PYTHON/SoundbarAntiMuteHelper_Guide.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/PYTHON/SoundbarAntiMuteHelper_Guide.txt"
+      "path": "Library/ZIKYinc/Tools/Scripts/Python/SoundbarAntiMuteHelper_Guide.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Tools/Scripts/Python/SoundbarAntiMuteHelper_Guide.txt"
     }
   ],
   "Library/Coding": [],
@@ -508,157 +232,48 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/GoogleAIStudio/GAIS Reference & Guide.txt"
     }
   ],
+  "Library/Coding/BAT": [
+    {
+      "name": "WinBAT-CheatSheet.mlc",
+      "ext": "mlc",
+      "path": "Library/Coding/BAT/WinBAT-CheatSheet.mlc",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/BAT/WinBAT-CheatSheet.mlc"
+    }
+  ],
   "Library/GeneralComputing": [],
-  "Library/Dictionaries": [
+  "Library/GeneralComputing/DataManagement": [],
+  "Library/GeneralComputing/DataManagement/FamilyManagement": [
     {
-      "name": "MasterDictionary.mld",
+      "name": "[tut]-FamilyManagement_Google.mix",
+      "ext": "mix",
+      "path": "Library/GeneralComputing/DataManagement/FamilyManagement/[tut]-FamilyManagement_Google.mix",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/DataManagement/FamilyManagement/[tut]-FamilyManagement_Google.mix"
+    },
+    {
+      "name": "[tut]-FamilyManagement_Google - Copy.mix",
+      "ext": "mix",
+      "path": "Library/GeneralComputing/DataManagement/FamilyManagement/[tut]-FamilyManagement_Google - Copy.mix",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/DataManagement/FamilyManagement/[tut]-FamilyManagement_Google - Copy.mix"
+    }
+  ],
+  "Library/GeneralComputing/Hardware": [
+    {
+      "name": "KeyboardSymbols.mld",
       "ext": "mld",
-      "path": "Library/Dictionaries/MasterDictionary.mld",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/MasterDictionary.mld"
+      "path": "Library/GeneralComputing/Hardware/KeyboardSymbols.mld",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Hardware/KeyboardSymbols.mld"
     }
   ],
-  "Library/Dictionaries/GeneralComputing": [
+  "Library/FireAndSecurity": [],
+  "Library/FireAndSecurity/Fire": [],
+  "Library/AI": [],
+  "Library/AI/Experiments": [],
+  "Library/AI/Experiments/CharacterConsistency-Gemini": [
     {
-      "name": "KeyboardSymbols.dic",
-      "ext": "dic",
-      "path": "Library/Dictionaries/GeneralComputing/KeyboardSymbols.dic",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/GeneralComputing/KeyboardSymbols.dic"
-    }
-  ],
-  "Library/Dictionaries/ZIKYinc": [],
-  "Library/Dictionaries/ZIKYinc/Coding": [],
-  "Library/Dictionaries/ZIKYinc/HTML": [],
-  "Library/Dictionaries/ZIKYinc/HTML/Modules": [],
-  "Library/Dictionaries/ZIKYinc/HTML/Modules/Core": [
-    {
-      "name": "VariableHandler_Manual.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/ZIKYinc/HTML/Modules/Core/VariableHandler_Manual.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/ZIKYinc/HTML/Modules/Core/VariableHandler_Manual.txt"
-    },
-    {
-      "name": "DBManager_Manual.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/ZIKYinc/HTML/Modules/Core/DBManager_Manual.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/ZIKYinc/HTML/Modules/Core/DBManager_Manual.txt"
-    }
-  ],
-  "Library/Dictionaries/ZIKYinc/HTML/Modules/Generators": [
-    {
-      "name": "UniqueCharGenerator_Guide.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/ZIKYinc/HTML/Modules/Generators/UniqueCharGenerator_Guide.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/ZIKYinc/HTML/Modules/Generators/UniqueCharGenerator_Guide.txt"
-    }
-  ],
-  "Library/Dictionaries/ZIKYinc/HTML/Modules/Helpers": [
-    {
-      "name": "ObjectHelper_Guide.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/ZIKYinc/HTML/Modules/Helpers/ObjectHelper_Guide.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/ZIKYinc/HTML/Modules/Helpers/ObjectHelper_Guide.txt"
-    }
-  ],
-  "Library/Dictionaries/ZIKYinc/HTML/Modules/Testing": [
-    {
-      "name": "Master_Testing_Module-UserGuide",
-      "ext": "",
-      "path": "Library/Dictionaries/ZIKYinc/HTML/Modules/Testing/Master_Testing_Module-UserGuide",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/ZIKYinc/HTML/Modules/Testing/Master_Testing_Module-UserGuide"
-    }
-  ],
-  "Library/Dictionaries/ZIKYinc/HTML/Modules/SVG": [],
-  "Library/Dictionaries/ZIKYinc/HTML/Apps": [],
-  "Library/Dictionaries/ZIKYinc/Tools": [],
-  "Library/Dictionaries/ZIKYinc/Tools/Apps": [
-    {
-      "name": "ZIKYinc_Apps_Dict.mld",
-      "ext": "mld",
-      "path": "Library/Dictionaries/ZIKYinc/Tools/Apps/ZIKYinc_Apps_Dict.mld",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/ZIKYinc/Tools/Apps/ZIKYinc_Apps_Dict.mld"
-    }
-  ],
-  "Library/Dictionaries/Coding": [],
-  "Library/Dictionaries/Coding/AHK": [
-    {
-      "name": "AHK AutoHotkey V2 Reference & Guide.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/Coding/AHK/AHK AutoHotkey V2 Reference & Guide.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/Coding/AHK/AHK AutoHotkey V2 Reference & Guide.txt"
-    }
-  ],
-  "Library/Dictionaries/Coding/HTML": [
-    {
-      "name": "CSS Reference & Guide.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/Coding/HTML/CSS Reference & Guide.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/Coding/HTML/CSS Reference & Guide.txt"
-    }
-  ],
-  "Library/Dictionaries/Coding/JSON": [
-    {
-      "name": "JSON_Reference_and_Guide.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/Coding/JSON/JSON_Reference_and_Guide.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/Coding/JSON/JSON_Reference_and_Guide.txt"
-    }
-  ],
-  "Library/Dictionaries/Coding/Markdown": [
-    {
-      "name": "Markdown_Reference_and_Guide.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/Coding/Markdown/Markdown_Reference_and_Guide.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/Coding/Markdown/Markdown_Reference_and_Guide.txt"
-    }
-  ],
-  "Library/Dictionaries/Coding/PY": [
-    {
-      "name": "[AI_FL]-[IDX] TELE_Python CLI Cheatbook – Mastering Tools by Command.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/Coding/PY/[AI_FL]-[IDX] TELE_Python CLI Cheatbook – Mastering Tools by Command.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/Coding/PY/[AI_FL]-[IDX] TELE_Python CLI Cheatbook – Mastering Tools by Command.txt"
-    },
-    {
-      "name": "[AI_FL]-[IDX] TELE_Complete_Guide_To_Telegram_Bots.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/Coding/PY/[AI_FL]-[IDX] TELE_Complete_Guide_To_Telegram_Bots.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/Coding/PY/[AI_FL]-[IDX] TELE_Complete_Guide_To_Telegram_Bots.txt"
-    },
-    {
-      "name": "[=I=] TELE_Complete_Guide_To_Telegram_Bots.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/Coding/PY/[=I=] TELE_Complete_Guide_To_Telegram_Bots.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/Coding/PY/[=I=] TELE_Complete_Guide_To_Telegram_Bots.txt"
-    },
-    {
-      "name": "[=I=] TELE_10 Crazy Innovative Things You Can Do with a Telegram Bot.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/Coding/PY/[=I=] TELE_10 Crazy Innovative Things You Can Do with a Telegram Bot.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/Coding/PY/[=I=] TELE_10 Crazy Innovative Things You Can Do with a Telegram Bot.txt"
-    },
-    {
-      "name": "[=I=] python-cli-cheatbook.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/Coding/PY/[=I=] python-cli-cheatbook.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/Coding/PY/[=I=] python-cli-cheatbook.txt"
-    },
-    {
-      "name": "[=I=] TELE_SecureRemoteCMDs.txt",
-      "ext": "txt",
-      "path": "Library/Dictionaries/Coding/PY/[=I=] TELE_SecureRemoteCMDs.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Dictionaries/Coding/PY/[=I=] TELE_SecureRemoteCMDs.txt"
-    }
-  ],
-  "Library/Dictionaries/Coding/SVG": [],
-  "Library/Fire And Security": [],
-  "Library/Fire And Security/Fire": [],
-  "Library/Schemas": [],
-  "Library/Schemas/ZIKYinc": [
-    {
-      "name": "ZIKYinc_Datafiles.msa",
-      "ext": "msa",
-      "path": "Library/Schemas/ZIKYinc/ZIKYinc_Datafiles.msa",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Schemas/ZIKYinc/ZIKYinc_Datafiles.msa"
+      "name": "AI ASSET CONSISTENCY TEST - Gemini (pro).gdoc",
+      "ext": "gdoc",
+      "path": "Library/AI/Experiments/CharacterConsistency-Gemini/AI ASSET CONSISTENCY TEST - Gemini (pro).gdoc",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Experiments/CharacterConsistency-Gemini/AI ASSET CONSISTENCY TEST - Gemini (pro).gdoc"
     }
   ],
   "Images": [],
@@ -1577,6 +1192,18 @@
       "ext": "json",
       "path": "Website/lib/about.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/about.json"
+    },
+    {
+      "name": "library.json",
+      "ext": "json",
+      "path": "Website/lib/library.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/library.json"
+    },
+    {
+      "name": "community.json",
+      "ext": "json",
+      "path": "Website/lib/community.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community.json"
     }
   ],
   "Website/lib/tools": [
@@ -1872,6 +1499,20 @@
       "ext": "json",
       "path": "Website/lib/music/songs/ssos.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/music/songs/ssos.json"
+    }
+  ],
+  "Website/lib/forms": [
+    {
+      "name": "submit.json",
+      "ext": "json",
+      "path": "Website/lib/forms/submit.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/forms/submit.json"
+    },
+    {
+      "name": "join-us.json",
+      "ext": "json",
+      "path": "Website/lib/forms/join-us.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/forms/join-us.json"
     }
   ],
   "Website/img": [],
@@ -2597,6 +2238,15 @@
   "Test": [],
   "Tools": [],
   "Tools/Apps": [],
+  "Tools/Apps/Presets": [
+    {
+      "name": "pc_structure_presets.json",
+      "ext": "json",
+      "path": "Tools/Apps/Presets/pc_structure_presets.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/Apps/Presets/pc_structure_presets.json"
+    }
+  ],
+  "Tools/Apps/Presets/Shared": [],
   "Tools/MasterConfigs": [
     {
       "name": "QRG_Cfg.json",
@@ -2686,6 +2336,20 @@
       "ext": "ts",
       "path": "Data/AI/CodeAssistant/ai_dev/log/update_log/update.ts",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/AI/CodeAssistant/ai_dev/log/update_log/update.ts"
+    }
+  ],
+  "Data/Tools": [
+    {
+      "name": "shared_indexeddb.json",
+      "ext": "json",
+      "path": "Data/Tools/shared_indexeddb.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/Tools/shared_indexeddb.json"
+    },
+    {
+      "name": "appdata.json",
+      "ext": "json",
+      "path": "Data/Tools/appdata.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/Tools/appdata.json"
     }
   ],
   "Audio": [],

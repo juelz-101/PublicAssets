@@ -1,0 +1,19 @@
+{
+	"meta": {
+		"name": "SUBMISSION FORM",
+		"file": "submt.json", "path": "website/lib/forms/",
+		"version": 1.0
+	},
+	"form_details": {
+		"title": "Creative Submission Portal",
+		"subtitle": "Tell us about your work and vision.",
+		"action_url": "/api/submit"
+	},
+	"inputs": [
+		{"name": "name", "label": "Your Name/Artist Name", "type": "text", "placeholder": "Juelz-101", "required": true},
+		{"name": "email", "label": "Email Address for Contact", "type": "email", "required": true},
+		{"name": "category", "label": "Submission Category", "type": "select", "options": ["Music", "Visual Art", "App/Dev", "Other"], "required": true},
+		{"name": "links", "label": "Portfolio/Demo Links (SoundCloud, Drive, etc.)", "type": "textarea", "placeholder": "Provide links to your best work.", "required": true},
+		{"name": "message", "label": "Describe your work/project and goals", "type": "textarea", "required": true}
+	]
+}

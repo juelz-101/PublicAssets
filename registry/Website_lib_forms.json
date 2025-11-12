@@ -1,0 +1,14 @@
+[
+  {
+    "name": "submit.json",
+    "ext": "json",
+    "path": "Website/lib/forms/submit.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/forms/submit.json"
+  },
+  {
+    "name": "join-us.json",
+    "ext": "json",
+    "path": "Website/lib/forms/join-us.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/forms/join-us.json"
+  }
+]

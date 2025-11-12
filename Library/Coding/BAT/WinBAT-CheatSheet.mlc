@@ -1,0 +1,376 @@
+<#mku.cat>
+---
+
+## 🧱 BASICS
+
+```bat
+:: Comments
+REM This is a comment
+:: Also a comment
+```
+
+```bat
+@ECHO OFF              :: Hides command echo
+ECHO Hello World       :: Prints text
+PAUSE                  :: Waits for user input
+CLS                    :: Clears the screen
+EXIT                   :: Ends the script
+```
+
+---
+
+## 📁 VARIABLES
+
+```bat
+SET var=value          :: Create variable
+ECHO %var%             :: Display variable value
+
+:: Prompt user input
+SET /P name=Enter your name: 
+ECHO Hello %name%
+```
+
+```bat
+:: Environment variables
+ECHO %CD%              :: Current directory
+ECHO %DATE%            :: Current date
+ECHO %TIME%            :: Current time
+ECHO %USERNAME%        :: Logged-in user
+ECHO %RANDOM%          :: Random number (0–32767)
+```
+
+```bat
+:: Using delayed expansion (for variables inside loops)
+SETLOCAL ENABLEDELAYEDEXPANSION
+SET count=0
+FOR %%A IN (*) DO (
+  SET /A count+=1
+  ECHO !count!: %%A
+)
+ENDLOCAL
+```
+
+---
+
+## 🔁 CONTROL FLOW
+
+### IF statements
+
+```bat
+IF EXIST file.txt ECHO File exists
+IF NOT EXIST file.txt ECHO File missing
+
+SET num=5
+IF %num%==5 ECHO It's five!
+IF NOT %num%==10 ECHO Not ten
+
+---
+
+## 🧮 Numeric comparison
+
+Use **`if`** with **`lss`**, **`leq`**, **`equ`**, **`neq`**, **`gtr`**, or **`geq`**
+(no angle brackets — those are reserved by the shell).
+
+| Comparison | Meaning               |
+| ---------- | --------------------- |
+| `LSS`      | less than             |
+| `LEQ`      | less than or equal    |
+| `EQU`      | equal                 |
+| `NEQ`      | not equal             |
+| `GTR`      | greater than          |
+| `GEQ`      | greater than or equal |
+
+---
+
+### Example:
+
+```bat
+@echo off
+set /a num=7
+
+if %num% lss 10 (
+    echo %num% is less than 10
+)
+
+if %num% gtr 5 (
+    echo %num% is greater than 5
+)
+
+if %num% equ 7 (
+    echo %num% equals 7
+)
+```
+
+✅ Works fine for integers
+❌ Won’t handle decimals (you’ll need PowerShell or a trick for that)
+
+---
+
+## 🧩 String comparison
+
+For *text*, use normal `==`:
+
+```bat
+set var=hello
+
+if "%var%"=="hello" echo It matches!
+if not "%var%"=="goodbye" echo It’s not goodbye.
+```
+
+You can still combine this with `/i` for case-insensitive compare:
+
+```bat
+if /i "%var%"=="HELLO" echo It still matches.
+```
+
+---
+
+## ⚙️ Combined example
+
+```bat
+@echo off
+set /a x=8
+set /a y=12
+
+if %x% lss %y% (
+    echo %x% is less than %y%
+) else if %x% equ %y% (
+    echo They are equal
+) else (
+    echo %x% is greater than %y%
+)
+```
+
+---
+
+## 💡 Bonus: Using `if errorlevel` (odd legacy trick)
+
+This compares if a number is **≥** a value:
+
+```bat
+if errorlevel 5 echo Errorlevel is 5 or higher
+```
+
+but it’s *only good for command return codes*, not for normal math.
+
+```
+
+### GOTO
+
+```bat
+ECHO Start
+GOTO next
+ECHO This won’t show
+
+:next
+ECHO Jumped here
+```
+
+### CALL another batch
+
+```bat
+CALL otherScript.bat
+```
+
+---
+
+## 🔂 LOOPS
+
+### FOR basics
+
+```bat
+FOR %%X IN (*.txt) DO ECHO %%X           :: Loop files
+FOR %%X IN (1 2 3 4 5) DO ECHO %%X       :: Manual list
+FOR /L %%X IN (1,1,5) DO ECHO %%X        :: 1 to 5 loop
+FOR /R %%F IN (*.jpg) DO ECHO %%F        :: Recursive loop
+FOR /D %%X IN (*) DO ECHO %%X            :: Folders only
+```
+
+### FOR with commands
+
+```bat
+FOR /F "tokens=1,2 delims=," %%A IN (file.csv) DO (
+  ECHO First: %%A
+  ECHO Second: %%B
+)
+```
+
+---
+
+## 🔣 NUMBERS AND MATH
+
+set /a = Arithmetic mode
+
+It tells the set command to evaluate the right side as a math expression instead of just plain text.
+
+```bat
+SET /A x=5+3          :: 8
+SET /A x=10/2         :: 5
+SET /A x=5%%3         :: 2 (modulus)
+SET /A x=(4+6)*2      :: 20
+ECHO %x%
+
+| Operator  | Meaning             | Example         | Result |   |
+| --------- | ------------------- | --------------- | ------ | - |
+| `+`       | addition            | `set /a x=3+2`  | 5      |   |
+| `-`       | subtraction         | `set /a x=10-4` | 6      |   |
+| `*`       | multiply            | `set /a x=3*5`  | 15     |   |
+| `/`       | integer division    | `set /a x=7/2`  | 3      |   |
+| `%`       | modulus (remainder) | `set /a x=7%%3` | 1      |   |
+| `<<` `>>` | bit shifts          | `set /a x=2<<3` | 16     |   |
+| `&` `     | ` `^`               | bitwise ops     | —      | — |
+
+```
+
+```bat
+:: Increment/Decrement
+SET /A count+=1
+SET /A count-=1
+```
+
+---
+
+## 📂 FILES & FOLDERS
+
+```bat
+DIR                    :: List files
+CD                     :: Show current directory
+CD foldername          :: Change directory
+CD ..                  :: Go up a folder
+
+MKDIR newfolder        :: Make directory
+RMDIR folder /S /Q     :: Delete directory (quietly)
+DEL file.txt           :: Delete file
+COPY file1.txt file2.txt
+MOVE file.txt D:\newpath
+```
+
+---
+
+## 🧩 STRINGS
+
+```bat
+SET var=Hello World
+ECHO %var:~0,5%        :: "Hello" (substring)
+ECHO %var:~6%          :: "World"
+ECHO %var:World=Everyone% :: Replace text → "Hello Everyone"
+```
+
+---
+
+## ⚙️ INPUT & OUTPUT REDIRECTION
+
+```bat
+>   :: Write new file
+>>  :: Append to file
+<   :: Read from file
+
+ECHO Hello > file.txt
+ECHO Again >> file.txt
+TYPE file.txt
+
+:: Combine with other commands
+DIR > list.txt
+```
+
+---
+
+## 💣 ERROR HANDLING
+
+```bat
+:: Returns error level (0 = success)
+IF ERRORLEVEL 1 ECHO Error occurred
+IF %ERRORLEVEL%==0 ECHO Success!
+```
+
+---
+
+## 🌍 PATHS & CURRENT DIRECTORY
+
+```bat
+SET root=%~dp0          :: Directory of the running .bat file
+ECHO Current dir: %CD%
+ECHO Script dir: %root%
+```
+
+---
+
+## ⚡ ARRAYS (Fake, but possible)
+
+Batch has no real arrays, but you can emulate them:
+
+```bat
+SET item[0]=apple
+SET item[1]=banana
+SET item[2]=cherry
+
+FOR /L %%i IN (0,1,2) DO (
+  CALL ECHO %%item[%%i]%%
+)
+```
+
+---
+
+## 💬 USER INPUT MENU EXAMPLE
+
+```bat
+@ECHO OFF
+:menu
+CLS
+ECHO 1. Say Hello
+ECHO 2. Show Date
+ECHO 3. Exit
+SET /P choice=Choose option: 
+
+IF %choice%==1 GOTO hello
+IF %choice%==2 GOTO date
+IF %choice%==3 EXIT
+GOTO menu
+
+:hello
+ECHO Hello!
+PAUSE
+GOTO menu
+
+:date
+ECHO %DATE%
+PAUSE
+GOTO menu
+```
+
+---
+
+## 🧠 TIPS & TRICKS
+
+* `%~n0` → script name without extension
+* `%~dp0` → script directory
+* `%~f1` → full path of argument 1
+* `PUSHD` / `POPD` → temporary change directory stack
+* `CHOICE` → menu-style input
+* `TIMEOUT /T 5` → wait 5 seconds
+* `TITLE` → change window title
+* `COLOR 0A` → green text on black
+* `START` → open file, folder, or run command in new window
+
+---
+
+## 🔧 EXAMPLES
+
+### Open all project files (relative paths)
+
+```bat
+@ECHO OFF
+SET root=%~dp0
+
+ECHO Opening Project Files...
+START "" "%root%main.py"
+START "" "%root%readme.md"
+START "" "%root%assets\"
+```
+
+### Close Notepad and reopen tabs
+
+```bat
+TASKKILL /IM notepad++.exe /F
+START "" "C:\Program Files\Notepad++\notepad++.exe" file1.txt file2.txt
+```

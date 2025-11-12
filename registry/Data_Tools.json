@@ -1,0 +1,14 @@
+[
+  {
+    "name": "shared_indexeddb.json",
+    "ext": "json",
+    "path": "Data/Tools/shared_indexeddb.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/Tools/shared_indexeddb.json"
+  },
+  {
+    "name": "appdata.json",
+    "ext": "json",
+    "path": "Data/Tools/appdata.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/Tools/appdata.json"
+  }
+]

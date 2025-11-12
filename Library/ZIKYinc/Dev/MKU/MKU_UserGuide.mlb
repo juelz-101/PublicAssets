@@ -8,7 +8,7 @@
 	Creator:	Juelz-101					Organization:	ZIKYinc			Created:	19/10/25 23:16
 	Version: 	1.0							TotalEdits:		0				LastEdit:	--/--/-- --:--
 	ProjectRoot: Any						CurrentStatus:	Starting
-	Tags: markunder, mku, parsing
+	Tags: markunder, mku, parsing			DefaultRef:		UsersGlobal		IndexFile:	.../
 	Flags: []
 	Ref: [
 		Data:	Meta Layout: 2.1	Cfg layout: 1.0
@@ -16,7 +16,35 @@
 	Notes: []
 	CFG: []
 	MGR: []
-<:cfg.autopag."NoIntro">
+</m>
+
+<+n."CurrentPages", "dev">
+	<#fm.tit>Current Intended Pages.
+	<#fm.sub>A manually made map of pages.</fm>
+	%(MU): Contents
+	
+	<=f."#",+1,#1,@"1",x"_">			= Calculate/Logic.	f Find	#	+ Add	1 # Every	1	@ From	1	- to	_
+	_. Overview
+	_. Contents
+	1 . Introduction
+	# . File Types
+	# . Usages
+	# . Tags
+	# . Referencing
+	# . Components
+	# . Metas
+	# . Main Tools
+	# . Project Manager
+	# . Backend
+	# . Bucket Tool
+	# . Compatible Tools
+	
+	_. Meta Info
+	_. Cfg info
+	_. Rear Cover
+	
+</n>
+
 <#p.1, "Introduction">
 
 	Introduction
@@ -24,7 +52,9 @@
 	MarkUnder is an advanced text-level Parsing system with many usages and features.
 
 	
-	
+<#p.+, "File Types">
+
+
 	
 	Notes: 	1. Until we get a bit further and actually add the markunder symbols, I will just put a (MU) whenever a markunder feature is being explained.
 	|>		2. (MU): Something like that to carry a entry to the next line, if its (MU) then all carried lines that follow will be (MU) until (/) or no more lines get carried.
@@ -46,18 +76,23 @@
 ---
 
 	Preset:			""			-	Save and reuse cfg settings. Empty string means last-used or default if there is no last used for this file type.
-	ParsingType		"Full"		-	Master Toggle to override markunder parsing
+	ParsingType		"Full"		-	Master Toggle to override markunder parsing - "Full", "Hide" (Hides all MKU syntax and displays the remaining text), "Off": No processing. Raw Text.
 	PageType:		"Book"		-	Initial style to begin display with
 	Theme:			"Fresh"		-	A selection of themes that are attached to the page-type.
 	ZoomLevel:		100			-	Percentage level of zoom.
-	AutoPaging:		"Full"		-	Choose between Off, Partial (without intro or contents), NoIntro or Full.
+	AutoPaging:		"Full"		-	Choose between Off, Partial (block auto-generated pages like Overview or contents) or Full.
 	PageSplit:		true		-	Toggle to set pages to be displayed one at a time and display nav-buttons or as a full scrollable page.
 	MDConvert:		"Full"		-	If full, MKU will use MD tags for various things, if Ignore then it will parse MD tags as the MD parser would. Off to display the raw tags.
 	
 	There will be plenty more, but we'll  discuss further when we are adding all of the tags and variables to the app-data.
 </cfg>		-	This can be used to end the last opened 
 ----------------------------
-	%(MU): Introduction
+	%(MU): Front Cover (Overview/Landing Page)
+	Note: The MKU scripts and data-files refer to this page as the following:
+	MainName:					"Overview"
+	OtherNames:					["Landing Page", "Auto-Intro"],
+	AsVariable:					"cover"
+	UID(Unique ID):				"pgen_cover"
 
 	(MU): Firstly most docs will begin intro by referencing data from the meta:
 	>		1. FileName - Version
@@ -86,19 +121,20 @@
 ----------------------------
 	%(MU): Contents
 	
+	_. Overview 
 	_. Contents
-	1. Introduction
-	3. File Types
-	4. Usages
-	5. Tags
-	6. Referencing
-	7. Components
-	8. Metas
-	9. Viewer
-	10. Project Manager
-	11. Backend
-	12. Bucket Tool
-	13. Compatible Tools
+	^. Introduction
+	^. File Types
+	^. Usages
+	^. Tags
+	^. Referencing
+	^. Components
+	^. Metas
+	^. Main Tools
+	^. Project Manager
+	^. Backend
+	^. Bucket Tool
+	^. Compatible Tools
 	
 	_. Meta Info
 	_. Cfg info
@@ -139,7 +175,7 @@
 			These are defined as initial guides to how the page should be displayed, but all can also be controlled dynamically using tags, and displayed as visual guides when controlling them.
 			
 <#p/>		- Here we manually close the page instead of just opening the next page to close the previous one.
-			^	That tag closes any page. 
+			^	That tag closes current page. 
 ----------------------------
 			
 			<+Note:"Content outside of pages, (we'll refer to it as the <@d.void>) are only displayed in a toolbar/sidebar.
