@@ -1515,6 +1515,37 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/forms/join-us.json"
     }
   ],
+  "Website/lib/community": [],
+  "Website/lib/community/events": [
+    {
+      "name": "test_event.json",
+      "ext": "json",
+      "path": "Website/lib/community/events/test_event.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community/events/test_event.json"
+    },
+    {
+      "name": "test_event2.json",
+      "ext": "json",
+      "path": "Website/lib/community/events/test_event2.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community/events/test_event2.json"
+    }
+  ],
+  "Website/lib/community/people": [
+    {
+      "name": "lisa.json",
+      "ext": "json",
+      "path": "Website/lib/community/people/lisa.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community/people/lisa.json"
+    }
+  ],
+  "Website/lib/community/people/lisa": [
+    {
+      "name": "lol.json",
+      "ext": "json",
+      "path": "Website/lib/community/people/lisa/lol.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community/people/lisa/lol.json"
+    }
+  ],
   "Website/img": [],
   "Website/img/misc": [
     {
@@ -2142,6 +2173,28 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/bg/music/artists/juelz/2.jpeg"
     }
   ],
+  "Website/img/community": [
+    {
+      "name": "blink.jpg",
+      "ext": "jpg",
+      "path": "Website/img/community/blink.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/community/blink.jpg"
+    }
+  ],
+  "Website/img/placeholders": [
+    {
+      "name": "placeholder.jpg",
+      "ext": "jpg",
+      "path": "Website/img/placeholders/placeholder.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/placeholders/placeholder.jpg"
+    },
+    {
+      "name": "event.jpg",
+      "ext": "jpg",
+      "path": "Website/img/placeholders/event.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/placeholders/event.jpg"
+    }
+  ],
   "Templates": [],
   "Templates/PromptData": [
     {
@@ -2265,6 +2318,12 @@
       "ext": "json",
       "path": "Tools/MasterConfigs/config.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/config.json"
+    },
+    {
+      "name": "website_cfg.json",
+      "ext": "json",
+      "path": "Tools/MasterConfigs/website_cfg.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/website_cfg.json"
     }
   ],
   "Data": [],

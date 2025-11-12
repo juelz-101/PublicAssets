@@ -1,0 +1,14 @@
+[
+  {
+    "name": "placeholder.jpg",
+    "ext": "jpg",
+    "path": "Website/img/placeholders/placeholder.jpg",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/placeholders/placeholder.jpg"
+  },
+  {
+    "name": "event.jpg",
+    "ext": "jpg",
+    "path": "Website/img/placeholders/event.jpg",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/placeholders/event.jpg"
+  }
+]

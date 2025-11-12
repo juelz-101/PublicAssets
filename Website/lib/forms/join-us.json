@@ -1,6 +1,6 @@
 {
 	"meta": {
-		"name": "CAREERS FORM",
+		"name": "CAREERS_FORM",
 		"file": "join-us.json", "path": "website/lib/forms/",
 		"version": 1.0
 	},

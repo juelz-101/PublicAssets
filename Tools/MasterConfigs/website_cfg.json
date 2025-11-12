@@ -1,0 +1,86 @@
+{
+	"meta": {
+		"name": "MANIFEST", "desc": "Website config and file register.",
+		"file": "manifest.json", "root": "PublicAssets", "path": "Tools/MasterCfgs/",
+		"version": 2.0, "change_note": "Added new tabs, master config and debug stuff.", "change_date": "11/11/25"
+	},
+	"git": {
+		"user": "juelz-101",
+		"repo": "PublicAssets",
+		"branch": "main",
+		"root": "",
+		"note": "All links in this file will begin from here. They will need to be joined together to make complete link"
+	},
+	"types": [
+		{"name": "find", "desc": "Add file names to 'get' array and set 'dir'"},
+		{"name": "root", "desc": "Set 'root' directory and then complete the directory for each file"}, 
+		{"name": "link", "desc": "Complete filepath starting from master root"},
+		{"name": "all", "desc": "Get all files in 'dir', can also just have no nested param and set it as folder directory"},
+		{"name": "rand", "desc": "Get a random(s) file from 'dir', optional: add filetypes to 'files:[]', also set 'num' for number of files to get"},
+		{"name": "ext", "desc": "Get files from another repo. 'git' array structure same as below and 'file' array to put type and params"}
+	],
+	"data": {
+	  "type": "find",
+	  "get": ["home.json", "music.json", "art.json", "tools.json", "gaming.json", "library.json", "community.json", "about.json"],
+	  "dir": "Website/lib"
+	},
+	"images": {
+		"logos": {
+			"type": "root",
+			"dir": "Website/img/logos",
+			"main_logo": "ZIKYinc-Music-Logo-Dark.png",
+			"music_logo": "ZIKYinc-Music-Logo-Dark.png",
+			"art_logo": "ZIKYinc_Art-Logo.png",
+			"dev_logo": "ZIKYinc_DevLogo.png",
+			"juelzfm_logo": "Juelz-FM-Logo.png"
+		},
+		"backgrounds": {
+			"main": "Website/img/bg/zikyinc",
+			"music": "",
+			"art": "",
+			"tools": "",
+			"gaming": "",
+			"community": "",
+			"library": "",
+			"about": "",
+			"juelzfm": ""
+		},
+		"misc": {
+			"album_art_dir": "img/album_art",
+			"html_dir": "lib/html",
+			"placeholders": {
+				"unknown": ["Images/Icons/Hex/PB_PlaceHolder1.png","Images/Icons/Hex/PB_PlaceHolder2.png","Images/Icons/Hex/PB_PlaceHolder3.png","Images/Icons/Hex/PB_PlaceHolder4.png"], 
+				"music": {"songs": ["Images/Icons/Hex/PB_PlaceHolder1.png","Images/Icons/Hex/PB_PlaceHolder2.png","Images/Icons/Hex/PB_PlaceHolder3.png","Images/Icons/Hex/PB_PlaceHolder4.png"], "artists": ["Images/Icons/Hex/PB_PlaceHolder1.png","Images/Icons/Hex/PB_PlaceHolder2.png","Images/Icons/Hex/PB_PlaceHolder3.png","Images/Icons/Hex/PB_PlaceHolder4.png"], "albums": ["Images/Icons/Hex/PB_PlaceHolder1.png","Images/Icons/Hex/PB_PlaceHolder2.png","Images/Icons/Hex/PB_PlaceHolder3.png","Images/Icons/Hex/PB_PlaceHolder4.png"] }, 
+				"art": [],
+				"tools": [],
+				"gaming": [],
+				"community": [],
+				"library": [],
+				"about": [],
+				"juelzfm": []
+			}
+		}
+  },
+  "audio": {
+    "tracks": [
+       {
+         "title": "Sample Track 1",
+         "artist": "Artist Name",
+         "url": "https://raw.githubusercontent.com/YourUser/YourRepo/main/audio/track1.mp3"
+       },
+       {
+         "title": "Sample Track 2",
+         "artist": "Artist Name",
+         "url": "https://raw.githubusercontent.com/YourUser/YourRepo/main/audio/track2.mp3"
+       }
+    ]
+  },
+  "cfg": {
+	"master_config": {"use": true, "source": "git", "url": "Tools/MasterConfigs/website_cfg.json"},
+	  "debug": {
+		  "on": true,
+		  "show_data_forms": true,
+		  "show_debug_icon": true
+	  }
+  }
+}

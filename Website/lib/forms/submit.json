@@ -1,7 +1,7 @@
 {
 	"meta": {
-		"name": "SUBMISSION FORM",
-		"file": "submt.json", "path": "website/lib/forms/",
+		"name": "SUBMISSION_FORM",
+		"file": "submit.json", "path": "website/lib/forms/",
 		"version": 1.0
 	},
 	"form_details": {

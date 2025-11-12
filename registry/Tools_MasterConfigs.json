@@ -16,5 +16,11 @@
     "ext": "json",
     "path": "Tools/MasterConfigs/config.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/config.json"
+  },
+  {
+    "name": "website_cfg.json",
+    "ext": "json",
+    "path": "Tools/MasterConfigs/website_cfg.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/website_cfg.json"
   }
 ]

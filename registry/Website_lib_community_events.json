@@ -1,0 +1,14 @@
+[
+  {
+    "name": "test_event.json",
+    "ext": "json",
+    "path": "Website/lib/community/events/test_event.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community/events/test_event.json"
+  },
+  {
+    "name": "test_event2.json",
+    "ext": "json",
+    "path": "Website/lib/community/events/test_event2.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community/events/test_event2.json"
+  }
+]

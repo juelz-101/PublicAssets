@@ -4,7 +4,7 @@
 		"file": "home.json", "root": "PublicAssets", "path": "website/lib/",
 		"version": 2.1, "change_note": "Moved 'Who We Are' to about.json", "change_date": "11/11/25"
 	},
-	"hero": {
+	"welcome": {
 		"title": "Welcome to ZIKYinc",
 		"image": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
 		"subtitle": "Amplifying Underground Creativity",

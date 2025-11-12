@@ -1,19 +1,45 @@
 {
 	"meta": {
-		"name": "LIBRARY", "desc": "Our inhouse library of useful documents for our tools and anything else",
-		"file": "library.json", "root": "PublicAssets", "path": "website/lib/",
-		"version": 1.0, "change_note": "Moved 'Who We Are' to about.json", "change_date": "11/11/25"
+		"name": "COMMUNITY", "desc": "",
+		"file": "community.json", "root": "PublicAssets", "path": "website/lib/",
+		"version": 1.0, "change_note": "created file", "change_date": "12/11/25"
 	},
-	"": {
-		"id": "RECEPTION",
-		"title": "ZIKYinc Library",
-		"image": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
-		"subtitle": "Docs for Days",
-		"welcome": "Welcome to the ZIKYinc Document Library.",
-		"what_its_for": "",
-		"what_it_covers": "",
-		"document_types": [],
-		"adding_documents": ""
-	},
-	"aisles": []
+	"introduction": "",
+	"people": [
+		{
+			"name": "Lisa Labon", "type": "Author",
+			"desc": "",
+			"thumbnail": "Website/img/photos/J2.jpg",
+			"link": "Website/lib/community/people/lisa.json",
+			"subjects": [ "Books", "Poems", "Art" ],
+			"items": [
+				{"name": "Legacy of Love Trilogy", "subject": "Books", "thumbnail": "Website/img/photos/community/blink.jpg", "link": "Website/lib/community/people/lisa/lol.json"}
+			],
+			"debug": false
+		}
+	],
+	"events": [
+		{
+			"name": "Test Charity Event", "type": "Online",
+			"desc": "This is an example event",
+			"thumbnail": "Website/img/placeholders/event.jpg",
+			"link": "Website/lib/community/events/test_event.json",
+			"location": {
+				"type": "link",
+				"loc": "www.example.com/video_meeting"
+			},
+			"debug": true
+		},
+		{
+			"name": "Test Charity Event 2", "type": "Place",
+			"desc": "This is an example event",
+			"thumbnail": "Website/img/placeholders/event.jpg",
+			"link": "Website/lib/community/events/test_event2.json",
+			"location": {
+				"type": "address",
+				"loc": "ZIKYinc, 38 London Road, London, DA2 6DJ"
+			},
+			"debug": true
+		}
+	]
 }

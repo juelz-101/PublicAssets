@@ -291,7 +291,8 @@ PublicAssets/
 │   └── MasterConfigs/
 │       ├── Alldio_Cfg.json
 │       ├── QRG_Cfg.json
-│       └── config.json
+│       ├── config.json
+│       └── website_cfg.json
 ├── Website/
 │   ├── AI_Setup.txt
 │   ├── Website IMG (P.Ass).lnk
@@ -343,6 +344,8 @@ PublicAssets/
 │   │   │       ├── ZIKYinc-Water-3.png
 │   │   │       ├── ZIKYinc-WildStyle-BG1.jpeg
 │   │   │       └── ZIKYinc-WildStyle-BG2.jpeg
+│   │   ├── community/
+│   │   │   └── blink.jpg
 │   │   ├── logos/
 │   │   │   ├── Juelz-FM-Logo.png
 │   │   │   ├── Juelz-FM-Logo2.png
@@ -363,57 +366,68 @@ PublicAssets/
 │   │   │   ├── ZIKYinc-PaintGirl.png
 │   │   │   ├── ZIKYinc-Random-FaceFX.jpeg
 │   │   │   └── placeholder.jpg
-│   │   └── photos/
-│   │       ├── Alice.png
-│   │       ├── Codie.jpeg
-│   │       ├── Damian.jpeg
-│   │       ├── Em.jpeg
-│   │       ├── Em2.jpeg
-│   │       ├── Em3.jpeg
-│   │       ├── EmForest.jpeg
-│   │       ├── Emma.jpeg
-│   │       ├── Emma4.jpeg
-│   │       ├── Imperial-P-Photo.jpeg
-│   │       ├── Imperial-P.jpeg
-│   │       ├── Imperial-P2.jpeg
-│   │       ├── Imperial-P2.xcf
-│   │       ├── J.png
-│   │       ├── J1.jpg
-│   │       ├── J2.jpg
-│   │       ├── Kyle.jpeg
-│   │       ├── Kyles.jpeg
-│   │       ├── Kyles3.jpeg
-│   │       ├── Kyles4.jpeg
-│   │       ├── Kyles5.jpeg
-│   │       ├── KymPhoto.jpeg
-│   │       ├── WelshHotdog2010.jpeg
-│   │       ├── ZIKYHide.jpeg
-│   │       ├── ZIKYHide2.jpeg
-│   │       ├── ZIKYHide3.jpeg
-│   │       ├── ZIKYHide4.jpeg
-│   │       ├── ZIKYHide5.jpeg
-│   │       ├── ZIKYHide6.jpeg
-│   │       ├── ZIKYHide7.jpeg
-│   │       ├── ZIKYinc-Header_FX.jpeg
-│   │       ├── ZikyGroup.jpeg
-│   │       ├── em4.jpeg
-│   │       ├── emma/
-│   │       │   ├── Emma-MT-Rave-ZIKYinc-2.jpg
-│   │       │   ├── Emma-MT-Rave-ZIKYinc-3.jpg
-│   │       │   ├── Emma-MT-Rave-ZIKYinc-4.jpg
-│   │       │   ├── Emma-MT-Rave-ZIKYinc-5.jpg
-│   │       │   ├── Emma-MT-Rave-ZIKYinc-6.jpg
-│   │       │   ├── Emma-MT-Rave-ZIKYinc-7.jpg
-│   │       │   ├── Emma-MT-Rave-ZIKYinc-8.jpg
-│   │       │   └── Emma-MT-Rave-ZIKYinc.jpg
-│   │       ├── emma2.jpeg
-│   │       ├── emma3.jpeg
-│   │       ├── mum.avif
-│   │       ├── pete.jpeg
-│   │       └── pete2.jpeg
+│   │   ├── photos/
+│   │   │   ├── Alice.png
+│   │   │   ├── Codie.jpeg
+│   │   │   ├── Damian.jpeg
+│   │   │   ├── Em.jpeg
+│   │   │   ├── Em2.jpeg
+│   │   │   ├── Em3.jpeg
+│   │   │   ├── EmForest.jpeg
+│   │   │   ├── Emma.jpeg
+│   │   │   ├── Emma4.jpeg
+│   │   │   ├── Imperial-P-Photo.jpeg
+│   │   │   ├── Imperial-P.jpeg
+│   │   │   ├── Imperial-P2.jpeg
+│   │   │   ├── Imperial-P2.xcf
+│   │   │   ├── J.png
+│   │   │   ├── J1.jpg
+│   │   │   ├── J2.jpg
+│   │   │   ├── Kyle.jpeg
+│   │   │   ├── Kyles.jpeg
+│   │   │   ├── Kyles3.jpeg
+│   │   │   ├── Kyles4.jpeg
+│   │   │   ├── Kyles5.jpeg
+│   │   │   ├── KymPhoto.jpeg
+│   │   │   ├── WelshHotdog2010.jpeg
+│   │   │   ├── ZIKYHide.jpeg
+│   │   │   ├── ZIKYHide2.jpeg
+│   │   │   ├── ZIKYHide3.jpeg
+│   │   │   ├── ZIKYHide4.jpeg
+│   │   │   ├── ZIKYHide5.jpeg
+│   │   │   ├── ZIKYHide6.jpeg
+│   │   │   ├── ZIKYHide7.jpeg
+│   │   │   ├── ZIKYinc-Header_FX.jpeg
+│   │   │   ├── ZikyGroup.jpeg
+│   │   │   ├── em4.jpeg
+│   │   │   ├── emma/
+│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-2.jpg
+│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-3.jpg
+│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-4.jpg
+│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-5.jpg
+│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-6.jpg
+│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-7.jpg
+│   │   │   │   ├── Emma-MT-Rave-ZIKYinc-8.jpg
+│   │   │   │   └── Emma-MT-Rave-ZIKYinc.jpg
+│   │   │   ├── emma2.jpeg
+│   │   │   ├── emma3.jpeg
+│   │   │   ├── mum.avif
+│   │   │   ├── pete.jpeg
+│   │   │   └── pete2.jpeg
+│   │   └── placeholders/
+│   │       ├── event.jpg
+│   │       └── placeholder.jpg
 │   └── lib/
 │       ├── about.json
 │       ├── art.json
+│       ├── community/
+│       │   ├── events/
+│       │   │   ├── test_event.json
+│       │   │   └── test_event2.json
+│       │   └── people/
+│       │       ├── lisa/
+│       │       │   └── lol.json
+│       │       └── lisa.json
 │       ├── community.json
 │       ├── cur_projects.json
 │       ├── forms/
