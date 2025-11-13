@@ -2,7 +2,7 @@
 	"meta": {
 		"name": "MANIFEST", "desc": "Website config and file register.",
 		"file": "manifest.json", "root": "PublicAssets", "path": "Tools/MasterCfgs/",
-		"version": 2.2, "change_note": "Fleshed out settings object.", "change_date": "14/11/25"
+		"version": 2.3, "change_note": "Expanded UI settings for dynamic control.", "change_date": "15/11/25"
 	},
 	"git": {
 		"user": "juelz-101",
@@ -22,7 +22,7 @@
 	"settings": {
 		"desc": "Dev-level backend settings for the site. Can be overridden in the debug menu",
 		"site": {
-			"allow_auto_background_change": false,
+			"allow_auto_background_change": true,
 			"background_change_interval_min_seconds": 20,
 			"background_change_interval_max_seconds": 40,
 			"default_tab": "Home"
@@ -31,9 +31,23 @@
 			"show_debug_items_by_default": false
 		},
 		"ui": {
-			"default_blur_amount_px": 16,
 			"show_ui_on_load": true,
-			"enable_glow_effect": true
+			"layout": {
+				"padding_base_unit_px": 4,
+				"main_content_padding_multiplier": 4,
+				"panel_padding_multiplier": 6,
+				"panel_border_radius_px": 16,
+				"panel_ring_opacity_percent": 10
+			},
+			"effects": {
+				"background_blur_px": 16,
+				"header_blur_px": 16,
+				"footer_blur_px": 16,
+				"hud_blur_px": 16,
+				"enable_glow_effect": true,
+				"glow_primary_color_rgba": "245, 158, 11",
+				"glow_primary_opacity_percent": 20
+			}
 		}
 	},
 	"data": {
