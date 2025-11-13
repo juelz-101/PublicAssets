@@ -22,7 +22,7 @@
 	"settings": {
 		"desc": "Dev-level backend settings for the site. Can be overridden in the debug menu",
 		"site": {
-			"allow_auto_background_change": true,
+			"allow_auto_background_change": false,
 			"background_change_interval_min_seconds": 20,
 			"background_change_interval_max_seconds": 40,
 			"default_tab": "Home"
