@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"name": "LOBBY", "desc": "POST file for the Library's root folder.",
+		"file": "lobby.mpo", "root": "PublicAssets", "path": "Library/",
+		"version": 1.0, "change_note": "Created file.", "change_date": "11/11/25"
+	},
+	"cfg": {
+		"flag": "",
+		"header": "ZLIB_Lob",
+		"title": "ZIKYinc Library Lobby",
+		"subtitle": "Where would you like to take a peek at?",
+		"img": {
+			"banner": [],
+			"main": [],
+			"acordian": [],
+			"bg": []
+		},
+		"footer": "ZIKYinc 2025",
+		"hidden": {
+			"desc": "files and folders that are hidden",
+			"files": [],
+			"folders": []
+		},
+		"debug": {
+			"desc": "files and folders that are only shown when debug mode is on.",
+			"files": [],
+			"folders": []
+		},
+		"admin": {
+			"desc": "files and folders that are only visible to Admin",
+			"files": [],
+			"folders": []
+		},
+		"subscriber": {
+			"desc": "files and folders that are only visible to subscribers",
+			"files": [],
+			"folders": []
+		},
+		
+	}
+}

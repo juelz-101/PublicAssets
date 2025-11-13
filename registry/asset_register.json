@@ -31,6 +31,12 @@
       "ext": "mld",
       "path": "Library/MasterDictionary.mld",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/MasterDictionary.mld"
+    },
+    {
+      "name": "Library.mpo",
+      "ext": "mpo",
+      "path": "Library/Library.mpo",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Library.mpo"
     }
   ],
   "Library/ZIKYinc": [],

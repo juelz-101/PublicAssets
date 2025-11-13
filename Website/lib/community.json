@@ -4,7 +4,10 @@
 		"file": "community.json", "root": "PublicAssets", "path": "website/lib/",
 		"version": 1.0, "change_note": "created file", "change_date": "12/11/25"
 	},
-	"introduction": "",
+	"introduction": {
+		"title": "Amplifying Our Collective Voice",
+		"text": "The heart of ZIKYinc lies in our community. This is where artists, developers, authors, and fans converge to celebrate underground creativity. Explore the work of our **independent collaborators**, connect with fellow enthusiasts, and find out about the **events** that keep our creative ecosystem vibrant. Whether you're here to discover new talent or share your own journey, this hub is built for connection and mutual support."
+	},
 	"people": [
 		{
 			"name": "Lisa Labon", "type": "Author",
