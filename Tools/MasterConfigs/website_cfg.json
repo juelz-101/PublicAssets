@@ -2,7 +2,7 @@
 	"meta": {
 		"name": "MANIFEST", "desc": "Website config and file register.",
 		"file": "manifest.json", "root": "PublicAssets", "path": "Tools/MasterCfgs/",
-		"version": 2.0, "change_note": "Added new tabs, master config and debug stuff.", "change_date": "11/11/25"
+		"version": 2.2, "change_note": "Fleshed out settings object.", "change_date": "14/11/25"
 	},
 	"git": {
 		"user": "juelz-101",
@@ -19,11 +19,29 @@
 		{"name": "rand", "desc": "Get a random(s) file from 'dir', optional: add filetypes to 'files:[]', also set 'num' for number of files to get"},
 		{"name": "ext", "desc": "Get files from another repo. 'git' array structure same as below and 'file' array to put type and params"}
 	],
+	"settings": {
+		"desc": "Dev-level backend settings for the site. Can be overridden in the debug menu",
+		"site": {
+			"allow_auto_background_change": true,
+			"background_change_interval_min_seconds": 20,
+			"background_change_interval_max_seconds": 40,
+			"default_tab": "Home"
+		},
+		"content": {
+			"show_debug_items_by_default": false
+		},
+		"ui": {
+			"default_blur_amount_px": 16,
+			"show_ui_on_load": true,
+			"enable_glow_effect": true
+		}
+	},
 	"data": {
 	  "type": "find",
 	  "get": ["home.json", "music.json", "art.json", "tools.json", "gaming.json", "library.json", "community.json", "about.json"],
 	  "dir": "Website/lib"
 	},
+	"library": {"type": "all", "dir": "Library"},
 	"images": {
 		"logos": {
 			"type": "root",
