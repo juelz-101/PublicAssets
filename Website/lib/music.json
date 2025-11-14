@@ -857,7 +857,33 @@
 			"other_links":[]
 		}	
 	],
-	"juelz_fm": {},
+	"juelz_fm": {
+		  "station": "Juelz-FM",
+		  "desc": "A satire London tower-block pirate station broadcasting from an undisclosed high-rise. Known for chaotic energy, late-night transmissions, and interference complaints from half the borough.",
+		  "resident_dj": {
+			"name": "DJ Slim Sliver",
+			"bio": "A shadowy figure with a voice smoother than stolen cable. Expert at dodging Ofcom vans and spinning grime, jungle, and anything loud enough to rattle the stairwell."
+		  },
+		  "shows": [
+			{
+			  "title": "Midnight Concrete Mix",
+			  "time": "00:00–02:00",
+			  "vibe": "Dark grime, humid tower-block ambience, and Slim Sliver ranting about broken lifts."
+			},
+			{
+			  "title": "Roofline Sessions",
+			  "time": "Fridays 21:00–23:00",
+			  "vibe": "Live sets recorded dangerously close to the edge of the roof. Crowd of three pigeons included."
+			},
+			{
+			  "title": "Sliver Speaks",
+			  "time": "Sundays 18:00–19:00",
+			  "vibe": "Community gossip, suspicious stories, and questionable advice for local musicians."
+			}
+		  ],
+		  "tagline": "Broadcasting illegally, proudly, and louder than the council wants."
+	},
+
 	"film_music": [],
 	"game_music": []
 }
