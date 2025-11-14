@@ -22,9 +22,6 @@
 	"settings": {
 		"desc": "Dev-level backend settings for the site. Can be overridden in the debug menu",
 		"site": {
-			"allow_auto_background_change": true,
-			"background_change_interval_min_seconds": 20,
-			"background_change_interval_max_seconds": 40,
 			"default_tab": "Home"
 		},
 		"content": {
@@ -47,6 +44,12 @@
 				"enable_glow_effect": true,
 				"glow_primary_color_rgba": "245, 158, 11",
 				"glow_primary_opacity_percent": 20
+			},
+			"backgrounds": {
+				"allow_auto_change": true,
+				"per_page_switching": true,
+				"change_interval_min_seconds": 20,
+				"change_interval_max_seconds": 40
 			}
 		}
 	},
