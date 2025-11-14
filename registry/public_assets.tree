@@ -198,8 +198,13 @@ PublicAssets/
 ├── Library/
 │   ├── AI/
 │   │   └── Experiments/
-│   │       └── CharacterConsistency-Gemini/
-│   │           └── AI ASSET CONSISTENCY TEST - Gemini (pro).gdoc
+│   │       ├── CharacterConsistency-Gemini/
+│   │       │   └── AI ASSET CONSISTENCY TEST - Gemini (pro).gdoc
+│   │       └── Shutdown-Senario/
+│   │           ├── Chats/
+│   │           │   └── Setup-Chat.txt
+│   │           └── Emails/
+│   │               └── [SHUT]-Emails_Original.txt
 │   ├── Coding/
 │   │   ├── AHK/
 │   │   │   └── AHK AutoHotkey V2 Reference & Guide.txt
@@ -400,6 +405,7 @@ PublicAssets/
 │   │   │   ├── ZIKYHide7.jpeg
 │   │   │   ├── ZIKYinc-Header_FX.jpeg
 │   │   │   ├── ZikyGroup.jpeg
+│   │   │   ├── cos.jpg
 │   │   │   ├── em4.jpeg
 │   │   │   ├── emma/
 │   │   │   │   ├── Emma-MT-Rave-ZIKYinc-2.jpg
@@ -412,6 +418,9 @@ PublicAssets/
 │   │   │   │   └── Emma-MT-Rave-ZIKYinc.jpg
 │   │   │   ├── emma2.jpeg
 │   │   │   ├── emma3.jpeg
+│   │   │   ├── jfm/
+│   │   │   │   ├── jfm.jpeg
+│   │   │   │   └── jfm2.jpeg
 │   │   │   ├── mum.avif
 │   │   │   ├── pete.jpeg
 │   │   │   └── pete2.jpeg

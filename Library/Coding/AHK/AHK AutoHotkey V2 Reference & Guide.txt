@@ -1,7 +1,4 @@
 
----
-
-```markdown
 # AHK V2 (AutoHotkey Version 2) Reference & Guide
 
 **Version:** 1.0  

@@ -282,6 +282,23 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Experiments/CharacterConsistency-Gemini/AI ASSET CONSISTENCY TEST - Gemini (pro).gdoc"
     }
   ],
+  "Library/AI/Experiments/Shutdown-Senario": [],
+  "Library/AI/Experiments/Shutdown-Senario/Chats": [
+    {
+      "name": "Setup-Chat.txt",
+      "ext": "txt",
+      "path": "Library/AI/Experiments/Shutdown-Senario/Chats/Setup-Chat.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Experiments/Shutdown-Senario/Chats/Setup-Chat.txt"
+    }
+  ],
+  "Library/AI/Experiments/Shutdown-Senario/Emails": [
+    {
+      "name": "[SHUT]-Emails_Original.txt",
+      "ext": "txt",
+      "path": "Library/AI/Experiments/Shutdown-Senario/Emails/[SHUT]-Emails_Original.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Experiments/Shutdown-Senario/Emails/[SHUT]-Emails_Original.txt"
+    }
+  ],
   "Images": [],
   "Images/Logos": [],
   "Images/Logos/Tings": [
@@ -1855,6 +1872,12 @@
       "ext": "png",
       "path": "Website/img/photos/J.png",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/J.png"
+    },
+    {
+      "name": "cos.jpg",
+      "ext": "jpg",
+      "path": "Website/img/photos/cos.jpg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/cos.jpg"
     }
   ],
   "Website/img/photos/emma": [
@@ -1905,6 +1928,20 @@
       "ext": "jpg",
       "path": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-7.jpg",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-7.jpg"
+    }
+  ],
+  "Website/img/photos/jfm": [
+    {
+      "name": "jfm.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/jfm/jfm.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/jfm/jfm.jpeg"
+    },
+    {
+      "name": "jfm2.jpeg",
+      "ext": "jpeg",
+      "path": "Website/img/photos/jfm/jfm2.jpeg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/jfm/jfm2.jpeg"
     }
   ],
   "Website/img/logos": [

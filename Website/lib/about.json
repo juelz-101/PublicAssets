@@ -64,7 +64,7 @@
 				"name": "Codie",
 				"bio": "Our in-house journalist. These bios would be a lot more proffessional looking if she didnt call in sick today.",
 				"images": [
-					"Website/img/photos/odie.jpeg"
+					"Website/img/photos/codie.jpeg"
 				]
 			},
 			{
@@ -72,6 +72,13 @@
 				"bio": "Artist, Author and Poet.",
 				"images": [
 					"Website/img/photos/mum.avif"
+				]
+			},
+			{
+				"name": "DJ COS",
+				"bio": "Our resident DJ, specialises in DNB.",
+				"images": [
+					"Website/img/photos/aaron.avif"
 				]
 			},
 			{

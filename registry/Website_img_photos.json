@@ -226,5 +226,11 @@
     "ext": "png",
     "path": "Website/img/photos/J.png",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/J.png"
+  },
+  {
+    "name": "cos.jpg",
+    "ext": "jpg",
+    "path": "Website/img/photos/cos.jpg",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/photos/cos.jpg"
   }
 ]
