@@ -150,4 +150,7 @@
 					{"name": "limit", "desc": "Set a limit to how many requests can be made", "cfg": {"refresh_mode": {"desc": "Set when to refresh current count", "default": "never", "i": [ {"name": "never", "desc": "Never refresh limit"}, {"name": "on_app_load", "desc": "Refreshes when app is refreshed"}, {"name": "on_tab_switch", "desc": "Refreshes when switching tabs"}, {"name": "timer", "desc": "Set a timer"} ] }} },
 					{"name": "block", "desc": "Dont allow any images to be set" }
 				]
+			}
+		}
+	}
 }
