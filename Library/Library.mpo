@@ -4,7 +4,7 @@
 		"file": "lobby.mpo", "root": "PublicAssets", "path": "Library/",
 		"version": 1.0, "change_note": "Created file.", "change_date": "11/11/25"
 	},
-	"cfg": {
+	"folder": {
 		"flag": "",
 		"header": "ZLIB_Lob",
 		"title": "ZIKYinc Library Lobby",

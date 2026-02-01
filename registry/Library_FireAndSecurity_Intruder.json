@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Honeywell_Parts.txt",
+    "ext": "txt",
+    "path": "Library/FireAndSecurity/Intruder/Honeywell_Parts.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/FireAndSecurity/Intruder/Honeywell_Parts.txt"
+  },
+  {
+    "name": "Pyronix_Parts.txt",
+    "ext": "txt",
+    "path": "Library/FireAndSecurity/Intruder/Pyronix_Parts.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/FireAndSecurity/Intruder/Pyronix_Parts.txt"
+  },
+  {
+    "name": "Texecom_Parts.txt",
+    "ext": "txt",
+    "path": "Library/FireAndSecurity/Intruder/Texecom_Parts.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/FireAndSecurity/Intruder/Texecom_Parts.txt"
+  },
+  {
+    "name": "HKC_Parts.txt",
+    "ext": "txt",
+    "path": "Library/FireAndSecurity/Intruder/HKC_Parts.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/FireAndSecurity/Intruder/HKC_Parts.txt"
+  }
+]

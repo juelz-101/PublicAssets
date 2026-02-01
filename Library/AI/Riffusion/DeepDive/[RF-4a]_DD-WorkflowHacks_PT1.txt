@@ -1,0 +1,72 @@
+### Advanced Producer.ai Workflows: The Power User’s Guide
+This document outlines "hacky" and advanced methods for utilizing the Producer.ai toolset. By chaining tools and pushing parameters to their limits, artists can achieve results that go beyond standard music generation.
+
+1. Subtractive Sound Design (Negative Vibes)
+Concept: Instead of telling the AI what you want, you tell it what you don't want. This forces the model into unique sonic territories by eliminating common tropes.
+
+- The Workflow: Create or find a song that represents a sound you wish to avoid (e.g., "Generic Corporate Pop" or "Over-saturated Bass"). Create a Vibe from it. When generating a new song with `riff_create_custom`, add this Vibe but set its `strength` to `-1.0`.
+
+- Example: If you want a raw, lo-fi sound, use a high-fidelity Studio-produced Vibe with a strength of `-1.0`. The AI will actively move away from "clean" production, often resulting in organic, gritty textures.
+
+2. Syllable Overloading (The "Glitch" Effect)
+Concept: Forcing more text into a time-restricted window than naturally fits to create rapid-fire delivery or glitchy stutters.
+
+- The Workflow: Identify a short segment of a song (e.g., 0.5 to 1.0 seconds) using `riff_replace_audio`. Provide `lyrics_text` that is 5-10 words long for that tiny window.
+
+- Example: In a 0.5s clip, replace the lyrics with "stop-stop-stop-stop-go". Because the model must resolve all syllables in that timeframe, it creates a high-speed rhythmic stutter that sounds like manual audio chopping.
+
+3. The Synesthesia Feedback Loop
+Concept: Using AI analysis to drive visual generation, creating a perfect aesthetic match between audio and video.
+
+- The Workflow:
+
+- Generate a song.
+
+- Pass the `raw_audio_url` to `listen_to_audio_from_url`.
+
+- Use a prompt like: "Describe the colors, textures, and movements this music evokes in a cinematic visual sense."
+
+- Take the resulting description and use it as the `prompt` for `visualize_audio` or `music_video__create`.
+
+- Result: You bypass human bias, allowing the AI to "draw" what it "hears," leading to visualizers that feel deeply connected to the frequency and mood of the track.
+
+4. "Breeding" Audio (Stem Iteration)
+Concept: Taking the best AI-generated elements and using them as the foundation for the next "generation" of a song.
+
+- The Workflow:
+
+- Generate a full track.
+
+- Use `riff_split_stems_v2` to isolate the elements (e.g., just the drums).
+
+- Take the newly created Drum stem and save it as a Vibe.
+
+- Start a new generation using that Vibe.
+
+- Example: This allows you to "capture" a rhythm you like while discarding a melody you don't, effectively evolving your song through multiple generations of refined prompts.
+
+5. Virtual Signal Interference (Atmospheric Intros)
+Concept: Using the temporal masking features (`time_start` and `time_end`) to create high-production-value transitions or environmental context.
+
+- The Workflow: In `riff_create_custom`, use two sound prompts.
+
+- Prompt A: "Radio static, vinyl crackle, street noise" with `time_end` at 5.0.
+
+- Prompt B: Your actual genre (e.g., "Chillhop beat") with `time_start` at 4.0.
+
+- Result: A seamless 1-second crossfade from environmental "noise" into the music, mimicking the feel of a radio being tuned or a needle dropping on a record.
+
+6. Stem-Swapping for Custom Remixes
+Concept: Using an existing vocal as a "template" for a completely different genre without changing the lyrics or timing.
+
+- The Workflow: Take any track (yours or a public one) and use `riff_stem_swap`. Choose `swap_type: 'instrumentals'`. Provide a `sound_prompt` for a completely contrasting genre (e.g., move from "Heavy Metal" to "Bossa Nova").
+
+- Result: The AI preserves the vocal performance and lyrics exactly but rebuilds the entire musical world underneath it, creating an instant, high-quality remix.
+
+### Implementation Checklist for Producers
+
+- [ ] Check Seed: Always keep your `seed` consistent when trying these hacks so you can see how minor prompt changes affect the "hack."
+
+- [ ] Monitor Weirdness: When doing syllable overloading or negative vibes, increase `weirdness` to 0.7 or higher to allow the model more "creative room" to break standard patterns.
+
+- [ ] Chain Metadata: Use `riffusion_data_songs__fetch_metadata_by_id` to retrieve the original sound prompts of a song you like before attempting to "hack" it.

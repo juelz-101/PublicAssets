@@ -1,0 +1,267 @@
+# Engineering Standard: High-Performance Systems
+
+**Status:** Active Standard **Focus:** Data-Intensive, Offline-First, System-Level Operations **Maintainer:** Systems Engineering Lead
+
+## 1. Executive Summary
+
+This document outlines the standard operating procedures for building applications that require **native performance**, **heavy local data processing**, or **system-level access** beyond standard CRUD operations.
+
+We utilize two primary stacks depending on the target form factor:
+1. 
+
+**Mobile First:** **Kotlin Multiplatform (KMP)**. Used when we need to share complex business logic (algorithms, sync engines, encryption) between iOS and Android without the performance bridge penalty of JS-based frameworks.
+1. 
+
+**Desktop First:** **Tauri (Rust)**. Used for secure, low-memory desktop applications where the backend logic runs in compiled Rust, communicating with a lightweight web frontend.
+
+## Part I: Mobile Standard (Kotlin Multiplatform)
+
+### 2. Environment Setup (KMP)
+
+KMP requires a rigorous environment setup to handle both the JVM and LLVM toolchains simultaneously.
+
+#### 2.1 Core Dependencies
+- 
+
+**JDK:** Version 17 (Zulu or Amazon Corretto recommended). Ensure `JAVA_HOME` is set.
+- 
+
+**Android Studio:** Latest Stable (Koala/Ladybug+).
+- 
+
+**Xcode (macOS):** Latest Stable.
+- 
+
+**CocoaPods:** `sudo gem install cocoapods` (Often required for iOS interoperability).
+
+#### 2.2 The Diagnostic Tool (Critical)
+
+You **must** install KDoctor. It detects environment mismatches that cause cryptic Gradle failures.
+```
+brew install kdoctor
+kdoctor
+
+```
+
+_Rule: Do not proceed until KDoctor returns all green checkmarks._
+
+### 2.3 Project Scaffolding
+
+We use the official JetBrains Wizard to ensure Gradle catalogs are correctly configured.
+1. 
+
+Go to **kmp.jetbrains.com**.
+1. 
+
+**Project Settings:**
+  - 
+
+**Android:** Select "Yes".
+  - 
+
+**iOS:** Select "Yes" (Share UI).
+  - 
+
+**Deskstop/Web:** Select "No" (unless explicitly required).
+1. 
+
+**Download & Extract.**
+1. 
+
+**Open in Android Studio.**
+
+#### 2.4 Directory Structure
+```
+/
+├── composeApp/           # The UI Layer (Compose Multiplatform)
+│   ├── src/
+│   │   ├── androidMain/  # Android-specific UI overrides
+│   │   ├── iosMain/      # iOS-specific UI overrides
+│   │   └── commonMain/   # SHARED UI code (95% of work happens here)
+├── iosApp/               # The iOS Entry Point (SwiftUI wrapper)
+├── shared/               # The Business Logic Layer (Optional split)
+└── gradle/libs.versions.toml # Dependency Management
+
+```
+
+### 2.5 The KMP "Golden Stack"
+
+| Category | Library | Usage |
+| --- | --- | --- |
+| **Networking** | **Ktor** | Multiplatform HTTP client. Use `ktor-client-core` and `ktor-client-darwin`/`okhttp`. |
+| **Database** | **Room** (MP) | Google's official SQLite wrapper, now supports Multiplatform (SQLiteDriver). |
+| **Dependency Injection** | **Koin** | Service locator pattern. simpler than Hilt/Dagger for KMP. |
+| **Concurrency** | **Coroutines** | `kotlinx.coroutines`. Essential for background threads. |
+| **Serialization** | **Kotlinx.Serialization** | JSON parsing. |
+
+### 2.6 Implementation Pattern: The ViewModel
+
+In KMP, the ViewModel lives in `commonMain` and survives configuration changes.
+```
+// commonMain/viewmodel/MyViewModel.kt
+class MyViewModel(private val repository: DataRepository) : ViewModel() {
+    private val _state = MutableStateFlow(UiState.Loading)
+    val state = _state.asStateFlow()
+
+    fun loadData() {
+        viewModelScope.launch {
+            val data = repository.fetchHeavyData() // Runs on background thread
+            _state.value = UiState.Success(data)
+        }
+    }
+}
+
+```
+
+## Part II: Desktop Standard (Tauri + Rust)
+
+### 3. Environment Setup (Tauri)
+
+Tauri apps consist of a Rust backend (handling the OS) and a Web frontend (handling the UI).
+
+#### 3.1 Core Dependencies
+- 
+
+**Rust (via Rustup):**
+```
+curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs) | sh
+
+```
+- 
+
+**Node.js:** Active LTS.
+- 
+
+**System Build Tools:**
+  - 
+
+_macOS:_ Xcode Command Line Tools.
+  - 
+
+_Windows:_ C++ Build Tools (via Visual Studio Installer).
+  - 
+
+_Linux:_ `sudo apt install build-essential libwebkit2gtk-4.0-dev`
+
+#### 3.2 Scaffolding
+```
+npm create tauri-app@latest
+
+```
+- 
+
+**Frontend Framework:** React (TypeScript) or Vue.
+- 
+
+**Package Manager:** npm.
+- 
+
+**CSS:** Tailwind CSS.
+
+#### 3.3 Directory Structure
+```
+/
+├── src/                  # Frontend Code (React/Vue)
+│   ├── App.tsx
+│   └── components/
+├── src-tauri/            # Backend Code (Rust)
+│   ├── src/
+│   │   ├── main.rs       # Entry point
+│   │   └── lib.rs        # Command definitions
+│   ├── tauri.conf.json   # Security & Window Config
+│   └── Cargo.toml        # Rust Dependencies
+└── package.json
+
+```
+
+### 3.4 Architecture: The Command Pattern
+
+Do not write heavy logic in JavaScript. Pass it to Rust via "Commands".
+
+**1. Define Command (Rust):**
+```
+// src-tauri/src/lib.rs
+#[tauri::command]
+fn heavy_computation(data: Vec<u8>) -> String {
+    // This runs in compiled Rust (Native Speed)
+    let result = complex_algorithm(data);
+    format!("Processed {} bytes", result.len())
+}
+
+```
+
+**2. Register Command (Rust):**
+```
+// src-tauri/src/lib.rs
+pub fn run() {
+    tauri::Builder::default()
+        .invoke_handler(tauri::generate_handler![heavy_computation])
+        .run(tauri::generate_context!())
+        .expect("error while running tauri application");
+}
+
+```
+
+**3. Call Command (TypeScript):**
+```
+// src/App.tsx
+import { invoke } from "@tauri-apps/api/core";
+
+async function process() {
+  const response = await invoke("heavy_computation", { data: myData });
+  console.log(response);
+}
+
+```
+
+### 3.5 Security Configuration
+
+Tauri is secure by default, but you must explicitly allow capabilities.
+- 
+
+**File:** `src-tauri/capabilities/default.json`
+- 
+
+**Rule:** Only whitelist the specific APIs you use (e.g., `fs:read`, `http:request`). Never use wildcards `*` in production.
+
+## 4. Common Pitfalls & Troubleshooting
+
+### KMP Issues
+- 
+
+**"Unresolved Reference" in IDE:** This is usually a Gradle sync issue. Try `File -> Invalidate Caches -> Restart`.
+- 
+
+**iOS Build Failures:** Often related to signing or CocoaPods. Open `iosApp.xcodeproj` directly in Xcode to see the _real_ error message (Android Studio hides the details).
+- 
+
+**Swift Interop:** Kotlin `suspend` functions compile to completion handlers in Swift. To use `async/await` in Swift, add the **SKIE** plugin to your Gradle config.
+
+### Tauri Issues
+- 
+
+**WebView Version:** On Windows, Tauri relies on WebView2. Ensure the end-user has the WebView2 runtime installed (standard on Win 10/11, but check for Win 7/8 legacy support).
+- 
+
+**Sidecars:** If you are bundling external binaries (e.g., Python scripts or ffmpeg), they must be defined in `tauri.conf.json` under `bundle > externalBin`.
+- 
+
+**CORS:** Tauri's HTTP client bypasses CORS, but if you use `fetch` in the JS frontend, normal browser CORS rules apply. Use the Rust HTTP client for external APIs.
+
+## 5. Deployment Checklist
+
+### Mobile (KMP)
+- 
+
+[ ] **Proguard/R8:** Ensure rules are added for any reflection-based libraries (like Serialization).
+- 
+
+[ ] **Signing:** Configure `signingConfigs` in `build.gradle.kts` for release builds.
+
+### Desktop (Tauri)
+- 
+
+[ ] **Icons:** Run `npm run tauri icon path/to/icon.png` to generate ICNS/ICO files automatically.
+- 
+
+[ ] **Updater:** Configure the built-in Tauri updater in `tauri.conf.json` using a public key/private key pair.

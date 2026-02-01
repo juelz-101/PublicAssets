@@ -4,5 +4,11 @@
     "ext": "mld",
     "path": "Library/GeneralComputing/Hardware/KeyboardSymbols.mld",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Hardware/KeyboardSymbols.mld"
+  },
+  {
+    "name": "[CH-GCPU]-KeyboardSymbols.mlb",
+    "ext": "mlb",
+    "path": "Library/GeneralComputing/Hardware/[CH-GCPU]-KeyboardSymbols.mlb",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Hardware/[CH-GCPU]-KeyboardSymbols.mlb"
   }
 ]

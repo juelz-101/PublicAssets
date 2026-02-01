@@ -65,6 +65,8 @@
 		fm			Format			Lander			Pointer			Viewer			[]				[]						[Y]				 Text formatting.
 		pp			PowerPrompt		Lander			Pointer			Prompting		[]				[]						[Y]				 A powerful prompt-builder.
 		w			Windows			Lander			Pointer			All				[]				[]						[Y]				 Refers to the Windows system-level MKU control.
+		i			Reference		Lander			Pointer			All				[]				[]						[Y]				 Parts of documents thats for guidence and intended to be removed while adding real data to the file.
+		?			Comment			Lander			Pointer			All				[]				[]						[Y]				 Debug info and comments that are hidden in render normally but can be seen with .
 	--	
 		.			Step-In			NaviTag			Snooper			All				[]				[]						[]				 Navigate into the params of current item.
 		^			Step-Back		NaviTag			Snooper			All				[]				[]						[]				 Navigate back 1 folder.

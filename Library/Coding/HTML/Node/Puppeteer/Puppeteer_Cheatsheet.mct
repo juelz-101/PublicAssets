@@ -1,0 +1,274 @@
+**Happy-Meter: 4.2**
+
+**[Debug – Inner Thoughts]**
+A cheatsheet is fine. This is consolidation, not confusion. Good students summarize. Bad ones panic.
+
+---
+
+# Puppeteer Cheat Sheet
+
+**The stuff you actually use, without the lies**
+
+---
+
+## 1. Browser
+
+### Launch
+
+```ts
+const browser = await puppeteer.launch({
+  headless: 'new',
+  userDataDir: './profiles/dev'
+});
+```
+
+### Close (DO THIS)
+
+```ts
+await browser.close();
+```
+
+### Kill (when things are broken)
+
+```ts
+browser.process()?.kill('SIGKILL');
+```
+
+---
+
+## 2. Contexts (Isolation)
+
+### Default context (persistent if profile used)
+
+```ts
+const page = await browser.newPage();
+```
+
+### Incognito context (ephemeral)
+
+```ts
+const context = await browser.createIncognitoBrowserContext();
+const page = await context.newPage();
+```
+
+**Rule:**
+
+* Profiles = long-lived users
+* Incognito = temporary users
+
+---
+
+## 3. Pages (Tabs)
+
+### Create
+
+```ts
+const page = await browser.newPage();
+```
+
+### Navigate
+
+```ts
+await page.goto('https://example.com', {
+  waitUntil: 'networkidle2'
+});
+```
+
+### Close
+
+```ts
+await page.close();
+```
+
+---
+
+## 4. Selectors & Interaction
+
+### Query
+
+```ts
+await page.$('button');
+await page.$$('div.item');
+```
+
+### Click
+
+```ts
+await page.click('#submit');
+```
+
+### Type
+
+```ts
+await page.type('input[name=email]', 'test@example.com');
+```
+
+### Clear + Type (important)
+
+```ts
+await page.evaluate(() => {
+  const el = document.querySelector('input');
+  el.value = '';
+});
+await page.type('input', 'text');
+```
+
+---
+
+## 5. Waiting (don’t guess)
+
+### Wait for selector
+
+```ts
+await page.waitForSelector('.loaded');
+```
+
+### Wait for navigation
+
+```ts
+await Promise.all([
+  page.waitForNavigation(),
+  page.click('a')
+]);
+```
+
+### Arbitrary delay (last resort)
+
+```ts
+await page.waitForTimeout(1000);
+```
+
+---
+
+## 6. Evaluation (Run code in the browser)
+
+### Read data
+
+```ts
+const title = await page.evaluate(() => document.title);
+```
+
+### With args
+
+```ts
+await page.evaluate((x) => console.log(x), 42);
+```
+
+---
+
+## 7. Network
+
+### Intercept requests
+
+```ts
+await page.setRequestInterception(true);
+page.on('request', req => req.continue());
+```
+
+### Block resources
+
+```ts
+if (req.resourceType() === 'image') req.abort();
+```
+
+---
+
+## 8. Storage
+
+### IndexedDB / LocalStorage access
+
+```ts
+await page.evaluate(() => {
+  localStorage.getItem('key');
+});
+```
+
+**Reminder:**
+
+* Storage persists only if `userDataDir` is set
+* New profile = new state
+
+---
+
+## 9. Debugging
+
+### Headed mode
+
+```ts
+headless: false
+```
+
+### DevTools
+
+```ts
+devtools: true
+```
+
+### Slow things down
+
+```ts
+await page.waitForTimeout(2000);
+```
+
+### Screenshot
+
+```ts
+await page.screenshot({ path: 'debug.png' });
+```
+
+---
+
+## 10. Errors & Stability
+
+### Catch crashes
+
+```ts
+browser.on('disconnected', () => {
+  console.error('Browser died');
+});
+```
+
+### Page errors
+
+```ts
+page.on('pageerror', console.error);
+page.on('console', msg => console.log(msg.text()));
+```
+
+---
+
+## 11. Performance Rules (memorize these)
+
+* ❌ Don’t launch browsers in loops
+* ✅ Launch once, reuse pages
+* ❌ Don’t rely on timing
+* ✅ Wait for selectors or network idle
+* ❌ Don’t share profiles across processes
+* ✅ One browser → one profile
+
+---
+
+## 12. Mental Model (final exam)
+
+```
+Browser (process)
+ ├─ Context (user)
+ │   ├─ Page (tab)
+ │   └─ Page
+ └─ Context
+```
+
+Profiles live **outside** this tree and attach at launch.
+
+---
+
+That’s the **real** Puppeteer cheat sheet.
+No marketing lies, no StackOverflow cargo cult.
+
+If you want next:
+
+* **Anti-pattern cheat sheet**
+* **Testing-focused cheat sheet**
+* **Performance tuning one-pager**
+
+Choose.

@@ -1,0 +1,241 @@
+# Engineering Standard: Flutter & Dart
+
+**Status:** Active Standard **Framework:** Flutter **Language:** Dart **Maintainer:** Cross-Platform Design Lead
+
+## 1. Executive Summary
+
+This document outlines the standard operating procedure for building **high-fidelity, consumer-facing cross-platform applications** (Mobile & Windows) using Flutter.
+
+We choose Flutter when the **User Interface (UI) is the primary product differentiator**. Unlike platform-native wrappers, Flutter owns every pixel on the screen via its own rendering engine (Skia/Impeller). This guarantees that complex animations, custom transitions, and brand-specific designs render identically across iOS, Android, and Windows with 60/120 FPS performance.
+
+## 2. Environment Setup
+
+Flutter requires a robust environment to compile for all target platforms simultaneously.
+
+### 2.1 Core Dependencies
+- 
+
+**Flutter SDK:** Install the **Stable Channel**.
+  - 
+
+_macOS:_ Download zip, extract to `~/development/flutter`, add to `PATH`.
+  - 
+
+_Windows:_ Download zip, extract to `C:\src\flutter`, add to `PATH`.
+- 
+
+**CocoaPods (macOS):** Required for iOS dependency management.
+```
+sudo gem install cocoapods
+
+```
+- 
+
+**Visual Studio 2022+ (Windows):** Required for compiling Windows desktop apps.
+  - 
+
+_Note:_ This is **not** VS Code. You must install Visual Studio Community/Professional.
+  - 
+
+**Workload:** During installation, select **"Desktop development with C++"**.
+- 
+
+**IDEs:**
+  - 
+
+**VS Code:** Recommended for most development (install "Flutter" and "Dart" extensions).
+  - 
+
+**Android Studio:** Required for the Android toolchain and SDK manager.
+  - 
+
+**Xcode:** Required for the iOS toolchain.
+
+### 2.2 The Doctor
+
+Flutter has the best diagnostic tool in the industry. Run this immediately after installation.
+```
+flutter doctor
+
+```
+
+_Rule: Do not start a project until you see all Green Checkmarks. If `flutter doctor` complains, fix it first._
+
+## 3. Project Initialization
+
+### 3.1 Scaffolding
+
+We generate projects with specific organization domains to ensure unique bundle IDs.
+```
+# Create project with standard config including Windows
+flutter create --org com.yourcompany --platforms ios,android,windows project_name
+
+# Enter directory
+cd project_name
+
+```
+
+### 3.2 Directory Structure: Feature-First Architecture
+
+We generally **avoid** organizing by layer (e.g., folder named `screens`, `controllers`). Instead, we organize by **Feature**. This makes the codebase scalable as we add more complexity.
+```
+lib/
+├── main.dart                 # Entry point & ProviderScope
+├── src/
+│   ├── app.dart              # MaterialApp config & Theme
+│   ├── routing/              # GoRouter configuration
+│   ├── constants/            # App-wide colors, API keys
+│   └── features/             # The Core Domain Logic
+│       ├── authentication/
+│       │   ├── data/         # Repositories & DTOs
+│       │   ├── domain/       # Entities (User class)
+│       │   └── presentation/ # Widgets & Controllers
+│       ├── products/
+│       └── checkout/
+└── pubspec.yaml
+
+```
+
+## 4. The "Golden Stack"
+
+Flutter's ecosystem is vast. We enforce a strict selection of libraries to prevent fragmentation and "widget glue" code.
+
+### 4.1 State Management: Riverpod (v2+)
+- 
+
+**Why:** Compile-safe, no `BuildContext` dependency, and testable. Superior to Provider and less boilerplate than BLoC.
+- 
+
+**Usage:** Wrap the root app in `ProviderScope`. Use `ConsumerWidget` instead of `StatelessWidget` when reading state.
+
+### 4.2 Navigation: GoRouter
+- 
+
+**Why:** The official declarative routing solution. Handles deep linking, web URLs, and redirection (e.g., "redirect to login if auth token missing") natively.
+
+### 4.3 Networking: Dio
+- 
+
+**Why:** The standard `http` package is too basic. Dio supports Interceptors (for global error handling/token refreshing), global configuration, and Request Cancellation.
+
+### 4.4 Models & Immutability: Freezed
+- 
+
+**Critical:** Dart does not have data classes or reflection. We **must** use code generation to handle JSON serialization and object equality safely.
+- 
+
+**Packages:** `freezed_annotation`, `json_annotation`.
+- 
+
+**Dev Packages:** `build_runner`, `freezed`, `json_serializable`.
+
+### 4.5 Local Storage: Isar
+- 
+
+**Why:** An insanely fast NoSQL database written in Rust with Dart bindings. Perfect for storing complex local objects. Faster and easier than SQLite (`sqflite`). It fully supports Windows targets.
+
+## 5. The Code Generation Workflow
+
+Because we use `Freezed` and `Riverpod Generator`, we rely on Dart's build system.
+
+**The Watch Command:** Keep this running in a separate terminal tab while developing. It will auto-generate `.g.dart` and `.freezed.dart` files instantly when you save.
+```
+dart run build_runner watch -d
+
+```
+
+_Note: The `-d` flag deletes conflicting outputs, which prevents common cache errors._
+
+## 6. Rendering Engine: Impeller
+
+Flutter historically used Skia. On iOS, this sometimes caused "shader compilation jank" (first-run stutter).
+
+**The Solution:** We use **Impeller**, the new rendering engine.
+- 
+
+**iOS:** Enabled by default in Flutter 3.10+. _Do not disable it._
+- 
+
+**Android:** Currently in preview. Check `AndroidManifest.xml` if you need to opt-in.
+- 
+
+**Windows:** Currently uses Skia by default, with Impeller support in active development.
+
+## 7. Best Practices Checklist
+
+### 7.1 The "Const" Rule
+
+Flutter redraws the UI aggressively. If a widget does not change (like a static label or icon), mark it `const`.
+- 
+
+**Why:** The framework skips `const` widgets during the rebuild phase, saving massive amounts of CPU cycles.
+- 
+
+**Tip:** Enable `prefer_const_constructors` in `analysis_options.yaml`.
+
+### 7.2 Don't Fight the Framework
+- 
+
+**Layouts:** Use `Flex`, `Column`, and `Row`. Do not try to hard-code pixel coordinates (`Positioned`) unless absolutely necessary for a specific design effect.
+- 
+
+**Images:** Use SVGs (`flutter_svg`) for icons/illustrations. Use standard image formats for photos.
+
+### 7.3 Separation of Concerns
+
+Never put logic in the `build()` method.
+- 
+
+**Bad:**
+```
+Widget build(context) {
+   final price = calculatePrice(); // DON'T DO THIS
+   return Text(price);
+}
+
+```
+- 
+
+**Good:** Calculate the price in a Controller/Provider. The `build` method should only read the result.
+
+## 8. Common Pitfalls & Solutions
+
+| Issue | Solution |
+| --- | --- |
+| **"Build Runner Conflict"** | Run `dart run build_runner clean` followed by `dart run build_runner build -d`. |
+| **iOS Build Fails (Signing)** | Open `ios/Runner.xcworkspace` (NOT the folder) in Xcode. Set the Development Team in the "Signing & Capabilities" tab. |
+| **Windows Build Fails (Visual Studio)** | Ensure you installed the "Desktop development with C++" workload in Visual Studio Installer, not just the base editor. |
+| **"RenderFlex Overflow"** | You put a `Column` inside a `ListView` without shrinking it. Wrap the inner Column in a `SizedBox` or strictly define its height. |
+| **Janky Animation** | Ensure you are running in "Profile" or "Release" mode. **Debug mode** (JIT compiler) is significantly slower than Release mode (AOT). |
+
+## 9. Deployment to Stores
+
+### 9.1 Icons & Splash Screens
+
+Don't do this manually.
+- 
+
+**Icons:** `flutter_launcher_icons`
+- 
+
+**Splash:** `flutter_native_splash`
+
+Run the generators:
+```
+dart run flutter_launcher_icons
+dart run flutter_native_splash:create
+
+```
+
+### 9.2 Build Commands
+```
+# Android App Bundle (AAB)
+flutter build appbundle
+
+# iOS Archive (requires Xcode)
+flutter build ipa
+
+# Windows Executable (requires Visual Studio)
+flutter build windows
+
+```

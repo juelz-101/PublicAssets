@@ -1,0 +1,61 @@
+```
+# Documentation: Manual JSON Control & Intent Architecture
+
+## 1.0 Introduction: The "Studio Engineer" Mindset
+
+Welcome to the high-level control documentation for Producer.ai. By moving from natural language prompts to **Manual JSON Input**, you are transitioning from being a "listener" to being a "Studio Engineer."
+
+### The Philosophy of "Hard-Coding" Your Sound
+Natural language (e.g., "make it sound more grimey") is subjective and prone to AI "hallucinations." When you provide a JSON payload, you are explicitly defining the mathematical boundaries of the generation. You are no longer asking the AI for its opinion; you are giving it a technical specification.
+
+### Why Manual JSON?
+1. **Deterministic Control:** Bypass the chat agent's interpretation and send instructions directly to the FUZZ models.
+2. **Layering & Masking:** Control exactly *when* sounds start and end using millisecond-precision timestamps.
+3. **Weight Precision:** Fine-tune the "Strength" and "Weirdness" parameters beyond the standard presets to find the "Goldilocks Zone" of audio fidelity.
+
+---
+
+## 2.0 The Core Payload Anatomy
+Every manual request is built on a specific JSON structure. Understanding these "Levers" is the first step to mastering the engine.
+
+### The "Sound Prompt" Object
+This is the most critical part of your instruction set. Unlike a single text box, you can stack multiple of these.
+
+```json
+{
+  "text": "The stylistic description",
+  "strength": 0.5,
+  "time_start": 0.0,
+  "time_end": null,
+  "vibe": { "audio_input": { "id": "UUID" }, "start_s": 30.0 }
+}
+
+```
+
+- `text`: The keywords. Think in textures and instruments, not just genres.
+
+- `strength` (-1.0 to 1.0):
+
+- `1.0`: Absolute dominance.
+
+- `-1.0`: Negative prompting (Active Avoidance). Use this to remove unwanted elements (e.g., "drums" with -1.0 strength).
+
+- `time_start/end`: This is your "Automation Lane." You can have a heavy bass prompt that only exists between 15.0s and 45.0s.
+
+- `vibe`: Your "Texture Sample." This injects the sonic DNA of an existing file into the new generation without copying the notes.
+
+### The "Weirdness" Parameter (0.0 - 1.0)
+This controls the Variance.
+
+- Low (0.1 - 0.3): Conservative, structured, "safe" sounds. Best for clean remasters.
+
+- High (0.7 - 0.9): High creativity, natural vocal blends, unexpected transitions. Best for sound design and unique textures.
+
+## 3.0 How to Use This Documentation
+In the following chapters, we will provide specific "Code Snippets" for different workflows:
+
+- Chapter 2: Remixing to Full Potential (The "Cover" Hack)
+
+- Chapter 3: Precision Replacing (The "Surgical" Edit)
+
+- Chapter 4: Tips, Tricks & Hacks (Bypassing System Limits)

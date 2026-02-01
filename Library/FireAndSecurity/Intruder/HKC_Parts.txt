@@ -1,0 +1,54 @@
+HKC Intruder Alarm Parts List
+
+Common Part IDs for Quantum and SecureWave Series
+
+Control Panels (Quantum - Wireless All-in-One)
+
+Quantum 70      | Quantum 70 Control Panel (70 Zone Wireless, Integrated Keypad/Siren)
+Quantum 70-W    | Quantum 70 with Internal WiFi Card
+
+Control Panels (SecureWave - Hybrid)
+
+SW-1070         | SecureWave 1070 Panel (Hybrid, 10-70 Zones, Poly/Metal)
+SW-20140        | SecureWave 20140 Panel (Commercial, 20-140 Zones, Metal)
+
+Keypads
+
+SW-RKP          | SecureWave RKP (Wired Keypad with Prox)
+RF-RKP          | Wireless Keypad (for Quantum or SecureWave with RF card)
+TouchKeypad     | Touchscreen Keypad (Wired)
+
+Expansion & Wireless Receivers
+
+SW-IDM          | Interface Door Module (Access Control)
+RF-Daughter     | Wireless Receiver Card (Plugs into SW-1070/20140 PCB)
+SW-DM4          | 4 Zone Expander (Wired)
+
+Wireless Devices (RF SecureWave)
+
+RF-PIR          | Wireless PIR Detector
+RF-PIR-Camera   | Wireless PIR with Camera (Verification)
+RF-CS           | Wireless Contact / Shock Sensor
+RF-Echo         | Wireless Internal Siren
+RF-SABB         | Wireless External Sounder (Blue/Red lens)
+RF-FOB          | 4 Button Keyfob
+RF-Smoke        | Wireless Smoke Detector
+RF-CO           | Wireless CO Detector
+RF-Panic        | Wireless Panic Button
+
+Wired Devices (Sensors)
+
+SABB            | External Sounder (Wired SAB)
+SABB-LID        | Replacement Lid for SABB (White/Blue)
+Echo            | Internal Sounder (Wired)
+QC-PIR          | Quad Wired PIR
+Slim-Inertia    | Slimline Shock Sensor (Wired - Very Common)
+Viper           | HKC/Generic Shock Sensor
+ID-Sensor       | ID Biscuit (for ID loops)
+
+Communication & App Licensing
+
+GSM-SC          | GSM/GPRS Module (fits SW-1070/20140)
+GSM-Q           | GSM/GPRS Module (fits Quantum 70)
+WiFi-Card       | WiFi Interface Card
+SecureComm      | SecureComm App Subscription (1 Year License)

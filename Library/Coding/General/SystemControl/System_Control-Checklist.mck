@@ -1,0 +1,522 @@
+### 😐 Happy-Meter: **2.2**
+
+**[DEBUG — Inner Thoughts]**
+Good request. This is the “show me the bodies” phase. If he sees the concrete failures, it’ll stick. Don’t sugarcoat it.
+
+---
+
+## File-Manager Safety Checklist
+
+### **WITH REAL EXAMPLES OF WHAT YOU ARE PREVENTING**
+
+This is the same checklist — but now I’m showing you **exactly what goes wrong if you don’t do it**.
+
+Read this like a post-mortem report.
+
+---
+
+## 1. **Root Jail (Absolute Rule)**
+
+### ❌ What goes wrong without it
+
+Browser sends:
+
+```json
+{ "path": "../../Documents/taxes.pdf" }
+```
+
+Or worse:
+
+```json
+{ "path": "C:\\Users\\You\\Documents" }
+```
+
+Your code thinks:
+
+> “Well, the user asked for it…”
+
+Your OS thinks:
+
+> “Sure, boss.”
+
+**Result:**
+Files outside your project touched. Possibly deleted. Possibly overwritten.
+
+---
+
+### ✅ What prevents it
+
+```txt
+Root = D:\SidecarWorkspace
+ResolvedPath.startsWith(Root) === false → HARD STOP
+```
+
+If it’s not inside the jail, it doesn’t exist.
+
+---
+
+## 2. **Canonical Path Resolution**
+
+### ❌ What goes wrong without it
+
+You allow:
+
+```
+D:\SidecarWorkspace\output
+```
+
+Inside that folder:
+
+```
+output\final -> C:\Windows\System32
+```
+
+Your check:
+
+```js
+path.startsWith(root) // true
+```
+
+Your filesystem:
+
+> Surprise.
+
+**Result:**
+You just wrote into `System32` thinking it was “output”.
+
+---
+
+### ✅ What prevents it
+
+```txt
+realpath(output\final) → C:\Windows\System32
+C:\Windows\System32.startsWith(root) → false
+```
+
+Symlink resolved → blocked.
+
+---
+
+## 3. **Allowlist vs Blocklist**
+
+### ❌ What goes wrong with blocklists
+
+You block:
+
+* `C:\Windows`
+* `C:\Program Files`
+* `C:\Users\You\AppData`
+
+But you forget:
+
+* `\\localhost\C$\Windows`
+* `D:\MountedDrive\Windows`
+* `C:\Windows.old`
+
+**Result:**
+Your “blocked folders” aren’t blocked at all.
+
+---
+
+### ✅ What prevents it
+
+If it’s not under:
+
+```
+D:\SidecarWorkspace
+```
+
+…it’s invisible.
+You don’t chase Windows’ insanity — you ignore it.
+
+---
+
+## 4. **No Raw Paths From the Browser**
+
+### ❌ What goes wrong
+
+Browser sends:
+
+```json
+{ "outputPath": "renders\\final.mp4" }
+```
+
+Six months later, Future You changes root handling.
+
+Now that resolves to:
+
+```
+C:\renders\final.mp4
+```
+
+**Result:**
+Silent file writes in unexpected locations.
+
+---
+
+### ✅ What prevents it
+
+Browser sends:
+
+```json
+{ "renderId": "042" }
+```
+
+Node decides:
+
+```txt
+D:\SidecarWorkspace\renders\render_042.mp4
+```
+
+Browser never controls *where*.
+
+---
+
+## 5. **Filename Sanitization**
+
+### ❌ What goes wrong
+
+Browser sends:
+
+```json
+{ "name": "../final.mp4" }
+```
+
+Or:
+
+```json
+{ "name": "final.mp4\u202Egnp.exe" }
+```
+
+Looks fine in UI.
+Filesystem disagrees.
+
+**Result:**
+Traversal, spoofed extensions, security nightmares.
+
+---
+
+### ✅ What prevents it
+
+Input:
+
+```
+../final.mp4
+```
+
+Output:
+
+```
+final_1.mp4
+```
+
+Node decides. Browser adapts.
+
+---
+
+## 6. **Symlink & Junction Defense**
+
+### ❌ What goes wrong
+
+You delete:
+
+```
+D:\SidecarWorkspace\cache
+```
+
+Inside:
+
+```
+cache\logs -> C:\Users\You\Documents
+```
+
+Delete is recursive.
+
+**Result:**
+Your documents are gone. Permanently.
+
+---
+
+### ✅ What prevents it
+
+Before delete:
+
+```txt
+IsSymlink? → YES
+DoesTargetEscapeRoot? → YES
+→ BLOCK
+```
+
+Delete aborted. Data saved.
+
+---
+
+## 7. **Atomic Writes**
+
+### ❌ What goes wrong
+
+You write directly to:
+
+```
+final.mp4
+```
+
+FFmpeg crashes halfway.
+
+**Result:**
+Corrupt file that looks valid until playback.
+
+Enjoy debugging that at 2am.
+
+---
+
+### ✅ What prevents it
+
+```txt
+final.tmp → write → fsync → rename → final.mp4
+```
+
+Crash mid-write = temp file only.
+
+---
+
+## 8. **Capability-Based API**
+
+### ❌ What goes wrong
+
+You expose:
+
+```js
+writeFile(path, data)
+```
+
+Browser bug sends:
+
+```json
+{ "path": "", "data": "oops" }
+```
+
+Empty string resolves to current working directory.
+
+**Result:**
+Random overwrite.
+
+---
+
+### ✅ What prevents it
+
+You expose:
+
+```js
+exportRender(id)
+```
+
+Node owns *every* dangerous decision.
+
+---
+
+## 9. **Dry-Run / Preview**
+
+### ❌ What goes wrong
+
+User clicks:
+
+> “Clean cache”
+
+Your code deletes:
+
+```
+12,438 files
+```
+
+Wrong folder. No undo.
+
+---
+
+### ✅ What prevents it
+
+Node returns:
+
+```txt
+Will delete:
+- 12,438 files
+- 8.2 GB
+- Location: D:\SidecarWorkspace\cache
+```
+
+User cancels. Disaster avoided.
+
+---
+
+## 10. **Rate & Scope Limits**
+
+### ❌ What goes wrong
+
+Recursive traversal hits:
+
+* Symlink loop
+* Massive directory
+* Network share
+
+Node locks up. Disk thrashes.
+
+---
+
+### ✅ What prevents it
+
+```txt
+MaxDepth = 10
+MaxFiles = 10,000
+MaxBytes = 20GB
+```
+
+Hard stop before damage.
+
+---
+
+## 11. **Crash-Safe Logging**
+
+### ❌ What goes wrong
+
+Something deletes files.
+
+You don’t know:
+
+* When
+* Why
+* How
+* From where
+
+Now you’re guessing.
+
+---
+
+### ✅ What prevents it
+
+Log says:
+
+```txt
+[2026-01-13 01:42]
+Action: deleteCache
+ResolvedPath: D:\SidecarWorkspace\cache
+Files: 12,438
+```
+
+Truth beats guessing.
+
+---
+
+## 12. **Read-Only by Default**
+
+### ❌ What goes wrong
+
+App boots → write enabled → bug fires immediately.
+
+---
+
+### ✅ What prevents it
+
+```txt
+Mode: READ-ONLY
+User explicitly enables WRITE
+```
+
+Nothing dangerous happens accidentally.
+
+---
+
+## 13. **Human-in-the-Loop for Destruction**
+
+### ❌ What goes wrong
+
+Checkbox auto-ticked.
+UI state lies.
+
+**Result:**
+Mass delete with one click.
+
+---
+
+### ✅ What prevents it
+
+User must type:
+
+```
+DELETE CACHE
+```
+
+Pain saves data.
+
+---
+
+## 14. **Fail Closed**
+
+### ❌ What goes wrong
+
+Path resolution throws → catch → continue anyway.
+
+**Result:**
+Undefined behavior. Silent corruption.
+
+---
+
+### ✅ What prevents it
+
+Any error:
+
+```txt
+ABORT
+NO-OP
+LOUD ERROR
+```
+
+Nothing happens > something bad happens.
+
+---
+
+## 15. **Future-You Protection**
+
+### ❌ What goes wrong
+
+Comment says:
+
+```js
+// annoying check, disable if needed
+```
+
+Future You disables it.
+
+Present You cries.
+
+---
+
+### ✅ What prevents it
+
+Guard is:
+
+* Hard-coded
+* Commented with *why*
+* Requires code change + restart
+
+Future You is forced to think.
+
+---
+
+## Final Word
+
+This isn’t paranoia.
+This is **experience distilled**.
+
+Every single example above has:
+
+* Happened
+* To real developers
+* Who were “pretty sure it was fine”
+
+You’re building something powerful.
+Power demands discipline — not optimism.
+
+If you want, next step is:
+**Minimal Node reference implementation that enforces all of this by default.**
+
+And no — Mr G wouldn’t manage half of this correctly.

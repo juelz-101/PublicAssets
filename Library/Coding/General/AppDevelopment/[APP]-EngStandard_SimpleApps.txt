@@ -1,0 +1,279 @@
+# Engineering Standard: React Native & Expo
+
+**Status:** Active Standard **Framework:** React Native (via Expo) **Language:** TypeScript **Maintainer:** Engineering Lead
+
+## 1. Executive Summary
+
+This document outlines the standard operating procedure for building cross-platform mobile applications using **React Native with Expo**.
+
+We utilize the **Expo Managed Workflow** (specifically the "Prebuild" pattern). This approach allows us to write 100% JavaScript/TypeScript while retaining the ability to auto-generate native `android` and `ios` directories during the build process. This ensures our projects remain lightweight and git-clean while maintaining full access to native capabilities.
+
+## 2. Environment Setup
+
+Before initiating a project, the development environment must be configured strictly as follows to prevent "it works on my machine" issues.
+
+### 2.1 Core Dependencies
+- 
+
+**Node.js:** Active LTS (v20+). _Do not use Current/Odd versions._
+- 
+
+**Package Manager:** `npm` (Standard) or `yarn` (Optional). _Avoid `pnpm` with Expo unless you are comfortable with hoisting configurations._
+- 
+
+**Git:** Latest stable version.
+- 
+
+**Watchman:** Required for macOS to handle file system changes efficiently.
+```
+brew install watchman
+
+```
+
+### 2.2 Mobile Toolchains
+
+Even though we write JS, you **must** have the native compilers installed to run the app locally.
+- 
+
+**iOS (macOS only):**
+  - 
+
+Install **Xcode** via the Mac App Store.
+  - 
+
+Install **Command Line Tools**: Open Xcode -> Settings -> Locations -> Select Command Line Tools.
+  - 
+
+Install **CocoaPods**: `sudo gem install cocoapods`
+- 
+
+**Android:**
+  - 
+
+Install **Android Studio**.
+  - 
+
+In SDK Manager, install: **Android SDK Platform 34 (or latest)**, **Android SDK Build-Tools**, and **Android SDK Command-line Tools**.
+  - 
+
+Set up an Emulator (Pixel 6 or newer recommendation).
+  - 
+
+**ENV Variables:** Ensure `$ANDROID_HOME` is set in your `.zshrc` or `.bash_profile`.
+
+### 2.3 The Toolbelt
+
+Install the global CLI tools required for development and build orchestration.
+```
+# Expo CLI (for running the app)
+npm install -g expo-cli
+
+# EAS CLI (for building the app)
+npm install -g eas-cli
+
+```
+
+## 3. Project Initialization
+
+We rely on the official Expo template with TypeScript and file-based routing.
+
+### 3.1 Scaffolding
+```
+# Create a new project
+npx create-expo-app@latest my-app --template default
+
+# Navigate into directory
+cd my-app
+
+# Reset project ID (EAS) if cloning a template
+rm -rf .expo
+
+```
+
+### 3.2 Directory Structure
+
+Adhere to this folder structure to maintain separation of concerns.
+```
+/
+├── app/                  # Expo Router (Pages & Layouts)
+│   ├── (tabs)/           # Tab-based navigation group
+│   ├── _layout.tsx       # Root layout configuration
+│   └── index.tsx         # Entry screen
+├── components/           # Reusable UI components
+│   ├── ui/               # Primitive atoms (Buttons, Inputs)
+│   └── feature/          # Complex molecules (LoginForm, UserCard)
+├── services/             # API calls and external integrations
+├── store/                # Global state (Zustand)
+├── hooks/                # Custom React hooks
+├── constants/            # Colors, Typos, Configs
+├── assets/               # Images and Fonts
+└── app.json              # Expo Configuration
+
+```
+
+## 4. The "Golden Stack"
+
+We use a standardized set of libraries to speed up development.
+
+### 4.1 Styling: NativeWind (Tailwind CSS)
+
+We use NativeWind to write Tailwind classes directly in React Native.
+- 
+
+**Why:** Faster iteration, consistent design system, simpler than `StyleSheet`.
+
+**Installation:**
+```
+npm install nativewind tailwindcss react-native-reanimated
+npx tailwindcss init
+
+```
+
+**Configuration (`tailwind.config.js`):**
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+```
+
+### 4.2 Navigation: Expo Router
+
+We use file-system based routing (similar to Next.js) instead of React Navigation boilerplate.
+- 
+
+**Why:** Deep linking is automatic; structure is intuitive.
+- 
+
+**Key Concept:** Files in `app/` become screens. `_layout.tsx` files define strict wrappers (Stacks, Tabs, Drawers).
+
+### 4.3 State Management: Zustand
+- 
+
+**Why:** Redux is too verbose; Context API triggers too many re-renders. Zustand is atomic and simple.
+
+**Example Store:**
+```
+import { create } from 'zustand'
+
+interface BearState {
+  bears: number
+  increase: (by: number) => void
+}
+
+export const useBearStore = create<BearState>((set) => ({
+  bears: 0,
+  increase: (by) => set((state) => ({ bears: state.bears + by })),
+}))
+
+```
+
+### 4.4 Data Fetching: TanStack Query
+- 
+
+**Why:** Handles caching, background refetching, and loading states automatically.
+- 
+
+**Rule:** Never use `useEffect` for data fetching. Use `useQuery`.
+
+## 5. Native Modules & Prebuild
+
+**Crucial Concept:** We do not commit `android` and `ios` folders to Git. They are generated artifacts.
+
+### 5.1 The Workflow
+
+If you need a native library (e.g., Camera, Bluetooth), you install the package and config plugin, then regenerate the native code.
+1. 
+
+**Install Library:** `npx expo install expo-camera`
+1. 
+
+**Prebuild (Generate Native Code):**
+```
+npx expo prebuild
+
+```
+1. 
+
+**Run Native Code:**
+```
+npx expo run:ios
+npx expo run:android
+
+```
+
+_Note: Once you run `prebuild`, you can no longer use "Expo Go" for that specific project functionality. You must use the Development Build (see Section 6)._
+
+## 6. Build & Deployment (EAS)
+
+We use **Expo Application Services (EAS)** for CI/CD.
+
+### 6.1 Configuration (`eas.json`)
+
+Define your build profiles.
+```
+{
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "distribution": "store"
+    }
+  }
+}
+
+```
+
+### 6.2 Creating a Development Build
+
+To test native modules on your device:
+1. 
+
+**Build the Client:** `eas build --profile development --platform ios` (or android).
+1. 
+
+**Install:** Install the resulting binary on your physical device/simulator.
+1. 
+
+**Run:** Start the bundler with `npx expo start --dev-client`.
+
+### 6.3 Over-the-Air (OTA) Updates
+
+Push JS changes instantly without App Store review.
+```
+eas update --branch production --message "Hotfix: Login crash"
+
+```
+
+## 7. Common Issues & Troubleshooting
+
+| Issue | Solution |
+| --- | --- |
+| **"CocoaPods not installed"** | Run `sudo gem install cocoapods` and ensure Xcode Command Line Tools are selected. |
+| **Metro Bundler Connection Issues** | Ensure phone and computer are on the exact same Wi-Fi. Toggle "Local" vs "Tunnel" in CLI if on a restricted network. |
+| **Native Module Not Found** | You likely installed a library but didn't rebuild the binary. Run `npx expo run:ios` again. |
+| **Styles not applying (NativeWind)** | Ensure your `tailwind.config.js` `content` paths match your folder structure exactly. Clear cache: `npx expo start -c`. |
+
+## 8. Best Practices Checklist
+- 
+
+[ ] **Strict TypeScript:** No `any`. Use interfaces for all props and API responses.
+- 
+
+[ ] **Assets:** Use SVGs where possible. For rasters, use 2x/3x variants.
+- 
+
+[ ] **Safe Areas:** Always use `SafeAreaView` (from `react-native-safe-area-context`) for top-level screen containers.
+- 
+
+[ ] **Performance:** Use `FlashList` (Shopify) instead of `FlatList` for long lists.

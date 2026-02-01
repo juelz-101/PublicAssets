@@ -1,0 +1,154 @@
+NAMING CONVENTIONS – QUICK MEMORY AID
+====================================
+
+1) camelCase
+-------------
+Example identifier:
+  andThis
+
+Typical file name:
+  userService.js
+
+Used for:
+- JS variables & functions
+- JS/TS object properties
+- APIs
+
+Why:
+- Compact
+- JS ecosystem default
+- Easy inline reading
+
+
+2) PascalCase
+--------------
+Example identifier:
+  AndThis
+
+Typical file name:
+  UserService.jsx
+  App.tsx
+
+Used for:
+- Classes
+- React components
+- Types / models
+
+Why:
+- Visually screams “this is a type / component”
+- Popularised by Pascal & OOP languages
+
+
+3) snake_case
+--------------
+Example identifier:
+  and_this
+
+Typical file name:
+  data_loader.py
+  user_repository.py
+
+Used for:
+- Python variables & functions
+- Python modules
+- SQL tables & columns
+
+Why:
+- Extremely readable
+- Python standard
+- Underscores were universally safe
+
+
+4) SCREAMING_SNAKE_CASE
+-----------------------
+Example identifier:
+  AND_THIS
+
+Typical file name:
+  constants.py
+  config.env
+
+Used for:
+- Constants
+- Environment variables
+- Macros
+
+Why:
+- Instantly visible
+- Signals “do not touch”
+- OS & shell convention
+
+
+5) kebab-case
+--------------
+Example identifier:
+  and-this
+
+Typical file name:
+  user-service.js
+  index.html
+  main-layout.css
+
+Used for:
+- URLs
+- HTML files
+- CSS classes
+- CLI commands
+
+Why:
+- URL-friendly
+- Human-readable
+- Hyphens = word separators on the web
+
+WARNING:
+- Invalid for most code identifiers
+
+
+6) dot.case
+------------
+Example identifier:
+  and.this
+
+Typical file name:
+  logging.config.json
+
+Used for:
+- Config keys
+- Logging namespaces
+- Package hierarchies
+
+Why:
+- Represents hierarchy
+- Natural nesting
+
+
+7) JSON KEYS (special hell)
+---------------------------
+Valid but dangerous:
+  user_id
+  userId
+  UserID
+
+Typical file name:
+  user-data.json
+
+Rule:
+- JSON doesn’t care
+- Consumers DO
+
+Pick ONE style per API/file.
+JS-heavy → camelCase
+Python-heavy → snake_case
+
+/
+8) FILE & FOLDER RULE (FINAL)
+-----------------------------
+Code may ignore names.
+Tools, OSes, servers WILL NOT.
+
+JS:
+  kebab-case files, flexible imports
+Python:
+  snake_case files, strict imports
+Web:
+  kebab-case maps cleanly to URLs

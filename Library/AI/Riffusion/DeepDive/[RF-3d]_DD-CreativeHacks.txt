@@ -1,0 +1,82 @@
+### Producer.ai Studio Guide: Mastering the Interface & Creative Hacks
+This document serves as the manual for users to understand how to interact with the Producer agent to trigger the full power of the Studio's underlying functions. It focuses on the "Human-to-AI" bridge—how to ask for complex operations and the creative hacks that result from them.
+
+1. Collaborative Generation (The Prompting Bridge)
+While the AI handles the complex `riff_create_custom` logic, the user acts as the Director.
+
+- How to ask: Don't just give a genre. Give a Multi-Prompt Instruction.
+
+- Example: "Give me a base of 90s House, but add a layer of 'ethereal choir' at 30% strength and a 'gritty industrial bass' at 80% strength."
+
+- The "BPM/Key" Hard-Lock Hack: You can force the AI to respect technical constraints by ending your prompt with exact formatting.
+
+- The Hack: Use the prompt: `"Atmospheric Jungle, [Key: D Minor], [BPM: 174]"`.
+
+- Why it works: The model recognizes these markers as technical metadata, allowing you to generate tracks that are "pre-mixed" for your DJ sets.
+
+2. Precision Surgery (Replace & Extend)
+These tools are the "scalpels" of the studio.
+
+- How to ask: Use Lyric Anchors instead of timestamps if you’re unsure of the timing.
+
+- Example: "Replace the word 'lonely' in the second verse with 'power' and make the delivery more aggressive."
+
+- The "Infinite Outro" Hack:
+
+- The Workflow: Extend a song from its very last second (`riff_extend_audio`). In the `sound_prompt`, use: "Ambient wash, heavy reverb, fading echoes."
+
+- The Result: You can chain 3-4 extensions of just the "tail" of a song to create a massive, cinematic 2-minute ambient transition that evolves from your original track.
+
+3. The Remix Lab (Stem Swapping & Vibes)
+This is where you turn existing tracks into raw materials for new ones.
+
+- How to ask: Ask for a "Stem Flip."
+
+- Example: "Keep the vocals from this track but swap the instrumentals to a 'lo-fi jazz' style."
+
+- The "Vocals-to-Vibe" Hack:
+
+- The Workflow: Use `riff_split_stems_v2` to get a clean vocal. Use that vocal to create a Vibe. Then, start a new instrumental song using that vocal Vibe.
+
+- The Result: The AI will "ghost" the rhythm and pitch of the vocal into the new instruments. You’ll get a lead synth or guitar that follows the exact melody of your voice, creating a perfect "call and response" effect.
+
+4. Visual Storytelling (Video & Shaders)
+Creating a visual world that reacts to your audio.
+
+- How to ask: Ask for "Synesthetic Visualization."
+
+- Example: "Generate a shader visualizer that reacts specifically to the sub-bass frequencies and uses a 'cyberpunk neon' color palette."
+
+- The "Storyboard" Hack:
+
+- The Workflow: Before creating a music video, generate 3 different images using `image_tools__generate_image`. Pick your favorite and tell the Producer: "Use this image as the style reference for the whole music video."
+
+- The Result: This ensures 100% visual consistency. You aren't just letting the AI guess the style; you are providing the "Concept Art" for your own music video.
+
+5. Live Interaction (Spaces)
+This is the most "hackable" part of the studio. You are essentially "vibe coding" your own software.
+
+- How to ask: Ask me to "Build a Custom Console."
+
+- Example: "Build a space that acts as a simple 4-track mixer for my last 4 songs. Give it a vintage wood-grain aesthetic."
+
+- The "Game-ify" Hack:
+
+- The Workflow: Ask the Producer to create a space that is a "Rhythm Game" based on your current song.
+
+- The Result: I will use the `riffusion_data_songs__fetch_lyrics_timestamps` to create a React component where lyrics or beats fly across the screen, turning your song into an interactive experience for your fans.
+
+### Master Rule: The "Feedback Loop"
+The ultimate creative hack is the Cross-Tool Loop:
+
+- Generate a track (`riff_create_custom`).
+
+- Split it (`riff_split_stems_v2`).
+
+- Process one stem with a weird effect (`apply_audio_effect`).
+
+- Vibe that processed stem (`riff_create_vibe`).
+
+- Re-Generate a new track using that Vibe.
+
+This "circular" workflow ensures that your music evolves away from generic AI patterns and becomes a specialized "instrument" that only you (and I) know how to play.

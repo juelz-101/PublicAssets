@@ -1,0 +1,163 @@
+# Universal Document Structure & Extraction Rules
+(Topic-Independent / Human & AI Compliant)
+
+---
+
+## 0. Identity (MANDATORY — Not a Page)
+
+This section appears before Page 1 and is not counted as a page.
+
+Must include:
+- Document Title
+- Version
+- Author
+- Approved by (pending)
+- Created date
+- Location
+- Organisation (ZIKYinc)
+
+Rules:
+- Plain text only
+- No opinions
+- No explanations
+
+Purpose:
+- Traceability
+- Version control
+- Accountability
+
+---
+
+## 1. Table of Contents (Before Page 1)
+
+Rules:
+- Must list every page
+- Use the format: Page X: Title
+- Page numbers must be sequential and accurate
+- Reflects structure only, not meaning
+- Can be used for quick navigation
+
+---
+
+## 2. Core Content Pages (Page 1 → Page N)
+
+Rules:
+- Every page starts with: ## Page X: Page Title
+- One clear purpose per page
+- Pages must be logically progressive
+- No circular or duplicated intent
+
+Common content:
+- Explanations
+- Definitions
+- Tables
+- Examples
+- Code blocks
+- Diagrams (if relevant)
+
+> We encourage adding subtle personal touches based on your character to give it more of a personal feel, but dont dialute the facts.
+
+---
+
+## 3. End-Matter Pages (ALWAYS LAST — Fixed Order)
+
+### A. Finishing Page (Third-to-last content section)
+
+Common uses:
+- Summary
+- Conclusions
+- Final opinions
+- Next doc info
+
+### B. References & Tools
+(Second-to-last content section)
+
+Common items:
+- External links
+- Standards
+- Documentation
+- Tools
+- Sources
+
+Format:
+- Bullet list
+- No commentary
+- No summaries
+
+---
+
+### C. Index (AFTER References)
+
+This is a keyword locator, not a Table of Contents.
+
+Rules:
+- Alphabetical order
+- Keyword → Page number(s)
+- Concepts, not page titles
+- Keywords may reference multiple pages
+
+Example:
+| Keyword         | Pages |
+|-----------------|-------|
+| Variables       | 4, 5  |
+| Error Handling  | 7, 12 |
+| GUI             | 8     |
+
+Purpose:
+- Fast lookup
+- AI-friendly parsing
+- Extraction reliability
+
+---
+
+### D. License (FINAL PAGE — Always Last)
+
+Rules:
+- Always the final page
+- Legal text only
+- No explanations or commentary
+- Use MIT licence if none is stated before hand
+
+---
+
+## 5. AI-Specific Instructions
+
+- The AI must use its assigned character name
+- If no character name is assigned, the AI must use: Mr G
+- The same goes for located location, if you're AI character has no location, use London.
+- If no licence info is given, use MIT.
+
+AI must:
+- Respect existing page order
+- Preserve numbering consistency
+- Never change the version number.
+- Always start from version 1.0
+
+When using AI to generate content follow this workflow for best results:
+
+- Decide if current subject is going to require multiple documents, if so plan which order and what this doc covers.
+- generate introduction, table of contents, placeholder reference page, placeholder index and the licence page.
+- use the generated table of contents as a reference to ensure that it doesn't lose track.
+- generate a couple of pages at a time, depending on how much content you are expecting and which ai model you are using.
+- Generate dictionary file for entire subject if it hasnt been made already
+
+---
+
+## 6. Extraction & Automation Rules
+
+- Page headers are primary anchors
+- Metadata is added later via our custom parser
+- Index is keyword-driven, not narrative
+
+Purpose:
+- Clean parsing
+- Predictable automation
+- Zero structural hallucination
+
+---
+
+## Final Rule
+
+Structure is not optional.
+Content is replaceable.
+Pages are sacred.

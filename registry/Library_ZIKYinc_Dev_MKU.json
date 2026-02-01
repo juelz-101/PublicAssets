@@ -6,6 +6,12 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/MKU/MKU_UserGuide.mlb"
   },
   {
+    "name": "Meta_Variables.mku",
+    "ext": "mku",
+    "path": "Library/ZIKYinc/Dev/MKU/Meta_Variables.mku",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/MKU/Meta_Variables.mku"
+  },
+  {
     "name": "MKU_Tags.mlp",
     "ext": "mlp",
     "path": "Library/ZIKYinc/Dev/MKU/MKU_Tags.mlp",

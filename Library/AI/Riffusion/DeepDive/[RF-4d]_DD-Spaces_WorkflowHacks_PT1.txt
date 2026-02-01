@@ -1,0 +1,86 @@
+### Spaces Workflow Hacks: Part 2 — Creative Mechanics & Interactive Gameplay
+Part 2 moves away from technical workarounds and into the "Art of the Space." These hacks focus on turning static songs into immersive, playable, and visual experiences by leveraging the unique synergy between React and the Producer.ai data layer.
+
+1. The "Sample Chopper" (Song-as-Instrument)
+Concept: Using multiple song IDs or trimmed sections to build a playable MPC-style launchpad.
+
+- The Workflow:
+
+- Create 4–8 short "stabs" or loops using the `Trim` or `Replace` tools in the Studio.
+
+- In the Space, map each `raw_audio_url` to a `keydown` event or an on-screen pad.
+
+- Use the Web Audio API to set `loop = true` for some pads (beats) and `loop = false` for others (vocals).
+
+- Result: You transform your library into a live performance kit. You aren't just playing tracks; you’re "remixing" them live in the browser.
+
+2. Lyric-Synced Rhythm Games (The "Riff Hero" Hack)
+Concept: Turning a song’s metadata into a lane-based rhythm game.
+
+- The Workflow:
+
+- Use `riffusion_data_songs__fetch_lyrics_timestamps` to get the exact start/end time of every word in your track.
+
+- Pass this JSON to your Space.
+
+- Use a `requestAnimationFrame` loop to move "note" components down a lane based on the `audio.currentTime`.
+
+- Result: You create an instant, playable game for any track in your library. It’s the ultimate "Music Video 2.0"—a video you can play.
+
+3. The "Sonic Galaxy" (2D/3D Library Mapping)
+Concept: Visualizing your entire creative history as a navigable map rather than a list.
+
+- The Workflow:
+
+- Fetch your songs via `riffusion_data_songs__fetch_user_songs`.
+
+- In a Three.js canvas, assign each song to a 3D sphere.
+
+- Use the song's `weirdness` to determine the sphere's color and its `lyrics_strength` to determine its size or "pulse" speed.
+
+- Result: You get a "Visual DNA" of your music. Clusters of spheres represent genres you frequent, and outliers show your experimental tracks.
+
+4. Interactive Narrative EPs (Choose Your Own Adventure)
+Concept: A non-linear musical journey where the "next track" is determined by user choice.
+
+- The Workflow:
+
+- Build a simple UI with story text and two "Choice" buttons.
+
+- Each button maps to a different song ID.
+
+- Use a cross-fade transition between the `Audio` objects in the Space when a choice is made.
+
+- Example: A "Haunted Radio" space where the user chooses to "Tune the dial" or "Stay on the station," leading to different atmospheric generations you’ve created.
+
+5. The "Vibe-OMeter" (Prompt Strength Visualizer)
+Concept: An interactive UI that shows exactly how much "influence" each part of your prompt had on the final audio.
+
+- The Workflow:
+
+- Use `riffusion_data_songs__fetch_metadata_by_id` to get the `sound_prompts` and their `strength` values.
+
+- Build a series of "VU Meters" or "Equalizer Bars" in the Space.
+
+- Map the height of each bar to the `strength` (0.0 to 1.0) of each prompt.
+
+- Result: It turns the "black box" of AI generation into a transparent dashboard, helping you understand which keywords are actually driving your sound.
+
+6. Deformable Geometry (Audio-Reactive Three.js)
+Concept: Using the frequency data of a song to physically alter 3D objects.
+
+- The Workflow:
+
+- Create an `AudioAnalyser` node connected to your song's stream.
+
+- Get the `byteFrequencyData` in your `useFrame` loop.
+
+- Map the low frequencies (bass) to the `scale` of a 3D object and the high frequencies (treble) to its `wireframe` thickness or "vertex jitter."
+
+- Result: The "Music Video" is now a 3D sculpture that dances in real-time. This is significantly more engaging than a static video because it is mathematically tied to the audio.
+
+### Design Tip for High-End Spaces
+
+- The "Zero-Asset" Rule: Try to use CSS gradients and SVG code instead of `.png` or `.jpg` files. It makes the Space load instantly and ensures the UI looks crisp on any screen size.
+
+- Accessibility: Map Space controls to the computer keyboard (e.g., Spacebar for Play/Pause, 1-9 for samples). It makes the Space feel like a real instrument rather than just a website.

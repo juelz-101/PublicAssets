@@ -1,0 +1,65 @@
+# The Vibe Theory: Audio as a Prompt
+Objective: To transfer the texture or style of an existing track to a new creation without copying its specific melody or lyrics.
+The Misconception: Most users think a Vibe is a "Sample." They expect the AI to cut-and-paste the audio.
+The Reality: A Vibe is a Style Transfer. The AI analyzes the reference audio and extracts a mathematical profile of "what this sounds like" (Timbre, EQ curve, production quality, instrument density) and discards the "what is played" (Notes, Melodies, Lyrics).
+
+## The Mechanics: How a Vibe Works
+When you create a Vibe (`riff_create_vibe`) or use an audio upload as a vibe input:
+
+- Ingestion: The model takes a 10-second slice of the audio.
+
+- Encoding: It runs this slice through an audio encoder (similar to how image models use CLIP).
+
+- Vectorization: It turns that audio into a set of "weights" or vectors. It doesn't see "Guitar," it sees "High-mid frequency dominance + Plucky transient profile + Warm saturation."
+
+- Injection: When generating a new song, these weights are injected into the diffusion process alongside your text prompt.
+
+## Vibe vs. Cover: The Crucial Distinction
+| Feature | Cover / Remix (`riff_create_cover`) | Vibe (`riff_create_custom` with `vibe`) |
+| :--- | :--- | :--- |
+| Input | The full song structure (Spectrogram). | A texture profile (Latent Vectors). |
+| Retains | Melody, Rhythm, Song Length, Timing. | Nothing but the "Sound." |
+| Use Case | "Make this specific song sound like Jazz." | "Make a new song that has the production quality of this Jazz track." |
+| Analogy | Tracing a drawing with a new pen. | Buying the same paint set as the artist. |
+
+## Advanced Technique: The "Palette" Strategy (Multi-Vibe Stacking)
+You can stack up to 3 Vibes in a single generation. This allows you to "mix paint" to create a new aesthetic that doesn't exist yet.
+The Recipe:
+
+- Vibe A: "Lo-fi Hip Hop" (For the dust/crackle texture).
+
+- Vibe B: "Heavy Metal" (For the aggressive guitar tone).
+
+- Text Prompt: "Slow jam, 80 bpm."
+
+The Result: The model will try to generate a Slow Jam (Text) that has the distortion of Metal (Vibe B) and the dusty EQ of Lo-fi (Vibe A).
+
+## JSON Blueprint: The "Texture Steal"
+How to use a Vibe to fix "cheap" sounding generations.
+Scenario: You generated a song that has a great melody but sounds like a MIDI preset.
+The Fix: Use a professional track (uploaded as `audio_input`) as a Vibe to "re-skin" the sound.
+
+```
+{
+  "tool_name": "riff_create_custom",
+  "arguments": {
+    "inputs": {
+      "title": "Re-Skinned Melody",
+      "lyrics_id": "original-lyrics-id",
+      "sound_prompts": [
+        {
+          "text": "The original text prompt you used...",
+          "strength": 0.5,
+          "vibe": {
+             "audio_input": { "id": "high-quality-reference-upload-id" },
+             "start_s": 30.0
+          }
+        }
+      ]
+    }
+  }
+}
+
+```
+
+- Note: We set `strength` to `0.5`. This balances the text (what to play) with the Vibe (how to sound).

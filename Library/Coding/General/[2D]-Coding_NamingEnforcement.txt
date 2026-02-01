@@ -1,0 +1,21 @@
+EXPAND ON THIS
+====================================
+
+Purpose:
+- Make the computer enforce rules so humans don’t have to
+
+Contents:
+- ESLint / Prettier rules (JS/TS)
+- Black / Ruff naming (Python)
+- JSON schema enforcement
+- Git hooks & CI checks
+
+Example files:
+  .eslintrc.json
+  pyproject.toml
+  .prettierrc
+
+Used when:
+- Teams > 1 person
+- AI writes code
+- You value your sanity

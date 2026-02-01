@@ -1,12 +1,12 @@
 <#mku>
-<#!i!>	
+<#m>	
 	Title: 		ZIKYinc 	Rulebook:	Data	Root: 	ZIKYinc_Data	Platform: 	Any
 	Desc: 		Standardised rules and protocols that all data files created by ZIKYinc use.
-	Filename: 	ZIKYinc_Rules-Data.txt		Path: 			Library/ZIKYinc/Coding/ZIKYinc_Protocols/ 
+	Filename: 	ZIKYinc_DevBible-DataFiles.txt		Path: 			Library/ZIKYinc/Dev/ZIKYinc_DevBible/ 
 	Filetype: 	Rulebook					FileTag:        File Management     Renderer: 		MarkUnder
-	Creator:	Juelz-101					Organization:	ZIKYinc			Created:	04/4/25 04:30
+	Creator:	Juelz-101					Organization:	ZIKYinc			Created:	03/1/26 00:42
 	Version: 	1.0							TotalEdits:		0				LastEdit:	--/--/-- --:--
-	ProjectRoot: Any						FileStatus:		Ging out lol.
+	ProjectRoot: Any						FileStatus:		Lets actually do this now.
 	Tags: Rules, Rulebook, Data
 	Ref: [
 		Data: 
@@ -23,8 +23,7 @@
 			MKU_ProjectManager: ---
 	]		
 	Notes: []
-	
-CFG:		
+	CFG:		
 		Scope: --			AllowMgr: True			AutoVersioning:	Major Only (prompt)
 		RulingType:		Monitored					State:		Active
 		ScanFor:
@@ -36,6 +35,13 @@ CFG:
 				UseCommonDataTypeList: True				AdditionalFileTypes: []
 				UseCommonFileNamesList: True		AdditionalFiles: []
 			
-<#mwm>	
+</p>
+
+	VOID:				Add info here that will require MKU processing so shouldn't be added until MKU is working.
+
+		"dev_keys": "We will be using a standardised naming system throughout our files and projects - ai_dev: A section specifically there to provide info the AI, dev: Section for providing development info for all involved, desc: Information for the user that is usually displayed as a tooltip, notes: Array of additional info for the user usually displayed in a textbox, info: Information for the user/power-user to assist with editing datafiles" 
+			
+		
+		
 	
 ----

@@ -1,0 +1,431 @@
+# Samsung Modes and Routines Reference
+
+This guide lists the available **Conditions** (triggers) and **Actions** (results) for creating automated routines on Samsung One UI devices.
+
+# Part 1: Conditions (IF)
+
+_These triggers start the routine when detected._
+
+## Connected devices
+- 
+
+**Smart View:** Triggers when your phone is casting to a TV or screen.
+- 
+
+**Multi control:** Triggers when connected to a Galaxy Book or Tablet via Multi Control.
+- 
+
+**Link to Windows:** Triggers when the phone is connected to your PC.
+
+## Device
+- 
+
+**Wired headphones:** Detects when headphones are plugged in or unplugged.
+- 
+
+**Charging status:** specific triggers for Wired charging, Wireless charging, or Not charging.
+- 
+
+**Battery level:** Triggers when battery hits a specific percentage (e.g., "Below 20%" or "Equal to or above 80%").
+- 
+
+**Power saving:** Detects if Power Saving mode is currently On or Off.
+- 
+
+**Sound mode:** Triggers based on the current mode (Sound, Vibrate, or Mute).
+- 
+
+**Dark mode:** Detects if the system Dark Mode is active.
+- 
+
+**Watch wearing status:** Detects if you are currently wearing your Galaxy Watch (requires paired watch).
+
+## Event
+- 
+
+**Game is being played:** Automatically triggers when a game app launches.
+- 
+
+**During exercise:** Triggers when a workout is manually started or auto-detected in Samsung Health.
+- 
+
+**Media is being played:** Detects when music or video is playing from any app.
+
+## Call
+- 
+
+**Incoming call:** Triggers when the phone rings (can specify "from anyone" or "specific contacts").
+- 
+
+**During call:** Triggers while you are actively on a phone call.
+
+# Part 2: Actions (THEN)
+
+_These changes happen automatically when the conditions above are met._
+
+## Accessibility
+- 
+
+**Amplify ambient sound:** Boosts external volume through headphones (similar to hearing aid functionality).
+- 
+
+**Assistant menu:** Toggles the floating on-screen button for quick navigation access.
+- 
+
+**Camera flash notification:** Flashes the camera light when you receive alerts.
+- 
+
+**Colour correction:** Adjusts colour spectrums for users with colour blindness.
+- 
+
+**Colour filter:** Applies a coloured overlay to the screen (e.g., blue light filter).
+- 
+
+**Colour inversion:** Inverts all colours on the screen (white becomes black, etc.).
+- 
+
+**Extra dim:** Lowers the screen brightness beyond the standard minimum setting.
+- 
+
+**Left/right sound balance:** Adjusts volume balance between left and right audio channels.
+- 
+
+**Live Caption:** Automatically detects speech in media and displays captions.
+- 
+
+**Mono audio:** Combines left and right audio channels into a single mono signal.
+- 
+
+**Mute all sounds:** Silences the entire device instantly.
+- 
+
+**Screen flash notification:** Flashes the screen display when notifications arrive.
+
+## Accounts and backup
+- 
+
+**Auto sync data:** Toggles whether accounts (Google, Samsung, etc.) automatically sync in the background.
+
+## Alarm
+- 
+
+**Turn off alarms:** Disables currently active alarms.
+- 
+
+**Turn on alarms:** Enables specific alarms.
+
+## Apps
+- 
+
+**Close an app:** Force closes a specific application.
+- 
+
+**Open an app pair:** Launches two specific apps simultaneously in split-screen mode.
+
+## Battery
+- 
+
+**Battery protection:** Limits maximum charge (usually to 80% or 85%) to extend battery lifespan.
+- 
+
+**Fast charging:** Toggles wired fast charging capabilities.
+- 
+
+**Fast wireless charging:** Toggles high-speed wireless charging.
+
+## Bixby
+- 
+
+**Ask Bixby:** Triggers the voice assistant to listen for a command.
+
+## Connected devices
+- 
+
+**Call & text on other devices:** Allows calls/texts to be routed to your Galaxy Tab or Watch.
+- 
+
+**Link to Windows:** Connects the phone to a PC via the Phone Link app.
+- 
+
+**Multi control:** Allows a Galaxy Book mouse/keyboard to control the phone.
+- 
+
+**Quick Share:** Adjusts visibility for file sharing with nearby devices.
+- 
+
+**Samsung DeX:** Launches the desktop-like interface on a connected monitor.
+
+## Connections
+- 
+
+**Bluetooth:** Turns Bluetooth on or off.
+- 
+
+**Connect to a Bluetooth device:** Connects to a _specific_ saved device (e.g., headphones).
+- 
+
+**Connect to a VPN:** Initiates a connection to a specific Virtual Private Network.
+- 
+
+**Data saver:** Restricts background data usage for apps.
+- 
+
+**Disconnect from a Bluetooth device:** Disconnects a specific device.
+- 
+
+**Disconnect from a VPN:** Ends the VPN session.
+- 
+
+**Flight mode:** Toggles cellular, Wi-Fi, and Bluetooth radios off.
+- 
+
+**Mobile Hotspot:** Turns your phone into a Wi-Fi router.
+- 
+
+**Mobile data:** Toggles 4G/5G cellular data.
+- 
+
+**Music Share:** Allows friends to play music on your Bluetooth speaker via your phone.
+- 
+
+**NFC:** Toggles Near Field Communication (for payments/tags).
+- 
+
+**Network mode:** Switches between network types (e.g., LTE only, 5G preferred).
+- 
+
+**Show Wi-Fi QR code:** Displays the QR code for others to join your current network.
+- 
+
+**Wi-Fi:** Turns Wi-Fi on or off.
+
+## Device care
+- 
+
+**Optimise phone:** Clears background apps and RAM to boost performance.
+- 
+
+**Performance profile:** Switches between Standard (faster) and Light (battery saving) performance profiles.
+
+## Display
+- 
+
+**Accidental touch protection:** Prevents pocket dials when the screen is dark.
+- 
+
+**Adaptive brightness:** Toggles auto-brightness based on ambient light.
+- 
+
+**Adaptive colour tone:** Adjusts screen colour temperature based on ambient light (True Tone).
+- 
+
+**Brightness:** Sets the screen brightness to a specific fixed percentage.
+- 
+
+**Edge panels:** Toggles the slide-out side menu.
+- 
+
+**Font size:** Changes text size.
+- 
+
+**Font style:** Changes the system font family.
+- 
+
+**Motion smoothness:** Toggles refresh rate (e.g., 60Hz vs 120Hz).
+- 
+
+**Screen orientation:** Locks or unlocks portrait/landscape rotation.
+- 
+
+**Screen resolution:** Changes display sharpness (e.g., FHD+ vs WQHD+).
+- 
+
+**Screen timeout:** Sets how long the screen stays on before sleeping.
+- 
+
+**Screen zoom:** Adjusts the scaling of UI elements.
+- 
+
+**Touch sensitivity:** Increases sensitivity (useful when using screen protectors).
+
+## Effects
+- 
+
+**Beep once:** Plays a single system beep.
+- 
+
+**Edge lighting effect once:** Flashes the edge of the screen with a specific colour.
+- 
+
+**Vibrate once:** Triggers a short haptic vibration.
+
+## Functions
+- 
+
+**Go to website:** Opens a specific URL in the default browser.
+- 
+
+**Navigation button actions:** Modifies what the back/home/recent keys do.
+- 
+
+**Open Air command with Pen button:** (S-Pen devices) Toggles S-Pen menu behavior.
+- 
+
+**Read text aloud:** Text-to-speech for a specific phrase.
+- 
+
+**Record screen:** Starts a screen recording.
+- 
+
+**Take screenshot:** Captures the current screen.
+- 
+
+**Torch:** Turns the flashlight on or off.
+- 
+
+**Video brightness:** Enhances screen brightness specifically when watching video apps.
+
+## Galaxy Watch
+
+_(Controls for a paired watch)_
+- 
+
+**Always On Display:** Toggles the watch face staying on.
+- 
+
+**Brightness:** Sets watch screen brightness.
+- 
+
+**Disconnection alerts:** Vibrates when the watch loses phone connection.
+- 
+
+**Power saving:** Toggles watch battery saver mode.
+- 
+
+**Raise wrist to wake:** Toggles waking the watch screen via gesture.
+- 
+
+**Sound mode:** Switches watch between Sound, Vibrate, or Mute.
+- 
+
+**Touch screen to wake:** Toggles waking watch by tapping.
+- 
+
+**Turn bezel to wake:** Toggles waking watch by rotating the bezel.
+
+## Gallery
+- 
+
+**Show images:** Opens a specific picture or album.
+
+## Game Booster
+- 
+
+**Block Bixby during games:** Prevents voice assistant interruptions.
+- 
+
+**Block auto brightness during games:** Locks brightness while gaming.
+- 
+
+**Block edge panel during games:** Disables the side swipe menu while gaming.
+
+## Location
+- 
+
+**Location:** Toggles GPS services on or off.
+
+## Lock screen and AOD
+- 
+
+**Always On Display:** Toggles the phone's standby info screen.
+- 
+
+**Keep your phone unlocked:** Extends Smart Lock duration.
+- 
+
+**Unlock with biometrics:** Automatically attempts to unlock using face/fingerprint.
+
+## Music
+- 
+
+**Spotify playlists:** Starts playing a specific Spotify playlist.
+
+## Notifications
+- 
+
+**Show custom notification:** Displays a text notification you write yourself (useful for reminders).
+
+## Phone
+- 
+
+**Answer using speaker:** Automatically answers incoming calls on speakerphone.
+- 
+
+**Decline call and send a quick message:** Rejects call and texts the caller.
+
+## Samsung Keyboard
+- 
+
+**High contrast keyboard:** Changes keyboard colours for visibility.
+- 
+
+**Languages and types:** Switches input languages.
+- 
+
+**Mode:** Changes keyboard layout (standard, split, floating).
+- 
+
+**Samsung Keyboard voice input:** Toggles voice-to-text.
+
+## Security
+- 
+
+**Turn on Secure Wi-Fi:** Enables Samsung's privacy protection for public networks.
+
+## Sounds and vibration
+- 
+
+**AI assistant volume:** Sets volume for Bixby/Google.
+- 
+
+**Boost dialogue:** Enhances vocal clarity in audio.
+- 
+
+**Call volume:** Sets volume for phone calls.
+- 
+
+**Dialing keypad tone:** Toggles the sound made when typing numbers.
+- 
+
+**Dolby Atmos:** Toggles surround sound processing.
+- 
+
+**Equaliser:** Applies a specific audio EQ preset (e.g., Rock, Pop).
+- 
+
+**Loudness normalisation:** Keeps volume consistent across tracks.
+- 
+
+**Ringtone:** Changes the incoming call ringtone.
+- 
+
+**Samsung Keyboard sound:** Toggles typing sounds.
+- 
+
+**Samsung Keyboard vibration:** Toggles typing haptics.
+- 
+
+**Separate app sound:** Routes specific app audio to a different device (e.g., Spotify to speaker, Nav to phone).
+- 
+
+**Vibrate while ringing:** Toggles vibration during calls.
+
+## Timer
+- 
+
+**Start a timer:** Begins a countdown for a set duration.
+
+## Wallpaper
+- 
+
+**Dim wallpaper when Dark mode is on:** Darkens the background image to match the system theme.

@@ -1,0 +1,90 @@
+### Advanced Producer.ai Workflows: Part 2 — Pro-Tier Techniques
+This second installment focuses on recursive tool use, precision sculpting, and leveraging external data to create highly personalized, professional-grade tracks.
+
+1. The "Vibe Distorter" (Recursive Style Processing)
+Concept: Processing a track with extreme effects, then using that distorted version as a Vibe to influence a new, clean generation.
+
+- The Workflow:
+
+- Apply heavy effects (e.g., `Reverse`, `Bitcrusher`, or `Distortion`) to a track using `apply_audio_effect`.
+
+- Create a Vibe from this processed version.
+
+- Use this Vibe in a new `riff_create_custom` generation with a low `strength` (e.g., 0.2).
+
+- Example: Reversing a piano melody and using it as a Vibe for a lo-fi hip-hop track adds a haunting, "backwards-masking" texture that the AI wouldn't generate from a text prompt alone.
+
+2. The "Infinite Build" (Incremental Extension)
+Concept: Creating a cinematic "riser" or a gradual energy build by extending a song multiple times with shifting parameters.
+
+- The Workflow:
+
+- Generate a 30s loop.
+
+- Use `riff_extend_audio` to add 10 seconds.
+
+- In the new extension, increase the `sound_prompt_strength` or add keywords like "climax, energetic, rising."
+
+- Repeat this process 3-4 times.
+
+- Result: A perfectly linear energy curve where the production naturally evolves and "opens up" over time, rather than jumping suddenly between sections.
+
+3. Real-Time Cultural Sampling (Trend-to-Track)
+Concept: Using real-world data to drive song themes and visual aesthetics for maximum relevance.
+
+- The Workflow:
+
+- Use `twitter_search_recent_tweets` to find a trending topic or keyword.
+
+- Pass that query to `write_lyrics` to generate a topical song.
+
+- Generate the song, then use the trending keywords as the `prompt` for `image_tools__generate_image` to create current, relevant cover art.
+
+- Result: You create "instant" music that responds to current events, perfect for social media creators and rapid-response artists.
+
+4. Micro-Phonetic Sculpting (Accent & Tone Editing)
+Concept: Using the Replace tool to fix a single mispronounced word or change the "attitude" of a specific line without re-generating the whole verse.
+
+- The Workflow:
+
+- Get the exact timestamp of a single word using `riffusion_data_songs__fetch_lyrics_timestamps`.
+
+- Use `riff_replace_audio` on that precise window (e.g., 1.2s to 1.6s).
+
+- Keep the `lyrics_text` the same but add a descriptive `sound_prompt` like "whispered" or "screamed."
+
+- Example: If the AI sings a word too softly, you can "punch in" that one word with a "powerful, belting" prompt to give it the necessary impact.
+
+5. Multi-Vibe Layering (Sonic Collaging)
+Concept: Combining up to four distinct Vibes at varying strengths to create a "hybrid" genre that doesn't exist in text descriptions.
+
+- The Workflow:
+
+- Identify four songs with distinct elements (e.g., A: Jazz Drums, B: 80s Synth, C: Heavy Metal Bass, D: Opera Vocals).
+
+- Create a Vibe for each.
+
+- In `riff_create_custom`, layer all four. Set `strength` for A and B to 0.6, and C and D to 0.2.
+
+- Result: You create a Jazz-Synth hybrid with "subliminal" metal and opera influences—a unique sonic fingerprint that is nearly impossible to replicate.
+
+6. The "Silent Vibe" (Noise Floor Cleaning)
+Concept: Using a "negative" reference to remove unwanted frequencies or "mud" from a generation.
+
+- The Workflow:
+
+- Record or upload a few seconds of silence or very low "hum."
+
+- Create a Vibe from it.
+
+- Use it in a generation with a negative strength (`-0.5`).
+
+- Result: This hack tells the AI to "avoid emptiness" or "avoid low-level hum," often forcing it to produce a punchier, more forward-leaning mix with a cleaner high-end.
+
+### Implementation Tips
+
+- Recursive Splitting: After using Multi-Vibe Layering, use `riff_split_stems_v2` to see which of the 4 Vibes the AI prioritized. You can then re-balance your strengths based on the stems.
+
+- Metadata Harvesting: When you find a "Staff Pick" on the trending page that has a unique sound, use `riffusion_data_songs__fetch_metadata_by_id` to see if they used a Vibe. If they did, you can often "borrow" that Vibe's ID for your own hacks.
+
+- Space Prototyping: If you are building a custom space, use these hacks as "preset" buttons for your users (e.g., a "Glitch It" button that triggers a Syllable Overload replacement).

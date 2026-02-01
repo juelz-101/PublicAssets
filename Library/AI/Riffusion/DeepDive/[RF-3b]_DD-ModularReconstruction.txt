@@ -1,0 +1,201 @@
+# Technical Standard: The Modular Reconstruction Workflow
+Objective: To execute a surgical genre-flip while preserving the high-fidelity characteristics of a specific instrument or vocal from a source track.
+
+## Phase 1: Isolation & Data Mapping (The Scalpel)
+Tool: `riff_split_stems_v2`
+
+Execution: Process the master audio file to extract the hidden components.
+
+### Data Outputs (UUID Mapping)
+When a track is split, the system generates four distinct assets. For a successful remix, we must map them to their roles:
+
+- Asset_A (Drums): Usually discarded to prevent rhythmic "ghosting" or mud in the new generation.
+
+- Asset_B (Bass): Useful as a musical reference for key and root note identification.
+
+- Asset_C (Other/Melody): Primary Target. Contains the harmonic DNA (guitars, keys, synths).
+
+- Asset_D (Vocals): Secondary target if the remix includes original singing/rapping.
+
+## Phase 2: Signal Conditioning (The Polish)
+Tool: `apply_audio_effect`
+
+Logic: Stem separation is imperfect. "Spectral Bleed" (remnants of drums in the melody stem) will confuse the AI. We must use deterministic DSP to sanitize the signal before it reaches the Diffusion model.
+
+### Standard Cleaning Payload (JSON Graph)
+
+```
+[
+  {"node_type": "Input", "node_id": "source_stem", "track_id": "Asset_C"},
+  {
+    "node_id": "clean_low_end",
+    "node_type": "HighPass",
+    "input_ids": ["source_stem"],
+    "cutoff_frequency_hz": 150
+  },
+  {
+    "node_id": "level_glue",
+    "node_type": "Compressor",
+    "input_ids": ["clean_low_end"],
+    "threshold_db": -12,
+    "ratio": 3
+  },
+  {"node_type": "Output", "input_ids": ["level_glue"]}
+]
+
+```
+
+Result: `Asset_Cleaned_Melody`. A signal free of sub-frequency mud, allowing the AI to generate a fresh bassline without phase cancellation.
+
+## Phase 3: The "Goldilocks" Reconstruction (The Canvas)
+Tool: `riff_create_cover`
+
+Logic: We leverage the model's ability to fill "spectral silence."
+
+### Configuration Parameters
+
+- `audio_input`: `Asset_Cleaned_Melody`
+
+- `cover_strength` (0.3 - 0.4):
+
+- Lower than 0.3: AI ignores the prompt; no new drums appear.
+
+- Higher than 0.5: AI re-synthesizes the melody, losing the original instrument's tone.
+
+- `sound_prompt`: Focus strictly on the new elements.
+
+- Example: "Hard-hitting UK Grime drums, syncopated 140bpm rhythm, sub-bass weight."
+
+- `negative_prompt`: Explicitly forbid melody changes.
+
+- Example: "New melodies, synth leads, changing notes, vocal chops."
+
+## Phase 4: The "Stem-Freeze" Hack (The Nuclear Option)
+Tool: `riff_stem_swap`
+
+Logic: If `riff_create_cover` is still altering the melody tone, we trick the model into treating the melody as a protected "Vocal" stem.
+
+### Execution Logic
+
+- Set `swap_type` to `"instrumentals"`.
+
+- Input `Asset_Cleaned_Melody`.
+
+- The model assumes the input is a vocal track. Because the AI is optimized to protect vocal clarity at all costs, it "freezes" the melody and builds a completely independent backing track underneath it.
+
+- `cover_strength`: Set to 1.0. This tells the model to generate a brand new backing track rather than trying to remix the melody.
+
+## Phase 5: Temporal & BPM Correction (Optional/Advanced)
+Tool: `apply_audio_effect` (TempoShift)
+
+Logic: If the source is 90bpm and the target is 140bpm, the AI may "warp" the audio poorly.
+
+- The Fix: Manually speed up the cleaned stem by the required factor (e.g., 1.5x) before Phase 3. This ensures the AI hears the melody at the native target speed.
+
+## Workflow Summary Matrix
+| Scenario | Tool | Strength | Target Stem |
+| :--- | :--- | :--- | :--- |
+| Subtle Genre Shift | `riff_create_cover` | 0.25 | Master |
+| High-Fidelity Remix | `riff_create_cover` | 0.35 | Cleaned Melody Stem |
+| Complete Style Rebuild | `riff_stem_swap` | 1.0 | Cleaned Melody Stem |
+
+Does this look like the comprehensive technical breakdown you were looking for? We've got the ID mappings, the JSON graph examples, and the logic for when to use which tool.Sorry can i get that again but in a code preview box so that i can copy the markdown stuff like bulletpoints, etc
+```
+# Technical Standard: The Modular Reconstruction Workflow (V2.0)
+
+**Objective:** To execute a surgical genre-flip while preserving the high-fidelity characteristics of a specific instrument or vocal from a source track.
+
+---
+
+## Phase 1: Isolation & Data Mapping (The Scalpel)
+**Tool:** `riff_split_stems_v2`
+**Execution:** Process the master audio file to extract the hidden components.
+
+### Data Outputs (UUID Mapping)
+When a track is split, the system generates four distinct assets. For a successful remix, we must map them to their roles:
+*   **Asset_A (Drums):** Usually discarded to prevent rhythmic "ghosting" or mud in the new generation.
+*   **Asset_B (Bass):** Useful as a musical reference for key and root note identification.
+*   **Asset_C (Other/Melody):** **Primary Target.** Contains the harmonic DNA (guitars, keys, synths).
+*   **Asset_D (Vocals):** Secondary target if the remix includes original singing/rapping.
+
+---
+
+## Phase 2: Signal Conditioning (The Polish)
+**Tool:** `apply_audio_effect`
+**Logic:** Stem separation is imperfect. "Spectral Bleed" (remnants of drums in the melody stem) will confuse the AI. We must use deterministic DSP to sanitize the signal before it reaches the Diffusion model.
+
+### Standard Cleaning Payload (JSON Graph)
+```json
+[
+  {"node_type": "Input", "node_id": "source_stem", "track_id": "Asset_C"},
+  {
+    "node_id": "clean_low_end",
+    "node_type": "HighPass",
+    "input_ids": ["source_stem"],
+    "cutoff_frequency_hz": 150
+  },
+  {
+    "node_id": "level_glue",
+    "node_type": "Compressor",
+    "input_ids": ["clean_low_end"],
+    "threshold_db": -12,
+    "ratio": 3
+  },
+  {"node_type": "Output", "input_ids": ["level_glue"]}
+]
+
+```
+
+Result: `Asset_Cleaned_Melody`. A signal free of sub-frequency mud, allowing the AI to generate a fresh bassline without phase cancellation.
+
+## Phase 3: The "Goldilocks" Reconstruction (The Canvas)
+Tool: `riff_create_cover`
+
+Logic: We leverage the model's ability to fill "spectral silence."
+
+### Configuration Parameters
+
+- `audio_input`: `Asset_Cleaned_Melody`
+
+- `cover_strength` (0.3 - 0.4):
+
+- Lower than 0.3: AI ignores the prompt; no new drums appear.
+
+- Higher than 0.5: AI re-synthesizes the melody, losing the original instrument's tone.
+
+- `sound_prompt`: Focus strictly on the new elements.
+
+- Example: "Hard-hitting UK Grime drums, syncopated 140bpm rhythm, sub-bass weight."
+
+- `negative_prompt`: Explicitly forbid melody changes.
+
+- Example: "New melodies, synth leads, changing notes, vocal chops."
+
+## Phase 4: The "Stem-Freeze" Hack (The Nuclear Option)
+Tool: `riff_stem_swap`
+
+Logic: If `riff_create_cover` is still altering the melody tone, we trick the model into treating the melody as a protected "Vocal" stem.
+
+### Execution Logic
+
+- Set `swap_type` to `"instrumentals"`.
+
+- Input `Asset_Cleaned_Melody`.
+
+- The model assumes the input is a vocal track. Because the AI is optimized to protect vocal clarity at all costs, it "freezes" the melody and builds a completely independent backing track underneath it.
+
+- `cover_strength`: Set to 1.0. This tells the model to generate a brand new backing track rather than trying to remix the melody.
+
+## Phase 5: Temporal & BPM Correction (Optional/Advanced)
+Tool: `apply_audio_effect` (TempoShift)
+
+Logic: If the source is 90bpm and the target is 140bpm, the AI may "warp" the audio poorly.
+
+- The Fix: Manually speed up the cleaned stem by the required factor (e.g., 1.5x) before Phase 3. This ensures the AI hears the melody at the native target speed.
+
+## Workflow Summary Matrix
+| Scenario | Tool | Strength | Target Stem |
+| :--- | :--- | :--- | :--- |
+| Subtle Genre Shift | `riff_create_cover` | 0.25 | Master |
+| High-Fidelity Remix | `riff_create_cover` | 0.35 | Cleaned Melody Stem |
+| Complete Style Rebuild | `riff_stem_swap` | 1.0 | Cleaned Melody Stem |

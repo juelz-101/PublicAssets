@@ -1,0 +1,84 @@
+# Advanced Technique: Temporal Prompt Stacking
+Objective: To move beyond static loops and create dynamic songs with distinct sections (Intro, Verse, Drop, Outro) using a single generation request.
+The Concept: Instead of sending one prompt that applies to the whole song (e.g., "A jazz song"), we send a list of prompts, each with a `time_start` and `time_end`. The model essentially "reads" this timeline left-to-right as it generates the spectrogram.
+
+## The Mechanism: `riff_create_custom`
+The `riff_create_custom` tool accepts an array called `sound_prompts`.
+Each object in this array is a "layer" on the timeline.
+
+### 1. Sequential Stacking (Storytelling)
+This method places prompts back-to-back to create a narrative arc.
+
+- 0s - 15s: "Atmospheric rain sounds, distant thunder, lonely piano melody."
+
+- 15s - 45s: "Lofi hip hop beat drops in, dusty vinyl crackle, chill vibes."
+
+- 45s - End: "Saxophone solo enters, smooth jazz improvisation."
+
+Result: The song evolves naturalistically. The "rain" from the intro might linger faintly into the beat section because the model has a "context window" (it remembers what happened a few seconds ago).
+
+### 2. Layered Stacking (The "Mashup")
+This method places prompts on top of each other (overlapping times) to create complex textures that are hard to describe in a single sentence.
+
+- Layer A (0s - 60s): "Heavy Dubstep bassline, wobbles, aggressive."
+
+- Layer B (0s - 60s): "Classical violin concerto, emotional, vibrato."
+
+Result: The model is forced to fuse these two disparate concepts. Instead of a messy clash, the diffusion process often finds a "mathematical middle ground"—like a gritty, distorted violin playing a bassline.
+
+## The Blend Zone (Transition Logic)
+When one prompt ends and another begins, there is no hard "cut." The diffusion model is continuous.
+
+- The Crossfade: If Prompt A ends at 20s and Prompt B starts at 20s, the model effectively crossfades the concepts between ~18s and ~22s.
+
+- The Overlap: You can smooth this transition manually by overlapping them:
+
+- Prompt A: 0s - 25s
+
+- Prompt B: 20s - End
+
+- Result: A 5-second period where both styles exist, creating a seamless morph.
+
+## JSON Blueprint: The "Pop Structure"
+Here is a standard template for a structured 60-second Pop/Dance track using Temporal Stacking.
+
+```
+{
+  "tool_name": "riff_create_custom",
+  "arguments": {
+    "inputs": {
+      "title": "Structured Pop Demo",
+      "sound_prompts": [
+        {
+          "text": "Muted guitar pluck intro, simple kick drum, anticipation, 120 bpm",
+          "strength": 0.8,
+          "time_start": 0.0,
+          "time_end": 15.0
+        },
+        {
+          "text": "Full pop arrangement, bright synth leads, driving bassline, upbeat energy, 120 bpm",
+          "strength": 0.9,
+          "time_start": 15.0,
+          "time_end": 45.0
+        },
+        {
+          "text": "Stripped back acoustic guitar outro, fading out, calm",
+          "strength": 0.7,
+          "time_start": 45.0,
+          "time_end": null
+        }
+      ],
+      "lyrics_id": "uuid-for-lyrics"
+    }
+  }
+}
+
+```
+
+## Best Practices
+
+- Don't Overcrowd: Stick to 3-4 distinct time segments max. More than that creates chaos in the latent space.
+
+- Consistent BPM: Always include the BPM tag (e.g., ", 120 bpm") in every prompt segment. If Segment A has "120 bpm" and Segment B doesn't, the model might drift tempo during the transition.
+
+- Lead Time: If you want a "Drop" at exactly 30s, start the prompt for the drop at 28s or 29s to give the model time to "ramp up" the energy.

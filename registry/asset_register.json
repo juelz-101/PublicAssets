@@ -88,21 +88,63 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/HTML/Modules/Generators/UniqueCharGenerator_Guide.txt"
     }
   ],
-  "Library/ZIKYinc/Dev/ZIKYinc_Protocols": [
+  "Library/ZIKYinc/Dev/ZIKYinc_DevBible": [
     {
-      "name": "ZIKYinc_Data-Protocols.txt",
-      "ext": "txt",
-      "path": "Library/ZIKYinc/Dev/ZIKYinc_Protocols/ZIKYinc_Data-Protocols.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_Protocols/ZIKYinc_Data-Protocols.txt"
+      "name": "[BIB]-ZIKYinc_DevBible-Datafiles.mlb",
+      "ext": "mlb",
+      "path": "Library/ZIKYinc/Dev/ZIKYinc_DevBible/[BIB]-ZIKYinc_DevBible-Datafiles.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_DevBible/[BIB]-ZIKYinc_DevBible-Datafiles.mlb"
+    },
+    {
+      "name": "[Q-BIB]-ZIKYinc_DevBible-QuickGuide.mlb",
+      "ext": "mlb",
+      "path": "Library/ZIKYinc/Dev/ZIKYinc_DevBible/[Q-BIB]-ZIKYinc_DevBible-QuickGuide.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_DevBible/[Q-BIB]-ZIKYinc_DevBible-QuickGuide.mlb"
+    },
+    {
+      "name": "[BIB]-ZIKYinc_DevBible-FileTypes.mlb",
+      "ext": "mlb",
+      "path": "Library/ZIKYinc/Dev/ZIKYinc_DevBible/[BIB]-ZIKYinc_DevBible-FileTypes.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_DevBible/[BIB]-ZIKYinc_DevBible-FileTypes.mlb"
+    },
+    {
+      "name": "[BIB]-ZIKYinc_DevBible-MKU_Files.mlb",
+      "ext": "mlb",
+      "path": "Library/ZIKYinc/Dev/ZIKYinc_DevBible/[BIB]-ZIKYinc_DevBible-MKU_Files.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_DevBible/[BIB]-ZIKYinc_DevBible-MKU_Files.mlb"
+    },
+    {
+      "name": "[BIB]-ZIKYinc_DevBible-Library(non-MKU).mlb",
+      "ext": "mlb",
+      "path": "Library/ZIKYinc/Dev/ZIKYinc_DevBible/[BIB]-ZIKYinc_DevBible-Library(non-MKU).mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_DevBible/[BIB]-ZIKYinc_DevBible-Library(non-MKU).mlb"
+    },
+    {
+      "name": "[BIB]-ZIKYinc_DevBible-Library(MKU).mlb",
+      "ext": "mlb",
+      "path": "Library/ZIKYinc/Dev/ZIKYinc_DevBible/[BIB]-ZIKYinc_DevBible-Library(MKU).mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_DevBible/[BIB]-ZIKYinc_DevBible-Library(MKU).mlb"
+    },
+    {
+      "name": "Copy of [BIB]-ZIKYinc_DevBible-Dictionary.mlb",
+      "ext": "mlb",
+      "path": "Library/ZIKYinc/Dev/ZIKYinc_DevBible/Copy of [BIB]-ZIKYinc_DevBible-Dictionary.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/ZIKYinc_DevBible/Copy of [BIB]-ZIKYinc_DevBible-Dictionary.mlb"
     }
   ],
-  "Library/ZIKYinc/Dev/ZIKYinc_Protocols/[2]-File_Management": [],
+  "Library/ZIKYinc/Dev/ZIKYinc_DevBible/[2]-File_Management": [],
   "Library/ZIKYinc/Dev/MKU": [
     {
       "name": "MKU_UserGuide.mlb",
       "ext": "mlb",
       "path": "Library/ZIKYinc/Dev/MKU/MKU_UserGuide.mlb",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/MKU/MKU_UserGuide.mlb"
+    },
+    {
+      "name": "Meta_Variables.mku",
+      "ext": "mku",
+      "path": "Library/ZIKYinc/Dev/MKU/Meta_Variables.mku",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/ZIKYinc/Dev/MKU/Meta_Variables.mku"
     },
     {
       "name": "MKU_Tags.mlp",
@@ -162,6 +204,51 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/HTML/CSS Reference & Guide.txt"
     }
   ],
+  "Library/Coding/HTML/Node": [],
+  "Library/Coding/HTML/Node/Puppeteer": [
+    {
+      "name": "Puppeteer_Profiles-PT1.mlb",
+      "ext": "mlb",
+      "path": "Library/Coding/HTML/Node/Puppeteer/Puppeteer_Profiles-PT1.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/HTML/Node/Puppeteer/Puppeteer_Profiles-PT1.mlb"
+    },
+    {
+      "name": "Puppeteer_Profiles-PT2.mlb",
+      "ext": "mlb",
+      "path": "Library/Coding/HTML/Node/Puppeteer/Puppeteer_Profiles-PT2.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/HTML/Node/Puppeteer/Puppeteer_Profiles-PT2.mlb"
+    },
+    {
+      "name": "Puppeteer_Profiles-Toolkit.ts",
+      "ext": "ts",
+      "path": "Library/Coding/HTML/Node/Puppeteer/Puppeteer_Profiles-Toolkit.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/HTML/Node/Puppeteer/Puppeteer_Profiles-Toolkit.ts"
+    },
+    {
+      "name": "Puppeteer_Brower-Toolkit.ts",
+      "ext": "ts",
+      "path": "Library/Coding/HTML/Node/Puppeteer/Puppeteer_Brower-Toolkit.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/HTML/Node/Puppeteer/Puppeteer_Brower-Toolkit.ts"
+    },
+    {
+      "name": "Puppeteer_CoolStuff-PT1.mlb",
+      "ext": "mlb",
+      "path": "Library/Coding/HTML/Node/Puppeteer/Puppeteer_CoolStuff-PT1.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/HTML/Node/Puppeteer/Puppeteer_CoolStuff-PT1.mlb"
+    },
+    {
+      "name": "Puppeteer_Browser-PT1.mlb",
+      "ext": "mlb",
+      "path": "Library/Coding/HTML/Node/Puppeteer/Puppeteer_Browser-PT1.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/HTML/Node/Puppeteer/Puppeteer_Browser-PT1.mlb"
+    },
+    {
+      "name": "Puppeteer_Cheatsheet.mct",
+      "ext": "mct",
+      "path": "Library/Coding/HTML/Node/Puppeteer/Puppeteer_Cheatsheet.mct",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/HTML/Node/Puppeteer/Puppeteer_Cheatsheet.mct"
+    }
+  ],
   "Library/Coding/PY": [],
   "Library/Coding/PY/TelegramBots": [
     {
@@ -207,6 +294,12 @@
       "ext": "txt",
       "path": "Library/Coding/PY/Basics/[PY]PythonBasics-ExportingToEXE .txt",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/PY/Basics/[PY]PythonBasics-ExportingToEXE .txt"
+    },
+    {
+      "name": "[PY]PythonBasics-UsefulTools.txt",
+      "ext": "txt",
+      "path": "Library/Coding/PY/Basics/[PY]PythonBasics-UsefulTools.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/PY/Basics/[PY]PythonBasics-UsefulTools.txt"
     }
   ],
   "Library/Coding/SVG": [],
@@ -246,6 +339,86 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/BAT/WinBAT-CheatSheet.mlc"
     }
   ],
+  "Library/Coding/General": [
+    {
+      "name": "[QUK]-Coding_NamingConventions.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/[QUK]-Coding_NamingConventions.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[QUK]-Coding_NamingConventions.txt"
+    },
+    {
+      "name": "[2D]-Coding_NamingExceptions.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/[2D]-Coding_NamingExceptions.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[2D]-Coding_NamingExceptions.txt"
+    },
+    {
+      "name": "[2D]-Coding_NamingEnforcement.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/[2D]-Coding_NamingEnforcement.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[2D]-Coding_NamingEnforcement.txt"
+    },
+    {
+      "name": "[2D]-Coding_RepoNaming.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/[2D]-Coding_RepoNaming.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[2D]-Coding_RepoNaming.txt"
+    },
+    {
+      "name": "[GEN]-Coding_NamingConventions.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/[GEN]-Coding_NamingConventions.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[GEN]-Coding_NamingConventions.txt"
+    },
+    {
+      "name": "[CH-GEN]-Coding_NamingConventions.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/[CH-GEN]-Coding_NamingConventions.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[CH-GEN]-Coding_NamingConventions.txt"
+    }
+  ],
+  "Library/Coding/General/AppDevelopment": [
+    {
+      "name": "[APP]-EngStandard_CrossPlatformStack.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/AppDevelopment/[APP]-EngStandard_CrossPlatformStack.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/AppDevelopment/[APP]-EngStandard_CrossPlatformStack.txt"
+    },
+    {
+      "name": "[APP]-EngStandard_SimpleApps.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/AppDevelopment/[APP]-EngStandard_SimpleApps.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/AppDevelopment/[APP]-EngStandard_SimpleApps.txt"
+    },
+    {
+      "name": "[APP]-EngStandard_HighPerformance.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/AppDevelopment/[APP]-EngStandard_HighPerformance.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/AppDevelopment/[APP]-EngStandard_HighPerformance.txt"
+    },
+    {
+      "name": "[APP]-EngStandard_UIFocus.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/AppDevelopment/[APP]-EngStandard_UIFocus.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/AppDevelopment/[APP]-EngStandard_UIFocus.txt"
+    }
+  ],
+  "Library/Coding/General/SystemControl": [
+    {
+      "name": "System_Control-Checklist.mck",
+      "ext": "mck",
+      "path": "Library/Coding/General/SystemControl/System_Control-Checklist.mck",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/SystemControl/System_Control-Checklist.mck"
+    }
+  ],
+  "Library/Coding/CLI": [
+    {
+      "name": "[CLI]-CommandBuilding.txt",
+      "ext": "txt",
+      "path": "Library/Coding/CLI/[CLI]-CommandBuilding.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/CLI/[CLI]-CommandBuilding.txt"
+    }
+  ],
   "Library/GeneralComputing": [],
   "Library/GeneralComputing/DataManagement": [],
   "Library/GeneralComputing/DataManagement/FamilyManagement": [
@@ -268,11 +441,66 @@
       "ext": "mld",
       "path": "Library/GeneralComputing/Hardware/KeyboardSymbols.mld",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Hardware/KeyboardSymbols.mld"
+    },
+    {
+      "name": "[CH-GCPU]-KeyboardSymbols.mlb",
+      "ext": "mlb",
+      "path": "Library/GeneralComputing/Hardware/[CH-GCPU]-KeyboardSymbols.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Hardware/[CH-GCPU]-KeyboardSymbols.mlb"
     }
   ],
-  "Library/FireAndSecurity": [],
+  "Library/FireAndSecurity": [
+    {
+      "name": "[DB]-F&S_PartNumbers.json",
+      "ext": "json",
+      "path": "Library/FireAndSecurity/[DB]-F&S_PartNumbers.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/FireAndSecurity/[DB]-F&S_PartNumbers.json"
+    },
+    {
+      "name": "New Text Document.txt",
+      "ext": "txt",
+      "path": "Library/FireAndSecurity/New Text Document.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/FireAndSecurity/New Text Document.txt"
+    }
+  ],
   "Library/FireAndSecurity/Fire": [],
-  "Library/AI": [],
+  "Library/FireAndSecurity/AudVis": [],
+  "Library/FireAndSecurity/Intruder": [
+    {
+      "name": "Honeywell_Parts.txt",
+      "ext": "txt",
+      "path": "Library/FireAndSecurity/Intruder/Honeywell_Parts.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/FireAndSecurity/Intruder/Honeywell_Parts.txt"
+    },
+    {
+      "name": "Pyronix_Parts.txt",
+      "ext": "txt",
+      "path": "Library/FireAndSecurity/Intruder/Pyronix_Parts.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/FireAndSecurity/Intruder/Pyronix_Parts.txt"
+    },
+    {
+      "name": "Texecom_Parts.txt",
+      "ext": "txt",
+      "path": "Library/FireAndSecurity/Intruder/Texecom_Parts.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/FireAndSecurity/Intruder/Texecom_Parts.txt"
+    },
+    {
+      "name": "HKC_Parts.txt",
+      "ext": "txt",
+      "path": "Library/FireAndSecurity/Intruder/HKC_Parts.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/FireAndSecurity/Intruder/HKC_Parts.txt"
+    }
+  ],
+  "Library/FireAndSecurity/CCTV": [],
+  "Library/FireAndSecurity/AccessControl": [],
+  "Library/AI": [
+    {
+      "name": "New Text Document.txt",
+      "ext": "txt",
+      "path": "Library/AI/New Text Document.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/New Text Document.txt"
+    }
+  ],
   "Library/AI/Experiments": [],
   "Library/AI/Experiments/CharacterConsistency-Gemini": [
     {
@@ -297,6 +525,251 @@
       "ext": "txt",
       "path": "Library/AI/Experiments/Shutdown-Senario/Emails/[SHUT]-Emails_Original.txt",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Experiments/Shutdown-Senario/Emails/[SHUT]-Emails_Original.txt"
+    }
+  ],
+  "Library/AI/Riffusion": [],
+  "Library/AI/Riffusion/DeepDive": [
+    {
+      "name": "[RF-1a]_DD-Overview.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-1a]_DD-Overview.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-1a]_DD-Overview.txt"
+    },
+    {
+      "name": "[RF-1b]_DD-Plan.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-1b]_DD-Plan.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-1b]_DD-Plan.txt"
+    },
+    {
+      "name": "[RF-2a]_DD-AIPerspective.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-2a]_DD-AIPerspective.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-2a]_DD-AIPerspective.txt"
+    },
+    {
+      "name": "[RF-2b]_DD-Functions.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-2b]_DD-Functions.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-2b]_DD-Functions.txt"
+    },
+    {
+      "name": "[RF-2c]_DD-InterfaceToDiffusion.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-2c]_DD-InterfaceToDiffusion.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-2c]_DD-InterfaceToDiffusion.txt"
+    },
+    {
+      "name": "[RF-00]_DD-MasterDB.json",
+      "ext": "json",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-00]_DD-MasterDB.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-00]_DD-MasterDB.json"
+    },
+    {
+      "name": "[RF-]_DD-.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-]_DD-.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-]_DD-.txt"
+    },
+    {
+      "name": "[RF-3b]_DD-ModularReconstruction.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-3b]_DD-ModularReconstruction.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-3b]_DD-ModularReconstruction.txt"
+    },
+    {
+      "name": "[RF-3c]_DD-VibeTheory.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-3c]_DD-VibeTheory.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-3c]_DD-VibeTheory.txt"
+    },
+    {
+      "name": "[RF-3a]_DD-PromptStacking.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-3a]_DD-PromptStacking.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-3a]_DD-PromptStacking.txt"
+    },
+    {
+      "name": "[RF-4a]_DD-WorkflowHacks_PT1.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-4a]_DD-WorkflowHacks_PT1.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-4a]_DD-WorkflowHacks_PT1.txt"
+    },
+    {
+      "name": "[RF-4b]_DD-WorkflowHacks_PT2.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-4b]_DD-WorkflowHacks_PT2.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-4b]_DD-WorkflowHacks_PT2.txt"
+    },
+    {
+      "name": "[RF-4c]_DD-WorkflowHacks_PT3.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-4c]_DD-WorkflowHacks_PT3.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-4c]_DD-WorkflowHacks_PT3.txt"
+    },
+    {
+      "name": "[RF-3d]_DD-CreativeHacks.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-3d]_DD-CreativeHacks.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-3d]_DD-CreativeHacks.txt"
+    },
+    {
+      "name": "[RF-2d]_DD-WhatCanSpacesDo.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-2d]_DD-WhatCanSpacesDo.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-2d]_DD-WhatCanSpacesDo.txt"
+    },
+    {
+      "name": "[RF-4d]_DD-Spaces_WorkflowHacks_PT1.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-4d]_DD-Spaces_WorkflowHacks_PT1.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-4d]_DD-Spaces_WorkflowHacks_PT1.txt"
+    },
+    {
+      "name": "[RF-4e]_DD-Spaces_WorkflowHacks_PT2.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-4e]_DD-Spaces_WorkflowHacks_PT2.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-4e]_DD-Spaces_WorkflowHacks_PT2.txt"
+    },
+    {
+      "name": "[RF-4f]_DD-Spaces_WorkflowHacks_PT3.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-4f]_DD-Spaces_WorkflowHacks_PT3.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-4f]_DD-Spaces_WorkflowHacks_PT3.txt"
+    },
+    {
+      "name": "[RF-4a]_DD-ManualJSON_Intro.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-4a]_DD-ManualJSON_Intro.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-4a]_DD-ManualJSON_Intro.txt"
+    },
+    {
+      "name": "[RF-4b]_DD-ManualJSON_Remixes.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-4b]_DD-ManualJSON_Remixes.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-4b]_DD-ManualJSON_Remixes.txt"
+    },
+    {
+      "name": "[RF-4c]_DD-ManualJSON_CoolTricks.txt",
+      "ext": "txt",
+      "path": "Library/AI/Riffusion/DeepDive/[RF-4c]_DD-ManualJSON_CoolTricks.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/[RF-4c]_DD-ManualJSON_CoolTricks.txt"
+    }
+  ],
+  "Library/AI/Riffusion/DeepDive/Data": [],
+  "Library/AI/Riffusion/DeepDive/Logs": [
+    {
+      "name": "[RF-L1]_DD-FirstChat.md",
+      "ext": "md",
+      "path": "Library/AI/Riffusion/DeepDive/Logs/[RF-L1]_DD-FirstChat.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/Logs/[RF-L1]_DD-FirstChat.md"
+    }
+  ],
+  "Library/AI/Riffusion/DeepDive/Logs/[RF-L1]_DD-FirstChat": [],
+  "Library/AI/Riffusion/DeepDive/BK": [
+    {
+      "name": "Interface_Mechanics.pdf",
+      "ext": "pdf",
+      "path": "Library/AI/Riffusion/DeepDive/BK/Interface_Mechanics.pdf",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/BK/Interface_Mechanics.pdf"
+    },
+    {
+      "name": "Exercise1.pdf",
+      "ext": "pdf",
+      "path": "Library/AI/Riffusion/DeepDive/BK/Exercise1.pdf",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/BK/Exercise1.pdf"
+    },
+    {
+      "name": "[RF-1a]_DD-Overview.pdf",
+      "ext": "pdf",
+      "path": "Library/AI/Riffusion/DeepDive/BK/[RF-1a]_DD-Overview.pdf",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/BK/[RF-1a]_DD-Overview.pdf"
+    },
+    {
+      "name": "Plan.pdf",
+      "ext": "pdf",
+      "path": "Library/AI/Riffusion/DeepDive/BK/Plan.pdf",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/BK/Plan.pdf"
+    },
+    {
+      "name": "AIPers.pdf",
+      "ext": "pdf",
+      "path": "Library/AI/Riffusion/DeepDive/BK/AIPers.pdf",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/BK/AIPers.pdf"
+    },
+    {
+      "name": "Functions.pdf",
+      "ext": "pdf",
+      "path": "Library/AI/Riffusion/DeepDive/BK/Functions.pdf",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/BK/Functions.pdf"
+    },
+    {
+      "name": "Interface_Mechanics2.pdf",
+      "ext": "pdf",
+      "path": "Library/AI/Riffusion/DeepDive/BK/Interface_Mechanics2.pdf",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Riffusion/DeepDive/BK/Interface_Mechanics2.pdf"
+    }
+  ],
+  "Library/AI/Gemini": [
+    {
+      "name": "Gemini_Canvas-DatalossPreventions.txt",
+      "ext": "txt",
+      "path": "Library/AI/Gemini/Gemini_Canvas-DatalossPreventions.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Gemini/Gemini_Canvas-DatalossPreventions.txt"
+    }
+  ],
+  "Library/Music": [],
+  "Library/Music/MusicTheory": [
+    {
+      "name": "Music_Theory-Dict.mld",
+      "ext": "mld",
+      "path": "Library/Music/MusicTheory/Music_Theory-Dict.mld",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Music/MusicTheory/Music_Theory-Dict.mld"
+    }
+  ],
+  "Library/Music/MusicTheory/LyricBuilding": [
+    {
+      "name": "RhymingStructures-Basics.txt",
+      "ext": "txt",
+      "path": "Library/Music/MusicTheory/LyricBuilding/RhymingStructures-Basics.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Music/MusicTheory/LyricBuilding/RhymingStructures-Basics.txt"
+    },
+    {
+      "name": "RhymingStructures-Advanced.txt",
+      "ext": "txt",
+      "path": "Library/Music/MusicTheory/LyricBuilding/RhymingStructures-Advanced.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Music/MusicTheory/LyricBuilding/RhymingStructures-Advanced.txt"
+    }
+  ],
+  "Library/Music/MusicTheory/SongStructuring": [
+    {
+      "name": "SongStructure_Basic.txt",
+      "ext": "txt",
+      "path": "Library/Music/MusicTheory/SongStructuring/SongStructure_Basic.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Music/MusicTheory/SongStructuring/SongStructure_Basic.txt"
+    }
+  ],
+  "Library/Mobile": [],
+  "Library/Mobile/Android": [],
+  "Library/Mobile/Android/SamsungApps": [],
+  "Library/Mobile/Android/SamsungApps/Routines": [
+    {
+      "name": "SamsungRoutines-Reference.txt",
+      "ext": "txt",
+      "path": "Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-Reference.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-Reference.txt"
+    },
+    {
+      "name": "SamsungRoutines-DB.json",
+      "ext": "json",
+      "path": "Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-DB.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-DB.json"
+    },
+    {
+      "name": "SamsungRoutines-AutomatedTimesheets.txt",
+      "ext": "txt",
+      "path": "Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-AutomatedTimesheets.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-AutomatedTimesheets.txt"
     }
   ],
   "Images": [],

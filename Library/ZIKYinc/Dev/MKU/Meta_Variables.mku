@@ -1,0 +1,191 @@
+
+
+Here is all of the info about the variables within the meta:
+
+	type:	
+		Desc: The type of data file this is.
+		Type:	Combobox, 	IsRequired:		True,
+		Options: 
+			project:	Datafile for a project like an app or tool.
+			module:		Datafile for a modular script that will be used in multiple places.
+			file:		Datafile for a specific file/script.
+			data:		Datafile only containing information and does not control anything.
+
+	name:	
+		Desc:	A full title for this file, or the parent app.
+		Type:	Textbox,	IsRequired:		True
+			
+	name_finalized:
+		Desc:	Is the name/title finalised and is unlikely to be changed.
+		Type:	Checkbox,	IsRequired:		False
+		
+	desc:	
+		Desc:	A brief description on what this file, or parent app, is for.
+		Type:	Textbox,	IsRequired:		True
+		
+	creator:
+		Desc:	The name/alias of the creator.
+		Type:	Textbox,	IsRequired:		False
+		
+	organization:
+		Desc:	The name of the orginization or team.
+		Type:	Textbox,	IsRequired:		False
+		
+	file (array):
+		Desc:	This contains info about the file .
+		Type:	Array,	IsRequired:		False
+		Variables:
+			platform:
+				Desc: Intended platform that this, and its parent files are made for.
+				Type: Textbox	IsRequired:		False
+				Presets: Any, HTML, Typescript, Python, WPF, AHK
+	
+		root:
+			Desc:	The main root where the parent project, etc is located.
+			Type:	Textbox,	IsRequired:		False
+		
+		path:
+			Desc:	Path to this parent folder of this file.
+			Type:	Path,	IsRequired:		False
+			
+		this_file:
+			Desc:	The name of this file (including extension).
+			Type:	Name,	IsRequired:		False
+			
+		modules_root:
+			Desc:	Path to a modules folder that will be used (from file.root).
+			Type:	Path,	IsRequired:		False
+			
+	started:
+		Desc: Date that this file was created
+		Type: 	Date,	IsRequired:		False
+		
+	version:
+		Desc:	Version number of this datafile or project. Used for update tracking.
+		Type:	Textbox,	IsRequired:		False
+		
+	edited (array):
+		Desc:	Information about the last edit made to this file.
+		Type:	Array,	IsRequired:		False
+		Variables:
+			last:
+				Desc:	Date the file was last edited.
+				Type:	Date,	IsRequired:		False
+			edited_by:
+				Desc:	Name or alias of the person who last edited this file.
+				Type:	Textbox,	IsRequired:		False
+			edit_number:
+				Desc:	How many times this file has been edited.
+				Type:	Number,	IsRequired:		False
+			changelog:
+				Desc:	Array listing major changes made in each edit.
+				Type:	Array,	IsRequired:		False
+
+	ref (array):
+		Desc:	Reference links to layouts, handlers, and templates used by this file.
+		Type:	Array,	IsRequired:		False
+		Variables:
+			meta_layout:
+				Desc:	ID reference to the layout used by this metadata section.
+				Type:	Textbox,	IsRequired:		False
+			project_layout:
+				Desc:	ID reference to the general structure/layout used for this project.
+				Type:	Textbox,	IsRequired:		False
+			db_handling:
+				Desc:	ID reference to the database handling configuration.
+				Type:	Textbox,	IsRequired:		False
+			theme_loader:
+				Desc:	ID reference to the theme system or visual handler.
+				Type:	Textbox,	IsRequired:		False
+
+	mgr (array):
+		Desc:	Settings used by our ProjectManagement tool.
+		Type:	Array,	IsRequired:		False
+		Variables:
+			allow_autofill:
+				Desc:	Defines when autofill is allowed to populate blank fields.
+				Type:	Combobox,	IsRequired:		False
+				Options:
+					Always:		Autofill will replace empty fields and create missing keys.
+					If Blank:	Autofill will only fill empty fields.
+					Never:		Autofill is disabled completely.
+			auto_version:
+				Desc:	Defines how version numbers are automatically incremented.
+				Type:	Combobox,	IsRequired:		False
+				Options:
+					Major Only, Minor Only, Patch Only, Disabled
+			track_edits:
+				Desc:	Tracks changes and edit history automatically.
+				Type:	Checkbox,	IsRequired:		False
+			auto_merging:
+				Desc:	Automatically merges updates with remote or web versions.
+				Type:	Checkbox,	IsRequired:		False
+
+	defaults (array):
+		Desc:	Defines default data sources or templates that can be loaded by this project.
+		Type:	Array,	IsRequired:		False
+		Variables:
+			load_defaults:
+				Desc:	Whether to automatically load default data on startup.
+				Type:	Checkbox,	IsRequired:		False
+			web:
+				Desc:	Web link or URL pointing to the default data source.
+				Type:	URL,	IsRequired:		False
+			file:
+				Desc:	Local file path to a default data source.
+				Type:	Path,	IsRequired:		False
+			priority:
+				Desc:	Defines which default source to prioritize (web or file).
+				Type:	Combobox,	IsRequired:		False
+				Options:
+					web, file, none
+
+	modules (array):
+		Desc:	Controls which modules are added or excluded during loading.
+		Type:	Array,	IsRequired:		False
+		Variables:
+			modules_to_add:
+				Desc:	List of modules to include when building or running the project.
+				Type:	Array,	IsRequired:		False
+			modules_to_ignore_update:
+				Desc:	List of modules that should not be updated automatically.
+				Type:	Array,	IsRequired:		False
+
+	current_status:
+		Desc:	A short text describing the current state of the project.
+		Type:	Textbox,	IsRequired:		False
+
+	complete:
+		Desc:	Indicates if this project is considered finished.
+		Type:	Checkbox,	IsRequired:		False
+
+	notes (array):
+		Desc:	General developer notes and remarks attached to this file.
+		Type:	Array,	IsRequired:		False
+		Variables:
+			[0]:
+				Desc:	Each note entry contains author name, date, and an array of comments.
+				Type:	Array,	IsRequired:		False
+				Layout:
+					0: Author (Textbox)
+					1: Date (Date)
+					2: Notes (Array of Textbox)
+
+	
+					
+"meta": {
+        "type": "project", "name": "HTML App-Data template (db_update)", "name_finalized": false,
+        "desc": "A template/example to show how we will be using multiple databases and stores.",
+        "creator": "Juelz-101", "organization": "ZIKYinc",
+		"file": { "platform": "HTML", "root": "ZIKYinc_Data", "path": "HTML/templates/appdata", "this_file": "appdata(db_update).json", "modules_root": "" }, 
+		"started": "20/4/25", "version": "0.1.0", "edited": {"last": "", "edited_by": "", "edit_number": 0, "changelog": []},
+		"ref": {"meta_layout": "MTA04", "project_layout": "JS03", "db_handling": "DB04", "theme_loader": "THM02"},
+        "cfg": { "allow_autofill": "If Blank", "auto_version": "Minor Only", "track_edits": true, "auto_merging": false },
+		"defaults": {"load_defaults": true, "web": "https://raw.githubusercontent.com/juelz-101/ZIKYinc_Data/refs/heads/main/HTML/defaults/html_project_defaults.json?token=GHSAT0AAAAAADDLV7LK7TS3PFRLNRQIRG4K2AZLLWA", "file": "", "priority": "web"},
+		"modules": {"modules_to_add": [], "modules_to_ignore_update": []},
+		"current_status": "Literally just started.", "complete": false,
+		
+		"notes": [
+			["Juelz-101", "25/4/25", ["Keys labelled 'info' are for dev ref and will be removed once complete.", "Keys labelled 'desc' are perminant and will be used for tooltips and descriptions." ]]
+		]
+    },

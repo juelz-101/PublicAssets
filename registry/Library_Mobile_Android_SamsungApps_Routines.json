@@ -1,0 +1,20 @@
+[
+  {
+    "name": "SamsungRoutines-Reference.txt",
+    "ext": "txt",
+    "path": "Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-Reference.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-Reference.txt"
+  },
+  {
+    "name": "SamsungRoutines-DB.json",
+    "ext": "json",
+    "path": "Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-DB.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-DB.json"
+  },
+  {
+    "name": "SamsungRoutines-AutomatedTimesheets.txt",
+    "ext": "txt",
+    "path": "Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-AutomatedTimesheets.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Mobile/Android/SamsungApps/Routines/SamsungRoutines-AutomatedTimesheets.txt"
+  }
+]

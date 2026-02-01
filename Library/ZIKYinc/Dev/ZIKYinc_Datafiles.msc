@@ -49,7 +49,7 @@
 						{
 							"name": "JSON Metas", "id": "z_d_m_json",
 							"desc": "Schemas for the meta info at the top of our json-based datafiles",
-							"version": "MTA04",
+							"version": "MTA04", "confirmed_complete": false,
 							"schema": {
 								"type": {
 									"desc": "the type of data file this is.",

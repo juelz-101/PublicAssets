@@ -1,0 +1,463 @@
+# Naming Conventions: Origins, Usage, and Rationale
+
+This document provides an in-depth explanation of common naming conventions used in programming, configuration, web development, and systems design. It covers **where each style is used**, **why it exists**, and **where the name comes from**.
+
+Consistency in naming is not cosmetic — it directly affects readability, maintainability, tooling, and cross-team collaboration.
+
+---
+
+## 1. camelCase (a.k.a. lowerCamelCase)
+
+**Example:** `andThis`
+
+### What it is
+
+* First word starts lowercase
+* Each subsequent word starts with a capital letter
+* No separators
+
+### Where it’s used
+
+* JavaScript variables and functions
+* Java methods
+* TypeScript properties
+* Many public APIs
+
+### Why it exists
+
+* Reads naturally left-to-right
+* Avoids underscores, which were historically awkward to type or easy to miss
+* Fits well in languages where identifiers frequently appear inline
+
+### Name origin
+
+The capitals resemble **camel humps** — the first word is flat, then humps appear.
+
+---
+
+## 2. PascalCase (a.k.a. UpperCamelCase)
+
+**Example:** `AndThis`
+
+### What it is
+
+* Identical to camelCase, but the **first word is capitalized**
+
+### Where it’s used
+
+* Class names (Java, C#, TypeScript)
+* Constructors
+* React components
+* Public types and schemas
+
+### Why it exists
+
+* Visually distinguishes **types** from variables or functions
+* Aligns with object-oriented design patterns
+* Improves scan-ability in large codebases
+
+### Name origin
+
+Named after the **Pascal programming language**, which popularized this convention.
+
+---
+
+## 3. snake_case
+
+**Example:** `and_this`
+
+### What it is
+
+* All lowercase
+* Words separated by underscores (`_`)
+
+### Where it’s used
+
+* Python variables and functions
+* C identifiers
+* SQL tables and columns
+* Configuration files
+
+### Why it exists
+
+* Extremely readable
+* Clear word boundaries
+* Underscores were universally available on early keyboards
+
+### Name origin
+
+The underscores resemble a **snake slithering** between words.
+
+---
+
+## 4. SCREAMING_SNAKE_CASE
+
+**Example:** `AND_THIS`
+
+### What it is
+
+* Uppercase snake_case
+* Often reserved for immutable values
+
+### Where it’s used
+
+* Constants
+* Environment variables
+* Build-time configuration
+* Macros (C/C++)
+
+### Why it exists
+
+* Instantly signals: *this should not change*
+* Easy to spot in dense code
+* Matches shell and OS conventions
+
+### Name origin
+
+A humorous extension of snake_case — uppercase implies **shouting**.
+
+---
+
+## 5. kebab-case
+
+**Example:** `and-this`
+
+### What it is
+
+* All lowercase
+* Words separated by hyphens (`-`)
+
+### Where it’s used
+
+* URLs and slugs
+* HTML attributes
+* CSS class names
+* CLI commands
+
+### Why it exists
+
+* Hyphens are treated as word separators in URLs
+* Extremely readable in non-code contexts
+* SEO and accessibility friendly
+
+### Limitations
+
+* Invalid in most programming languages (hyphen means subtraction)
+
+### Name origin
+
+Words appear **skewered** on a stick, like a kebab.
+
+---
+
+## 6. train-case (rare)
+
+**Example:** `And-This`
+
+### What it is
+
+* Capitalized kebab-case
+
+### Where it’s used
+
+* Article titles
+* Headings
+* Some legacy systems
+
+### Why it exists
+
+* Human-readable emphasis
+* Rarely used in code
+
+### Name origin
+
+Each word resembles a **train car** linked together.
+
+---
+
+## 7. dot.case
+
+**Example:** `and.this`
+
+### What it is
+
+* Words separated by dots (`.`)
+
+### Where it’s used
+
+* Configuration keys
+* Logging namespaces
+* Package identifiers
+
+### Why it exists
+
+* Represents hierarchy and nesting
+* Natural fit for structured data
+
+### Name origin
+
+Literal description of the separator used.
+
+---
+
+## 8. Hungarian Notation (legacy)
+
+**Example:** `strName`, `iCount`
+
+### What it is
+
+* Prefix encodes type or usage
+
+### Where it’s used
+
+* Old C and Windows codebases
+
+### Why it existed
+
+* Early languages lacked strong type systems
+* IDEs were primitive or nonexistent
+
+### Modern status
+
+* Largely obsolete
+* Avoid unless required by legacy systems
+
+---
+
+## Choosing the Right Convention
+
+**Rule #1:** Follow the ecosystem, not personal preference.
+
+* JavaScript → camelCase / PascalCase
+* Python → snake_case
+* CSS / URLs → kebab-case
+* Constants / env vars → SCREAMING_SNAKE_CASE
+
+Consistency beats cleverness every time.
+
+---
+
+## Quick Comparison
+
+| Style                | Example  | Primary Use          |
+| -------------------- | -------- | -------------------- |
+| camelCase            | andThis  | Variables, functions |
+| PascalCase           | AndThis  | Classes, types       |
+| snake_case           | and_this | Python, SQL          |
+| SCREAMING_SNAKE_CASE | AND_THIS | Constants            |
+| kebab-case           | and-this | URLs, CSS            |
+| dot.case             | and.this | Config, logging      |
+
+---
+
+---
+
+## Folder & File Naming: When It Matters (and When It Doesn’t)
+
+This section explains **why files and folders sometimes seem immune to naming mistakes**, and when those mistakes will absolutely come back to bite you.
+
+---
+
+## General Rule (Burn This In)
+
+> **Code can ignore names. Tools, humans, and operating systems do not.**
+
+If something *"still works"*, that does **not** mean it was correct — it just means nothing depended on the name *yet*.
+
+---
+
+## JavaScript / HTML / Web Projects
+
+### File names
+
+**Common conventions:**
+
+* `kebab-case.js` (very common)
+* `camelCase.js` (older JS projects)
+* `PascalCase.jsx` (React components)
+
+### Why kebab-case dominates
+
+* URLs map cleanly to filenames
+* Case-insensitive filesystems (Windows, macOS default)
+* Easier to read in imports
+
+```js
+import userService from './user-service.js'
+```
+
+### When it *does* matter
+
+* **Case-sensitive systems** (Linux, servers, Docker)
+* Static hosting (Vercel, Netlify, S3)
+* Git on mixed OS teams
+
+`UserService.js` ≠ `userservice.js` on Linux. Congratulations, you just shipped a bug.
+
+### HTML files
+
+* Almost always `kebab-case.html`
+* Maps directly to URLs
+
+---
+
+## JavaScript Imports (Why Renaming Feels Random)
+
+JavaScript cares about **paths**, not style.
+
+```js
+import x from './whatever-you-called-it.js'
+```
+
+If the path matches exactly, JS does not care whether you used:
+
+* kebab-case
+* camelCase
+* screaming chaos
+
+Your **tooling**, however, absolutely cares.
+
+---
+
+## Python Projects
+
+### File names (modules)
+
+**Convention:** `snake_case.py`
+
+### Why
+
+* Matches Python variable/function naming
+* Improves readability in imports
+
+```py
+import data_loader
+```
+
+### When it *breaks*
+
+* Using dashes: `data-loader.py` ❌ (invalid import)
+* Mismatch between filename and module name
+
+Python imports are strict. This is not negotiable.
+
+### Folders (packages)
+
+* Also `snake_case`
+* Must contain `__init__.py` (older Python, still common)
+
+---
+
+## JSON Files & Keys
+
+### File names
+
+Technically irrelevant. JSON does not care.
+
+**Practically:**
+
+* Match the ecosystem consuming it
+* Web → `kebab-case.json`
+* Python-heavy → `snake_case.json`
+
+### Keys (this is where confusion happens)
+
+JSON itself enforces **nothing**.
+
+These are all valid:
+
+```json
+{
+  "user_id": 1,
+  "userId": 1,
+  "UserID": 1
+}
+```
+
+### Why your camelCase JSON "worked"
+
+* JavaScript naturally prefers camelCase
+* Many parsers auto-map keys
+* Frameworks silently adapt
+
+### Why this is dangerous
+
+* Inconsistent APIs
+* Hidden mapping logic
+* Subtle bugs when switching languages
+
+**Rule:** Pick ONE style per API or file. Enforce it.
+
+---
+
+## Configuration Files (.env, YAML, TOML)
+
+### Environment variables
+
+**Convention:** `SCREAMING_SNAKE_CASE`
+
+```env
+DATABASE_URL=
+API_KEY=
+```
+
+Why?
+
+* OS-level standard
+* Shell compatibility
+* Visibility
+
+### YAML / TOML keys
+
+* snake_case (common)
+* kebab-case (DevOps tools)
+
+Again: consistency > preference.
+
+---
+
+## When Naming 100% Matters
+
+* Imports / module resolution
+* Case-sensitive filesystems
+* URLs
+* Build tools
+* CI/CD pipelines
+* Docker
+* Cross-platform teams
+
+## When It *Seems* Not To
+
+* Small local projects
+* Single OS development
+* Loose scripting
+* Early prototypes
+
+This is a lie the project tells you before it grows.
+
+---
+
+## The Real Reason AI Keeps Renaming Things
+
+AI models mix ecosystems:
+
+* JS bias → camelCase
+* Python bias → snake_case
+* Web bias → kebab-case
+
+They are not enforcing *your* rules — they are guessing.
+
+If you don’t lock conventions early, entropy wins.
+
+---
+
+## Final Rule (Non‑Negotiable)
+
+* **Identifiers** follow language rules
+* **Files & folders** follow ecosystem rules
+* **APIs & configs** follow consumer rules
+
+If you are inconsistent, the code may survive — but future you will not.
+
+---
+

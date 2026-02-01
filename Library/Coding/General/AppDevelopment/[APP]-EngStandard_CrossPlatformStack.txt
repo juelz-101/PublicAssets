@@ -1,0 +1,105 @@
+# Engineering Guide: Cross-Platform Stack Selection Strategy
+
+**Status:** Active **Last Updated:** January 2026 **Maintainer:** Engineering Lead
+
+## 1. Executive Summary
+
+This document serves as the standard operating procedure (SOP) for selecting the technology stack for new cross-platform applications. We generally encounter three distinct project archetypes: Simple Tools, Complex Data Processors, and Visual Powerhouses.
+
+**The Golden Rule:** Do not force a "one-size-fits-all" framework. Match the tool to the specific constraints of the data load and the fidelity of the UI required.
+
+## 2. Track A: The "Simple Tool" (Rapid Utility)
+
+**Scenario:** Internal tools, simple CRUD (Create, Read, Update, Delete) apps, forms, dashboards, or "wrapper" applications where native performance is secondary to development speed.
+
+### Top Recommendation: **React Native (via Expo) or Ionic**
+
+#### Why?
+- 
+
+**Low Overhead:** If the app is essentially a "view" into a database with minimal client-side processing, compiling to native code (like Flutter or KMP) is often overkill.
+- 
+
+**Talent Density:** Everyone knows JavaScript/TypeScript. We can pull a web dev onto this project and have a prototype in 3 days.
+- 
+
+**OTA Updates:** Tools like Expo (EAS) allow for "Over-the-Air" updates. We can patch a bug in a simple tool without waiting for App Store review—critical for internal business ops.
+
+#### When to use:
+- 
+
+The app is 90% text and standard inputs.
+- 
+
+We need it deployed yesterday.
+- 
+
+It does _not_ need to handle background threads or large local databases.
+
+## 3. Track B: The "Heavy Lifter" (Data & Processing)
+
+**Scenario:** Apps handling large datasets (GBs of local data), complex file manipulation, encryption, offline-first sync engines, or background processing.
+
+### Top Recommendation: **Kotlin Multiplatform (KMP) + Native UI**
+
+_(Alternative for Desktop-Heavy Ops: **Tauri** with Rust)_
+
+#### Why?
+- 
+
+**Shared Logic, Native Power:** Unlike Flutter or React Native, KMP allows us to share the _business logic_ (the heavy math, data sorting, API syncing) in pure Kotlin, which compiles to native binaries (JVM/LLVM).
+- 
+
+**No Bridge Bottleneck:** React Native communicates over a "bridge" (JS to Native). When processing 10,000 JSON rows, this bridge chokes. KMP runs directly on the metal.
+- 
+
+**Tauri (Desktop Context):** If the "Heavy Tool" is a desktop app, **Tauri** is superior to Electron. It uses the OS's native webview and a Rust backend. Rust handles the file processing (insanely fast/memory safe), while the frontend remains simple JS/HTML.
+
+#### When to use:
+- 
+
+The app requires offline synchronization of massive datasets.
+- 
+
+Battery life and memory usage are critical metrics.
+- 
+
+We are doing image processing or heavy math on the client side.
+
+## 4. Track C: The "Visual Powerhouse" (Cutting Edge/Bespoke)
+
+**Scenario:** Consumer-facing apps where "feel" is the product. Custom animations, unconventional layouts, particles, 3D elements, or high-fidelity transitions.
+
+### Top Recommendation: **Flutter**
+
+#### Why?
+- 
+
+**Own Rendering Engine:** Flutter does not use the OEM widgets (like a native iOS button). It paints every single pixel itself using the Impeller/Skia engine. This guarantees that a complex animation looks _exactly_ the same on an old Android as it does on a new iPhone.
+- 
+
+**Performance Stability:** It maintains 60/120 FPS more consistently than JS-based frameworks because there is no bridge. The UI is compiled ahead-of-time (AOT).
+- 
+
+**Creative Freedom:** If designers want a button that explodes into particles when clicked, this is trivial in Flutter but a nightmare in React Native.
+
+#### When to use:
+- 
+
+The design spec deviates significantly from standard OS guidelines (iOS Human Interface / Material Design).
+- 
+
+Brand identity relies on custom interaction models.
+- 
+
+We need absolute pixel perfection across fragmented Android devices.
+
+## 5. Decision Matrix
+
+| Constraint | Recommended Stack | Critical Factor |
+| --- | --- | --- |
+| **Speed to Market** | React Native / Expo | Use existing web components/skills. |
+| **Complex Animation** | Flutter | Skia engine prevents UI jank. |
+| **Heavy Logic/Math** | Kotlin Multiplatform | Native execution speed; no bridge. |
+| **Desktop + Low RAM** | Tauri (Rust) | Uses < 100MB RAM vs Electron's 500MB+. |
+| **Native APIs (BLE/Sensors)** | KMP or Swift/Kotlin | Direct access without plugin wrappers. |

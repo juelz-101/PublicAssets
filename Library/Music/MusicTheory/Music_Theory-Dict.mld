@@ -1,0 +1,303 @@
+{
+  "meta": {},
+  "data": {
+    "dev_ref": {
+      "dev_note": "All skillsets used across dictionary files must be registered here to prevent duplicates.",
+      "current_skillsets": {
+        "mus": "Music Theory"
+      }
+    },
+
+    "dictionary": {
+      "desc": [
+        "This is where you can find definitions for relivent terms/data used within the app.",
+        "Each dictionary item is given a level and difficulty, they can also have a 's_set' to direct to the skillset used.",
+        "If s_set isnt found in item then one will be looked for in the category of the item, if none there, then it'll look in the collections root, if none there then it'll be the default skillset.",
+        "Level and Difficulty can also set to a non-string number between 1 and 5 and it will be paired with the name within its skillset",
+        "Level is the skill level and difficulty is how difficult it is at that level."
+      ],
+      "skillsets": [
+        {
+          "name": "Music Theory", "id": "mus_theory",
+          "desc": "Specific skillset for measuring musical knowledge, composition techniques, and lyrical analysis.", "force_to_col_id": ["MUS"],
+          "levels": [
+            {"name": "Listener", "desc": "Understands music primarily through feeling and instinct, without technical vocabulary.", "example": "Knowing a song is 'sad' or 'catchy' without knowing why."},
+            {"name": "Student", "desc": "Learning the fundamental rules and terminology of music and lyricism.", "example": "Identifying a rhyme scheme or a verse-chorus structure."},
+            {"name": "Performer", "desc": "Can execute musical ideas and understands the practical application of structure.", "example": "Playing a song from a chart or memorizing lyrics for performance."},
+            {"name": "Composer", "desc": "Can create original structures and manipulate rules to achieve specific effects.", "example": "Writing a bridge that deliberately subverts the key of the chorus."},
+            {"name": "Maestro", "desc": "Deep theoretical mastery, capable of analyzing and deconstructing complex forms and acoustics.", "example": "Reharmonizing a piece entirely or inventing new lyrical forms."}
+          ],
+          "difficulties": [
+            {"name": "Intuitive", "desc": "Concepts that are felt naturally by almost everyone.", "example": "Feeling the beat or hearing a rhyme."},
+            {"name": "Elementary", "desc": "Basic rules that are easily taught and recognized.", "example": "Counting bars or identifying a chorus."},
+            {"name": "Intermediate", "desc": "Standard theory concepts requiring study to master.", "example": "Understanding functional harmony or syncopation."},
+            {"name": "Advanced", "desc": "Complex interactions of rules requiring deep analysis.", "example": "Modal interchange or polyrhythmic structures."},
+            {"name": "Theoretical", "desc": "Abstract or highly technical concepts often debated by academics.", "example": "Microtonal theory or advanced Schenkerian analysis."}
+          ]
+        }
+      ],
+
+      "collections": [
+        {
+          "name": "Music Theory", "id": "mus_theory", "s_set": "mus_theory",
+          "desc": "Terms related to songwriting, composition, and lyricism.",
+          "terms": [
+            {
+              "name": "Perfect Rhyme", "others": ["Exact Rhyme", "Full Rhyme"],
+              "category": "Rhyme Types", "sub": "Standard",
+              "definition": "A form of rhyme where the stressed vowel sound and all subsequent sounds are identical.",
+              "example": "Cat / Hat, Love / Dove.",
+              "level": "Student", "difficulty": "Elementary"
+            },
+            {
+              "name": "Slant Rhyme", "others": ["Near Rhyme", "Half Rhyme", "Imperfect Rhyme"],
+              "category": "Rhyme Types", "sub": "Standard",
+              "definition": "A rhyme where sounds are similar but not identical, often sharing only a vowel or consonant sound.",
+              "example": "Soul / All, Bridge / Grudge.",
+              "level": "Performer", "difficulty": "Intermediate"
+            },
+            {
+              "name": "Identical Rhyme", "others": ["Rich Rhyme"],
+              "category": "Rhyme Types", "sub": "Standard",
+              "definition": "A rhyme using the same word or a homophone.",
+              "example": "Blue / Blew, Light / Light.",
+              "level": "Student", "difficulty": "Intuitive"
+            },
+            {
+              "name": "Multisyllabic Rhyme", "others": ["Multis", "Compound Rhyme"],
+              "category": "Rhyme Types", "sub": "Complex",
+              "definition": "A rhyme that spans two or more syllables, matching the sequence of vowel and consonant sounds.",
+              "example": "Intellectual / Hen-pecked you all.",
+              "level": "Composer", "difficulty": "Advanced"
+            },
+            {
+              "name": "Mosaic Rhyme", "others": [],
+              "category": "Rhyme Types", "sub": "Complex",
+              "definition": "A multisyllabic rhyme where a single word rhymes with a phrase of multiple words.",
+              "example": "Jealous / Tell us.",
+              "level": "Composer", "difficulty": "Advanced"
+            },
+            {
+              "name": "Broken Rhyme", "others": ["Split Rhyme"],
+              "category": "Rhyme Types", "sub": "Experimental",
+              "definition": "Forcing a rhyme by breaking a word across a line break (enjambment).",
+              "example": "Mass- / -es (rhymed with Grass).",
+              "level": "Maestro", "difficulty": "Theoretical"
+            },
+            {
+              "name": "Apocopated Rhyme", "others": ["Cut Rhyme"],
+              "category": "Rhyme Types", "sub": "Experimental",
+              "definition": "Rhyming a stressed syllable with a word that has an extra unstressed tail.",
+              "example": "Find / Minding.",
+              "level": "Maestro", "difficulty": "Advanced"
+            },
+            {
+              "name": "Eye Rhyme", "others": ["Visual Rhyme"],
+              "category": "Rhyme Types", "sub": "Visual",
+              "definition": "Words that look like they should rhyme due to spelling but are pronounced differently.",
+              "example": "Love / Move.",
+              "level": "Student", "difficulty": "Elementary"
+            },
+            {
+              "name": "Masculine Rhyme", "others": ["Strong Rhyme"],
+              "category": "Rhyme Types", "sub": "Stress",
+              "definition": "A rhyme limited to a single stressed syllable, usually at the end of the word.",
+              "example": "Confess / Redress.",
+              "level": "Performer", "difficulty": "Intermediate"
+            },
+            {
+              "name": "Feminine Rhyme", "others": ["Weak Rhyme", "Double Rhyme"],
+              "category": "Rhyme Types", "sub": "Stress",
+              "definition": "A rhyme involving two or more syllables where the final syllable is unstressed.",
+              "example": "Walking / Talking.",
+              "level": "Performer", "difficulty": "Intermediate"
+            },
+            {
+              "name": "End Rhyme", "others": [],
+              "category": "Structure", "sub": "Placement",
+              "definition": "Rhyme occurring at the end of verse lines.",
+              "example": "The most common placement in standard poetry and lyrics.",
+              "level": "Student", "difficulty": "Elementary"
+            },
+            {
+              "name": "Internal Rhyme", "others": ["Middle Rhyme"],
+              "category": "Structure", "sub": "Placement",
+              "definition": "Rhyme occurring within a single line or between words in the middle of lines.",
+              "example": "I drove my car very far.",
+              "level": "Performer", "difficulty": "Intermediate"
+            },
+            {
+              "name": "Rhyme Scheme", "others": ["Pattern"],
+              "category": "Structure", "sub": "Analysis",
+              "definition": "The ordered pattern of rhymes at the ends of the lines of a poem or verse.",
+              "example": "AABB or ABAB.",
+              "level": "Student", "difficulty": "Elementary"
+            },
+            {
+              "name": "Verse", "others": ["Stanza"],
+              "category": "Structure", "sub": "Components",
+              "definition": "The storytelling section of a song that sets up the narrative or context. Melody stays the same, lyrics change.",
+              "example": "The parts of 'Bohemian Rhapsody' that tell the story.",
+              "level": "Student", "difficulty": "Elementary"
+            },
+            {
+              "name": "Chorus", "others": ["Refrain"],
+              "category": "Structure", "sub": "Components",
+              "definition": "The main, repeated section of a song containing the core message and highest energy.",
+              "example": "The part everyone sings along to.",
+              "level": "Student", "difficulty": "Elementary"
+            },
+            {
+              "name": "Bridge", "others": ["Middle 8"],
+              "category": "Structure", "sub": "Components",
+              "definition": "A contrasting section that connects two parts of a song, often providing a new perspective.",
+              "example": "The slower, emotional part before the final chorus.",
+              "level": "Performer", "difficulty": "Intermediate"
+            },
+            {
+              "name": "Pre-Chorus", "others": ["Build", "Climb"],
+              "category": "Structure", "sub": "Components",
+              "definition": "A section that builds tension between the verse and the chorus.",
+              "example": "The rising melody before the beat drops.",
+              "level": "Performer", "difficulty": "Intermediate"
+            },
+            {
+              "name": "Post-Chorus", "others": ["Tag"],
+              "category": "Structure", "sub": "Components",
+              "definition": "A section following the chorus that maintains energy but with simpler vocals or instrumentals.",
+              "example": "The 'Whoa-oh-oh' part after the chorus.",
+              "level": "Composer", "difficulty": "Intermediate"
+            },
+            {
+              "name": "Intro", "others": ["Introduction"],
+              "category": "Structure", "sub": "Components",
+              "definition": "The opening section that establishes the key, tempo, and mood.",
+              "example": "The guitar riff starting the song.",
+              "level": "Student", "difficulty": "Elementary"
+            },
+            {
+              "name": "Outro", "others": ["Ending", "Coda", "Fade"],
+              "category": "Structure", "sub": "Components",
+              "definition": "The closing section of a song.",
+              "example": "The music fading out at the end.",
+              "level": "Student", "difficulty": "Elementary"
+            },
+            {
+              "name": "Hook", "others": ["Earworm"],
+              "category": "Structure", "sub": "Anchors",
+              "definition": "A catchy musical or lyrical phrase that grabs the listener's attention.",
+              "example": "A memorable guitar riff or vocal line.",
+              "level": "Student", "difficulty": "Elementary"
+            },
+            {
+              "name": "Refrain", "others": [],
+              "category": "Structure", "sub": "Anchors",
+              "definition": "A repeated line or phrase, usually at the end of a stanza.",
+              "example": "The answer, my friend, is blowin' in the wind.",
+              "level": "Performer", "difficulty": "Intermediate"
+            },
+            {
+              "name": "Middle 8", "others": ["Bridge"],
+              "category": "Structure", "sub": "Components",
+              "definition": "A UK term for a bridge, specifically eight bars in length.",
+              "example": "A distinct 8-bar break in the middle.",
+              "level": "Performer", "difficulty": "Intermediate"
+            },
+            {
+              "name": "Breakdown", "others": ["Strip-back"],
+              "category": "Structure", "sub": "Components",
+              "definition": "A section where instruments are removed to reduce energy before a build-up.",
+              "example": "Drums and bass dropping out.",
+              "level": "Composer", "difficulty": "Intermediate"
+            },
+            {
+              "name": "Drop", "others": ["Beat Drop"],
+              "category": "Structure", "sub": "Components",
+              "definition": "The climax in electronic music, characterized by a heavy bass and rhythmic drive.",
+              "example": "The high-energy dance section.",
+              "level": "Student", "difficulty": "Elementary"
+            },
+            {
+              "name": "AABA", "others": ["32-bar form"],
+              "category": "Structure", "sub": "Forms",
+              "definition": "A song structure consisting of two verses (A), a bridge (B), and a return to the verse (A).",
+              "example": "Many jazz standards follow this.",
+              "level": "Maestro", "difficulty": "Advanced"
+            },
+            {
+              "name": "Strophic", "others": ["Verse-repeating"],
+              "category": "Structure", "sub": "Forms",
+              "definition": "A song structure consisting only of verses.",
+              "example": "Traditional folk songs.",
+              "level": "Maestro", "difficulty": "Advanced"
+            }
+          ],
+          "categories": [
+            {
+              "name": "Rhyme Types",
+              "desc": "Classifications of how words sound together.",
+              "subs": [
+                {
+                  "name": "Standard",
+                  "desc": "Common types of rhyming found in popular music.",
+                  "example": "Perfect, Slant, etc."
+                },
+                {
+                  "name": "Complex",
+                  "desc": "Rhymes spanning multiple syllables or phrases.",
+                  "example": "Multisyllabic, Mosaic."
+                },
+                {
+                  "name": "Experimental",
+                  "desc": "Unconventional methods of forcing connections.",
+                  "example": "Broken, Apocopated."
+                },
+                {
+                  "name": "Visual",
+                  "desc": "Rhymes based on spelling rather than sound.",
+                  "example": "Eye Rhyme."
+                },
+                {
+                  "name": "Stress",
+                  "desc": "Rhymes defined by syllable count and emphasis.",
+                  "example": "Masculine, Feminine."
+                }
+              ]
+            },
+            {
+              "name": "Structure",
+              "desc": "Terms relating to the architecture of a song.",
+              "subs": [
+                {
+                  "name": "Placement",
+                  "desc": "Where rhymes occur within the line.",
+                  "example": "End rhyme, internal rhyme."
+                },
+                {
+                  "name": "Analysis",
+                  "desc": "Methods of mapping or describing song form.",
+                  "example": "Schemes and notations."
+                },
+                {
+                  "name": "Components",
+                  "desc": "The building blocks of a song.",
+                  "example": "Verse, Chorus, Bridge."
+                },
+                {
+                  "name": "Anchors",
+                  "desc": "Key memorable elements.",
+                  "example": "Hook, Refrain."
+                },
+                {
+                  "name": "Forms",
+                  "desc": "Standard arrangements of components.",
+                  "example": "AABA, Strophic."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

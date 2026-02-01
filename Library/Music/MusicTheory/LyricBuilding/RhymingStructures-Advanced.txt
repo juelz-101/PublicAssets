@@ -1,0 +1,116 @@
+Document Title: Advanced Rhyming Techniques Version: 1.0 Author: Mr G Approved by: pending Created date: 2026-01-06 Location: London Organisation: ZIKYinc
+
+# Table of Contents
+
+Page 1: Introduction to Complex Rhyme Page 2: Multisyllabic Rhyme Page 3: Mosaic Rhyme Page 4: Broken Rhyme Page 5: Apocopated Rhyme Page 6: Eye Rhyme Page 7: References & Tools Page 8: Index Page 9: License
+
+## Page 1: Introduction to Complex Rhyme
+
+While basic rhymes provide stability and structure, advanced rhyming techniques provide texture, surprise, and technical flair.
+
+These techniques often require the songwriter to bend the rules of language, manipulating pronunciation, phrasing, and line breaks to force connections between words that would not traditionally rhyme. When executed well, they demonstrate high-level lyrical craftsmanship; when executed poorly, they can obscure the meaning of the song.
+
+## Page 2: Multisyllabic Rhyme
+
+A Multisyllabic Rhyme (often called "multis" or "compound rhyme") occurs when a rhyme spans two or more syllables. It is not just the final sound that matches, but a sequence of vowel and consonant sounds.
+
+This technique is the gold standard in Hip Hop and Musical Theatre because it creates a denser, more percussive rhythmic effect.
+
+**Examples:**
+- 
+
+**Intellectual** / **Hen-pecked you all**
+- 
+
+**Ambitious** / **Superstitious**
+- 
+
+**Situation** / **Salvation**
+
+## Page 3: Mosaic Rhyme
+
+Mosaic Rhyme is a variation of multisyllabic rhyme where a single multisyllabic word is rhymed with a phrase made up of several smaller words.
+
+It relies on the fluid nature of speech, where the spaces between words disappear when sung or rapped quickly.
+
+**Examples:**
+- 
+
+**Jealous** / **Tell us**
+- 
+
+**Gravity** / **Have a tea**
+- 
+
+**Dismay** / **This may**
+
+## Page 4: Broken Rhyme
+
+Broken Rhyme is a technique used to force a rhyme by breaking a word across a line break (enjambment). The first part of the word ends the line to create the rhyme, and the remainder of the word spills over into the next line.
+
+This creates a sense of urgency or playfulness and draws attention to the artifice of the song structure.
+
+**Example:** "I'm going to the **mass-** **es**, to sit on the gra**ss**." _(Rhyming "mass" with "grass", splitting "masses")_
+
+## Page 5: Apocopated Rhyme
+
+Apocopated Rhyme occurs when the rhyme falls on a stressed syllable, but one of the rhyming words has an extra unstressed syllable at the end that is effectively ignored or "cut off" by the rhythm.
+
+It is a specific type of Slant Rhyme that relies on the listener's ear prioritizing the strong beat over the weak tail.
+
+**Examples:**
+- 
+
+**Find** / **Minding** (Rhyming "Find" with "Mind")
+- 
+
+**Trap** / **Happen** (Rhyming "Trap" with "Hap")
+
+## Page 6: Eye Rhyme
+
+Eye Rhyme refers to words that look similar on the page (similar spelling) but are pronounced differently.
+
+While less effective in pure audio formats, in written lyrics or poetry, they create a visual symmetry. In song, they often function as a very loose Slant Rhyme or are used to subvert expectation.
+
+**Examples:**
+- 
+
+**Love** / **Move**
+- 
+
+**Wind** (the air) / **Mind**
+- 
+
+**Laughter** / **Slaughter**
+
+## Page 7: References & Tools
+- 
+
+"The Art of Rap" (Documentary)
+- 
+
+RhymeZone (Advanced Search)
+- 
+
+Oxford Dictionary of Literary Terms
+- 
+
+ZIKYinc Style Guide
+
+## Page 8: Index
+
+| Keyword | Pages |
+| --- | --- |
+| Apocopated Rhyme | 5 |
+| Broken Rhyme | 4 |
+| Compound Rhyme | 2 |
+| Enjambment | 4 |
+| Eye Rhyme | 6 |
+| Mosaic Rhyme | 3 |
+| Multisyllabic Rhyme | 2 |
+
+## Page 9: License
+
+© 2026 ZIKYinc. All rights reserved.
+
+This document is proprietary and confidential. No part of this document may be disclosed in any manner to a third party without the prior written consent of ZIKYinc.

@@ -1,0 +1,260 @@
+This chapter focuses on the most common use case: taking existing audio and transforming its genre or production quality while maintaining professional standards.
+
+```
+# Documentation: Manual JSON Control
+
+## 2.0 Remixing to Full Potential (The "Cover" Hack)
+
+The `riff_create_cover` tool is the engine's primary remixing unit. While the UI offers a simple "Style" box, the manual JSON allows you to manipulate the relationship between the **Source Material** and the **Target Aesthetic**.
+
+### 2.1 The "Cover Strength" Variable
+This is the most misunderstood parameter. It determines the **Spectral Retention** of your original audio.
+
+*   **0.1 - 0.25 (The Mastering Zone):** Use this to "polish" a track. It keeps the original drums and melody but applies the *texture* of the sound prompt. Great for cleaning up voice notes.
+*   **0.3 - 0.45 (The Remix Zone):** This is the sweet spot. It allows the model to generate *new* drums while keeping the original melody/harmonies recognizable.
+*   **0.5 - 0.7 (The Reimagining Zone):** The model will start changing notes and rhythm. Use this for "Heavy" remixes where only the "vibe" of the original should remain.
+
+---
+
+### 2.2 Full Example: Surgical UK Grime Flip
+**Scenario:** You have a clean guitar melody and you want to add a hard UK Grime beat without the AI "hallucinating" new synths over your guitar.
+
+```json
+{
+  "inputs": {
+    "audio_input": { "id": "YOUR_MELODY_STEM_UUID" },
+    "title": "Surgical Grime Reconstruction",
+    "cover_strength": 0.38,
+    "sound_prompt": "UK Grime instrumental, 140 bpm, aggressive sub bass, square wave textures, crisp syncopated snares, high fidelity, 808 slides",
+    "sound_prompt_strength": 0.8,
+    "weirdness": 0.4,
+    "lyrics_id": ""
+  }
+}
+
+```
+
+Why this works:
+
+- Low Weirdness (0.4): Prevents the AI from adding random "vocal-like" noises or extra instruments.
+
+- Specific BPM: Locking "140 bpm" in the text prompt forces the diffusion rhythm to align with the target genre's grid.
+
+- Strength (0.38): Just high enough to break the "silence" of the stem and paint drums.
+
+### 2.3 The "Hybrid" Vibe Remix
+Scenario: You want to remix your song into a specific "Sound" that you can't describe with words. You use a Vibe (audio reference) to guide the remix.
+
+```
+{
+  "inputs": {
+    "audio_input": { "id": "YOUR_SOURCE_TRACK_UUID" },
+    "title": "Reference-Guided Remix",
+    "cover_strength": 0.5,
+    "sound_prompt": "Transform this into a dark electronic style",
+    "vibe": {
+      "audio_input": { "id": "REFERENCE_SONG_UUID" },
+      "start_s": 45.0
+    }
+  }
+}
+
+```
+
+The Hack: By providing a `vibe` inside a `cover` request, you are giving the AI a "Color Palette." It will take the EQ and Timbre of the `REFERENCE_SONG` and apply it to `YOUR_SOURCE_TRACK`.
+
+### 2.4 Negative Prompting in Remixes
+If your remix keeps adding unwanted elements (like a singer when you want an instrumental), you must use the `sound_prompt` as a filter.
+Pro Tip: While the `riff_create_cover` tool doesn't have a dedicated negative field, the model responds to "No [element]" or "Minus [element]" in the text string.
+
+- Prompt: "UK Drill instrumental, No vocals, minus melody, aggressive drums only."
+
+### 2.5 Troubleshooting the "Tacky" Sound
+If your remix sounds cheap, it's usually because the `cover_strength` is fighting the original audio.
+The Fix:
+
+- Reduce `cover_strength` to 0.3.
+
+- Increase `sound_prompt_strength` to 0.9.
+
+- This tells the AI: "Stay very close to the source audio, but apply the new style with extreme intensity."
+
+```
+
+**Ready for Chapter 3: Replacing Exactly How You Want (The "Surgical" Edit)?**
+
+```
+No lets continue with the remixes doc, there must be a lot more we can addAbsolutely. We’re just scratching the surface. If we want "Full Potential," we need to discuss Multi-Stage Processing, Phase Correction, and Deterministic Layering.
+Here is Chapter 2.5 through 2.8 of the Remixing Documentation.
+
+```
+### 2.5 Multi-Stage Generation (The "Iteration" Loop)
+Professional producers rarely get the perfect remix in one "pass." High-fidelity results often require **Sequential Generation**.
+
+**The Workflow:**
+1. **Pass 1:** Generate a "Drums & Bass" layer at `cover_strength: 0.3`.
+2. **Pass 2:** Take the *result* of Pass 1 and run it through `riff_create_cover` *again* at `cover_strength: 0.15` with a prompt focused on "Texture and Mastering."
+
+**Why this works:** It allows the AI to "settle" into the new rhythm in the first pass, and then focus purely on the "gluing" of the sounds in the second pass.
+
+---
+
+### 2.6 Phase Correction & BPM Syncing
+As discussed in our technical deep-dive, the AI's greatest weakness is **Time Stretching**. If the source audio is 90bpm and the prompt is 140bpm, the AI "warps" the transients, leading to a "tacky" or "cheap" sound.
+
+**The "Manual Warp" Hack:**
+Before sending your JSON to the generation model, you should prep the stem using the `TempoShift` node in the `apply_audio_effect` tool.
+
+```json
+{
+  "node_type": "TempoShift",
+  "node_id": "manual_warp",
+  "input_ids": ["source_id"],
+  "speed": 1.55,
+  "semitones": 0
+}
+
+```
+
+- Calculation: `Target BPM / Original BPM = Speed Factor`. (e.g., 140 / 90 = 1.55).
+
+- Result: By feeding the AI a file that is already at the correct speed, the model can spend 100% of its "compute" on Tone and Texture rather than Time Stretching.
+
+### 2.7 The "Ghost" Reference Technique
+If you want to keep your original melody but you want the AI to "groove" with it better, you can use Low-Strength Stems as a guide.
+The Strategy:
+
+- Split your track.
+
+- Take the `Drums` stem (even if you hate the pattern).
+
+- Run a `riff_create_cover` on the Melody Stem, but use the Drum Stem as a Vibe at `strength: 0.2`.
+
+The Result: The AI "hears" the ghost of the old rhythm. It won't copy the old drums, but it will ensure the new drums hit on the same syncopated beats as the original, creating a "tighter" feel.
+
+### 2.8 Advanced Payload: The "Full Context" Remix
+This is the most complex JSON for a remix. It combines a source stem, a style prompt, and a negative weight to prevent "hallucination."
+
+```
+{
+  "inputs": {
+    "audio_input": { "id": "CLEANED_GUITAR_STEM_UUID" },
+    "title": "Professional Grime Reconstruction V3",
+    "cover_strength": 0.42,
+    "sound_prompt": "Heavy UK Grime beat, 140 bpm, minimalist, industrial textures, sub-bass focus",
+    "sound_prompt_strength": 0.85,
+    "weirdness": 0.25,
+    "seed": 1234567,
+    "lyrics_id": ""
+  }
+}
+
+```
+
+Key Lever: `weirdness: 0.25`
+In a remix, high weirdness is your enemy. It causes the AI to "hallucinate" extra voices or instruments. By locking `weirdness` to a low value (0.2 - 0.3), you force the model to stay strictly within the "Common Sense" of the genre you prompted.
+
+### 2.9 Summary of "The Pro Mix" Rules
+
+- Never remix the Master: Always use a cleaned Melody or Vocal stem.
+
+- Control the BPM: Manually shift the speed before generating.
+
+- Low Weirdness for High Fidelity: Keep it between 0.2 and 0.4 for professional results.
+
+- Iterate: If the drums are good but the tone is off, run the result back through at 0.1 strength.
+
+```
+
+**Shall we keep expanding on Remixing (perhaps covering Vocal-specific remixing), or move to Chapter 3: Replacing?**
+
+```
+Yeah lets continue with remixingThis section dives into the most sensitive area of remixing: Vocal Manipulation. Vocals are the hardest element to "flip" because the human ear is incredibly sensitive to any "robotic" or "tacky" artifacts in the human voice.
+
+```
+### 2.10 Vocal Remixing (The "Natural" Flip)
+When remixing a vocal stem, your goal is usually to change the **Genre/Backing** while keeping the **Voice** identical.
+
+**The Trap:** If you use `cover_strength: 0.5` on a vocal, the AI will try to "remix" the person's voice, often changing their gender, accent, or tone, making it sound like a cheap vocoder.
+
+#### The "Vocal Protection" Payload
+To change the music behind a voice without touching the voice itself, use a very low `cover_strength` but a very high `sound_prompt_strength`.
+
+```json
+{
+  "inputs": {
+    "audio_input": { "id": "VOCAL_STEM_UUID" },
+    "cover_strength": 0.2,
+    "sound_prompt": "Heavy UK Drill instrumental, dark piano, sliding 808s, 140 bpm",
+    "sound_prompt_strength": 0.95,
+    "weirdness": 0.15
+  }
+}
+
+```
+
+- Why 0.2? This is just enough to let the AI "see" the silence around the vocals and fill it with a beat, but not enough to let it "paint" over the vocal cords.
+
+- Why Weirdness 0.15? To ensure the AI doesn't add "ghost harmonies" or digital chirps to the voice.
+
+### 2.11 The "Acapella to Full Track" Workflow
+If you have a dry voice recording and want to build a professional production around it, use the Stem Swap tool as a dedicated Remix unit.
+Tool: `riff_stem_swap`
+
+- The Logic: This tool is hard-coded to separate "Vocals" from "Instrumentals."
+
+- The Hack: If you provide a Dry Vocal as the input and set `swap_type: "instrumentals"`, the AI freezes the vocal perfectly and spends 100% of its power generating a brand new backing track.
+
+```
+{
+  "inputs": {
+    "audio_input": { "id": "DRY_VOCAL_UUID" },
+    "swap_type": "instrumentals",
+    "sound_prompt": "Liquid Drum and Bass, 174 bpm, atmospheric pads, rolling bass",
+    "cover_strength": 1.0,
+    "title": "Acapella Reconstruction"
+  }
+}
+
+```
+
+Pro Tip: This is the most "Pro" way to remix. It results in zero degradation of the original vocal quality.
+
+### 2.12 Frequency Management (The "Pre-Mix" EQ)
+The AI model "hears" the entire frequency spectrum. If your source audio has a lot of low-end rumble, the remix will sound muddy because the AI tries to "remix the rumble" into its new bassline.
+The "Carving" Strategy:
+Before remixing, use the `apply_audio_effect` tool to carve out a "hole" for the new genre.
+
+- For Grime/Drill: High-pass your source audio at 200Hz.
+
+- For Pop: High-pass at 100Hz.
+
+- Why: This gives the AI a "clean basement" to build its new 808s and kicks. If the basement is already full of old reggae bass, the new Grime bass will sound distorted and "tacky."
+
+### 2.13 Genre Fusion (The "Percentage" Prompt)
+Sometimes you don't want a 100% genre flip. You want to blend the original genre with a new one. You can achieve this by using Weighting in your manual prompt.
+The Multi-Prompt Payload:
+
+```
+{
+  "inputs": {
+    "audio_input": { "id": "SOURCE_UUID" },
+    "cover_strength": 0.4,
+    "sound_prompt": "(Reggae:0.4), (UK Grime:0.6), 140 bpm, hybrid style",
+    "sound_prompt_strength": 0.8
+  }
+}
+
+```
+
+The Math: By using colon notation `(Genre:Weight)`, you can tell the AI exactly how much of each influence to allow. This prevents the "Cheap" sound by maintaining some of the original genre's DNA in the new drums.
+
+### 2.14 Summary of Advanced Remixing
+
+- Vocals: Use `riff_stem_swap` for 0% degradation.
+
+- Instrumentals: Use `cover_strength 0.35` on cleaned stems.
+
+- Frequency: Always High-Pass your source to make room for new bass.
+
+- BPM: Always match the stem speed to the target speed before clicking generate.

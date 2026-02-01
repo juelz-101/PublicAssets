@@ -1,0 +1,15 @@
+Purpose:
+- One-page “rules of the repo” file
+
+Contents:
+- What naming style to use per language
+- File & folder naming rules
+- What is allowed vs banned
+
+Example file:
+  NAMING_CONVENTIONS.md
+
+Used when:
+- Starting a new repo
+- Onboarding contributors
+- Stopping bikeshedding early

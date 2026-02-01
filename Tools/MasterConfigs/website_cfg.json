@@ -2,7 +2,7 @@
 	"meta": {
 		"name": "MANIFEST", "desc": "Website config and file register.",
 		"file": "manifest.json", "root": "PublicAssets", "path": "Tools/MasterCfgs/",
-		"version": 2.3, "change_note": "Expanded UI settings for dynamic control.", "change_date": "15/11/25"
+		"version": 2.4, "change_note": "Added safe mode overrides and enum schema.", "change_date": "25/1/26"
 	},
 	"git": {
 		"user": "juelz-101",
@@ -51,7 +51,28 @@
 				"change_interval_min_seconds": 20,
 				"change_interval_max_seconds": 40
 			}
+		},
+		"safe_mode": {
+			"desc": "Safe override that blocks or reduces the amount of requests to git",
+			"on": true,
+			"override": {
+				"images": {
+					"block_all_images": false,
+					"limit_image_requests": {"on": false, "max": 10, "mode": "per_page"},
+					"block_background": {"on": true, "mode": "one_and_done"},
+					"pages": {
+						"desc": "Block images from loading on specific pages by adding the page names below",
+						"on": false,
+						"pages": [{"use": false, "page": "Example", "mode": "limit", "val": 10}]
+					}
+				},
+				"data": {
+					"block_all_online_data": false,
+					"block_local_data": false
+				}
+			}
 		}
+						
 	},
 	"data": {
 	  "type": "find",
@@ -117,5 +138,16 @@
 		  "show_data_forms": true,
 		  "show_debug_icon": true
 	  }
-  }
+  },
+  "enum": {
+	"settings": {
+		"safe_mode": {
+			"background_mode": {
+				"desc": "Modes to set how to override the background image loading",
+				"default": "one_and_done",
+				"i": [ 
+					{"name": "one_and_done", "desc": "Loads 1 image and never switches" },
+					{"name": "limit", "desc": "Set a limit to how many requests can be made", "cfg": {"refresh_mode": {"desc": "Set when to refresh current count", "default": "never", "i": [ {"name": "never", "desc": "Never refresh limit"}, {"name": "on_app_load", "desc": "Refreshes when app is refreshed"}, {"name": "on_tab_switch", "desc": "Refreshes when switching tabs"}, {"name": "timer", "desc": "Set a timer"} ] }} },
+					{"name": "block", "desc": "Dont allow any images to be set" }
+				]
 }

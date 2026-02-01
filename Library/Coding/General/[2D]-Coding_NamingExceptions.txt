@@ -1,0 +1,15 @@
+Purpose:
+- Documented, intentional exceptions
+
+Contents:
+- When camelCase JSON is acceptable
+- When kebab-case JS files are fine
+- When legacy naming is tolerated
+
+Example file:
+  NAMING_EXCEPTIONS.md
+
+Used when:
+- Integrating legacy systems
+- Dealing with third-party APIs
+- Being pragmatic without chaos

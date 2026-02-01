@@ -1,0 +1,174 @@
+# Honeywell Galaxy Intruder Alarm Parts List
+
+# Common Part IDs for Galaxy Dimension, Flex, and G2 Series
+
+## Control Panels (Dimension Series)
+
+**C048-D-E1** | Galaxy Dimension GD-48 Control Panel
+> 
+
+Entry-level commercial panel. Supports up to 48 zones. Grade 3 capable. Popular in small-to-medium retail.
+
+**C096-D-E1** | Galaxy Dimension GD-96 Control Panel
+> 
+
+Mid-range commercial panel. Supports up to 96 zones. ideal for larger retail or small office buildings.
+
+**C264-D-E1** | Galaxy Dimension GD-264 Control Panel
+> 
+
+High-end commercial panel. Supports up to 264 zones. Standard for large warehouses and logistics centres.
+
+**C520-D-E1** | Galaxy Dimension GD-520 Control Panel
+> 
+
+Maximum capacity panel. Supports up to 520 zones and 32 groups. Used in massive industrial sites or airports.
+
+## Control Panels (Flex Series)
+
+**C005-M-E2** | Galaxy Flex FX020 Panel (Medium Box)
+> 
+
+Hybrid panel with 12 onboard zones, expandable to 20. Fits in a medium poly box. Grade 2. Great for residential/small business.
+
+**C006-L-E2** | Galaxy Flex FX050 Panel (Large Box)
+> 
+
+Hybrid panel expandable to 50 zones. Large poly box allows space for expanders/battery. Grade 2.
+
+**C007-L-E2** | Galaxy Flex FX100 Panel (Large Box)
+> 
+
+Top-tier Flex panel, expandable to 100 zones. Grade 2 (can be Grade 3 with metal kit). Bridges the gap between Flex and Dimension.
+
+## Keypads & Interfaces
+
+**CP037-00** | MK7 LCD Keypad
+> 
+
+The industry standard keypad. 2x16 character display with rubber keys. Retro style but bulletproof reliability.
+
+**CP038-01** | MK7 Keyprox
+> 
+
+Identical to the MK7 but with an integrated proximity reader (ASK format) for setting/unsetting with fobs.
+
+**CP050-00-01** | MK8 LCD Keypad
+> 
+
+Modern aesthetic keypad with a cleaner look and harder plastic keys. Functionally identical to MK7.
+
+**CP051-00-01** | MK8 Keyprox
+> 
+
+The modern MK8 keypad with integrated proximity reader.
+
+**CP041-00** | TouchCenter Plus
+> 
+
+Full-colour touchscreen keypad. Great for end-users who want a tablet-like interface. Can show zone plans/graphics.
+
+## Expansion Modules (RIOs) & Power
+
+**C072** | Galaxy RIO (Remote Input/Output)
+> 
+
+The "bread and butter" expander. Adds 8 hardwired zones and 4 programmable transistor outputs to the system. RS485 bus connected.
+
+**P026-01-B** | Power RIO (Boxed)
+> 
+
+Combined 2.75A Power Supply and RIO (8 zones/4 outputs) in a metal cabinet. Essential for powering distant expanders.
+
+**P025-01-B** | Smart PSU (Boxed)
+> 
+
+Intelligent 2.75A Power Supply. Monitored by the panel (AC fail, Battery, Fuse). No zones onboard.
+
+**A158-B** | Galaxy Flex RIO
+> 
+
+A specific RIO PCB designed to clip directly inside the Galaxy Flex polymer enclosure to save space.
+
+## Communication Modules
+
+**E080-10** | Ethernet Module (New V4)
+> 
+
+The latest Ethernet module for Dimension and Flex. Essential for reliable app connectivity and signalling.
+
+**A083-00-01** | Ethernet Module (E080-V2)
+> 
+
+Older variant of the Ethernet module. Still common but E080-10 is preferred for new installs.
+
+**A081-00-01** | GSM/GPRS Module
+> 
+
+Provides mobile network backup. Can send SMS or signal to ARC via GPRS if the landline/network fails.
+
+**A228** | RS232 Interface Module
+> 
+
+Used for integrating the alarm with third-party systems (Crestron, PC Automation) or local PC connection.
+
+**A229** | Galaxy Trigger Lead
+> 
+
+Simple header cable that plugs into the panel to provide hardwired trigger outputs (Fire, PA, Intruder) for legacy diallers.
+
+## Access Control & Wireless
+
+**C080-00** | DCM (Door Control Module)
+> 
+
+Fully integrated access control module. Controls 2 doors (Read in/out or Read in/Button out). Uses RS485 bus.
+
+**C079-2** | RF Portal (Standalone)
+> 
+
+Wireless receiver in its own plastic housing. Wired to the RS485 bus. Allows use of V2 wireless sensors.
+
+**A073-00-01** | RF Portal (Flex PCB)
+> 
+
+Wireless receiver PCB that clips directly inside a Flex panel housing. No external box needed.
+
+## Common Wired Sensors
+
+**IS312** | Honeywell Wired PIR
+> 
+
+Standard grade 2 PIR. Features a switchable pet-immune lens. Low cost, reliable.
+
+**DT7550** | Dual Tech Sensor
+> 
+
+Commercial Grade 3 Dual Technology (PIR + Microwave) sensor. Anti-masking features. Used in high-risk areas.
+
+**Vibrasensor** | Viper Shock Sensor
+> 
+
+The classic white shock sensor. Adjustable sensitivity. Requires a separate analyser if not using the newer "calibration" versions.
+
+## Accessories & Tools
+
+**A234** | Galaxy RS485 Data Lead
+> 
+
+Specialist cable for flashing firmware or connecting a laptop directly to the RS485 bus.
+
+**YCIT01** | MAX4 Proximity Card
+> 
+
+Standard credit-card style proximity tag for Galaxy systems.
+
+**YX0-0020** | Keyprox Fob
+> 
+
+Tough black plastic teardrop fob. The standard user token for all Galaxy Keyprox units.
+
+**SPI-KEY** | SPI Programmer Key
+> 
+
+Small memory stick tool that plugs into the panel PCB. Used to save a copy of the programming or clone it to another panel.

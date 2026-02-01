@@ -1,0 +1,61 @@
+Pyronix Intruder Alarm Parts List
+
+Common Part IDs for Enforcer (Wireless) and Euro (Hybrid) Series
+
+Control Panels (Wireless & Hybrid)
+
+ENF32UK-WE      | Enforcer V11 Wireless Panel (All-in-one with Wifi)
+EURO-46/S-UK    | Euro 46 Small Metal Panel (Hybrid, Grade 2)
+EURO-46/L-UK    | Euro 46 Large Metal Panel (Hybrid, Grade 3 capable)
+EURO-280/L-UK   | Euro 280 Large Panel (Commercial Grade 3)
+
+Keypads
+
+EURO-LCDP/RAL   | Euro LCD Keypad with Prox (Standard)
+EURO-LCDP/SUR-R | Euro LCD Keypad (Surface Mount, Chrome/Black finish)
+LEDK-W          | Wireless Arming Station (LED Keypad)
+FPPCX-PROX/INT  | Internal Tag Reader (Wired - fits light switch backbox)
+
+Expansion & Wireless Modules
+
+EURO-ZEM8+      | Zone Expander Module (8 Wired Zones)
+EURO-ZEM32-WE   | Wireless Expander Module (32 Wireless Zones for Euro)
+UR2-WE          | Universal Wireless Receiver (Use Pyronix sensors on other panels)
+EURO-OEM8R8T    | Output Expander (8 Relay, 8 Transistor)
+
+Wireless Detectors (Enforcer Two-Way Wireless)
+
+KX10DP-WE       | Wireless Pet Immune PIR (10m)
+KX12DQ-WE       | Wireless Quad PIR (12m)
+KX15DT-WE       | Wireless Dual Tech (15m)
+MC1MINI-WE      | Mini Wireless Magnetic Contact (White)
+MC2-WE          | Standard Wireless Magnetic Contact (White)
+SHOCK-WE        | Wireless Shock Sensor
+SMOKE-WE        | Wireless Smoke Detector (Optical)
+CO-WE           | Wireless Carbon Monoxide Detector
+HUD-WE          | Wireless Hold-Up Device (Panic Button)
+
+Wired Detectors (KX Series)
+
+KX15DD          | KX Digital PIR (15m)
+KX10DP          | KX Pet Immune PIR (10m)
+KX15DT          | KX Dual Tech (15m - Blue lens)
+KX15DTAM        | KX Dual Tech Anti-Mask (Grade 3)
+
+Sounders (Bell Boxes)
+
+FPDELTA-MOD-B   | Deltabell Module (Backplate & Electronics)
+FPDELTA-C-W     | Deltabell Cover (White)
+FPDELTA-WE      | Wireless Deltabell Module
+
+Communication & Apps
+
+DIGI-WIFI/XA    | Wifi Module for Euro 46 (External Antenna)
+DIGI-LAN        | Ethernet Module
+DIGI-GPRS       | GPRS Module (SIM req)
+
+Batteries & Spares
+
+BATT-ES1        | Enforcer Battery Pack (Specific 8-cell NiMh pack)
+BATT9V          | 9V Lithium Battery (For older Deltabell WE)
+PCX-PTAG        | Proximity Tags (Pack of 5)

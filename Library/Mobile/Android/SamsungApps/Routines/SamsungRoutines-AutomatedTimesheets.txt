@@ -1,0 +1,96 @@
+# Automating Timesheets: Beyond Samsung Routines
+
+Since Samsung Modes and Routines cannot pass "Current Time" data into a calendar event, here are the three best ways to automate your arrival and departure logging.
+
+## Option 1: The "Native" Samsung Workaround (Notification History)
+
+If you don't want to install new apps, you can use the phone's built-in notification log as your timesheet.
+
+**How it works:** You create a routine that simply sends a notification when you arrive. Your phone essentially "keeps the receipt" with the timestamp.
+1. 
+
+**Create Routine 1 (Arrival):**
+  - 
+
+**If:** Place -> Arrive at [Work]
+  - 
+
+**Then:** Notifications -> Show custom notification -> Title: "CLOCKED IN", Text: "You have arrived at work."
+1. 
+
+**Create Routine 2 (Departure):**
+  - 
+
+**If:** Place -> Leave [Work]
+  - 
+
+**Then:** Notifications -> Show custom notification -> Title: "CLOCKED OUT", Text: "You have left work."
+
+**How to get your data:** At the end of the week/month:
+1. 
+
+Go to **Settings** > **Notifications** > **Advanced settings**.
+1. 
+
+Tap **Notification history**.
+1. 
+
+Scroll or search for your "Modes and Routines" notifications. The exact time they fired will be listed there.
+
+## Option 2: IFTTT (Easiest "Set and Forget")
+
+IFTTT (If This Then That) is a third-party service that connects your phone's location directly to Google Sheets or Google Calendar. This is the cleanest solution for timesheets.
+
+**Pros:** completely automatic, creates a spreadsheet for you.
+1. 
+
+Download the **IFTTT** app.
+1. 
+
+Create an account and connect "Android Device" and "Google Sheets".
+1. 
+
+**Create an Applet:**
+  - 
+
+**If This:** Android Device -> "Enter a specific area" (Set your work location).
+  - 
+
+**Then That:** Google Sheets -> "Add row to spreadsheet".
+1. 
+
+**Configure the Row:**
+  - 
+
+IFTTT lets you add "Ingredients". You can set the row to automatically write: `{{OccurredAt}} | Arrived at Work`.
+1. 
+
+Repeat for "Exit a specific area".
+
+**Result:** You get a Google Sheet named "Work_Times" that automatically populates with timestamps without you touching your phone.
+
+## Option 3: Tasker (The Power User Option)
+
+If you want to stick to a Calendar specifically and want 100% control, **Tasker** is the industry standard for Android automation. It has a steep learning curve but can do exactly what you asked for.
+
+**How it handles your request:**
+- 
+
+**Variable Support:** Tasker has a variable called `%TIME`.
+- 
+
+**Calendar Insert:** It has an action called "Calendar Insert".
+- 
+
+**The Logic:**
+  - 
+
+Profile: Location = Work
+  - 
+
+Enter Task: Calendar Insert -> Title: "Arrived", Time: `%TIME`
+  - 
+
+Exit Task: Calendar Insert -> Title: "Left", Time: `%TIME`
+
+**Cost:** One-time purchase (approx $3.50 / £3.49).

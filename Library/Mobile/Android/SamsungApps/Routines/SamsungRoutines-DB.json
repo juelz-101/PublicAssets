@@ -1,0 +1,631 @@
+{
+  "conditions": [
+    {
+      "category": "Connected devices",
+      "items": [
+        {
+          "name": "Smart View",
+          "description": "Triggers when your phone is casting to a TV or screen."
+        },
+        {
+          "name": "Multi control",
+          "description": "Triggers when connected to a Galaxy Book or Tablet via Multi Control."
+        },
+        {
+          "name": "Link to Windows",
+          "description": "Triggers when the phone is connected to your PC."
+        }
+      ]
+    },
+    {
+      "category": "Device",
+      "items": [
+        {
+          "name": "Wired headphones",
+          "description": "Detects when headphones are plugged in or unplugged."
+        },
+        {
+          "name": "Charging status",
+          "description": "Specific triggers for Wired charging, Wireless charging, or Not charging."
+        },
+        {
+          "name": "Battery level",
+          "description": "Triggers when battery hits a specific percentage (e.g., \"Below 20%\" or \"Equal to or above 80%\")."
+        },
+        {
+          "name": "Power saving",
+          "description": "Detects if Power Saving mode is currently On or Off."
+        },
+        {
+          "name": "Sound mode",
+          "description": "Triggers based on the current mode (Sound, Vibrate, or Mute)."
+        },
+        {
+          "name": "Dark mode",
+          "description": "Detects if the system Dark Mode is active."
+        },
+        {
+          "name": "Watch wearing status",
+          "description": "Detects if you are currently wearing your Galaxy Watch (requires paired watch)."
+        }
+      ]
+    },
+    {
+      "category": "Event",
+      "items": [
+        {
+          "name": "Game is being played",
+          "description": "Automatically triggers when a game app launches."
+        },
+        {
+          "name": "During exercise",
+          "description": "Triggers when a workout is manually started or auto-detected in Samsung Health."
+        },
+        {
+          "name": "Media is being played",
+          "description": "Detects when music or video is playing from any app."
+        }
+      ]
+    },
+    {
+      "category": "Call",
+      "items": [
+        {
+          "name": "Incoming call",
+          "description": "Triggers when the phone rings (can specify \"from anyone\" or \"specific contacts\")."
+        },
+        {
+          "name": "During call",
+          "description": "Triggers while you are actively on a phone call."
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "category": "Accessibility",
+      "items": [
+        {
+          "name": "Amplify ambient sound",
+          "description": "Boosts external volume through headphones (similar to hearing aid functionality)."
+        },
+        {
+          "name": "Assistant menu",
+          "description": "Toggles the floating on-screen button for quick navigation access."
+        },
+        {
+          "name": "Camera flash notification",
+          "description": "Flashes the camera light when you receive alerts."
+        },
+        {
+          "name": "Colour correction",
+          "description": "Adjusts colour spectrums for users with colour blindness."
+        },
+        {
+          "name": "Colour filter",
+          "description": "Applies a coloured overlay to the screen (e.g., blue light filter)."
+        },
+        {
+          "name": "Colour inversion",
+          "description": "Inverts all colours on the screen (white becomes black, etc.)."
+        },
+        {
+          "name": "Extra dim",
+          "description": "Lowers the screen brightness beyond the standard minimum setting."
+        },
+        {
+          "name": "Left/right sound balance",
+          "description": "Adjusts volume balance between left and right audio channels."
+        },
+        {
+          "name": "Live Caption",
+          "description": "Automatically detects speech in media and displays captions."
+        },
+        {
+          "name": "Mono audio",
+          "description": "Combines left and right audio channels into a single mono signal."
+        },
+        {
+          "name": "Mute all sounds",
+          "description": "Silences the entire device instantly."
+        },
+        {
+          "name": "Screen flash notification",
+          "description": "Flashes the screen display when notifications arrive."
+        }
+      ]
+    },
+    {
+      "category": "Accounts and backup",
+      "items": [
+        {
+          "name": "Auto sync data",
+          "description": "Toggles whether accounts (Google, Samsung, etc.) automatically sync in the background."
+        }
+      ]
+    },
+    {
+      "category": "Alarm",
+      "items": [
+        {
+          "name": "Turn off alarms",
+          "description": "Disables currently active alarms."
+        },
+        {
+          "name": "Turn on alarms",
+          "description": "Enables specific alarms."
+        }
+      ]
+    },
+    {
+      "category": "Apps",
+      "items": [
+        {
+          "name": "Close an app",
+          "description": "Force closes a specific application."
+        },
+        {
+          "name": "Open an app pair",
+          "description": "Launches two specific apps simultaneously in split-screen mode."
+        }
+      ]
+    },
+    {
+      "category": "Battery",
+      "items": [
+        {
+          "name": "Battery protection",
+          "description": "Limits maximum charge (usually to 80% or 85%) to extend battery lifespan."
+        },
+        {
+          "name": "Fast charging",
+          "description": "Toggles wired fast charging capabilities."
+        },
+        {
+          "name": "Fast wireless charging",
+          "description": "Toggles high-speed wireless charging."
+        }
+      ]
+    },
+    {
+      "category": "Bixby",
+      "items": [
+        {
+          "name": "Ask Bixby",
+          "description": "Triggers the voice assistant to listen for a command."
+        }
+      ]
+    },
+    {
+      "category": "Connected devices",
+      "items": [
+        {
+          "name": "Call & text on other devices",
+          "description": "Allows calls/texts to be routed to your Galaxy Tab or Watch."
+        },
+        {
+          "name": "Link to Windows",
+          "description": "Connects the phone to a PC via the Phone Link app."
+        },
+        {
+          "name": "Multi control",
+          "description": "Allows a Galaxy Book mouse/keyboard to control the phone."
+        },
+        {
+          "name": "Quick Share",
+          "description": "Adjusts visibility for file sharing with nearby devices."
+        },
+        {
+          "name": "Samsung DeX",
+          "description": "Launches the desktop-like interface on a connected monitor."
+        }
+      ]
+    },
+    {
+      "category": "Connections",
+      "items": [
+        {
+          "name": "Bluetooth",
+          "description": "Turns Bluetooth on or off."
+        },
+        {
+          "name": "Connect to a Bluetooth device",
+          "description": "Connects to a *specific* saved device (e.g., headphones)."
+        },
+        {
+          "name": "Connect to a VPN",
+          "description": "Initiates a connection to a specific Virtual Private Network."
+        },
+        {
+          "name": "Data saver",
+          "description": "Restricts background data usage for apps."
+        },
+        {
+          "name": "Disconnect from a Bluetooth device",
+          "description": "Disconnects a specific device."
+        },
+        {
+          "name": "Disconnect from a VPN",
+          "description": "Ends the VPN session."
+        },
+        {
+          "name": "Flight mode",
+          "description": "Toggles cellular, Wi-Fi, and Bluetooth radios off."
+        },
+        {
+          "name": "Mobile Hotspot",
+          "description": "Turns your phone into a Wi-Fi router."
+        },
+        {
+          "name": "Mobile data",
+          "description": "Toggles 4G/5G cellular data."
+        },
+        {
+          "name": "Music Share",
+          "description": "Allows friends to play music on your Bluetooth speaker via your phone."
+        },
+        {
+          "name": "NFC",
+          "description": "Toggles Near Field Communication (for payments/tags)."
+        },
+        {
+          "name": "Network mode",
+          "description": "Switches between network types (e.g., LTE only, 5G preferred)."
+        },
+        {
+          "name": "Show Wi-Fi QR code",
+          "description": "Displays the QR code for others to join your current network."
+        },
+        {
+          "name": "Wi-Fi",
+          "description": "Turns Wi-Fi on or off."
+        }
+      ]
+    },
+    {
+      "category": "Device care",
+      "items": [
+        {
+          "name": "Optimise phone",
+          "description": "Clears background apps and RAM to boost performance."
+        },
+        {
+          "name": "Performance profile",
+          "description": "Switches between Standard (faster) and Light (battery saving) performance profiles."
+        }
+      ]
+    },
+    {
+      "category": "Display",
+      "items": [
+        {
+          "name": "Accidental touch protection",
+          "description": "Prevents pocket dials when the screen is dark."
+        },
+        {
+          "name": "Adaptive brightness",
+          "description": "Toggles auto-brightness based on ambient light."
+        },
+        {
+          "name": "Adaptive colour tone",
+          "description": "Adjusts screen colour temperature based on ambient light (True Tone)."
+        },
+        {
+          "name": "Brightness",
+          "description": "Sets the screen brightness to a specific fixed percentage."
+        },
+        {
+          "name": "Edge panels",
+          "description": "Toggles the slide-out side menu."
+        },
+        {
+          "name": "Font size",
+          "description": "Changes text size."
+        },
+        {
+          "name": "Font style",
+          "description": "Changes the system font family."
+        },
+        {
+          "name": "Motion smoothness",
+          "description": "Toggles refresh rate (e.g., 60Hz vs 120Hz)."
+        },
+        {
+          "name": "Screen orientation",
+          "description": "Locks or unlocks portrait/landscape rotation."
+        },
+        {
+          "name": "Screen resolution",
+          "description": "Changes display sharpness (e.g., FHD+ vs WQHD+)."
+        },
+        {
+          "name": "Screen timeout",
+          "description": "Sets how long the screen stays on before sleeping."
+        },
+        {
+          "name": "Screen zoom",
+          "description": "Adjusts the scaling of UI elements."
+        },
+        {
+          "name": "Touch sensitivity",
+          "description": "Increases sensitivity (useful when using screen protectors)."
+        }
+      ]
+    },
+    {
+      "category": "Effects",
+      "items": [
+        {
+          "name": "Beep once",
+          "description": "Plays a single system beep."
+        },
+        {
+          "name": "Edge lighting effect once",
+          "description": "Flashes the edge of the screen with a specific colour."
+        },
+        {
+          "name": "Vibrate once",
+          "description": "Triggers a short haptic vibration."
+        }
+      ]
+    },
+    {
+      "category": "Functions",
+      "items": [
+        {
+          "name": "Go to website",
+          "description": "Opens a specific URL in the default browser."
+        },
+        {
+          "name": "Navigation button actions",
+          "description": "Modifies what the back/home/recent keys do."
+        },
+        {
+          "name": "Open Air command with Pen button",
+          "description": "(S-Pen devices) Toggles S-Pen menu behavior."
+        },
+        {
+          "name": "Read text aloud",
+          "description": "Text-to-speech for a specific phrase."
+        },
+        {
+          "name": "Record screen",
+          "description": "Starts a screen recording."
+        },
+        {
+          "name": "Take screenshot",
+          "description": "Captures the current screen."
+        },
+        {
+          "name": "Torch",
+          "description": "Turns the flashlight on or off."
+        },
+        {
+          "name": "Video brightness",
+          "description": "Enhances screen brightness specifically when watching video apps."
+        }
+      ]
+    },
+    {
+      "category": "Galaxy Watch",
+      "items": [
+        {
+          "name": "Always On Display",
+          "description": "Toggles the watch face staying on."
+        },
+        {
+          "name": "Brightness",
+          "description": "Sets watch screen brightness."
+        },
+        {
+          "name": "Disconnection alerts",
+          "description": "Vibrates when the watch loses phone connection."
+        },
+        {
+          "name": "Power saving",
+          "description": "Toggles watch battery saver mode."
+        },
+        {
+          "name": "Raise wrist to wake",
+          "description": "Toggles waking the watch screen via gesture."
+        },
+        {
+          "name": "Sound mode",
+          "description": "Switches watch between Sound, Vibrate, or Mute."
+        },
+        {
+          "name": "Touch screen to wake",
+          "description": "Toggles waking watch by tapping."
+        },
+        {
+          "name": "Turn bezel to wake",
+          "description": "Toggles waking watch by rotating the bezel."
+        }
+      ]
+    },
+    {
+      "category": "Gallery",
+      "items": [
+        {
+          "name": "Show images",
+          "description": "Opens a specific picture or album."
+        }
+      ]
+    },
+    {
+      "category": "Game Booster",
+      "items": [
+        {
+          "name": "Block Bixby during games",
+          "description": "Prevents voice assistant interruptions."
+        },
+        {
+          "name": "Block auto brightness during games",
+          "description": "Locks brightness while gaming."
+        },
+        {
+          "name": "Block edge panel during games",
+          "description": "Disables the side swipe menu while gaming."
+        }
+      ]
+    },
+    {
+      "category": "Location",
+      "items": [
+        {
+          "name": "Location",
+          "description": "Toggles GPS services on or off."
+        }
+      ]
+    },
+    {
+      "category": "Lock screen and AOD",
+      "items": [
+        {
+          "name": "Always On Display",
+          "description": "Toggles the phone's standby info screen."
+        },
+        {
+          "name": "Keep your phone unlocked",
+          "description": "Extends Smart Lock duration."
+        },
+        {
+          "name": "Unlock with biometrics",
+          "description": "Automatically attempts to unlock using face/fingerprint."
+        }
+      ]
+    },
+    {
+      "category": "Music",
+      "items": [
+        {
+          "name": "Spotify playlists",
+          "description": "Starts playing a specific Spotify playlist."
+        }
+      ]
+    },
+    {
+      "category": "Notifications",
+      "items": [
+        {
+          "name": "Show custom notification",
+          "description": "Displays a text notification you write yourself (useful for reminders)."
+        }
+      ]
+    },
+    {
+      "category": "Phone",
+      "items": [
+        {
+          "name": "Answer using speaker",
+          "description": "Automatically answers incoming calls on speakerphone."
+        },
+        {
+          "name": "Decline call and send a quick message",
+          "description": "Rejects call and texts the caller."
+        }
+      ]
+    },
+    {
+      "category": "Samsung Keyboard",
+      "items": [
+        {
+          "name": "High contrast keyboard",
+          "description": "Changes keyboard colours for visibility."
+        },
+        {
+          "name": "Languages and types",
+          "description": "Switches input languages."
+        },
+        {
+          "name": "Mode",
+          "description": "Changes keyboard layout (standard, split, floating)."
+        },
+        {
+          "name": "Samsung Keyboard voice input",
+          "description": "Toggles voice-to-text."
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        {
+          "name": "Turn on Secure Wi-Fi",
+          "description": "Enables Samsung's privacy protection for public networks."
+        }
+      ]
+    },
+    {
+      "category": "Sounds and vibration",
+      "items": [
+        {
+          "name": "AI assistant volume",
+          "description": "Sets volume for Bixby/Google."
+        },
+        {
+          "name": "Boost dialogue",
+          "description": "Enhances vocal clarity in audio."
+        },
+        {
+          "name": "Call volume",
+          "description": "Sets volume for phone calls."
+        },
+        {
+          "name": "Dialing keypad tone",
+          "description": "Toggles the sound made when typing numbers."
+        },
+        {
+          "name": "Dolby Atmos",
+          "description": "Toggles surround sound processing."
+        },
+        {
+          "name": "Equaliser",
+          "description": "Applies a specific audio EQ preset (e.g., Rock, Pop)."
+        },
+        {
+          "name": "Loudness normalisation",
+          "description": "Keeps volume consistent across tracks."
+        },
+        {
+          "name": "Ringtone",
+          "description": "Changes the incoming call ringtone."
+        },
+        {
+          "name": "Samsung Keyboard sound",
+          "description": "Toggles typing sounds."
+        },
+        {
+          "name": "Samsung Keyboard vibration",
+          "description": "Toggles typing haptics."
+        },
+        {
+          "name": "Separate app sound",
+          "description": "Routes specific app audio to a different device (e.g., Spotify to speaker, Nav to phone)."
+        },
+        {
+          "name": "Vibrate while ringing",
+          "description": "Toggles vibration during calls."
+        }
+      ]
+    },
+    {
+      "category": "Timer",
+      "items": [
+        {
+          "name": "Start a timer",
+          "description": "Begins a countdown for a set duration."
+        }
+      ]
+    },
+    {
+      "category": "Wallpaper",
+      "items": [
+        {
+          "name": "Dim wallpaper when Dark mode is on",
+          "description": "Darkens the background image to match the system theme."
+        }
+      ]
+    }
+  ]
+}

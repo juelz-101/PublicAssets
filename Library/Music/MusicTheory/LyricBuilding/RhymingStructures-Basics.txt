@@ -1,0 +1,129 @@
+Document Title: Rhyming Structures: The Basics Version: 1.1 Author: Mr G Approved by: pending Created date: 2026-01-06 Location: London Organisation: ZIKYinc
+
+# Table of Contents
+
+Page 1: Introduction to Rhyme Page 2: Perfect Rhyme Page 3: Identical Rhyme Page 4: Slant Rhyme Page 5: Masculine & Feminine Rhymes Page 6: End Rhyme Page 7: Internal Rhyme Page 8: Basic Rhyme Schemes Page 9: References & Tools Page 10: Index Page 11: License
+
+## Page 1: Introduction to Rhyme
+
+Rhyme is the sonic connection between words, serving as the glue that holds lyrics together. While often associated with simple poetry, the way a songwriter utilizes rhyme determines the flow, memorability, and emotional impact of a song.
+
+Understanding the different types of rhyme allows a lyricist to control the tension and release within a verse or chorus. It is not merely about matching sounds, but about creating expectation and satisfying (or subverting) it.
+
+## Page 2: Perfect Rhyme
+
+This is the most strictly defined form of rhyme. In a Perfect Rhyme, the stressed vowel sound and all subsequent sounds must be identical, while the articulation preceding the vowel must differ.
+
+Common in pop music and children's songs, perfect rhymes provide a sense of stability and closure. They are satisfying to the ear but can sound cliché if overused or forced.
+
+**Examples:**
+- 
+
+Cat / Hat
+- 
+
+Love / Dove
+- 
+
+Sky / Fly
+
+## Page 3: Identical Rhyme
+
+An Identical Rhyme occurs when the rhyming words are the same word, or homophones (words that sound exactly the same but have different meanings).
+
+While often considered "cheating" in strict poetry, in songwriting, Identical Rhyme is a legitimate technique used to create repetition, obsession, or emphasis on a specific concept.
+
+**Examples:**
+- 
+
+Blue / Blew
+- 
+
+Right / Write
+- 
+
+Home / Home (Repetition)
+
+## Page 4: Slant Rhyme
+
+Also known as near rhyme, half rhyme, or imperfect rhyme. A Slant Rhyme occurs when words sound similar but do not match perfectly. This usually involves sharing a vowel sound (assonance) or a consonant sound (consonance), but not both.
+
+Slant rhymes are crucial in modern songwriting, particularly in Hip Hop and Rock, because they vastly expand the writer's vocabulary options and can create a subtler, more sophisticated mood.
+
+**Examples:**
+- 
+
+Soul / All
+- 
+
+Shape / Keep
+- 
+
+Moon / Home
+
+## Page 5: Masculine & Feminine Rhymes
+
+These terms refer to the stress pattern of the rhyming words.
+
+**Masculine Rhyme** A rhyme limited to a single stressed syllable, usually at the very end of the word. It tends to feel strong, final, and decisive. _Example: Light / Bright_
+
+**Feminine Rhyme** A rhyme of two or more syllables, where the final syllable is unstressed. This creates a "falling" sensation, often feeling softer, lighter, or more musical. _Example: Sitting / Fitting, Motion / Ocean_
+
+## Page 6: End Rhyme
+
+This refers to the placement of the rhyme rather than the sound itself. End Rhyme is the most common position for rhyming words, occurring at the end of lines in a verse or stanza.
+
+It establishes the audible boundary of the line. By marking the end of a musical or lyrical phrase, it helps the listener anticipate the rhythm and structure of the song.
+
+## Page 7: Internal Rhyme
+
+Internal Rhyme occurs when a word within a line rhymes with another word in the same line or the following line.
+
+This technique increases the "density" of the rhyme scheme, making the lyric feel faster, more complex, or more rhythmic. It is a staple of Rap and fast-paced Pop music.
+
+**Example:** "I drove my **car** very **far**." "The **cat** in the **hat** sat back."
+
+## Page 8: Basic Rhyme Schemes
+
+The pattern of end rhymes in a stanza is mapped using letters (A, B, C).
+
+**AABB** The first two lines rhyme, and the next two lines rhyme. This is very common in couplets and creates a very balanced, predictable feel often used in choruses.
+
+**ABAB** Alternate rhyme. Line 1 rhymes with line 3; line 2 rhymes with line 4. This creates a more interlocking, narrative feel that propels the listener forward.
+
+## Page 9: References & Tools
+- 
+
+RhymeZone (Online Dictionary)
+- 
+
+The Songwriter's Workshop (Berklee Press)
+- 
+
+Oxford English Dictionary (Phonetic references)
+- 
+
+ZIKYinc Internal Style Guide
+
+## Page 10: Index
+
+| Keyword | Pages |
+| --- | --- |
+| AABB | 8 |
+| ABAB | 8 |
+| Assonance | 4 |
+| Consonance | 4 |
+| End Rhyme | 6 |
+| Feminine Rhyme | 5 |
+| Identical Rhyme | 3 |
+| Internal Rhyme | 7 |
+| Masculine Rhyme | 5 |
+| Perfect Rhyme | 2 |
+| Rhyme Scheme | 8 |
+| Slant Rhyme | 4 |
+
+## Page 11: License
+
+© 2026 ZIKYinc. All rights reserved.
+
+This document is proprietary and confidential. No part of this document may be disclosed in any manner to a third party without the prior written consent of ZIKYinc.

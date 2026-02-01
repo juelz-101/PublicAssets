@@ -14,6 +14,13 @@
 		]
     },
 	"data": {
+        "dev_ref": {
+            "dev_note": "External databases share the same structure and with have their data merged with this (all but meta), log any skillsets here in external files and they will be merged here as dev notes and can be removed systematically",
+            "current_skillsets": {
+                "def": "Default",
+                "app": "App Developer"
+            }
+        },
 		"dictionary": {
 			"desc": [
 				"This is where you can find definitions for relivent terms/data used within the app.",
@@ -44,8 +51,7 @@
 				},
 				{
 					"name": "App Developer", "id": "app",
-					"desc": "App-Dev based skillsets",
-					"force_to_col_id": ["ZPC"],
+					"desc": "App-Dev based skillsets", "force_to_col_id": ["zpc"],
 					"levels": [
 						{"name": "User", "desc": "This level indicates that the knowledge involved is within the knowledge required to use the application and its basic features", "example": "Adding data to the app as intended."},
 						{"name": "Curious User", "desc": "This level indicates that the knowledge involved is for somebody who has became curious and is looking for alternate ways to achive their goal.", "example": "Teaking or adding data from JSON files rather than in the app."},

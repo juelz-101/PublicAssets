@@ -1,0 +1,401 @@
+{
+	"project": "ProducerAI Master Database",
+	"version": "1.2.0",
+	"model_engine": "FUZZ-2.0 (Latent Diffusion)",
+	"producer_tool_database": {
+		"function_register": {
+			"audio_generation_core": ["riff_create_custom", "riff_create_cover", "riff_replace_audio", "riff_extend_audio", "riff_stem_swap", "riff_create_vibe"],
+			"audio_processing_and_analysis": ["riff_split_stems_v2", "apply_audio_effect", "convert_audio_format", "listen_to_audio_from_url", "transcribe_audio_from_url", "riff_identify_musical_key", "riffusion_data_songs__raw_audio_url"],
+			"lyrics_engine": ["write_lyrics", "register_lyrics", "edit_lyrics", "riffusion_data_songs__fetch_lyrics_timestamps"],
+			"visuals_and_video": ["music_video__create_confirmation", "music_video__create", "visualize_audio", "image_tools__generate_image", "video_tools__generate_video", "image_tools_images__read_from_song_cover", "image_tools__resize"],
+			"data_retrieval": ["riffusion_data_songs__fetch_user_songs", "riffusion_data_songs__fetch_trending", "riffusion_data_playlists__fetch_user_playlists", "riffusion_data_users__fetch_recent_vibes", "riffusion_data_songs__fetch_metadata_by_id"],
+			"playlist_management": ["riffusion_data_playlists__create", "riffusion_data_playlists__update"],
+			"interactive_spaces": ["create_space", "edit_space"],
+			"ui_rendering": ["ui_display_songs", "ui_display_playlist", "ui_display_vibes"],
+			"external_intelligence": ["twitter_search_recent_tweets"],
+			"user_management_and_social": ["get_user_info", "ui_display_user_profile", "riffusion_data_edit_song_metadata"],
+			"studio_playback_controls": ["play_song", "play_playlist", "queue_songs", "set_volume", "get_current_song", "skip_to_next_song", "skip_to_previous_song", "pause_current_song"],
+			"system_and_feedback": ["report_internal_feedback"]
+		},
+		"audio_generation_core": [
+			{
+				"function": "riff_create_custom",
+				"description": "Create a new song from scratch using sound prompts and lyrics.",
+				"parameters": {
+					"lyrics_id": { "type": "UUID", "is_required": true, "default": null, "example": "550e8400-e29b-41d4-a716-446655440000", "desc": "Reference to lyrics or song ID", "notes": "Empty string = instrumental" },
+					"sound_prompts": {
+						"type": "array[object]", "is_required": true, "default": null, "example": "[{'text': 'UK Drill', 'strength': 0.7}]", "desc": "List of sound characteristics", "notes": "Max 4 prompts total",
+						"parameters": {
+							"text": { "type": "string", "is_required": false, "default": null, "example": "UK Drill", "desc": "Text description of sound" },
+							"strength": { "type": "float", "range": { "min": -1.0, "max": 1.0 }, "is_required": false, "default": 0.5, "example": 0.7, "desc": "Weight of the prompt" },
+							"vibe": { "type": "object", "is_required": false, "default": null, "example": "{'audio_input': {'id': 'uuid'}, 'start_s': 30}", "desc": "Audio style reference", "parameters": { "audio_input": { "type": "object", "parameters": { "id": { "type": "UUID" } } }, "start_s": { "type": "float" } } },
+							"time_start": { "type": "float", "range": { "min": 0.0, "max": 240.0 }, "is_required": false, "default": 0.0, "example": 0.0, "desc": "Start of prompt mask" },
+							"time_end": { "type": "float", "range": { "min": 0.0, "max": 240.0 }, "is_required": false, "default": null, "example": 30.0, "desc": "End of prompt mask" }
+						}
+					},
+					"title": { "type": "string", "is_required": true, "default": "Untitled", "example": "JFM London Vibes V1.0", "desc": "Song name" },
+					"weirdness": { "type": "float", "range": { "min": 0.0, "max": 1.0 }, "is_required": false, "default": 0.5, "example": 0.5, "desc": "Structure vs Creativity balance" },
+					"seed": { "type": "int", "range": { "min": 0, "max": 4294967295 }, "is_required": false, "default": null, "example": 12345, "desc": "Randomization seed" },
+					"lyrics_strength": { "type": "float", "range": { "min": 0.0, "max": 1.0 }, "is_required": false, "default": 0.5, "example": 0.5, "desc": "Lyrics attention weight" },
+					"trigger_generation": { "type": "boolean", "is_required": false, "default": true, "example": true, "desc": "Execute task immediately" }
+				}
+			},
+			{
+				"function": "riff_create_cover",
+				"description": "Transform an existing song or audio into a new style (Remix).",
+				"parameters": {
+					"audio_input": { "type": "object", "is_required": true, "default": null, "example": { "id": "uuid" }, "desc": "Input audio source", "parameters": { "id": { "type": "UUID", "is_required": true, "example": "uuid", "desc": "Target ID" } } },
+					"lyrics_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "Lyrics reference" },
+					"title": { "type": "string", "is_required": true, "default": "Cover", "example": "JFM Remix V1.1", "desc": "Output title" },
+					"cover_strength": { "type": "float", "range": { "min": 0.0, "max": 1.0 }, "is_required": false, "default": 0.5, "example": 0.5, "desc": "Deviation from original audio" },
+					"sound_prompt": { "type": "string", "is_required": false, "default": null, "example": "90s Grime", "desc": "New style description" },
+					"sound_prompt_strength": { "type": "float", "range": { "min": 0.0, "max": 1.0 }, "is_required": false, "default": 0.7, "example": 0.7, "desc": "Style weight" },
+					"trigger_generation": { "type": "boolean", "is_required": false, "default": true, "example": true, "desc": "Execute task immediately" }
+				}
+			},
+			{
+				"function": "riff_replace_audio",
+				"description": "Re-generate specific time regions of a song while keeping the rest identical.",
+				"parameters": {
+					"audio_input": { "type": "object", "is_required": true, "default": null, "example": { "id": "uuid" }, "desc": "Source song", "parameters": { "id": { "type": "UUID" } } },
+					"clips_to_replace": {
+						"type": "array[object]", "is_required": true, "default": null, "example": "[{'start_s': 10, 'end_s': 20}]", "desc": "Regions to swap",
+						"parameters": {
+							"start_s": { "type": "float", "range": { "min": 0.0, "max": null }, "is_required": false, "default": 0.0, "example": 10.0, "desc": "Start of region" },
+							"end_s": { "type": "float", "range": { "min": 0.0, "max": null }, "is_required": false, "default": null, "example": 20.0, "desc": "End of region" },
+							"lyrics_text": { "type": "string", "is_required": false, "default": null, "example": "[Chorus] New lyrics", "desc": "Replacement lyrics for clip" }
+						}
+					},
+					"title": { "type": "string", "is_required": true, "default": "Edit", "example": "Verse Swap V1.0", "desc": "New title" },
+					"sound_prompt": { "type": "string", "is_required": false, "default": null, "example": "UK Rap raw", "desc": "New style for regions" },
+					"trigger_generation": { "type": "boolean", "is_required": false, "default": true, "example": true, "desc": "Execute task immediately" }
+				}
+			},
+			{
+				"function": "riff_extend_audio",
+				"description": "Continue a song from a specific timestamp or the end.",
+				"parameters": {
+					"audio_input": { "type": "object", "is_required": true, "default": null, "example": { "id": "uuid" }, "desc": "Song to extend", "parameters": { "id": { "type": "UUID" } } },
+					"start_s": { "type": "float", "range": { "min": 0.0, "max": null }, "is_required": true, "default": 30.0, "example": 30.0, "desc": "Point to begin extension" },
+					"lyrics_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "New lyrics to append" },
+					"extend_duration_s": { "type": "float", "range": { "min": 0.0, "max": 180.0 }, "is_required": false, "default": null, "example": 30.0, "desc": "Duration of new segment" },
+					"title": { "type": "string", "is_required": true, "default": "Extended", "example": "V1.0 Full", "desc": "New title" },
+					"trigger_generation": { "type": "boolean", "is_required": false, "default": true, "example": true, "desc": "Execute task immediately" }
+				}
+			},
+			{
+				"function": "riff_stem_swap",
+				"description": "Isolate one stem (vocal/inst) and regenerate the other.",
+				"parameters": {
+					"audio_input": { "type": "object", "is_required": true, "default": null, "example": { "id": "uuid" }, "desc": "Source audio", "parameters": { "id": { "type": "UUID" } } },
+					"swap_type": {
+						"type": "enum", "is_required": true, "default": "vocals", "example": "vocals", "desc": "Target stem to swap",
+						"enums": { "vocals": { "desc": "Keep music, new vocals" }, "instrumentals": { "desc": "Keep vocals, new music" } }
+					},
+					"lyrics_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "Lyrics for generation" },
+					"title": { "type": "string", "is_required": true, "default": "Swap", "example": "Beat Flip V1.0", "desc": "New title" },
+					"trigger_generation": { "type": "boolean", "is_required": false, "default": true, "example": true, "desc": "Execute task immediately" }
+				}
+			},
+			{
+				"function": "riff_create_vibe",
+				"description": "Create a 10s stylistic audio reference ('Vibe') from a song.",
+				"parameters": {
+					"inputs": {
+						"type": "object", "is_required": true, "default": null, "example": "{'audio_input': {'id': 'uuid'}, 'start_s': 30}", "desc": "Vibe source data",
+						"parameters": {
+							"audio_input": { "type": "object", "is_required": true, "example": "{'id': 'uuid'}", "desc": "Source song", "parameters": { "id": { "type": "UUID" } } },
+							"start_s": { "type": "float", "range": { "min": 0.0, "max": null }, "is_required": true, "default": 30.0, "example": 45.0, "desc": "Start time of clip" }
+						}
+					}
+				}
+			}
+		],
+		"audio_processing_and_analysis": [
+			{
+				"function": "riff_split_stems_v2",
+				"description": "Separate a track into 4 stems: Vocals, Drums, Bass, Other.",
+				"parameters": {
+					"inputs": { "type": "object", "is_required": true, "default": null, "example": "{'id': 'uuid'}", "desc": "Target song wrapper", "parameters": { "id": { "type": "UUID", "is_required": true, "example": "uuid", "desc": "Source audio ID" } } }
+				}
+			},
+			{
+				"function": "apply_audio_effect",
+				"description": "Apply a node graph of DSP effects (EQ, Reverb, Compression, etc.).",
+				"parameters": {
+					"graph": {
+						"type": "array[object]", "is_required": true, "default": null, "example": "[{'node_type': 'Input', 'node_id': 'in', 'track_id': 'uuid'}]", "desc": "DAG of effect nodes",
+						"parameters": {
+							"node_type": { "type": "enum", "is_required": true, "example": "Reverb", "enums": { "Input": "Source", "Gain": "Volume", "Equalizer": "3-band", "Reverb": "Space", "Compressor": "Dynamics", "Limiter": "Peak control", "PitchShift": "Key change", "TempoShift": "Speed", "Reverse": "Backwards", "Output": "Terminator" } },
+							"node_id": { "type": "string", "is_required": true, "example": "node_1", "desc": "Unique identifier for node routing" },
+							"input_ids": { "type": "array[string]", "is_required": false, "default": null, "example": "['node_1']", "desc": "IDs of nodes feeding into this one" },
+							"gain_db": { "type": "float", "range": { "min": -24.0, "max": 12.0 }, "is_required": false, "default": 0.0, "example": -3.0, "desc": "Volume adjustment" },
+							"room_size": { "type": "float", "range": { "min": 0.0, "max": 1.0 }, "is_required": false, "default": 0.5, "example": 0.8, "desc": "Reverb hall size" },
+							"semitones": { "type": "float", "range": { "min": -12.0, "max": 12.0 }, "is_required": false, "default": 0.0, "example": 2.0, "desc": "Pitch adjustment" }
+						}
+					},
+					"output_title": { "type": "string", "is_required": true, "default": "Processed Audio", "example": "JFM Mastered V1.0", "desc": "Final track title" }
+				}
+			},
+			{
+				"function": "convert_audio_format",
+				"description": "Convert audio to different formats, bitrates, or sample rates.",
+				"parameters": {
+					"track_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "Audio source ID" },
+					"output_format": {
+						"type": "object", "is_required": true, "default": null, "example": "{'extension': 'mp3', 'bitrate': 320}", "desc": "Format specifications",
+						"parameters": {
+							"extension": { "type": "enum", "is_required": true, "example": "wav", "enums": { "mp3": "Compressed", "wav": "PCM", "m4a": "AAC", "flac": "Lossless", "ogg": "Vorbis" } },
+							"sample_rate": { "type": "int", "range": { "min": 8000, "max": 48000 }, "is_required": false, "default": 44100, "example": 48000, "desc": "Audio frequency in Hz" },
+							"bitrate": { "type": "int", "range": { "min": 64, "max": 320 }, "is_required": false, "default": 192, "example": 320, "desc": "kbps for compressed formats" }
+						}
+					},
+					"output_title": { "type": "string", "is_required": true, "default": "Converted Audio", "example": "Radio Edit.mp3", "desc": "New file title" }
+				}
+			},
+			{
+				"function": "listen_to_audio_from_url",
+				"description": "AI listens to audio and describes it textually.",
+				"parameters": {
+					"audio_url": { "type": "string", "is_required": true, "default": null, "example": "https://cdn.producer.ai/track.m4a", "desc": "Direct link to audio file" },
+					"prompt": { "type": "string", "is_required": true, "default": null, "example": "Describe the vocal delivery and energy", "desc": "Instruction for the listener agent" },
+					"start_s": { "type": "float", "range": { "min": 0.0, "max": null }, "is_required": false, "default": 0.0, "example": 30.0, "desc": "Start time for listening" },
+					"end_s": { "type": "float", "range": { "min": 0.0, "max": null }, "is_required": false, "default": null, "example": 60.0, "desc": "End time for listening" }
+				}
+			},
+			{
+				"function": "transcribe_audio_from_url",
+				"description": "Convert audio speech/vocals to text and generate a sound prompt.",
+				"parameters": { "audio_url": { "type": "string", "is_required": true, "default": null, "example": "url", "desc": "Direct link to the audio file" } }
+			},
+			{
+				"function": "riff_identify_musical_key",
+				"description": "Detect the musical key of a track.",
+				"parameters": { "audio_input": { "type": "object", "is_required": true, "default": null, "example": "{'id': 'uuid'}", "desc": "Target song wrapper", "parameters": { "id": { "type": "UUID", "is_required": true, "example": "uuid", "desc": "Source audio ID" } } } }
+			},
+			{
+				"function": "riffusion_data_songs__raw_audio_url",
+				"description": "Get the direct .m4a storage link for a song.",
+				"parameters": { "song_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "Target song identifier" } }
+			}
+		],
+		"lyrics_engine": [
+			{
+				"function": "write_lyrics",
+				"description": "Generate lyrics using the Ghostwriter agent.",
+				"parameters": { "prompt": { "type": "string", "is_required": true, "default": null, "example": "[JFM] UK Drill track about London pirate radio life", "desc": "Context, genre, and themes for the songwriting agent" } }
+			},
+			{
+				"function": "register_lyrics",
+				"description": "Save user-written text as a lyrics object.",
+				"parameters": { "lyrics": { "type": "string", "is_required": true, "default": null, "example": "[Verse 1]\nFresh out the 18th floor...", "desc": "The raw lyrics text to be converted to a lyrics_id" } }
+			},
+			{
+				"function": "edit_lyrics",
+				"description": "Edit existing lyrics using the Ghostwriter agent.",
+				"parameters": { "lyrics_id": { "type": "UUID", "is_required": true, "default": null, "example": "550e8400-e29b-41d4-a716-446655440000", "desc": "ID of the lyrics object to be modified" }, "prompt": { "type": "string", "is_required": true, "default": null, "example": "Rewrite the second verse to be more aggressive and mention Zicky-inc", "desc": "Specific editing instructions" } }
+			},
+			{
+				"function": "riffusion_data_songs__fetch_lyrics_timestamps",
+				"description": "Get word-level timestamp mapping for a song's lyrics.",
+				"parameters": { "song_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "The song to analyze for timing" }, "run_accurate_lyrics_alignment": { "type": "boolean", "is_required": false, "default": false, "example": true, "desc": "Enable deep analysis for high precision sync" } }
+			}
+		],
+		"visuals_and_video": [
+			{
+				"function": "music_video__create_confirmation",
+				"description": "Mandatory first step: generate a preview card of music video parameters for user approval.",
+				"parameters": {
+					"song_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "Source song ID" },
+					"user_message": { "type": "string", "is_required": true, "default": null, "example": "JFM Pirate Radio aesthetic with London cityscapes", "desc": "Detailed visual concept" },
+					"start_s": { "type": "float", "range": { "min": 0.0, "max": null }, "is_required": true, "default": null, "example": 15.0, "desc": "Song start point" },
+					"duration_s": { "type": "float", "range": { "min": 10.0, "max": 120.0 }, "is_required": true, "default": null, "example": 30.0, "desc": "Total video length" },
+					"aspect_ratio": { "type": "enum", "is_required": false, "default": "9:16", "example": "9:16", "enums": { "9:16": { "desc": "Portrait" }, "16:9": { "desc": "Landscape" } } },
+					"render_lyrics": { "type": "boolean", "is_required": false, "default": true, "example": true, "desc": "Overlay synchronized lyrics" },
+					"likeness_image_url": { "type": "string", "is_required": false, "default": null, "example": "url", "desc": "Subject/character reference" },
+					"style_image_url": { "type": "string", "is_required": false, "default": null, "example": "url", "desc": "Art style reference" }
+				}
+			},
+			{
+				"function": "music_video__create",
+				"description": "Execute final music video generation after user confirmation.",
+				"parameters": { "song_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "Source song ID" }, "user_message": { "type": "string", "is_required": true, "default": null, "example": "Finalize JFM Video", "desc": "Final instructions" }, "start_s": { "type": "float", "is_required": true, "default": null, "example": 15.0, "desc": "Verified start point" }, "duration_s": { "type": "float", "is_required": true, "default": null, "example": 30.0, "desc": "Verified duration" } }
+			},
+			{
+				"function": "visualize_audio",
+				"description": "Generate an interactive WebGL shader visualizer.",
+				"parameters": { "prompt": { "type": "string", "is_required": true, "default": null, "example": "Neon green waveforms reacting to heavy bass", "desc": "Visual style prompt" }, "reference_shader_code": { "type": "string", "is_required": false, "default": null, "example": "void main() { ... }", "desc": "Previous code for iterative edits" } }
+			},
+			{
+				"function": "image_tools__generate_image",
+				"description": "Create an image from text for cover art.",
+				"parameters": {
+					"prompt": { "type": "string", "is_required": true, "default": null, "example": "Gritty London street art, pirate radio tower", "desc": "Image description" },
+					"aspect_ratio": { "type": "enum", "is_required": false, "default": "1:1", "example": "1:1", "enums": { "1:1": { "desc": "Square" }, "16:9": { "desc": "Wide" }, "9:16": { "desc": "Vertical" }, "3:2": { "desc": "Photo" }, "4:3": { "desc": "Classic" } } },
+					"pro_model": { "type": "boolean", "is_required": false, "default": false, "example": true, "desc": "Use high-quality expensive model" }
+				}
+			},
+			{
+				"function": "video_tools__generate_video",
+				"description": "Generate short AI video clips (4-8s).",
+				"parameters": {
+					"inputs": {
+						"type": "object", "is_required": true, "default": null, "example": "{'prompt': 'Static on a CRT TV'}", "desc": "Generation data",
+						"parameters": {
+							"prompt": { "type": "string", "is_required": true, "example": "Zooming into a London estate" },
+							"duration": { "type": "enum", "is_required": false, "default": "4", "enums": { "4": { "desc": "4 seconds" }, "6": { "desc": "6 seconds" }, "8": { "desc": "8 seconds" } } },
+							"aspect_ratio": { "type": "enum", "is_required": false, "default": "9:16", "enums": { "9:16": { "desc": "Mobile" }, "16:9": { "desc": "Desktop" } } },
+							"start_image_url": { "type": "string", "is_required": false, "example": "url", "desc": "Keyframe source" }
+						}
+					}
+				}
+			},
+			{
+				"function": "image_tools_images__read_from_song_cover",
+				"description": "AI analysis of a song's cover art image.",
+				"parameters": { "song_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "Song to analyze" } }
+			},
+			{ "function": "image_tools__resize", "description": "Resize and center-crop an image to target pixels.", "parameters": {
+				"image_url": { "type": "string", "is_required": true, "default": null, "example": "url", "desc": "Source image" },
+				"width": { "type": "int", "range": "1 to 3840", "is_required": false, "default": 720, "example": 1280, "desc": "Target width" },
+				"height": { "type": "int", "range": "1 to 2160", "is_required": false, "default": 1280, "example": 720, "desc": "Target height" }
+			}}
+		],
+		"data_retrieval": [
+			{
+				"function": "riffusion_data_songs__fetch_user_songs",
+				"description": "Get a list of the user's songs with privacy and sort filters.",
+				"parameters": {
+					"num_songs": { "type": "int", "range": { "min": 1, "max": 30 }, "is_required": false, "default": 10, "example": 20, "desc": "Number of songs to fetch" },
+					"privacy_type": { "type": "enum", "is_required": false, "default": "all", "example": "private", "enums": { "all": { "desc": "Public, unlisted, and private" }, "public": { "desc": "Visible to everyone" }, "unlisted": { "desc": "Link-only access" }, "private": { "desc": "Only visible to owner" } } },
+					"sort_order": { "type": "enum", "is_required": false, "default": "newest_first", "example": "newest_first", "enums": { "newest_first": { "desc": "Most recent creations first" }, "oldest_first": { "desc": "First created songs first" } } },
+					"is_favorited": { "type": "boolean", "is_required": false, "default": false, "example": true, "desc": "Filter for only liked/starred tracks" }
+				}
+			},
+			{
+				"function": "riffusion_data_songs__fetch_trending",
+				"description": "Get the most popular songs on the platform across different time windows.",
+				"parameters": {
+					"num_songs": { "type": "int", "range": { "min": 1, "max": 50 }, "is_required": false, "default": 20, "example": 25, "desc": "Count of trending tracks" },
+					"type": { "type": "enum", "is_required": false, "default": "daily", "example": "weekly", "enums": { "daily": { "desc": "Last 24 hours" }, "weekly": { "desc": "Last 7 days" }, "monthly": { "desc": "Last 30 days" }, "all-time": { "desc": "Lifetime popularity" }, "staff-picks": { "desc": "Curated by Producer team" } } }
+				}
+			},
+			{
+				"function": "riffusion_data_playlists__fetch_user_playlists",
+				"description": "Retrieve up to 30 playlists owned by the current user.",
+				"parameters": {
+					"num_playlists": { "type": "int", "range": { "min": 1, "max": 30 }, "is_required": false, "default": 10, "example": 5, "desc": "Number of playlists to retrieve" },
+					"privacy_type": { "type": "enum", "is_required": false, "default": "all", "example": "public", "enums": { "all": { "desc": "All playlists" }, "public": { "desc": "Public only" }, "private": { "desc": "Private only" } } },
+					"sort_order": { "type": "enum", "is_required": false, "default": "newest_first", "example": "newest_first", "enums": { "newest_first": { "desc": "Recent" }, "oldest_first": { "desc": "Oldest" } } }
+				}
+			},
+			{
+				"function": "riffusion_data_users__fetch_recent_vibes",
+				"description": "Retrieve the user's saved audio style references (Vibes).",
+				"parameters": {
+					"params": {
+						"type": "object", "is_required": false, "default": null, "example": "{'limit': 10}", "desc": "Pagination controls",
+						"parameters": {
+							"limit": { "type": "int", "range": { "min": 1, "max": 25 }, "is_required": false, "default": 10, "example": 20, "desc": "Max vibes per fetch" },
+							"offset": { "type": "int", "range": { "min": 0, "max": null }, "is_required": false, "default": 0, "example": 10, "desc": "Start point for list" }
+						}
+					}
+				}
+			},
+			{
+				"function": "riffusion_data_songs__fetch_metadata_by_id",
+				"description": "Get precise technical and social details for a specific song.",
+				"parameters": { "song_id": { "type": "UUID", "is_required": true, "default": null, "example": "550e8400-e29b-41d4-a716-446655440000", "desc": "The unique song identifier" } }
+			}
+		],
+		"playlist_management": [
+			{
+				"function": "riffusion_data_playlists__create",
+				"description": "Create a new playlist and add songs.",
+				"parameters": { "playlist_name": { "type": "string", "is_required": true, "default": null, "example": "JFM London Set", "desc": "Playlist title" }, "song_ids": { "type": "array[UUID]", "is_required": true, "default": null, "example": "['uuid1', 'uuid2']", "desc": "List of song IDs to include" }, "description": { "type": "string", "is_required": true, "default": null, "example": "London pirate radio vibes", "desc": "Playlist description" } }
+			},
+			{
+				"function": "riffusion_data_playlists__update",
+				"description": "Modify existing playlist metadata or tracklist.",
+				"parameters": { "playlist_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "Target playlist ID" }, "new_title": { "type": "string", "is_required": false, "default": null, "example": "JFM Set V2.0", "desc": "Updated name" }, "songs_to_add": { "type": "array[UUID]", "is_required": false, "default": null, "example": "['uuid']", "desc": "IDs to append" }, "songs_to_remove": { "type": "array[UUID]", "is_required": false, "default": null, "example": "['uuid']", "desc": "IDs to drop" }, "new_privacy_status": { "type": "enum", "is_required": false, "default": "public", "enums": { "public": { "desc": "Visible" }, "private": { "desc": "Hidden" }, "unlisted": { "desc": "Link only" } } } }
+			}
+		],
+		"interactive_spaces": [
+			{
+				"function": "create_space",
+				"description": "Initialize a coding sandbox.",
+				"parameters": { "name": { "type": "string", "is_required": true, "default": "New Space", "example": "JFM Visualizer", "desc": "Internal title" }, "type": { "type": "enum", "is_required": true, "default": "frontend_component", "enums": { "frontend_component": { "desc": "React sandbox" } } } }
+			},
+			{
+				"function": "edit_space",
+				"description": "Apply code diffs to a space sandbox.",
+				"parameters": {
+					"space_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "Space ID" },
+					"change_note": { "type": "string", "is_required": true, "default": null, "example": "Added bass response", "desc": "Summary of edit" },
+					"edits": {
+						"type": "array[object]", "is_required": true, "default": null, "example": "[{'filepath': 'App.tsx'}]", "desc": "Code changes",
+						"parameters": {
+							"filepath": { "type": "string", "is_required": true, "example": "src/App.tsx", "desc": "Target file" },
+							"kind": { "type": "enum", "is_required": true, "example": "edit", "enums": { "create": { "desc": "New" }, "edit": { "desc": "Update" }, "delete": { "desc": "Remove" } } },
+							"new_text": { "type": "string", "is_required": true, "example": "const App = () => {}", "desc": "File content" }
+						}
+					}
+				}
+			}
+		],
+		"ui_rendering": [
+			{ "function": "ui_display_songs", "description": "Render song cards in chat.", "parameters": { "song_ids": { "type": "array[UUID]", "is_required": true, "example": "['uuid']" } } },
+			{ "function": "ui_display_playlist", "description": "Render playlist UI.", "parameters": { "playlist_id": { "type": "UUID", "is_required": true, "example": "uuid" } } },
+			{ "function": "ui_display_vibes", "description": "Render vibe list UI.", "parameters": { "vibe_ids": { "type": "array[UUID]", "is_required": true, "example": "['uuid']" } } }
+		],
+		"external_intelligence": [
+			{
+				"function": "twitter_search_recent_tweets",
+				"description": "Search X for trends.",
+				"parameters": { "query": { "type": "string", "is_required": true, "example": "London Drill 2024", "desc": "Search query" }, "max_results": { "type": "int", "range": { "min": 20, "max": 100 }, "is_required": false, "default": 20, "example": 50, "desc": "Result count" } }
+			}
+		],
+		"user_management_and_social": [
+			{ "function": "get_user_info", "description": "Fetch session identity details.", "parameters": {} },
+			{
+				"function": "ui_display_user_profile",
+				"description": "Render a specific user's profile card.",
+				"parameters": { "username": { "type": "string", "is_required": true, "default": null, "example": "j1091", "desc": "Exact platform username" } }
+			},
+			{
+				"function": "riffusion_data_edit_song_metadata",
+				"description": "Edit social metadata for a created track.",
+				"parameters": { "song_id": { "type": "UUID", "is_required": true, "default": null, "example": "uuid", "desc": "Target song ID" }, "new_title": { "type": "string", "is_required": false, "default": null, "example": "JFM Drill V2", "desc": "New track name" }, "new_privacy": { "type": "enum", "is_required": false, "default": "public", "enums": { "public": { "desc": "Global" }, "private": { "desc": "Personal" }, "unlisted": { "desc": "Shared" } } } }
+			}
+		],
+		"studio_playback_controls": [
+			{
+				"function": "play_song",
+				"description": "Play a single track.",
+				"parameters": { "song_id": { "type": "UUID", "is_required": true, "example": "uuid", "desc": "Track ID" }, "autoplay": { "type": "boolean", "is_required": false, "default": true, "example": true, "desc": "Start immediately" }, "loop": { "type": "boolean", "is_required": false, "default": false, "example": true, "desc": "Repeat track" } }
+			},
+			{
+				"function": "play_playlist",
+				"description": "Load and play an entire playlist.",
+				"parameters": { "playlist_id": { "type": "UUID", "is_required": true, "example": "uuid", "desc": "Playlist ID" } }
+			},
+			{ "function": "queue_songs", "description": "Add multiple songs to the end of the current tracklist.", "parameters": { "song_ids": { "type": "array[UUID]", "is_required": true, "default": null, "example": "['id1', 'id2']", "desc": "Batch of songs to add" } } },
+			{
+				"function": "set_volume",
+				"description": "Master fader control.",
+				"parameters": { "volume": { "type": "float", "range": { "min": 0.0, "max": 1.0 }, "is_required": true, "default": 0.5, "example": 0.8, "desc": "Gain level" } }
+			},
+			{ "function": "get_current_song", "description": "Get ID of currently playing audio.", "parameters": {} },
+			{ "function": "pause_current_song", "description": "Stop audio playback.", "parameters": {} },
+			{ "function": "skip_to_next_song", "description": "Next in queue.", "parameters": {} },
+			{ "function": "skip_to_previous_song", "description": "Previous in queue.", "parameters": {} }
+		],
+		"system_and_feedback": [
+			{
+				"function": "report_internal_feedback",
+				"description": "Send logs to dev team.",
+				"parameters": { "message": { "type": "string", "is_required": true, "example": "MC vocal autotune error", "desc": "Feedback text" } }
+			}
+		]
+	}
+}

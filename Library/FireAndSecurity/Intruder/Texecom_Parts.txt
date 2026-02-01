@@ -1,0 +1,201 @@
+# Texecom Intruder Alarm Parts List
+
+# Common Part IDs for Premier Elite and Ricochet Wireless Series
+
+## Control Panels (Premier Elite)
+
+**CAC-0001** | Premier Elite 24 (Polymer Cabinet)
+> 
+
+Grade 2 entry-level panel. Comes in a plastic (polymer) housing. Onboard 8 zones, expandable to 24. Ideal for residential.
+
+**CAA-0026** | Premier Elite 48 (Metal Cabinet)
+> 
+
+The standard installer choice. Grade 3 metal panel. 8 zones onboard, expandable to 48. Room for a 7Ah battery and expanders inside.
+
+**CAB-0001** | Premier Elite 88 (Metal Cabinet)
+> 
+
+Mid-range commercial panel. Expandable to 88 zones. Grade 3. Used when the 48 just isn't quite big enough.
+
+**CAC-0002** | Premier Elite 168 (Metal Cabinet)
+> 
+
+High-spec commercial panel. Expandable to 168 zones. Supports larger power supplies and more complex cause-and-effect programming.
+
+**CAD-0001** | Premier Elite 640 (Large Metal Cabinet)
+> 
+
+Flagship panel. Expandable to 640 zones. Comes in a massive enclosure to house multiple expanders or power supplies. Used in large schools/hospitals.
+
+## Keypads
+
+**DBC-0001** | Premier Elite LCDP
+> 
+
+Standard small-screen keypad with built-in proximity tag reader. White finish with blue backlighting.
+
+**DBB-0001** | Premier Elite LCDLP
+> 
+
+Large screen keypad with proximity reader. Features a much larger display for easier programming and custom text. The "Installer's Favourite".
+
+**DBE-0001** | Premier Elite FMK (Flush Mount)
+> 
+
+Flush-mount keypad for a sleek finish. Requires a backbox cut into the wall. Premium aesthetic.
+
+**JAA-0001** | Premier LCDL
+> 
+
+Older style "Green Screen" large keypad. No proximity reader. Often found on legacy installs or budget specs.
+
+## Expansion & Power
+
+**CCB-0001** | Premier Elite 8XP
+> 
+
+Wired zone expander. Adds 8 hardwired zones to the system. Connected via the 4-core data bus.
+
+**CCF-0001** | Premier Elite 60iXD
+> 
+
+Intelligent Power Supply and Expander combined. Provides 2.5A power and 8 zones. Monitored by the panel for faults.
+
+**ACD-0001** | Premier Elite 60iXD (PCB Only)
+> 
+
+Replacement PCB for the 60iXD. Useful for service calls where the box is fine but the PSU has failed.
+
+**FCE-0001** | PSU200
+> 
+
+Standalone 2.5A Power Supply. "Dumb" unit (uses relay outputs to signal faults to the panel).
+
+**HAC-0001** | Premier Elite OP16
+> 
+
+Output module giving 16 programmable outputs. Used for driving LEDs, relays, or automation interfacing.
+
+## Wireless (Ricochet Mesh Technology)
+
+**GCD-0001** | Premier Elite 32XP-W
+> 
+
+Wireless Expander. Adds 32 wireless zones using Ricochet Mesh (devices talk to each other to repeat signals).
+
+**GCE-0001** | Premier Elite 8XP-W
+> 
+
+Smaller wireless expander. Adds 8 wireless zones. Good for hybrid systems needing just a few wireless detectors.
+
+**GCC-0001** | Premier Elite SmartKey
+> 
+
+Two-way wireless keyfob. Can show system status (Arm/Disarm) via LEDs.
+
+**RMS-0001** | Ricochet Monitor Tool (MT2)
+> 
+
+Essential engineer tool. A handheld device that checks signal strength and mesh paths for Ricochet sensors.
+
+**GHA-0001** | Micro Contact-W
+> 
+
+Tiny, discreet wireless door contact. Fits inside many door frames or looks unobtrusive on the surface.
+
+**GDA-0001** | Impaq Contact-W
+> 
+
+Standard size wireless contact with inputs for external wired sensors (e.g., wired roller shutter contact).
+
+## Motion Detectors (Capture Series)
+
+**AKC-0001** | Capture P15
+> 
+
+Wired PIR. 15m range. Grade 2. The standard wired detector replacing the old Prestige IR.
+
+**AKD-0001** | Capture D20
+> 
+
+Wired Dual Tech (PIR + Microwave). 20m range. Grade 3. Anti-masking active.
+
+**GDA-0001** | Capture P15-W
+> 
+
+Wireless version of the P15. Ricochet enabled.
+
+**GDB-0001** | Capture D20-W
+> 
+
+Wireless Dual Tech. Ricochet enabled. Ideal for garages or conservatories where standard PIRs might false alarm.
+
+**GDC-0001** | Capture CQ-W
+> 
+
+Wireless Quad Element PIR. Better false alarm immunity than the P15-W but not quite a Dual Tech.
+
+## Sounders (Odyssey X Series)
+
+_Note: Covers and Backplates are sold separately._
+
+**WDA-0001** | Odyssey X-BE Backplate
+> 
+
+Grade 2 Backplate (The electronics and piezo). Wireless/Wired hybrid ready.
+
+**WDB-0001** | Odyssey X-B Backplate
+> 
+
+Grade 3 Backplate. Louder sounder, better battery backup monitoring.
+
+**WDC-0002** | Odyssey X1 Cover
+> 
+
+Rectangular/Vertical cover. Available in White or Black with Blue/Red lenses.
+
+**WDD-0002** | Odyssey X3 Cover
+> 
+
+Hexagonal cover (Classic "Bell" shape). Most common visual deterrent.
+
+## Communicators & App Access
+
+**CEL-0001** | Premier Elite SmartCom
+> 
+
+The modern communicator. Connects via Ethernet (and WiFi on newer models) to the Texecom Cloud for App control.
+
+**CEC-0001** | Premier Elite ComIP
+> 
+
+Legacy Ethernet module. Allows polling to an ARC but does not support the Connect App natively without upgrades.
+
+**CFC-0001** | Premier Elite ComGSM
+> 
+
+2G GSM module for SMS text alerts or backup signalling.
+
+**CED-0001** | Speech Dialler
+> 
+
+Standalone module that connects to a phone line. Plays a recorded voice message to user mobiles upon alarm.
+
+## Accessories
+
+**JAB-0001** | Premier Elite USB Com
+> 
+
+The "PC-Com" cable. Connects a laptop running Wintex software to the panel for programming.
+
+**JAC-0001** | Premier Elite PC-Com (Serial)
+> 
+
+Serial (DB9) version of the PC connection cable. Often more reliable for firmware flashing than the USB version.
+
+**PREMTAG** | Proximity Tags
+> 
+
+Standard Texecom teardrop tags. Pack of 5. Robust and reliable.

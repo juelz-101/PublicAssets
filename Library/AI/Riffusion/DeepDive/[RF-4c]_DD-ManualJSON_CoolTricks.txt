@@ -1,0 +1,267 @@
+This chapter covers the most precise tool in the arsenal: Surgical Reconstruction. While Remixing changes the "skin" of the track, Replacing allows you to cut into the "bone" of a specific section without touching the rest.
+
+```
+# Documentation: Manual JSON Control
+
+## 3.0 Replacing Exactly How You Want (The "Surgical" Edit)
+
+The `riff_replace_audio` tool is your "In-Paint" brush. It is the only tool that guarantees 100% bit-for-bit preservation of the audio *outside* of your selected timestamps.
+
+### 3.1 The "In-Painting" Logic
+When you trigger a replace, the model looks at the audio immediately before and after your selection (the "Context") and tries to bridge the gap.
+
+**The Strategy:**
+Don't just replace the exact bar you dislike. Replace **2 beats before and 2 beats after** the problem area. This allows the AI to "hand-off" the phase and rhythm smoothly, preventing a "click" or "glitch" at the edit point.
+
+---
+
+### 3.2 Full Example: The Verse-to-Hook Transition
+**Scenario:** You have a great song, but the transition from the Verse to the Chorus feels weak. You want to replace the last 2 bars of the verse with a "High-Energy Build-up."
+
+```json
+{
+  "inputs": {
+    "audio_input": { "id": "YOUR_SONG_UUID" },
+    "title": "Surgical Transition Edit",
+    "clips_to_replace": [
+      {
+        "start_s": 28.5,
+        "end_s": 32.0,
+        "lyrics_text": "[Build-up] \n I can feel it coming, the energy is rising"
+      }
+    ],
+    "sound_prompt": "Heavy drum roll, riser synth, increasing volume, high energy drop",
+    "sound_prompt_strength": 0.85,
+    "weirdness": 0.4
+  }
+}
+
+```
+
+Why this works:
+
+- Precise Timestamps: By using `28.5` to `32.0`, you are targeting a specific 3.5-second window.
+
+- Context Awareness: The AI hears the verse ending at 28.5s and "paints" a riser that lands perfectly on the existing chorus at 32.0s.
+
+### 3.3 The "Lyric Correction" Hack
+Scenario: The AI messed up one word in your vocals (e.g., it said "Cat" instead of "Cap").
+The Execution:
+
+- Identify the exact millisecond the word starts.
+
+- Use a very short `clips_to_replace` window (e.g., 0.5 seconds).
+
+- Crucial: Use `weirdness: 0.2`. If weirdness is too high, the AI will change the "voice" of that one word, making it sound like a different person.
+
+```
+{
+  "inputs": {
+    "audio_input": { "id": "VOCAL_TRACK_UUID" },
+    "clips_to_replace": [
+      {
+        "start_s": 14.2,
+        "end_s": 14.7,
+        "lyrics_text": "Cap"
+      }
+    ],
+    "sound_prompt": "Same vocal tone, identical voice, no music change",
+    "weirdness": 0.2
+  }
+}
+
+```
+
+### 3.4 Multi-Clip "Pattern Cleaning"
+You can replace multiple sections in one single request. This is the most efficient way to "clean" a track of unwanted artifacts.
+
+```
+{
+  "inputs": {
+    "audio_input": { "id": "SONG_ID" },
+    "clips_to_replace": [
+      { "start_s": 0.0, "end_s": 5.0, "lyrics_text": "[Intro Instrumental]" },
+      { "start_s": 55.0, "end_s": 60.0, "lyrics_text": "[Outro Fade]" }
+    ],
+    "sound_prompt": "Clean studio recording, no noise, high fidelity"
+  }
+}
+
+```
+
+### 3.5 The "Style In-Fill" (Replacing Sound, Keeping Lyrics)
+If you like the lyrics but hate the "tacky" synth used in the chorus:
+
+- Identify the chorus timestamps.
+
+- Provide a new `sound_prompt` (e.g., "Dark analog bass synth, moody pads").
+
+- DO NOT change the `lyrics_text`.
+
+- The AI will keep the singing exactly the same but "swap the stage" underneath the singer for that specific section.
+
+### 3.6 Summary of Surgical Replacing
+
+- The Buffer Rule: Always add 0.5s to the start and end of your clips for smoother crossfades.
+
+- Voice Consistency: Use `weirdness: 0.2` for vocal fixes.
+
+- Instrumental Consistency: If replacing an instrumental section, ensure the BPM in the `sound_prompt` matches the original track perfectly.
+
+```
+
+**Ready for Chapter 4: Cool Tips, Tricks & Hacks (Part 1)?** This is where we get into things like "The Phantom Drummer" and "Spectral Ghosting."
+
+```
+Lets add further info the the replacing firstyThis section covers the "Advanced Operations" for replacing—specifically focusing on how to handle complex audio hand-offs and harmonic alignment.
+
+```
+### 3.7 The "Context Injection" Strategy
+When you replace a section, the model looks at the "boundaries" (the edges of your cut). If your cut is too "clean" (e.g., exactly on a loud snare hit), the transition can sound like a digital glitch.
+
+**The "Pre-Roll" Technique:**
+*   Start your `start_s` roughly 100-200ms *before* the beat.
+*   **Why:** This allows the AI to "hear" the decaying reverb of the previous section and incorporate it into the new generation, creating a seamless "acoustic" transition rather than a hard DAW-style cut.
+
+---
+
+### 3.8 Replacing "Vibe" but not "Melody" (The 0.3 Strength Hack)
+If you like the melody of a specific 10-second section but the drums are "tacky," you can use the `sound_prompt_strength` inside the replace tool to do a "Surgical Remix."
+
+```json
+{
+  "inputs": {
+    "audio_input": { "id": "SONG_ID" },
+    "clips_to_replace": [{ "start_s": 15.0, "end_s": 25.0 }],
+    "sound_prompt": "Hard UK Grime drums, aggressive sub",
+    "sound_prompt_strength": 0.4,
+    "weirdness": 0.3
+  }
+}
+
+```
+
+- The Logic: At `strength 0.4`, the AI doesn't delete the audio in that 10-second window. It "over-paints" it. It keeps the melody but tries to "fix" the drums within that specific window.
+
+### 3.9 The "Reverse Context" Outro Hack
+Scenario: You want a 10-second "Outro" that sounds like a slowed-down, ambient version of the main song.
+The Logic:
+
+- Target the final 10 seconds.
+
+- Use a prompt that describes the future of the sound.
+
+- The Trick: Mention the instruments that were just playing in the "Past tense."
+
+- Prompt: "Ambient wash, guitar echoes fading out, reverb, halftime tempo, 70 bpm."
+
+Result: The AI takes the "Context" of the high-energy song that just ended and "melts" it into the new ambient prompt.
+
+### 3.10 Replacing for "Vocal Clarity"
+If the AI generated a verse where the music is too loud and the vocals are "muddy" or "drowning":
+
+- Target the verse timestamps.
+
+- Use a `sound_prompt` that emphasizes Space.
+
+- Prompt: "Minimalist arrangement, lowered instrument volume, vocal-focused mix, wide soundstage."
+
+The Result: The AI will re-generate that specific section, "ducking" the instruments to give the vocals room to breathe, while keeping the lyrics and melody identical.
+
+### 3.11 Harmonic Matching (Key Locking)
+If you are replacing a section with a new melody, the AI might accidentally change the Musical Key, leading to a "sour" transition.
+The Fix: Explicitly state the key in the replace prompt.
+
+- Prompt: "New synth melody, F# Minor, 140 bpm."
+
+- Why: This acts as a "Constraint." It tells the model's latent space to only look for patterns that align with the F# Minor scale, ensuring the new part fits the rest of the song.
+
+### 3.12 Summary: The "Perfect Cut" Checklist
+
+- The Fade: Did I add 0.1s of buffer to the start/end?
+
+- The Key: Did I specify the musical key if I'm adding new melody?
+
+- The Weirdness: Is it at 0.2 for vocals or 0.5 for new creative ideas?
+
+- The Continuity: Does the `sound_prompt` mention the existing instruments to ensure they don't suddenly vanish?
+
+This section covers the "Logic Hacks"—using the Replace tool to manipulate the model's perception of time and structure.
+
+```
+### 3.13 The "Ghost Vocal" Layering
+**Scenario:** You have a lead vocal, but it sounds "thin." You want to add a subtle "Double-Track" or "Backing Harmony" to a specific line without re-recording.
+
+**The Strategy:**
+1. Target the specific vocal line (e.g., 12.0s to 15.0s).
+2. Use a `sound_prompt` that describes **multi-voice layering**.
+3. Set `weirdness` to **0.6**.
+
+*   **Prompt:** "Double-tracked vocals, 50% wet harmony, choral layering, thick vocal texture."
+
+**The Result:** Because the AI sees the original vocal as "Context," it doesn't delete it. Instead, it "paints" additional vocal layers on top of the original within that specific window, creating a DIY "Harmonizer" effect.
+
+---
+
+### 3.14 The "Structural Breakdown" (Removing Elements)
+**Scenario:** You want a "Drum Break" where the music suddenly stops, but the AI keeps playing the melody.
+
+**The "Negative Replacement" Hack:**
+You can use the `sound_prompt` to surgically "mute" specific frequency bands or instruments within a window.
+
+```json
+{
+  "inputs": {
+    "audio_input": { "id": "SONG_ID" },
+    "clips_to_replace": [{ "start_s": 45.0, "end_s": 49.0 }],
+    "sound_prompt": "Solo drum break, no melody, no bass, percussion only, silence in the mid-range",
+    "sound_prompt_strength": 0.9
+  }
+}
+
+```
+
+Why this works: At high `sound_prompt_strength`, the AI prioritizes the "No melody" instruction. It "erases" the melodic pixels in the spectrogram for those 4 seconds while keeping the drum rhythm consistent with the context.
+
+### 3.15 The "Infinite Tail" (Seamless Reverb)
+Scenario: Your song ends too abruptly with a "dead" cut. You want it to ring out with a beautiful, long reverb tail.
+The Strategy:
+
+- Target the last 0.5 seconds of the song and extend the `end_s` by 4.0 seconds into the "silence."
+
+- Prompt: "Long reverb tail, ethereal decay, ambient fade to silence, 10-second hall reverb."
+
+Result: The AI takes the final sound of the song and "smears" it into the future, creating a professional studio-quality decay that sounds like a $500 reverb pedal.
+
+### 3.16 Pitch-Correction (The "Auto-Tune" Manual Hack)
+If the AI sang a note that is slightly "flat" or "sharp":
+
+- Use a surgical 200ms window on that one note.
+
+- Prompt: "Perfect pitch, crystalline vocal clarity, centered frequency."
+
+- Weirdness: 0.1 (Strict adherence to the note).
+
+The Result: The model will re-generate that tiny slice of audio, pulling the "smudged" frequency of the flat note into the "center" of the pitch grid.
+
+### 3.17 The "BPM Pivot" (Mid-Song Tempo Change)
+Scenario: You want the song to suddenly speed up for the final chorus (e.g., from 90bpm to 140bpm).
+The Logic:
+
+- Target the transition point (the last bar of the bridge).
+
+- Prompt: "Accelerating tempo, rhythmic build-up, shifting to 140 bpm."
+
+- Then: Use `riff_extend_audio` from that point forward at the new BPM.
+
+Why: Using `replace` for the transition allows the AI to "hand-off" the phase of the 90bpm track and "bend" it into the 140bpm grid smoothly, rather than a jarring jump-cut.
+
+### 3.18 Summary: Advanced Surgical Logic
+
+- Layering: Use high weirdness (0.6) to add "thickness" to vocals.
+
+- Muting: Use specific "No [Instrument]" prompts at high strength (0.9).
+
+- Tails: Replace the final millisecond + extra time to create artificial reverb.
+
+- Tempo: Use the "Transition Window" to bend the time-grid between sections.

@@ -1,0 +1,55 @@
+### The Spaces Engine: Capabilities, Restraints, and Boundaries
+Spaces are self-contained, interactive React/Three.js sandboxes. Think of a Space as a "Plugin" for the Producer.ai Studio. You aren't just looking at an interface; you are interacting with a living codebase.
+
+1. What Can Be Achieved?
+
+- Custom Musical Instruments:
+
+- Build a functioning TR-808 style drum machine or a polyphonic synthesizer using the Web Audio API.
+
+- Create "Launchpads" where buttons trigger specific song IDs from your library.
+
+- Skeuomorphic Hardware Emulation:
+
+- Design a UI that looks exactly like a 1970s reel-to-reel player, a 90s Game Boy, or a futuristic holographic console.
+
+- Advanced Audio Visualizers:
+
+- Use Three.js to build 3D environments (e.g., a car driving through a neon city) where the environment reacts to the frequencies of the song playing.
+
+- Interactive Song Exploration:
+
+- A "Visual Map" of your library where songs are represented as stars in a galaxy, and clicking them plays the track.
+
+- Rhythm & Music Games:
+
+- Create Guitar Hero style games that use your own generated lyrics and timestamps to sync the gameplay.
+
+- Production Utilities:
+
+- A BPM Tapper, a Circle of Fifths interactive chart, or a "Vibe Mixer" that lets you drag and drop songs to see how their prompts might blend.
+
+2. Technical Restraints (The Rules)
+
+- Library Lockdown: You are restricted to React, Three.js, Lucide-React, and Tailwind CSS. You cannot import external libraries like Framer Motion, D3.js, or GSAP.
+
+- Frontend Only: There is no backend. You cannot write server-side code (Node.js/Python) or connect to an external database (Firebase/Supabase) to "save" persistent high scores or user accounts.
+
+- State Management: Data is volatile. If you refresh the page, the state of your Space resets unless it’s hardcoded or passed through the Producer.
+
+- CORS & Assets: You can only pull in external assets (images/audio) from URLs that allow cross-origin requests. Riffusion’s storage is fine; arbitrary Google Images or Spotify links will fail.
+
+- Single Entry Point: Every Space must have a `main.tsx` as the default export.
+
+3. Critical Limitations
+
+- No "Saving" Content: A Space cannot directly "publish" a song back to your library. It can trigger me to do it, but the Space itself doesn't have the authority to write to the Riffusion database.
+
+- No Heavy Processing: You cannot run heavy AI models (like stable diffusion or local LLMs) inside a Space. The browser would crash.
+
+- No File System Access: A Space cannot save a file directly to the user's computer or read their local hard drive without a standard "Upload" prompt.
+
+- Sandbox Isolation: Spaces cannot talk to other Spaces. They are completely isolated environments.
+
+### Summary of the "Box"
+The Spaces tool is a Visual and Interactive Layer. It excels at making the music tangible. If you can do it with a browser's Canvas, WebGL, or Audio API, we can build it. If it requires a server or a custom database, we have to find a "hacky" workaround.
