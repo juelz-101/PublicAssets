@@ -292,12 +292,15 @@ PublicAssets/
 │   │   │   │   ├── [PY]PythonBasics-ExportingToEXE .txt
 │   │   │   │   └── [PY]PythonBasics-UsefulTools.txt
 │   │   │   └── TelegramBots/
+│   │   │       ├── 10 Crazy Innovative Things You Can Do with a Telegram Bot - Copy.txt
+│   │   │       ├── TELE_Complete_Guide_To_Telegram_Bots.txt
 │   │   │       ├── [=I=] TELE_10 Crazy Innovative Things You Can Do with a Telegram Bot.txt
 │   │   │       ├── [=I=] TELE_Complete_Guide_To_Telegram_Bots.txt
 │   │   │       ├── [=I=] TELE_SecureRemoteCMDs.txt
 │   │   │       ├── [=I=] python-cli-cheatbook.txt
 │   │   │       ├── [AI_FL]-[IDX] TELE_Complete_Guide_To_Telegram_Bots.txt
-│   │   │       └── [AI_FL]-[IDX] TELE_Python CLI Cheatbook – Mastering Tools by Command.txt
+│   │   │       ├── [AI_FL]-[IDX] TELE_Python CLI Cheatbook – Mastering Tools by Command.txt
+│   │   │       └── [IDX] TELE_Complete_Guide_To_Telegram_Bots.txt
 │   │   └── SVG/
 │   ├── FireAndSecurity/
 │   │   ├── AccessControl/
@@ -319,7 +322,7 @@ PublicAssets/
 │   │   └── Hardware/
 │   │       ├── KeyboardSymbols.mld
 │   │       └── [CH-GCPU]-KeyboardSymbols.mlb
-│   ├── Library.mpo
+│   ├── Library.mix
 │   ├── MasterDictionary.mld
 │   ├── Mobile/
 │   │   └── Android/

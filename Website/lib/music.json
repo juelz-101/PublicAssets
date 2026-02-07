@@ -858,32 +858,114 @@
 		}	
 	],
 	"juelz_fm": {
-		  "station": "Juelz-FM",
-		  "desc": "A satire London tower-block pirate station broadcasting from an undisclosed high-rise. Known for chaotic energy, late-night transmissions, and interference complaints from half the borough.",
-		  "resident_dj": {
-			"name": "DJ Slim Sliver",
-			"bio": "A shadowy figure with a voice smoother than stolen cable. Expert at dodging Ofcom vans and spinning grime, jungle, and anything loud enough to rattle the stairwell."
-		  },
-		  "shows": [
-			{
-			  "title": "Midnight Concrete Mix",
-			  "time": "00:00–02:00",
-			  "vibe": "Dark grime, humid tower-block ambience, and Slim Sliver ranting about broken lifts."
-			},
-			{
-			  "title": "Roofline Sessions",
-			  "time": "Fridays 21:00–23:00",
-			  "vibe": "Live sets recorded dangerously close to the edge of the roof. Crowd of three pigeons included."
-			},
-			{
-			  "title": "Sliver Speaks",
-			  "time": "Sundays 18:00–19:00",
-			  "vibe": "Community gossip, suspicious stories, and questionable advice for local musicians."
-			}
-		  ],
-		  "tagline": "Broadcasting illegally, proudly, and louder than the council wants."
+		"root": {
+			"name": "Juelz-FM Radio",
+			"summary": "Our underground radio station broadcasting from the heart of the community.",
+			"thumbnail": "Website/img/logos/juelzfm_logo.png",
+			"blocks": [
+				{
+					"type": "hero",
+					"title": "On Air 24/7",
+					"content": "Juelz-FM is more than a station; it's a movement. Tune in for exclusive sets, artist interviews, and the best in bedroom production."
+				},
+				{
+					"type": "grid",
+					"title": "Our Segments",
+					"items": [
+						{ "title": "Late Night Lo-Fi", "subtitle": "Mon-Fri 10PM", "description": "Perfect beats for late-night coding or relaxation." },
+						{ "title": "Underground Spotlight", "subtitle": "Wednesdays 8PM", "description": "An hour dedicated to a new emerging artist every week." },
+						{ "title": "Drum & Bass Blitz", "subtitle": "Saturdays 9PM", "description": "High energy sets to kick off your weekend." }
+					]
+				}
+			]
+		},
+		"live": {
+			"name": "Live Broadcast",
+			"summary": "Join the live stream and interact with the ZIKYinc crew.",
+			"blocks": [
+				{
+					"type": "markdown",
+					"title": "Current Stream Status",
+					"content": "![Live Indicator](https://img.shields.io/badge/STATUS-ON_AIR-red?style=for-the-badge)\n\n**Currently Playing:** *The Best of ZIKYinc Volume 2*\n\nUse the chat on the right to request tracks!"
+				},
+				{
+					"type": "markdown",
+					"title": "Radio Player Placeholder",
+					"content": "<div style='height: 200px; background: #000; border: 2px solid #f59e0b; display: flex; align-items: center; justify-content: center;'>[ AUDIO STREAM COMPONENT ]</div>"
+				}
+			]
+		},
+		"schedule": {
+			"name": "Broadcast Schedule",
+			"summary": "The weekly roadmap for Juelz-FM.",
+			"blocks": [
+				{
+					"type": "accordion",
+					"title": "Weekly Lineup",
+					"items": [
+						{ "title": "Mondays: Melodic Mornings", "description": "Start your week with chilled acoustic sets and melodic house." },
+						{ "title": "Tuesdays: Tech Talk & Tunes", "description": "Discussing the latest in music tech followed by industrial techno." },
+						{ "title": "Wednesdays: Warp Drive", "description": "Experimental sounds and genre-bending collaborations." }
+					]
+				}
+			]
+		},
+		"archives": {
+			"name": "Archive Vault",
+			"summary": "Lost tapes and legendary sets.",
+			"blocks": [
+				{
+					"type": "grid",
+					"title": "Top Archived Sets",
+					"config": { "columns": 2 },
+					"items": [
+						{ "title": "Summer Rave '23", "subtitle": "Live from East London", "description": "A 4-hour epic set by Juelz-101 and Emma MT." },
+						{ "title": "Bedroom Beats Vol 1", "subtitle": "Artist Compilation", "description": "Our very first community spotlight broadcast." }
+					]
+				}
+			]
+		}
 	},
-
-	"film_music": [],
-	"game_music": []
+	"film_music": {
+		"root": {
+			"name": "Film Music & OSTs",
+			"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+			"summary": "Cinematic scores and soundscapes designed for modern storytelling."
+		},
+		"projects": {
+			"Film_TheVoid": {
+				"album": "The Void OST",
+				"thumbnail": "Website/images/Covers/AlbumArt/Brut-Case.jpeg",
+				"genre": ["Ambient", "Cinematic"],
+				"link": "data/lib/music/film/void.json"
+			},
+			"Film_NeonNights": {
+				"album": "Neon Nights Score",
+				"thumbnail": "Website/images/Covers/AlbumArt/placeholder.jpg",
+				"genre": ["Synthwave", "Cyberpunk"],
+				"link": "data/lib/music/film/neon.json"
+			}
+		}
+	},
+	"game_music": {
+		"root": {
+			"name": "Game Soundtracks",
+			"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+			"summary": "Dynamic audio and immersive soundtracks for our interactive projects."
+		},
+		"projects": {
+			"Game_LoFiRunner": {
+				"album": "Lo-Fi Runner OST",
+				"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+				"genre": ["Lo-Fi", "Chill"],
+				"link": "data/lib/music/games/lofi.json"
+			},
+			"Game_ZikyQuest": {
+				"album": "Ziky Quest OST",
+				"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+				"genre": ["Orchestral", "Adventure"],
+				"link": "data/lib/music/games/quest.json"
+			}
+		}
+	}
 }

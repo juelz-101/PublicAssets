@@ -9,11 +9,11 @@
 		"title": "ZIKYinc Library",
 		"image": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
 		"subtitle": "Docs for Days",
-		"welcome": "Welcome to the ZIKYinc Document Library.",
-		"what_its_for": "",
-		"what_it_covers": "",
-		"document_types": [],
-		"adding_documents": ""
+		"welcome": "Welcome to the ZIKYinc Document Library, a curated collection of resources, guides, and documentation for our projects.",
+		"what_its_for": "This library serves as a central knowledge base for our tools, creative projects, and submission guidelines. Whether you're a developer looking for API docs or an artist wanting to learn more about our process, you'll find it here.",
+		"what_it_covers": "Explore documentation for our web tools, user manuals for Windows applications, in-depth articles on music production techniques, and much more.",
+		"document_types": ["User Guides", "API Documentation", "Tutorials", "Case Studies"],
+		"adding_documents": "Our library is constantly growing. We encourage community contributions and will be opening up a process for submitting your own documentation soon."
 	},
 	"aisles": [],
 	"dictionary": []

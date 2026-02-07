@@ -1,3 +1,84 @@
 {
-	"title": "Art"
+	"meta": {
+		"name": "ART", "desc": "ZIKYinc Art Gallery",
+		"file": "art.json", "root": "PublicAssets", "path": "website/lib/",
+		"version": 1.0, "change_note": "Initial art section layout", "change_date": "16/05/24"
+	},
+	"intro": "<h2>The ZIKYinc Art Gallery</h2>\n<p>Welcome to our curated collection of visual storytelling. From physical canvases to the digital frontier, we celebrate the diverse ways artists capture the world around them.</p>",
+	"canvas_art": {
+		"name": "Canvas Art",
+		"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+		"summary": "Physical works exploring texture, color, and emotion on traditional mediums.",
+		"introduction": "<h3>Physical Works</h3>\n<p>There is an irreplaceable energy in physical art. This section highlights our traditional paintings and canvas-based collaborations.</p>",
+		"pieces": [
+			{
+				"title": "Abstract Horizon",
+				"artist": "Emma MT",
+				"thumbnail": "Website/images/Covers/AlbumArt/Brut-Case.jpeg",
+				"link": "data/lib/art/canvas/abstract-horizon.json",
+				"year": "2024",
+				"medium": "Acrylic on Canvas",
+				"summary": "A deep exploration of color transitions in a post-industrial landscape.",
+				"tags": ["Abstract", "Acrylic", "Canvas"],
+				"featured": true
+			}
+		]
+	},
+	"street_art": {
+		"name": "Street Art",
+		"thumbnail": "Website/img/photos/Emma-MT-Rave-ZIKYinc-5.jpg",
+		"summary": "Urban expressionism and public installations from the underground scene.",
+		"pieces": [
+			{
+				"title": "Neon Rebellion",
+				"artist": "Unknown Artist",
+				"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+				"link": "data/lib/art/street/neon-reb.json",
+				"year": "2023",
+				"medium": "Spray Paint & Stencil",
+				"summary": "A large-scale mural located in East London, commissioned by ZIKYinc.",
+				"tags": ["Mural", "Street Art", "Neon"]
+			}
+		]
+	},
+	"digital_art": {
+		"name": "Digital Art",
+		"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+		"summary": "The intersection of technology and creativity. Pixels, vectors, and AI-assisted works.",
+		"pieces": [
+			{
+				"title": "Cyber-Bloom",
+				"artist": "Juelz-101",
+				"thumbnail": "Website/img/logos/ZIKYinc_Art-Logo.png",
+				"link": "data/lib/art/digital/bloom.json",
+				"year": "2024",
+				"medium": "Digital Painting",
+				"summary": "An intricate digital piece exploring biological growth within a circuit board structure.",
+				"tags": ["Digital", "Cyber", "Biotech"]
+			}
+		]
+	},
+	"artists": {
+		"name": "Our Artists",
+		"thumbnail": "Website/img/photos/J.png",
+		"summary": "Meet the creative minds behind the ZIKYinc visual identity.",
+		"list": [
+			{
+				"name": "Emma MT",
+				"thumbnail": "Website/img/photos/Emma.jpeg",
+				"bio": "A multi-disciplinary artist focused on the raw textures of industrial landscapes.",
+				"link": "data/lib/art/artists/emma.json",
+				"mediums": ["Acrylic", "Oil", "Mixed Media"],
+				"featured": true
+			},
+			{
+				"name": "Juelz-101",
+				"thumbnail": "Website/img/photos/J.png",
+				"bio": "Exploring the digital frontier through code and canvas.",
+				"link": "data/lib/art/artists/juelz.json",
+				"mediums": ["Digital", "Pixel Art"],
+				"featured": true
+			}
+		]
+	}
 }

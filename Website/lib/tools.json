@@ -4,24 +4,96 @@
 		"web": [
 			{
 				"name": "QR Gem",
-				"thumbnail": "Images/Logos/App/QRGem/QRGem_Icon_Tx.png",
-				"link": "Website/lib/tools/qrg.json",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/tools/qrg.json",
 				"category": "Generators",
-				"summary": "Free QR Code generator with advanced tools for creating professional QR Codes.",
-				"tags": ["design", "branding", "qr", "free"],
+				"summary": "Internal QR Code generator for professional creative assets and high-speed links.",
+				"tags": ["utility", "web", "qr"],
 				"featured": true,
-				"dev": { "available": true, "finished": false }
+				"dev": { "available": true, "finished": true }
+			},
+			{
+				"name": "Chroma Palette",
+				"thumbnail": "Website/img/logos/ZIKYinc_Art-Logo.png",
+				"link": "data/lib/html/tools/chroma-palette.json",
+				"category": "Design",
+				"summary": "Instantly generate beautiful, accessible color palettes for your design projects.",
+				"tags": ["design", "color", "web"],
+				"featured": false,
+				"dev": { "available": true, "finished": true }
 			}
 		],
-		"win": [],
+		"win": [
+			{
+				"name": "WaveForm Converter",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/html/tools/waveform-converter.json",
+				"category": "Utility",
+				"summary": "A lightweight, powerful tool to convert, trim, and apply effects to audio files.",
+				"tags": ["audio", "windows", "production"],
+				"featured": true,
+				"dev": { "available": true, "finished": true }
+			}
+		],
 		"scripts": {
-			"py": [],
-			"ps": [],
-			"ahk": []
+            "name": "Scripting Toolkit",
+            "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+            "summary": "Automation and helper scripts for Python, PowerShell, and AutoHotkey users.",
+			"py": [
+                {
+                    "name": "Asset Bulk Renamer",
+                    "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+                    "link": "data/lib/tools/scripts/py/renamer.json",
+                    "category": "Python Script",
+                    "summary": "A fast script for batch renaming game assets with custom prefix/suffix rules.",
+                    "tags": ["Python", "Automation"]
+                }
+            ],
+			"ps": [
+                {
+                    "name": "Dev-Environment Setup",
+                    "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+                    "link": "data/lib/tools/scripts/ps/setup.json",
+                    "category": "PowerShell",
+                    "summary": "Automates the installation of dev tools on fresh Windows installs.",
+                    "tags": ["DevOps", "PowerShell"]
+                }
+            ],
+			"ahk": [
+                {
+                    "name": "Universal Hotkey Manager",
+                    "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+                    "link": "data/lib/tools/scripts/ahk/hotkey.json",
+                    "category": "AutoHotkey",
+                    "summary": "Map complex application workflows to simple key combinations.",
+                    "tags": ["Utility", "AHK"]
+                }
+            ]
 		},
 		"ai": {
-			"tools": [],
-			"prompts": []
+            "name": "AI & Prompt Lab",
+            "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+            "summary": "Tools and frameworks for integrating AI into the creative process.",
+			"apps": [
+                {
+                    "name": "Prompt Engineering Lab",
+                    "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+                    "link": "data/lib/tools/ai/apps/lab.json",
+                    "category": "AI App",
+                    "summary": "Visual sandbox for testing and refining Gemini and Midjourney prompts.",
+                    "tags": ["AI", "GenAI"]
+                }
+            ],
+			"prompts": [
+                {
+                    "name": "Artist Prompt Pack v1",
+                    "thumbnail": "Website/img/logos/ZIKYinc_Art-Logo.png",
+                    "link": "data/lib/tools/ai/prompts/pack1.json",
+                    "category": "Prompt Library",
+                    "summary": "A curated collection of high-impact prompts for stable diffusion and beyond.",
+                    "tags": ["AI", "Resource"]
+                }
+            ]
 		}
 	}
 }

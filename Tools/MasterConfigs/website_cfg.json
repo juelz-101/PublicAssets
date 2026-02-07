@@ -117,20 +117,6 @@
 			}
 		}
   },
-  "audio": {
-    "tracks": [
-       {
-         "title": "Sample Track 1",
-         "artist": "Artist Name",
-         "url": "https://raw.githubusercontent.com/YourUser/YourRepo/main/audio/track1.mp3"
-       },
-       {
-         "title": "Sample Track 2",
-         "artist": "Artist Name",
-         "url": "https://raw.githubusercontent.com/YourUser/YourRepo/main/audio/track2.mp3"
-       }
-    ]
-  },
   "cfg": {
 	"master_config": {"use": true, "source": "git", "url": "Tools/MasterConfigs/website_cfg.json"},
 	  "debug": {

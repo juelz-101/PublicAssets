@@ -1,48 +1,445 @@
 {
-	"introduction": "",
+	"meta": {
+		"name": "GAMING",
+		"desc": "Gaming and modding section",
+		"file": "gaming.json",
+		"root": "PublicAssets",
+		"path": "website/lib/",
+		"version": 1.6,
+		"change_note": "Ensured every array across all sub-categories has placeholder data.",
+		"change_date": "16/05/24"
+	},
+	"intro": "<h2>Welcome to the ZIKYinc Gaming Hub</h2>\n<p>Dive into our world of gaming, from community-run servers to custom mods and standalone games. This is where we share our passion for interactive entertainment and development.</p>",
 	"ue5": {
-		"introduction": "",
-		"games": [],
-		"assets": [],
-		"tools": []
+		"name": "Unreal Engine 5",
+		"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+		"summary": "High-fidelity internal projects built on the world's most advanced real-time 3D creation tool.",
+		"introduction": "<h3>Unreal Engine 5 Projects</h3>\n<p>Pushing the boundaries of visual fidelity and technical innovation.</p>",
+		"games": [
+			{
+				"name": "ZIKY-Quest",
+				"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+				"link": "data/lib/gaming/ue5/ziky-quest.json",
+				"genre": ["Adventure", "Mystery"],
+				"platform": ["Windows"],
+				"summary": "An atmospheric exploration game built in UE5.4, showcasing our latest lighting and Niagara effects.",
+				"tags": ["UE5", "Adventure", "WIP"],
+				"featured": true
+			}
+		],
+		"assets": [
+			{
+				"name": "Blueprint Master Logic Kit",
+				"type": "Code Plugin",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/gaming/ue5/logic-kit.json",
+				"summary": "A collection of highly optimized C++ and Blueprint nodes for game flow management.",
+				"tags": ["UE5", "Asset", "Developer Tool"]
+			}
+		],
+		"tools": [
+			{
+				"name": "Niagara FX Baker",
+				"type": "Editor Utility",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/gaming/ue5/fx-baker.json",
+				"summary": "A helper tool for baking complex Niagara particle systems into static textures.",
+				"tags": ["Tools", "VFX"]
+			}
+		]
 	},
 	"unity": {
-		"introduction": "",
-		"games": [],
-		"assets": [],
-		"tools": []
+		"name": "Unity",
+		"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+		"summary": "Rapid prototypes, mobile experiences, and rhythm-based games.",
+		"introduction": "<h3>Unity Projects</h3>\n<p>Where flexibility meets creativity.</p>",
+		"games": [
+			{
+				"name": "Lo-Fi Runner",
+				"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+				"link": "data/lib/gaming/unity/lofi-runner.json",
+				"genre": ["Platformer", "Music"],
+				"platform": ["Android", "iOS", "Web"],
+				"summary": "A rhythm-based runner set to the beats of our own music catalogue.",
+				"tags": ["Unity", "Mobile", "Rhythm"],
+				"featured": true
+			}
+		],
+		"assets": [
+			{
+				"name": "Universal UI Kit",
+				"type": "Asset Package",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/gaming/unity/ui-kit.json",
+				"summary": "A collection of scalable UI components for URP projects.",
+				"tags": ["Unity", "UI", "Asset"]
+			}
+		],
+		"tools": [
+			{
+				"name": "Build Automator",
+				"type": "C# Script",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/gaming/unity/build-tool.json",
+				"summary": "Automate multi-platform builds with a single click.",
+				"tags": ["DevOps", "Script"]
+			}
+		]
 	},
 	"gta": {
+		"name": "GTA Modding",
+		"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+		"summary": "Custom content for Los Santos and Liberty City. From RP servers to visual overhauls.",
+		"introduction": "<h3>Grand Theft Auto Modding</h3>\n<p>Our roots are deep in the GTA community.</p>",
 		"fivem": {
-			"introduction": [],
-			"servers": [],
-			"tools": [],
-			"assets": [],
-			"other": []
+			"name": "FiveM Multiplayer",
+			"thumbnail": "Website/img/logos/ZIKYinc-Music-Logo-Dark.png",
+			"summary": "Multiplayer scripts, servers, and dedicated community hosting.",
+			"servers": [
+				{
+					"name": "ZIKYinc Roleplay",
+					"game": "FiveM",
+					"thumbnail": "Website/img/logos/ZIKYinc-Music-Logo-Dark.png",
+					"link": "https://discord.gg/zikyinc",
+					"ip_address": "rp.zikyinc.com",
+					"summary": "A serious RP server with custom economy and unique ZIKYinc assets.",
+					"tags": ["RP", "FiveM", "Community"],
+					"featured": true
+				}
+			],
+			"assets": [
+				{
+					"name": "ZIKYinc HQ MLO",
+					"type": "Map Object",
+					"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+					"link": "data/lib/gaming/gta/ziky-hq.json",
+					"summary": "Custom headquarters interior for FiveM servers.",
+					"tags": ["MLO", "FiveM"]
+				}
+			],
+			"tools": [
+				{
+					"name": "Stream Packer",
+					"type": "Utility",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/gaming/gta/stream-packer.json",
+					"summary": "Optimizes asset folders for FiveM streaming.",
+					"tags": ["Tool", "Optimization"]
+				}
+			]
 		},
 		"gta5": {
-			"introduction": [],
-			"maps": [],
-			"mods": [],
-			"scripts": [],
-			"fixes": []
+			"name": "GTA V Single Player",
+			"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+			"summary": "Script mods and visual enhancements for the definitive San Andreas experience.",
+			"mods": [
+				{
+					"name": "ZIKYinc Realistic Rain",
+					"game": "GTA V",
+					"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+					"link": "data/lib/gaming/gta5/rain-mod.json",
+					"summary": "A visual overhaul for weather effects in Grand Theft Auto V.",
+					"tags": ["Visuals", "Mod", "Weather"]
+				}
+			],
+			"maps": [
+				{
+					"name": "North Yankton Unlocked",
+					"type": "Map Add-on",
+					"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+					"link": "data/lib/gaming/gta5/yank-unlock.json",
+					"summary": "Unlocks the snowy region for exploration in single player.",
+					"tags": ["Map", "Unlock"]
+				}
+			],
+			"scripts": [
+				{
+					"name": "Cinematic Camera Plus",
+					"type": "Script",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/gaming/gta5/cam-plus.json",
+					"summary": "Adds advanced camera controls for video makers.",
+					"tags": ["Script", "Media"]
+				}
+			],
+			"assets": [
+				{
+					"name": "ZIKYinc Branding Pack",
+					"type": "Texture Bundle",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/gaming/gta5/branding.json",
+					"summary": "High-quality ZIKYinc billboards and shopfronts for Los Santos.",
+					"tags": ["Texture", "World"]
+				}
+			],
+			"tools": [
+				{
+					"name": "SHVDN Helper",
+					"type": "Dev Tool",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/gaming/gta5/shvdn-helper.json",
+					"summary": "Assists developers in creating ScriptHookVDotNet mods.",
+					"tags": ["Code", "Dev"]
+				}
+			]
 		},
 		"iv": {
-			"introduction": [],
-			"maps": [],
-			"mods": [],
-			"scripts": [],
-			"fixes": []
-		},
-		"legacy": {}
+			"name": "GTA IV Classic",
+			"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+			"summary": "Keeping the grit of Liberty City alive with modern performance fixes and map mods.",
+			"mods": [
+				{
+					"name": "Liberty City Expanded 2024",
+					"game": "GTA IV",
+					"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+					"link": "data/lib/gaming/gtaiv/lce.json",
+					"summary": "New islands and interiors for Liberty City.",
+					"tags": ["Map", "Mod", "GTAIV"]
+				}
+			],
+			"maps": [
+				{
+					"name": "Classic NY Bridge Restoration",
+					"type": "Map Mod",
+					"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+					"link": "data/lib/gaming/gtaiv/bridge.json",
+					"summary": "Restores cut LOD details to the Broker Bridge.",
+					"tags": ["Map", "Restoration"]
+				}
+			],
+			"assets": [
+				{
+					"name": "2008 Vehicle Pack",
+					"type": "Car Pack",
+					"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+					"link": "data/lib/gaming/gtaiv/cars.json",
+					"summary": "Lore-friendly vehicle replacements matching the original era.",
+					"tags": ["Cars", "Lore"]
+				}
+			],
+			"tools": [
+				{
+					"name": "IV Downgrader Helper",
+					"type": "Setup Tool",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/gaming/gtaiv/down-tool.json",
+					"summary": "Assists in reverting Steam versions to moddable v1.0.7.0.",
+					"tags": ["Utility", "GTAIV"]
+				}
+			],
+			"scripts": [
+				{
+					"name": "Fuel System Classic",
+					"type": "Script",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/gaming/gtaiv/fuel.json",
+					"summary": "Adds a realistic fuel and refueling mechanic to IV.",
+					"tags": ["Realism", "Script"]
+				}
+			]
+		}
 	},
 	"valve": {
-		"gmod": {},
-		"wire": {}
+		"name": "Valve & Source",
+		"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+		"summary": "Technical modding for Garry's Mod and advanced Wiremod/E2 scripting.",
+		"gmod": {
+			"name": "Garry's Mod",
+			"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+			"summary": "Prop packs, tools, and map entities for GMod.",
+			"assets": [
+				{
+					"name": "ZIKYinc Prop Pack",
+					"game": "Garry's Mod",
+					"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+					"link": "data/lib/gaming/valve/props.json",
+					"summary": "Custom 3D props for building and posing.",
+					"tags": ["Assets", "Building"]
+				}
+			],
+			"maps": [
+				{
+					"name": "gm_ziky_hq",
+					"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+					"summary": "Our internal virtual headquarters built for Garry's Mod.",
+					"link": "data/lib/gaming/valve/hq.json"
+				}
+			],
+			"mods": [
+				{
+					"name": "Admin Tools Extender",
+					"game": "Garry's Mod",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/gaming/valve/admin-tools.json",
+					"summary": "New UI for server administrators.",
+					"tags": ["Admin", "UI"]
+				}
+			],
+			"tools": [
+				{
+					"name": "Server Watchdog",
+					"type": "LUA Script",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/gaming/valve/watchdog.json",
+					"summary": "Monitors server health and auto-restarts on hang.",
+					"tags": ["Server", "Tool"]
+				}
+			]
+		},
+		"wire": {
+			"name": "Wiremod / E2",
+			"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+			"summary": "Complex expression 2 scripts and OS shells for digital builders.",
+			"tools": [
+				{
+					"name": "ZIKY-OS Wire Interface",
+					"game": "Garry's Mod",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/gaming/valve/wire-os.json",
+					"summary": "A custom operating system shell for Wiremod E2/Starfall screens.",
+					"tags": ["Wiremod", "Scripting"]
+				}
+			],
+			"scripts": [
+				{
+					"name": "Auto-Defense E2",
+					"game": "Garry's Mod",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/gaming/valve/defense.json",
+					"summary": "High-speed targeting logic for base defense.",
+					"tags": ["E2", "Security"]
+				}
+			],
+			"assets": [
+				{
+					"name": "Micro-Logic Gate Kit",
+					"type": "Wire Model Pack",
+					"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+					"link": "data/lib/gaming/valve/logic-kit.json",
+					"summary": "Slim versions of standard logic gates for compact builds.",
+					"tags": ["Asset", "Logic"]
+				}
+			]
+		}
 	},
 	"roblox": {
-		
+		"name": "Roblox",
+		"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+		"summary": "Metaverse experiences built with Luau and modern Roblox Studio tools.",
+		"games": [
+			{
+				"name": "Tycoon Tycoon",
+				"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+				"link": "data/lib/gaming/roblox/tycoon.json",
+				"genre": ["Tycoon"],
+				"platform": ["Roblox"],
+				"summary": "A meta-tycoon where you build a tycoon to build tycoons.",
+				"tags": ["Roblox", "Luau"]
+			}
+		],
+		"maps": [
+			{
+				"name": "ZIKYinc Parkour Hub",
+				"type": "Obby",
+				"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+				"link": "data/lib/gaming/roblox/parkour.json",
+				"summary": "A high-speed course testing agility and timing.",
+				"tags": ["Obby", "Roblox"]
+			}
+		],
+		"assets": [
+			{
+				"name": "Neon Shader Pack",
+				"type": "Visual Asset",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/gaming/roblox/shader.json",
+				"summary": "Post-processing presets for neon-lit Roblox games.",
+				"tags": ["Visuals", "Resource"]
+			}
+		],
+		"tools": [
+			{
+				"name": "DataStore Helper",
+				"type": "ModuleScript",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/gaming/roblox/ds-helper.json",
+				"summary": "Safely manages cross-server user data persistence.",
+				"tags": ["Code", "Utility"]
+			}
+		]
 	},
-	"web": {},
-	"other": {}
+	"web": {
+		"name": "Web Games",
+		"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+		"summary": "Lightweight Phaser and Three.js games for instant browser-based fun.",
+		"introduction": "<h3>Web Games</h3>\n<p>Instant fun, no download required. Built with Phaser and Three.js.</p>",
+		"games": [
+			{
+				"name": "Hexa-Blast",
+				"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+				"link": "data/lib/gaming/web/hexablast.json",
+				"genre": ["Puzzle"],
+				"platform": ["Web"],
+				"summary": "A high-speed puzzle game built for modern browsers.",
+				"tags": ["JavaScript", "Phaser", "Casual"]
+			}
+		],
+		"assets": [
+			{
+				"name": "Retro Sprite Pack",
+				"type": "Spritesheet",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/gaming/web/sprites.json",
+				"summary": "Hand-crafted 16x16 pixels for retro web projects.",
+				"tags": ["Art", "Web"]
+			}
+		],
+		"tools": [
+			{
+				"name": "Canvas Level Editor",
+				"type": "Editor",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/gaming/web/editor.json",
+				"summary": "Browser-based tool for creating grid-based game levels.",
+				"tags": ["Dev", "Utility"]
+			}
+		]
+	},
+	"other": {
+		"name": "Other Projects",
+		"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+		"summary": "Legacy projects and miscellanous technical experiments.",
+		"introduction": "<h3>Legacy & Other Projects</h3>\n<p>Miscellaneous projects and legacy archives from our early days of development.</p>",
+		"games": [
+			{
+				"name": "ZIKYinc Legacy Arena",
+				"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+				"link": "data/lib/gaming/other/arena.json",
+				"genre": ["Deathmatch"],
+				"platform": ["Windows"],
+				"summary": "Our first ever multiplayer prototype from 2021.",
+				"tags": ["Legacy", "Unity"]
+			}
+		],
+		"mods": [
+			{
+				"name": "Classic HUD Pack",
+				"game": "Various",
+				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+				"link": "data/lib/gaming/other/hud.json",
+				"summary": "A collection of UI skins for older engines.",
+				"tags": ["UI", "Legacy"]
+			}
+		],
+		"assets": [
+			{
+				"name": "Archive 01: Textures",
+				"type": "File Dump",
+				"thumbnail": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+				"link": "data/lib/gaming/other/tex-archive.json",
+				"summary": "Unsorted raw textures from discontinued projects.",
+				"tags": ["Archive", "Textures"]
+			}
+		]
+	}
 }

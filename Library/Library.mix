@@ -1,11 +1,10 @@
 {
 	"meta": {
-		"name": "LOBBY", "desc": "POST file for the Library's root folder.",
-		"file": "lobby.mpo", "root": "PublicAssets", "path": "Library/",
+		"name": "LOBBY", "desc": "INDEX file for the Library's root folder.",
+		"file": "lobby.mix", "root": "PublicAssets", "path": "Library/",
 		"version": 1.0, "change_note": "Created file.", "change_date": "11/11/25"
 	},
 	"folder": {
-		"flag": "",
 		"header": "ZLIB_Lob",
 		"title": "ZIKYinc Library Lobby",
 		"subtitle": "Where would you like to take a peek at?",
