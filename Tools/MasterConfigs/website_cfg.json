@@ -2,7 +2,7 @@
 	"meta": {
 		"name": "MANIFEST", "desc": "Website config and file register.",
 		"file": "manifest.json", "root": "PublicAssets", "path": "Tools/MasterCfgs/",
-		"version": 2.4, "change_note": "Added safe mode overrides and enum schema.", "change_date": "25/1/26"
+		"version": 2.5, "change_note": "Integrated safe mode overrides and performance enums.", "change_date": "25/01/26"
 	},
 	"git": {
 		"user": "juelz-101",
@@ -54,11 +54,11 @@
 		},
 		"safe_mode": {
 			"desc": "Safe override that blocks or reduces the amount of requests to git",
-			"on": true,
+			"on": false,
 			"override": {
 				"images": {
 					"block_all_images": false,
-					"limit_image_requests": {"on": false, "max": 10, "mode": "per_page"},
+					"limit_image_requests": {"on": true, "max": 20, "mode": "session"},
 					"block_background": {"on": true, "mode": "one_and_done"},
 					"pages": {
 						"desc": "Block images from loading on specific pages by adding the page names below",
@@ -69,7 +69,11 @@
 				"data": {
 					"block_all_online_data": false,
 					"block_local_data": false
-				}
+				},
+                "performance": {
+                    "reduced_motion": false,
+                    "low_bandwidth_mode": false
+                }
 			}
 		}
 						
@@ -139,4 +143,5 @@
 			}
 		}
 	}
+  }
 }
