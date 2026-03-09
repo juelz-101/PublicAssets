@@ -1,0 +1,14 @@
+[
+  {
+    "name": "audio-effects.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/audio/audio-effects.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/audio/audio-effects.ts"
+  },
+  {
+    "name": "audio-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/audio/audio-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/audio/audio-utils.ts"
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "name": "CrashReporterExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/CrashReporterExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/CrashReporterExample.tsx"
+  },
+  {
+    "name": "ClipboardExtendedExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/ClipboardExtendedExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/ClipboardExtendedExample.tsx"
+  },
+  {
+    "name": "AutoUpdaterExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/AutoUpdaterExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/AutoUpdaterExample.tsx"
+  },
+  {
+    "name": "DesktopCapturerExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/DesktopCapturerExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/DesktopCapturerExample.tsx"
+  },
+  {
+    "name": "TaskbarUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/TaskbarUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/TaskbarUtilsExample.tsx"
+  },
+  {
+    "name": "PowerMonitorExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/PowerMonitorExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/PowerMonitorExample.tsx"
+  },
+  {
+    "name": "IpcWrapperExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/IpcWrapperExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/IpcWrapperExample.tsx"
+  },
+  {
+    "name": "SystemInfoExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/SystemInfoExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/SystemInfoExample.tsx"
+  },
+  {
+    "name": "DialogsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/DialogsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/DialogsExample.tsx"
+  },
+  {
+    "name": "GlobalShortcutExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/GlobalShortcutExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/GlobalShortcutExample.tsx"
+  },
+  {
+    "name": "MenuManagerExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/MenuManagerExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/MenuManagerExample.tsx"
+  },
+  {
+    "name": "PowerSaveBlockerExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/PowerSaveBlockerExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/PowerSaveBlockerExample.tsx"
+  },
+  {
+    "name": "FsWrapperExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/FsWrapperExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/FsWrapperExample.tsx"
+  },
+  {
+    "name": "NativeImageExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/NativeImageExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/NativeImageExample.tsx"
+  },
+  {
+    "name": "WindowShellExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/WindowShellExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/WindowShellExample.tsx"
+  },
+  {
+    "name": "WebFrameExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/WebFrameExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/WebFrameExample.tsx"
+  },
+  {
+    "name": "TrayManagerExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/electron/TrayManagerExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/TrayManagerExample.tsx"
+  }
+]

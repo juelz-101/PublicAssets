@@ -1,0 +1,14 @@
+[
+  {
+    "name": "modules.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/data/modules.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/data/modules.json"
+  },
+  {
+    "name": "systems.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/data/systems.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/data/systems.json"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ConfigPanel.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/ConfigPanel.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/ConfigPanel.tsx"
+  },
+  {
+    "name": "Graph3D.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/Graph3D.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/Graph3D.tsx"
+  },
+  {
+    "name": "DataTree.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/DataTree.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/DataTree.tsx"
+  },
+  {
+    "name": "CameraControls.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/CameraControls.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/CameraControls.tsx"
+  },
+  {
+    "name": "ToolBar.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/ToolBar.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/ToolBar.tsx"
+  }
+]

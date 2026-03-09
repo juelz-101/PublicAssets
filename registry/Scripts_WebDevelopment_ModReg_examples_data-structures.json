@@ -1,0 +1,20 @@
+[
+  {
+    "name": "StackExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/data-structures/StackExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/data-structures/StackExample.tsx"
+  },
+  {
+    "name": "QueueExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/data-structures/QueueExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/data-structures/QueueExample.tsx"
+  },
+  {
+    "name": "LinkedListExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/data-structures/LinkedListExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/data-structures/LinkedListExample.tsx"
+  }
+]

@@ -1,0 +1,1355 @@
+
+[
+  {
+    "category": "Utilities",
+    "description": "General-purpose utility functions that can be used across various projects.",
+    "modules": [
+      {
+        "name": "string-utils",
+        "description": "A collection of helper functions for common string manipulations.",
+        "path": "modules/utilities/string-utils.ts",
+        "examplePath": "examples/utilities/StringUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "capitalize",
+            "description": "Capitalizes the first letter of a given string.",
+            "params": ["str: string"],
+            "returns": "string"
+          },
+          {
+            "name": "truncate",
+            "description": "Truncates a string to a specified length and appends '...'.",
+            "params": ["str: string", "length: number"],
+            "returns": "string"
+          },
+          {
+            "name": "camelCase",
+            "description": "Converts a kebab-case or snake_case string to camelCase.",
+            "params": ["str: string"],
+            "returns": "string"
+          },
+          {
+            "name": "pascalCase",
+            "description": "Converts a string to PascalCase (or UpperCamelCase).",
+            "params": ["str: string"],
+            "returns": "string"
+          },
+          {
+            "name": "snakeCase",
+            "description": "Converts a string to snake_case.",
+            "params": ["str: string"],
+            "returns": "string"
+          },
+          {
+            "name": "kebabCase",
+            "description": "Converts a string to kebab-case.",
+            "params": ["str: string"],
+            "returns": "string"
+          }
+        ]
+      },
+      {
+        "name": "array-utils",
+        "description": "A set of functions for performing common array operations.",
+        "path": "modules/utilities/array-utils.ts",
+        "examplePath": "examples/utilities/ArrayUtilsExample.tsx",
+        "functions": [
+           {
+            "name": "chunk",
+            "description": "Splits an array into chunks of a specified size.",
+            "params": ["arr: T[]", "size: number"],
+            "returns": "T[][]"
+          },
+          {
+            "name": "unique",
+            "description": "Removes duplicate values from an array.",
+            "params": ["arr: T[]"],
+            "returns": "T[]"
+          },
+          {
+            "name": "groupBy",
+            "description": "Groups the elements of an array based on a given key.",
+            "params": ["arr: T[]", "key: keyof T"],
+            "returns": "Record<string, T[]>"
+          },
+          {
+            "name": "flatten",
+            "description": "Flattens a nested array into a single-level array.",
+            "params": ["arr: any[]"],
+            "returns": "any[]"
+          },
+          {
+            "name": "shuffle",
+            "description": "Randomly shuffles the elements of an array.",
+            "params": ["arr: T[]"],
+            "returns": "T[]"
+          },
+          {
+            "name": "compact",
+            "description": "Removes all falsy values (false, null, 0, \"\", undefined, NaN) from an array.",
+            "params": ["arr: T[]"],
+            "returns": "T[]"
+          }
+        ]
+      },
+      {
+        "name": "object-utils",
+        "description": "A collection of helper functions for common object manipulations.",
+        "path": "modules/utilities/object-utils.ts",
+        "examplePath": "examples/utilities/ObjectUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "get",
+            "description": "Safely gets a nested property from an object using a string path.",
+            "params": ["obj: Record<string, any>", "path: string | string[]", "defaultValue?: any"],
+            "returns": "any"
+          },
+          {
+            "name": "pick",
+            "description": "Creates a new object with only the specified keys from the original object.",
+            "params": ["obj: Record<string, any>", "keys: string[]"],
+            "returns": "Record<string, any>"
+          },
+          {
+            "name": "omit",
+            "description": "Creates a new object without the specified keys from the original object.",
+            "params": ["obj: Record<string, any>", "keys: string[]"],
+            "returns": "Record<string, any>"
+          },
+          {
+            "name": "isEqual",
+            "description": "Performs a deep comparison between two objects to determine if they are equivalent.",
+            "params": ["obj1: any", "obj2: any"],
+            "returns": "boolean"
+          },
+          {
+            "name": "cloneDeep",
+            "description": "Creates a deep clone of a JSON-serializable object.",
+            "params": ["obj: T"],
+            "returns": "T"
+          }
+        ]
+      },
+      {
+        "name": "logger",
+        "description": "A configurable logger with multiple levels and transport outputs.",
+        "path": "modules/utilities/logger.ts",
+        "examplePath": "examples/utilities/LoggerExample.tsx",
+        "functions": [
+          {
+            "name": "Logger.getInstance",
+            "description": "Gets the singleton instance of the Logger.",
+            "params": ["config?: LoggerConfig"],
+            "returns": "Logger"
+          },
+          {
+            "name": "logger.setConfig",
+            "description": "Updates the logger's configuration (e.g., minimum level).",
+            "params": ["config: LoggerConfig"],
+            "returns": "void"
+          },
+          {
+            "name": "logger.addTransport",
+            "description": "Adds a new output transport for log messages.",
+            "params": ["transport: LogTransport"],
+            "returns": "void"
+          },
+          {
+            "name": "logger.debug",
+            "description": "Logs a message at the DEBUG level.",
+            "params": ["message: string", "...args: any[]"],
+            "returns": "void"
+          },
+          {
+            "name": "logger.info",
+            "description": "Logs a message at the INFO level.",
+            "params": ["message: string", "...args: any[]"],
+            "returns": "void"
+          },
+          {
+            "name": "logger.warn",
+            "description": "Logs a message at the WARN level.",
+            "params": ["message: string", "...args: any[]"],
+            "returns": "void"
+          },
+          {
+            "name": "logger.error",
+            "description": "Logs a message at the ERROR level.",
+            "params": ["message: string", "...args: any[]"],
+            "returns": "void"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "API Helpers",
+    "description": "Modules to simplify interactions with external APIs.",
+    "modules": [
+      {
+        "name": "gemini-service",
+        "description": "A wrapper for the Gemini API to streamline content generation.",
+        "path": "services/geminiService.ts",
+        "examplePath": "examples/api/GeminiServiceExample.tsx",
+        "functions": [
+          {
+            "name": "generateText",
+            "description": "Generates text content from a given prompt using Gemini, with an optional system instruction.",
+            "params": ["prompt: string", "systemInstruction?: string"],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "generateTextFromImage",
+            "description": "Generates text content from a prompt and an image.",
+            "params": ["prompt: string", "image: { inlineData: { data: string, mimeType: string } }"],
+            "returns": "Promise<string>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "AI",
+    "description": "Modules leveraging generative AI for advanced functionalities.",
+    "modules": [
+      {
+        "name": "gemini-chat",
+        "description": "A wrapper for the Gemini API to create interactive chat sessions.",
+        "path": "modules/ai/gemini-chat.ts",
+        "examplePath": "examples/ai/GeminiChatExample.tsx",
+        "functions": [
+          {
+            "name": "createChat",
+            "description": "Creates a new chat session instance.",
+            "params": ["options?: { history?: any[], config?: any }"],
+            "returns": "Chat"
+          }
+        ]
+      },
+      {
+        "name": "image-editor",
+        "description": "Leverage Gemini to edit images with text prompts.",
+        "path": "modules/editing/image-editor.ts",
+        "examplePath": "examples/editing/ImageEditorExample.tsx",
+        "functions": [
+          {
+            "name": "editImage",
+            "description": "Edits an image based on a text prompt using the Gemini image editing model.",
+            "params": ["base64ImageData: string", "mimeType: string", "prompt: string"],
+            "returns": "Promise<ImageEditResult>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "DOM Helpers",
+    "description": "Functions for simplifying common DOM manipulations and interactions.",
+    "modules": [
+      {
+        "name": "dom-utils",
+        "description": "A collection of helper functions for common DOM manipulations like event handling and class toggling.",
+        "path": "modules/dom/dom-utils.ts",
+        "examplePath": "examples/dom/DomUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "on",
+            "description": "Attaches an event listener to an element.",
+            "params": [
+              "element: EventTarget",
+              "event: string",
+              "handler: Function"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "off",
+            "description": "Removes an event listener from an element.",
+            "params": [
+              "element: EventTarget",
+              "event: string",
+              "handler: Function"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "toggleClass",
+            "description": "Toggles a CSS class on an element.",
+            "params": [
+              "element: Element",
+              "className: string"
+            ],
+            "returns": "boolean"
+          },
+          {
+            "name": "delegate",
+            "description": "Attaches a delegated event listener to a parent element. Returns a function to remove the listener.",
+            "params": [
+              "parent: Element",
+              "selector: string",
+              "event: string",
+              "handler: Function"
+            ],
+            "returns": "() => void"
+          },
+          {
+            "name": "qs",
+            "description": "A shorthand for document.querySelector.",
+            "params": ["selector: string"],
+            "returns": "T | null"
+          },
+          {
+            "name": "qsa",
+            "description": "A shorthand for document.querySelectorAll.",
+            "params": ["selector: string"],
+            "returns": "NodeListOf<T>"
+          },
+          {
+            "name": "setStyle",
+            "description": "Sets multiple CSS properties on an element at once.",
+            "params": ["element: HTMLElement", "styles: Partial<CSSStyleDeclaration>"],
+            "returns": "void"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Data Structures",
+    "description": "Implementations of common data structures like Queues, Stacks, and Trees.",
+    "modules": [
+      {
+        "name": "queue",
+        "description": "A generic Queue class implementing the First-In, First-Out (FIFO) principle.",
+        "path": "modules/data-structures/queue.ts",
+        "examplePath": "examples/data-structures/QueueExample.tsx",
+        "functions": [
+          {
+            "name": "enqueue",
+            "description": "Adds an item to the end of the queue.",
+            "params": ["item: T"],
+            "returns": "void"
+          },
+          {
+            "name": "dequeue",
+            "description": "Removes and returns the item from the front of the queue.",
+            "params": [],
+            "returns": "T | undefined"
+          },
+          {
+            "name": "peek",
+            "description": "Returns the item at the front of the queue without removing it.",
+            "params": [],
+            "returns": "T | undefined"
+          },
+          {
+            "name": "isEmpty",
+            "description": "Checks if the queue is empty.",
+            "params": [],
+            "returns": "boolean"
+          },
+          {
+            "name": "size",
+            "description": "Gets the current number of items in the queue (getter).",
+            "params": [],
+            "returns": "number"
+          },
+          {
+            "name": "clear",
+            "description": "Clears all items from the queue.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "getItems",
+            "description": "Returns a copy of the queue's items as an array.",
+            "params": [],
+            "returns": "T[]"
+          }
+        ]
+      },
+      {
+        "name": "stack",
+        "description": "A generic Stack class implementing the Last-In, First-Out (LIFO) principle.",
+        "path": "modules/data-structures/stack.ts",
+        "examplePath": "examples/data-structures/StackExample.tsx",
+        "functions": [
+          {
+            "name": "push",
+            "description": "Adds an item to the top of the stack.",
+            "params": ["item: T"],
+            "returns": "void"
+          },
+          {
+            "name": "pop",
+            "description": "Removes and returns the item from the top of the stack.",
+            "params": [],
+            "returns": "T | undefined"
+          },
+          {
+            "name": "peek",
+            "description": "Returns the item at the top of the stack without removing it.",
+            "params": [],
+            "returns": "T | undefined"
+          },
+          {
+            "name": "isEmpty",
+            "description": "Checks if the stack is empty.",
+            "params": [],
+            "returns": "boolean"
+          },
+          {
+            "name": "size",
+            "description": "Gets the current number of items in the stack (getter).",
+            "params": [],
+            "returns": "number"
+          },
+          {
+            "name": "clear",
+            "description": "Clears all items from the stack.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "getItems",
+            "description": "Returns a copy of the stack's items as an array.",
+            "params": [],
+            "returns": "T[]"
+          }
+        ]
+      },
+      {
+        "name": "linked-list",
+        "description": "A generic doubly-linked list class with standard list operations.",
+        "path": "modules/data-structures/linked-list.ts",
+        "examplePath": "examples/data-structures/LinkedListExample.tsx",
+        "functions": [
+          {
+            "name": "append",
+            "description": "Adds a new node with the given value to the end of the list.",
+            "params": ["value: T"],
+            "returns": "void"
+          },
+          {
+            "name": "prepend",
+            "description": "Adds a new node with the given value to the start of the list.",
+            "params": ["value: T"],
+            "returns": "void"
+          },
+          {
+            "name": "delete",
+            "description": "Removes the first node with the specified value from the list.",
+            "params": ["value: T"],
+            "returns": "Node<T> | null"
+          },
+          {
+            "name": "find",
+            "description": "Finds the first node containing the specified value.",
+            "params": ["value: T"],
+            "returns": "Node<T> | null"
+          },
+          {
+            "name": "toArray",
+            "description": "Returns an array representation of the list.",
+            "params": [],
+            "returns": "T[]"
+          },
+          {
+            "name": "size",
+            "description": "Gets the current number of nodes in the list (getter).",
+            "params": [],
+            "returns": "number"
+          },
+          {
+            "name": "isEmpty",
+            "description": "Checks if the list is empty.",
+            "params": [],
+            "returns": "boolean"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Algorithms",
+    "description": "Implementations of classic algorithms for sorting, searching, and more.",
+    "modules": [
+      {
+        "name": "sorting-utils",
+        "description": "A collection of classic sorting algorithms with generators for visualization.",
+        "path": "modules/algorithms/sorting-utils.ts",
+        "examplePath": "examples/algorithms/SortingUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "bubbleSort",
+            "description": "A generator that yields each step of the Bubble Sort algorithm.",
+            "params": [
+              "arr: number[]"
+            ],
+            "returns": "Generator<SortStep>"
+          },
+          {
+            "name": "selectionSort",
+            "description": "A generator that yields each step of the Selection Sort algorithm.",
+            "params": [
+              "arr: number[]"
+            ],
+            "returns": "Generator<SortStep>"
+          },
+          {
+            "name": "quickSort",
+            "description": "A generator that yields each step of the Quick Sort algorithm.",
+            "params": [
+              "arr: number[]"
+            ],
+            "returns": "Generator<SortStep>"
+          },
+          {
+            "name": "insertionSort",
+            "description": "A generator that yields each step of the Insertion Sort algorithm.",
+            "params": [
+              "arr: number[]"
+            ],
+            "returns": "Generator<SortStep>"
+          }
+        ]
+      },
+      {
+        "name": "a-star-pathfinding",
+        "description": "An implementation of the A* search algorithm to find the shortest path on a grid.",
+        "path": "modules/algorithms/pathfinding.ts",
+        "examplePath": "examples/algorithms/PathfindingExample.tsx",
+        "functions": [
+          {
+            "name": "findPathAStar",
+            "description": "A generator that yields each step of the A* algorithm.",
+            "params": [
+              "grid: number[][]",
+              "start: {x: number, y: number}",
+              "end: {x: number, y: number}"
+            ],
+            "returns": "Generator<PathfindingStep>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Date & Time",
+    "description": "A collection of utilities for formatting, parsing, and manipulating dates and times.",
+    "modules": [
+       {
+        "name": "date-utils",
+        "description": "A collection of utilities for formatting, parsing, and manipulating dates and times.",
+        "path": "modules/date/date-utils.ts",
+        "examplePath": "examples/date/DateUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "formatDate",
+            "description": "Formats a Date object into a readable string. Tokens: YYYY, MM, DD, HH (24hr), hh (12hr), mm, ss, a/A (am/pm).",
+            "params": ["date: Date", "format: string"],
+            "returns": "string"
+          },
+          {
+            "name": "timeAgo",
+            "description": "Returns a human-readable string representing how long ago a date was (e.g., '5 minutes ago').",
+            "params": ["date: Date"],
+            "returns": "string"
+          },
+          {
+            "name": "isToday",
+            "description": "Checks if a given date is the same day as today.",
+            "params": ["date: Date"],
+            "returns": "boolean"
+          },
+          {
+            "name": "addDays",
+            "description": "Adds a specified number of days to a given date.",
+            "params": ["date: Date", "days: number"],
+            "returns": "Date"
+          },
+           {
+            "name": "addHours",
+            "description": "Adds a specified number of hours to a given date.",
+            "params": ["date: Date", "hours: number"],
+            "returns": "Date"
+          },
+          {
+            "name": "isFuture",
+            "description": "Checks if a given date is in the future.",
+            "params": ["date: Date"],
+            "returns": "boolean"
+          },
+          {
+            "name": "isLeapYear",
+            "description": "Checks if a given year is a leap year.",
+            "params": ["year: number"],
+            "returns": "boolean"
+          },
+          {
+            "name": "formatDuration",
+            "description": "Formats a duration in seconds into a HH:MM:SS string.",
+            "params": ["totalSeconds: number"],
+            "returns": "string"
+          },
+          {
+            "name": "startOfDay",
+            "description": "Returns a new Date object set to the start of the day (00:00:00).",
+            "params": ["date: Date"],
+            "returns": "Date"
+          },
+          {
+            "name": "endOfDay",
+            "description": "Returns a new Date object set to the end of the day (23:59:59).",
+            "params": ["date: Date"],
+            "returns": "Date"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Math & Numbers",
+    "description": "Helper functions for advanced mathematical operations, number formatting, and statistics.",
+    "modules": [
+      {
+        "name": "math-utils",
+        "description": "A set of functions for common mathematical operations and number formatting.",
+        "path": "modules/math/math-utils.ts",
+        "examplePath": "examples/math/MathUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "clamp",
+            "description": "Clamps a number within the inclusive lower and upper bounds.",
+            "params": ["num: number", "min: number", "max: number"],
+            "returns": "number"
+          },
+          {
+            "name": "lerp",
+            "description": "Linearly interpolates between two numbers.",
+            "params": ["start: number", "end: number", "amt: number"],
+            "returns": "number"
+          },
+          {
+            "name": "randomRange",
+            "description": "Returns a random integer within a specified range (inclusive).",
+            "params": ["min: number", "max: number"],
+            "returns": "number"
+          },
+          {
+            "name": "formatCurrency",
+            "description": "Formats a number as a currency string for a given locale.",
+            "params": ["num: number", "locale: string", "currency: string"],
+            "returns": "string"
+          },
+          {
+            "name": "mapRange",
+            "description": "Maps a number from one range to another.",
+            "params": ["num: number", "inMin: number", "inMax: number", "outMin: number", "outMax: number"],
+            "returns": "number"
+          },
+          {
+            "name": "average",
+            "description": "Calculates the average of numbers in an array.",
+            "params": ["numbers: number[]"],
+            "returns": "number"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Validation",
+    "description": "A suite of functions for validating data formats like emails, URLs, and passwords.",
+    "modules": [
+      {
+        "name": "validation-utils",
+        "description": "A suite of functions for validating common data formats.",
+        "path": "modules/validation/validation-utils.ts",
+        "examplePath": "examples/validation/ValidationUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "isEmail",
+            "description": "Checks if a string is a valid email address.",
+            "params": ["email: string"],
+            "returns": "boolean"
+          },
+          {
+            "name": "isURL",
+            "description": "Checks if a string is a valid URL.",
+            "params": ["url: string"],
+            "returns": "boolean"
+          },
+          {
+            "name": "isStrongPassword",
+            "description": "Checks if a password meets specified strength criteria (length, cases, numbers, symbols).",
+            "params": ["password: string"],
+            "returns": "boolean"
+          },
+          {
+            "name": "isJSON",
+            "description": "Checks if a string is a valid JSON.",
+            "params": ["str: string"],
+            "returns": "boolean"
+          },
+          {
+            "name": "isNumeric",
+            "description": "Checks if a string contains only numeric characters.",
+            "params": ["str: string"],
+            "returns": "boolean"
+          },
+          {
+            "name": "isHexColor",
+            "description": "Checks if a string is a valid 3 or 6-digit hex color code.",
+            "params": ["str: string"],
+            "returns": "boolean"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Async & Promises",
+    "description": "Utilities for managing asynchronous operations, such as debounce, throttle, and retry.",
+    "modules": [
+      {
+        "name": "async-utils",
+        "description": "Utilities for managing asynchronous operations like debounce, throttle, and retry.",
+        "path": "modules/async/async-utils.ts",
+        "examplePath": "examples/async/AsyncUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "debounce",
+            "description": "Creates a debounced function that delays invoking func until after wait milliseconds have elapsed.",
+            "params": ["func: Function", "wait: number"],
+            "returns": "Function"
+          },
+          {
+            "name": "throttle",
+            "description": "Creates a throttled function that only invokes func at most once per every wait milliseconds.",
+            "params": ["func: Function", "wait: number"],
+            "returns": "Function"
+          },
+          {
+            "name": "retry",
+            "description": "Attempts to execute an async function, retrying a specified number of times on failure.",
+            "params": ["asyncFn: () => Promise<T>", "retries: number", "delay: number"],
+            "returns": "Promise<T>"
+          },
+          {
+            "name": "sleep",
+            "description": "Pauses execution for a specified number of milliseconds.",
+            "params": ["ms: number"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "timeout",
+            "description": "Rejects a promise if it doesn't resolve within a given time.",
+            "params": ["promise: Promise<T>", "ms: number"],
+            "returns": "Promise<T>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Web APIs",
+    "description": "Wrappers and helpers for browser APIs like LocalStorage, SessionStorage, and Fetch.",
+    "modules": [
+      {
+        "name": "storage-utils",
+        "description": "Safe and convenient wrappers for localStorage and sessionStorage that handle JSON serialization and optional item expiration.",
+        "path": "modules/web-apis/storage-utils.ts",
+        "examplePath": "examples/web-apis/StorageUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "localStore.set",
+            "description": "Sets a value in localStorage after JSON stringifying it. Can optionally set an expiration time.",
+            "params": ["key: string", "value: any", "ttlSeconds?: number"],
+            "returns": "void"
+          },
+          {
+            "name": "localStore.get",
+            "description": "Gets and parses a JSON value from localStorage. Returns null if expired.",
+            "params": ["key: string"],
+            "returns": "T | null"
+          },
+          {
+            "name": "localStore.remove",
+            "description": "Removes an item from localStorage.",
+            "params": ["key: string"],
+            "returns": "void"
+          },
+          {
+            "name": "localStore.clear",
+            "description": "Clears all items from localStorage.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "sessionStore.set",
+            "description": "Sets a value in sessionStorage after JSON stringifying it. Can optionally set an expiration time.",
+            "params": ["key: string", "value: any", "ttlSeconds?: number"],
+            "returns": "void"
+          },
+          {
+            "name": "sessionStore.get",
+            "description": "Gets and parses a JSON value from sessionStorage. Returns null if expired.",
+            "params": ["key: string"],
+            "returns": "T | null"
+          },
+          {
+            "name": "sessionStore.remove",
+            "description": "Removes an item from sessionStorage.",
+            "params": ["key: string"],
+            "returns": "void"
+          },
+          {
+            "name": "sessionStore.clear",
+            "description": "Clears all items from sessionStorage.",
+            "params": [],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "cookie-utils",
+        "description": "A set of helper functions for getting, setting, and deleting browser cookies.",
+        "path": "modules/web-apis/cookie-utils.ts",
+        "examplePath": "examples/web-apis/CookieUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "setCookie",
+            "description": "Sets a browser cookie with a name, value, and optional settings.",
+            "params": ["name: string", "value: string", "options?: CookieOptions"],
+            "returns": "void"
+          },
+          {
+            "name": "getCookie",
+            "description": "Gets a cookie's value by its name.",
+            "params": ["name: string"],
+            "returns": "string | null"
+          },
+          {
+            "name": "deleteCookie",
+            "description": "Deletes a cookie by its name.",
+            "params": ["name: string"],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "indexed-db-utils",
+        "description": "A promise-based wrapper for IndexedDB to simplify database operations.",
+        "path": "modules/web-apis/indexed-db-utils.ts",
+        "examplePath": "examples/web-apis/IndexedDBUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "new DBManager(dbName, version)",
+            "description": "Creates a new database manager instance.",
+            "params": ["dbName: string", "version: number"],
+            "returns": "DBManager"
+          },
+          {
+            "name": "db.open(schema)",
+            "description": "Opens the database and creates/updates object stores based on the schema.",
+            "params": ["stores: StoreSchema[]"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "db.add(storeName, data)",
+            "description": "Adds a record to the specified object store.",
+            "params": ["storeName: string", "data: T"],
+            "returns": "Promise<IDBValidKey>"
+          },
+          {
+            "name": "db.update(storeName, data)",
+            "description": "Updates a record in the store (or adds it if it doesn't exist).",
+            "params": ["storeName: string", "data: T"],
+            "returns": "Promise<IDBValidKey>"
+          },
+          {
+            "name": "db.get(storeName, key)",
+            "description": "Retrieves a record by its key.",
+            "params": ["storeName: string", "key: IDBValidKey"],
+            "returns": "Promise<T | undefined>"
+          },
+          {
+            "name": "db.getAll(storeName)",
+            "description": "Retrieves all records from a store.",
+            "params": ["storeName: string"],
+            "returns": "Promise<T[]>"
+          },
+          {
+            "name": "db.delete(storeName, key)",
+            "description": "Deletes a record by its key.",
+            "params": ["storeName: string", "key: IDBValidKey"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "db.clear(storeName)",
+            "description": "Deletes all records from a store.",
+            "params": ["storeName: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "db.close()",
+            "description": "Closes the database connection.",
+            "params": [],
+            "returns": "void"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "File System & I/O",
+    "description": "Utilities for client-side file reading, downloading, and manipulation.",
+    "modules": [
+      {
+        "name": "file-utils",
+        "description": "A collection of helpers for handling files in the browser.",
+        "path": "modules/file-system/file-utils.ts",
+        "examplePath": "examples/file-system/FileUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "readFileAsText",
+            "description": "Reads a File object and returns its content as a string.",
+            "params": ["file: File"],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "readFileAsDataURL",
+            "description": "Reads a File object and returns its content as a Base64 Data URL.",
+            "params": ["file: File"],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "readFileAsArrayBuffer",
+            "description": "Reads a File object and returns its content as an ArrayBuffer for binary data.",
+            "params": ["file: File"],
+            "returns": "Promise<ArrayBuffer>"
+          },
+          {
+            "name": "downloadFile",
+            "description": "Triggers a browser download for the given content.",
+            "params": ["content: string | Blob", "fileName: string", "mimeType: string"],
+            "returns": "void"
+          },
+          {
+            "name": "formatBytes",
+            "description": "Formats a size in bytes to a human-readable string (KB, MB, GB).",
+            "params": ["bytes: number", "decimals?: number"],
+            "returns": "string"
+          },
+          {
+            "name": "getFileExtension",
+            "description": "Extracts the file extension from a filename.",
+            "params": ["fileName: string"],
+            "returns": "string | null"
+          },
+          {
+            "name": "getImageDimensions",
+            "description": "Gets the width and height of an image file or Data URL.",
+            "params": ["source: File | string"],
+            "returns": "Promise<{ width: number; height: number }>"
+          },
+          {
+            "name": "resizeImage",
+            "description": "Resizes an image on the client-side while maintaining aspect ratio.",
+            "params": ["file: File", "options: ResizeImageOptions"],
+            "returns": "Promise<Blob>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Graphics & Canvas",
+    "description": "Tools and utilities for drawing shapes, handling animations, and managing state on an HTML5 canvas.",
+    "modules": [
+      {
+        "name": "canvas-utils",
+        "description": "A set of helper functions for working with the HTML5 Canvas API, simplifying drawing and context management.",
+        "path": "modules/graphics/canvas-utils.ts",
+        "examplePath": "examples/graphics/CanvasUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "getContext",
+            "description": "Safely gets the 2D rendering context from a canvas element.",
+            "params": [
+              "canvas: HTMLCanvasElement | null"
+            ],
+            "returns": "CanvasRenderingContext2D | null"
+          },
+          {
+            "name": "clearCanvas",
+            "description": "Clears the entire canvas.",
+            "params": [
+              "ctx: CanvasRenderingContext2D"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "drawCircle",
+            "description": "Draws a circle on the canvas.",
+            "params": [
+              "ctx: CanvasRenderingContext2D",
+              "x: number",
+              "y: number",
+              "radius: number",
+              "options?: DrawOptions"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "drawRect",
+            "description": "Draws a rectangle on the canvas.",
+            "params": [
+              "ctx: CanvasRenderingContext2D",
+              "x: number",
+              "y: number",
+              "width: number",
+              "height: number",
+              "options?: DrawOptions"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "drawRoundedRect",
+            "description": "Draws a rectangle with rounded corners on the canvas.",
+            "params": [
+              "ctx: CanvasRenderingContext2D",
+              "x: number",
+              "y: number",
+              "width: number",
+              "height: number",
+              "radius: number",
+              "options?: DrawOptions"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "drawLine",
+            "description": "Draws a line on the canvas.",
+            "params": [
+              "ctx: CanvasRenderingContext2D",
+              "x1: number",
+              "y1: number",
+              "x2: number",
+              "y2: number",
+              "options?: DrawOptions"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "drawText",
+            "description": "Draws text on the canvas.",
+            "params": [
+              "ctx: CanvasRenderingContext2D",
+              "text: string",
+              "x: number",
+              "y: number",
+              "options?: TextOptions"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "drawPolygon",
+            "description": "Draws a polygon on the canvas from an array of points.",
+            "params": [
+              "ctx: CanvasRenderingContext2D",
+              "points: { x: number, y: number }[]",
+              "options?: DrawOptions"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "drawImage",
+            "description": "Draws an image, supporting scaling, rotation, and cropping.",
+            "params": [
+              "ctx: CanvasRenderingContext2D",
+              "image: CanvasImageSource",
+              "options?: DrawImageOptions"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "drawVector",
+            "description": "Draws a vector on the canvas from the origin of the current context.",
+            "params": [
+              "ctx: CanvasRenderingContext2D",
+              "v: Vector",
+              "color: string",
+              "label?: string"
+            ],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "color-utils",
+        "description": "A collection of helper functions for color conversions and manipulations.",
+        "path": "modules/graphics/color-utils.ts",
+        "examplePath": "examples/graphics/ColorUtilsExample.tsx",
+        "functions": [
+          {"name": "hexToRgb", "description": "Converts a HEX color string to an RGB object.", "params": ["hex: string"], "returns": "RGBColor | null"},
+          {"name": "rgbToHex", "description": "Converts RGB color components to a HEX color string.", "params": ["r: number", "g: number", "b: number"], "returns": "string"},
+          {"name": "rgbToHsl", "description": "Converts an RGB color value to HSL.", "params": ["r: number", "g: number", "b: number"], "returns": "HSLColor"},
+          {"name": "hslToRgb", "description": "Converts an HSL color value to RGB.", "params": ["h: number", "s: number", "l: number"], "returns": "RGBColor"},
+          {"name": "lightenDarkenColor", "description": "Lightens or darkens a HEX color by a given percentage.", "params": ["hex: string", "percent: number"], "returns": "string"},
+          {"name": "rgba", "description": "Converts a HEX color to an RGBA string with a specified alpha value.", "params": ["hex: string", "alpha: number"], "returns": "string"},
+          {"name": "interpolateColors", "description": "Interpolates between two HEX colors.", "params": ["hex1: string", "hex2: string", "factor: number"], "returns": "string"}
+        ]
+      },
+      {
+        "name": "vector-utils",
+        "description": "A collection of functions for 2D vector math.",
+        "path": "modules/graphics/vector-utils.ts",
+        "examplePath": "examples/graphics/VectorUtilsExample.tsx",
+        "functions": [
+            {"name": "createVector", "description": "Creates a new vector object.", "params": ["x?: number", "y?: number"], "returns": "Vector"},
+            {"name": "add", "description": "Adds two vectors.", "params": ["v1: Vector", "v2: Vector"], "returns": "Vector"},
+            {"name": "subtract", "description": "Subtracts the second vector from the first.", "params": ["v1: Vector", "v2: Vector"], "returns": "Vector"},
+            {"name": "multiply", "description": "Multiplies a vector by a scalar value.", "params": ["v: Vector", "scalar: number"], "returns": "Vector"},
+            {"name": "divide", "description": "Divides a vector by a scalar value.", "params": ["v: Vector", "scalar: number"], "returns": "Vector"},
+            {"name": "magnitude", "description": "Calculates the magnitude (length) of a vector.", "params": ["v: Vector"], "returns": "number"},
+            {"name": "normalize", "description": "Normalizes a vector to a unit length of 1.", "params": ["v: Vector"], "returns": "Vector"},
+            {"name": "dot", "description": "Calculates the dot product of two vectors.", "params": ["v1: Vector", "v2: Vector"], "returns": "number"},
+            {"name": "distance", "description": "Calculates the Euclidean distance between two vectors.", "params": ["v1: Vector", "v2: Vector"], "returns": "number"},
+            {"name": "rotate", "description": "Rotates a vector by a given angle in radians.", "params": ["v: Vector", "angle: number"], "returns": "Vector"},
+            {"name": "lerp", "description": "Linearly interpolates between two vectors.", "params": ["v1: Vector", "v2: Vector", "amount: number"], "returns": "Vector"},
+            {"name": "limit", "description": "Constrains a vector's magnitude to a maximum value.", "params": ["v: Vector", "max: number"], "returns": "Vector"}
+        ]
+      },
+      {
+        "name": "animation-loop",
+        "description": "A utility for creating a clean animation loop with delta time.",
+        "path": "modules/graphics/animation-loop.ts",
+        "examplePath": "examples/graphics/AnimationLoopExample.tsx",
+        "functions": [
+          {
+            "name": "createAnimationLoop",
+            "description": "Creates and manages a clean animation loop using requestAnimationFrame.",
+            "params": ["callback: (deltaTime: number, totalTime: number) => void"],
+            "returns": "AnimationLoop"
+          }
+        ]
+      },
+      {
+        "name": "collision-utils",
+        "description": "Functions for detecting collisions between various 2D shapes.",
+        "path": "modules/graphics/collision-utils.ts",
+        "examplePath": "examples/graphics/CollisionUtilsExample.tsx",
+        "functions": [
+          {"name": "pointInRect", "description": "Checks if a point is inside a rectangle.", "params": ["point: Point", "rect: Rect"], "returns": "boolean"},
+          {"name": "pointInCircle", "description": "Checks if a point is inside a circle.", "params": ["point: Point", "circle: Circle"], "returns": "boolean"},
+          {"name": "rectToRect", "description": "Checks for collision between two rectangles.", "params": ["rect1: Rect", "rect2: Rect"], "returns": "boolean"},
+          {"name": "circleToCircle", "description": "Checks for collision between two circles.", "params": ["circle1: Circle", "circle2: Circle"], "returns": "boolean"},
+          {"name": "rectToCircle", "description": "Checks for collision between a rectangle and a circle.", "params": ["rect: Rect", "circle: Circle"], "returns": "boolean"},
+          {"name": "pointInPolygon", "description": "Checks if a point is inside a polygon.", "params": ["point: Point", "polygon: Point[]"], "returns": "boolean"},
+          {"name": "polygonToPolygon", "description": "Checks for collision between two convex polygons.", "params": ["poly1: Point[]", "poly2: Point[]"], "returns": "boolean"},
+          {"name": "polygonToRect", "description": "Checks for collision between a polygon and a rectangle.", "params": ["polygon: Point[]", "rect: Rect"], "returns": "boolean"},
+          {"name": "polygonToCircle", "description": "Checks for collision between a polygon and a circle.", "params": ["polygon: Point[]", "circle: Circle"], "returns": "boolean"}
+        ]
+      },
+      {
+        "name": "particle-system",
+        "description": "A simple emitter and particle system for creating effects.",
+        "path": "modules/graphics/particle-system.ts",
+        "examplePath": "examples/graphics/ParticleSystemExample.tsx",
+        "functions": [
+          {"name": "createEmitter", "description": "Creates a new ParticleEmitter instance.", "params": ["config: EmitterConfig"], "returns": "ParticleEmitter"},
+          {"name": "emitter.emit(count)", "description": "Emits a number of particles from the emitter's position.", "params": ["count: number"], "returns": "void"},
+          {"name": "emitter.update(deltaTime)", "description": "Updates the state of all particles.", "params": ["deltaTime: number"], "returns": "void"},
+          {"name": "emitter.draw(ctx)", "description": "Draws all particles to the canvas.", "params": ["ctx: CanvasRenderingContext2D"], "returns": "void"},
+          {"name": "emitter.setPosition(x, y)", "description": "Moves the emitter to a new position.", "params": ["x: number", "y: number"], "returns": "void"}
+        ]
+      },
+      {
+        "name": "canvas-effects",
+        "description": "A collection of functions for applying pixel-based effects to a canvas.",
+        "path": "modules/graphics/canvas-effects.ts",
+        "examplePath": "examples/graphics/CanvasEffectsExample.tsx",
+        "functions": [
+          {"name": "applyEffect", "description": "Applies a given effect function to the canvas.", "params": ["ctx: CanvasRenderingContext2D", "effectFn: (imageData: ImageData) => void"], "returns": "void"},
+          {"name": "grayscale", "description": "Converts the canvas image to grayscale.", "params": ["imageData: ImageData"], "returns": "void"},
+          {"name": "sepia", "description": "Applies a sepia tone effect.", "params": ["imageData: ImageData"], "returns": "void"},
+          {"name": "invert", "description": "Inverts the colors of the image.", "params": ["imageData: ImageData"], "returns": "void"},
+          {"name": "brightness", "description": "Adjusts the brightness.", "params": ["imageData: ImageData", "amount: number"], "returns": "void"},
+          {"name": "contrast", "description": "Adjusts the contrast.", "params": ["imageData: ImageData", "amount: number"], "returns": "void"},
+          {"name": "pixelate", "description": "Applies a pixelation effect.", "params": ["imageData: ImageData", "blockSize: number"], "returns": "void"},
+          {"name": "blur", "description": "Applies a box blur effect.", "params": ["imageData: ImageData", "amount: number"], "returns": "void"},
+          {"name": "sharpen", "description": "Applies a sharpening effect.", "params": ["imageData: ImageData"], "returns": "void"},
+          {"name": "edgeDetection", "description": "Applies an edge detection effect.", "params": ["imageData: ImageData"], "returns": "void"}
+        ]
+      },
+      {
+        "name": "canvas-layer-manager",
+        "description": "A manager for handling multiple stacked canvas elements.",
+        "path": "modules/graphics/canvas-layer-manager.ts",
+        "examplePath": "examples/graphics/CanvasLayerManagerExample.tsx",
+        "functions": [
+            {"name": "new LayerManager(container)", "description": "Creates a new manager instance.", "params": ["container: HTMLElement"], "returns": "LayerManager"},
+            {"name": "manager.createLayer(name)", "description": "Creates a new canvas layer.", "params": ["name: string"], "returns": "Layer"},
+            {"name": "manager.getLayer(name)", "description": "Retrieves a layer by its name.", "params": ["name: string"], "returns": "Layer | undefined"},
+            {"name": "manager.reorderLayers(names)", "description": "Reorders layers based on an array of names.", "params": ["names: string[]"], "returns": "void"},
+            {"name": "layer.clear()", "description": "Clears a specific layer.", "params": [], "returns": "void"},
+            {"name": "layer.setVisibility(visible)", "description": "Shows or hides a layer.", "params": ["visible: boolean"], "returns": "void"},
+            {"name": "layer.setOpacity(opacity)", "description": "Sets a layer's opacity.", "params": ["opacity: number"], "returns": "void"}
+        ]
+      },
+      {
+        "name": "noise-utils",
+        "description": "An implementation of the Perlin Noise algorithm for generating procedural textures and patterns.",
+        "path": "modules/graphics/noise-utils.ts",
+        "examplePath": "examples/graphics/NoiseUtilsExample.tsx",
+        "functions": [
+          {"name": "new PerlinNoise(seed)", "description": "Creates a new Perlin noise generator.", "params": ["seed?: number"], "returns": "PerlinNoise"},
+          {"name": "noise.get(x, y)", "description": "Gets the 2D Perlin noise value for a coordinate.", "params": ["x: number", "y: number"], "returns": "number"}
+        ]
+      },
+      {
+        "name": "attractor-utils",
+        "description": "Functions for generating strange attractors like the Clifford attractor.",
+        "path": "modules/graphics/attractor-utils.ts",
+        "examplePath": "examples/graphics/AttractorExample.tsx",
+        "functions": [
+          {"name": "generateCliffordPoints", "description": "A generator that calculates points for a Clifford Attractor.", "params": ["params: CliffordParams", "startX: number", "startY: number", "iterations: number", "batchSize: number"], "returns": "Generator<Vector[]>"}
+        ]
+      },
+      {
+        "name": "l-system",
+        "description": "A utility for generating and interpreting Lindenmayer Systems (L-Systems) to create fractals.",
+        "path": "modules/graphics/l-system.ts",
+        "examplePath": "examples/graphics/LSystemExample.tsx",
+        "functions": [
+          {"name": "generateLSystemString", "description": "Generates the final instruction string for an L-System.", "params": ["axiom: string", "rules: Record<string, string>", "iterations: number"], "returns": "string"},
+          {"name": "interpretLSystem", "description": "A generator that interprets an L-System string and yields drawing commands.", "params": ["system: LSystem", "iterations: number", "initialLength: number", "lengthFactor: number", "startPos: Vector"], "returns": "Generator<DrawCommand>"}
+        ]
+      },
+      {
+        "name": "reaction-diffusion",
+        "description": "A system for simulating Gray-Scott reaction-diffusion patterns.",
+        "path": "modules/graphics/reaction-diffusion.ts",
+        "examplePath": "examples/graphics/ReactionDiffusionExample.tsx",
+        "functions": [
+            {"name": "createReactionDiffusion", "description": "Creates a new reaction-diffusion simulation system.", "params": ["width: number", "height: number", "params: RDSysParams"], "returns": "ReactionDiffusionSystem"},
+            {"name": "system.seed(x, y, radius)", "description": "Adds a concentration of chemical B to an area.", "params": ["x: number", "y: number", "radius: number"], "returns": "void"},
+            {"name": "system.update()", "description": "Performs one iteration of the simulation step.", "params": [], "returns": "void"},
+            {"name": "system.getGrid(chemical)", "description": "Returns the specified chemical grid for rendering.", "params": ["chemical: 'A' | 'B'"], "returns": "number[][]"}
+        ]
+      },
+      {
+        "name": "svg-utils",
+        "description": "A collection of helpers for parsing, manipulating, and creating SVG elements programmatically.",
+        "path": "modules/graphics/svg-utils.ts",
+        "examplePath": "examples/graphics/SVGUtilsExample.tsx",
+        "functions": [
+          {"name": "parseSVG", "description": "Parses an SVG string into an SVGSVGElement.", "params": ["svgString: string"], "returns": "SVGSVGElement | null"},
+          {"name": "serializeSVG", "description": "Serializes an SVGSVGElement back into a string.", "params": ["svgElement: SVGSVGElement"], "returns": "string"},
+          {"name": "applyAttributes", "description": "Applies a set of attributes to an SVG element.", "params": ["element: Element", "attributes: Record<string, any>"], "returns": "void"},
+          {"name": "shapeToPath", "description": "Converts basic SVG shapes to an equivalent <path> element.", "params": ["shapeElement: SVGElement"], "returns": "SVGElement"},
+          {"name": "convertAllShapesToPaths", "description": "Traverses an SVG and converts all basic shapes to paths.", "params": ["svgElement: SVGSVGElement"], "returns": "SVGSVGElement"},
+          {"name": "renderComponent", "description": "Renders a component function into an SVG element.", "params": ["parent: SVGElement", "componentFn: Function", "...args: any[]"], "returns": "SVGElement"}
+        ]
+      }
+    ]
+  },
+  {
+    "category": "State Management",
+    "description": "Tools for managing application state.",
+    "modules": [
+      {
+        "name": "simple-store",
+        "description": "A simple pub/sub store for centralized state management.",
+        "path": "modules/state-management/store.ts",
+        "examplePath": "examples/state-management/StoreExample.tsx",
+        "functions": [
+          {
+            "name": "createStore",
+            "description": "Creates a store object with getState, setState, subscribe, and reset methods.",
+            "params": ["initialState: T"],
+            "returns": "Store<T>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "React Hooks",
+    "description": "Custom React hooks for common patterns and browser API interactions.",
+    "modules": [
+      {
+        "name": "useEventListener",
+        "description": "A React hook that simplifies adding and removing event listeners.",
+        "path": "modules/hooks/use-event-listener.ts",
+        "examplePath": "examples/hooks/UseEventListenerExample.tsx",
+        "functions": [
+          {
+            "name": "useEventListener",
+            "description": "Attaches an event listener to an element or window, with automatic cleanup.",
+            "params": ["eventName: string", "handler: Function", "element?: RefObject<T> | T | null"],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "useCopyToClipboard",
+        "description": "A hook that provides a function to copy text to the clipboard.",
+        "path": "modules/hooks/use-copy-to-clipboard.ts",
+        "examplePath": "examples/hooks/UseCopyToClipboardExample.tsx",
+        "functions": [
+          {
+            "name": "useCopyToClipboard",
+            "description": "Returns the last copied text and a function to copy new text.",
+            "params": [],
+            "returns": "[string | null, (text: string) => Promise<boolean>]"
+          }
+        ]
+      },
+      {
+        "name": "useDebounce",
+        "description": "A hook that debounces a value, useful for delaying expensive operations.",
+        "path": "modules/hooks/use-debounce.ts",
+        "examplePath": "examples/hooks/UseDebounceExample.tsx",
+        "functions": [
+          {
+            "name": "useDebounce",
+            "description": "Debounces a value.",
+            "params": ["value: T", "delay: number"],
+            "returns": "T"
+          }
+        ]
+      },
+      {
+        "name": "useLocalStorage",
+        "description": "A hook that syncs state to localStorage with a useState-like interface.",
+        "path": "modules/hooks/use-local-storage.ts",
+        "examplePath": "examples/hooks/UseLocalStorageExample.tsx",
+        "functions": [
+          {
+            "name": "useLocalStorage",
+            "description": "Syncs state to localStorage.",
+            "params": ["key: string", "initialValue: T"],
+            "returns": "[T, SetValue<T>]"
+          }
+        ]
+      },
+      {
+        "name": "useToggle",
+        "description": "A simple hook for managing boolean state.",
+        "path": "modules/hooks/use-toggle.ts",
+        "examplePath": "examples/hooks/UseToggleExample.tsx",
+        "functions": [
+          {
+            "name": "useToggle",
+            "description": "Returns the current state and a function to toggle it.",
+            "params": ["initialState?: boolean"],
+            "returns": "[boolean, () => void]"
+          }
+        ]
+      }
+    ]
+  }
+]

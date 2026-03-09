@@ -4,7 +4,7 @@
     "dev_ref": {
       "dev_note": "All skillsets used across dictionary files must be registered here to prevent duplicates.",
       "current_skillsets": {
-        "mus": "Music Theory"
+        "mus_th": "Music Theory"
       }
     },
 
@@ -18,7 +18,7 @@
       ],
       "skillsets": [
         {
-          "name": "Music Theory", "id": "mus_theory",
+          "name": "Music Theory", "id": "mus_th",
           "desc": "Specific skillset for measuring musical knowledge, composition techniques, and lyrical analysis.", "force_to_col_id": ["MUS"],
           "levels": [
             {"name": "Listener", "desc": "Understands music primarily through feeling and instinct, without technical vocabulary.", "example": "Knowing a song is 'sad' or 'catchy' without knowing why."},

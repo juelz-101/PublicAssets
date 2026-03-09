@@ -1,0 +1,14 @@
+[
+  {
+    "name": "AudioEffectsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/audio/AudioEffectsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/audio/AudioEffectsExample.tsx"
+  },
+  {
+    "name": "AudioUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/audio/AudioUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/audio/AudioUtilsExample.tsx"
+  }
+]

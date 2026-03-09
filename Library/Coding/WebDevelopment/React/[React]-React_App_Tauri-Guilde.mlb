@@ -1,0 +1,26 @@
+Getting Your React App Running in TauriSince you have your React files (the frontend) ready, follow these steps to turn it into a functional desktop application.1. PrerequisitesBefore you start, ensure you have the following installed on your machine:Rust: rustup.rs (Tauri's engine).Node.js & npm/yarn/pnpm: To manage the React frontend.System Dependencies: * Windows: C++ Build Tools and WebView2.Mac: Xcode Command Line Tools (xcode-select --install).Linux: Various libraries (check Tauri's Linux setup).2. Initialize the Tauri WrapperYou don't just "run" the React folder; you wrap it in a Tauri project. Open your terminal in the folder where you extracted your zip and run:npm install @tauri-apps/cli
+npx tauri init
+During the prompt, use these settings:Window title: Your App NameFrontend dist directory: ./dist (or ./build depending on your React setup).Dev server URL: http://localhost:5173 (if using Vite).3. The Rust Backend (The "Bridge")The AI mentioned it "wired up" the calls to window.__TAURI__.invoke. For those to work, the Rust side needs to know how to handle them.Look in src-tauri/src/main.rs. You will need to define the commands the AI mentioned (like read_dir). Here is a very basic example of what that looks like in Rust:#[tauri::command]
+fn read_dir(path: String) -> String {
+  // Logic to read local files goes here
+  format!("Reading directory: {}", path)
+}
+
+fn main() {
+  tauri::Builder::default()
+    .invoke_handler(tauri::generate_handler![read_dir]) // Register commands here
+    .run(tauri::generate_context!())
+    .expect("error while running tauri application");
+}
+4. Update permissionsTauri is secure by default. If your React app tries to talk to the file system, you must allow it in src-tauri/tauri.conf.json.Find the allowlist section and enable the APIs you need:"allowlist": {
+  "fs": {
+    "all": true,
+    "scope": ["$HOME/**"] 
+  },
+  "shell": {
+    "all": true
+  }
+}
+5. Running the AppOnce everything is configured, run your frontend dev server first, then launch the Tauri window:Terminal 1 (Frontend):npm run dev
+Terminal 2 (Tauri):npx tauri dev
+Summary of Folder StructureYour folder should now look like this:src/ (Your React components)src-tauri/ (The Rust logic and Tauri config)package.jsonindex.html

@@ -1,0 +1,80 @@
+[
+  {
+    "name": "CanvasEffectsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/CanvasEffectsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/CanvasEffectsExample.tsx"
+  },
+  {
+    "name": "AnimationLoopExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/AnimationLoopExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/AnimationLoopExample.tsx"
+  },
+  {
+    "name": "AttractorExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/AttractorExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/AttractorExample.tsx"
+  },
+  {
+    "name": "CanvasLayerManagerExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/CanvasLayerManagerExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/CanvasLayerManagerExample.tsx"
+  },
+  {
+    "name": "CanvasUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/CanvasUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/CanvasUtilsExample.tsx"
+  },
+  {
+    "name": "LSystemExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/LSystemExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/LSystemExample.tsx"
+  },
+  {
+    "name": "CollisionUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/CollisionUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/CollisionUtilsExample.tsx"
+  },
+  {
+    "name": "ColorUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/ColorUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/ColorUtilsExample.tsx"
+  },
+  {
+    "name": "VectorUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/VectorUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/VectorUtilsExample.tsx"
+  },
+  {
+    "name": "SVGUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/SVGUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/SVGUtilsExample.tsx"
+  },
+  {
+    "name": "ParticleSystemExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/ParticleSystemExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/ParticleSystemExample.tsx"
+  },
+  {
+    "name": "ReactionDiffusionExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/ReactionDiffusionExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/ReactionDiffusionExample.tsx"
+  },
+  {
+    "name": "NoiseUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics/NoiseUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/NoiseUtilsExample.tsx"
+  }
+]

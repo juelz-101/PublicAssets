@@ -1,0 +1,158 @@
+Okay, well, we might not always go straight to building a document. We will probably discuss the topic first. So only build the library documents when asked to and if a question is just asked about a subject then don't build a document until you are instructed to. okay with that out the way, can I get a library document for the best? Essential back end tools that off free, to be used with websites or web apps. focusing mainly on react.
+
+Right, instructions understood: I only spit out a full library doc when you explicitly ask for one. You asked, so you’re getting one.
+
+***
+
+Document Title: Essential Free Backend Tools for React Web Apps  
+Version: 1.0  
+Author: Mr G (London)  
+Approved by: (pending)  
+Created date: 05 Feb 2026  
+Location: London, UK  
+Organisation: ZIKYinc  
+
+Page 1: Introduction & Scope  
+Page 2: Backend-as-a-Service (BaaS) Overview  
+Page 3: Supabase – SQL-first Open Source Backend  
+Page 4: Firebase – Mature Managed Backend Platform  
+Page 5: Convex – Reactive Real-time Backend for React  
+Page 6: Appwrite – Self-hosted Open Source Backend  
+Page 7: Free Hosting & Serverless Options (Vercel, Railway, etc.)  
+Page 8: ORMs and Data Layer Tools (Prisma)  
+Page 9: Recommended Stacks by Use Case  
+Page 10: Finishing Page  
+Page 11: References & Tools  
+Page 12: Index  
+Page 13: License  
+
+***
+
+## Page 1: Introduction & Scope
+
+This document covers **essential free backend tools** that work well with websites and web apps built in React, focusing on services with generous free tiers rather than fully paid enterprise platforms.[1][2][3] The emphasis is on tools that let you move quickly: managed backends, hosting platforms, and data-layer helpers that handle authentication, databases, APIs, and serverless logic with minimal boilerplate.[1][4][2]
+
+We are not trying to list every niche product, just a practical short list you can rely on for most early-stage React projects.[1][2][3] Where tools overlap, we’ll call out how they differ so you can pick the one that matches your project constraints (self-host vs hosted, SQL vs NoSQL, real-time vs simple CRUD, etc.).[4][2] All tools mentioned here either have a usable free tier or can be self-hosted for free on commodity infrastructure, though some may charge as you scale.[1][5][3]
+
+***
+
+## Page 2: Backend-as-a-Service (BaaS) Overview
+
+Backend-as-a-Service (BaaS) platforms give you a hosted database, authentication, APIs, and sometimes file storage and real-time features, exposed via SDKs that work cleanly with React.[1][4][2] For solo devs or small teams, this is usually the fastest route to a production-ready backend because the provider handles infrastructure, backups, and much of the security configuration.[1][4]
+
+Typical components you get out of the box include a managed SQL or NoSQL database, REST or GraphQL APIs, user accounts with OAuth providers, role-based or row-level access control, and storage buckets for files.[1][4][2] React apps consume these via official JavaScript SDKs and often dedicated React hooks, which reduces boilerplate and improves type safety in TypeScript projects.[4][2] The trade‑off is vendor lock-in and pricing that ramps up once you pass free-tier limits, which is why choosing a platform with good portability can matter long term.[4][2][3]
+
+***
+
+## Page 3: Supabase – SQL-first Open Source Backend
+
+Supabase is an open-source backend-as-a-service built on PostgreSQL that provides a hosted database, authentication, storage and real-time subscriptions with a generous free tier.[1][4][2] It auto-generates REST APIs for your schema, offers row-level security at the database layer, and includes a dashboard with a SQL editor and table viewer, which makes it easy to inspect and tweak your data model during development.[1][4]
+
+For React developers, Supabase ships a JavaScript SDK (`@supabase/supabase-js`) and React-oriented tooling, including TypeScript types and hooks that integrate well with frameworks like Next.js.[1][2] This lets you implement auth flows, database queries and real‑time subscriptions using idiomatic React patterns without managing your own Node.js API layer for common CRUD cases.[1][4][2] Because Supabase is built on standard Postgres and is open source, you also have the option to migrate to self-hosted Postgres or another platform later without rewriting your entire data model.[1][4]
+
+***
+
+## Page 4: Firebase – Mature Managed Backend Platform
+
+Firebase is a long‑standing BaaS from Google that offers managed databases (Cloud Firestore and Realtime Database), authentication, file storage, cloud functions, and messaging on a free tier suitable for small projects.[1][3] It has strong ecosystem integrations, extensive documentation, and a dashboard that brings all its services—database, auth, storage, analytics—into one place.[1][3]
+
+In React apps, you integrate via the Firebase JavaScript SDK, wiring your components to Firestore or Realtime Database for data and using auth modules for email/password or OAuth sign‑in.[1][3] Firestore’s document-based model fits many typical web app use cases, but it requires different thinking from relational SQL, especially around querying and data structure design.[1][3] Firebase is attractive if you want minimal backend management and are comfortable with Google Cloud lock‑in and a NoSQL data model.[1][3]
+
+***
+
+## Page 5: Convex – Reactive Real-time Backend for React
+
+Convex is a modern backend platform that keeps frontend state automatically in sync with backend data using a TypeScript-first, reactive programming model.[2] It provides real‑time data synchronization so React components stay updated without you hand‑rolling websockets or polling logic.[2]
+
+Convex offers “best-in-class” React hooks and a full TypeScript end‑to‑end experience, which is useful for collaborative apps where many users are editing or viewing shared data in real time.[2] The platform handles reactive updates and real-time events for you, so you focus on writing TypeScript functions that define your backend behavior.[2] The main caveats are that Convex is relatively new, proprietary, and has its own mental model for data and reactivity, so there is a learning curve and less flexibility than running your own database.[2]
+
+***
+
+## Page 6: Appwrite – Self-hosted Open Source Backend
+
+Appwrite is an open-source, self-hostable backend platform that exposes authentication, databases, storage, and functions via a REST API and SDKs.[5] It is designed to give you many of the conveniences of BaaS while letting you run the stack on your own infrastructure if you don’t want to depend on a single cloud vendor.[5]
+
+For React apps, Appwrite provides a JavaScript SDK you can call from the browser or from a Node.js backend, handling login, database operations, and file uploads.[5] Because it is self‑hostable, you can pair Appwrite with low‑cost VPS or container hosting, effectively creating a free or very cheap backend environment once you absorb the operational overhead.[5] This suits teams that value control and on‑prem options over fully managed services.[5]
+
+***
+
+## Page 7: Free Hosting & Serverless Options (Vercel, Railway, etc.)
+
+Beyond dedicated BaaS products, you can host your own backend code for free using platforms that provide serverless functions or containerized app hosting.[5][6] Vercel’s free tier, for example, lets you deploy serverless functions alongside your React frontend, which is ideal for small APIs, webhooks, and auth glue code.[5]
+
+Railway, Fly.io, and similar platforms offer free tiers to run backend services or containers, which can host Express, NestJS, or any custom Node.js/TypeScript backend.[6][5] These services are useful when you outgrow simple BaaS patterns and need bespoke backend logic, but still want to avoid managing full servers.[5] The trade‑off is that free tiers have resource and usage limits, so you need to keep an eye on cold starts, CPU/memory caps, and project quotas.[6][5]
+
+***
+
+## Page 8: ORMs and Data Layer Tools (Prisma)
+
+Prisma is an open-source ORM for Node.js and TypeScript that provides a type-safe query builder, a migration system, and a GUI (Prisma Studio) for visualizing and editing your database.[4][7] You define your schema in Prisma’s DSL and it generates a strongly typed client, which catches many data-layer errors at compile time in a React + TypeScript workflow.[4][7]
+
+Prisma is not a backend‑as‑a‑service; it sits in your own backend code (for example, a Node.js API deployed to Railway or Vercel) and talks to databases like PostgreSQL, MySQL, and MongoDB.[4] You can even use Prisma with Supabase’s Postgres database, combining Supabase’s managed hosting and auth with Prisma’s type-safe queries and migrations.[4][7] This is useful when you want more complex business logic and schema control than a pure BaaS approach usually encourages.[4]
+
+***
+
+## Page 9: Recommended Stacks by Use Case
+
+For a fast MVP with a React frontend and a relational database, Supabase plus React (or Next.js) is a strong choice: Postgres, auth, storage, and real‑time in one package, with a free tier.[1][4][2] If you prefer NoSQL and tight integration with Google’s ecosystem (including analytics and messaging), Firebase plus React and Cloud Functions can get you to production quickly.[1][3]
+
+For highly collaborative, real‑time apps where automatic client syncing matters more than raw flexibility, Convex plus React gives you reactive hooks and zero‑config real‑time out of the box.[2] If you want full control and the ability to self-host, Appwrite plus a React frontend and perhaps Prisma or another ORM on top of a database gives you an open-source stack you can run anywhere.[5][4] When you need custom backend logic with minimal cost, pairing Prisma with a Postgres instance on a free tier host like Railway or Fly.io and deploying your React frontend on Vercel is a pragmatic route.[6][5][4]
+
+***
+
+## Page 10: Finishing Page
+
+In practice, most React teams will be well served by starting with a BaaS (Supabase or Firebase) and only moving to self‑hosted or heavily customized stacks once their domain logic and scale justify the complexity.[1][4][3] Supabase stands out for SQL‑first, open-source flexibility; Firebase for maturity and integrations; Convex for real‑time React ergonomics; Appwrite for self‑hosted control; and Prisma for type‑safe data access in custom backends.[1][4][2][3][7]
+
+You can treat this document as a starting map: pick the stack that most closely matches your current constraints—data model, hosting preferences, team experience—and evolve from there as the project grows.[1][4][2][3] Future library documents can dive deeper into hands‑on setup guides, code examples, and migration patterns between these tools for React applications.[1][4][2]
+
+***
+
+## Page 11: References & Tools
+
+[1] The Best Backend as a Service for your React App https://www.freecodecamp.org/news/best-backend-service-react/
+[2] Best Backend for React Apps 2025: Top 10 BaaS Platforms https://www.backova.com/best-for/react
+[3] Top 10 Free Backend as a Service Providers You Must Know! https://blog.back4app.com/free-backend-as-a-service/
+[4] Supabase vs Prisma: Feature Comparison & Use Cases https://www.leanware.co/insights/supabase-vs-prisma
+[5] Free Backend Hosting: Where to Host Your Code for Free https://ojal.hashnode.dev/13-sites-to-host-your-backend-code-for-free
+[6] Top Free Web Deployment Platforms and Tools for 2026 https://dev.to/vuelancer/2026-free-resources-for-web-development-hoisting-3j2a
+[7] Prisma | Works With Supabase https://supabase.com/partners/integrations/prisma
+[8] LibraryDocsRules.txt https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/28914139/8b035270-546b-4de4-a174-afe007cdc426/LibraryDocsRules.txt
+[9] Beyond Vercel: I compiled a list of free hosting options for ... https://www.reddit.com/r/reactjs/comments/1pxxnqi/beyond_vercel_i_compiled_a_list_of_free_hosting/
+[10] Best React Online Editor 2026 (I Tested 10+) https://playcode.io/blog/best-react-online-editor-2026
+[11] 10 Best Vibe Coding Tools in 2026 https://manus.im/blog/best-vibe-coding-tools
+
+
+- Supabase – Backend as a Service on PostgreSQL: https://supabase.com[4]
+- Supabase: Prisma integration overview: https://supabase.com/partners/integrations/prisma[7]
+- FreeCodeCamp – The Best Backend as a Service for Your React App: https://www.freecodecamp.org/news/best-backend-service-react/[1]
+- Backova – Best Backend for React Apps 2025: https://www.backova.com/best-for/react[2]
+- Back4App – Top Free Backend as a Service Providers: https://blog.back4app.com/free-backend-as-a-service/[3]
+- Free backend hosting platforms (Render, Vercel, Fly.io, etc.): https://ojal.hashnode.dev/13-sites-to-host-your-backend-code-for-free[5]
+- Top free web deployment platforms 2026 (Railway, Netlify, Vercel): https://dev.to/vuelancer/2026-free-resources-for-web-development-hoisting-3j2a[6]
+
+***
+
+## Page 12: Index
+
+Appwrite | Page 6, 9  
+Backend-as-a-Service (BaaS) | Page 2  
+Convex | Page 5, 9  
+Firebase | Page 4, 9  
+Free hosting | Page 7, 9  
+Prisma | Page 8, 9  
+React integration | Page 2, 3, 4, 5, 8, 9  
+Supabase | Page 3, 9  
+Vercel | Page 7, 9  
+
+***
+
+## Page 13: License
+
+MIT License  
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this document and associated documentation files (the “Document”), to deal in the Document without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Document, and to permit persons to whom the Document is furnished to do so, subject to the following conditions:[8]
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Document.[8]
+
+THE DOCUMENT IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.[8] IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE DOCUMENT OR THE USE OR OTHER DEALINGS IN THE DOCUMENT.[8]

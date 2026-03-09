@@ -357,44 +357,7 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/BAT/WinBAT-CheatSheet.mlc"
     }
   ],
-  "Library/Coding/General": [
-    {
-      "name": "[QUK]-Coding_NamingConventions.txt",
-      "ext": "txt",
-      "path": "Library/Coding/General/[QUK]-Coding_NamingConventions.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[QUK]-Coding_NamingConventions.txt"
-    },
-    {
-      "name": "[2D]-Coding_NamingExceptions.txt",
-      "ext": "txt",
-      "path": "Library/Coding/General/[2D]-Coding_NamingExceptions.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[2D]-Coding_NamingExceptions.txt"
-    },
-    {
-      "name": "[2D]-Coding_NamingEnforcement.txt",
-      "ext": "txt",
-      "path": "Library/Coding/General/[2D]-Coding_NamingEnforcement.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[2D]-Coding_NamingEnforcement.txt"
-    },
-    {
-      "name": "[2D]-Coding_RepoNaming.txt",
-      "ext": "txt",
-      "path": "Library/Coding/General/[2D]-Coding_RepoNaming.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[2D]-Coding_RepoNaming.txt"
-    },
-    {
-      "name": "[GEN]-Coding_NamingConventions.txt",
-      "ext": "txt",
-      "path": "Library/Coding/General/[GEN]-Coding_NamingConventions.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[GEN]-Coding_NamingConventions.txt"
-    },
-    {
-      "name": "[CH-GEN]-Coding_NamingConventions.txt",
-      "ext": "txt",
-      "path": "Library/Coding/General/[CH-GEN]-Coding_NamingConventions.txt",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/[CH-GEN]-Coding_NamingConventions.txt"
-    }
-  ],
+  "Library/Coding/General": [],
   "Library/Coding/General/AppDevelopment": [
     {
       "name": "[APP]-EngStandard_CrossPlatformStack.txt",
@@ -429,12 +392,116 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/SystemControl/System_Control-Checklist.mck"
     }
   ],
+  "Library/Coding/General/Naming": [
+    {
+      "name": "[QUK]-Coding_NamingConventions.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/Naming/[QUK]-Coding_NamingConventions.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/Naming/[QUK]-Coding_NamingConventions.txt"
+    },
+    {
+      "name": "[2D]-Coding_NamingExceptions.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/Naming/[2D]-Coding_NamingExceptions.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/Naming/[2D]-Coding_NamingExceptions.txt"
+    },
+    {
+      "name": "[2D]-Coding_NamingEnforcement.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/Naming/[2D]-Coding_NamingEnforcement.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/Naming/[2D]-Coding_NamingEnforcement.txt"
+    },
+    {
+      "name": "[2D]-Coding_RepoNaming.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/Naming/[2D]-Coding_RepoNaming.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/Naming/[2D]-Coding_RepoNaming.txt"
+    },
+    {
+      "name": "[GEN]-Coding_NamingConventions.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/Naming/[GEN]-Coding_NamingConventions.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/Naming/[GEN]-Coding_NamingConventions.txt"
+    },
+    {
+      "name": "[CH-GEN]-Coding_NamingConventions.txt",
+      "ext": "txt",
+      "path": "Library/Coding/General/Naming/[CH-GEN]-Coding_NamingConventions.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/Naming/[CH-GEN]-Coding_NamingConventions.txt"
+    }
+  ],
+  "Library/Coding/General/SelfContainment": [
+    {
+      "name": "[QUK]-Quick_GuideToModularSystems.mla",
+      "ext": "mla",
+      "path": "Library/Coding/General/SelfContainment/[QUK]-Quick_GuideToModularSystems.mla",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/General/SelfContainment/[QUK]-Quick_GuideToModularSystems.mla"
+    }
+  ],
+  "Library/Coding/General/SelfContainment/New folder": [],
   "Library/Coding/CLI": [
     {
       "name": "[CLI]-CommandBuilding.txt",
       "ext": "txt",
       "path": "Library/Coding/CLI/[CLI]-CommandBuilding.txt",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/CLI/[CLI]-CommandBuilding.txt"
+    }
+  ],
+  "Library/Coding/WebDevelopment": [],
+  "Library/Coding/WebDevelopment/React": [
+    {
+      "name": "[DEV]-General_App_Dev-Terms.mld",
+      "ext": "mld",
+      "path": "Library/Coding/WebDevelopment/React/[DEV]-General_App_Dev-Terms.mld",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/WebDevelopment/React/[DEV]-General_App_Dev-Terms.mld"
+    },
+    {
+      "name": "[REACT]-Free_Backend_Tools.mlb",
+      "ext": "mlb",
+      "path": "Library/Coding/WebDevelopment/React/[REACT]-Free_Backend_Tools.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/WebDevelopment/React/[REACT]-Free_Backend_Tools.mlb"
+    },
+    {
+      "name": "[React]-System_Level_Options.mlb",
+      "ext": "mlb",
+      "path": "Library/Coding/WebDevelopment/React/[React]-System_Level_Options.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/WebDevelopment/React/[React]-System_Level_Options.mlb"
+    },
+    {
+      "name": "[React]-React_App_Tauri-Guilde.mlb",
+      "ext": "mlb",
+      "path": "Library/Coding/WebDevelopment/React/[React]-React_App_Tauri-Guilde.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/WebDevelopment/React/[React]-React_App_Tauri-Guilde.mlb"
+    },
+    {
+      "name": "[React]-Running_AI_On_React_Frontend_Free-Guide.mlb",
+      "ext": "mlb",
+      "path": "Library/Coding/WebDevelopment/React/[React]-Running_AI_On_React_Frontend_Free-Guide.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/WebDevelopment/React/[React]-Running_AI_On_React_Frontend_Free-Guide.mlb"
+    }
+  ],
+  "Library/Coding/WebDevelopment/Chrome": [
+    {
+      "name": "[Chrome]-Intro_To_Chrome_Extensions.mlb",
+      "ext": "mlb",
+      "path": "Library/Coding/WebDevelopment/Chrome/[Chrome]-Intro_To_Chrome_Extensions.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/WebDevelopment/Chrome/[Chrome]-Intro_To_Chrome_Extensions.mlb"
+    },
+    {
+      "name": "[Chrome]-Chrome_Extensions_Dict.mld",
+      "ext": "mld",
+      "path": "Library/Coding/WebDevelopment/Chrome/[Chrome]-Chrome_Extensions_Dict.mld",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/WebDevelopment/Chrome/[Chrome]-Chrome_Extensions_Dict.mld"
+    }
+  ],
+  "Library/Coding/OfficeApps": [],
+  "Library/Coding/OfficeApps/Presentations": [],
+  "Library/Coding/OfficeApps/Presentations/Slides": [
+    {
+      "name": "[DB]-G-Slides_BackendReference.mdb",
+      "ext": "mdb",
+      "path": "Library/Coding/OfficeApps/Presentations/Slides/[DB]-G-Slides_BackendReference.mdb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Coding/OfficeApps/Presentations/Slides/[DB]-G-Slides_BackendReference.mdb"
     }
   ],
   "Library/GeneralComputing": [],
@@ -453,18 +520,24 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/DataManagement/FamilyManagement/[tut]-FamilyManagement_Google - Copy.mix"
     }
   ],
-  "Library/GeneralComputing/Hardware": [
+  "Library/GeneralComputing/Keyboard": [
     {
       "name": "KeyboardSymbols.mld",
       "ext": "mld",
-      "path": "Library/GeneralComputing/Hardware/KeyboardSymbols.mld",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Hardware/KeyboardSymbols.mld"
+      "path": "Library/GeneralComputing/Keyboard/KeyboardSymbols.mld",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Keyboard/KeyboardSymbols.mld"
     },
     {
       "name": "[CH-GCPU]-KeyboardSymbols.mlb",
       "ext": "mlb",
-      "path": "Library/GeneralComputing/Hardware/[CH-GCPU]-KeyboardSymbols.mlb",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Hardware/[CH-GCPU]-KeyboardSymbols.mlb"
+      "path": "Library/GeneralComputing/Keyboard/[CH-GCPU]-KeyboardSymbols.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Keyboard/[CH-GCPU]-KeyboardSymbols.mlb"
+    },
+    {
+      "name": "[PC-KB]-Quick_Screenshot-Guide.mlg",
+      "ext": "mlg",
+      "path": "Library/GeneralComputing/Keyboard/[PC-KB]-Quick_Screenshot-Guide.mlg",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Keyboard/[PC-KB]-Quick_Screenshot-Guide.mlg"
     }
   ],
   "Library/FireAndSecurity": [
@@ -736,6 +809,15 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/Gemini/Gemini_Canvas-DatalossPreventions.txt"
     }
   ],
+  "Library/AI/AITraining": [
+    {
+      "name": "New Text Document.txt",
+      "ext": "txt",
+      "path": "Library/AI/AITraining/New Text Document.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/AI/AITraining/New Text Document.txt"
+    }
+  ],
+  "Library/AI/AITraining/TrainAIForFree": [],
   "Library/Music": [],
   "Library/Music/MusicTheory": [
     {
@@ -1718,6 +1800,12 @@
       "ext": "json",
       "path": "Website/lib/community.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community.json"
+    },
+    {
+      "name": "website_restructuring.txt",
+      "ext": "txt",
+      "path": "Website/lib/website_restructuring.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/website_restructuring.txt"
     }
   ],
   "Website/lib/tools": [
@@ -2058,6 +2146,14 @@
       "ext": "json",
       "path": "Website/lib/community/people/lisa/lol.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community/people/lisa/lol.json"
+    }
+  ],
+  "Website/lib/old": [
+    {
+      "name": "music.json",
+      "ext": "json",
+      "path": "Website/lib/old/music.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/old/music.json"
     }
   ],
   "Website/img": [],
@@ -2860,6 +2956,14 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/website_cfg.json"
     }
   ],
+  "Tools/MasterConfigs/backup": [
+    {
+      "name": "website_cfg.json",
+      "ext": "json",
+      "path": "Tools/MasterConfigs/backup/website_cfg.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/backup/website_cfg.json"
+    }
+  ],
   "Data": [],
   "Data/AI": [],
   "Data/AI/CodeAssistant": [],
@@ -2943,6 +3047,15 @@
       "ext": "json",
       "path": "Data/Tools/appdata.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/Tools/appdata.json"
+    }
+  ],
+  "Data/Tools/About": [],
+  "Data/Tools/About/Chrome": [
+    {
+      "name": "md-copier_info.json",
+      "ext": "json",
+      "path": "Data/Tools/About/Chrome/md-copier_info.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Data/Tools/About/Chrome/md-copier_info.json"
     }
   ],
   "Audio": [],
@@ -3048,6 +3161,1555 @@
       "ext": "mp3",
       "path": "Audio/SoundFX/SplashOk.mp3",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Audio/SoundFX/SplashOk.mp3"
+    }
+  ],
+  "Scripts": [],
+  "Scripts/WebDevelopment": [
+    {
+      "name": "v.2.0-react-module-reg_1.zip",
+      "ext": "zip",
+      "path": "Scripts/WebDevelopment/v.2.0-react-module-reg_1.zip",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/v.2.0-react-module-reg_1.zip"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg": [
+    {
+      "name": "metadata.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/metadata.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/metadata.json"
+    },
+    {
+      "name": "App.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/App.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/App.tsx"
+    },
+    {
+      "name": "appdata.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/appdata.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/appdata.json"
+    },
+    {
+      "name": "index.html",
+      "ext": "html",
+      "path": "Scripts/WebDevelopment/ModReg/index.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/index.html"
+    },
+    {
+      "name": "module_register.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register.json"
+    },
+    {
+      "name": "module_register2.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register2.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register2.json"
+    },
+    {
+      "name": "module_register1.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register1.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register1.json"
+    },
+    {
+      "name": "index.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/index.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/index.tsx"
+    },
+    {
+      "name": "module_register3.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register3.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register3.json"
+    },
+    {
+      "name": "module_register5.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register5.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register5.json"
+    },
+    {
+      "name": "module_register6.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register6.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register6.json"
+    },
+    {
+      "name": "module_register4.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register4.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register4.json"
+    },
+    {
+      "name": "module_register7.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register7.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register7.json"
+    },
+    {
+      "name": "module_register8.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register8.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register8.json"
+    },
+    {
+      "name": "module_register9.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register9.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register9.json"
+    },
+    {
+      "name": "package.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/package.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/package.json"
+    },
+    {
+      "name": "register.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/register.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/register.ts"
+    },
+    {
+      "name": "tsconfig.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/tsconfig.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/tsconfig.json"
+    },
+    {
+      "name": "version.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/version.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/version.ts"
+    },
+    {
+      "name": "system_register.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/system_register.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/system_register.json"
+    },
+    {
+      "name": "package-lock.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/package-lock.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/package-lock.json"
+    },
+    {
+      "name": "types.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/types.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/types.ts"
+    },
+    {
+      "name": "vite.config.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/vite.config.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/vite.config.ts"
+    },
+    {
+      "name": "README.md",
+      "ext": "md",
+      "path": "Scripts/WebDevelopment/ModReg/README.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/README.md"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/ai_dev": [
+    {
+      "name": "ai_rules.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/ai_dev/ai_rules.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/ai_rules.json"
+    },
+    {
+      "name": "ai_commands.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/ai_dev/ai_commands.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/ai_commands.json"
+    },
+    {
+      "name": "todo.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/ai_dev/todo.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/todo.json"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/ai_dev/log": [],
+  "Scripts/WebDevelopment/ModReg/ai_dev/log/checkpoints": [
+    {
+      "name": "checkpoint.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/ai_dev/log/checkpoints/checkpoint.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/log/checkpoints/checkpoint.json"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/ai_dev/log/layout": [
+    {
+      "name": "layout.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/ai_dev/log/layout/layout.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/log/layout/layout.json"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/ai_dev/log/update_log": [
+    {
+      "name": "log.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/ai_dev/log/update_log/log.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/log/update_log/log.json"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/ai_dev/log/Dependencies": [
+    {
+      "name": "dependencies.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/ai_dev/log/Dependencies/dependencies.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/log/Dependencies/dependencies.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/app": [],
+  "Scripts/WebDevelopment/ModReg/app/systems": [],
+  "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator": [
+    {
+      "name": "NeuralDataNavigator.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/NeuralDataNavigator.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/NeuralDataNavigator.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components": [
+    {
+      "name": "ConfigPanel.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/ConfigPanel.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/ConfigPanel.tsx"
+    },
+    {
+      "name": "Graph3D.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/Graph3D.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/Graph3D.tsx"
+    },
+    {
+      "name": "DataTree.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/DataTree.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/DataTree.tsx"
+    },
+    {
+      "name": "CameraControls.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/CameraControls.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/CameraControls.tsx"
+    },
+    {
+      "name": "ToolBar.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/ToolBar.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/components/ToolBar.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/utils": [
+    {
+      "name": "DataProcessor.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/utils/DataProcessor.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/systems/neural_data_navigator/utils/DataProcessor.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/app/ui": [
+    {
+      "name": "ParticleBackgroundSystem.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/app/ui/ParticleBackgroundSystem.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/app/ui/ParticleBackgroundSystem.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/components": [
+    {
+      "name": "MobileToolbar.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/MobileToolbar.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/MobileToolbar.tsx"
+    },
+    {
+      "name": "BulkActionModal.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/BulkActionModal.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/BulkActionModal.tsx"
+    },
+    {
+      "name": "HomepageToolbar.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/HomepageToolbar.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/HomepageToolbar.tsx"
+    },
+    {
+      "name": "ModuleListModal.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/ModuleListModal.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/ModuleListModal.tsx"
+    },
+    {
+      "name": "HomepageBackground.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/HomepageBackground.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/HomepageBackground.tsx"
+    },
+    {
+      "name": "ParticleBackground.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/ParticleBackground.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/ParticleBackground.tsx"
+    },
+    {
+      "name": "SystemView.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/SystemView.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/SystemView.tsx"
+    },
+    {
+      "name": "PromptBox.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/PromptBox.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/PromptBox.tsx"
+    },
+    {
+      "name": "SettingsModal.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/SettingsModal.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/SettingsModal.tsx"
+    },
+    {
+      "name": "Welcome.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/Welcome.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/Welcome.tsx"
+    },
+    {
+      "name": "Playground.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/Playground.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/Playground.tsx"
+    },
+    {
+      "name": "Sidebar.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/Sidebar.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/Sidebar.tsx"
+    },
+    {
+      "name": "ModuleView.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/ModuleView.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/ModuleView.tsx"
+    },
+    {
+      "name": "DownloadModal.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/DownloadModal.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/DownloadModal.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/components/icons": [
+    {
+      "name": "DownloadIcon.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/icons/DownloadIcon.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/DownloadIcon.tsx"
+    },
+    {
+      "name": "ChevronDownIcon.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/icons/ChevronDownIcon.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/ChevronDownIcon.tsx"
+    },
+    {
+      "name": "FileIcon.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/icons/FileIcon.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/FileIcon.tsx"
+    },
+    {
+      "name": "FolderIcon.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/icons/FolderIcon.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/FolderIcon.tsx"
+    },
+    {
+      "name": "Squares2X2Icon.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/icons/Squares2X2Icon.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/Squares2X2Icon.tsx"
+    },
+    {
+      "name": "MenuIcon.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/icons/MenuIcon.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/MenuIcon.tsx"
+    },
+    {
+      "name": "HomeIcon.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/icons/HomeIcon.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/HomeIcon.tsx"
+    },
+    {
+      "name": "LabIcon.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/icons/LabIcon.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/LabIcon.tsx"
+    },
+    {
+      "name": "EyeSlashIcon.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/icons/EyeSlashIcon.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/EyeSlashIcon.tsx"
+    },
+    {
+      "name": "SettingsIcon.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/components/icons/SettingsIcon.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/SettingsIcon.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/data": [
+    {
+      "name": "modules.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/data/modules.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/data/modules.json"
+    },
+    {
+      "name": "systems.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/data/systems.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/data/systems.json"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/contexts": [
+    {
+      "name": "ThemeContext.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/contexts/ThemeContext.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/contexts/ThemeContext.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/docs": [
+    {
+      "name": "README_TEMPLATE.md",
+      "ext": "md",
+      "path": "Scripts/WebDevelopment/ModReg/docs/README_TEMPLATE.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/README_TEMPLATE.md"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/docs/ai": [
+    {
+      "name": "db-handler.md",
+      "ext": "md",
+      "path": "Scripts/WebDevelopment/ModReg/docs/ai/db-handler.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ai/db-handler.md"
+    },
+    {
+      "name": "particle-background.md",
+      "ext": "md",
+      "path": "Scripts/WebDevelopment/ModReg/docs/ai/particle-background.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ai/particle-background.md"
+    },
+    {
+      "name": "i18n.md",
+      "ext": "md",
+      "path": "Scripts/WebDevelopment/ModReg/docs/ai/i18n.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ai/i18n.md"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/docs/systems": [
+    {
+      "name": "particle-background.md",
+      "ext": "md",
+      "path": "Scripts/WebDevelopment/ModReg/docs/systems/particle-background.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/systems/particle-background.md"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/docs/internationalization": [
+    {
+      "name": "i18n.md",
+      "ext": "md",
+      "path": "Scripts/WebDevelopment/ModReg/docs/internationalization/i18n.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/internationalization/i18n.md"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/docs/ziky_inc": [
+    {
+      "name": "db-handler.md",
+      "ext": "md",
+      "path": "Scripts/WebDevelopment/ModReg/docs/ziky_inc/db-handler.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ziky_inc/db-handler.md"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples": [],
+  "Scripts/WebDevelopment/ModReg/examples/ai": [
+    {
+      "name": "GeminiChatExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/ai/GeminiChatExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/ai/GeminiChatExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/algorithms": [
+    {
+      "name": "PathfindingExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/algorithms/PathfindingExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/algorithms/PathfindingExample.tsx"
+    },
+    {
+      "name": "SortingUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/algorithms/SortingUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/algorithms/SortingUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/api": [
+    {
+      "name": "GeminiServiceExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/api/GeminiServiceExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/api/GeminiServiceExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/audio": [
+    {
+      "name": "AudioEffectsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/audio/AudioEffectsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/audio/AudioEffectsExample.tsx"
+    },
+    {
+      "name": "AudioUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/audio/AudioUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/audio/AudioUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/async": [
+    {
+      "name": "AsyncUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/async/AsyncUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/async/AsyncUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/cloud": [
+    {
+      "name": "DropboxExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/cloud/DropboxExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/cloud/DropboxExample.tsx"
+    },
+    {
+      "name": "FirebaseStorageExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/cloud/FirebaseStorageExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/cloud/FirebaseStorageExample.tsx"
+    },
+    {
+      "name": "GoogleDriveUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/cloud/GoogleDriveUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/cloud/GoogleDriveUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/concurrency": [
+    {
+      "name": "WorkerUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/concurrency/WorkerUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/concurrency/WorkerUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/automation": [
+    {
+      "name": "PuppeteerHelperExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/automation/PuppeteerHelperExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/automation/PuppeteerHelperExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/data-structures": [
+    {
+      "name": "StackExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/data-structures/StackExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/data-structures/StackExample.tsx"
+    },
+    {
+      "name": "QueueExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/data-structures/QueueExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/data-structures/QueueExample.tsx"
+    },
+    {
+      "name": "LinkedListExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/data-structures/LinkedListExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/data-structures/LinkedListExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/date": [
+    {
+      "name": "DateUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/date/DateUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/date/DateUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/electron": [
+    {
+      "name": "CrashReporterExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/CrashReporterExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/CrashReporterExample.tsx"
+    },
+    {
+      "name": "ClipboardExtendedExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/ClipboardExtendedExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/ClipboardExtendedExample.tsx"
+    },
+    {
+      "name": "AutoUpdaterExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/AutoUpdaterExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/AutoUpdaterExample.tsx"
+    },
+    {
+      "name": "DesktopCapturerExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/DesktopCapturerExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/DesktopCapturerExample.tsx"
+    },
+    {
+      "name": "TaskbarUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/TaskbarUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/TaskbarUtilsExample.tsx"
+    },
+    {
+      "name": "PowerMonitorExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/PowerMonitorExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/PowerMonitorExample.tsx"
+    },
+    {
+      "name": "IpcWrapperExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/IpcWrapperExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/IpcWrapperExample.tsx"
+    },
+    {
+      "name": "SystemInfoExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/SystemInfoExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/SystemInfoExample.tsx"
+    },
+    {
+      "name": "DialogsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/DialogsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/DialogsExample.tsx"
+    },
+    {
+      "name": "GlobalShortcutExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/GlobalShortcutExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/GlobalShortcutExample.tsx"
+    },
+    {
+      "name": "MenuManagerExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/MenuManagerExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/MenuManagerExample.tsx"
+    },
+    {
+      "name": "PowerSaveBlockerExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/PowerSaveBlockerExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/PowerSaveBlockerExample.tsx"
+    },
+    {
+      "name": "FsWrapperExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/FsWrapperExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/FsWrapperExample.tsx"
+    },
+    {
+      "name": "NativeImageExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/NativeImageExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/NativeImageExample.tsx"
+    },
+    {
+      "name": "WindowShellExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/WindowShellExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/WindowShellExample.tsx"
+    },
+    {
+      "name": "WebFrameExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/WebFrameExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/WebFrameExample.tsx"
+    },
+    {
+      "name": "TrayManagerExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/electron/TrayManagerExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/electron/TrayManagerExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/design": [
+    {
+      "name": "LayoutCalculatorExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/design/LayoutCalculatorExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/design/LayoutCalculatorExample.tsx"
+    },
+    {
+      "name": "ThemeManagerExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/design/ThemeManagerExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/design/ThemeManagerExample.tsx"
+    },
+    {
+      "name": "PaletteGeneratorExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/design/PaletteGeneratorExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/design/PaletteGeneratorExample.tsx"
+    },
+    {
+      "name": "GradientGeneratorExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/design/GradientGeneratorExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/design/GradientGeneratorExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/dom": [
+    {
+      "name": "DomUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/dom/DomUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/dom/DomUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/editing": [
+    {
+      "name": "ImageEditorExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/editing/ImageEditorExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/editing/ImageEditorExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/file-system": [
+    {
+      "name": "FileUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/file-system/FileUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/file-system/FileUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/graphics-3d": [
+    {
+      "name": "GeometryPrimitivesExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics-3d/GeometryPrimitivesExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics-3d/GeometryPrimitivesExample.tsx"
+    },
+    {
+      "name": "SceneManagerExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics-3d/SceneManagerExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics-3d/SceneManagerExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/graphics": [
+    {
+      "name": "CanvasEffectsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/CanvasEffectsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/CanvasEffectsExample.tsx"
+    },
+    {
+      "name": "AnimationLoopExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/AnimationLoopExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/AnimationLoopExample.tsx"
+    },
+    {
+      "name": "AttractorExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/AttractorExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/AttractorExample.tsx"
+    },
+    {
+      "name": "CanvasLayerManagerExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/CanvasLayerManagerExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/CanvasLayerManagerExample.tsx"
+    },
+    {
+      "name": "CanvasUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/CanvasUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/CanvasUtilsExample.tsx"
+    },
+    {
+      "name": "LSystemExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/LSystemExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/LSystemExample.tsx"
+    },
+    {
+      "name": "CollisionUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/CollisionUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/CollisionUtilsExample.tsx"
+    },
+    {
+      "name": "ColorUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/ColorUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/ColorUtilsExample.tsx"
+    },
+    {
+      "name": "VectorUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/VectorUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/VectorUtilsExample.tsx"
+    },
+    {
+      "name": "SVGUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/SVGUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/SVGUtilsExample.tsx"
+    },
+    {
+      "name": "ParticleSystemExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/ParticleSystemExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/ParticleSystemExample.tsx"
+    },
+    {
+      "name": "ReactionDiffusionExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/ReactionDiffusionExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/ReactionDiffusionExample.tsx"
+    },
+    {
+      "name": "NoiseUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/graphics/NoiseUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics/NoiseUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/hooks": [
+    {
+      "name": "UseCopyToClipboardExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/hooks/UseCopyToClipboardExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/hooks/UseCopyToClipboardExample.tsx"
+    },
+    {
+      "name": "UseDebounceExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/hooks/UseDebounceExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/hooks/UseDebounceExample.tsx"
+    },
+    {
+      "name": "UseEventListenerExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/hooks/UseEventListenerExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/hooks/UseEventListenerExample.tsx"
+    },
+    {
+      "name": "UseLocalStorageExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/hooks/UseLocalStorageExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/hooks/UseLocalStorageExample.tsx"
+    },
+    {
+      "name": "UseToggleExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/hooks/UseToggleExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/hooks/UseToggleExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/io": [
+    {
+      "name": "ExportUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/io/ExportUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/io/ExportUtilsExample.tsx"
+    },
+    {
+      "name": "ImportUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/io/ImportUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/io/ImportUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/internationalization": [
+    {
+      "name": "I18nExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/internationalization/I18nExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/internationalization/I18nExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/state-management": [
+    {
+      "name": "StoreExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/state-management/StoreExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/state-management/StoreExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/systems": [
+    {
+      "name": "ParticleBackgroundExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/systems/ParticleBackgroundExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/systems/ParticleBackgroundExample.tsx"
+    },
+    {
+      "name": "NeuralDataNavigatorExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/systems/NeuralDataNavigatorExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/systems/NeuralDataNavigatorExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/math": [
+    {
+      "name": "MathUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/math/MathUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/math/MathUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/utilities": [
+    {
+      "name": "LoggerExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/utilities/LoggerExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/utilities/LoggerExample.tsx"
+    },
+    {
+      "name": "ArrayUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/utilities/ArrayUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/utilities/ArrayUtilsExample.tsx"
+    },
+    {
+      "name": "ObjectUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/utilities/ObjectUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/utilities/ObjectUtilsExample.tsx"
+    },
+    {
+      "name": "StringUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/utilities/StringUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/utilities/StringUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/validation": [
+    {
+      "name": "ValidationUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/validation/ValidationUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/validation/ValidationUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/web-apis": [
+    {
+      "name": "CookieUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/web-apis/CookieUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/web-apis/CookieUtilsExample.tsx"
+    },
+    {
+      "name": "StorageUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/web-apis/StorageUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/web-apis/StorageUtilsExample.tsx"
+    },
+    {
+      "name": "IndexedDBUtilsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/web-apis/IndexedDBUtilsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/web-apis/IndexedDBUtilsExample.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/ziky_inc": [
+    {
+      "name": "I-DB_Handler.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/ziky_inc/I-DB_Handler.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/ziky_inc/I-DB_Handler.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules": [],
+  "Scripts/WebDevelopment/ModReg/modules/ai": [
+    {
+      "name": "gemini-chat.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/ai/gemini-chat.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/ai/gemini-chat.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/algorithms": [
+    {
+      "name": "pathfinding.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/algorithms/pathfinding.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/algorithms/pathfinding.ts"
+    },
+    {
+      "name": "sorting-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/algorithms/sorting-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/algorithms/sorting-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/async": [
+    {
+      "name": "async-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/async/async-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/async/async-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/audio": [
+    {
+      "name": "audio-effects.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/audio/audio-effects.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/audio/audio-effects.ts"
+    },
+    {
+      "name": "audio-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/audio/audio-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/audio/audio-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/automation": [
+    {
+      "name": "automation-selectors.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/automation/automation-selectors.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/automation/automation-selectors.ts"
+    },
+    {
+      "name": "puppeteer-helper.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/automation/puppeteer-helper.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/automation/puppeteer-helper.ts"
+    },
+    {
+      "name": "crawl-manager.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/automation/crawl-manager.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/automation/crawl-manager.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/cloud": [
+    {
+      "name": "dropbox-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/cloud/dropbox-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/cloud/dropbox-utils.ts"
+    },
+    {
+      "name": "firebase-storage-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/cloud/firebase-storage-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/cloud/firebase-storage-utils.ts"
+    },
+    {
+      "name": "google-drive-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/cloud/google-drive-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/cloud/google-drive-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/date": [
+    {
+      "name": "date-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/date/date-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/date/date-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/design": [
+    {
+      "name": "theme-presets.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/design/theme-presets.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/design/theme-presets.ts"
+    },
+    {
+      "name": "gradient-generator.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/design/gradient-generator.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/design/gradient-generator.ts"
+    },
+    {
+      "name": "theme-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/design/theme-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/design/theme-utils.ts"
+    },
+    {
+      "name": "palette-generator.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/design/palette-generator.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/design/palette-generator.ts"
+    },
+    {
+      "name": "layout-calculator.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/design/layout-calculator.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/design/layout-calculator.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/data-structures": [
+    {
+      "name": "linked-list.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/data-structures/linked-list.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/data-structures/linked-list.ts"
+    },
+    {
+      "name": "queue.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/data-structures/queue.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/data-structures/queue.ts"
+    },
+    {
+      "name": "stack.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/data-structures/stack.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/data-structures/stack.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/concurrency": [
+    {
+      "name": "worker-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/concurrency/worker-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/concurrency/worker-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/dom": [
+    {
+      "name": "dom-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/dom/dom-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/dom/dom-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/electron": [
+    {
+      "name": "auto-updater.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/auto-updater.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/auto-updater.ts"
+    },
+    {
+      "name": "fs-wrapper.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/fs-wrapper.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/fs-wrapper.ts"
+    },
+    {
+      "name": "global-shortcut.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/global-shortcut.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/global-shortcut.ts"
+    },
+    {
+      "name": "ipc-wrapper.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/ipc-wrapper.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/ipc-wrapper.ts"
+    },
+    {
+      "name": "desktop-capturer.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/desktop-capturer.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/desktop-capturer.ts"
+    },
+    {
+      "name": "dialog-manager.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/dialog-manager.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/dialog-manager.ts"
+    },
+    {
+      "name": "clipboard-extended.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/clipboard-extended.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/clipboard-extended.ts"
+    },
+    {
+      "name": "crash-reporter.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/crash-reporter.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/crash-reporter.ts"
+    },
+    {
+      "name": "power-monitor.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/power-monitor.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/power-monitor.ts"
+    },
+    {
+      "name": "menu-manager.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/menu-manager.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/menu-manager.ts"
+    },
+    {
+      "name": "taskbar-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/taskbar-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/taskbar-utils.ts"
+    },
+    {
+      "name": "power-save-blocker.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/power-save-blocker.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/power-save-blocker.ts"
+    },
+    {
+      "name": "system-info.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/system-info.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/system-info.ts"
+    },
+    {
+      "name": "web-frame.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/web-frame.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/web-frame.ts"
+    },
+    {
+      "name": "native-image.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/native-image.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/native-image.ts"
+    },
+    {
+      "name": "tray-manager.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/tray-manager.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/tray-manager.ts"
+    },
+    {
+      "name": "window-shell-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/electron/window-shell-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/window-shell-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/editing": [
+    {
+      "name": "image-editor.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/editing/image-editor.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/editing/image-editor.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/graphics-3d": [
+    {
+      "name": "camera-controller.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics-3d/camera-controller.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics-3d/camera-controller.ts"
+    },
+    {
+      "name": "geometry-primitives.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics-3d/geometry-primitives.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics-3d/geometry-primitives.ts"
+    },
+    {
+      "name": "scene-manager.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics-3d/scene-manager.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics-3d/scene-manager.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/file-system": [
+    {
+      "name": "file-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/file-system/file-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/file-system/file-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/graphics": [
+    {
+      "name": "animation-loop.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/animation-loop.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/animation-loop.ts"
+    },
+    {
+      "name": "attractor-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/attractor-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/attractor-utils.ts"
+    },
+    {
+      "name": "canvas-layer-manager.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/canvas-layer-manager.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/canvas-layer-manager.ts"
+    },
+    {
+      "name": "canvas-effects.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/canvas-effects.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/canvas-effects.ts"
+    },
+    {
+      "name": "canvas-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/canvas-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/canvas-utils.ts"
+    },
+    {
+      "name": "collision-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/collision-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/collision-utils.ts"
+    },
+    {
+      "name": "l-system.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/l-system.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/l-system.ts"
+    },
+    {
+      "name": "color-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/color-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/color-utils.ts"
+    },
+    {
+      "name": "noise-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/noise-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/noise-utils.ts"
+    },
+    {
+      "name": "reaction-diffusion.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/reaction-diffusion.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/reaction-diffusion.ts"
+    },
+    {
+      "name": "particle-system.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/particle-system.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/particle-system.ts"
+    },
+    {
+      "name": "vector-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/vector-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/vector-utils.ts"
+    },
+    {
+      "name": "svg-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/graphics/svg-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/svg-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/hooks": [
+    {
+      "name": "use-copy-to-clipboard.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/hooks/use-copy-to-clipboard.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/hooks/use-copy-to-clipboard.ts"
+    },
+    {
+      "name": "use-debounce.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/hooks/use-debounce.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/hooks/use-debounce.ts"
+    },
+    {
+      "name": "use-toggle.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/hooks/use-toggle.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/hooks/use-toggle.ts"
+    },
+    {
+      "name": "use-local-storage.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/hooks/use-local-storage.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/hooks/use-local-storage.ts"
+    },
+    {
+      "name": "use-event-listener.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/hooks/use-event-listener.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/hooks/use-event-listener.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/internationalization": [
+    {
+      "name": "i18n.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/internationalization/i18n.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/internationalization/i18n.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/io": [
+    {
+      "name": "export-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/io/export-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/io/export-utils.ts"
+    },
+    {
+      "name": "import-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/io/import-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/io/import-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/math": [
+    {
+      "name": "math-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/math/math-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/math/math-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/utilities": [
+    {
+      "name": "array-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/utilities/array-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/utilities/array-utils.ts"
+    },
+    {
+      "name": "object-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/utilities/object-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/utilities/object-utils.ts"
+    },
+    {
+      "name": "logger.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/utilities/logger.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/utilities/logger.ts"
+    },
+    {
+      "name": "string-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/utilities/string-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/utilities/string-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/playground": [
+    {
+      "name": "virtual-executor.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/playground/virtual-executor.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/playground/virtual-executor.ts"
+    },
+    {
+      "name": "project-manager.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/playground/project-manager.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/playground/project-manager.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/state-management": [
+    {
+      "name": "store.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/state-management/store.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/state-management/store.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/validation": [
+    {
+      "name": "validation-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/validation/validation-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/validation/validation-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/web-apis": [
+    {
+      "name": "cookie-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/web-apis/cookie-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/web-apis/cookie-utils.ts"
+    },
+    {
+      "name": "indexed-db-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/web-apis/indexed-db-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/web-apis/indexed-db-utils.ts"
+    },
+    {
+      "name": "storage-utils.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/web-apis/storage-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/web-apis/storage-utils.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/ziky_inc": [],
+  "Scripts/WebDevelopment/ModReg/modules/ziky_inc/data": [
+    {
+      "name": "db.data.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.data.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.data.json"
+    },
+    {
+      "name": "db.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/ref": [
+    {
+      "name": "appdata_ref.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/ref/appdata_ref.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ref/appdata_ref.json"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/services": [
+    {
+      "name": "geminiService.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/services/geminiService.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/services/geminiService.ts"
     }
   ]
 }

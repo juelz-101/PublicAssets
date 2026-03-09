@@ -1,0 +1,83 @@
+Ok I've made some crutial changes to the structure of the manifest and the data for the sections.
+Heres the list of the changes made, and why I made them:
+
+Manifest:
+	- Root Structure: Restructured the root keys to match the rest of our projects manifests that use our db.ts module.
+		^ The main change being that all of the data-based arrays are now contained within data/ instead of all being in the root.
+	- Player: Added settings for the playback of music, and added default cfg parameters to be used when the item doesnt have the cfg key set.
+	- Flags: Added Global flags to be assigned to items, all categorised for different purposes: 
+		1. Special: Flags to assign items to other sections (ie: featured, new releases)
+		2. Status: Flags to indicate the current status of the item.
+		3. System: Flags to tell the system how the item should be handled.
+		!. Edit: Ive added some more, they are self-explanitory.
+		^. The targets key is to set where the flag can be used. If target key is missing then it can be used anywhere.
+	- Auto-Populate: Added a toggle to auto-populate certain sections during inital loading of the data (ie: Albums tracklists and artists should auto-populate based on the songs data, etc. Items can still be added manually (ie: Assign tracks to albums before the track has been made), with the "overwrite_existing_items" boolean added to set how conflicts with existing items that were added manually are handled. 
+	
+Music.json: (Will apply to other sections aswell)
+	- Replaced "debug", "featured" and "new_release" keys with the "flags" array.
+	- Removed data that is auto-populated, but left an example of an item being added manually (assigned a future song to the track number)
+	
+art.json:
+	- Moved all art arrays into a new array called "galleries" for a cleaner json layout, the UI in the app is to remain how it is now, we only need to add the parent "galleries" array to the paths to load.
+	- Changed the "medium" key within items to "category", as the medium is defined by the parent arrays key.
+	- Added the auto-populate arrays to the artists.
+	- Added the flags to all items.
+	
+gaming.json:
+	- Added developers to root and to each item ready to auto-populate.
+	- Added the flags to all items.
+	
+tools.json:
+	- Added developers to root and to each item ready to auto-populate.
+	- Added the flags to all items
+	
+community.json:
+	- Split the "people" array into people.organisers, people.volunteers and people.guests.
+	- Changed "organised_by" in each event to "people" ready to auto-populate the main people arrays.
+	- Added the flags to all items.
+	
+Note: Forgive me if ive forgotten to list any changes, or have been applied inconsistantly, keep an eye out just in case
+	
+---
+
+Once we are upto date with the new structuring and features we will focus on the following:
+
+Pages:
+	- Fix the interview section view as its currently not being shown correctly.
+	- Allow for anything to be added to the dedicated pages, and provide templates for common sections used within the pages (ie: Lyrics, image galleries, interviews, etc).
+	
+Tools:
+	- Fix the loading of web tools within the container as it currently fails to load. Focusing on QR-Gem.
+	- Setup auto-updating based on the git version of the tool.
+
+Accounts & Userdata:
+	- As a lot of tools use their own databases for their userdata I would like to discuss the possibily of adding user-authentation and cloud-based saving instead of relying on IndexedDB.
+	- Add various account-types allowing for enhanced access: 
+		1. Admin: Access to management tools and debug menus
+		2. Team: Access to project controls, project docs in library and flag management.
+		3. Contributor: Access to bonus features and tools to manage their contributions (if contributing with content)
+		4. User: Basic access to the site and its public features.
+	
+Project Management Tools:
+	- Build collab tools for our team to work together on projects.
+	- Build templates and systems to help ensure all assets made follow the ZIKYinc Production Bible provided in the library.
+	
+MKU Library:
+	- Begin work on the custom text-level parser we are building:
+		1. Finalise the funtionality of each filetype
+		2. Complete the tag definitions
+		3. Create all filetype templates
+		4. Create the parser logic.
+		
+---
+
+Final Notes:
+
+Music:
+	- Tracks are assigned to disks in albums - (ie: music.albums[n].tracklist.cd1[])
+
+Flags:
+	Some flags are assumed if its opposite tag doesnt exist, I will list the assumed tags here:
+		- Team: If the guest flag isnt used then they are a full time member of ZIKYinc.
+		- Free: If the purchase flag isnt used then the item is considered as it has a "free" flag.
+		- More: Im spending way too long on what AI can do in seconds, lets just build and work as we go.

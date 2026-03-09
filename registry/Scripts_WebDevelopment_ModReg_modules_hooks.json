@@ -1,0 +1,32 @@
+[
+  {
+    "name": "use-copy-to-clipboard.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/hooks/use-copy-to-clipboard.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/hooks/use-copy-to-clipboard.ts"
+  },
+  {
+    "name": "use-debounce.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/hooks/use-debounce.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/hooks/use-debounce.ts"
+  },
+  {
+    "name": "use-toggle.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/hooks/use-toggle.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/hooks/use-toggle.ts"
+  },
+  {
+    "name": "use-local-storage.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/hooks/use-local-storage.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/hooks/use-local-storage.ts"
+  },
+  {
+    "name": "use-event-listener.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/hooks/use-event-listener.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/hooks/use-event-listener.ts"
+  }
+]

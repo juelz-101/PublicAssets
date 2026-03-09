@@ -1,0 +1,79 @@
+{
+  "updates": [
+    {
+      "version": "0.3.2",
+      "prompt": "We can build that out more surely",
+      "description": "Expanded 'Automation' with 'automation-selectors' and 'crawl-manager'. Added a Selector Lab to the example page for robust CSS/XPath generation using Gemini."
+    },
+    {
+      "version": "0.4.0",
+      "prompt": "Yoooo we have three.js access now. Lets fix up this background",
+      "description": "Migrated HomepageBackground from Canvas2D wireframes to THREE.js. Implemented high-performance instanced rendering for buildings, an infinite scrolling neon floor, and interactive camera tilting."
+    },
+    {
+      "version": "0.5.0",
+      "prompt": "check the instructions and adjust accordingly",
+      "description": "Initialized ai_dev folder structure, created ai_rules.json and ai_commands.json, and updated appdata.json to match new system instructions."
+    },
+    {
+      "version": "0.6.0",
+      "prompt": "building the foundations to ensure that everything is set up and ready to build files without having to edit the core scripts... Modular Systems",
+      "description": "Implemented the foundation for 'Modular Systems'. Added System types, created system_register.json, implemented SystemView component, and updated Sidebar and BulkActionModal to support system browsing and dependency-aware bundling."
+    },
+    {
+      "version": "0.7.0",
+      "prompt": "Prompts and AI rules... Systems should be added to a root folder called app",
+      "description": "Added 'AI Rules' feature to Modules and Systems, allowing for pre-made AI instructions. Restructured Systems into the 'app/' root folder. Created sample AI rules and updated registers. Implemented example component registry for Systems."
+    },
+    {
+      "version": "0.8.0",
+      "prompt": "Prompts should be displayed in code preview boxes with a button to copy the prompt",
+      "description": "Implemented the 'Prompts' feature. Created PromptBox component with copy-to-clipboard functionality. Updated Module and System interfaces to support a list of prompts. Added sample prompts to the i18n module and Particle Background System."
+    },
+    {
+      "version": "0.9.0",
+      "prompt": "set up new json data files in data/ to be merged, and define the files in the appdata file",
+      "description": "Established the foundation for JSON data syncing. Created data/modules.json and data/systems.json with the requested meta/settings/data/user structure. Updated appdata.json to define these sync files and added GitHub sync to the project TODO."
+    },
+    {
+      "version": "1.0.0",
+      "prompt": "Refactor DataManager to support flexible naming for user data, databases, and defaults.",
+      "description": "Refactored the DataManager class to support multiple naming conventions for configuration keys (e.g., 'user' instead of 'user_data', 'db' instead of 'user_database'). Implemented a more robust search for database and store matching using both IDs and names."
+    },
+    {
+      "version": "1.1.0",
+      "prompt": "Implement Auto-Migration and Data Preservation in DataManager",
+      "description": "Enhanced DBManager and DataManager with auto-migration capabilities. The system now detects schema changes, backs up existing data, upgrades the database, and merges data back into the new schema. Added a stale data cleanup function and a migration failure reporting system."
+    },
+    {
+      "version": "1.2.0",
+      "prompt": "Implement Recursive Data Merging with Source Priority and Fallbacks",
+      "description": "Rebuilt the file merging system in DataManager from scratch. Implemented recursive discovery of new files within merged data, source priority (web vs local), automatic fallbacks, and master overrides via meta.files. Ensured only 'data' and 'settings' are merged, skipping 'meta' keys."
+    },
+    {
+      "version": "1.3.0",
+      "prompt": "Add a 'Data' tab to modules/system pages to display functional and template data.",
+      "description": "Implemented a new 'Data' tab in ModuleView and SystemView. Updated interfaces to support functionalDataPath and templateData. Added logic to fetch and display backend data and JSON templates. Updated registries with example data for I-DB Handler and Particle Background System."
+    },
+    {
+      "version": "1.4.0",
+      "prompt": "Create Documentation and AI Rules for I-DB Handler",
+      "description": "Created comprehensive documentation (`docs/ziky_inc/db-handler.md`) and AI implementation rules (`docs/ai/db-handler.md`) for the I-DB Handler module. Updated `module_register7.json` to link these files and added example prompts for common tasks."
+    },
+    {
+      "version": "1.5.0",
+      "prompt": "Implement Neural Data Navigator system",
+      "description": "Created a 3D visualization system (`app/systems/neural_data_navigator`) for exploring complex JSON data structures. Features include a force-directed graph layout using `three` and `@react-three/fiber`, interactive nodes, orbit controls, and a detailed inspection panel. Added example component and registered system."
+    },
+    {
+      "version": "1.6.0",
+      "prompt": "Add various tasks to the todo list including system view updates, AI instruction refinements, and new system builds.",
+      "description": "Updated `ai_dev/todo.json` with a comprehensive list of new tasks. These include adding a 'Modules Used' tab to SystemView, refining AI instructions for file building, creating project-specific rules, categorizing dev rules, implementing task planning, creating an ai_dev management system, exploring new AI Studio features, and building PowerPrompt tools, Library Docs Viewer, and Content Auto-Processor systems."
+    },
+    {
+      "version": "1.6.1",
+      "prompt": "Fix Neural Data Navigator physics, view modes, and add parameter controls.",
+      "description": "Overhauled `NeuralDataNavigator` and `Graph3D` components. Fixed physics simulation by adding damping and center gravity to prevent nodes from flying off. Implemented `graph`, `tree`, and `cosmos` view modes. Added a `ConfigPanel` with a hovering icon that expands to show 'Visuals' and 'Backend' tabs for real-time parameter adjustment."
+    }
+  ]
+}

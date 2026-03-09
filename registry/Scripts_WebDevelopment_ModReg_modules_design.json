@@ -1,0 +1,32 @@
+[
+  {
+    "name": "theme-presets.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/design/theme-presets.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/design/theme-presets.ts"
+  },
+  {
+    "name": "gradient-generator.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/design/gradient-generator.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/design/gradient-generator.ts"
+  },
+  {
+    "name": "theme-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/design/theme-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/design/theme-utils.ts"
+  },
+  {
+    "name": "palette-generator.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/design/palette-generator.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/design/palette-generator.ts"
+  },
+  {
+    "name": "layout-calculator.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/design/layout-calculator.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/design/layout-calculator.ts"
+  }
+]

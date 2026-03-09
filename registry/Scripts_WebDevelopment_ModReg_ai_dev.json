@@ -1,0 +1,20 @@
+[
+  {
+    "name": "ai_rules.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/ai_dev/ai_rules.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/ai_rules.json"
+  },
+  {
+    "name": "ai_commands.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/ai_dev/ai_commands.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/ai_commands.json"
+  },
+  {
+    "name": "todo.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/ai_dev/todo.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/todo.json"
+  }
+]

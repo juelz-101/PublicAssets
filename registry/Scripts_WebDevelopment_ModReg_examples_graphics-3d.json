@@ -1,0 +1,14 @@
+[
+  {
+    "name": "GeometryPrimitivesExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics-3d/GeometryPrimitivesExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics-3d/GeometryPrimitivesExample.tsx"
+  },
+  {
+    "name": "SceneManagerExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/graphics-3d/SceneManagerExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/graphics-3d/SceneManagerExample.tsx"
+  }
+]

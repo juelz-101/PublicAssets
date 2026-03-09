@@ -1,0 +1,67 @@
+// This file tracks the development progress of modules.
+
+export const completed = {
+  register1: [
+    "utilities/string-utils.ts + example",
+    "utilities/array-utils.ts + example",
+    "utilities/object-utils.ts + example",
+    "services/geminiService.ts + example",
+    "dom/dom-utils.ts + example",
+    "async/async-utils.ts + example",
+    "validation/validation-utils.ts + example",
+    "date/date-utils.ts + example",
+    "web-apis/storage-utils.ts + example",
+    "web-apis/cookie-utils.ts + example",
+    "web-apis/indexed-db-utils.ts + example",
+    "math/math-utils.ts + example",
+    "data-structures/queue.ts + example",
+    "data-structures/stack.ts + example",
+    "data-structures/linked-list.ts + example",
+    "state-management/store.ts + example",
+    "algorithms/sorting-utils.ts + example",
+    "algorithms/pathfinding.ts + example",
+    "graphics/canvas-utils.ts + example",
+    "graphics/color-utils.ts + example",
+    "graphics/vector-utils.ts + example",
+    "graphics/animation-loop.ts + example",
+    "graphics/collision-utils.ts + example",
+    "graphics/particle-system.ts + example",
+    "graphics/canvas-effects.ts + example",
+    "graphics/canvas-layer-manager.ts + example",
+    "graphics/noise-utils.ts + example",
+    "graphics/attractor-utils.ts + example",
+    "graphics/l-system.ts + example",
+    "graphics/reaction-diffusion.ts + example",
+    "graphics/svg-utils.ts + example",
+    "hooks/use-event-listener.ts + example",
+    "hooks/use-copy-to-clipboard.ts + example",
+    "hooks/use-debounce.ts + example",
+    "hooks/use-local-storage.ts + example",
+    "hooks/use-toggle.ts + example",
+    "file-system/file-utils.ts + example",
+    "utilities/logger.ts + example",
+    "ai/gemini-chat.ts + example",
+    "editing/image-editor.ts + example",
+  ],
+  register2: [
+    "audio/audio-utils.ts + example",
+    "audio/audio-effects.ts + example",
+    "io/import-utils.ts + example",
+    "io/export-utils.ts + example",
+    "concurrency/worker-utils.ts + example",
+    "design/palette-generator.ts + example",
+    "design/gradient-generator.ts + example",
+    "design/layout-calculator.ts + example",
+    "internationalization/i18n.ts + example",
+  ],
+  register9: [
+    "automation/puppeteer-helper.ts + example",
+    "automation/automation-selectors.ts",
+    "automation/crawl-manager.ts"
+  ]
+};
+
+export const incompleted = {
+  register1: [],
+  register2: [],
+};

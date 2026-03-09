@@ -1,0 +1,32 @@
+[
+  {
+    "name": "UseCopyToClipboardExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/hooks/UseCopyToClipboardExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/hooks/UseCopyToClipboardExample.tsx"
+  },
+  {
+    "name": "UseDebounceExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/hooks/UseDebounceExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/hooks/UseDebounceExample.tsx"
+  },
+  {
+    "name": "UseEventListenerExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/hooks/UseEventListenerExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/hooks/UseEventListenerExample.tsx"
+  },
+  {
+    "name": "UseLocalStorageExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/hooks/UseLocalStorageExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/hooks/UseLocalStorageExample.tsx"
+  },
+  {
+    "name": "UseToggleExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/hooks/UseToggleExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/hooks/UseToggleExample.tsx"
+  }
+]

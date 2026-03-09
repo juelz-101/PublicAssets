@@ -1,0 +1,64 @@
+{
+  "meta": {},
+
+  "data": {
+    "dev_ref": {
+      "dev_note": "Dictionary for system-level access options for React frontends: browser APIs, desktop wrappers, native companions, and device APIs.[file:1]",
+      "current_skillsets": {
+        "frontend_arch": "Frontend Architecture",
+        "desktop_wrappers": "Desktop Wrapper Frameworks",
+        "browser_capabilities": "Browser Capability APIs",
+        "native_integration": "Native Integration Patterns"
+      }
+    },
+
+    "dictionary": {
+      "desc": [
+        "Key terms and concepts used when giving a React frontend system-level access to files, devices, and heavy processing capabilities.[web:22][web:24][web:27][web:28][web:31]"
+      ],
+
+      "skillsets": [
+        {"id": "frontend_arch", "name": "Frontend Architecture", "desc": "Architectural patterns for React frontends that interact with local system resources.", "example": "Choosing between a pure web app and a desktop wrapper for file-heavy workflows."},
+        {"id": "desktop_wrappers", "name": "Desktop Wrapper Frameworks", "desc": "Frameworks that package web frontends as desktop apps with system-level access.", "example": "Using Electron or Tauri to build a cross-platform desktop app with a React UI."},
+        {"id": "browser_capabilities", "name": "Browser Capability APIs", "desc": "Modern browser APIs that expose limited system-like capabilities with user consent.", "example": "Using the File System Access API to read and write local files from a React app."},
+        {"id": "native_integration", "name": "Native Integration Patterns", "desc": "Patterns for combining React with native code and local services.", "example": "Running a Rust daemon that exposes a local HTTP API consumed by a React UI."}
+      ],
+
+      "collections": [
+        {
+          "id": "react_system_access_core",
+          "name": "React System Access – Core Concepts",
+          "desc": "Core techniques for extending a React frontend beyond normal browser sandbox limits.",
+          "skillset_ids": ["frontend_arch","desktop_wrappers","browser_capabilities","native_integration"],
+          "levels": [
+            {"name": "Beginner", "desc": "Can explain high-level options but has not implemented them.", "example": "Knows the difference between a web app and an Electron app."},
+            {"name": "Intermediate", "desc": "Has built at least one app using browser APIs or a desktop wrapper for system access.", "example": "Shipped a React + Electron tool that reads local files."},
+            {"name": "Advanced", "desc": "Designs secure, multi-platform architectures combining web, desktop, and native services.", "example": "Maintains a Tauri app with a Rust core and a React UI for device control."}
+          ],
+          "difficulties": [
+            {"name": "Easy", "desc": "Straightforward API usage with minimal security implications.", "example": "Using a file picker to upload a single file."},
+            {"name": "Moderate", "desc": "Requires understanding of permissions and background processing.", "example": "Using File System Access API with Workers for local document editing."},
+            {"name": "Hard", "desc": "Touches native code, local services, or complex security boundaries.", "example": "Designing a local companion service that safely exposes system operations to a UI."}
+          ],
+          "terms": [
+            {"name": "Browser sandbox", "others": ["web sandbox","sandboxed environment"], "level": "Beginner", "difficulty": "Easy", "skillset_id": "frontend_arch", "desc": "The security model that isolates web pages from the underlying operating system, preventing arbitrary file and system access by default.[web:22][web:24]", "example": "A React app running in the browser cannot list system directories because it is confined to the browser sandbox."},
+            {"name": "File System Access API", "others": ["File System API","Native file system API"], "level": "Intermediate", "difficulty": "Moderate", "skillset_id": "browser_capabilities", "desc": "A browser API that lets web apps read and write local files and directories after explicit user permission, typically via file and folder pickers.[web:22][web:24][web:25]", "example": "A React-based text editor uses the File System Access API to open a local folder and save edits directly without uploading files to a server."},
+            {"name": "Persistent file handle", "others": ["file handle","FileSystemFileHandle"], "level": "Intermediate", "difficulty": "Moderate", "skillset_id": "browser_capabilities", "desc": "An object representing a user-selected file or directory that can be reused across sessions (with user consent) to provide seamless local file access.[web:22][web:24]", "example": "The app stores a persistent file handle so the user can click 'Save' in React without reopening the file picker every time."},
+            {"name": "Web Worker", "others": ["Worker thread","background script"], "level": "Intermediate", "difficulty": "Moderate", "skillset_id": "browser_capabilities", "desc": "A browser feature that allows JavaScript to run in a background thread, keeping the main UI thread responsive during heavy computation.[web:29]", "example": "A React app parses large log files in a Web Worker so the UI does not freeze while processing lines."},
+            {"name": "WebAssembly", "others": ["WASM"], "level": "Advanced", "difficulty": "Hard", "skillset_id": "browser_capabilities", "desc": "A low-level binary format that lets compiled languages like C, C++, and Rust run in the browser with near-native performance inside the sandbox.[web:28][web:29]", "example": "Rust code compiled to WebAssembly processes large binary files in a React app without needing a native desktop client."},
+            {"name": "Electron", "others": ["Electron app","Electron main process"], "level": "Intermediate", "difficulty": "Moderate", "skillset_id": "desktop_wrappers", "desc": "A framework that bundles Chromium and Node.js so web technologies like React can be used to build desktop apps with access to file system and OS APIs.[web:27][web:31]", "example": "An Electron + React application reads and writes files using Node's fs module, while the renderer communicates with the main process via IPC."},
+            {"name": "Electron main process", "others": ["main process","Electron backend"], "level": "Intermediate", "difficulty": "Moderate", "skillset_id": "desktop_wrappers", "desc": "The privileged Node.js process in an Electron app that manages windows and handles system-level operations such as file access and process spawning.[web:27][web:31]", "example": "The React renderer sends an IPC message to the Electron main process to request a directory scan."},
+            {"name": "Tauri", "others": ["Tauri app"], "level": "Intermediate", "difficulty": "Moderate", "skillset_id": "desktop_wrappers", "desc": "A lightweight desktop framework that pairs a webview frontend (such as React) with a Rust backend, emphasizing small binaries and strict permission controls.[web:28]", "example": "A Tauri + React app calls Rust commands to move and rename files on the user’s machine."},
+            {"name": "Tauri command", "others": ["Rust command","Tauri backend function"], "level": "Intermediate", "difficulty": "Moderate", "skillset_id": "desktop_wrappers", "desc": "A Rust function exposed over Tauri's IPC bridge that can perform privileged operations like file I/O or heavy processing when invoked from the frontend.[web:28]", "example": "The React UI triggers a Tauri command to batch-compress selected files."},
+            {"name": "Native companion service", "others": ["local daemon","local backend service"], "level": "Advanced", "difficulty": "Hard", "skillset_id": "native_integration", "desc": "A separate native process that exposes a local API (HTTP, WebSocket, or custom IPC) for system operations consumed by a React-based UI.[web:28][web:31]", "example": "A Go service runs on localhost, exposing endpoints for file indexing that a React web app calls via fetch."},
+            {"name": "Local API", "others": ["localhost API","loopback API"], "level": "Intermediate", "difficulty": "Moderate", "skillset_id": "native_integration", "desc": "An API bound to the local machine (often on 127.0.0.1) that allows a React UI to interact with native components without exposing them over the public network.[web:28][web:31]", "example": "The desktop installer sets up a local HTTP API that the React UI uses to trigger system scans."},
+            {"name": "WebUSB", "others": ["USB API"], "level": "Advanced", "difficulty": "Hard", "skillset_id": "browser_capabilities", "desc": "A browser API that lets websites communicate with USB devices after explicit user permission, typically used for configuration and data transfer.[web:29][web:31]", "example": "A React tool uses WebUSB to configure a connected microcontroller board directly from the browser."},
+            {"name": "WebSerial", "others": ["Serial API","Web serial port"], "level": "Advanced", "difficulty": "Hard", "skillset_id": "browser_capabilities", "desc": "A browser API that allows web apps to read and write from serial ports, enabling communication with devices like microcontrollers and sensors.[web:29][web:31]", "example": "A React dashboard streams data from a serial-connected sensor using WebSerial."},
+            {"name": "IPC (Inter-Process Communication)", "others": ["process messaging","renderer-main messaging"], "level": "Intermediate", "difficulty": "Moderate", "skillset_id": "desktop_wrappers", "desc": "Mechanisms that allow different processes or contexts (such as Electron renderer and main process) to exchange messages and data safely.[web:27][web:31]", "example": "React sends an IPC message to request a directory listing and receives the results asynchronously."},
+            {"name": "Permission prompt", "others": ["permission dialog","capability prompt"], "level": "Beginner", "difficulty": "Easy", "skillset_id": "browser_capabilities", "desc": "A browser or desktop dialog that asks the user to grant access to capabilities such as files, devices, or APIs.[web:22][web:24][web:31]", "example": "When the React app first tries to access a USB device, the browser shows a permission prompt listing the device."}
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "name": "Chrome Extensions Dictionary",
+    "desc": "Core terminology for building Chrome extensions with Manifest V3, including structure, permissions, scripting, UI components, storage, and publishing.",
+    "version": "1.0.0"
+  },
+  "data": {
+    "dev_ref": {
+      "current_skillsets": {
+        "ce_core": "Chrome Extensions – Core Concepts"
+      }
+    },
+    "dictionary": {
+      "skillsets": [
+        {
+          "id": "ce_core",
+          "name": "Chrome Extensions – Core Concepts",
+          "levels": [
+            { "name": "Beginner", "desc": "Understands basic structure and usage of extensions.", "example": "Can identify what manifest.json does." },
+            { "name": "Novice", "desc": "Can build simple MV3 extensions with popups and content scripts.", "example": "Creates a popup that changes page background color." },
+            { "name": "Intermediate", "desc": "Designs clean data flow and permissions for production use.", "example": "Implements storage.sync with proper messaging." },
+            { "name": "Advanced", "desc": "Optimises performance, security, and cross-browser behaviour.", "example": "Uses alarms and service worker lifecycle correctly." },
+            { "name": "Expert", "desc": "Architects complex extension suites and tooling around them.", "example": "Builds multi-extension ecosystems with shared storage." }
+          ],
+          "difficulties": [
+            { "name": "Very Simple", "desc": "Basic concept everyone understands.", "example": "What is a Chrome extension?" },
+            { "name": "Simple", "desc": "Commonly used when building basic extensions.", "example": "Setting up manifest.json basics." },
+            { "name": "Moderate", "desc": "Requires some hands-on experience.", "example": "Content script messaging patterns." },
+            { "name": "Complex", "desc": "Involves multiple APIs or moving parts.", "example": "Background service worker coordination." },
+            { "name": "Advanced", "desc": "Architectural or security-sensitive topic.", "example": "Least privilege permission design." }
+          ]
+        }
+      ],
+      "collections": [
+        {
+          "name": "Chrome Extensions – Fundamentals", "id": "ce_fundamentals", "s_set": "ce_core",
+          "desc": "Fundamental terminology for working with Chrome extensions using Manifest V3, aligned with the Intro to Chrome Extensions guide.",
+          "terms": [
+            {
+              "name": "Chrome extension",
+              "others": ["Browser extension", "Extension"],
+              "category": "Core Concepts",
+              "sub": "Definition and Purpose",
+              "definition": "A small browser‑integrated application that extends Chrome’s behaviour by using extension APIs, manifest configuration, and web technologies rather than running as a standalone program.",
+              "example": "An ad blocker Chrome extension modifies page content in the browser to hide advertising elements while you browse.",
+              "level": 1,
+              "difficulty": 1
+            },
+            {
+              "name": "Manifest V3",
+              "others": ["MV3", "Manifest version 3"],
+              "category": "Core Concepts",
+              "sub": "Manifest Versions",
+              "definition": "The current Chrome extension manifest schema that replaces persistent background pages with service workers, tightens Content Security Policy, and introduces explicit host_permissions and scripting APIs.",
+              "example": "When creating a new extension, you set \"manifest_version\": 3 in manifest.json to target Manifest V3.",
+              "level": 2,
+              "difficulty": 2
+            },
+            {
+              "name": "manifest.json",
+              "others": ["Extension manifest", "Manifest file"],
+              "category": "Core Concepts",
+              "sub": "Configuration",
+              "definition": "The JSON configuration file in the root of an extension that declares metadata, permissions, scripts, UI entry points, and other behaviour that Chrome needs to load and run the extension.",
+              "example": "The manifest.json file links popup.html to the toolbar icon via the action.default_popup key.",
+              "level": 1,
+              "difficulty": 1
+            },
+            {
+              "name": "Action API",
+              "others": ["Toolbar action", "Browser action (MV3)"],
+              "category": "UI Components",
+              "sub": "Toolbar UI",
+              "definition": "The Manifest V3 API and manifest keys that control the main toolbar icon, including its popup, title, icon, and badge state.",
+              "example": "Using the Action API, the extension updates its badge text to show the number of blocked items on the current tab.",
+              "level": 2,
+              "difficulty": 2
+            },
+            {
+              "name": "Popup",
+              "others": ["Popup UI", "Extension popup"],
+              "category": "UI Components",
+              "sub": "Popup Behaviour",
+              "definition": "A small HTML window attached to the extension’s toolbar icon that opens when the user clicks the action and closes when it loses focus.",
+              "example": "The popup lets users toggle the extension on or off for the current site and displays a quick status summary.",
+              "level": 1,
+              "difficulty": 1
+            },
+            {
+              "name": "Options page",
+              "others": ["Options UI", "Settings page"],
+              "category": "UI Components",
+              "sub": "Configuration Pages",
+              "definition": "A dedicated HTML page, opened in a tab or dialog, that provides a richer interface for managing an extension’s settings and preferences.",
+              "example": "The options page allows users to configure which domains the extension should run on and what shortcuts it uses.",
+              "level": 2,
+              "difficulty": 2
+            },
+            {
+              "name": "Background service worker",
+              "others": ["Background worker", "Extension service worker"],
+              "category": "Execution Model",
+              "sub": "Background Logic",
+              "definition": "A non‑persistent service worker script that runs in the background, handles events like installs, alarms, messages, and action clicks, and coordinates logic across the extension.",
+              "example": "The background service worker listens for chrome.alarms events to periodically sync data from an API.",
+              "level": 3,
+              "difficulty": 3
+            },
+            {
+              "name": "Content script",
+              "others": ["Injected script", "Page script (extension)"],
+              "category": "Execution Model",
+              "sub": "Page Interaction",
+              "definition": "A script that runs in the context of web pages, can read and modify the DOM, and communicates with the extension via messaging while remaining in an isolated extension environment.",
+              "example": "A content script highlights all occurrences of a keyword on the current page and sends statistics back to the background worker.",
+              "level": 2,
+              "difficulty": 2
+            },
+            {
+              "name": "Permissions",
+              "others": ["API permissions", "Extension permissions"],
+              "category": "Security and Permissions",
+              "sub": "API Access",
+              "definition": "Declared capabilities in the manifest that grant an extension access to specific Chrome APIs such as storage, tabs, or scripting, and are surfaced to users through install and update prompts.",
+              "example": "The extension requests the storage permission so it can save user preferences in chrome.storage.local.",
+              "level": 2,
+              "difficulty": 2
+            },
+            {
+              "name": "Host permissions",
+              "others": ["Origin permissions", "URL permissions"],
+              "category": "Security and Permissions",
+              "sub": "Site Access",
+              "definition": "Manifest declarations that specify which website origins an extension is allowed to access or inject scripts into, typically expressed as URL match patterns.",
+              "example": "By declaring host permissions for https://*.example.com/*, the extension is allowed to inject content scripts into pages under example.com.",
+              "level": 3,
+              "difficulty": 3
+            },
+            {
+              "name": "Least privilege",
+              "others": ["Least privilege principle"],
+              "category": "Security and Permissions",
+              "sub": "Security Principles",
+              "definition": "A design principle where an extension requests only the minimal permissions and host access it needs to function, reducing risk and user distrust.",
+              "example": "Instead of requesting <all_urls>, the extension follows least privilege and requests access only to the two domains it actually modifies.",
+              "level": 3,
+              "difficulty": 3
+            },
+            {
+              "name": "chrome.storage",
+              "others": ["Storage API", "Extension storage"],
+              "category": "Data and Storage",
+              "sub": "State Management",
+              "definition": "The asynchronous storage API for extensions that provides local, sync, and session storage areas for persisting configuration and small datasets.",
+              "example": "The extension uses chrome.storage.sync so that a user’s enabled sites configuration follows them across devices.",
+              "level": 2,
+              "difficulty": 2
+            },
+            {
+              "name": "Unpacked extension",
+              "others": ["Development extension", "Unpacked load"],
+              "category": "Tooling and Distribution",
+              "sub": "Development Workflow",
+              "definition": "An extension loaded directly from a folder via the extensions page during development, without being zipped or published to the Chrome Web Store.",
+              "example": "While iterating on the manifest, the developer keeps the project as an unpacked extension and reloads it from chrome://extensions.",
+              "level": 1,
+              "difficulty": 1
+            },
+            {
+              "name": "Packaged extension",
+              "others": ["Packed extension", "Release ZIP"],
+              "category": "Tooling and Distribution",
+              "sub": "Packaging",
+              "definition": "A zipped version of the extension’s folder, with manifest.json at the root, used for distribution via the Chrome Web Store or enterprise deployment.",
+              "example": "Before submitting to the store, the team builds a clean dist folder and creates a packaged extension ZIP from its contents.",
+              "level": 2,
+              "difficulty": 2
+            },
+            {
+              "name": "Chrome Web Store review",
+              "others": ["Extension review", "Web Store approval"],
+              "category": "Tooling and Distribution",
+              "sub": "Compliance",
+              "definition": "The automated and manual review process Google uses to check an extension for policy compliance, security issues, and accurate descriptions before publishing.",
+              "example": "The extension passed Chrome Web Store review after the developers tightened host permissions and clarified their data usage in the description.",
+              "level": 3,
+              "difficulty": 3
+            }
+          ],
+          "categories": [
+            {
+              "name": "Core Concepts",
+              "desc": "High‑level concepts that define what Chrome extensions are and how they are configured.",
+              "subs": [
+                { "name": "Definition and Purpose", "desc": "What extensions are for and how they are used by end users.", "example": "Basic explanation of how an ad blocker or password manager plugs into the browser." },
+                { "name": "Manifest Versions", "desc": "Different manifest schema versions such as V2 and V3 and what they imply.", "example": "Comparing Manifest V2 persistent backgrounds with MV3 service workers." },
+                { "name": "Configuration", "desc": "How core settings, metadata, and entry points are declared for an extension.", "example": "Using manifest.json keys to register a popup and background worker." }
+              ]
+            },
+            {
+              "name": "UI Components",
+              "desc": "Visual entry points and interfaces exposed by an extension in Chrome’s UI.",
+              "subs": [
+                { "name": "Toolbar UI", "desc": "The main toolbar icon and its immediate behaviour.", "example": "Showing a badge count and handling the user’s click on the action icon." },
+                { "name": "Popup Behaviour", "desc": "How popup windows behave, render, and interact with other extension parts.", "example": "Using a popup to trigger scripts on the current tab." },
+                { "name": "Configuration Pages", "desc": "Full‑page UIs for editing settings and preferences.", "example": "An options page that lets users choose which sites the extension should modify." }
+              ]
+            },
+            {
+              "name": "Execution Model",
+              "desc": "How different scripts in an extension run, communicate, and interact with pages.",
+              "subs": [
+                { "name": "Background Logic", "desc": "Longer‑lived logic and event handling running outside web pages.", "example": "A service worker responding to alarms and messages." },
+                { "name": "Page Interaction", "desc": "Code that directly reads or manipulates the DOM of visited websites.", "example": "Content scripts injecting UI overlays into article pages." }
+              ]
+            },
+            {
+              "name": "Security and Permissions",
+              "desc": "How extensions request, limit, and justify access to APIs and sites.",
+              "subs": [
+                { "name": "API Access", "desc": "Permissions that enable specific Chrome extension APIs.", "example": "Requesting the tabs permission to read tab URLs." },
+                { "name": "Site Access", "desc": "Permissions that govern which hosts an extension may interact with.", "example": "Limiting host access to a small set of customer domains." },
+                { "name": "Security Principles", "desc": "Guiding practices for safe extension design and deployment.", "example": "Applying least privilege when deciding which permissions to request." }
+              ]
+            },
+            {
+              "name": "Data and Storage",
+              "desc": "Concepts related to storing, syncing, and securing extension data.",
+              "subs": [
+                { "name": "State Management", "desc": "Where and how an extension stores its configuration and runtime state.", "example": "Using chrome.storage.sync for preferences and storage.local for cached data." }
+              ]
+            },
+            {
+              "name": "Tooling and Distribution",
+              "desc": "Workflows and concepts around building, packaging, and shipping extensions.",
+              "subs": [
+                { "name": "Development Workflow", "desc": "How developers run and iterate on extensions locally.", "example": "Loading unpacked code from a local folder during active development." },
+                { "name": "Packaging", "desc": "Producing distributable builds and bundles of the extension.", "example": "Creating a versioned ZIP ready for upload to the Web Store." },
+                { "name": "Compliance", "desc": "Meeting Chrome Web Store policies and enterprise requirements.", "example": "Preparing documentation and privacy disclosures for review." }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

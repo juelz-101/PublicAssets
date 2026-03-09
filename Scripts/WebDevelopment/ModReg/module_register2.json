@@ -1,0 +1,276 @@
+
+[
+  {
+    "category": "Audio",
+    "description": "Utilities for working with the Web Audio API, including sound generation and analysis.",
+    "modules": [
+      {
+        "name": "audio-utils",
+        "description": "A collection of helpers for sound synthesis, microphone input, and audio analysis.",
+        "path": "modules/audio/audio-utils.ts",
+        "examplePath": "examples/audio/AudioUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "getAudioContext",
+            "description": "Safely creates and returns a singleton AudioContext, handling suspended states.",
+            "params": [],
+            "returns": "AudioContext"
+          },
+          {
+            "name": "playFrequency",
+            "description": "Plays a simple tone using an OscillatorNode.",
+            "params": ["freq: number", "duration: number", "type?: OscillatorType"],
+            "returns": "void"
+          },
+          {
+            "name": "createMicrophoneSource",
+            "description": "Requests microphone access and returns a promise resolving to a MediaStreamAudioSourceNode and its stream.",
+            "params": ["context: AudioContext"],
+            "returns": "Promise<{ source: MediaStreamAudioSourceNode, stream: MediaStream }>"
+          },
+          {
+            "name": "createAnalyser",
+            "description": "Creates and configures an AnalyserNode.",
+            "params": ["context: AudioContext", "fftSize?: number"],
+            "returns": "AnalyserNode"
+          },
+          {
+            "name": "getFrequencyData",
+            "description": "Gets the frequency data from an analyser into a Uint8Array.",
+            "params": ["analyser: AnalyserNode"],
+            "returns": "Uint8Array"
+          },
+          {
+            "name": "getWaveformData",
+            "description": "Gets the time-domain (waveform) data from an analyser.",
+            "params": ["analyser: AnalyserNode"],
+            "returns": "Uint8Array"
+          }
+        ]
+      },
+      {
+        "name": "audio-effects",
+        "description": "A comprehensive module for creating Web Audio API effects and filters.",
+        "path": "modules/audio/audio-effects.ts",
+        "examplePath": "examples/audio/AudioEffectsExample.tsx",
+        "functions": [
+          {
+            "name": "createGain",
+            "description": "Creates a Gain node.",
+            "params": ["context: AudioContext"],
+            "returns": "GainNode"
+          },
+          {
+            "name": "createFilter",
+            "description": "Creates a BiquadFilter node.",
+            "params": ["context: AudioContext"],
+            "returns": "BiquadFilterNode"
+          },
+          {
+            "name": "createDelay",
+            "description": "Creates a Delay node with a feedback loop.",
+            "params": ["context: AudioContext"],
+            "returns": "{ input: GainNode, output: GainNode, ... }"
+          },
+          {
+            "name": "createPanner",
+            "description": "Creates a StereoPanner node.",
+            "params": ["context: AudioContext"],
+            "returns": "StereoPannerNode"
+          },
+          {
+            "name": "createCompressor",
+            "description": "Creates a DynamicsCompressor node.",
+            "params": ["context: AudioContext"],
+            "returns": "DynamicsCompressorNode"
+          },
+          {
+            "name": "createReverb",
+            "description": "Creates a Reverb effect using a ConvolverNode and a generated impulse response.",
+            "params": ["context: AudioContext", "duration?: number", "decay?: number"],
+            "returns": "{ input: GainNode, output: GainNode, ... }"
+          },
+          {
+            "name": "connectNodes",
+            "description": "Connects an array of AudioNodes in sequence.",
+            "params": ["...nodes: AudioNode[]"],
+            "returns": "void"
+          },
+          {
+            "name": "disconnectNodes",
+            "description": "Disconnects all outgoing connections from a set of AudioNodes.",
+            "params": ["...nodes: AudioNode[]"],
+            "returns": "void"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Data I/O",
+    "description": "Modules for importing, exporting, and parsing data from various sources and formats.",
+    "modules": [
+      {
+        "name": "import-utils",
+        "description": "A collection of helpers for importing data from external sources like Git repositories.",
+        "path": "modules/io/import-utils.ts",
+        "examplePath": "examples/io/ImportUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "fetchFromGitHubRaw",
+            "description": "Fetches the raw content of a file from a public GitHub repository.",
+            "params": ["owner: string", "repo: string", "branch: string", "path: string"],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "getGitHubRepoDirectoryContents",
+            "description": "Fetches the contents (files and directories) of a directory in a public GitHub repository. Can filter files by type.",
+            "params": ["owner: string", "repo: string", "branch: string", "path: string", "options?: { fileTypes?: string | string[] }"],
+            "returns": "Promise<GitHubContent[]>"
+          },
+          {
+            "name": "getGitHubRepoFileCount",
+            "description": "Gets the count of files within a directory in a public GitHub repository, with optional file type filtering.",
+            "params": ["owner: string", "repo: string", "branch: string", "path: string", "options?: { fileTypes?: string | string[] }"],
+            "returns": "Promise<number>"
+          },
+          {
+            "name": "getRandomFileFromGitHubRepo",
+            "description": "Fetches random files from a directory in a public GitHub repository, with optional file type and count filtering. Automatically handles text and binary (media) files.",
+            "params": ["owner: string", "repo: string", "branch: string", "path: string", "options?: { fileTypes?: string | string[], count?: number }"],
+            "returns": "Promise<{ content: string; file: GitHubContent; isBinary: boolean; }[]>"
+          },
+          {
+            "name": "getNthFileFromGitHubRepo",
+            "description": "Fetches Nth file(s) from a directory in a public GitHub repository, with optional filtering. Automatically handles text and binary (media) files.",
+            "params": ["owner: string", "repo: string", "branch: string", "path: string", "options?: { fileTypes?: string | string[], start?: number, count?: number }"],
+            "returns": "Promise<{ content: string; file: GitHubContent; isBinary: boolean; }[]>"
+          }
+        ]
+      },
+      {
+        "name": "export-utils",
+        "description": "A collection of helpers for exporting data to various file formats.",
+        "path": "modules/io/export-utils.ts",
+        "examplePath": "examples/io/ExportUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "exportToCsv",
+            "description": "Converts an array of objects into a CSV string and triggers a browser download.",
+            "params": ["data: Record<string, any>[]", "fileName: string"],
+            "returns": "void"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Concurrency",
+    "description": "Utilities for managing concurrent operations and leveraging multi-threading in the browser.",
+    "modules": [
+      {
+        "name": "worker-utils",
+        "description": "A collection of helpers for creating and communicating with Web Workers.",
+        "path": "modules/concurrency/worker-utils.ts",
+        "examplePath": "examples/concurrency/WorkerUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "createWorkerFromFunction",
+            "description": "Creates a Web Worker from a self-contained function, avoiding the need for separate worker script files.",
+            "params": ["workerFunction: (data: T) => R"],
+            "returns": "Worker"
+          },
+          {
+            "name": "postMessagePromise",
+            "description": "Sends a message to a worker and returns a promise that resolves with the worker's response.",
+            "params": ["worker: Worker", "message: T"],
+            "returns": "Promise<R>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Design",
+    "description": "Utilities and modules for themeing, styling, and visual design.",
+    "modules": [
+      {
+        "name": "palette-generator",
+        "description": "A utility that uses the Gemini API to generate color palettes from text prompts.",
+        "path": "modules/design/palette-generator.ts",
+        "examplePath": "examples/design/PaletteGeneratorExample.tsx",
+        "functions": [
+          {
+            "name": "generatePalette",
+            "description": "Generates a color palette based on a descriptive prompt.",
+            "params": ["prompt: string"],
+            "returns": "Promise<string[]>"
+          }
+        ]
+      },
+      {
+        "name": "gradient-generator",
+        "description": "A utility that uses the Gemini API to generate CSS gradients from text prompts.",
+        "path": "modules/design/gradient-generator.ts",
+        "examplePath": "examples/design/GradientGeneratorExample.tsx",
+        "functions": [
+          {
+            "name": "generateGradient",
+            "description": "Generates a CSS gradient string based on a descriptive prompt.",
+            "params": ["prompt: string"],
+            "returns": "Promise<string>"
+          }
+        ]
+      },
+      {
+        "name": "layout-calculator",
+        "description": "A utility for calculating layout dimensions based on classic design principles like the golden ratio.",
+        "path": "modules/design/layout-calculator.ts",
+        "examplePath": "examples/design/LayoutCalculatorExample.tsx",
+        "functions": [
+          {
+            "name": "calculateGoldenRatio",
+            "description": "Calculates the major and minor segments of a total dimension based on the golden ratio.",
+            "params": ["total: number"],
+            "returns": "{ major: number; minor: number }"
+          }
+        ]
+      },
+      {
+        "name": "theme-manager",
+        "description": "A comprehensive module for applying, creating, importing, and exporting UI themes.",
+        "path": "modules/design/theme-utils.ts",
+        "examplePath": "examples/design/ThemeManagerExample.tsx",
+        "dataFiles": [
+          "modules/design/theme-presets.ts"
+        ],
+        "functions": [
+          {
+            "name": "applyTheme",
+            "description": "Applies a theme object's colors to the document's CSS variables.",
+            "params": [
+              "theme: Theme"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "exportTheme",
+            "description": "Exports a theme object to a JSON file and triggers a download.",
+            "params": [
+              "theme: Theme"
+            ],
+            "returns": "void"
+          },
+          {
+            "name": "importTheme",
+            "description": "Imports a theme from a JSON file, validates it, and returns it.",
+            "params": [
+              "file: File"
+            ],
+            "returns": "Promise<Theme>"
+          }
+        ]
+      }
+    ]
+  }
+]

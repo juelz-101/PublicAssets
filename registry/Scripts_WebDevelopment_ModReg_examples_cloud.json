@@ -1,0 +1,20 @@
+[
+  {
+    "name": "DropboxExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/cloud/DropboxExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/cloud/DropboxExample.tsx"
+  },
+  {
+    "name": "FirebaseStorageExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/cloud/FirebaseStorageExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/cloud/FirebaseStorageExample.tsx"
+  },
+  {
+    "name": "GoogleDriveUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/cloud/GoogleDriveUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/cloud/GoogleDriveUtilsExample.tsx"
+  }
+]

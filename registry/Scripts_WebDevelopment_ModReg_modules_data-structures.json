@@ -1,0 +1,20 @@
+[
+  {
+    "name": "linked-list.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/data-structures/linked-list.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/data-structures/linked-list.ts"
+  },
+  {
+    "name": "queue.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/data-structures/queue.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/data-structures/queue.ts"
+  },
+  {
+    "name": "stack.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/data-structures/stack.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/data-structures/stack.ts"
+  }
+]

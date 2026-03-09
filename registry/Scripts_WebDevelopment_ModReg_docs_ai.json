@@ -1,0 +1,20 @@
+[
+  {
+    "name": "db-handler.md",
+    "ext": "md",
+    "path": "Scripts/WebDevelopment/ModReg/docs/ai/db-handler.md",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ai/db-handler.md"
+  },
+  {
+    "name": "particle-background.md",
+    "ext": "md",
+    "path": "Scripts/WebDevelopment/ModReg/docs/ai/particle-background.md",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ai/particle-background.md"
+  },
+  {
+    "name": "i18n.md",
+    "ext": "md",
+    "path": "Scripts/WebDevelopment/ModReg/docs/ai/i18n.md",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ai/i18n.md"
+  }
+]

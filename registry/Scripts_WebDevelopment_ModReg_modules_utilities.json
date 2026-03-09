@@ -1,0 +1,26 @@
+[
+  {
+    "name": "array-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/utilities/array-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/utilities/array-utils.ts"
+  },
+  {
+    "name": "object-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/utilities/object-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/utilities/object-utils.ts"
+  },
+  {
+    "name": "logger.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/utilities/logger.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/utilities/logger.ts"
+  },
+  {
+    "name": "string-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/utilities/string-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/utilities/string-utils.ts"
+  }
+]

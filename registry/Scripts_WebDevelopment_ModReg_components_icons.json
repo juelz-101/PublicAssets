@@ -1,0 +1,62 @@
+[
+  {
+    "name": "DownloadIcon.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/components/icons/DownloadIcon.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/DownloadIcon.tsx"
+  },
+  {
+    "name": "ChevronDownIcon.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/components/icons/ChevronDownIcon.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/ChevronDownIcon.tsx"
+  },
+  {
+    "name": "FileIcon.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/components/icons/FileIcon.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/FileIcon.tsx"
+  },
+  {
+    "name": "FolderIcon.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/components/icons/FolderIcon.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/FolderIcon.tsx"
+  },
+  {
+    "name": "Squares2X2Icon.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/components/icons/Squares2X2Icon.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/Squares2X2Icon.tsx"
+  },
+  {
+    "name": "MenuIcon.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/components/icons/MenuIcon.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/MenuIcon.tsx"
+  },
+  {
+    "name": "HomeIcon.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/components/icons/HomeIcon.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/HomeIcon.tsx"
+  },
+  {
+    "name": "LabIcon.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/components/icons/LabIcon.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/LabIcon.tsx"
+  },
+  {
+    "name": "EyeSlashIcon.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/components/icons/EyeSlashIcon.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/EyeSlashIcon.tsx"
+  },
+  {
+    "name": "SettingsIcon.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/components/icons/SettingsIcon.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/components/icons/SettingsIcon.tsx"
+  }
+]

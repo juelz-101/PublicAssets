@@ -1,0 +1,90 @@
+
+[
+  {
+    "category": "ZIKYinc",
+    "description": "Custom modules for ZIKYinc applications and tools.",
+    "modules": [
+      {
+        "name": "I-DB Handler",
+        "description": "A comprehensive data and IndexedDB handler for initializing application state from a configuration file.",
+        "path": "modules/ziky_inc/data/db.ts",
+        "examplePath": "examples/ziky_inc/I-DB_Handler.tsx",
+        "functionalDataPath": "modules/ziky_inc/data/db.data.json",
+        "templateData": {
+          "meta": {
+            "name": "App Config",
+            "version": "1.0.0"
+          },
+          "settings": {
+            "theme": "dark",
+            "data_sync": {
+              "files": [],
+              "github_sync_enabled": false
+            }
+          },
+          "data": {
+            "categories": []
+          },
+          "user": {
+            "db": [
+              {
+                "type": "IndexedDB",
+                "db": "AppDB",
+                "version": 1,
+                "stores": [
+                  { "name": "Projects", "keyPath": "id" }
+                ]
+              }
+            ]
+          }
+        },
+        "docPath": "docs/ziky_inc/db-handler.md",
+        "aiRulesPath": "docs/ai/db-handler.md",
+        "prompts": [
+          {
+            "title": "Setup New Project Data",
+            "description": "Initialize a new project with a basic data structure.",
+            "content": "Create a new `appdata.json` file with a basic structure for a task management app. Include a 'Tasks' database with 'id', 'title', and 'status' fields."
+          },
+          {
+            "title": "Add New Database Store",
+            "description": "Add a new store to an existing database configuration.",
+            "content": "Add a 'Users' store to the 'AppDB' database in `appdata.json`. The store should use 'id' as the keyPath and include an index for 'email'."
+          }
+        ],
+        "functions": [
+          {
+            "name": "new DataManager()",
+            "description": "Creates a new instance of the DataManager.",
+            "params": [],
+            "returns": "DataManager"
+          },
+          {
+            "name": "manager.init(configUrl, cleanStale?)",
+            "description": "Initializes the entire data system by fetching the config, setting up databases, and loading default data. Optionally cleans stale databases/stores.",
+            "params": ["configUrl: string", "cleanStale?: boolean"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "manager.getMigrationFailures()",
+            "description": "Returns an array of items that failed to migrate during the last initialization.",
+            "params": [],
+            "returns": "MigrationFailure[]"
+          },
+          {
+            "name": "manager.getSettings()",
+            "description": "Returns the loaded application settings object.",
+            "params": [],
+            "returns": "any"
+          },
+          {
+            "name": "manager.getData()",
+            "description": "Returns the loaded application data object.",
+            "params": [],
+            "returns": "any"
+          }
+        ]
+      }
+    ]
+  }
+]

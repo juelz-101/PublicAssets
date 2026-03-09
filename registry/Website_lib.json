@@ -64,5 +64,11 @@
     "ext": "json",
     "path": "Website/lib/community.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/community.json"
+  },
+  {
+    "name": "website_restructuring.txt",
+    "ext": "txt",
+    "path": "Website/lib/website_restructuring.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/lib/website_restructuring.txt"
   }
 ]

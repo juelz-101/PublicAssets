@@ -1,0 +1,65 @@
+[
+  {
+    "category": "Automation",
+    "description": "Utilities for generating and managing browser automation scripts for Node.js Puppeteer environments.",
+    "modules": [
+      {
+        "name": "puppeteer-helper",
+        "description": "An AI-powered assistant for generating and formatting Puppeteer automation scripts.",
+        "path": "modules/automation/puppeteer-helper.ts",
+        "examplePath": "examples/automation/PuppeteerHelperExample.tsx",
+        "version": "1.0",
+        "functions": [
+          {
+            "name": "generateAutomationScript",
+            "description": "Uses AI to convert a natural language description into a Node.js Puppeteer script.",
+            "params": ["prompt: string"],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "getBoilerplate",
+            "description": "Returns a standard Puppeteer script template by name.",
+            "params": ["template: 'base' | 'scrape' | 'screenshot' | 'pdf'"],
+            "returns": "string"
+          },
+          {
+            "name": "formatPuppeteerCode",
+            "description": "Wraps a logic block in a standard async IIFE Puppeteer structure.",
+            "params": ["logic: string", "options?: { headless: boolean }"],
+            "returns": "string"
+          }
+        ]
+      },
+      {
+        "name": "automation-selectors",
+        "description": "AI-driven selector analysis to find the most resilient CSS/XPath paths for automation.",
+        "path": "modules/automation/automation-selectors.ts",
+        "examplePath": "examples/automation/PuppeteerHelperExample.tsx",
+        "version": "1.0",
+        "functions": [
+          {
+            "name": "findResilientSelector",
+            "description": "Analyzes HTML to find the best selector for a specific element description.",
+            "params": ["html: string", "target: string"],
+            "returns": "Promise<{ css: string, xpath: string, stability: number }>"
+          }
+        ]
+      },
+      {
+        "name": "crawl-manager",
+        "description": "State management for web crawlers including depth tracking and URL de-duplication.",
+        "path": "modules/automation/crawl-manager.ts",
+        "examplePath": "examples/automation/PuppeteerHelperExample.tsx",
+        "version": "1.0",
+        "functions": [
+          {
+            "name": "createCrawlQueue",
+            "description": "Initializes a crawler state machine with limits.",
+            "params": ["config: { maxDepth: number, domain: string }"],
+            "returns": "CrawlQueue"
+          }
+        ]
+      }
+    ]
+  }
+]

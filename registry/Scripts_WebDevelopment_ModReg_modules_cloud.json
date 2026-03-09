@@ -1,0 +1,20 @@
+[
+  {
+    "name": "dropbox-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/cloud/dropbox-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/cloud/dropbox-utils.ts"
+  },
+  {
+    "name": "firebase-storage-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/cloud/firebase-storage-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/cloud/firebase-storage-utils.ts"
+  },
+  {
+    "name": "google-drive-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/cloud/google-drive-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/cloud/google-drive-utils.ts"
+  }
+]

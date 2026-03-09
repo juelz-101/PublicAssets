@@ -1,0 +1,11 @@
+{
+  "title": "Markdown Copier",
+  "version": "0.1.2",
+  "description": "High-fidelity webpage content extraction engine.",
+  "readme": "### Documentation\n\n**Markdown Copier** is a ZIKYinc utility designed to turn messy web content into clean, readable Markdown. \n\n#### Key Features:\n- **LaTeX Support:** Automatically detects and converts KaTeX and MathJax formulas.\n- **Technical Formatting:** Correctly handles code blocks with language detection.\n- **Task Lists:** Supports interactive checkboxes.\n- **High-Fidelity Tables:** Extracts and aligns HTML tables accurately.\n- **Smart Whitespace:** Preserves intentional paragraph spacing without excessive clutter.\n\n#### Usage:\n1. **Copy as Markdown:** Right-click any selection or the page background to copy as MD.\n2. **View as Markdown:** Open the extracted MD directly in a new tab for inspection.\n\n#### Troubleshooting:\nIf bullets appear on a new line, ensure you are selecting the parent list container. ZIKYinc tools are updated frequently to handle new web layout patterns.",
+  "links": [
+    { "label": "Github Project", "url": "https://github.com/juelz-101/PublicAssets" },
+	{ "label": "Report a Bug", "url": "https://github.com/juelz-101/PublicAssets/issue" },
+    { "label": "ZIKYinc Tools", "url": "https://github.com/juelz-101" }
+  ]
+}

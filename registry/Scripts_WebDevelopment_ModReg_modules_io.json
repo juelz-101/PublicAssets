@@ -1,0 +1,14 @@
+[
+  {
+    "name": "export-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/io/export-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/io/export-utils.ts"
+  },
+  {
+    "name": "import-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/io/import-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/io/import-utils.ts"
+  }
+]

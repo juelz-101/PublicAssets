@@ -1,0 +1,7 @@
+{
+  "name": "V.2.0-React Module Registry & Playground",
+  "description": "A web application to categorize, register, and showcase reusable standalone module/helper scripts. It includes example pages for each module and a dedicated multi-page area for testing and brainstorming ideas.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

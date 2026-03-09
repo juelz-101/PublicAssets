@@ -1,0 +1,52 @@
+[
+  {
+    "category": "Cloud Services",
+    "description": "Modules for interacting with cloud storage and service APIs.",
+    "modules": [
+      {
+        "name": "firebase-storage-utils",
+        "description": "Utilities for Firebase Storage, enabling file uploads, downloads, listing, and deletion.",
+        "path": "modules/cloud/firebase-storage-utils.ts",
+        "examplePath": "examples/cloud/FirebaseStorageExample.tsx",
+        "functions": [
+          {
+            "name": "firebaseStorage.init",
+            "description": "Initializes the Firebase app and Storage service with your project's configuration.",
+            "params": ["config: FirebaseConfig"],
+            "returns": "void"
+          },
+          {
+            "name": "firebaseStorage.isInitialized",
+            "description": "Checks if the Firebase service has been initialized.",
+            "params": [],
+            "returns": "boolean"
+          },
+          {
+            "name": "firebaseStorage.uploadFile",
+            "description": "Uploads a file to a specified path in Firebase Storage.",
+            "params": ["path: string", "file: File"],
+            "returns": "Promise<UploadResult>"
+          },
+          {
+            "name": "firebaseStorage.deleteFile",
+            "description": "Deletes a file from a specified path in Firebase Storage.",
+            "params": ["path: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "firebaseStorage.listFiles",
+            "description": "Lists all files and subdirectories within a given path.",
+            "params": ["path: string"],
+            "returns": "Promise<{ files: StorageReference[], folders: StorageReference[] }>"
+          },
+          {
+            "name": "firebaseStorage.getDownloadURL",
+            "description": "Gets the public downloadable URL for a file.",
+            "params": ["path: string"],
+            "returns": "Promise<string>"
+          }
+        ]
+      }
+    ]
+  }
+]

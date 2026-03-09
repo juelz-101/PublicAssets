@@ -1,0 +1,58 @@
+[
+  {
+    "category": "Cloud Services",
+    "description": "Modules for interacting with cloud storage and service APIs.",
+    "modules": [
+      {
+        "name": "google-drive-utils",
+        "description": "A set of utilities to interact with the Google Drive API for file listing and management using Google Identity Services.",
+        "path": "modules/cloud/google-drive-utils.ts",
+        "examplePath": "examples/cloud/GoogleDriveUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "googleDriveService.init",
+            "description": "Initializes the Google API client. Must be called once with your Google Client ID.",
+            "params": ["clientId: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "googleDriveService.signIn",
+            "description": "Prompts the user to sign in and authorize the app. Returns a promise that resolves with the access token.",
+            "params": [],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "googleDriveService.signOut",
+            "description": "Signs the user out and revokes the access token.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "googleDriveService.isSignedIn",
+            "description": "Checks if the user is currently signed in.",
+            "params": [],
+            "returns": "boolean"
+          },
+          {
+            "name": "googleDriveService.listFiles",
+            "description": "Lists files from the user's Drive. Can be filtered by a query string.",
+            "params": ["query?: string"],
+            "returns": "Promise<{ files: GoogleDriveFile[] }>"
+          },
+          {
+            "name": "googleDriveService.uploadFile",
+            "description": "Uploads a local file to Google Drive.",
+            "params": ["file: File", "metadata: { name: string, parents?: string[] }"],
+            "returns": "Promise<GoogleDriveFile>"
+          },
+          {
+            "name": "googleDriveService.deleteFile",
+            "description": "Permanently deletes a file by its ID.",
+            "params": ["fileId: string"],
+            "returns": "Promise<void>"
+          }
+        ]
+      }
+    ]
+  }
+]

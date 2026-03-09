@@ -1,0 +1,14 @@
+[
+  {
+    "name": "pathfinding.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/algorithms/pathfinding.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/algorithms/pathfinding.ts"
+  },
+  {
+    "name": "sorting-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/algorithms/sorting-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/algorithms/sorting-utils.ts"
+  }
+]

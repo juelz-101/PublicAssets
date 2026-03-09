@@ -42,6 +42,9 @@ PublicAssets/
 │   │           │       └── update.ts
 │   │           └── startup_instructions.ts
 │   └── Tools/
+│       ├── About/
+│       │   └── Chrome/
+│       │       └── md-copier_info.json
 │       ├── appdata.json
 │       └── shared_indexeddb.json
 ├── Images/
@@ -197,6 +200,9 @@ PublicAssets/
 ├── Images (P.Ass).lnk
 ├── Library/
 │   ├── AI/
+│   │   ├── AITraining/
+│   │   │   ├── New Text Document.txt
+│   │   │   └── TrainAIForFree/
 │   │   ├── Experiments/
 │   │   │   ├── CharacterConsistency-Gemini/
 │   │   │   │   └── AI ASSET CONSISTENCY TEST - Gemini (pro).gdoc
@@ -258,14 +264,18 @@ PublicAssets/
 │   │   │   │   ├── [APP]-EngStandard_HighPerformance.txt
 │   │   │   │   ├── [APP]-EngStandard_SimpleApps.txt
 │   │   │   │   └── [APP]-EngStandard_UIFocus.txt
-│   │   │   ├── SystemControl/
-│   │   │   │   └── System_Control-Checklist.mck
-│   │   │   ├── [2D]-Coding_NamingEnforcement.txt
-│   │   │   ├── [2D]-Coding_NamingExceptions.txt
-│   │   │   ├── [2D]-Coding_RepoNaming.txt
-│   │   │   ├── [CH-GEN]-Coding_NamingConventions.txt
-│   │   │   ├── [GEN]-Coding_NamingConventions.txt
-│   │   │   └── [QUK]-Coding_NamingConventions.txt
+│   │   │   ├── Naming/
+│   │   │   │   ├── [2D]-Coding_NamingEnforcement.txt
+│   │   │   │   ├── [2D]-Coding_NamingExceptions.txt
+│   │   │   │   ├── [2D]-Coding_RepoNaming.txt
+│   │   │   │   ├── [CH-GEN]-Coding_NamingConventions.txt
+│   │   │   │   ├── [GEN]-Coding_NamingConventions.txt
+│   │   │   │   └── [QUK]-Coding_NamingConventions.txt
+│   │   │   ├── SelfContainment/
+│   │   │   │   ├── New folder/
+│   │   │   │   └── [QUK]-Quick_GuideToModularSystems.mla
+│   │   │   └── SystemControl/
+│   │   │       └── System_Control-Checklist.mck
 │   │   ├── Git/
 │   │   │   ├── Git_Gitignore_Guide.txt
 │   │   │   ├── Git_GuildAndReference.txt
@@ -287,6 +297,10 @@ PublicAssets/
 │   │   │   └── JSON_Reference_and_Guide.txt
 │   │   ├── Markdown/
 │   │   │   └── Markdown_Reference_and_Guide.txt
+│   │   ├── OfficeApps/
+│   │   │   └── Presentations/
+│   │   │       └── Slides/
+│   │   │           └── [DB]-G-Slides_BackendReference.mdb
 │   │   ├── PY/
 │   │   │   ├── Basics/
 │   │   │   │   ├── [PY]PythonBasics-ExportingToEXE .txt
@@ -301,7 +315,17 @@ PublicAssets/
 │   │   │       ├── [AI_FL]-[IDX] TELE_Complete_Guide_To_Telegram_Bots.txt
 │   │   │       ├── [AI_FL]-[IDX] TELE_Python CLI Cheatbook – Mastering Tools by Command.txt
 │   │   │       └── [IDX] TELE_Complete_Guide_To_Telegram_Bots.txt
-│   │   └── SVG/
+│   │   ├── SVG/
+│   │   └── WebDevelopment/
+│   │       ├── Chrome/
+│   │       │   ├── [Chrome]-Chrome_Extensions_Dict.mld
+│   │       │   └── [Chrome]-Intro_To_Chrome_Extensions.mlb
+│   │       └── React/
+│   │           ├── [DEV]-General_App_Dev-Terms.mld
+│   │           ├── [REACT]-Free_Backend_Tools.mlb
+│   │           ├── [React]-React_App_Tauri-Guilde.mlb
+│   │           ├── [React]-Running_AI_On_React_Frontend_Free-Guide.mlb
+│   │           └── [React]-System_Level_Options.mlb
 │   ├── FireAndSecurity/
 │   │   ├── AccessControl/
 │   │   ├── AudVis/
@@ -319,9 +343,10 @@ PublicAssets/
 │   │   │   └── FamilyManagement/
 │   │   │       ├── [tut]-FamilyManagement_Google - Copy.mix
 │   │   │       └── [tut]-FamilyManagement_Google.mix
-│   │   └── Hardware/
+│   │   └── Keyboard/
 │   │       ├── KeyboardSymbols.mld
-│   │       └── [CH-GCPU]-KeyboardSymbols.mlb
+│   │       ├── [CH-GCPU]-KeyboardSymbols.mlb
+│   │       └── [PC-KB]-Quick_Screenshot-Guide.mlg
 │   ├── Library.mix
 │   ├── MasterDictionary.mld
 │   ├── Mobile/
@@ -373,6 +398,321 @@ PublicAssets/
 │               └── Python/
 │                   └── SoundbarAntiMuteHelper_Guide.txt
 ├── README.md
+├── Scripts/
+│   └── WebDevelopment/
+│       ├── ModReg/
+│       │   ├── .gitignore
+│       │   ├── App.tsx
+│       │   ├── README.md
+│       │   ├── ai_dev/
+│       │   │   ├── ai_commands.json
+│       │   │   ├── ai_rules.json
+│       │   │   ├── log/
+│       │   │   │   ├── Dependencies/
+│       │   │   │   │   └── dependencies.ts
+│       │   │   │   ├── checkpoints/
+│       │   │   │   │   └── checkpoint.json
+│       │   │   │   ├── layout/
+│       │   │   │   │   └── layout.json
+│       │   │   │   └── update_log/
+│       │   │   │       └── log.json
+│       │   │   └── todo.json
+│       │   ├── app/
+│       │   │   ├── systems/
+│       │   │   │   └── neural_data_navigator/
+│       │   │   │       ├── NeuralDataNavigator.tsx
+│       │   │   │       ├── components/
+│       │   │   │       │   ├── CameraControls.tsx
+│       │   │   │       │   ├── ConfigPanel.tsx
+│       │   │   │       │   ├── DataTree.tsx
+│       │   │   │       │   ├── Graph3D.tsx
+│       │   │   │       │   └── ToolBar.tsx
+│       │   │   │       └── utils/
+│       │   │   │           └── DataProcessor.ts
+│       │   │   └── ui/
+│       │   │       └── ParticleBackgroundSystem.tsx
+│       │   ├── appdata.json
+│       │   ├── components/
+│       │   │   ├── BulkActionModal.tsx
+│       │   │   ├── DownloadModal.tsx
+│       │   │   ├── HomepageBackground.tsx
+│       │   │   ├── HomepageToolbar.tsx
+│       │   │   ├── MobileToolbar.tsx
+│       │   │   ├── ModuleListModal.tsx
+│       │   │   ├── ModuleView.tsx
+│       │   │   ├── ParticleBackground.tsx
+│       │   │   ├── Playground.tsx
+│       │   │   ├── PromptBox.tsx
+│       │   │   ├── SettingsModal.tsx
+│       │   │   ├── Sidebar.tsx
+│       │   │   ├── SystemView.tsx
+│       │   │   ├── Welcome.tsx
+│       │   │   └── icons/
+│       │   │       ├── ChevronDownIcon.tsx
+│       │   │       ├── DownloadIcon.tsx
+│       │   │       ├── EyeSlashIcon.tsx
+│       │   │       ├── FileIcon.tsx
+│       │   │       ├── FolderIcon.tsx
+│       │   │       ├── HomeIcon.tsx
+│       │   │       ├── LabIcon.tsx
+│       │   │       ├── MenuIcon.tsx
+│       │   │       ├── SettingsIcon.tsx
+│       │   │       └── Squares2X2Icon.tsx
+│       │   ├── contexts/
+│       │   │   └── ThemeContext.tsx
+│       │   ├── data/
+│       │   │   ├── modules.json
+│       │   │   └── systems.json
+│       │   ├── docs/
+│       │   │   ├── README_TEMPLATE.md
+│       │   │   ├── ai/
+│       │   │   │   ├── db-handler.md
+│       │   │   │   ├── i18n.md
+│       │   │   │   └── particle-background.md
+│       │   │   ├── internationalization/
+│       │   │   │   └── i18n.md
+│       │   │   ├── systems/
+│       │   │   │   └── particle-background.md
+│       │   │   └── ziky_inc/
+│       │   │       └── db-handler.md
+│       │   ├── examples/
+│       │   │   ├── ai/
+│       │   │   │   └── GeminiChatExample.tsx
+│       │   │   ├── algorithms/
+│       │   │   │   ├── PathfindingExample.tsx
+│       │   │   │   └── SortingUtilsExample.tsx
+│       │   │   ├── api/
+│       │   │   │   └── GeminiServiceExample.tsx
+│       │   │   ├── async/
+│       │   │   │   └── AsyncUtilsExample.tsx
+│       │   │   ├── audio/
+│       │   │   │   ├── AudioEffectsExample.tsx
+│       │   │   │   └── AudioUtilsExample.tsx
+│       │   │   ├── automation/
+│       │   │   │   └── PuppeteerHelperExample.tsx
+│       │   │   ├── cloud/
+│       │   │   │   ├── DropboxExample.tsx
+│       │   │   │   ├── FirebaseStorageExample.tsx
+│       │   │   │   └── GoogleDriveUtilsExample.tsx
+│       │   │   ├── concurrency/
+│       │   │   │   └── WorkerUtilsExample.tsx
+│       │   │   ├── data-structures/
+│       │   │   │   ├── LinkedListExample.tsx
+│       │   │   │   ├── QueueExample.tsx
+│       │   │   │   └── StackExample.tsx
+│       │   │   ├── date/
+│       │   │   │   └── DateUtilsExample.tsx
+│       │   │   ├── design/
+│       │   │   │   ├── GradientGeneratorExample.tsx
+│       │   │   │   ├── LayoutCalculatorExample.tsx
+│       │   │   │   ├── PaletteGeneratorExample.tsx
+│       │   │   │   └── ThemeManagerExample.tsx
+│       │   │   ├── dom/
+│       │   │   │   └── DomUtilsExample.tsx
+│       │   │   ├── editing/
+│       │   │   │   └── ImageEditorExample.tsx
+│       │   │   ├── electron/
+│       │   │   │   ├── AutoUpdaterExample.tsx
+│       │   │   │   ├── ClipboardExtendedExample.tsx
+│       │   │   │   ├── CrashReporterExample.tsx
+│       │   │   │   ├── DesktopCapturerExample.tsx
+│       │   │   │   ├── DialogsExample.tsx
+│       │   │   │   ├── FsWrapperExample.tsx
+│       │   │   │   ├── GlobalShortcutExample.tsx
+│       │   │   │   ├── IpcWrapperExample.tsx
+│       │   │   │   ├── MenuManagerExample.tsx
+│       │   │   │   ├── NativeImageExample.tsx
+│       │   │   │   ├── PowerMonitorExample.tsx
+│       │   │   │   ├── PowerSaveBlockerExample.tsx
+│       │   │   │   ├── SystemInfoExample.tsx
+│       │   │   │   ├── TaskbarUtilsExample.tsx
+│       │   │   │   ├── TrayManagerExample.tsx
+│       │   │   │   ├── WebFrameExample.tsx
+│       │   │   │   └── WindowShellExample.tsx
+│       │   │   ├── file-system/
+│       │   │   │   └── FileUtilsExample.tsx
+│       │   │   ├── graphics/
+│       │   │   │   ├── AnimationLoopExample.tsx
+│       │   │   │   ├── AttractorExample.tsx
+│       │   │   │   ├── CanvasEffectsExample.tsx
+│       │   │   │   ├── CanvasLayerManagerExample.tsx
+│       │   │   │   ├── CanvasUtilsExample.tsx
+│       │   │   │   ├── CollisionUtilsExample.tsx
+│       │   │   │   ├── ColorUtilsExample.tsx
+│       │   │   │   ├── LSystemExample.tsx
+│       │   │   │   ├── NoiseUtilsExample.tsx
+│       │   │   │   ├── ParticleSystemExample.tsx
+│       │   │   │   ├── ReactionDiffusionExample.tsx
+│       │   │   │   ├── SVGUtilsExample.tsx
+│       │   │   │   └── VectorUtilsExample.tsx
+│       │   │   ├── graphics-3d/
+│       │   │   │   ├── GeometryPrimitivesExample.tsx
+│       │   │   │   └── SceneManagerExample.tsx
+│       │   │   ├── hooks/
+│       │   │   │   ├── UseCopyToClipboardExample.tsx
+│       │   │   │   ├── UseDebounceExample.tsx
+│       │   │   │   ├── UseEventListenerExample.tsx
+│       │   │   │   ├── UseLocalStorageExample.tsx
+│       │   │   │   └── UseToggleExample.tsx
+│       │   │   ├── internationalization/
+│       │   │   │   └── I18nExample.tsx
+│       │   │   ├── io/
+│       │   │   │   ├── ExportUtilsExample.tsx
+│       │   │   │   └── ImportUtilsExample.tsx
+│       │   │   ├── math/
+│       │   │   │   └── MathUtilsExample.tsx
+│       │   │   ├── state-management/
+│       │   │   │   └── StoreExample.tsx
+│       │   │   ├── systems/
+│       │   │   │   ├── NeuralDataNavigatorExample.tsx
+│       │   │   │   └── ParticleBackgroundExample.tsx
+│       │   │   ├── utilities/
+│       │   │   │   ├── ArrayUtilsExample.tsx
+│       │   │   │   ├── LoggerExample.tsx
+│       │   │   │   ├── ObjectUtilsExample.tsx
+│       │   │   │   └── StringUtilsExample.tsx
+│       │   │   ├── validation/
+│       │   │   │   └── ValidationUtilsExample.tsx
+│       │   │   ├── web-apis/
+│       │   │   │   ├── CookieUtilsExample.tsx
+│       │   │   │   ├── IndexedDBUtilsExample.tsx
+│       │   │   │   └── StorageUtilsExample.tsx
+│       │   │   └── ziky_inc/
+│       │   │       └── I-DB_Handler.tsx
+│       │   ├── index.html
+│       │   ├── index.tsx
+│       │   ├── metadata.json
+│       │   ├── module_register.json
+│       │   ├── module_register1.json
+│       │   ├── module_register2.json
+│       │   ├── module_register3.json
+│       │   ├── module_register4.json
+│       │   ├── module_register5.json
+│       │   ├── module_register6.json
+│       │   ├── module_register7.json
+│       │   ├── module_register8.json
+│       │   ├── module_register9.json
+│       │   ├── modules/
+│       │   │   ├── ai/
+│       │   │   │   └── gemini-chat.ts
+│       │   │   ├── algorithms/
+│       │   │   │   ├── pathfinding.ts
+│       │   │   │   └── sorting-utils.ts
+│       │   │   ├── async/
+│       │   │   │   └── async-utils.ts
+│       │   │   ├── audio/
+│       │   │   │   ├── audio-effects.ts
+│       │   │   │   └── audio-utils.ts
+│       │   │   ├── automation/
+│       │   │   │   ├── automation-selectors.ts
+│       │   │   │   ├── crawl-manager.ts
+│       │   │   │   └── puppeteer-helper.ts
+│       │   │   ├── cloud/
+│       │   │   │   ├── dropbox-utils.ts
+│       │   │   │   ├── firebase-storage-utils.ts
+│       │   │   │   └── google-drive-utils.ts
+│       │   │   ├── concurrency/
+│       │   │   │   └── worker-utils.ts
+│       │   │   ├── data-structures/
+│       │   │   │   ├── linked-list.ts
+│       │   │   │   ├── queue.ts
+│       │   │   │   └── stack.ts
+│       │   │   ├── date/
+│       │   │   │   └── date-utils.ts
+│       │   │   ├── design/
+│       │   │   │   ├── gradient-generator.ts
+│       │   │   │   ├── layout-calculator.ts
+│       │   │   │   ├── palette-generator.ts
+│       │   │   │   ├── theme-presets.ts
+│       │   │   │   └── theme-utils.ts
+│       │   │   ├── dom/
+│       │   │   │   └── dom-utils.ts
+│       │   │   ├── editing/
+│       │   │   │   └── image-editor.ts
+│       │   │   ├── electron/
+│       │   │   │   ├── auto-updater.ts
+│       │   │   │   ├── clipboard-extended.ts
+│       │   │   │   ├── crash-reporter.ts
+│       │   │   │   ├── desktop-capturer.ts
+│       │   │   │   ├── dialog-manager.ts
+│       │   │   │   ├── fs-wrapper.ts
+│       │   │   │   ├── global-shortcut.ts
+│       │   │   │   ├── ipc-wrapper.ts
+│       │   │   │   ├── menu-manager.ts
+│       │   │   │   ├── native-image.ts
+│       │   │   │   ├── power-monitor.ts
+│       │   │   │   ├── power-save-blocker.ts
+│       │   │   │   ├── system-info.ts
+│       │   │   │   ├── taskbar-utils.ts
+│       │   │   │   ├── tray-manager.ts
+│       │   │   │   ├── web-frame.ts
+│       │   │   │   └── window-shell-utils.ts
+│       │   │   ├── file-system/
+│       │   │   │   └── file-utils.ts
+│       │   │   ├── graphics/
+│       │   │   │   ├── animation-loop.ts
+│       │   │   │   ├── attractor-utils.ts
+│       │   │   │   ├── canvas-effects.ts
+│       │   │   │   ├── canvas-layer-manager.ts
+│       │   │   │   ├── canvas-utils.ts
+│       │   │   │   ├── collision-utils.ts
+│       │   │   │   ├── color-utils.ts
+│       │   │   │   ├── l-system.ts
+│       │   │   │   ├── noise-utils.ts
+│       │   │   │   ├── particle-system.ts
+│       │   │   │   ├── reaction-diffusion.ts
+│       │   │   │   ├── svg-utils.ts
+│       │   │   │   └── vector-utils.ts
+│       │   │   ├── graphics-3d/
+│       │   │   │   ├── camera-controller.ts
+│       │   │   │   ├── geometry-primitives.ts
+│       │   │   │   └── scene-manager.ts
+│       │   │   ├── hooks/
+│       │   │   │   ├── use-copy-to-clipboard.ts
+│       │   │   │   ├── use-debounce.ts
+│       │   │   │   ├── use-event-listener.ts
+│       │   │   │   ├── use-local-storage.ts
+│       │   │   │   └── use-toggle.ts
+│       │   │   ├── internationalization/
+│       │   │   │   └── i18n.ts
+│       │   │   ├── io/
+│       │   │   │   ├── export-utils.ts
+│       │   │   │   └── import-utils.ts
+│       │   │   ├── math/
+│       │   │   │   └── math-utils.ts
+│       │   │   ├── playground/
+│       │   │   │   ├── project-manager.ts
+│       │   │   │   └── virtual-executor.ts
+│       │   │   ├── state-management/
+│       │   │   │   └── store.ts
+│       │   │   ├── utilities/
+│       │   │   │   ├── array-utils.ts
+│       │   │   │   ├── logger.ts
+│       │   │   │   ├── object-utils.ts
+│       │   │   │   └── string-utils.ts
+│       │   │   ├── validation/
+│       │   │   │   └── validation-utils.ts
+│       │   │   ├── web-apis/
+│       │   │   │   ├── cookie-utils.ts
+│       │   │   │   ├── indexed-db-utils.ts
+│       │   │   │   └── storage-utils.ts
+│       │   │   └── ziky_inc/
+│       │   │       └── data/
+│       │   │           ├── db.data.json
+│       │   │           └── db.ts
+│       │   ├── package-lock.json
+│       │   ├── package.json
+│       │   ├── ref/
+│       │   │   └── appdata_ref.json
+│       │   ├── register.ts
+│       │   ├── services/
+│       │   │   └── geminiService.ts
+│       │   ├── system_register.json
+│       │   ├── tsconfig.json
+│       │   ├── types.ts
+│       │   ├── version.ts
+│       │   └── vite.config.ts
+│       └── v.2.0-react-module-reg_1.zip
 ├── Templates/
 │   └── PromptData/
 │       ├── AITypes.json
@@ -399,6 +739,8 @@ PublicAssets/
 │   └── MasterConfigs/
 │       ├── Alldio_Cfg.json
 │       ├── QRG_Cfg.json
+│       ├── backup/
+│       │   └── website_cfg.json
 │       ├── config.json
 │       └── website_cfg.json
 ├── Website/
@@ -602,10 +944,13 @@ PublicAssets/
 │       │       ├── sumn.html
 │       │       └── takeov.html
 │       ├── music.json
+│       ├── old/
+│       │   └── music.json
 │       ├── tools/
 │       │   └── qrg.json
 │       ├── tools.json
-│       └── webdata.json
+│       ├── webdata.json
+│       └── website_restructuring.txt
 ├── auto_update.py
 ├── public_assets.tree
 └── run_auto_update.bat

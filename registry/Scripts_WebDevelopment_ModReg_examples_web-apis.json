@@ -1,0 +1,20 @@
+[
+  {
+    "name": "CookieUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/web-apis/CookieUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/web-apis/CookieUtilsExample.tsx"
+  },
+  {
+    "name": "StorageUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/web-apis/StorageUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/web-apis/StorageUtilsExample.tsx"
+  },
+  {
+    "name": "IndexedDBUtilsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/web-apis/IndexedDBUtilsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/web-apis/IndexedDBUtilsExample.tsx"
+  }
+]

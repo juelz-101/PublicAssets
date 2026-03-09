@@ -1,6 +1,6 @@
 {
 	"meta": {
-        "type": "data", "name": "ZIKYinc Master Dictionary", "name_finalized": true,
+        "type": "dict", "name": "ZIKYinc Master Dictionary", "name_finalized": true,
         "desc": "Master file that all dictionary files get merged into.",
         "creator": "Juelz-101", "organization": "ZIKYinc",
 		"file": { "platform": "Any", "root": "ZIKYinc_Shared", "path": "Library/Dictionary/", "this_file": "MasterDictionary.mld" }, 
@@ -28,7 +28,7 @@
 				"Each dictionary item is given a level and difficulty, they can also have a 's_set' to direct to the skillset used.",
 				"If s_set isnt found in item then one will be looked for in the category of the item, if none there, then it'll look in the collections root, if none there then it'll be the default skillset.",  
 				"Level and Difficulty can also set to a non-string number between 1 and 5 and it will be paired with the name within its skillset",
-				"Level is the skill level and difficulty is how difficult it is at that level."
+				"Level is the skill level required and difficulty is how complex and/or difficult it is at that level."
 			],
 			"skillsets": [
 				{

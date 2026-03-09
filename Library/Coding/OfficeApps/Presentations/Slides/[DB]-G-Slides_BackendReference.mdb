@@ -1,0 +1,341 @@
+{
+  "_meta": {
+    "filePath": "parsers/google/slides_api_reference.json",
+    "version": "1.2.0",
+    "description": "Comprehensive, system-ready reference for Google Slides API. All keys normalized to lowerCamelCase with structured enum validation."
+  },
+  "presentation": {
+    "_description": "The root object representing a Google Slides presentation resource.",
+    "presentationId": "string",
+    "title": "string",
+    "pageSize": {
+      "width": { "magnitude": "number", "unit": "PT" },
+      "height": { "magnitude": "number", "unit": "PT" }
+    },
+    "slides": [{ "$ref": "#/page" }],
+    "masters": [{ "$ref": "#/page" }],
+    "layouts": [{ "$ref": "#/page" }],
+    "notesMaster": { "$ref": "#/page" },
+    "locale": "string",
+    "revisionId": "string"
+  },
+  "page": {
+    "_description": "A single page in the presentation, such as a slide, layout, or master.",
+    "objectId": "string",
+    "pageType": {
+      "type": "enum",
+      "values": ["SLIDE", "MASTER", "LAYOUT", "NOTES", "NOTES_MASTER"]
+    },
+    "pageElements": [{ "$ref": "#/pageElement" }],
+    "pageProperties": {
+      "pageBackgroundFill": {
+        "propertyState": {
+          "type": "enum",
+          "values": ["RENDERED", "NOT_RENDERED", "INHERIT"]
+        },
+        "solidFill": {
+          "color": {
+            "rgbColor": { "red": "number", "green": "number", "blue": "number" },
+            "themeColor": {
+              "type": "enum",
+              "values": ["DARK1", "LIGHT1", "DARK2", "LIGHT2", "ACCENT1", "ACCENT2", "ACCENT3", "ACCENT4", "ACCENT5", "ACCENT6", "HYPERLINK", "FOLLOWED_HYPERLINK"]
+            }
+          },
+          "alpha": "number"
+        },
+        "stretchedPictureFill": {
+          "contentUrl": "string",
+          "size": {
+            "width": { "magnitude": "number", "unit": "PT" },
+            "height": { "magnitude": "number", "unit": "PT" }
+          }
+        }
+      },
+      "colorScheme": {
+        "colors": [
+          {
+            "type": {
+              "type": "enum",
+              "values": ["DARK1", "LIGHT1", "DARK2", "LIGHT2", "ACCENT1", "ACCENT2", "ACCENT3", "ACCENT4", "ACCENT5", "ACCENT6", "HYPERLINK", "FOLLOWED_HYPERLINK"]
+            },
+            "color": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } }
+          }
+        ]
+      }
+    },
+    "slideProperties": {
+      "layoutObjectId": "string",
+      "masterObjectId": "string",
+      "notesPage": { "$ref": "#/page" }
+    },
+    "layoutProperties": {
+      "masterObjectId": "string",
+      "name": "string",
+      "displayName": "string"
+    },
+    "revisionId": "string"
+  },
+  "pageElement": {
+    "_description": "A visual component placed on a page. Acts as a container for specific element types.",
+    "objectId": "string",
+    "size": {
+      "width": { "magnitude": "number", "unit": "PT" },
+      "height": { "magnitude": "number", "unit": "PT" }
+    },
+    "transform": {
+      "scaleX": "number",
+      "scaleY": "number",
+      "shearX": "number",
+      "shearY": "number",
+      "translateX": "number",
+      "translateY": "number",
+      "unit": "PT"
+    },
+    "title": "string",
+    "description": "string",
+    "elementGroup": {
+      "children": [{ "$ref": "#/pageElement" }]
+    },
+    "shape": { "$ref": "#/shape" },
+    "image": { "$ref": "#/image" },
+    "video": { "$ref": "#/video" },
+    "line": { "$ref": "#/line" },
+    "table": { "$ref": "#/table" },
+    "wordArt": { "renderedText": "string" },
+    "sheetsChart": { "$ref": "#/sheetsChart" }
+  },
+  "shape": {
+    "_description": "A page element that contains a specific geometry and optional text content.",
+    "shapeType": {
+      "type": "enum",
+      "values": ["TEXT_BOX", "RECTANGLE", "ROUND_RECTANGLE", "ELLIPSE", "ARC", "BENT_ARROW", "BENT_UP_ARROW", "BEVEL", "BLOCK_ARC", "BRACE_PAIR", "BRACKET_PAIR", "CAN", "CHEVRON", "CHORD", "CLOUD", "CLOUD_CALLOUT", "CORNER", "CORNER_TABS", "CROSS", "CUBE", "CURVED_DOWN_ARROW", "CURVED_LEFT_ARROW", "CURVED_RIGHT_ARROW", "CURVED_UP_ARROW", "DECAGON", "DIAGONAL_STRIPE", "DIAMOND", "DODECAGON", "DONUT", "DOUBLE_WAVE", "DOWN_ARROW", "DOWN_ARROW_CALLOUT", "FOLDED_CORNER", "FRAME", "HALF_FRAME", "HEART", "HEPTAGON", "HEXAGON", "HOME_PLATE", "IRREGULAR_SEAL_1", "IRREGULAR_SEAL_2", "LEFT_ARROW", "LEFT_ARROW_CALLOUT", "LEFT_BRACE", "LEFT_BRACKET", "LEFT_RIGHT_ARROW", "LEFT_RIGHT_ARROW_CALLOUT", "LEFT_RIGHT_UP_ARROW", "LEFT_UP_ARROW", "LIGHTNING_BOLT", "MATH_DIVIDE", "MATH_EQUAL", "MATH_MINUS", "MATH_MULTIPLY", "MATH_NOT_EQUAL", "MATH_PLUS", "MOON", "NO_SMOKING", "NOTCHED_RIGHT_ARROW", "OCTAGON", "PARALLELOGRAM", "PENTAGON", "PIE", "PLAQUE", "PLUS", "QUAD_ARROW", "QUAD_ARROW_CALLOUT", "RIBBON", "RIBBON_2", "RIGHT_ARROW", "RIGHT_ARROW_CALLOUT", "RIGHT_BRACE", "RIGHT_BRACKET", "RIGHT_TRIANGLE", "ROUND_1_RECTANGLE", "ROUND_2_DIAG_RECTANGLE", "ROUND_2_SAME_RECTANGLE", "RIGHT_TO_TOP", "SMILEY_FACE", "SNIP_1_RECTANGLE", "SNIP_2_DIAG_RECTANGLE", "SNIP_2_SAME_RECTANGLE", "SNIP_ROUND_RECTANGLE", "STAR_10", "STAR_12", "STAR_16", "STAR_24", "STAR_32", "STAR_4", "STAR_5", "STAR_6", "STAR_7", "STAR_8", "STRIPED_RIGHT_ARROW", "SUN", "TEARDROP", "TRAPEZOID", "UP_ARROW", "UP_ARROW_CALLOUT", "UP_DOWN_ARROW", "UP_DOWN_ARROW_CALLOUT", "U_TURN_ARROW", "VERTICAL_SCROLL", "WAVE", "WEDGE_ELLIPSE_CALLOUT", "WEDGE_RECTANGLE_CALLOUT", "WEDGE_ROUND_RECTANGLE_CALLOUT"]
+    },
+    "text": {
+      "textElements": [
+        {
+          "endIndex": "integer",
+          "startIndex": "integer",
+          "paragraphMarker": {
+            "style": {
+              "direction": { "type": "enum", "values": ["LEFT_TO_RIGHT", "RIGHT_TO_LEFT"] },
+              "alignment": { "type": "enum", "values": ["START", "CENTER", "END", "JUSTIFIED"] },
+              "indentStart": { "magnitude": "number", "unit": "PT" },
+              "indentEnd": { "magnitude": "number", "unit": "PT" },
+              "spaceAbove": { "magnitude": "number", "unit": "PT" },
+              "spaceBelow": { "magnitude": "number", "unit": "PT" },
+              "lineSpacing": "number"
+            },
+            "bullet": {
+              "listId": "string",
+              "nestingLevel": "integer",
+              "bulletStyle": { "format": "string", "bulletGlyph": "string" }
+            }
+          },
+          "textRun": {
+            "content": "string",
+            "style": {
+              "fontFamily": "string",
+              "fontSize": { "magnitude": "number", "unit": "PT" },
+              "italic": "boolean",
+              "bold": "boolean",
+              "strikethrough": "boolean",
+              "underline": "boolean",
+              "foregroundColor": { "opaqueColor": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } } },
+              "backgroundColor": { "opaqueColor": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } } },
+              "link": { "url": "string", "pageObjectId": "string", "slideIndex": "integer" }
+            }
+          },
+          "autoText": {
+            "type": { "type": "enum", "values": ["SLIDE_NUMBER"] },
+            "content": "string"
+          }
+        }
+      ]
+    },
+    "shapeProperties": {
+      "shapeBackgroundFill": {
+        "propertyState": { "type": "enum", "values": ["RENDERED", "NOT_RENDERED", "INHERIT"] },
+        "solidFill": {
+          "color": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } },
+          "alpha": "number"
+        }
+      },
+      "outline": {
+        "propertyState": { "type": "enum", "values": ["RENDERED", "NOT_RENDERED", "INHERIT"] },
+        "solidFill": { "color": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } }, "alpha": "number" },
+        "weight": { "magnitude": "number", "unit": "PT" },
+        "dashStyle": { "type": "enum", "values": ["SOLID", "DOT", "DASH", "DASH_DOT", "LONG_DASH", "LONG_DASH_DOT"] }
+      },
+      "shadow": {
+        "type": { "type": "enum", "values": ["OUTER"] },
+        "transform": { "$ref": "#/pageElement/transform" },
+        "alignment": { "type": "enum", "values": ["TOP_LEFT", "TOP_CENTER", "TOP_RIGHT", "LEFT_CENTER", "CENTER", "RIGHT_CENTER", "BOTTOM_LEFT", "BOTTOM_CENTER", "BOTTOM_RIGHT"] },
+        "blurRadius": { "magnitude": "number", "unit": "PT" },
+        "color": { "opaqueColor": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } } },
+        "alpha": "number",
+        "propertyState": { "type": "enum", "values": ["RENDERED", "NOT_RENDERED", "INHERIT"] }
+      },
+      "link": { "url": "string", "pageObjectId": "string" },
+      "contentAlignment": { "type": "enum", "values": ["CONTENT_ALIGNMENT_UNSPECIFIED", "TOP", "MIDDLE", "BOTTOM"] }
+    }
+  },
+  "image": {
+    "contentUrl": "string",
+    "sourceUrl": "string",
+    "imageProperties": {
+      "cropProperties": {
+        "leftOffset": "number",
+        "rightOffset": "number",
+        "topOffset": "number",
+        "bottomOffset": "number",
+        "angle": "number"
+      },
+      "transparency": "number",
+      "brightness": "number",
+      "contrast": "number",
+      "recolor": {
+        "recolorStops": [
+          { "color": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } }, "alpha": "number" }
+        ]
+      }
+    }
+  },
+  "table": {
+    "rows": "integer",
+    "columns": "integer",
+    "tableRows": [
+      {
+        "rowHeight": { "magnitude": "number", "unit": "PT" },
+        "tableCells": [
+          {
+            "location": { "rowIndex": "integer", "columnIndex": "integer" },
+            "rowSpan": "integer",
+            "columnSpan": "integer",
+            "text": { "$ref": "#/shape/text" },
+            "tableCellProperties": {
+              "tableCellBackgroundFill": { "solidFill": { "color": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } } } },
+              "contentAlignment": { "type": "enum", "values": ["TOP", "MIDDLE", "BOTTOM"] }
+            }
+          }
+        ]
+      }
+    ],
+    "tableColumns": [{ "columnWidth": { "magnitude": "number", "unit": "PT" } }]
+  },
+  "line": {
+    "lineProperties": {
+      "lineFill": { "solidFill": { "color": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } } } },
+      "weight": { "magnitude": "number", "unit": "PT" },
+      "dashStyle": { "type": "enum", "values": ["SOLID", "DOT", "DASH", "DASH_DOT", "LONG_DASH", "LONG_DASH_DOT"] },
+      "startArrow": { "type": "enum", "values": ["NONE", "ARROW", "STEALTH_ARROW", "DIAMOND", "OVAL", "OPEN_ARROW"] },
+      "endArrow": { "type": "enum", "values": ["NONE", "ARROW", "STEALTH_ARROW", "DIAMOND", "OVAL", "OPEN_ARROW"] },
+      "link": { "url": "string" }
+    },
+    "lineType": { "type": "enum", "values": ["STRAIGHT_CONNECTOR_1", "BENT_CONNECTOR_2", "BENT_CONNECTOR_3", "BENT_CONNECTOR_4", "BENT_CONNECTOR_5", "CURVED_CONNECTOR_2", "CURVED_CONNECTOR_3", "CURVED_CONNECTOR_4", "CURVED_CONNECTOR_5"] }
+  },
+  "video": {
+    "url": "string",
+    "id": "string",
+    "source": { "type": "enum", "values": ["YOUTUBE", "DRIVE"] },
+    "videoProperties": {
+      "outline": {
+        "propertyState": { "type": "enum", "values": ["RENDERED", "NOT_RENDERED", "INHERIT"] },
+        "solidFill": { "color": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } }, "alpha": "number" },
+        "weight": { "magnitude": "number", "unit": "PT" },
+        "dashStyle": { "type": "enum", "values": ["SOLID", "DOT", "DASH", "DASH_DOT", "LONG_DASH", "LONG_DASH_DOT"] }
+      },
+      "autoPlay": "boolean",
+      "start": "integer",
+      "end": "integer",
+      "mute": "boolean"
+    }
+  },
+  "sheetsChart": {
+    "spreadsheetId": "string",
+    "chartId": "integer",
+    "contentUrl": "string",
+    "sheetsChartProperties": {
+      "chartImageProperties": {
+        "cropProperties": {
+          "leftOffset": "number",
+          "rightOffset": "number",
+          "topOffset": "number",
+          "bottomOffset": "number",
+          "angle": "number"
+        },
+        "transparency": "number",
+        "brightness": "number",
+        "contrast": "number"
+      }
+    }
+  },
+  "requests": {
+    "_description": "Batch update request payloads for the presentations.batchUpdate method.",
+    "createSlideRequest": {
+      "objectId": "string",
+      "insertionIndex": "integer",
+      "slideLayoutReference": {
+        "predefinedLayout": { "type": "enum", "values": ["BLANK", "CAPTION_ONLY", "TITLE", "TITLE_AND_BODY", "TITLE_AND_TWO_COLUMNS", "TITLE_ONLY", "SECTION_HEADER", "SECTION_TITLE_AND_DESCRIPTION", "ONE_COLUMN_TEXT", "MAIN_POINT", "BIG_NUMBER"] }
+      },
+      "placeholderIdMappings": [
+        {
+          "layoutPlaceholder": {
+            "type": { "type": "enum", "values": ["NONE", "BODY", "CHART", "CLIP_ART", "TITLE", "SUBTITLE", "DATE_AND_TIME", "FOOTER", "HEADER", "MEDIA", "OBJECT", "PICTURE", "SLIDE_NUMBER", "TABLE"] },
+            "index": "integer"
+          },
+          "objectId": "string"
+        }
+      ]
+    },
+    "createShapeRequest": {
+      "objectId": "string",
+      "elementProperties": {
+        "pageObjectId": "string",
+        "size": { "width": { "magnitude": "number", "unit": "PT" }, "height": { "magnitude": "number", "unit": "PT" } },
+        "transform": { "$ref": "#/pageElement/transform" }
+      },
+      "shapeType": { "type": "enum", "values": ["TEXT_BOX", "RECTANGLE", "ROUND_RECTANGLE", "ELLIPSE"] }
+    },
+    "insertTextRequest": {
+      "objectId": "string",
+      "cellLocation": { "rowIndex": "integer", "columnIndex": "integer" },
+      "text": "string",
+      "insertionIndex": "integer"
+    },
+    "updateTextStyleRequest": {
+      "objectId": "string",
+      "cellLocation": { "rowIndex": "integer", "columnIndex": "integer" },
+      "style": {
+        "bold": "boolean",
+        "italic": "boolean",
+        "fontFamily": "string",
+        "fontSize": { "magnitude": "number", "unit": "PT" },
+        "foregroundColor": { "opaqueColor": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } } }
+      },
+      "textRange": {
+        "type": { "type": "enum", "values": ["FIXED_RANGE", "FROM_START_INDEX", "ALL"] },
+        "startIndex": "integer",
+        "endIndex": "integer"
+      },
+      "fields": "string"
+    },
+    "updateShapePropertiesRequest": {
+      "objectId": "string",
+      "shapeProperties": {
+        "shapeBackgroundFill": {
+          "solidFill": { "color": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } }, "alpha": "number" }
+        },
+        "outline": {
+          "solidFill": { "color": { "rgbColor": { "red": "number", "green": "number", "blue": "number" } } },
+          "weight": { "magnitude": "number", "unit": "PT" }
+        }
+      },
+      "fields": "string"
+    },
+    "replaceAllTextRequest": {
+      "containsText": { "text": "string", "matchCase": "boolean" },
+      "replaceText": "string",
+      "pageObjectIds": ["string"]
+    }
+  }
+}

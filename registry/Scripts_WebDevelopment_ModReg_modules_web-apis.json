@@ -1,0 +1,20 @@
+[
+  {
+    "name": "cookie-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/web-apis/cookie-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/web-apis/cookie-utils.ts"
+  },
+  {
+    "name": "indexed-db-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/web-apis/indexed-db-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/web-apis/indexed-db-utils.ts"
+  },
+  {
+    "name": "storage-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/web-apis/storage-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/web-apis/storage-utils.ts"
+  }
+]

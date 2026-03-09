@@ -1,0 +1,26 @@
+[
+  {
+    "name": "LayoutCalculatorExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/design/LayoutCalculatorExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/design/LayoutCalculatorExample.tsx"
+  },
+  {
+    "name": "ThemeManagerExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/design/ThemeManagerExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/design/ThemeManagerExample.tsx"
+  },
+  {
+    "name": "PaletteGeneratorExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/design/PaletteGeneratorExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/design/PaletteGeneratorExample.tsx"
+  },
+  {
+    "name": "GradientGeneratorExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/design/GradientGeneratorExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/design/GradientGeneratorExample.tsx"
+  }
+]

@@ -1,0 +1,159 @@
+# Public Assets Repo
+lets make a library doc for different ways of giving a React front-end system level access for things like file management, heavy processing, etc
+
+Document Title: System-Level Access Options for React Frontends  
+Version: 1.0  
+Author: Mr G (London)  
+Approved by: (pending)  
+Created date: 11 Feb 2026  
+Location: London, UK  
+Organisation: ZIKYinc  
+
+Page 1: Introduction & Scope  
+Page 2: Browser-Sandbox Limitations & Threat Model  
+Page 3: Local File System Access from the Browser  
+Page 4: Heavy Processing in the Browser (Workers, WASM, GPU)  
+Page 5: Desktop Wrappers (Electron) for System Access  
+Page 6: Desktop Wrappers (Tauri) for System Access  
+Page 7: Native Companion Service / Local API  
+Page 8: USB/Serial and Other Device APIs  
+Page 9: Choosing the Right Approach  
+Page 10: Finishing Page  
+Page 11: References & Tools  
+Page 12: Index  
+Page 13: License  
+
+***
+
+## Page 1: Introduction & Scope
+
+This document explains different ways a React frontend can gain **system-level access** for tasks such as file management, heavy processing, or interacting with local devices.[1][2][3][4][5] It focuses on architectural patterns and platform capabilities rather than a single framework, so you can decide how far you want to push beyond the browser sandbox.[1][2][4]
+
+We cover four main categories: enhanced browser APIs (for file and device access), browser-based heavy compute (Workers, WebAssembly), desktop wrappers (Electron, Tauri), and native companion services that expose local HTTP or IPC interfaces.[1][2][3][4][5] For each option we outline capabilities, security implications, and when a React-based UI is a sensible fit.[1][2][4][5]
+
+***
+
+## Page 2: Browser-Sandbox Limitations & Threat Model
+
+Standard React apps running in a web browser are heavily sandboxed: they cannot freely read or write arbitrary files, scan directories, or access system APIs without explicit user consent and limited, scoped capabilities.[1][2] This is by design, to prevent web pages from exfiltrating data or damaging the user’s system.
+
+The relevant threat model assumes hostile or compromised web content, so browsers require explicit user gestures (like file pickers or permission prompts) and constrain access to specific paths or devices.[1][2][5] Any approach that moves toward “system level” from a React frontend must respect these constraints or step outside the browser (desktop wrapper, local service) with its own security model.[2][4][5]
+
+***
+
+## Page 3: Local File System Access from the Browser
+
+Modern Chromium-based browsers expose the File System Access API, which allows web apps to read and write local files and directories after a user grants permission.[1][2] With this API, a React app can implement workflows like opening a folder, iterating entries, reading file contents, and saving changes back to disk, making browser-based editors and file managers feasible.[1][2][6]
+
+This access is still scoped: the user chooses files or directories via a picker, and the app cannot silently roam the entire file system.[2][6] Libraries and React hooks exist to wrap this API and provide a more ergonomic, component-level integration for things like persistent file handles and directory trees.[7][8] Cross‑browser support is uneven, so production systems often combine this with fallbacks (upload/download flows, IndexedDB, or a desktop wrapper for full access).[1][2][8]
+
+***
+
+## Page 4: Heavy Processing in the Browser (Workers, WASM, GPU)
+
+For CPU‑intensive tasks such as large file parsing, data transformation, or media processing, a React app running in the browser can offload computation to Web Workers or WebAssembly, keeping the UI responsive.[9] Workers run in separate threads and communicate via message passing, making them suitable for operations that would otherwise block the main thread.
+
+WebAssembly lets you bring compiled code (often from languages like C, C++, or Rust) into the browser, giving near‑native performance while still running inside the browser sandbox.[4][9] Combined with Workers, this can handle “heavy” processing on local data without any special system privileges, which is often enough for scenarios where you only need file-level rather than system-wide access.[9] Newer APIs like WebGPU give further acceleration for suitable workloads, again without breaking out of the browser’s security model.[9]
+
+***
+
+## Page 5: Desktop Wrappers (Electron) for System Access
+
+Electron bundles Chromium and Node.js to let you build desktop applications using web technologies, including React for the UI.[3][5] Because Node.js runs with normal OS permissions, you can access the file system, spawn processes, read system info, and interact with native modules, while the frontend communicates with the main process via IPC.[3][5]
+
+This architecture essentially makes your React app a desktop app: system-level access is provided by Node.js APIs and native add‑ons, not by the browser sandbox.[3][5] You must design careful boundaries between the renderer (React) and the main process to avoid exposing dangerous operations directly to untrusted UI input.[3][5] Electron’s size and resource usage are higher than browser-only approaches, but it is mature and widely used for file managers, IDEs, and other system-heavy tools.[4][5]
+
+***
+
+## Page 6: Desktop Wrappers (Tauri) for System Access
+
+Tauri is a more lightweight desktop app framework that uses the system’s native webview for the frontend (React, Vue, etc.) and Rust for the backend core.[4] It produces much smaller binaries than Electron and emphasizes a security-first design, where system access is restricted by default and configured via explicit permission policies.[4]
+
+In a Tauri app, your React frontend calls Rust “commands” over a secure bridge, and those commands implement file system access, heavy computation, or other privileged operations.[4] Rust’s performance and memory safety make it well suited for intensive processing and working with OS APIs, while React handles UI without worrying about the underlying platform.[4] This model gives you system-level capabilities with tighter control over what the frontend is allowed to do.[4]
+
+***
+
+## Page 7: Native Companion Service / Local API
+
+Another pattern is to run a native “companion” process that exposes a local API (often HTTP, WebSocket, or a custom IPC protocol) and let your React frontend talk to it.[3][5] The native service, written in something like Rust, Go, or .NET, handles file operations, heavy computation, or device access, while the React code remains a normal web app or a thin wrapper around a webview.
+
+This setup is common when you already have a native component (for example, a daemon or driver) and just want a modern UI.[4][5] Security hinges on how that local API is protected—binding to localhost, authentication, and access control—to avoid exposing powerful system operations to other local or remote clients.[5] The benefit is a clean separation of concerns and the ability to reuse the React UI for both browser and desktop contexts when appropriate.[4][5]
+
+***
+
+## Page 8: USB/Serial and Other Device APIs
+
+Modern browsers provide WebUSB, WebSerial, WebHID and related APIs that allow controlled access to external devices such as USB peripherals and serial equipment.[9][5] These APIs require explicit user permission and are constrained to specific devices, with prompts similar to camera and microphone access.
+
+From a React app, you can wrap these APIs in hooks or services and build interfaces for configuring or streaming data from hardware devices, while keeping the main UI responsive via Workers for heavy I/O.[9][5] Browser vendors are expanding support, including using WebUSB on Web Workers to offload heavy device I/O onto background threads.[9] For more advanced or privileged device access, Electron and Tauri again allow you to use native libraries and expose a higher-level device abstraction back to React.[4][5]
+
+***
+
+## Page 9: Choosing the Right Approach
+
+If your main need is **user‑approved file handling** (opening folders, editing local files) and modest processing, the File System Access API plus Workers/WASM inside a normal React web app is the simplest path.[1][2][9] For full **desktop‑style system access** and integration with native modules, wrapping React in Electron or Tauri is more appropriate, with Tauri offering smaller binaries and a more restrictive default security posture.[3][4][5]
+
+Where you already have or want a robust native core (for example, a Rust or Go service), exposing a **local API** and using React purely as the UI provides strong separation and testability.[4][5] Device‑specific requirements (USB, serial, HID) can sometimes be met in the browser via WebUSB/WebSerial, but you may still choose a desktop wrapper for better device driver integration or when browser support is insufficient.[9][5]
+
+***
+
+## Page 10: Finishing Page
+
+React itself does not magically grant system-level access; it is always paired with a runtime environment such as a browser, Electron, Tauri, or a native host that defines what is possible.[1][2][4][5] The art is in choosing the right host and bridging strategy: browser APIs for light local access, Workers and WASM for heavy compute, desktop wrappers for full system integration, and native services where you need the most control.[1][2][4][9][5]
+
+Future documents can drill into concrete implementation guides—for example, “Using the File System Access API in a React app”, “Electron + React IPC patterns for safe file operations”, or “Tauri + React with Rust commands for batch processing”.[1][2][3][4] Those would include code-level patterns, security configurations, and deployment considerations for each approach.[2][4][5]
+
+***
+
+## Page 11: References & Tools
+
+[1] File System API - Web APIs | MDN https://developer.mozilla.org/en-US/docs/Web/API/File_System_API
+[2] The File System Access API: simplifying access to local files https://developer.chrome.com/docs/capabilities/web-apis/file-system-access
+[3] Electron with react, how to get access to the main process that ... https://stackoverflow.com/questions/76608105/electron-with-react-how-to-get-access-to-the-main-process-that-enable-use-of-co
+[4] Building Desktop Apps with Rust and Tauri: The Complete 2025 Guide https://www.plutenium.com/blog/building-desktop-apps-with-rust-and-tauri
+[5] Device Access https://electronjs.org/docs/latest/tutorial/devices
+[6] Access all files within a given folder (The File System Access API) https://stackoverflow.com/questions/66040320/access-all-files-within-a-given-folder-the-file-system-access-api
+[7] GitHub - TimMikeladze/use-fs: 🗂️ A React hook that enables you to read, write, and manage files directly - eliminating the need for repeated file selection dialogs. This capability is ideal for creating powerful browser-based tools. https://github.com/TimMikeladze/use-fs
+[8] File System Access API (ponyfill) https://www.npmjs.com/package/file-system-access
+[9] Intent to Implement: WebUSB on Web Workers https://groups.google.com/a/chromium.org/g/blink-dev/c/MReOVYgRpKk/m/l_p83SUOAQAJ
+[10] LibraryDocsAIRules.txt https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/28914139/8b035270-546b-4de4-a174-afe007cdc426/LibraryDocsAIRules.txt
+[11] File System Access API https://github.com/RonRadtke/react-native-blob-util/wiki/File-System-Access-API
+
+
+- MDN – File System API: https://developer.mozilla.org/en-US/docs/Web/API/File_System_API[1]
+- Chrome Developers – File System Access API overview: https://developer.chrome.com/docs/capabilities/web-apis/file-system-access[2]
+- Stack Overflow – File System Access API folder access discussion: https://stackoverflow.com/questions/66040320/access-all-files-within-a-given-folder-the-file-system-access-api[6]
+- use-fs React hook for file system access: https://github.com/TimMikeladze/use-fs[7]
+- File System Access API ponyfill (npm): https://www.npmjs.com/package/file-system-access[8]
+- Electron docs – Device Access: https://electronjs.org/docs/latest/tutorial/devices[5]
+- Stack Overflow – Electron with React and main process access: https://stackoverflow.com/questions/76608105/electron-with-react-how-to-get-access-to-the-main-process-that-enable-use-of-co[3]
+- Tauri + Rust + web frontends overview: https://www.plutenium.com/blog/building-desktop-apps-with-rust-and-tauri[4]
+- WebUSB in Web Workers (Blink dev): https://groups.google.com/a/chromium.org/g/blink-dev/c/MReOVYgRpKk/m/l_p83SUOAQAJ[9]
+
+***
+
+## Page 12: Index
+
+Browser sandbox | Page 2  
+Desktop wrappers | Page 5, 6  
+Electron | Page 5, 11  
+File System Access API | Page 3, 11  
+Heavy processing | Page 4, 7, 9  
+Local companion service | Page 7  
+React frontend | Page 1, 2, 3, 4, 5, 6, 7  
+Tauri | Page 6, 11  
+USB / WebUSB | Page 8, 11  
+WebAssembly | Page 4  
+Web Workers | Page 4, 8  
+
+***
+
+## Page 13: License
+
+MIT License  
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this document and associated documentation files (the “Document”), to deal in the Document without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Document, and to permit persons to whom the Document is furnished to do so, subject to the following conditions:[10]
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Document.[10]
+
+THE DOCUMENT IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.[10] IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE DOCUMENT OR THE USE OR OTHER DEALINGS IN THE DOCUMENT.[10]

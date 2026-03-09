@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "name": "React Module Registry & Playground",
+    "desc": "A web application to categorize, register, and showcase reusable standalone module/helper scripts with an AI-powered sandbox.",
+    "date_made": "2024-05-20",
+    "user_version": "1.6.1",
+    "dev_version": "1.6.1"
+  },
+  "settings": {
+    "db_handling": "IndexedDB",
+    "theme_loader": "Custom",
+    "playground_auto_init": true,
+    "data_sync": {
+      "files": [
+        { "id": "modules_extra", "path": "data/modules.json", "type": "module_registry" },
+        { "id": "systems_extra", "path": "data/systems.json", "type": "system_registry" }
+      ],
+      "github_sync_enabled": false
+    }
+  },
+  "data": {
+    "categories": [
+      "Utilities",
+      "API Helpers",
+      "AI",
+      "DOM Helpers",
+      "Data Structures",
+      "Algorithms",
+      "Date & Time",
+      "Math & Numbers",
+      "Validation",
+      "Async & Promises",
+      "Web APIs",
+      "File System & I/O",
+      "Graphics & Canvas",
+      "State Management",
+      "React Hooks",
+      "3D Graphics",
+      "Cloud Services",
+      "ZIKYinc",
+      "Electron Adapters",
+      "Automation"
+    ]
+  },
+  "user_data": {
+    "user_database": [
+      {
+        "type": "IndexedDB",
+        "db_name": "ZIKYinc_ModuleReg",
+        "db_id": "ZIKAPPS",
+        "version": 10,
+        "mark_as": "default",
+        "stores": [
+          {
+            "store_name": "Projects",
+            "store_id": "USER",
+            "mark_as": "default",
+            "indexes": [
+              {
+                "name": "lastModified",
+                "keyPath": "lastModified",
+                "options": {
+                  "unique": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "user_defaults": {
+      "db_id": "ZIKAPPS",
+      "store_id": "USER",
+      "data": {}
+    }
+  }
+}

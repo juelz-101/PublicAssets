@@ -1,0 +1,10 @@
+{
+  "internal_config": {
+    "max_db_size_mb": 50,
+    "sync_interval_ms": 300000,
+    "retry_attempts": 3,
+    "log_level": "info"
+  },
+  "supported_db_types": ["IndexedDB", "LocalStorage", "SessionStorage"],
+  "reserved_store_names": ["__meta__", "__internal__"]
+}

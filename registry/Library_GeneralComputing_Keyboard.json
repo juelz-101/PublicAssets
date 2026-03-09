@@ -1,0 +1,20 @@
+[
+  {
+    "name": "KeyboardSymbols.mld",
+    "ext": "mld",
+    "path": "Library/GeneralComputing/Keyboard/KeyboardSymbols.mld",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Keyboard/KeyboardSymbols.mld"
+  },
+  {
+    "name": "[CH-GCPU]-KeyboardSymbols.mlb",
+    "ext": "mlb",
+    "path": "Library/GeneralComputing/Keyboard/[CH-GCPU]-KeyboardSymbols.mlb",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Keyboard/[CH-GCPU]-KeyboardSymbols.mlb"
+  },
+  {
+    "name": "[PC-KB]-Quick_Screenshot-Guide.mlg",
+    "ext": "mlg",
+    "path": "Library/GeneralComputing/Keyboard/[PC-KB]-Quick_Screenshot-Guide.mlg",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/GeneralComputing/Keyboard/[PC-KB]-Quick_Screenshot-Guide.mlg"
+  }
+]

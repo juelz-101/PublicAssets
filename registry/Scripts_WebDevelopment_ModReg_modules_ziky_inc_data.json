@@ -1,0 +1,14 @@
+[
+  {
+    "name": "db.data.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.data.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.data.json"
+  },
+  {
+    "name": "db.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.ts"
+  }
+]

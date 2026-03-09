@@ -1,0 +1,20 @@
+[
+  {
+    "name": "camera-controller.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics-3d/camera-controller.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics-3d/camera-controller.ts"
+  },
+  {
+    "name": "geometry-primitives.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics-3d/geometry-primitives.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics-3d/geometry-primitives.ts"
+  },
+  {
+    "name": "scene-manager.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics-3d/scene-manager.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics-3d/scene-manager.ts"
+  }
+]

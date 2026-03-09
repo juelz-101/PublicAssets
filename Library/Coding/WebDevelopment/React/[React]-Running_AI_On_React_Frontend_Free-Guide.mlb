@@ -1,0 +1,276 @@
+---
+Document Title: Using React as a Frontend with Free AI Integration
+Description: A practical guide to building React frontends and wiring in free or free-tier AI APIs for chat, content, and tools, without running your own models.
+Version: 1.0.0
+Author (role): Chatsir (Professor)
+Approved by: Pending
+Created date: 2026-02-16
+Location: London
+Organisation: ZIKYinc
+---
+
+## Table of Contents
+
+Page 1: What React Is and Where It Fits
+Page 2: React Project Setup and File Structure
+Page 3: Core React Concepts for Frontend Work
+Page 4: State, Props, and Data Flow in React
+Page 5: Calling AI APIs Safely from React
+Page 6: Using Free and Free-Tier AI Providers
+Page 7: Building a Simple AI-Powered React UI
+Page 8: Handling Errors, Rate Limits, and Loading States
+Page 9: Deploying a React + AI Frontend for Free
+Page 10: Finishing Page
+Page 11: References & Tools
+Page 12: Index
+Page 13: License
+
+---
+
+## Page 1: What React Is and Where It Fits
+
+React is a free, open‑source JavaScript library for building user interfaces on the web and in native apps.[web:154][web:157] It focuses on the **view layer**, meaning it helps you describe what the UI should look like for a given state, while leaving routing, data fetching, and backend concerns up to you or other libraries.[web:154][web:158] React applications are built from components—small, reusable pieces like buttons, forms, or entire sections of a page—that you compose together to create complex interfaces.[web:155][web:161] This component‑based approach makes it easier to reuse code, keep concerns separated, and reason about how changes in data affect what users see.[web:155][web:158]
+
+In the modern frontend stack, React usually sits at the top of the UI layer, talking to APIs and backends over HTTP.[web:158][web:160] A typical setup might be: a React single‑page application (SPA) in the browser, a REST or GraphQL API on the server, and one or more external services such as authentication providers or AI APIs.[web:158][web:160] The React app is responsible for rendering views, handling user interactions, managing client‑side state, and calling those services when needed.[web:154][web:161] This makes React a natural fit when you want a responsive interface that feels more like an app and less like a set of static pages.[web:160][web:163]
+
+React is declarative: instead of manually updating the DOM, you describe what the UI should look like for a given state, and React updates the DOM for you.[web:154][web:161] Under the hood, React uses a virtual DOM—an in‑memory representation of the UI—to calculate the minimal set of changes needed when state updates, which improves performance on complex pages.[web:155][web:158] You typically write React UI using JSX, a syntax that lets you embed HTML‑like tags directly inside JavaScript, so the structure of the UI and its behaviour can live together in the same component.[web:155][web:158] This combination of components, JSX, and the virtual DOM is what most developers mean when they talk about “building with React”.[web:155][web:158]
+
+React doesn’t enforce a single way to structure your whole app, which is both a strength and a source of confusion. For small projects, you might use React with a simple bundler like Vite and manage state using hooks like `useState` and `useEffect`.[web:154][web:158] As projects grow, teams often add patterns and libraries for routing, global state, forms, UI components, and data fetching, or move to frameworks like Next.js that sit on top of React.[web:158][web:159] The important thing is to understand React’s role: it’s the UI engine that renders components and responds to state changes, not a full “all‑in‑one” framework.[web:154][web:157]
+
+For AI‑powered frontends, React is useful because it makes it straightforward to wire user input, network calls, and UI updates together. The user types into a component (like a chat box or form), React holds that input in state, and then your code can call an AI API and render the response when it arrives.[web:145][web:146] You can keep the UI responsive by showing loading spinners, disabling buttons, and streaming responses into the interface as they come back from the API.[web:145] This document will focus on that pattern: React for the interactive UI and free or free‑tier AI APIs as the “brains” behind features like chat, summarisation, and content generation.[web:147][web:148]
+
+---
+
+## Page 2: React Project Setup and File Structure
+
+For React in 2026, the simplest **fully free** setup is a Vite + React project, hosted on a free static host like GitHub Pages, Netlify, or Vercel’s free plan (no credit card for personal/public projects).[web:164][web:165][web:167][web:169] This stack gives you a fast dev server, modern bundling, and push‑to‑deploy hosting without paying for servers or managed runtimes.[web:164][web:166][web:169] You install Node.js once on your machine, generate a Vite+React app, and from there everything else—development, builds, and static hosting—can stay inside the free tier as long as your traffic and build minutes remain modest.[web:164][web:165][web:167]
+
+A typical Vite + React project created with the official scaffolder has a small, predictable structure.[web:164][web:166][web:168] At the root you’ll see files like `index.html`, `package.json`, `vite.config.(js|ts)`, a lockfile, and config for tools like ESLint or TypeScript.[web:164][web:168][web:171] The `public/` folder holds static assets that are served as‑is (for example logos or static images), while `src/` contains your React code, starting from an entry file such as `main.jsx` or `main.tsx` and an `App` component.[web:164][web:166][web:171] When Vite builds the project, it turns this into static assets (HTML, JS, CSS) that you can drop onto any static hosting provider’s free plan.[web:164][web:167][web:169]
+
+Inside `src/`, it’s common to split code into folders like `components/` for reusable UI pieces, `pages/` for top‑level screens, and `lib/` or `services/` for API helpers and utilities.[web:164][web:171] Your React entry file typically imports a root `<App />` component and renders it into a DOM node in `index.html`, often using `ReactDOM.createRoot` from React 18+.[web:154][web:161] From there you can grow the structure gradually: add `hooks/` for custom hooks, `context/` for context providers, and an `api/` or `ai/` folder for functions that call AI endpoints.[web:158][web:160] Keeping AI‑related code in one place makes it easier to swap between providers or move calls to a backend later without rewiring your whole app.[web:145][web:146]
+
+For a fully free workflow, you want both code hosting and deployment to cost nothing. Using GitHub for source control and GitHub Pages, Netlify, or Vercel for static hosting covers that: all three support free hosting for small React/Vite apps, with automated builds on push.[web:165][web:167][web:169] GitHub Pages is ideal for simple static SPAs, while Netlify and Vercel offer more features like automatic previews and easy custom domains, all within generous free tiers as long as your project stays in personal/low‑traffic territory.[web:165][web:167][web:169] In this document we’ll assume you’re using Vite for local development and one of these free hosts for deployment, so you can focus on wiring React to AI APIs without paying for infrastructure.[web:164][web:165][web:167]
+
+---
+
+## Page 3: Core React Concepts for Frontend Work
+
+At the heart of React frontend work are three ideas: components, props, and state. Components are just JavaScript functions that return JSX, which is an HTML‑like syntax embedded in JavaScript and compiled down to `React.createElement` calls.[web:176][web:178] You build your UI by composing small components (buttons, inputs, layout blocks) into larger ones (forms, pages) rather than manipulating the DOM directly.[web:155][web:176] Props (short for “properties”) are how data flows **into** a component from its parent; they are read‑only inputs used to configure how the component renders.[web:173][web:179] This one‑way data flow makes it easier to trace where a value comes from and how changes propagate through your UI.[web:175][web:179]
+
+State is a component’s private, changeable data—its “memory” over time.[web:172][web:175] In function components you manage state with hooks like `useState`, which returns a state value and a setter function; when you call the setter, React re‑renders the component with the new state.[web:174][web:178][web:180] A common pattern is to keep “source of truth” state high enough in the tree (for example in a page or container component), and pass data down via props and callbacks back up to update that state.[web:175][web:179] Props are therefore external, immutable inputs, while state is internal, mutable data owned by the component that defines how it behaves and renders.[web:179][web:181]
+
+Modern React leans heavily on hooks to handle state and side effects. `useState` is the basic state hook; `useEffect` lets you run side effects like data fetching, subscriptions, or timers in response to renders and dependency changes.[web:174][web:177][web:180] For example, you might use `useEffect` to call an AI API whenever a query string changes, then store the result in state and render it into the component.[web:175][web:177] Other hooks like `useRef` for mutable references and `useContext` for global-ish state help you avoid prop‑drilling and manage more complex screens without reaching for external state libraries immediately.[web:175][web:181] Together, function components + hooks cover most frontend needs, including AI calls, without extra paid tools or services.[web:175][web:180]
+
+React’s rendering model is declarative: given some state and props, your component returns what the UI *should* look like, and React figures out how to update the actual DOM efficiently.[web:154][web:175] When either state or props change, React re‑runs the component function, compares the new virtual DOM tree to the previous one, and applies only the minimal changes to the real DOM.[web:173][web:176] This lets you write straightforward “data in → UI out” logic instead of manually attaching and removing DOM nodes, which is especially useful in AI‑driven interfaces where responses can be streamed or updated incrementally.[web:154][web:175] As long as you keep your components pure—no hidden mutations during render—and push all external effects into hooks, React remains predictable even as your frontend grows.[web:178][web:181]
+
+---
+
+## Page 4: State, Props, and Data Flow in React
+
+React is built around a one‑way data flow: data lives in a “source of truth” and moves down the tree as props, while events move back up via callbacks.[web:184][web:190][web:191] The parent component owns state and passes pieces of it to children as read‑only props so they can render UI based on that data.[web:184][web:185] When something needs to change (a form field, a selected item, a toggle), the child calls a function provided by the parent, and the parent updates its state, triggering a re‑render with new props.[web:183][web:186][web:191] This pattern keeps a single writer for shared data and makes it easier to trace where changes come from.[web:187][web:190]
+
+State is mutable data local to a component, created with hooks like `useState` in function components.[web:178][web:188] You use state for things that change over time in response to user actions, timers, or network results—current input values, loading flags, lists of AI responses, and so on.[web:177][web:188] Props, by contrast, are immutable inputs given to a component by its parent; the child is not allowed to change them directly and instead signals intent to change via callback props.[web:179][web:185][web:188] A simple rule of thumb is: if multiple components need to read or update the same data, the state for that data should live in their nearest common ancestor and be passed down as props.[web:183][web:186][web:189]
+
+“Lifting state up” is the standard way to keep siblings or distant components in sync.[web:183][web:186][web:189] You identify state that is currently duplicated across components (for example, a query string in both a search box and a results panel), move that state into their closest shared parent, and then pass it down along with change handlers.[web:183][web:186] The parent becomes the single source of truth: children receive the current value via props and notify the parent of changes through callback props such as `onChange` or `onSelect`.[web:186][web:189] This is the core pattern you’ll use for AI UIs: keep the AI request/response state high in the tree and let lower‑level components render or tweak it without owning the core data themselves.[web:187][web:190]
+
+Unidirectional data flow has a few important benefits for real projects. It makes component behaviour more predictable because data always travels in the same direction—down via props, up via events—and there is a single owner for any given piece of state.[web:184][web:187][web:191] Debugging is easier because you can inspect a component’s props and state at a point in time and know exactly what the UI should be for that combination.[web:184][web:188][web:190] It also works well with React’s rendering and reconciliation model: when the source‑of‑truth state changes, React re‑renders the relevant subtree, calculates the minimal DOM changes, and updates the view.[web:178][web:190][web:191] For AI‑driven frontends, this means you can treat “AI output” as just another piece of state flowing through a predictable pipeline—fetch, store, render—without needing paid state‑management tooling or complex bi‑directional bindings.[web:175][web:188][web:191]
+
+---
+
+## Page 5: Calling AI APIs Safely from React
+
+Calling AI APIs from React is technically just HTTP requests, but you have to treat security and cost limits seriously, especially if you want to stay fully free. The main rule is simple: never put private API keys directly in the browser bundle where anyone can view them. Instead, you either use providers that expose key‑less public endpoints for low‑risk use, or you put a tiny (still-free) backend or serverless function in front of the AI API and keep the real key there. In both cases, your React code only ever talks to URLs you’re comfortable exposing to users.
+
+For free‑first projects, prefer AI services that offer anonymous or key‑less usage, or demo endpoints with strict rate limits. Some free AI endpoints allow requests without authentication or with a public, non-sensitive token that you can rotate easily. Others provide browser‑friendly SDKs that are explicitly designed to run client‑side with limited capabilities and rate caps. These options are safer to call directly from React because you are not leaking any long‑lived secret. Where you must use a private key (for example, a standard text‑generation API), put that key in environment variables on a free backend (like a simple Node server, or serverless functions on Netlify/Vercel) and let React talk only to that backend.
+
+On the React side, treat AI calls as just another async data‑fetching problem. Keep request input, loading flags, and responses in state, and centralise the actual `fetch`/`axios` logic in a small `api/aiClient.ts` (or similar) module so the rest of the app doesn’t need to know details about providers. Handle three core UI states explicitly: idle (no request yet), loading (in-flight), and done (success or error). Show a spinner or disabled button while waiting, render the AI response when it arrives, and show a clear error message when something fails instead of silently doing nothing. This keeps the UI responsive and makes rate limits or temporary failures much less painful for users.
+
+You also need to defend both users and your free quotas. Validate and trim inputs before sending them to an AI API so users can’t accidentally (or deliberately) send huge prompts that burn through rate limits in one go. Debounce or throttle repeated calls from text inputs, and apply simple client‑side rate‑limiting like “ignore new calls if one is already in progress” or “cap to N calls per minute per user session”. Cache responses locally in memory or `localStorage` when it makes sense (for example, for the same prompt) so you don’t keep re‑using free‑tier calls for identical work. Combined, these patterns let you ship AI features in React that are cheap, predictable, and don’t leak secrets, while staying within the constraints of free and free‑tier services.
+
+
+---
+
+## Page 6: Using Free and Free-Tier AI Providers
+
+When you’re building a React frontend and want AI “for free”, there are two main categories to care about: **truly free / key‑less options** and **free‑tier APIs that still need a key but cost nothing at small scale**.[web:148][web:204] Truly free options are the easiest to plug straight into React because you don’t have to protect secrets; they either expose open endpoints or run locally on your own hardware.[web:148][web:204] Free‑tier APIs usually give you a generous quota at zero cost but still require API keys and, in some cases, an account, so they’re better called from a tiny backend than directly from the browser.[web:148][web:204][web:205]
+
+On the **fully free** side, you have things like Pollinations.ai, which lets you generate text and images through simple URLs or HTTP calls without an account or key.[web:204] That makes it ideal for experiments, portfolio projects, or teaching: you can call the API directly from React, show a loader while it responds, and never worry about leaked credentials.[web:204] Local tools such as Ollama also belong in this bucket: they run models on your own machine and expose a local HTTP API, effectively giving you “unlimited” calls bounded only by your hardware.[web:148] For local‑only tools, your React app usually talks to `http://localhost:PORT` during development, and you treat the local AI process like any other backend.[web:148]
+
+Free‑tier providers tend to offer more powerful models and better reliability, at the cost of setup and quotas. Hugging Face’s Inference API, for example, gives access to a huge catalog of open models for NLP, vision, and code with a free tier that doesn’t require a credit card but does enforce moderate rate limits.[web:148][web:150] Google’s Gemini API (via AI Studio) and similar offerings provide very capable text and multimodal models with daily or per‑minute quotas sufficient for small apps and prototypes.[web:148][web:202][web:204] Aggregator APIs like OpenRouter or multi‑model platforms can also offer free credits or limited daily usage across several high‑end models, which is useful when you want to compare outputs before committing to one provider.[web:148][web:204][web:203]
+
+For a React developer, the strategy is to **start with the most free, least risky option** that fits your use case. If you just need simple text or image generation to prove a concept, a key‑less or local provider avoids the whole problem of secret management and billing.[web:148][web:204] When you need better quality or specific features, step up to a free‑tier API but call it through a minimal backend or serverless function, keeping your key on the server and your React code dumb: it only knows about your own endpoint.[web:148][web:205] In all cases, design your UI and state around limits: show clear errors when quotas are hit, keep prompts short by default, and cache results when possible so you don’t burn free calls on the same request over and over.[web:148][web:170][web:207]
+
+---
+
+## Page 7: Building a Simple AI-Powered React UI
+
+The simplest useful AI UI you can build in React is a single-page “ask a question, get an answer” interface. You need four pieces of state: the current input text, a list of past messages or responses, a loading flag, and an error string. The core flow is: user types a prompt, clicks a button, you set loading to true, call a free or key‑less AI endpoint, store the response in state, and render it underneath the input. Keeping everything in one component at first makes it easier to see the full data flow before you start extracting smaller components.
+
+A minimal component might have an input box, a “Ask AI” button, and a scrollable list of responses. When the form submits, you validate the input (non‑empty, length limit), set `loading = true`, clear any previous error, and send a `fetch` request to your chosen AI endpoint. Once the response arrives, you parse the JSON, append a new entry to a `messages` array in state (for example `{ role: 'user', text: prompt }` followed by `{ role: 'ai', text: answer }`), and set `loading = false`. If the request fails or the API returns an error, you set an error message in state and show it above or below the input instead of silently failing.
+
+When you wire this into React, small UX details make a big difference. Disable the submit button while `loading` is true to prevent spamming the free API and to keep your UI predictable. Show a simple “Thinking…” spinner or skeleton while waiting so users know something is happening. Trim whitespace from prompts and, if you’re on a tight free tier, enforce a maximum character count and display how many characters the user has typed. If you want to feel a bit more “chat‑like”, render user and AI bubbles with different background colours and alignments, but keep the logic exactly the same: it’s just rendering the `messages` state array as a list.
+
+To stay in the “free as long as possible” zone, you should also add a couple of guardrails to this simple UI. Track how many requests have been made in the current session (for example, with a simple counter in state) and soft‑limit it—once a user has made, say, 20 calls, show a message explaining that they’ve hit the demo limit and ask them to come back later. Avoid firing automatic calls on every keystroke; use an explicit “Send” or “Ask” button so you only call the AI when the user really wants to. These small constraints, combined with the React patterns you’ve already seen (state, props, and one‑way data flow), give you a robust, portfolio‑ready AI UI without paying for infrastructure or blowing through free API allowances.
+
+---
+
+## Page 8: Handling Errors, Rate Limits, and Loading States
+
+When your React app talks to AI APIs, failures are guaranteed: network glitches, quota limits, malformed inputs, or provider outages. You want to design your UI and state so those failures are expected, visible, and recoverable instead of surprising.[web:218][web:219][web:222] At minimum, every AI call should track three bits of state: `isLoading`, `error`, and the last `result`. That lets you show different UI for “idle”, “loading”, “success”, and “error” without throwing exceptions or leaving the user staring at a frozen screen.[web:218][web:222] Wrap your request logic in `try/catch`, set `isLoading = true` before the call and `false` in `finally`, and always set an appropriate `error` message when something goes wrong.[web:218][web:220]
+
+For free and free‑tier AI providers, rate limits are one of the most common failure modes. APIs will often respond with HTTP 429 (Too Many Requests) or include headers that describe how many requests remain and when you can try again.[web:204][web:205] In your React UI, you should detect rate‑limit responses and show a specific message such as “You’ve hit the free limit, try again in a few minutes” rather than a generic “Something went wrong”.[web:218][web:222] On the client side, add lightweight throttling: block multiple concurrent requests from the same button, debounce inputs that could trigger repeated calls, and track how many calls have been made in the current session so you can enforce a soft limit before the provider does.[web:170][web:207]
+
+Loading states are where most AI UIs either feel smooth or painful. Instead of leaving the button active and the page static, disable actions while a request is in flight and show a clear indicator such as a spinner, skeleton UI, or “Thinking…” label.[web:218][web:222][web:227] For longer operations, break the process into steps and show progress text (“Sending request…”, “Waiting for AI…”, “Formatting answer…”) so users know the app is alive, even if the provider is slow.[web:227] When an error occurs, keep the user’s input visible, preserve the previous responses, and offer a “Retry” button that reuses the same prompt, so they don’t feel punished for issues outside their control.[web:218][web:220] Thinking in terms of explicit loading, error, and success states—rather than “fire and forget”—makes your AI frontend feel robust even when you are leaning heavily on fragile free tiers.[web:218][web:219][web:222]
+
+---
+
+## Page 9: Deploying a React + AI Frontend for Free
+
+Deploying a React + AI frontend for free usually means serving a static React build on a free host and, if you need private API keys, hiding them behind a tiny free backend. For pure key‑less or local AI setups, you can keep it completely static: run `npm run build` (or the Vite equivalent) to produce an optimised `dist/` folder, then upload that folder to a free static hosting service like Netlify, Vercel, GitHub Pages, or Cloudflare Pages. These platforms all have free tiers suitable for personal or low‑traffic projects and can connect directly to your Git repository so each push triggers a new build and deployment.[web:165][web:228][web:231]
+
+The basic “static only” deployment flow looks like this: push your React code to a Git repository, connect the repo to your chosen host, select your build command and output folder, and let the platform handle builds on every push. For Vite projects, this usually means a build command of `npm run build` and an output directory of `dist/`; for Create React App, it’s `npm run build` and `build/`. On Netlify or Vercel you can do this entirely through their web UI: sign up, import your repo, configure build settings, and get a live URL within a few minutes.[web:165][web:228][web:233][web:234] GitHub Pages and Cloudflare Pages offer similar flows for static assets, with slightly more manual configuration for branches and build settings.[web:228]
+
+If your AI provider requires a secret key, you’ll usually add a minimal backend while still staying fully within free tiers. One common pattern is to create a single serverless function (for example, on Netlify Functions or Vercel Serverless) that accepts requests from your React app, adds the AI API key from environment variables, forwards the request to the AI provider, and returns the result. Your frontend then calls only this function’s URL, never the real AI endpoint, so no secrets are exposed in the browser. Even with this extra hop, everything can remain free for small workloads because the major frontend hosts include a modest amount of serverless function time in their free plans.
+
+To keep your free deployment sustainable, you also need a bit of operational discipline. Keep bundle sizes sensible so you don’t waste visitors’ bandwidth and your own build resources. Log and handle AI errors gracefully instead of leaving the UI blank, and consider simple client‑side limits like capping the number of requests per session so you don’t accidentally hit backend or AI provider quotas. If your usage grows, you can later migrate the same React code to a paid plan or a more robust backend without rewriting the UI. For portfolio projects, prototypes, and small internal tools, though, a static React build plus free hosting and carefully chosen AI providers is enough to get a real AI‑powered app live on the public internet without paying a single penny.
+
+
+---
+
+## Page 10: Finishing Page
+
+By now you’ve seen the full path from “plain React app” to “deployed AI‑powered frontend that costs nothing to run at small scale”. You start with a simple Vite + React project, keep components, state, and props under control, and treat AI APIs as just another async data source wired into your UI. The key is staying disciplined about one‑way data flow and keeping your AI integration isolated in a small client module or backend proxy so you can swap providers or move off free tiers later without rewriting everything.
+
+If your priority is **fully free**, the stack looks like this: Vite + React, static hosting on Netlify/Vercel/GitHub Pages, and either a key‑less AI endpoint or a local AI server running on your own machine. As your needs grow, you can step up to free‑tier AI providers that require keys, hide those keys behind a tiny free backend, and keep the React app talking only to your own endpoint. Throughout, you manage loading, errors, and rate limits explicitly in state so the UI feels solid even when the underlying AI service is flaky or throttled.
+
+A simple “next steps” checklist for this topic looks like:
+- Build one minimal Q&A UI that talks to a fully free AI endpoint.
+- Refactor AI calls into a dedicated `aiClient` module and add proper loading/error handling.
+- Deploy the app to a free static host and test from a phone and a friend’s laptop.
+- Only after that, experiment with more advanced models, streaming, or multi‑provider setups.
+
+Treat this as a base pattern you can reuse: React on the front, the cheapest possible AI behind it, and a careful balance between “cool features” and “doesn’t secretly cost me money every month”.
+
+---
+
+## Page 11: References & Tools
+
+### Free (no key or fully local in practice)
+
+- React official docs – Core concepts, hooks, and modern patterns for building React frontends.  
+  https://react.dev  
+
+- Vite – Fast dev server and build tool commonly used for modern React apps.  
+  https://vitejs.dev  
+
+- Netlify (static sites) – Free tier for small React SPAs; Git-based deploys, simple config.  
+  https://www.netlify.com  
+
+- Vercel (static/frontends) – Free tier well-suited to React and Next.js frontends.  
+  https://vercel.com  
+
+- GitHub Pages – Free static hosting for React builds from Git repos.  
+  https://pages.github.com  
+
+- Cloudflare Pages – Free static deployment platform for JAMstack/React apps.  
+  https://pages.cloudflare.com  
+
+- Pollinations.ai – Key-less AI media generation endpoints suitable for experiments and demos.  
+  https://pollinations.ai  
+
+- Ollama – Run open models locally and expose a local HTTP API to your React app.  
+  https://ollama.com  
+
+- Free-LLM resource list – Community‑maintained index of free LLM inference endpoints and hosts.  
+  https://github.com/cheahjs/free-llm-api-resources  
+
+- AI SDK (TypeScript toolkit) – Open SDK for calling multiple AI backends from TypeScript/React.  
+  https://ai-sdk.dev  
+
+
+### Free‑tier (requires account / key but usable at zero cost for small projects)
+
+- Hugging Face Inference API – Hosted open models (text, vision, more) with a free quota.  
+  https://huggingface.co/inference-api  
+
+- Google Gemini / AI Studio – Text and multimodal models with generous free usage caps.  
+  https://ai.google.dev  
+
+- Multi‑model AI aggregators (e.g. OpenRouter, AIMLAPI) – Route to multiple providers with free credits/tiers.  
+  https://openrouter.ai  
+  https://aimlapi.com  
+
+- “Top free AI APIs” overviews – Curated lists of up‑to‑date free and free‑tier AI APIs.  
+  https://aicurator.io/free-ai-apis/  
+  https://ucscode.com/top-free-apis-for-your-projects-is-chatgpts-api-really-free-and-other-ai-options/  
+
+- Guides to free AI APIs and tools – Broad surveys of free tools and APIs (LLMs, vision, etc.).  
+  https://www.datacamp.com/blog/free-ai-tools  
+  https://eesel.ai/blog/free-ai-api  
+
+- Free React hosting roundups – Comparisons of free React hosting options and deployment flows.  
+  https://blog.logrocket.com/9-ways-deploy-react-app-free/  
+  https://animaapp.com/blog/industry/8-free-react-app-hosting-services 
+
+---
+
+## Page 12: Index
+
+React (definition) | Page 1
+Component-based UI | Page 1
+Virtual DOM | Page 1
+JSX syntax | Page 1
+React in the frontend stack | Page 1
+React and AI APIs (high-level) | Page 1
+Vite + React project setup | Page 2
+React folder structure (src/public) | Page 2
+Entry file and App component | Page 2
+Static hosting (GitHub Pages/Netlify/Vercel) | Page 2
+Fully free frontend workflow | Page 2
+Components, props, and state | Page 3
+One-way data flow | Page 3
+useState hook | Page 3
+useEffect and side effects | Page 3
+Hooks-based React (function components) | Page 3
+Declarative rendering and re-renders | Page 3
+Unidirectional data flow | Page 4
+State vs props (ownership) | Page 4
+Lifting state up | Page 4
+Single source of truth | Page 4
+Callbacks for updates (events up) | Page 4
+Data flow benefits (predictability, debugging) | Page 4
+Client vs backend AI calls | Page 5
+Key-less / public AI endpoints | Page 5
+Free AI usage and rate limits | Page 5
+AI API wrapper module in React | Page 5
+Loading / success / error states for AI calls | Page 5
+Input validation and debouncing | Page 5
+Client-side rate limiting and caching | Page 5
+Truly free vs free-tier AI providers | Page 6
+Key-less / local AI options (Pollinations, local runners) | Page 6
+Free-tier APIs (Hugging Face, Gemini, etc.) | Page 6
+Aggregators and multi-model APIs | Page 6
+Strategy: start fully free, then free-tier via backend | Page 6
+Designing around quotas and limits | Page 6
+Minimal AI Q&A UI (React) | Page 7
+Core AI UI state (input, messages, loading, error) | Page 7
+Submit → fetch → render flow | Page 7
+Loading and disabled button behaviour | Page 7
+Session limits and guardrails for free use | Page 7
+API error state (isLoading, error, result) | Page 8
+Handling HTTP 429 and rate limits | Page 8
+Client-side throttling and session caps | Page 8
+Loading indicators and progress text | Page 8
+Retry UX and preserving input | Page 8
+Explicit idle/loading/success/error states | Page 8
+Static build and free hosting | Page 9
+Git-based deployment flow | Page 9
+Serverless function as AI proxy | Page 9
+Environment variables for API keys | Page 9
+Keeping React bundles lean in free tiers | Page 9
+Session/request limiting in production | Page 9
+
+---
+
+## Page 13: License  
+

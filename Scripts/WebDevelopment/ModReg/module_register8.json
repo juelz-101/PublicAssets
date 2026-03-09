@@ -1,0 +1,606 @@
+[
+  {
+    "category": "Electron Adapters",
+    "description": "Modules for abstracting Electron APIs like IPC, File System, and Window controls, with browser-compatible fallbacks.",
+    "modules": [
+      {
+        "name": "ipc-wrapper",
+        "description": "A type-safe wrapper for Electron's ipcRenderer with a mock implementation for web debugging.",
+        "path": "modules/electron/ipc-wrapper.ts",
+        "examplePath": "examples/electron/IpcWrapperExample.tsx",
+        "functions": [
+          {
+            "name": "ipc.send",
+            "description": "Sends an asynchronous message to the main process via `channel`, along with arguments.",
+            "params": ["channel: string", "data?: any"],
+            "returns": "void"
+          },
+          {
+            "name": "ipc.invoke",
+            "description": "Sends a message to the main process and waits for a response (Promise).",
+            "params": ["channel: string", "data?: any"],
+            "returns": "Promise<T>"
+          },
+          {
+            "name": "ipc.on",
+            "description": "Listens to `channel`, when a new message arrives `listener` would be called.",
+            "params": ["channel: string", "listener: (event: any, ...args: any[]) => void"],
+            "returns": "void"
+          },
+          {
+            "name": "ipc.off",
+            "description": "Removes the specified `listener` from the listener array for the specified `channel`.",
+            "params": ["channel: string", "listener: Function"],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "window-shell-utils",
+        "description": "Utilities for managing application windows and shell operations.",
+        "path": "modules/electron/window-shell-utils.ts",
+        "examplePath": "examples/electron/WindowShellExample.tsx",
+        "functions": [
+          {
+            "name": "windowControls.minimize",
+            "description": "Minimizes the current window via IPC.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "windowControls.maximize",
+            "description": "Maximizes or unmaximizes the current window via IPC.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "windowControls.close",
+            "description": "Closes the current window via IPC.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "shellUtils.openExternal",
+            "description": "Opens the given external protocol URL in the desktop's default manner.",
+            "params": ["url: string"],
+            "returns": "Promise<void>"
+          }
+        ]
+      },
+      {
+        "name": "fs-wrapper",
+        "description": "A bridge for Node.js file system operations via IPC, with a local storage fallback for web.",
+        "path": "modules/electron/fs-wrapper.ts",
+        "examplePath": "examples/electron/FsWrapperExample.tsx",
+        "functions": [
+          {
+            "name": "fs.readFile",
+            "description": "Reads the contents of a file.",
+            "params": ["path: string", "encoding?: string"],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "fs.writeFile",
+            "description": "Writes data to a file, replacing the file if it already exists.",
+            "params": ["path: string", "data: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "fs.exists",
+            "description": "Checks if a file or directory exists.",
+            "params": ["path: string"],
+            "returns": "Promise<boolean>"
+          },
+          {
+            "name": "fs.readdir",
+            "description": "Reads the contents of a directory.",
+            "params": ["path: string"],
+            "returns": "Promise<string[]>"
+          }
+        ]
+      },
+      {
+        "name": "dialog-manager",
+        "description": "A comprehensive wrapper for native system dialogs (Open, Save, Message, Error) with browser fallbacks.",
+        "path": "modules/electron/dialog-manager.ts",
+        "examplePath": "examples/electron/DialogsExample.tsx",
+        "functions": [
+          {
+            "name": "dialog.showOpenDialog",
+            "description": "Opens a dialog to select files or directories.",
+            "params": ["options?: OpenDialogOptions"],
+            "returns": "Promise<OpenDialogReturnValue>"
+          },
+          {
+            "name": "dialog.showSaveDialog",
+            "description": "Opens a dialog to save a file.",
+            "params": ["options?: SaveDialogOptions"],
+            "returns": "Promise<SaveDialogReturnValue>"
+          },
+          {
+            "name": "dialog.showMessageBox",
+            "description": "Shows a native message box.",
+            "params": ["options: MessageBoxOptions"],
+            "returns": "Promise<MessageBoxReturnValue>"
+          },
+          {
+            "name": "dialog.showErrorBox",
+            "description": "Displays a modal dialog that shows an error message.",
+            "params": ["title: string", "content: string"],
+            "returns": "void"
+          },
+          {
+            "name": "dialog.confirm",
+            "description": "A convenience method to show a Yes/No confirmation dialog.",
+            "params": ["message: string", "detail?: string"],
+            "returns": "Promise<boolean>"
+          },
+          {
+            "name": "dialog.showAboutPanel",
+            "description": "Displays the standard 'About' panel for the application.",
+            "params": [],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "clipboard-extended",
+        "description": "Clipboard operations supporting text, images, HTML, and format inspection.",
+        "path": "modules/electron/clipboard-extended.ts",
+        "examplePath": "examples/electron/ClipboardExtendedExample.tsx",
+        "functions": [
+          {
+            "name": "clipboard.writeText",
+            "description": "Writes text to the clipboard.",
+            "params": ["text: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "clipboard.readText",
+            "description": "Reads text from the clipboard.",
+            "params": [],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "clipboard.writeImage",
+            "description": "Writes an image (Data URL) to the clipboard.",
+            "params": ["dataUrl: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "clipboard.readImage",
+            "description": "Reads an image from the clipboard as a Data URL.",
+            "params": [],
+            "returns": "Promise<string | null>"
+          },
+          {
+            "name": "clipboard.writeHTML",
+            "description": "Writes HTML markup (and optional plain text fallback) to the clipboard.",
+            "params": ["html: string", "plainText?: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "clipboard.readHTML",
+            "description": "Reads HTML content from the clipboard.",
+            "params": [],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "clipboard.clear",
+            "description": "Clears the clipboard content.",
+            "params": [],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "clipboard.availableFormats",
+            "description": "Returns an array of supported formats currently available in the clipboard.",
+            "params": [],
+            "returns": "Promise<string[]>"
+          }
+        ]
+      },
+      {
+        "name": "system-info",
+        "description": "Utilities to retrieve system information like screen size, battery, cursor position, and OS details.",
+        "path": "modules/electron/system-info.ts",
+        "examplePath": "examples/electron/SystemInfoExample.tsx",
+        "functions": [
+          {
+            "name": "sysInfo.getPlatform",
+            "description": "Returns the OS platform (win32, darwin, linux, or web-browser).",
+            "params": [],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "sysInfo.getDisplays",
+            "description": "Returns information about connected displays.",
+            "params": [],
+            "returns": "Promise<DisplayInfo[]>"
+          },
+          {
+            "name": "sysInfo.getBatteryStatus",
+            "description": "Returns battery level and charging status.",
+            "params": [],
+            "returns": "Promise<BatteryStatus>"
+          },
+          {
+            "name": "sysInfo.getCursorPosition",
+            "description": "Returns the current mouse cursor position in global screen coordinates.",
+            "params": [],
+            "returns": "Promise<{x: number, y: number}>"
+          },
+          {
+            "name": "sysInfo.isDarkMode",
+            "description": "Checks if the system is currently in Dark Mode.",
+            "params": [],
+            "returns": "Promise<boolean>"
+          },
+          {
+            "name": "sysInfo.getProcessMemoryInfo",
+            "description": "Returns memory usage statistics for the current process.",
+            "params": [],
+            "returns": "Promise<MemoryInfo>"
+          },
+          {
+            "name": "sysInfo.getAppVersion",
+            "description": "Returns the version of the running application.",
+            "params": [],
+            "returns": "Promise<string>"
+          }
+        ]
+      },
+      {
+        "name": "menu-manager",
+        "description": "Manages application and context menus, allowing dynamic updates to menu items.",
+        "path": "modules/electron/menu-manager.ts",
+        "examplePath": "examples/electron/MenuManagerExample.tsx",
+        "functions": [
+          {
+            "name": "menu.setApplicationMenu",
+            "description": "Sets the application's top-level menu.",
+            "params": ["template: MenuItem[]"],
+            "returns": "void"
+          },
+          {
+            "name": "menu.showContextMenu",
+            "description": "Shows a context menu at the specified position.",
+            "params": ["template: MenuItem[]", "position?: {x: number, y: number}"],
+            "returns": "void"
+          },
+          {
+            "name": "menu.updateMenuItem",
+            "description": "Updates a menu item by ID with new properties (e.g., label, checked, enabled).",
+            "params": ["id: string", "options: Partial<MenuItem>"],
+            "returns": "void"
+          },
+          {
+            "name": "menu.getMenuItemById",
+            "description": "Retrieves the current state of a menu item by its ID.",
+            "params": ["id: string"],
+            "returns": "MenuItem | undefined"
+          },
+          {
+            "name": "menu.closePopup",
+            "description": "Closes the currently open context menu.",
+            "params": ["windowId?: number"],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "tray-manager",
+        "description": "Manages the system tray icon, including tooltips, context menus, and notification balloons.",
+        "path": "modules/electron/tray-manager.ts",
+        "examplePath": "examples/electron/TrayManagerExample.tsx",
+        "functions": [
+          {
+            "name": "tray.create",
+            "description": "Creates a tray icon.",
+            "params": ["iconPath: string", "toolTip?: string"],
+            "returns": "void"
+          },
+          {
+            "name": "tray.setImage",
+            "description": "Changes the tray icon image.",
+            "params": ["iconPath: string"],
+            "returns": "void"
+          },
+          {
+            "name": "tray.setContextMenu",
+            "description": "Sets the context menu for the tray icon.",
+            "params": ["template: MenuItem[]"],
+            "returns": "void"
+          },
+          {
+            "name": "tray.setToolTip",
+            "description": "Updates the tooltip of the tray icon.",
+            "params": ["toolTip: string"],
+            "returns": "void"
+          },
+          {
+            "name": "tray.setTitle",
+            "description": "Sets the title displayed next to the tray icon in the status bar (macOS only).",
+            "params": ["title: string"],
+            "returns": "void"
+          },
+          {
+            "name": "tray.displayBalloon",
+            "description": "Displays a system tray balloon notification (Windows).",
+            "params": ["options: { title: string, content: string, iconType?: 'none'|'info'|'warning'|'error' }"],
+            "returns": "void"
+          },
+          {
+            "name": "tray.getBounds",
+            "description": "Returns the bounds (x, y, width, height) of the tray icon.",
+            "params": [],
+            "returns": "Promise<{x: number, y: number, width: number, height: number}>"
+          },
+          {
+            "name": "tray.destroy",
+            "description": "Removes the tray icon.",
+            "params": [],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "taskbar-utils",
+        "description": "Utilities for controlling the application's appearance in the OS taskbar or dock, including overlays and recent docs.",
+        "path": "modules/electron/taskbar-utils.ts",
+        "examplePath": "examples/electron/TaskbarUtilsExample.tsx",
+        "functions": [
+          {
+            "name": "taskbar.setProgressBar",
+            "description": "Sets the progress bar value on the taskbar icon (0 to 1, or -1 to clear).",
+            "params": ["value: number"],
+            "returns": "void"
+          },
+          {
+            "name": "taskbar.setBadgeCount",
+            "description": "Sets the badge count on the dock icon (macOS/Linux).",
+            "params": ["count: number"],
+            "returns": "void"
+          },
+          {
+            "name": "taskbar.setOverlayIcon",
+            "description": "Sets a small overlay icon on the taskbar button (Windows).",
+            "params": ["dataUrl: string", "text: string"],
+            "returns": "void"
+          },
+          {
+            "name": "taskbar.setThumbnailTooltip",
+            "description": "Sets the toolip text displayed when hovering over the taskbar thumbnail (Windows).",
+            "params": ["tooltip: string"],
+            "returns": "void"
+          },
+          {
+            "name": "taskbar.flashFrame",
+            "description": "Flashes the window title bar or taskbar button to gain attention.",
+            "params": ["flag: boolean"],
+            "returns": "void"
+          },
+          {
+            "name": "taskbar.addRecentDocument",
+            "description": "Adds a file path to the Recent Documents list in the taskbar jump list.",
+            "params": ["path: string"],
+            "returns": "void"
+          },
+          {
+            "name": "taskbar.clearRecentDocuments",
+            "description": "Clears the Recent Documents list.",
+            "params": [],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "global-shortcut",
+        "description": "Registers global keyboard shortcuts that work even when the application does not have focus.",
+        "path": "modules/electron/global-shortcut.ts",
+        "examplePath": "examples/electron/GlobalShortcutExample.tsx",
+        "functions": [
+          {
+            "name": "globalShortcut.register",
+            "description": "Registers a global shortcut.",
+            "params": ["accelerator: string", "callback: () => void"],
+            "returns": "boolean"
+          },
+          {
+            "name": "globalShortcut.unregister",
+            "description": "Unregisters a specific global shortcut.",
+            "params": ["accelerator: string"],
+            "returns": "void"
+          },
+          {
+            "name": "globalShortcut.unregisterAll",
+            "description": "Unregisters all global shortcuts registered by the application.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "globalShortcut.isRegistered",
+            "description": "Checks if a given accelerator is registered.",
+            "params": ["accelerator: string"],
+            "returns": "boolean"
+          }
+        ]
+      },
+      {
+        "name": "power-monitor",
+        "description": "Monitors power state changes (suspend, resume, AC/battery).",
+        "path": "modules/electron/power-monitor.ts",
+        "examplePath": "examples/electron/PowerMonitorExample.tsx",
+        "functions": [
+          {
+            "name": "powerMonitor.on",
+            "description": "Adds a listener for a power event.",
+            "params": ["event: PowerEvent", "listener: () => void"],
+            "returns": "void"
+          },
+          {
+            "name": "powerMonitor.off",
+            "description": "Removes a listener for a power event.",
+            "params": ["event: PowerEvent", "listener: () => void"],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "desktop-capturer",
+        "description": "Accesses available media sources (screens and windows) for capture.",
+        "path": "modules/electron/desktop-capturer.ts",
+        "examplePath": "examples/electron/DesktopCapturerExample.tsx",
+        "functions": [
+          {
+            "name": "desktopCapturer.getSources",
+            "description": "Returns a list of screen and window sources available for capture.",
+            "params": ["options: { types: Array<'screen' | 'window'>, thumbnailSize?: {width: number, height: number} }"],
+            "returns": "Promise<DesktopCapturerSource[]>"
+          }
+        ]
+      },
+      {
+        "name": "web-frame",
+        "description": "Customize the rendering of the current web page (zoom level, etc.).",
+        "path": "modules/electron/web-frame.ts",
+        "examplePath": "examples/electron/WebFrameExample.tsx",
+        "functions": [
+          {
+            "name": "webFrame.setZoomFactor",
+            "description": "Changes the zoom factor of the specified page.",
+            "params": ["factor: number"],
+            "returns": "void"
+          },
+          {
+            "name": "webFrame.getZoomFactor",
+            "description": "Returns the current zoom factor.",
+            "params": [],
+            "returns": "number"
+          },
+          {
+            "name": "webFrame.setVisualZoomLevelLimits",
+            "description": "Sets the maximum and minimum pinch-to-zoom level.",
+            "params": ["minLevel: number", "maxLevel: number"],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "auto-updater",
+        "description": "Manages checking for updates and installing them.",
+        "path": "modules/electron/auto-updater.ts",
+        "examplePath": "examples/electron/AutoUpdaterExample.tsx",
+        "functions": [
+          {
+            "name": "autoUpdater.checkForUpdates",
+            "description": "Asks the server whether there is an update.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "autoUpdater.quitAndInstall",
+            "description": "Restarts the app and installs the update.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "autoUpdater.on",
+            "description": "Adds a listener for update events (update-available, download-progress, etc.).",
+            "params": ["event: AutoUpdaterEvent", "listener: Function"],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "power-save-blocker",
+        "description": "Prevents the system from entering sleep mode.",
+        "path": "modules/electron/power-save-blocker.ts",
+        "examplePath": "examples/electron/PowerSaveBlockerExample.tsx",
+        "functions": [
+          {
+            "name": "powerSaveBlocker.start",
+            "description": "Starts blocking system suspend.",
+            "params": ["type: 'prevent-app-suspension' | 'prevent-display-sleep'"],
+            "returns": "Promise<number>"
+          },
+          {
+            "name": "powerSaveBlocker.stop",
+            "description": "Stops a specified blocker.",
+            "params": ["id: number"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "powerSaveBlocker.isStarted",
+            "description": "Checks if a blocker ID is active.",
+            "params": ["id: number"],
+            "returns": "Promise<boolean>"
+          }
+        ]
+      },
+      {
+        "name": "native-image",
+        "description": "Creates tray, dock, and application icons using PNG or JPG files.",
+        "path": "modules/electron/native-image.ts",
+        "examplePath": "examples/electron/NativeImageExample.tsx",
+        "functions": [
+          {
+            "name": "nativeImage.createFromPath",
+            "description": "Creates a new NativeImage instance from a file path.",
+            "params": ["path: string"],
+            "returns": "Promise<NativeImage>"
+          },
+          {
+            "name": "nativeImage.createFromDataURL",
+            "description": "Creates a new NativeImage instance from a data URL.",
+            "params": ["dataURL: string"],
+            "returns": "Promise<NativeImage>"
+          },
+          {
+            "name": "image.toDataURL",
+            "description": "Returns the data URL of the image.",
+            "params": [],
+            "returns": "string"
+          },
+          {
+            "name": "image.resize",
+            "description": "Resizes the image and returns a new NativeImage instance.",
+            "params": ["options: { width?: number, height?: number, quality?: 'good'|'better'|'best' }"],
+            "returns": "Promise<NativeImage>"
+          }
+        ]
+      },
+      {
+        "name": "crash-reporter",
+        "description": "Submits crash reports to a remote server.",
+        "path": "modules/electron/crash-reporter.ts",
+        "examplePath": "examples/electron/CrashReporterExample.tsx",
+        "functions": [
+          {
+            "name": "crashReporter.start",
+            "description": "Enables the crash reporter.",
+            "params": ["options: CrashReporterOptions"],
+            "returns": "void"
+          },
+          {
+            "name": "crashReporter.getLastCrashReport",
+            "description": "Returns the date and ID of the last crash report.",
+            "params": [],
+            "returns": "CrashReport | null"
+          },
+          {
+            "name": "crashReporter.getUploadedReports",
+            "description": "Returns all uploaded crash reports.",
+            "params": [],
+            "returns": "CrashReport[]"
+          },
+          {
+            "name": "crashReporter.addExtraParameter",
+            "description": "Adds an extra parameter to be sent with the crash report.",
+            "params": ["key: string", "value: string"],
+            "returns": "void"
+          }
+        ]
+      }
+    ]
+  }
+]

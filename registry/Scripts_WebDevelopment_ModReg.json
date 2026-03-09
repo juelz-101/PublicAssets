@@ -1,0 +1,146 @@
+[
+  {
+    "name": "metadata.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/metadata.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/metadata.json"
+  },
+  {
+    "name": "App.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/App.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/App.tsx"
+  },
+  {
+    "name": "appdata.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/appdata.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/appdata.json"
+  },
+  {
+    "name": "index.html",
+    "ext": "html",
+    "path": "Scripts/WebDevelopment/ModReg/index.html",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/index.html"
+  },
+  {
+    "name": "module_register.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register.json"
+  },
+  {
+    "name": "module_register2.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register2.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register2.json"
+  },
+  {
+    "name": "module_register1.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register1.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register1.json"
+  },
+  {
+    "name": "index.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/index.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/index.tsx"
+  },
+  {
+    "name": "module_register3.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register3.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register3.json"
+  },
+  {
+    "name": "module_register5.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register5.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register5.json"
+  },
+  {
+    "name": "module_register6.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register6.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register6.json"
+  },
+  {
+    "name": "module_register4.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register4.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register4.json"
+  },
+  {
+    "name": "module_register7.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register7.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register7.json"
+  },
+  {
+    "name": "module_register8.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register8.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register8.json"
+  },
+  {
+    "name": "module_register9.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register9.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register9.json"
+  },
+  {
+    "name": "package.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/package.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/package.json"
+  },
+  {
+    "name": "register.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/register.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/register.ts"
+  },
+  {
+    "name": "tsconfig.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/tsconfig.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/tsconfig.json"
+  },
+  {
+    "name": "version.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/version.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/version.ts"
+  },
+  {
+    "name": "system_register.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/system_register.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/system_register.json"
+  },
+  {
+    "name": "package-lock.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/package-lock.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/package-lock.json"
+  },
+  {
+    "name": "types.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/types.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/types.ts"
+  },
+  {
+    "name": "vite.config.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/vite.config.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/vite.config.ts"
+  },
+  {
+    "name": "README.md",
+    "ext": "md",
+    "path": "Scripts/WebDevelopment/ModReg/README.md",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/README.md"
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "category": "Internationalization",
+    "description": "Utilities for managing translations and supporting multiple languages.",
+    "modules": [
+      {
+        "name": "i18n",
+        "description": "A simple i18n utility with a React hook for managing and displaying translated content.",
+        "path": "modules/internationalization/i18n.ts",
+        "examplePath": "examples/internationalization/I18nExample.tsx",
+        "docPath": "docs/internationalization/i18n.md",
+        "aiRulesPath": "docs/ai/i18n.md",
+        "prompts": [
+          {
+            "title": "Add New Language",
+            "description": "Prompt to help AI add a new locale to the i18n configuration.",
+            "content": "I want to add a new language to my i18n setup. Please provide the code to add '{locale}' with the following translations: {translations}. Use the createI18n function from the i18n module."
+          },
+          {
+            "title": "Translate Component",
+            "description": "Prompt to help AI refactor a component to use i18n.",
+            "content": "Please refactor the following React component to use the i18n module. Replace all hardcoded strings with the t() function from useTranslation(). Component: {component_code}"
+          }
+        ],
+        "version": "1.0.1",
+        "functions": [
+          {
+            "name": "createI18n",
+            "description": "Initializes the service with translations and a default locale. Call once at app startup.",
+            "params": ["config: { translations: Record<string, any>, defaultLocale: string }"],
+            "returns": "void"
+          },
+          {
+            "name": "setLocale",
+            "description": "Changes the current language, triggering updates in components using the hook.",
+            "params": ["locale: string"],
+            "returns": "void"
+          },
+          {
+            "name": "getLocale",
+            "description": "Returns the currently active locale string.",
+            "params": [],
+            "returns": "string"
+          },
+          {
+            "name": "t",
+            "description": "Translates a key into the current language, with optional interpolation.",
+            "params": ["key: string", "params?: Record<string, string | number>"],
+            "returns": "string"
+          },
+          {
+            "name": "useTranslation",
+            "description": "A React hook that provides the `t` function and current `locale`.",
+            "params": [],
+            "returns": "{ locale: string, t: Function }"
+          }
+        ]
+      }
+    ]
+  }
+]

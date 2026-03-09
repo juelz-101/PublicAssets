@@ -1,0 +1,75 @@
+
+[
+  {
+    "category": "3D Graphics",
+    "description": "Modules for creating and managing 3D scenes and objects using a 2D canvas wireframe renderer.",
+    "modules": [
+      {
+        "name": "geometry-primitives",
+        "description": "Functions to generate vertex and edge data for basic 3D shapes.",
+        "path": "modules/graphics-3d/geometry-primitives.ts",
+        "examplePath": "examples/graphics-3d/GeometryPrimitivesExample.tsx",
+        "functions": [
+          {
+            "name": "createCube",
+            "description": "Creates geometry for a cube.",
+            "params": ["size: number"],
+            "returns": "Geometry"
+          },
+          {
+            "name": "createIcosahedron",
+            "description": "Creates geometry for an icosahedron.",
+            "params": ["radius: number"],
+            "returns": "Geometry"
+          }
+        ]
+      },
+      {
+        "name": "scene-manager",
+        "description": "A 2D canvas-based wireframe renderer for simple 3D scenes.",
+        "path": "modules/graphics-3d/scene-manager.ts",
+        "examplePath": "examples/graphics-3d/SceneManagerExample.tsx",
+        "functions": [
+          {
+            "name": "new SceneManager(canvas)",
+            "description": "Creates a new scene manager instance attached to a canvas.",
+            "params": ["canvas: HTMLCanvasElement"],
+            "returns": "SceneManager"
+          },
+          {
+            "name": "manager.addObject(object)",
+            "description": "Adds a 3D object to the scene.",
+            "params": ["object: SceneObject"],
+            "returns": "void"
+          },
+          {
+            "name": "manager.render()",
+            "description": "Renders the current state of the scene to the canvas.",
+            "params": [],
+            "returns": "void"
+          }
+        ]
+      },
+      {
+        "name": "camera-controller",
+        "description": "An orbit controller for interacting with a 3D scene camera.",
+        "path": "modules/graphics-3d/camera-controller.ts",
+        "examplePath": "examples/graphics-3d/SceneManagerExample.tsx",
+        "functions": [
+          {
+            "name": "createOrbitController",
+            "description": "Creates an orbit controller and attaches mouse listeners.",
+            "params": ["camera: PerspectiveCamera", "element: HTMLElement"],
+            "returns": "OrbitController"
+          },
+          {
+            "name": "controller.dispose()",
+            "description": "Removes event listeners to clean up the controller.",
+            "params": [],
+            "returns": "void"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "name": "animation-loop.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/animation-loop.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/animation-loop.ts"
+  },
+  {
+    "name": "attractor-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/attractor-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/attractor-utils.ts"
+  },
+  {
+    "name": "canvas-layer-manager.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/canvas-layer-manager.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/canvas-layer-manager.ts"
+  },
+  {
+    "name": "canvas-effects.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/canvas-effects.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/canvas-effects.ts"
+  },
+  {
+    "name": "canvas-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/canvas-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/canvas-utils.ts"
+  },
+  {
+    "name": "collision-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/collision-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/collision-utils.ts"
+  },
+  {
+    "name": "l-system.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/l-system.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/l-system.ts"
+  },
+  {
+    "name": "color-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/color-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/color-utils.ts"
+  },
+  {
+    "name": "noise-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/noise-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/noise-utils.ts"
+  },
+  {
+    "name": "reaction-diffusion.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/reaction-diffusion.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/reaction-diffusion.ts"
+  },
+  {
+    "name": "particle-system.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/particle-system.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/particle-system.ts"
+  },
+  {
+    "name": "vector-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/vector-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/vector-utils.ts"
+  },
+  {
+    "name": "svg-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/graphics/svg-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/graphics/svg-utils.ts"
+  }
+]

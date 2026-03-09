@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "name": "System Registry Data",
+    "desc": "Supplementary system data to be merged with the main registry.",
+    "version": "1.0.0",
+    "changenote": "Initial data file setup."
+  },
+  "settings": {
+    "sync_enabled": true,
+    "merge_strategy": "append"
+  },
+  "data": {
+    "categories": []
+  },
+  "user": {
+    "db_ref": "ZIKAPPS",
+    "template": "system"
+  }
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "category": "Cloud Services",
+    "description": "Modules for interacting with cloud storage and service APIs.",
+    "modules": [
+      {
+        "name": "dropbox-utils",
+        "description": "A set of utilities to interact with the Dropbox API for file management using OAuth 2.",
+        "path": "modules/cloud/dropbox-utils.ts",
+        "examplePath": "examples/cloud/DropboxExample.tsx",
+        "functions": [
+          {
+            "name": "dropboxService.init",
+            "description": "Initializes the Dropbox service with your app's Client ID.",
+            "params": ["clientId: string"],
+            "returns": "void"
+          },
+          {
+            "name": "dropboxService.signIn",
+            "description": "Redirects the user to Dropbox to authorize the application.",
+            "params": [],
+            "returns": "void"
+          },
+          {
+            "name": "dropboxService.handleRedirect",
+            "description": "Call this on page load to handle the OAuth redirect and capture the access token.",
+            "params": [],
+            "returns": "boolean"
+          },
+          {
+            "name": "dropboxService.signOut",
+            "description": "Signs the user out by revoking the access token.",
+            "params": [],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "dropboxService.isSignedIn",
+            "description": "Checks if the user currently has an access token.",
+            "params": [],
+            "returns": "boolean"
+          },
+          {
+            "name": "dropboxService.listFiles",
+            "description": "Lists files and folders in a given path (e.g., '' for root).",
+            "params": ["path: string"],
+            "returns": "Promise<DropboxListFolderResponse>"
+          },
+          {
+            "name": "dropboxService.uploadFile",
+            "description": "Uploads a file to a specified path in Dropbox.",
+            "params": ["path: string", "file: File"],
+            "returns": "Promise<DropboxFileMetadata>"
+          },
+          {
+            "name": "dropboxService.deleteFile",
+            "description": "Deletes a file or folder at a specified path.",
+            "params": ["path: string"],
+            "returns": "Promise<{ metadata: DropboxFileMetadata }>"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,537 @@
+---
+Document Title: Introduction to Chrome Extensions
+Description: A practical beginner-friendly guide to building Chrome extensions, covering project structure, manifests, permissions, core components, debugging, and packaging for the Chrome Web Store.
+Version: 1.0.0
+Author (role): Chatsir (Professor)
+Approved by: Pending
+Created date: 2026-02-13
+Location: London
+Organisation: ZIKYinc
+---
+
+## Table of Contents
+
+Page 1: What Are Chrome Extensions?
+Page 2: Core Anatomy and File Structure
+Page 3: manifest.json and Manifest v3 Basics
+Page 4: Permissions and Host Permissions
+Page 5: Content Scripts and DOM Access
+Page 6: Background Service Workers and Messaging
+Page 7: UI Components (Action, Popups, Options)
+Page 8: Storage, Data Flow, and Security Basics
+Page 9: Debugging, Testing, and Common Pitfalls
+Page 10: Packaging and Publishing to the Chrome Web Store
+Page 11: Finishing Page
+Page 12: References & Tools
+Page 13: Index
+Page 14: License
+
+---
+
+## Page 1: What Are Chrome Extensions?
+
+Chrome extensions are small software modules that run inside the Chrome browser and add, modify, or automate features of your browsing experience.[web:16][web:22] They behave like mini apps that plug into Chrome’s UI and APIs rather than running as standalone desktop or mobile programs.[web:16][web:22] Typical use cases include blocking ads, managing passwords, translating pages, taking notes, and automating repetitive actions in web apps.[web:16][web:17] Because they sit inside the browser, they can react to page loads, user clicks, and other browser events in real time.[web:13][web:22]
+
+From a user’s perspective, extensions usually appear as icons in the Chrome toolbar, inside the puzzle-piece “Extensions” menu, or as added options in right-click context menus.[web:15][web:18] Clicking an extension’s toolbar icon can open a small popup UI, trigger an action on the current tab, or open an options page for more advanced settings.[web:19][web:22] Some extensions run mostly in the background, quietly modifying pages, syncing data, or listening for events, with only occasional direct interaction from the user.[web:13][web:19] Others focus entirely on a visible interface, such as tab managers, note-taking popups, or to‑do list overlays.[web:13][web:17]
+
+Under the hood, a Chrome extension is just a collection of files—HTML, CSS, JavaScript, images, and a required configuration file called manifest.json.[web:13][web:19][web:22] The manifest file declares metadata (name, version, description), defines which scripts and pages belong to the extension, and lists the permissions it needs to operate.[web:13][web:19][web:22] Core building blocks typically include content scripts that interact with web pages, background logic that responds to browser events, and UI components such as popups and options pages.[web:13][web:19][web:22] Together, these pieces let you observe the browser environment, modify web content, and provide controls for the user in a controlled, permission‑driven way.[web:13][web:19][web:22]
+
+Because extensions run with elevated access to browser data and page content, they must ask explicitly for permissions that describe what they can read or change.[web:12][web:22] Users see these permissions when installing or updating an extension, so over‑requesting them can cause trust issues or rejections during the Chrome Web Store review.[web:3][web:12] Well‑designed extensions follow a least‑privilege model: they request only the APIs and host access they genuinely need.[web:3][web:12] This balance between power and safety is central to how Chrome’s extension platform is designed.[web:3][web:12]
+
+Chrome provides official documentation, sample projects, and starter tutorials that walk through building simple extensions like color‑changing popups, tab managers, and page decorators.[web:13][web:20] These examples show how to wire up manifest.json, content scripts, and background logic without needing any backend server.[web:13][web:20] Once the basics are in place, the same patterns scale up to more serious tools, such as productivity dashboards, AI‑powered helpers, or complex integrations with third‑party web apps.[web:17][web:22] As long as you respect the permission system and structure your files correctly, you can ship useful, production‑ready tools that live entirely inside Chrome.[web:13][web:22]
+
+---
+
+## Page 2: Core Anatomy and File Structure
+
+## Page 2: Core Anatomy and File Structure
+
+At its core, a Chrome extension is just a folder of web assets plus a configuration file called `manifest.json`. This folder lives somewhere on your machine during development and is what you point Chrome at when you “Load unpacked” in `chrome://extensions`. The manifest file sits in the root of that folder, and every other script, HTML file, or image is referenced from there using relative paths. If the manifest cannot be found in the root, Chrome simply refuses to load the extension.
+
+A typical beginner‑friendly extension can be broken down into a few main pieces:
+- `manifest.json`: The configuration and metadata file that defines how the extension behaves and what it needs access to.
+- Background script (usually via a service worker in Manifest V3): Central logic that reacts to browser events and coordinates other parts.
+- Content scripts: JavaScript files injected into web pages to read or modify the DOM.
+- UI assets: Popup HTML, options page HTML, and any supporting JS/CSS.
+- Static assets: Icons and images used for the toolbar, store listing, or UI.
+
+A minimal folder structure for a simple toolbar‑popup extension might look like this:
+
+- `manifest.json`
+- `background.js`
+- `popup.html`
+- `popup.js`
+- `icons/`
+  - `icon16.png`
+  - `icon48.png`
+  - `icon128.png`
+
+For an extension that interacts heavily with web pages, you will usually add a `content.js` file and declare it in the manifest’s `content_scripts` section. That script then runs in the context of matching pages and can read or manipulate the DOM. If you need multiple injection points or different behaviours per site, you can configure several content scripts, each with its own match patterns and file paths.
+
+Background logic and UI files sit side by side in the same root folder but play very different roles. The background script (in Manifest V3, typically a service worker) listens to events such as tab updates, alarms, and messages from content scripts or popups. The popup HTML and JS run only while the popup is open and are ideal for quick controls, settings, or displays based on data pulled from storage or the background script. Options pages live as separate HTML files referenced from the manifest and are better for less frequently changed configuration.
+
+Every file referenced in `manifest.json` must exist at the path you specify relative to the extension root. If you declare `"background": { "service_worker": "background.js" }`, then `background.js` must be in the root and not buried in an extra subfolder unless you update the path. The same rule applies to icons, content scripts, and web‑accessible resources. Keeping a clean, predictable hierarchy (root for core scripts, `icons/` for images, `scripts/` for extra JS, `styles/` for CSS) makes debugging much easier when Chrome throws path‑related errors.
+
+As your extension grows, you may split logic into more files and folders, but the principle stays the same: `manifest.json` is the single source of truth that wires everything together. The folder is the entire “app bundle”; when you export or zip an extension for the Chrome Web Store, you’re essentially packaging that folder exactly as Chrome expects. A disciplined structure early on saves you from painful refactors once you add more pages, background tasks, and permissions.
+
+---
+
+## Page 3: manifest.json and Manifest v3 Basics
+
+## Page 3: manifest.json and Manifest v3 Basics
+
+The `manifest.json` file is the core configuration file that turns a random folder of files into a recognised Chrome extension.[web:9][web:23] Chrome expects this file to live in the root of the extension directory and will not load the extension at all if it is missing or invalid.[web:9][web:33] The manifest describes metadata such as the extension’s name, version, and description, and also declares what capabilities, files, and entry points the extension has.[web:9][web:32] You can think of it as both an ID card and an instruction manual for how Chrome should wire up and run your code.[web:32]
+
+At a minimum, a Manifest V3 extension must declare three key fields: `manifest_version`, `name`, and `version`.[web:23][web:32] The `manifest_version` tells Chrome which schema you are using, and for new Chrome extensions you should be targeting `3`.[web:9][web:32] The `name` is the human‑readable title users see in the Chrome Web Store and in `chrome://extensions`, while `version` is a string that you bump for each release.[web:9][web:29] It is also strongly recommended to include a short `description` field that explains what the extension does, as this appears in installation prompts and store listings.[web:23][web:27]
+
+A typical Manifest V3 file for a basic popup‑plus‑background extension might look like this:[web:23][web:32]
+
+```json
+{
+  "manifest_version": 3,
+  "name": "My Awesome Extension",
+  "version": "1.0.0",
+  "description": "An example Chrome extension.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png"
+    },
+    "default_title": "Click Me!"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.example.com/*",
+    "http://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*"],
+      "matches": ["https://*/*"]
+    }
+  ]
+}
+```
+This example shows several of the most important keys you will use in real projects. The icons section defines different sizes used in the toolbar, extension menu, and store, and each file path is relative to the extension root.[web:23][web:27] The action block configures the main toolbar button, including the popup HTML file and default icon and title that appear when a user hovers the button.[web:23][web:32] The background block registers a service worker script that runs in the background and handles events such as tab updates and messages, which is a key change in Manifest V3 compared to older persistent background pages.[web:32][web:33]
+
+Permissions are split into API permissions and host permissions, and both types are declared in the manifest.[web:23][web:32] The permissions array lists high‑level capabilities like storage, activeTab, or scripting, which unlock specific Chrome extension APIs.[web:23][web:33] The host_permissions array lists URL patterns where the extension is allowed to access or modify page content, using patterns such as "https://*.example.com/*" or <all_urls>.[web:23][web:32] A good rule is to request the narrowest set of APIs and host patterns you actually need to reduce security risks and keep installation prompts less scary for users.[web:32][web:33]
+
+The content_scripts section describes scripts that should automatically be injected into matching pages.[web:27][web:33] Each entry includes a matches array of URL patterns, a js array listing the JavaScript files to inject, and optionally css or run_at to control timing.[web:27][web:32] In Manifest V3, content scripts still run in the context of web pages, but they communicate with the background service worker via message passing declared and wired from the manifest and JavaScript APIs.[web:32][web:33] Other optional fields like options_page or options_ui hook up configuration UIs, while web_accessible_resources specifies which internal files can be safely loaded by web pages or content scripts.[web:23][web:32]
+
+Working effectively with Manifest V3 mostly comes down to understanding which manifest keys are required for your extension type. A simple popup‑only extension may just need the core metadata plus an action with default_popup, while a page‑modifying extension must add content_scripts and suitable host_permissions.[web:32] Extensions that rely on background automation must declare a background service worker, and extensions that store user data should add the storage permission.[web:32][web:33] Most production extensions end up using only a focused subset of manifest keys; the challenge is choosing the right ones and wiring them to the actual files that exist in your extension folder.[web:9][web:32]
+
+---
+
+## Page 4: Permissions and Host Permissions
+
+The permissions system is what tells Chrome exactly how much power your extension should have, and it is enforced through fields in `manifest.json` such as `permissions`, `optional_permissions`, `host_permissions`, and `optional_host_permissions` in Manifest V3.[web:12][web:36] API permissions control which Chrome extension APIs your code can use, while host permissions control which websites your extension may read or modify.[web:12][web:39] When a user installs or updates your extension, Chrome shows permission warnings based on these fields so they can make an informed decision about whether to trust it.[web:12][web:38] Because users often uninstall extensions that “ask for everything”, choosing the right permissions is both a security concern and a product‑design concern.[web:12][web:38]
+
+API permissions are requested using the `permissions` and `optional_permissions` keys.[web:12][web:36] Common API permissions include `storage` for using `chrome.storage`, `tabs` for working with tab metadata, `activeTab` for temporary access to the current tab, `contextMenus` for adding right‑click items, and `scripting` for programmatically injecting scripts into pages.[web:12][web:36][web:38] These permissions usually translate into specific capabilities plus, in some cases, a visible warning at install time.[web:12][web:38] Optional API permissions allow you to request certain capabilities later at runtime (for example, when a user enables a “Download all images” feature), instead of forcing users to agree up front.[web:12][web:36]
+
+Host permissions are declared separately in Manifest V3 using `host_permissions` and `optional_host_permissions`.[web:12][web:39][web:40] Each host permission is a match pattern like `"https://*.example.com/*"` or a broader wildcard such as `"<all_urls>"`, and it grants the extension extra privileges on those origins, such as reading page content or making cross‑origin `fetch` requests.[web:39][web:41] Chrome uses these host patterns to determine where your content scripts can run automatically and where the extension can access privileged host data.[web:12][web:39] Some browsers and documentation historically allowed host permissions to live in the `permissions` array, but in Manifest V3 the clean split into `permissions` and `host_permissions` is the recommended pattern.[web:36][web:40]
+
+Optional host permissions let you delay host access until the user actually opts in.[web:12][web:36] For example, you might ship the extension with no default host access and then present a toggle that, when clicked, calls `chrome.permissions.request` to ask for `https://example.com/*`.[web:12][web:36] This keeps the initial install dialog minimal while still allowing power users to grant broader access later if they understand the risks and benefits.[web:12][web:35] Some developers previously relied on optional host permissions in Manifest V2 using patterns like `"<all_urls>"`, and there has been active discussion about how to preserve similar flexibility and safety trade‑offs in Manifest V3.[web:35]
+
+From a security perspective, the guiding principle is least privilege: request only the permissions and host access you really need.[web:12][web:38] Over‑broad host permissions like `"<all_urls>"` or unnecessary sensitive API permissions can trigger scary warnings and increase the blast radius if your extension is ever compromised.[web:12][web:38][web:41] A practical approach is to start with the minimal set of API permissions, narrow host patterns to specific domains where possible, and move anything “nice to have” into optional permissions that are requested at the moment the user enables that feature.[web:12][web:36][web:38] Well‑designed extensions also explain why a permission is needed in their UI or documentation, which helps build trust and reduces the chance of users immediately uninstalling after seeing the warnings.[web:12][web:36]
+
+---
+
+## Page 5: Content Scripts and DOM Access
+
+Content scripts are JavaScript files that run inside the context of web pages and give your extension direct access to the page’s DOM.[web:49][web:46] Unlike background scripts or popups, which live in the extension’s own environment, content scripts behave much more like regular page scripts: they can query and modify elements, listen to user interactions, and inject UI into the page.[web:49][web:46] However, they still run in an isolated “extension world”, which means their variables and functions are not directly visible to page scripts unless you deliberately bridge between them.[web:4][web:49] This isolation helps protect both the page and the extension from accidentally interfering with each other or clashing with other extensions.[web:4][web:49]
+
+You normally register content scripts declaratively in `manifest.json` using the `content_scripts` key.[web:4][web:49] Each entry specifies which URLs it should run on via the `matches` array, which script and CSS files to inject, and when in the page lifecycle they should run.[web:4][web:49] A typical configuration looks like this:[web:4]
+
+```json
+"content_scripts": [
+  {
+    "matches": ["https://*.example.com/*"],
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle",
+    "all_frames": false
+  }
+]
+```
+
+In this example, content.js and content.css will be injected into pages under example.com once the page has finished loading (document_idle).[web:4][web:49] The all_frames flag controls whether the script runs only in the top frame or also in iframes that match the same URL patterns.[web:49] You can further refine targeting using exclude_matches, include_globs, and exclude_globs if you need to inject into a subset of pages under a broader domain.[web:4]
+
+Once injected, a content script can use normal web APIs like document.querySelector, addEventListener, and MutationObserver to inspect and manipulate the page.[web:49][web:46] For example, you might automatically highlight certain keywords, inject a floating toolbar, or rewrite links on the page.[web:49] Because content scripts run with extension privileges, they can also communicate with other extension parts using chrome.runtime.sendMessage or chrome.runtime.connect, which is how they ask the background service worker to do things like network requests or cross‑tab coordination.[web:49] This separation lets you keep page‑facing logic in the content script and heavier logic, storage, or API calls in the background.[web:49][web:44]
+
+In Manifest V3, you can also inject content scripts programmatically from the background using the chrome.scripting API instead of declaring them in manifest.json.[web:44][web:47] For example, you might avoid broad host permissions by only injecting a script into the current tab when the user clicks the extension’s toolbar icon.[web:44] A simplified pattern looks like this in your background service worker:[web:44]
+
+```js
+chrome.action.onClicked.addListener(async (tab) => {
+  await chrome.scripting.executeScript({
+    target: { tabId: tab.id, allFrames: true },
+    files: ["content.js"],
+  });
+});
+```
+
+Here, the script is only injected on demand, and you control exactly when and where it runs, at the cost of writing more explicit logic and ensuring the correct permissions (activeTab and scripting) are granted.[web:44][web:47] This approach is useful when you want to minimise automatic injection and reduce the host permissions you declare in the manifest, which can improve perceived security and speed up store review.[web:44]
+
+When it comes to DOM access and security, there are some important constraints. Content scripts must respect the same‑origin and CORS rules when making network requests, though they inherit any cross‑origin privileges the extension has been granted via permissions.[web:46] They are also subject to Manifest V3’s stricter Content Security Policy, which forbids using eval() and similar dynamic code execution techniques.[web:46] If you need to communicate with page scripts directly—for example, to hook into a web app’s internal APIs—you generally inject a small <script> tag into the page from the content script, which then runs in the page’s world while the content script remains the bridge back to the extension.[web:46][web:49]
+
+A practical mental model is: the content script is your extension’s “eyes and hands” inside the page.[web:49] It sees the DOM exactly as the user does, can manipulate elements and listen for interactions, and then reports back to the background or popup for heavier operations or cross‑tab coordination.[web:49] Designing good extensions often means keeping the content script focused on DOM‑level work (reading data, painting UI) and delegating anything that doesn’t need direct page access (storage, scheduling, external APIs) to other parts of the extension.[web:49][web:36]
+
+---
+
+## Page 6: Background Service Workers and Messaging
+
+In Manifest V3, background logic for Chrome extensions is implemented using a single background service worker declared in the `background.service_worker` field of `manifest.json` instead of a persistent background page.[web:54][web:58] This service worker acts as the central brain of your extension: it listens for browser and extension events, coordinates work across tabs, and talks to other parts of the extension. Unlike Manifest V2 backgrounds, the worker is non‑persistent; Chrome starts it when an event occurs and tears it down again when it goes idle, which reduces memory usage and improves performance.[web:53][web:54][web:57] Because the worker can be killed and restarted at any time, any state you care about must be stored in durable storage such as `chrome.storage` or IndexedDB rather than in global variables.[web:54][web:57]
+
+The manifest configuration for a background service worker is straightforward: you specify the entry file and ensure it is in the extension root.[web:54][web:58] For example:
+
+```json
+"background": {
+  "service_worker": "background.js",
+  "type": "module"
+},
+"permissions": [
+  "alarms",
+  "storage",
+  "scripting",
+  "tabs"
+]
+```
+
+Here, `background.js` is the single file where you register all your top‑level event listeners, and the optional `"type": "module"` lets you use ES modules if you want to split logic into separate files that are imported from the worker.[web:54][web:58] Older Manifest V2 fields like `background.scripts` and `background.persistent` are no longer allowed; including them in a V3 manifest will cause Chrome to throw validation errors.[web:54][web:57] The key mental shift is that the worker is event‑driven, so you need to design your code so that it reacts to events rather than relying on always‑running loops or long‑lived UI.[web:53][web:57]
+
+Inside the background service worker, you wire up listeners for the extension and browser events you care about: installs, updates, tab changes, alarms, and messages from other parts of the extension.[web:54][web:55][web:57] A common pattern is to react to installation and set up any scheduled tasks or default configuration:
+
+```js
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.alarms.get("sync-alarm", (alarm) => {
+    if (!alarm) {
+      chrome.alarms.create("sync-alarm", { periodInMinutes: 15 });
+    }
+  });
+});
+```
+
+Here, `chrome.alarms` is used for periodic background work; when the alarm fires, the service worker wakes up, runs your handler, and then can shut down again.[web:55][web:57] Since listeners must be registered synchronously at the top level of the worker, you should avoid wrapping them in `setTimeout` or lazy‑registration code, otherwise events may fire while the worker isn’t listening.[web:54][web:57] This “register everything up front” rule is one of the most common sources of bugs when migrating from V2 backgrounds.[web:54][web:57]
+
+Messaging ties the background worker to content scripts, popups, and other extension pages. The simplest pattern is one‑off messages using `chrome.runtime.sendMessage` and `chrome.runtime.onMessage.addListener`.[web:55][web:57] A content script might send a message like this:
+
+```js
+// content.js
+chrome.runtime.sendMessage({ type: "PAGE_DATA", payload: { title: document.title } });
+```
+
+The background worker listens for that message and responds or triggers some logic:
+
+```js
+// background.js
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === "PAGE_DATA") {
+    // Do something with message.payload and sender.tab
+    sendResponse({ ok: true });
+  }
+  // Keep the service worker alive for async sendResponse
+  return true;
+});
+```
+
+Returning `true` from the listener tells Chrome that you plan to call `sendResponse` asynchronously, which keeps the worker alive long enough for you to finish work like storage operations or network requests.[web:55][web:57] For longer‑lived connections, you can use `chrome.runtime.connect` and `chrome.runtime.onConnect` to open a persistent port between a page and the background worker, but you still have to design with the worker’s event‑driven lifetime in mind.[web:57]
+
+The background worker also coordinates with the `chrome.action` API (which replaced `browserAction` and `pageAction` in V3) to respond when the user clicks your extension’s toolbar icon.[web:54][web:58] A common pattern is to use this click as a trigger to run logic against the current tab, often in combination with the `scripting` API:
+
+```js
+chrome.action.onClicked.addListener(async (tab) => {
+  await chrome.scripting.executeScript({
+    target: { tabId: tab.id },
+    files: ["content.js"]
+  });
+});
+```
+
+In this setup, the worker responds to the click, injects a content script into the active tab, and then can immediately terminate when its work is done.[web:54][web:55] Periodic tasks, alarm handling, and message routing all follow the same pattern: the worker wakes up on an event, does just enough work, persists any state it needs, and then goes back to sleep.[web:53][web:55][web:57] If you design your background logic with this lifecycle in mind, Manifest V3’s service worker model gives you a lean, powerful central controller for your extension instead of a heavy always‑running page.[web:53][web:54][web:57]
+
+---
+
+## Page 7: UI Components (Action, Popups, Options)
+
+Chrome extensions ship with several built‑in UI surfaces that attach directly to the browser: the main toolbar **action**, the popup that opens from that action, and optional options pages for more detailed configuration.[web:63][web:69] All of these are wired through `manifest.json` and built with ordinary HTML, CSS, and JavaScript.[web:63][web:66][web:68] The action is the icon you see in the Chrome toolbar; when clicked, it can open a popup, run background logic, or both.[web:63][web:69] Options pages then provide a more spacious, tab‑like interface for settings that users don’t need every time they click the icon.[web:69]
+
+In Manifest V3, the unified `action` API replaces older `browser_action` and `page_action` keys.[web:65][web:69] A minimal configuration for a popup looks like this:
+
+```json
+"action": {
+  "default_popup": "popup.html",
+  "default_icon": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+  "default_title": "My Extension"
+}
+```
+
+Here, `default_popup` points to an HTML file that renders the small window when the user clicks your extension’s toolbar icon, while `default_icon` defines the images used for that icon at different sizes.[web:63][web:66] The `default_title` text is what appears as a tooltip when users hover over the icon, which is a good place to communicate the extension’s primary action.[web:63][web:69] You can also update the action icon, title, and badge text at runtime from the background script to reflect state such as “on/off” or a count of items.[web:69]
+
+The popup itself is just a mini web page that runs in its own extension context.[web:63][web:66][web:68] A simple example might look like this:[web:63]
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ColorSwap</title>
+    <style>
+      body { min-width: 200px; font-family: Arial, sans-serif; }
+      button { margin-top: 10px; padding: 8px 16px; font-size: 16px; }
+    </style>
+  </head>
+  <body>
+    <h2>ColorSwap</h2>
+    <button id="change-bg">Change Background</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
+```
+
+In `popup.js`, you attach event listeners and typically talk to the current tab or the background service worker, for example by using `chrome.tabs.query` plus `chrome.scripting.executeScript` to inject behaviour when the user clicks the button.[web:63][web:66] Because the popup is short‑lived and closes as soon as it loses focus, it’s best used for quick actions and status displays rather than long‑running tasks or heavy navigation flows.[web:69] Any persistent state should be kept in storage or managed by the background script so it survives popup closes and reopens.[web:66][web:68]
+
+Options pages give you a dedicated tab‑like environment for configuration, separate from the small action popup.[web:69] You can declare them in the manifest with either the older `options_page` field or the more flexible `options_ui` structure, for example:
+
+```json
+"options_ui": {
+  "page": "options.html",
+  "open_in_tab": true
+}
+```
+
+This tells Chrome to open `options.html` in a full browser tab rather than a tiny dialog, which is better for forms, multiple sections, or documentation.[web:69] The options page code can use the same extension APIs as the popup (subject to permissions), and will often read and write settings via `chrome.storage` so that the rest of the extension can act on those choices.[web:66][web:68][web:69] A common pattern is: options page manages user preferences, the background worker reacts to those preferences, and the popup shows or toggles state quickly based on them.
+
+Beyond the core action and options UI, Chrome exposes additional UI components such as context menu entries, notifications, and keyboard commands, all configured from the manifest and controlled via JavaScript APIs.[web:69][web:68] Context menu entries let you add items to the right‑click menu on pages, selections, links, or images, which then call into your extension when clicked.[web:69] Notifications provide small system‑style alerts that can be triggered from the background or popup, useful for long‑running operations or status updates.[web:69][web:68] By combining these pieces—a toolbar action with popup, an options page for settings, contextual menus, and background‑driven notifications—you can build extensions that feel deeply integrated with the browser without ever leaving the standard extensions UI toolbox.[web:65][web:69]
+
+---
+
+## Page 8: Storage, Data Flow, and Security Basics
+
+Chrome extensions need a way to remember user settings, cached data, and internal state across different parts of the extension, and Manifest V3 pushes you towards using the asynchronous `chrome.storage` API and IndexedDB instead of direct `localStorage` in background code.[web:73][web:74][web:79] The `storage` permission enables the `chrome.storage` API, which exposes different storage areas such as `chrome.storage.local`, `chrome.storage.sync`, and `chrome.storage.session`.[web:73][web:75][web:77] `storage.local` is best for per‑device data; it persists until the extension is removed and has a size limit (which can be raised with `unlimitedStorage`).[web:74][web:77] `storage.sync` stores small amounts of data that can be synced across a user’s signed‑in Chrome instances, while `storage.session` is designed for non‑persistent, in‑memory data tied to the extension’s lifetime.[web:75][web:77]
+
+To use `chrome.storage`, you must declare `"storage"` in the `permissions` array of your manifest.[web:73][web:74][web:78] Once enabled, reading and writing is always asynchronous and JSON‑only, which means you can store strings, numbers, booleans, null, arrays, and plain objects.[web:74][web:77] A typical pattern for saving and loading user preferences looks like this:
+
+```js
+// Save settings
+await chrome.storage.local.set({ theme: "dark", enabled: true });
+
+// Load settings
+const { theme, enabled } = await chrome.storage.local.get(["theme", "enabled"]);
+```
+
+Because Manifest V3 background scripts are service workers that can be stopped and restarted, they must re‑hydrate any required state from storage each time they handle an event instead of relying on long‑lived globals.[web:72][web:74][web:77] Content scripts and popups can also access `chrome.storage` directly (subject to permissions), which allows a simple data flow: options page writes settings, background worker reacts to them, and popups/content scripts read them to decide how to behave.[web:73][web:77]
+
+A clean data‑flow architecture for an extension usually separates concerns between UI, background logic, and page‑level scripts. The options page is a good central place for editing user preferences, which it writes into `chrome.storage` using the `storage` API.[web:73][web:78] The background service worker listens for `storage.onChanged` events or reloads configuration from storage when it wakes up to respond to alarms, messages, or action clicks.[web:77] Popups read current state (for example, whether a feature is enabled and which mode is selected) and may send messages to the background worker using `chrome.runtime.sendMessage` to trigger actions.[web:73][web:77] Content scripts focus on DOM‑level work and lean on background and storage for anything involving longer‑term state or cross‑tab coordination.[web:49][web:77]
+
+Security for storage and data flow begins with treating everything as potentially sensitive and designing for least privilege. The extension’s storage areas are not directly visible to web pages, but any content script running on a page can read that storage if the extension is allowed there, so excessive host permissions combined with generous storage can increase the impact of a compromised script.[web:12][web:77] You should avoid storing secrets like raw access tokens or private keys in plain text and instead consider short‑lived tokens, server‑side validation, or using `chrome.storage.session` for in‑memory only data that does not persist to disk.[web:75][web:77] Manifest V3 also enforces a strict Content Security Policy for extension code, which disallows `eval()` and similar dynamic code execution, reducing the damage from injection bugs.[web:64][web:79] On top of that, your extension should validate all data coming from content scripts and external pages, avoid over‑broad host patterns like `<all_urls>`, and give users clear explanations of what is stored and why.[web:12][web:74][web:79]
+
+From a privacy and performance angle, it pays to be deliberate about what you store and how often you read or write it. Heavy, frequent writes to `storage.sync` can hit quotas and cause throttling, so it is better for small preference sets than for large logs or caches.[web:77][web:80] `storage.local` is more generous but still has limits, and storing huge blobs can slow down startup when everything needs to be read back into memory.[web:77] A pragmatic strategy is to keep only essential configuration and small indexes in `chrome.storage`, offload heavier data to IndexedDB where necessary, and design background/event handlers so they lazily load what they need rather than eagerly loading everything on every event.[web:72][web:77] Combined with conservative permissions and clear separation between UI, background, and content scripts, this gives you an extension that is easier to reason about, more secure, and less annoying to users and reviewers.[web:12][web:64][web:77]
+
+---
+
+## Page 9: Debugging, Testing, and Common Pitfalls
+
+Chrome gives you a dedicated workflow for loading and testing extensions in development. You load your unpacked extension by visiting `chrome://extensions`, enabling **Developer mode**, and clicking **Load unpacked** to point Chrome at your extension folder.[web:86] From that same page you can **Reload** the extension after changes, toggle it on or off, and see any high‑level errors that prevent it from loading.[web:86] If the manifest is invalid—for example, you misspell the `"version"` key—Chrome will show a red error banner with a short explanation and a link to view more details.[web:86] Getting into the habit of checking `chrome://extensions` first saves time before you dive into deeper debugging.
+
+Each part of your extension has its own DevTools view for logging and inspection. Popups and options pages behave like regular web pages: you can right‑click inside them, choose **Inspect**, and use the Console, Elements, Network, and Sources panels as usual.[web:86] Content scripts can be debugged from DevTools attached to the tab they run in; you’ll see them in the **Sources** panel under the extension’s ID, and their `console.log` output appears in that tab’s Console.[web:49][web:86] For background service workers in Manifest V3, you can open DevTools via the **Service worker** / **Inspect views** link under your extension in `chrome://extensions`, which shows their console output, network activity, and breakpoints.[web:83][web:86] You can also visit URLs like `chrome://inspect/#service-workers` or `chrome://serviceworker-internals/?devtools` to see registered workers and open DevTools directly.[web:83]
+
+Because Manifest V3 background scripts are service workers, debugging them has some gotchas. Service workers are **ephemeral**: they start in response to events and shut down when idle, which means logs can disappear and state in global variables is lost between runs.[web:64][web:82] When DevTools is attached, Chrome keeps the worker alive, which is convenient for debugging but can mask lifecycle bugs that appear only when the worker is allowed to stop and restart.[web:82][web:83] A good practice is to log inside each event listener (such as `onInstalled`, `onMessage`, `onAlarm`, `onClicked`) so you can see exactly which events fired and in what order, and to test both with DevTools open and closed.[web:82] If you use ES modules (`"type": "module"` in the background manifest), be aware that some debugging scenarios and import patterns can behave differently or require workarounds when DevTools is attached.[web:54][web:84]
+
+When you reach testing, the main goals are to verify permissions, data flow, and user‑visible behaviour across different sites and user flows. For permissions, install the extension as a regular user would and carefully read the permission prompts, checking they match what you expect from your `permissions` and `host_permissions` declarations.[web:12][web:38] Then test on sites that should be in scope (where content scripts and features should run) and sites that should be out of scope (where they must not run), confirming that your extension respects host patterns and optional permissions.[web:12][web:39] For data flow, exercise all paths that read or write `chrome.storage`, reload the extension, and ensure state is restored correctly in the popup, options, and background worker.[web:72][web:77] Finally, test error paths—network failures, missing data, invalid user input—and verify the extension fails safely and shows clear feedback instead of silently breaking.
+
+A lot of pain points in Manifest V3 come from a small set of common mistakes. One major pitfall is forgetting that service workers must register listeners synchronously at the top level; if you wrap `chrome.runtime.onMessage.addListener` or other listeners in async functions or `setTimeout`, they may not be active when events fire.[web:54][web:57] Another frequent issue is treating the service worker like a persistent background page: storing important state in globals, assuming timers will keep running, or relying on long‑lived connections that don’t handle worker restarts.[web:53][web:57] Developers also regularly run into problems with permissions (missing `scripting` or `activeTab` when trying to inject scripts, over‑broad host patterns causing scary warnings) and with CSP violations from using `eval()` or inline scripts in extension pages.[web:12][web:64][web:76] Keeping a checklist of these failure modes—manifest validation, listener registration, lifecycle assumptions, permissions, and CSP—makes debugging and testing far less painful than stumbling through them one by one.
+
+---
+
+## Page 10: Packaging and Publishing to the Chrome Web Store
+
+Before you package anything, you should be confident that your extension runs cleanly in development as an unpacked extension. That means `manifest.json` validates without errors, all referenced files exist in the expected paths, permissions are as tight as possible, and basic flows have been tested via `chrome://extensions` and DevTools. When you’re satisfied, you move from “unpacked” to a distributable ZIP that can be uploaded to the Chrome Web Store. The packaged ZIP is essentially just your extension folder, minus any development‑only files you deliberately exclude.
+
+For packaging, the core rule is simple: the ZIP must contain your extension’s root folder contents with `manifest.json` at the top level, not in a subdirectory. Everything the extension needs at runtime—HTML, JS, CSS, icons, images, and other assets—must be included in that ZIP. You should remove temporary build artifacts, source maps (unless you deliberately want them public), test files, and any secrets or environment files that should never ship. Many people use a build step (for example with Vite, Webpack, or a simple script) that outputs a clean `dist/` folder, and they zip that folder directly so the packaged structure matches what Chrome expects.
+
+During development, you do **not** need to pack on every change. You keep using the unpacked workflow: load the folder via `chrome://extensions`, hit **Reload** after edits, and keep the packed ZIP only for releases. This avoids the pain of constant re‑packing while still letting you test behaviour identical to the packaged version. When you’re ready for a release candidate, you take a final snapshot of the built folder, verify the manifest and file tree, and zip that snapshot as your upload artifact.
+
+To publish on the Chrome Web Store, you need a Google account with two‑step verification enabled and a registered developer account. Once that’s set up, you go to the Chrome Web Store Developer Dashboard, create a new item, and upload your ZIP. The dashboard then takes you through several required fields: extension name (which must respect the current length limit and naming rules), description, category, language, and at least one 128×128 icon. You also provide screenshots that show the extension in action—typically the popup, options page, and any UI injected into web pages—plus optional promo images for tiles or banners.
+
+After upload, you choose the distribution type: public, unlisted, or private. Public items appear in store search and category listings; unlisted items don’t show up in browsing but can still be installed by anyone with the direct link; private distribution is restricted to specific accounts or domains. You also declare which countries and platforms should have access, and you must confirm that your extension complies with the Chrome Web Store Developer Program Policies (covering things like deceptive behaviour, spam, and data handling). Once everything is filled in, you submit the item for review and wait for Google’s automated and manual checks to complete.
+
+From a policy and technical‑review standpoint, several issues frequently cause rejections. Extensions must have a clear, single primary purpose that is easy to understand from the name, description, and actual behaviour; bundling many unrelated features into one extension is treated as spammy. Manifest V3 extensions are not allowed to load or execute remotely hosted code (for example scripts pulled from your CDN and `eval`ed at runtime); all executable code must ship inside the extension package and respect the extension Content Security Policy. Reviewers also look closely at permissions: over‑broad host access such as `<all_urls>` or unnecessary powerful APIs can trigger questions or rejections if not clearly justified in the description and actual use.
+
+Before hitting submit, it’s worth running a pre‑publish checklist. Confirm that your manifest version is correct, the `name` and `description` match what the extension actually does, and the icons and screenshots look professional and consistent with the UI. Double‑check that there are no leftover debug logs or test UI elements, and that your privacy story is clear—if you collect or transmit user data, say so plainly in the description and in an attached privacy policy link. Finally, ensure your ZIP contains only what’s needed, with no secrets, raw API keys, or unused experimental features lurking in the source. A tidy package and honest description make reviews faster and reduce the chance of painful back‑and‑forth with policy enforcement.
+
+
+---
+
+## Page 11: Finishing Page
+
+Building Chrome extensions is really about combining a few core ideas properly rather than memorising every API. You define your extension’s identity and capabilities in `manifest.json`, wire that to a clean file structure, then connect background logic, content scripts, and UI components so they each do one clear job. Along the way, you keep permissions tight, data flows predictable, and you use Chrome’s debugging tools to keep the whole thing from falling apart under real‑world usage.[web:22][web:64][web:86]
+
+If you’re starting from scratch, a realistic first project is a small “page helper” extension that does one thing well—like highlighting certain words, saving selected text, or toggling a specific layout tweak on a small set of sites.[web:19][web:63] For that, you only need a Manifest V3 `manifest.json`, one background service worker, a single content script, a simple popup, and storage for a couple of preferences.[web:9][web:49][web:77] Once that’s working, you can iterate: add an options page for configuration, refine permissions, then experiment with more advanced APIs like `chrome.alarms`, `chrome.scripting`, or context menus.[web:58][web:69][web:77] Every extra piece should have a strong “why” behind it; if you can’t explain why a feature belongs there, it probably doesn’t.
+
+As you move toward shipping, think like a reviewer and a user, not just a developer. A clear single‑purpose extension with honest permissions, a clean UI, and straightforward copy in its description is far more likely to get approved quickly and actually stay installed.[web:12][web:93][web:108] Keep your extension lightweight, avoid remote executable code, and follow security best practices such as least privilege, strict CSP, and cautious handling of any user data.[web:64][web:102][web:103] If you keep that discipline, Chrome’s extension platform becomes a solid way to ship tools that feel native to the browser—and don’t make people regret clicking “Add to Chrome”.[web:22][web:105]
+
+---
+
+## Page 12: References & Tools
+
+- https://developer.chrome.com/docs/extensions/reference/manifest [web:9]
+- https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions [web:12]
+- https://developer.chrome.com/docs/extensions/reference/manifest/content-scripts [web:4]
+- https://developer.chrome.com/docs/extensions [web:9]
+- https://mellowtel.com/blog/using-content-scripts-chrome-extension [web:7]
+- https://voicewriter.io/blog/the-architecture-of-chrome-extension-permissions-a-deep-dive [web:6]
+- https://moldstud.com/articles/p-how-to-publish-a-chrome-extension-on-the-chrome-web-store [web:8]
+- https://www.turbostarter.dev/docs/extension/publishing/chrome [web:5]
+- https://github.com/marketplace/actions/publish-chrome-extension-to-chrome-web-store [web:11]
+- https://chromium.googlesource.com/chromium/src/+/main/extensions/docs/permissions.md [web:3]
+
+---
+
+## Page 13: Index
+
+Chrome extension (concept) | Page 1
+Browser UI (toolbar and menu) | Page 1
+Permissions (overview) | Page 1
+manifest.json (role overview) | Page 1
+Chrome Web Store review (high level) | Page 1
+Extension folder structure | Page 2
+Root directory (extension) | Page 2
+Background script (file placement) | Page 2
+Content script file (placement) | Page 2
+Popup HTML file | Page 2
+Icons folder | Page 2
+Unpacked extension folder | Page 2
+manifest.json (structure) | Page 3
+Manifest Version 3 (MV3) | Page 3
+Required manifest fields | Page 3
+Action key (toolbar popup) | Page 3
+Background service worker (manifest) | Page 3
+API permissions (manifest) | Page 3
+Host permissions (manifest) | Page 3
+Content scripts (manifest section) | Page 3
+web_accessible_resources | Page 3
+Options page (manifest field) | Page 3
+Permissions system (overview) | Page 4
+API permissions | Page 4
+Optional permissions | Page 4
+Host permissions | Page 4
+optional_host_permissions | Page 4
+Least privilege principle | Page 4
+<all_urls> host pattern | Page 4
+Permission warnings | Page 4
+Runtime permission requests | Page 4
+Content script (definition) | Page 5
+content_scripts (manifest key) | Page 5
+matches (URL patterns) | Page 5
+run_at (injection timing) | Page 5
+all_frames flag | Page 5
+Programmatic injection (chrome.scripting) | Page 5
+DOM manipulation from content scripts | Page 5
+Message passing (content ↔ background) | Page 5
+Content script security and CSP | Page 5
+Injected page script bridge | Page 5
+Background service worker (definition) | Page 6
+background.service_worker (manifest key) | Page 6
+Non-persistent background model | Page 6
+Event-driven lifecycle (background) | Page 6
+chrome.alarms (periodic work) | Page 6
+chrome.runtime.onInstalled | Page 6
+chrome.runtime.onMessage | Page 6
+chrome.action.onClicked | Page 6
+Message passing (background ↔ content) | Page 6
+State persistence with chrome.storage | Page 6
+Action API (toolbar icon) | Page 7
+default_popup (popup.html) | Page 7
+Popup UI (HTML/CSS/JS) | Page 7
+default_icon and default_title | Page 7
+Runtime updates to action (icon/badge) | Page 7
+Options page (options_page / options_ui) | Page 7
+open_in_tab (options_ui) | Page 7
+Popup vs options (use cases) | Page 7
+Context menu entries | Page 7
+Notifications and commands UI | Page 7
+chrome.storage API | Page 8
+storage.local / storage.sync / storage.session | Page 8
+storage permission (manifest) | Page 8
+Async storage pattern (get/set) | Page 8
+Background worker state re-hydration | Page 8
+Extension data-flow (options–background–popup–content) | Page 8
+Sensitive data handling in storage | Page 8
+Content Security Policy (CSP) in MV3 | Page 8
+Least privilege for storage and hosts | Page 8
+Storage limits and performance | Page 8
+chrome://extensions (load & reload) | Page 9
+DevTools for popup/options | Page 9
+DevTools for content scripts | Page 9
+Service worker DevTools (Inspect views) | Page 9
+chrome://inspect/#service-workers | Page 9
+Ephemeral service worker lifecycle | Page 9
+Top-level listener registration | Page 9
+Testing permissions and host scope | Page 9
+Testing storage and state restoration | Page 9
+Common MV3 pitfalls (lifecycle, permissions, CSP) | Page 9
+Packaged ZIP (extension bundle) | Page 10
+Developer dashboard (Chrome Web Store) | Page 10
+Extension metadata (name, description, icons, screenshots) | Page 10
+Distribution types (public/unlisted/private) | Page 10
+Developer Program Policies (review criteria) | Page 10
+No remotely hosted code (MV3 requirement) | Page 10
+Single-purpose requirement | Page 10
+Pre-publish checklist | Page 10
+Two-step verification for developer accounts | Page 10
+Chrome extension development flow (high level) | Page 11
+First project strategy (small page helper) | Page 11
+Iteration roadmap (options, permissions, APIs) | Page 11
+Reviewer and user mindset | Page 11
+Security and least privilege (recap) | Page 11
+Lightweight, single-purpose design (recap) | Page 11
+
+
+---
+
+## Page 14: License
+
+MIT License
+
+Copyright (c) 2026 ZIKYinc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this document and associated documentation files (the "Documentation"), to
+deal in the Documentation without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Documentation, and to permit persons to whom the
+Documentation is furnished to do so, subject to the following conditions.[web:111][web:117]
+
+The above copyright notice and this permission notice shall
+be included in all copies or substantial portions of the Documentation.[web:111][web:117]
+
+THE DOCUMENTATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.[web:111][web:117]
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE DOCUMENTATION OR THE USE OR
+OTHER DEALINGS IN THE DOCUMENTATION.[web:111][web:117]
+
+

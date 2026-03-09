@@ -1,4 +1,14 @@
 {
+	"meta": {
+		"name": "TOOLS",
+		"desc": "Utility, development, and productivity tools section",
+		"file": "tools.json",
+		"root": "PublicAssets",
+		"path": "website/lib/",
+		"version": 2.0,
+		"change_note": "Migrated to developer-array pattern, replaced featured boolean with flags, added root metadata.",
+		"change_date": "09/03/26"
+	},
 	"intro": "<h2>Welcome to ZIKYinc Tools</h2>\n<p>Explore a collection of powerful, community-driven applications designed to streamline your creative workflow. From handy web utilities for artists and designers to robust Windows applications for musicians and developers, our tools are built to help you create without limits.</p>\n<p>Each tool is a product of collaboration and innovation from within the ZIKYinc ecosystem. Dive in, discover something new, and let us know what you think!</p>",
 	"tools": {
 		"web": [
@@ -7,20 +17,20 @@
 				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
 				"link": "data/lib/tools/qrg.json",
 				"category": "Generators",
+				"developers": [{"name": "Juelz-101", "role": "Full-stack Developer"}],
 				"summary": "Internal QR Code generator for professional creative assets and high-speed links.",
 				"tags": ["utility", "web", "qr"],
-				"featured": true,
-				"dev": { "available": true, "finished": true }
+				"flags": ["debug", "featured"]
 			},
 			{
 				"name": "Chroma Palette",
 				"thumbnail": "Website/img/logos/ZIKYinc_Art-Logo.png",
 				"link": "data/lib/html/tools/chroma-palette.json",
 				"category": "Design",
+				"developers": [{"name": "Juelz-101", "role": "UI Designer"}],
 				"summary": "Instantly generate beautiful, accessible color palettes for your design projects.",
 				"tags": ["design", "color", "web"],
-				"featured": false,
-				"dev": { "available": true, "finished": true }
+				"flags": ["debug"]
 			}
 		],
 		"win": [
@@ -29,71 +39,84 @@
 				"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
 				"link": "data/lib/html/tools/waveform-converter.json",
 				"category": "Utility",
+				"developers": [{"name": "Juelz-101", "role": "Systems Engineer"}],
 				"summary": "A lightweight, powerful tool to convert, trim, and apply effects to audio files.",
 				"tags": ["audio", "windows", "production"],
-				"featured": true,
-				"dev": { "available": true, "finished": true }
+				"flags": ["debug", "featured"]
 			}
 		],
 		"scripts": {
-            "name": "Scripting Toolkit",
-            "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
-            "summary": "Automation and helper scripts for Python, PowerShell, and AutoHotkey users.",
+			"name": "Scripting Toolkit",
+			"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+			"summary": "Automation and helper scripts for Python, PowerShell, and AutoHotkey users.",
 			"py": [
-                {
-                    "name": "Asset Bulk Renamer",
-                    "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
-                    "link": "data/lib/tools/scripts/py/renamer.json",
-                    "category": "Python Script",
-                    "summary": "A fast script for batch renaming game assets with custom prefix/suffix rules.",
-                    "tags": ["Python", "Automation"]
-                }
-            ],
+				{
+					"name": "Asset Bulk Renamer",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/tools/scripts/py/renamer.json",
+					"category": "Python Script",
+					"developers": [{"name": "Juelz-101", "role": "Toolsmith"}],
+					"summary": "A fast script for batch renaming game assets with custom prefix/suffix rules.",
+					"tags": ["Python", "Automation"],
+					"flags": ["debug"]
+				}
+			],
 			"ps": [
-                {
-                    "name": "Dev-Environment Setup",
-                    "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
-                    "link": "data/lib/tools/scripts/ps/setup.json",
-                    "category": "PowerShell",
-                    "summary": "Automates the installation of dev tools on fresh Windows installs.",
-                    "tags": ["DevOps", "PowerShell"]
-                }
-            ],
+				{
+					"name": "Dev-Environment Setup",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/tools/scripts/ps/setup.json",
+					"category": "PowerShell",
+					"developers": [{"name": "Juelz-101", "role": "DevOps Engineer"}],
+					"summary": "Automates the installation of dev tools on fresh Windows installs.",
+					"tags": ["DevOps", "PowerShell"],
+					"flags": ["debug"]
+				}
+			],
 			"ahk": [
-                {
-                    "name": "Universal Hotkey Manager",
-                    "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
-                    "link": "data/lib/tools/scripts/ahk/hotkey.json",
-                    "category": "AutoHotkey",
-                    "summary": "Map complex application workflows to simple key combinations.",
-                    "tags": ["Utility", "AHK"]
-                }
-            ]
+				{
+					"name": "Universal Hotkey Manager",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/tools/scripts/ahk/hotkey.json",
+					"category": "AutoHotkey",
+					"developers": [{"name": "Juelz-101", "role": "Systems Engineer"}],
+					"summary": "Map complex application workflows to simple key combinations.",
+					"tags": ["Utility", "AHK"],
+					"flags": ["debug"]
+				}
+			]
 		},
 		"ai": {
-            "name": "AI & Prompt Lab",
-            "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
-            "summary": "Tools and frameworks for integrating AI into the creative process.",
+			"name": "AI & Prompt Lab",
+			"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+			"summary": "Tools and frameworks for integrating AI into the creative process.",
 			"apps": [
-                {
-                    "name": "Prompt Engineering Lab",
-                    "thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
-                    "link": "data/lib/tools/ai/apps/lab.json",
-                    "category": "AI App",
-                    "summary": "Visual sandbox for testing and refining Gemini and Midjourney prompts.",
-                    "tags": ["AI", "GenAI"]
-                }
-            ],
+				{
+					"name": "Prompt Engineering Lab",
+					"thumbnail": "Website/img/logos/ZIKYinc_DevLogo.png",
+					"link": "data/lib/tools/ai/apps/lab.json",
+					"category": "AI App",
+					"developers": [{"name": "Juelz-101", "role": "Lead Architect"}],
+					"summary": "Visual sandbox for testing and refining Gemini and Midjourney prompts.",
+					"tags": ["AI", "GenAI"],
+					"flags": ["debug", "featured"]
+				}
+			],
 			"prompts": [
-                {
-                    "name": "Artist Prompt Pack v1",
-                    "thumbnail": "Website/img/logos/ZIKYinc_Art-Logo.png",
-                    "link": "data/lib/tools/ai/prompts/pack1.json",
-                    "category": "Prompt Library",
-                    "summary": "A curated collection of high-impact prompts for stable diffusion and beyond.",
-                    "tags": ["AI", "Resource"]
-                }
-            ]
+				{
+					"name": "Artist Prompt Pack v1",
+					"thumbnail": "Website/img/logos/ZIKYinc_Art-Logo.png",
+					"link": "data/lib/tools/ai/prompts/pack1.json",
+					"category": "Prompt Library",
+					"developers": [{"name": "Juelz-101", "role": "Prompt Engineer"}],
+					"summary": "A curated collection of high-impact prompts for stable diffusion and beyond.",
+					"tags": ["AI", "Resource"],
+					"flags": ["debug"]
+				}
+			]
 		}
-	}
+	},
+	"developers": [
+		{ "artist": "Juelz-101", "thumbnail": "Website/img/photos/J2.jpg", "link": "Website/lib/gaming/artists/juelz.json", "platforms": [], "projects": [], "roles": [], "flags": [] }
+	]
 }

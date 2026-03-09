@@ -1,0 +1,104 @@
+[
+  {
+    "name": "auto-updater.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/auto-updater.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/auto-updater.ts"
+  },
+  {
+    "name": "fs-wrapper.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/fs-wrapper.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/fs-wrapper.ts"
+  },
+  {
+    "name": "global-shortcut.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/global-shortcut.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/global-shortcut.ts"
+  },
+  {
+    "name": "ipc-wrapper.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/ipc-wrapper.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/ipc-wrapper.ts"
+  },
+  {
+    "name": "desktop-capturer.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/desktop-capturer.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/desktop-capturer.ts"
+  },
+  {
+    "name": "dialog-manager.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/dialog-manager.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/dialog-manager.ts"
+  },
+  {
+    "name": "clipboard-extended.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/clipboard-extended.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/clipboard-extended.ts"
+  },
+  {
+    "name": "crash-reporter.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/crash-reporter.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/crash-reporter.ts"
+  },
+  {
+    "name": "power-monitor.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/power-monitor.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/power-monitor.ts"
+  },
+  {
+    "name": "menu-manager.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/menu-manager.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/menu-manager.ts"
+  },
+  {
+    "name": "taskbar-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/taskbar-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/taskbar-utils.ts"
+  },
+  {
+    "name": "power-save-blocker.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/power-save-blocker.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/power-save-blocker.ts"
+  },
+  {
+    "name": "system-info.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/system-info.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/system-info.ts"
+  },
+  {
+    "name": "web-frame.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/web-frame.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/web-frame.ts"
+  },
+  {
+    "name": "native-image.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/native-image.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/native-image.ts"
+  },
+  {
+    "name": "tray-manager.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/tray-manager.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/tray-manager.ts"
+  },
+  {
+    "name": "window-shell-utils.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/electron/window-shell-utils.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/electron/window-shell-utils.ts"
+  }
+]

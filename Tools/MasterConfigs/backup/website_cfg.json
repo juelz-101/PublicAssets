@@ -1,0 +1,184 @@
+{
+	"meta": {
+		"name": "MANIFEST", "desc": "Website config and file register.",
+		"file": "manifest.json", "root": "PublicAssets", "path": "Tools/MasterCfgs/",
+		"version": 2.6, "change_note": "Added default player cfg, flags and player settings.", "change_date": "08/03/26"
+	},
+	"git": {
+		"user": "juelz-101",
+		"repo": "PublicAssets",
+		"branch": "main",
+		"root": "",
+		"note": "All links in this file will begin from here. They will need to be joined together to make complete link"
+	},
+	"types": [
+		{"name": "find", "desc": "Add file names to 'get' array and set 'dir'"},
+		{"name": "root", "desc": "Set 'root' directory and then complete the directory for each file"}, 
+		{"name": "link", "desc": "Complete filepath starting from master root"},
+		{"name": "all", "desc": "Get all files in 'dir', can also just have no nested param and set it as folder directory"},
+		{"name": "rand", "desc": "Get a random(s) file from 'dir', optional: add filetypes to 'files:[]', also set 'num' for number of files to get"},
+		{"name": "ext", "desc": "Get files from another repo. 'git' array structure same as below and 'file' array to put type and params"}
+	],
+	"settings": {
+		"desc": "Dev-level backend settings for the site. Can be overridden in the debug menu",
+		"site": {
+			"default_tab": "Home"
+		},
+		"content": {
+			"show_debug_items_by_default": false
+		},
+		"player": {
+			"default_tab": "youtube",
+			"background_player": {
+				"allow": true,
+				"allow_preview": true,
+				"preview_time": 30000,
+				"default_preview_start": 0.5,
+				"use_platform": "soundcloud",
+				
+		"ui": {
+			"show_ui_on_load": true,
+			"layout": {
+				"padding_base_unit_px": 4,
+				"main_content_padding_multiplier": 4,
+				"panel_padding_multiplier": 6,
+				"panel_border_radius_px": 16,
+				"panel_ring_opacity_percent": 10
+			},
+			"effects": {
+				"background_blur_px": 16,
+				"header_blur_px": 16,
+				"footer_blur_px": 16,
+				"hud_blur_px": 16,
+				"enable_glow_effect": true,
+				"glow_primary_color_rgba": "245, 158, 11",
+				"glow_primary_opacity_percent": 20
+			},
+			"backgrounds": {
+				"allow_auto_change": true,
+				"per_page_switching": true,
+				"change_interval_min_seconds": 20,
+				"change_interval_max_seconds": 40
+			}
+		},
+		"safe_mode": {
+			"desc": "Safe override that blocks or reduces the amount of requests to git",
+			"on": false,
+			"override": {
+				"images": {
+					"block_all_images": false,
+					"limit_image_requests": {"on": true, "max": 20, "mode": "session"},
+					"block_background": {"on": true, "mode": "one_and_done"},
+					"pages": {
+						"desc": "Block images from loading on specific pages by adding the page names below",
+						"on": false,
+						"pages": [{"use": false, "page": "Example", "mode": "limit", "val": 10}]
+					}
+				},
+				"data": {
+					"block_all_online_data": false,
+					"block_local_data": false
+				},
+                "performance": {
+                    "reduced_motion": false,
+                    "low_bandwidth_mode": false
+                }
+			}
+		}
+						
+	},
+	"data": {
+	  "type": "find",
+	  "get": ["home.json", "music.json", "art.json", "tools.json", "gaming.json", "library.json", "community.json", "about.json"],
+	  "dir": "Website/lib"
+	},
+	"library": {"type": "all", "dir": "Library"},
+	"images": {
+		"logos": {
+			"type": "root",
+			"dir": "Website/img/logos",
+			"main_logo": "ZIKYinc-Music-Logo-Dark.png",
+			"music_logo": "ZIKYinc-Music-Logo-Dark.png",
+			"art_logo": "ZIKYinc_Art-Logo.png",
+			"dev_logo": "ZIKYinc_DevLogo.png",
+			"juelzfm_logo": "Juelz-FM-Logo.png"
+		},
+		"backgrounds": {
+			"main": "Website/img/bg/zikyinc",
+			"music": "",
+			"art": "",
+			"tools": "",
+			"gaming": "",
+			"community": "",
+			"library": "",
+			"about": "",
+			"juelzfm": ""
+		},
+		"misc": {
+			"album_art_dir": "img/album_art",
+			"html_dir": "lib/html",
+			"placeholders": {
+				"unknown": ["Images/Icons/Hex/PB_PlaceHolder1.png","Images/Icons/Hex/PB_PlaceHolder2.png","Images/Icons/Hex/PB_PlaceHolder3.png","Images/Icons/Hex/PB_PlaceHolder4.png"], 
+				"music": {"songs": ["Images/Icons/Hex/PB_PlaceHolder1.png","Images/Icons/Hex/PB_PlaceHolder2.png","Images/Icons/Hex/PB_PlaceHolder3.png","Images/Icons/Hex/PB_PlaceHolder4.png"], "artists": ["Images/Icons/Hex/PB_PlaceHolder1.png","Images/Icons/Hex/PB_PlaceHolder2.png","Images/Icons/Hex/PB_PlaceHolder3.png","Images/Icons/Hex/PB_PlaceHolder4.png"], "albums": ["Images/Icons/Hex/PB_PlaceHolder1.png","Images/Icons/Hex/PB_PlaceHolder2.png","Images/Icons/Hex/PB_PlaceHolder3.png","Images/Icons/Hex/PB_PlaceHolder4.png"] }, 
+				"art": [],
+				"tools": [],
+				"gaming": [],
+				"community": [],
+				"library": [],
+				"about": [],
+				"juelzfm": []
+			}
+		}
+  },
+  "cfg": {
+	"master_config": {"use": true, "source": "git", "url": "Tools/MasterConfigs/website_cfg.json"},
+	  "debug": {
+		  "on": true,
+		  "show_data_forms": true,
+		  "show_debug_icon": true
+	  }
+  },
+	"defaults": {
+		"desc": "Default parameters that are used if the item doesnt have parameters set",
+		"player": {
+			"youtube": { "modestbranding": true, "rel": 0, "playsinline": 1, "color": "white" },
+			"soundcloud": { "show_artwork": true, "show_comments": false, "show_user": true, "visual": true },
+			"spotify": { "theme": "0" },
+			"apple_music": { "show_artwork": true },
+			"bandcamp": { "theme": "large", "show_tracklist": false, "transparent": true }
+		}
+	},
+	"flags": [
+		{ "icon": "✨", "cat": "special", "flag": "new_release", "name": "New Release", "desc": "Include this item in the 'New Releases' section." },
+		{ "icon": "⭐", "cat": "special", "flag": "featured", "name": "Featured", "desc": "Include this item in the 'Featured' section." },
+		{ "icon": "✅", "cat": "status", "flag": "complete", "name": "Completed", "desc": "This item and all of its related project assets are complete, uploaded and added to the websites database." },
+		{ "icon": "💾", "cat": "status", "flag": "awaiting_db", "name": "Awaiting DB Update", "desc": "This item is ready to have all of its data and assets transfered into the sites database." },
+		{ "icon": "📤", "cat": "status", "flag": "awaiting_upload", "name": "Awaiting Upload", "desc": "This item and all of its related assets are ready to upload." },
+		{ "icon": "📦", "cat": "status", "flag": "building_assets", "name": "Building Release-Assets", "desc": "This item is complete but release-assets are not yet complete (ie: Documentation, Cover-Art, etc." },
+		{ "icon": "📈", "cat": "status", "flag": "finishing_up", "name": "Finishing Up", "desc": "This item is almost complete." },
+		{ "icon": "🧪", "cat": "status", "flag": "testing", "name": "Testing", "desc": "This item is currently being tested for quality control." },
+		{ "icon": "🎯", "cat": "status", "flag": "focused", "name": "Focused", "desc": "This item is currently being worked on." },
+		{ "icon": "🔧", "cat": "status", "flag": "fixing", "name": "Fixing", "desc": "This item is currently being worked on to fix issues." },
+		{ "icon": "⏳", "cat": "status", "flag": "pending", "name": "Pending", "desc": "This item is currently queued and will be worked on soon." },
+		{ "icon": "🚀", "cat": "status", "flag": "initiating", "name": "Initiating", "desc": "This item has started development." },
+		{ "icon": "🗺️", "cat": "status", "flag": "planning", "name": "Planning", "desc": "This item is in its planning stage." },
+		{ "icon": "📋", "cat": "status", "flag": "todo", "name": "To-Do", "desc": "This item is currently a placeholder." },
+		{ "icon": "🚫", "cat": "status", "flag": "abandoned", "name": "Abandoned", "desc": "This item did not work out and development has stopped." },
+		{ "icon": "🛡️", "cat": "system", "flag": "disable_auto_pop", "name": "Disable Auto-Populate", "targets": ["albums"], "desc": "Disable auto-populate of contained items based of items in other lists assigned to this item." }
+	],
+  "enum": {
+	"settings": {
+		"safe_mode": {
+			"background_mode": {
+				"desc": "Modes to set how to override the background image loading",
+				"default": "one_and_done",
+				"i": [ 
+					{"name": "one_and_done", "desc": "Loads 1 image and never switches" },
+					{"name": "limit", "desc": "Set a limit to how many requests can be made", "cfg": {"refresh_mode": {"desc": "Set when to refresh current count", "default": "never", "i": [ {"name": "never", "desc": "Never refresh limit"}, {"name": "on_app_load", "desc": "Refreshes when app is refreshed"}, {"name": "on_tab_switch", "desc": "Refreshes when switching tabs"}, {"name": "timer", "desc": "Set a timer"} ] }} },
+					{"name": "block", "desc": "Dont allow any images to be set" }
+				]
+			}
+		}
+	}
+  }
+}

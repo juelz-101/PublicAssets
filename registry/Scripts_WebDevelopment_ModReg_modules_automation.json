@@ -1,0 +1,20 @@
+[
+  {
+    "name": "automation-selectors.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/automation/automation-selectors.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/automation/automation-selectors.ts"
+  },
+  {
+    "name": "puppeteer-helper.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/automation/puppeteer-helper.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/automation/puppeteer-helper.ts"
+  },
+  {
+    "name": "crawl-manager.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/automation/crawl-manager.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/automation/crawl-manager.ts"
+  }
+]

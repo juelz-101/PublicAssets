@@ -1,0 +1,102 @@
+[
+  {
+    "category": "UI Components",
+    "description": "Standalone UI systems built using modular scripts.",
+    "systems": [
+      {
+        "name": "Particle Background System",
+        "description": "A highly customizable particle background system with interactive mouse effects and performance optimizations.",
+        "path": "app/ui/ParticleBackgroundSystem.tsx",
+        "examplePath": "examples/systems/ParticleBackgroundExample.tsx",
+        "docPath": "docs/systems/particle-background.md",
+        "aiRulesPath": "docs/ai/particle-background.md",
+        "prompts": [
+          {
+            "title": "Custom Theme Integration",
+            "description": "Prompt to help AI integrate the particle system with a specific theme.",
+            "content": "Please configure the ParticleBackgroundSystem to match a '{theme_name}' aesthetic. Suggest appropriate values for particleCount, particleColor, and speed. Provide the React component code."
+          },
+          {
+            "title": "Interactive Hero Section",
+            "description": "Prompt to help AI build a hero section with the particle background.",
+            "content": "I need to build a hero section for a landing page. Use the ParticleBackgroundSystem as the background layer and place a centered heading and a call-to-action button on top. Ensure proper z-indexing and responsiveness."
+          }
+        ],
+        "version": "1.1.0",
+        "templateData": {
+          "particleCount": 150,
+          "particleColor": "#08f7fe",
+          "speed": 1.2,
+          "interactive": true,
+          "connectParticles": true,
+          "maxDistance": 100,
+          "shape": "circle"
+        },
+        "dependencies": [
+          "canvas-utils",
+          "vector-utils",
+          "color-utils",
+          "animation-loop"
+        ],
+        "parameters": [
+          {
+            "name": "particleCount",
+            "type": "number",
+            "description": "Number of particles to render",
+            "default": 100
+          },
+          {
+            "name": "particleColor",
+            "type": "color",
+            "description": "Base color of particles",
+            "default": "#08f7fe"
+          },
+          {
+            "name": "speed",
+            "type": "number",
+            "description": "Movement speed multiplier",
+            "default": 1.0
+          },
+          {
+            "name": "interactive",
+            "type": "boolean",
+            "description": "Enable mouse interaction",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "Neural Data Navigator",
+        "description": "A 3D visualization system for exploring complex, nested JSON data structures using force-directed graphs.",
+        "path": "app/systems/neural_data_navigator/NeuralDataNavigator.tsx",
+        "examplePath": "examples/systems/NeuralDataNavigatorExample.tsx",
+        "version": "1.0.0",
+        "templateData": {
+          "root": {
+            "branch1": { "leaf1": 1, "leaf2": 2 },
+            "branch2": [3, 4, 5]
+          }
+        },
+        "dependencies": [
+          "three",
+          "@react-three/fiber",
+          "@react-three/drei"
+        ],
+        "parameters": [
+          {
+            "name": "data",
+            "type": "object",
+            "description": "The JSON data object to visualize",
+            "default": {}
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": "Title displayed on the overlay",
+            "default": "Neural Data Navigator"
+          }
+        ]
+      }
+    ]
+  }
+]

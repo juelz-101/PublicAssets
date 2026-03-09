@@ -2,47 +2,64 @@
 	"meta": {
 		"name": "COMMUNITY", "desc": "",
 		"file": "community.json", "root": "PublicAssets", "path": "website/lib/",
-		"version": 1.0, "change_note": "created file", "change_date": "12/11/25"
+		"version": 1.1, "change_note": "Restructured people array into categories, added people to events, added flags", "change_date": "09/03/26"
 	},
 	"introduction": {
 		"title": "Amplifying Our Collective Voice",
 		"text": "The heart of ZIKYinc lies in our community. This is where artists, developers, authors, and fans converge to celebrate underground creativity. Explore the work of our **independent collaborators**, connect with fellow enthusiasts, and find out about the **events** that keep our creative ecosystem vibrant. Whether you're here to discover new talent or share your own journey, this hub is built for connection and mutual support."
 	},
-	"people": [
-		{
-			"name": "Lisa Labon", "type": "Author",
-			"desc": "",
-			"thumbnail": "Website/img/photos/J2.jpg",
-			"link": "Website/lib/community/people/lisa.json",
-			"subjects": [ "Books", "Poems", "Art" ],
-			"items": [
-				{"name": "Legacy of Love Trilogy", "subject": "Books", "thumbnail": "Website/img/photos/community/blink.jpg", "link": "Website/lib/community/people/lisa/lol.json"}
-			],
-			"debug": false
-		}
-	],
 	"events": [
 		{
-			"name": "Test Charity Event", "type": "Online",
+			"name": "Test Charity Event",
+			"type": "Online",
 			"desc": "This is an example event",
 			"thumbnail": "Website/img/placeholders/event.jpg",
 			"link": "Website/lib/community/events/test_event.json",
-			"location": {
-				"type": "link",
-				"loc": "www.example.com/video_meeting"
-			},
-			"debug": true
+			"people": [{"name": "Lisa Labon", "role": "Organiser", "task": "Lead"}, {"name": "Harry Helper", "role": "Volunteer", "task": "Ticket Manager"}, {"name": "DJ Temp", "role": "Guest", "task": "Music and Effects"} ],
+			"location": { "type": "link", "loc": "www.example.com/video_meeting" },
+			"flags": ["debug", "featured"]
 		},
 		{
-			"name": "Test Charity Event 2", "type": "Place",
+			"name": "Test Charity Event 2",
+			"type": "Place",
 			"desc": "This is an example event",
 			"thumbnail": "Website/img/placeholders/event.jpg",
 			"link": "Website/lib/community/events/test_event2.json",
-			"location": {
-				"type": "address",
-				"loc": "ZIKYinc, 38 London Road, London, DA2 6DJ"
-			},
-			"debug": true
+			"people": [{"name": "Lisa Labon", "role": "Organiser", "task": "Lead"}, {"name": "Harry Helper", "role": "Volunteer", "task": "Ticket Manager"}, {"name": "DJ Temp", "role": "Guest", "task": "Music and Effects"} ],
+			"location": { "type": "address", "loc": "ZIKYinc, 38 London Road, London, DA2 6DJ" },
+			"flags": ["debug"]
 		}
-	]
+	],
+	"people": {
+		"organisers": [
+			{
+				"name": "Lisa Labon",
+				"desc": "",
+				"thumbnail": "Website/img/photos/J2.jpg",
+				"link": "Website/lib/community/people/lisa.json",
+				"roles": [],
+				"flags": ["debug", "featured"]
+			}
+		],
+		"volunteers": [
+			{
+				"name": "Harry Helper",
+				"desc": "",
+				"thumbnail": "Website/img/photos/J2.jpg",
+				"link": "Website/lib/community/people/harry_h.json",
+				"roles": [],
+				"flags": ["debug", "guest"]
+			}
+		],
+		"guests": [
+			{
+				"name": "DJ Temp",
+				"desc": "",
+				"thumbnail": "Website/img/photos/DJ_Temp.jpg",
+				"link": "Website/lib/community/people/dj_temp.json",
+				"roles": [],
+				"flags": ["debug", "featured", "guest"]
+			}
+		]
+	}
 }
