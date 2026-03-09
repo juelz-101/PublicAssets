@@ -68,7 +68,7 @@
 	],
 	"artists": [
 		{
-			"artist": "Juelz-101",
+			"name": "Juelz-101",
 			"thumbnail": "Website/img/photos/J2.jpg",
 			"link": "Website/lib/music/artists/juelz.json",
 			"genre": ["Drum and Bass", "Hip-Hop", "Grime", "Garage"],
@@ -80,7 +80,7 @@
 			"flags": [ "featured" ]
 		},
 		{
-			"artist": "Emma MT",
+			"name": "Emma MT",
 			"thumbnail": "Website/img/photos/emma/Emma-MT-Rave-ZIKYinc-5.jpg",
 			"link": "Website/lib/music/artists/emma.json",
 			"genre": ["Drum and Bass", "Hip-Hop"],
@@ -92,28 +92,28 @@
 			"flags": [ "featured" ]
 		},
 		{
-			"artist": "Imperial-P",
+			"name": "Imperial-P",
 			"thumbnail": "Website/img/photos/Imperial-P-Photo.jpeg",
 			"link": "Website/lib/music/artists/imp.json",
 			"genre": ["Hip-Hop"],
 			"albums": [],
-			"featured": true
+			"flags": [ "featured" ]
 		},
 		{
-			"artist": "Kyles Mum from the School Gates",
+			"name": "Kyles Mum from the School Gates",
 			"thumbnail": "Website/img/photos/KymPhoto.jpeg",
 			"link": "Website/lib/music/artists/kylm.json",
 			"genre": ["Hip-Hop, R&B"],
 			"albums": [],
-			"featured": true
+			"flags": [ "featured" ]
 		},
 		{
-			"artist": "Alice-S-Cape",
+			"name": "Alice-S-Cape",
 			"thumbnail": "Website/img/photos/Alice.png",
 			"link": "Website/lib/music/artists/alic.json",
 			"genre": ["Trance, House, EDM"],
 			"albums": [],
-			"featured": true
+			"flags": [ "featured" ]
 		}
 	],
 	"songs": [
@@ -153,7 +153,7 @@
 			"soundcloud": "https://soundcloud.com/ziky_inc/the-silent-streets-of-swanscombe",
 			"youtube": null,
 			"other_links": [],
-			"featured": true
+			"flags": [ "featured" ]
 		},
 		{
 			"title": "The Take Over",
@@ -168,7 +168,7 @@
 			"soundcloud": "https://soundcloud.com/ziky_inc/the-takeover",
 			"youtube": null,
 			"other_links": [],
-			"featured": false
+			"flags": []
 		},
 		{
 			"title": "Summer Nights",
@@ -184,7 +184,7 @@
 			"soundcloud": "https://soundcloud.com/ziky_inc/summer-nights",
 			"youtube": null,
 			"other_links": [],
-			"featured": true
+			"flags": [ "featured" ]
 		},
 		{
 			"title": "Together",
