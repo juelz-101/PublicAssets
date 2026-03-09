@@ -216,9 +216,9 @@
 			{ "type": "IndexedDB", "name": "Shared_ZIKYinc_Master", "id": "SZMDB", "version": 1, "mark_as": "shared", "stores": [ { "store_name": "User", "store_id": "USER", "mark_as": "default", "indexes": [] }] },
 			{ "type": "IndexedDB", "name": "Shared_ZIKYinc_Themes", "id": "SZTDB", "version": 1, "mark_as": "shared", "stores": [ { "store_name": "Presets", "store_id": "PRESETS", "mark_as": "default", "indexes": [] }, { "store_name": "Themes", "store_id": "THEMES", "mark_as": "additional", "indexes": [] }, { "store_name": "FX_Anim", "store_id": "FX_ANIM", "mark_as": "additional", "indexes": [] }, { "store_name": "Palettes", "store_id": "PALETTES", "mark_as": "additional", "indexes": [] }, { "store_name": "Categories", "store_id": "CATEGORIES", "mark_as": "additional", "indexes": [] }] }
 		],
-		"user_defaults": [
+		"defaults": [
 			{
-				"db_id": "SZMDB",
+				"id": "SZMDB",
 				"dev_version": 1.1, "changenote": "Added user type for admin, team, editor, advanced and basic user types",				"store_id": "USER",
 				"data": {
 					"account": {
