@@ -208,5 +208,88 @@
 				}
 			}
 		}
+	},
+	"user": {
+		"info": "Define Databases and default params to add to them if they dont exist already",
+		"db": [
+			{ "type": "IndexedDB", "name": "ZIKYinc_Main", "id": "ZIMBDB", "mark_as": "default", "stores": [ { "store_name": "Project1", "store_id": "EX1", "mark_as": "default", "indexes": [] }] },
+			{ "type": "IndexedDB", "name": "Shared_ZIKYinc_Master", "id": "SZMDB", "version": 1, "mark_as": "shared", "stores": [ { "store_name": "User", "store_id": "USER", "mark_as": "default", "indexes": [] }] },
+			{ "type": "IndexedDB", "name": "Shared_ZIKYinc_Themes", "id": "SZTDB", "version": 1, "mark_as": "shared", "stores": [ { "store_name": "Presets", "store_id": "PRESETS", "mark_as": "default", "indexes": [] }, { "store_name": "Themes", "store_id": "THEMES", "mark_as": "additional", "indexes": [] }, { "store_name": "FX_Anim", "store_id": "FX_ANIM", "mark_as": "additional", "indexes": [] }, { "store_name": "Palettes", "store_id": "PALETTES", "mark_as": "additional", "indexes": [] }, { "store_name": "Categories", "store_id": "CATEGORIES", "mark_as": "additional", "indexes": [] }] }
+		],
+		"user_defaults": [
+			{
+				"db_id": "SZMDB",
+				"dev_version": 1.1, "changenote": "Added user type for admin, team, editor, advanced and basic user types",				"store_id": "USER",
+				"data": {
+					"account": {
+						"name": "NewUser",
+						"account_type": "basic",
+						"bio": "",
+						"country": "",
+						"status": {
+							"post": {"date_time": "", "post": "", "reactions": [], "responses": [] },
+							"indicator": "Online",
+							"mood": "Happy",
+							"task": "",
+							"post_history": []
+						},
+						"avatar": {
+							"character": "Default",
+							"art_style": "Minimal",
+							"background": "task_driven",
+							"shape_and_border": {"shape_params": {}, "border_params": {}},
+							"overrides": {
+								"desc": "Overrides allow you to set your avatars mood and tasks while still begin able to update your user mood and task.",
+								"info": "Empty string = Off (Synced to user)",
+								"mood": "",
+								"task": ""
+							}
+						}
+					},
+					"settings": {
+						"display": {
+							"theme": {"fav_theme": "H4CK3D", "use_where_possible": false},
+							"font_size_mult": 1.0
+						},
+						"data": {
+							"overwrite_recent": 50,
+							"file_caching": "Auto",
+							"accepted_permission": false,
+							"cache_type": "IndexedDB",
+							"local_location": {"db_id": "SZMDB", "store_id": "USER", "nest": "/system/file_cache"}
+						}
+					},
+					"system": {
+						"custom_field_data": [],
+						"file_cache": { "data": [], "scripts": [] }
+					}
+				}
+			},
+			{
+				"db_id": "",
+				"store_id": "",
+				"info": "This is to be merged with the projects default db and store (Strings are blank, so find default db then default store), if any keys below already exist in project data then leave them as they are.",
+				"data": {
+					"account": {
+						"info": "Any Project-Specific account data."
+					},
+					"settings": {
+						"display": {
+							"theme": "Default",
+							"allow_theme_sync": true,
+							"font_size_mult": 1.0
+						},
+						"data": {
+							"max_recent": 50
+							
+						}
+					},
+					"system": {
+						"custom_field_data": [],
+						"file_cache": { "data": [], "scripts": [] }
+					}
+				}
+			}
+		]
 	}
 }
