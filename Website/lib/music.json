@@ -2,7 +2,7 @@
 	"meta": { "type": "Data", "name": "ZIKYinc Music DB", "versions": {
 		"data_version": 1.0, "data_note": "Just focusing on getting 1 song, and its related album and artists fully set up",
 		"system_version": 2.0, "system_note": "Restructuring the player to be a tab control with a tab for each platform, added the 'cfg' to each link for song, and added 'cfg' in root for default parameters thats used if cfg is empty or missing"
-	},
+	}},
 	"intro": "<h2>Music Introduction</h2>\n<p>Welcome to the ZIKYinc Music section, where creativity knows no bounds! Here, we celebrate our vibrant musical journey and invite you to explore the incredible sounds we’ve curated.</p>\n<p>At ZIKYinc, we pride ourselves on collaborating with underground artists from all corners of the globe, bringing fresh perspectives and unique voices to the forefront of the music scene. Our diverse roster spans a wide array of genres, ensuring that there’s something for every listener.</p>\n<p>In addition to our work with emerging talent, we specialize in crafting captivating film scores and immersive sound effects that enhance storytelling across various media. Our team is constantly juggling multiple projects, each one a testament to our commitment to innovation and artistry.</p>\n<p>Through these collaborations, we’ve built strong, lasting relationships with artists and creators alike. Each partnership enriches our community and fuels our passion for music. Join us on this exciting journey as we continue to push boundaries and redefine what music can be!</p>",
 	"albums": [
 		{

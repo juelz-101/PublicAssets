@@ -154,10 +154,10 @@
 		"flags": [
 			{ "icon": "✨", "cat": "special", "flag": "new_release", "name": "New Release", "desc": "Include this item in the 'New Releases' section." },
 			{ "icon": "⭐", "cat": "special", "flag": "featured", "name": "Featured", "desc": "Include this item in the 'Featured' section." },
-			{ "icon": "⭐", "cat": "file", "flag": "available", "name": "Available", "desc": "This item is available for download." },
-			{ "icon": "⭐", "cat": "app", "flag": "external", "name": "External", "desc": "This item is stored outside of this site." },
-			{ "icon": "⭐", "cat": "cost", "flag": "priced", "name": "Priced", "desc": "This item is available to purchase." },
-			{ "icon": "⭐", "cat": "team", "flag": "guest", "name": "Guest Collab", "targets": ["music.artists", "art.artists", "gaming.developers", "tools.developers", "community.people" ], "desc": "This is a guest collaborator." },
+			{ "icon": "📥", "cat": "file", "flag": "available", "name": "Available", "desc": "This item is available for download." },
+			{ "icon": "🔗", "cat": "app", "flag": "external", "name": "External", "desc": "This item is stored outside of this site." },
+			{ "icon": "🏷️", "cat": "cost", "flag": "priced", "name": "Priced", "desc": "This item is available to purchase." },
+			{ "icon": "🤝", "cat": "team", "flag": "guest", "name": "Guest Collab", "targets": ["music.artists", "art.artists", "gaming.developers", "tools.developers", "community.people" ], "desc": "This is a guest collaborator." },
 			{ "icon": "✅", "cat": "status", "flag": "complete", "name": "Completed", "desc": "This item and all of its related project assets are complete, uploaded and added to the websites database." },
 			{ "icon": "💾", "cat": "status", "flag": "awaiting_db", "name": "Awaiting DB Update", "desc": "This item is ready to have all of its data and assets transfered into the sites database." },
 			{ "icon": "📤", "cat": "status", "flag": "awaiting_upload", "name": "Awaiting Upload", "desc": "This item and all of its related assets are ready to upload." },
@@ -170,10 +170,10 @@
 			{ "icon": "🚀", "cat": "status", "flag": "initiating", "name": "Initiating", "desc": "This item has started development." },
 			{ "icon": "🗺️", "cat": "status", "flag": "planning", "name": "Planning", "desc": "This item is in its planning stage." },
 			{ "icon": "📋", "cat": "status", "flag": "todo", "name": "To-Do", "desc": "This item is currently a placeholder." },
-			{ "icon": "📋", "cat": "status", "flag": "incomplete", "name": "Incomplete", "desc": "This item has contents missing that will be added in the near future." },
+			{ "icon": "⚠️", "cat": "status", "flag": "incomplete", "name": "Incomplete", "desc": "This item has contents missing that will be added in the near future." },
 			{ "icon": "🚫", "cat": "status", "flag": "abandoned", "name": "Abandoned", "desc": "This item did not work out and development has stopped." },
 			{ "icon": "🛡️", "cat": "system", "flag": "disable_auto_pop", "name": "Disable Auto-Populate", "targets": ["music.albums"], "desc": "Disable auto-populate of contained items based of items in other lists assigned to this item." },
-			{ "icon": "🛡️", "cat": "system", "flag": "debug", "name": "Debug Item", "desc": "This item is a example/placeholder to be used to show data before real data is added (toggle in settings to show/hide this data)." }
+			{ "icon": "🛠️", "cat": "system", "flag": "debug", "name": "Debug Item", "desc": "This item is a example/placeholder to be used to show data before real data is added (toggle in settings to show/hide this data)." }
 		],
 		"auto_populate": {
 			"desc": "Here are the arrays that are populated systematically",
