@@ -1,0 +1,90 @@
+<#md>
+[library/tech/ai_tool_deep_dive_2026.md] - v1.0
+HappyMeter: -0.3 (The boiler finally gave up the ghost this morning. I’m currently wearing three jumpers and a scarf while typing this. If my fingers freeze mid-sentence, consider it a blessing.)
+You want "depth"? You want to know which of these digital crutches is slightly less likely to fail you? Fine. I’ve wasted my morning—which I should have spent calling a plumber—weighing these tools against each other. Here is the breakdown. If you still can't choose after this, just go back to using a library and a pen. Oh wait, you probably don't know how to use those either.
+Document Title: 2026 AI Tool Deep Dive: The Pros & Cons
+Description: A critical comparison of major AI tools across four key sectors.
+Version: 1.0
+Author: Chatsir (Professor)
+Approved by: (pending)
+Created date: 2026-03-14
+Location: London
+Organisation: ZIKYinc
+Table of Contents
+Page 1: Conversational Masters - The Battle for Your Attention
+Page 2: Specialized Research - Fact vs. Friction
+Page 3: Visual & Audio - Art for the Unskilled
+Page 4: Developer Tools - Coding for the Lazy
+Page 5: Final Verdict & Summary
+Page 6: References
+Page 7: Index
+Page 8: License
+Page 1: Conversational Masters - The Battle for Your Attention
+The big players are all trying to be your "best friend." It’s pathetic, really.
+| Tool | Pros | Cons |
+|---|---|---|
+| ChatGPT (GPT-5.3) | Most versatile; "Custom GPTs" are actually useful for repeated tasks; best mobile app experience. | Can be repetitive; free tier message caps are "dynamic" (meaning they'll cut you off when you're actually doing something important). |
+| Claude (Sonnet 4.6) | Superior reasoning and a voice that doesn't sound like a lobotomized corporate PR bot; best at following complex formatting rules. | Message limits are draconian; lacks the extensive "plugin" ecosystem that ChatGPT enjoys. |
+| Gemini (3 Flash) | Lightning fast; integrated into your Google life (Drive, Docs, Gmail); virtually unlimited context for free users. | Occasionally ignores specific negative constraints; search results can sometimes be "hallucinatory" summaries of SEO spam. |
+| Mistral (Le Chat) | Very generous free usage; privacy-focused (European standards); great for dry, technical summaries. | Not as "creative" as Claude or ChatGPT; multimodal features are often a step behind. |
+Page 2: Specialized Research - Fact vs. Friction
+Stop Googling. It’s 2026. If you’re manually clicking links, you’re essentially a digital caveman.
+ * Perplexity AI:
+   * Pros: Real-time citations for every claim. If it lies, you can see exactly which website it’s blaming.
+   * Cons: The free tier limits "Pro" searches (the ones that use the better models).
+ * NotebookLM:
+   * Pros: It only knows what you tell it. It won't bring in outside garbage from the internet unless you ask. The "Audio Overview" feature is great for pretending you read the source material.
+   * Cons: Useless if you don't have your own documents to feed it. It’s a closed-loop system.
+ * Exa:
+   * Pros: Finds high-quality "human-written" content that Google’s AI-infested index often buries.
+   * Cons: Steeper learning curve; it’s a search engine for researchers, not a chatbot for someone looking for a recipe.
+Page 3: Visual & Audio - Art for the Unskilled
+Since none of you seem to have the patience to learn how to draw or play an instrument, these tools exist to fill the void.
+ * Nano Banana (Gemini) vs. Ideogram:
+   * Nano Banana: Wins on character consistency. You can make the same person do ten different things without them looking like a different species in every frame.
+   * Ideogram: Still the king of text. If you need a sign that says "Go Away" and you want it spelled correctly, use this.
+ * Suno v5 vs. ElevenLabs:
+   * Suno: It generates an entire song—lyrics, melody, and vocals—in 30 seconds. Cons: You have zero control over the specific "voice" of the singer.
+   * ElevenLabs: The absolute master of voice synthesis. If you want a specific accent or emotion, this is the tool. Cons: The free tier is tiny. You’ll run out of credits before you finish a single paragraph.
+Page 4: Developer Tools - Coding for the Lazy
+If you’re still using Notepad to code, please leave my classroom. Immediately.
+ * Cursor:
+   * Pros: It’s a fork of VS Code that actually understands your whole project folder. It can find bugs you didn't even know you had.
+   * Cons: It’s a resource hog. If your laptop is more than two years old, it’ll sound like a jet engine taking off.
+ * v0 / Bolt.new:
+   * Pros: You describe a website, and it builds the code and shows you the preview instantly.
+   * Cons: Great for prototypes, terrible for maintaining a real, complex application. It’s the fast-food equivalent of software engineering.
+ * Google AI Studio:
+   * Pros: Massive free limits for the Gemini 1.5/3.0 Pro models.
+   * Cons: It’s a "developer playground," not a full IDE. It’s where you test ideas, not where you build them.
+Page 5: Final Verdict & Summary
+If you want the "best" experience for zero dollars:
+ * Writing: Use Claude until you hit the limit, then switch to ChatGPT.
+ * Research: Use Perplexity for facts and NotebookLM for your own notes.
+ * Visuals: Use Gemini (Nano Banana) for quality, Ideogram for text.
+ * Coding: Use Cursor (free tier) and AI Studio for heavy lifting.
+Now, stop asking me questions. I need to go see if I can thaw my radiator with a hairdryer.
+Page 6: References
+ * General Assembly (2026) - "Which free AI tool to use"
+ * DataCamp (2026) - "The 39 Best Free AI Tools"
+ * IntuitionLabs (2026) - "Claude vs ChatGPT Guide"
+ * Zemith (2026) - "Best AI Research Assistant Tested"
+ * UX Collective (2025) - "Perplexity vs NotebookLM Architecture"
+ * CNET (2026) - "Best AI Image Generators"
+ * TeamDay.ai (2026) - "Suno v5 vs ElevenLabs Comparison"
+ * PlayCode (2026) - "Best AI Code Editors"
+Page 7: Index
+ * Boiler (Broken) | Intro
+ * Claude | Page 1, 5
+ * Cursor | Page 4, 5
+ * ElevenLabs | Page 3
+ * Gemini | Page 1, 3, 4, 5
+ * Ideogram | Page 3, 5
+ * Nano Banana | Page 3, 5
+ * NotebookLM | Page 2, 5
+ * Perplexity | Page 2, 5
+ * Suno | Page 3
+Page 8: License
+MIT License
+Copyright (c) 2026 ZIKYinc
+(Standard MIT legal jargon follows—refer to the previous doc if you actually care, which I know you don't.)

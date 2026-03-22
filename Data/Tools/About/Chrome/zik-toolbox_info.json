@@ -1,0 +1,20 @@
+{
+  "title": "ZIK-Toolbox",
+  "version": "0.3.0",
+  "description": "The ultimate ZIKYinc Playground for web development, content extraction, and page automation.",
+  "readme": "### 🛠 The ZIKYinc Playground Suite\n\nWelcome to **ZIK-Toolbox**. This is a modular suite of developer utilities designed for testing and high-speed productivity.\n\n#### 📋 Copy Tools\n- **Markdown Copier:** Extracts high-fidelity Markdown (supports LaTeX, Tables, and Lists).\n- **Clean Copier:** Strips syntax artifacts for a pure text clipboard.\n- **Styles Copier:** Captures computed CSS as a valid class block.\n- **HTML Copier:** Grabs sanitized, pretty-printed HTML source.\n- **Base64 Copier:** Instantly converts any image to a Data URI.\n- **Link Scraper:** Extracts all unique URLs from your selection.\n\n#### 👁 Visual Tools\n- **Mini-Inspector:** Real-time Tag, ID, and Class tooltip.\n- **Typography Hover:** Instant font-family and layout specs.\n- **Element Outliner:** Red-line debugging for DOM structures.\n- **Layout Grid:** Overlays a standard 12-column grid for alignment checks.\n\n#### ⚡ Utilities\n- **YouTube Ad Skipper:** (Alt + S) Skips video ads and closes banner overlays.\n- **Video Overdrive:** ([ and ]) Changes playback speed on any HTML5 video (up to 10x).\n- **Password Revealer:** Toggles password fields to visible text for verification.\n- **Auto-Clicker:** (Alt + Click) Starts an automated 0.5s click loop on a target.\n\n#### 🚀 Development Notes\nAll modules are strictly self-contained. To extract a tool, simply pull the corresponding JS file from the `modules/` directory.",
+  "links": [
+    {
+      "label": "ZIKYinc Portfolio",
+      "url": "https://github.com/juelz-101"
+    },
+    {
+      "label": "Project Repository",
+      "url": "https://github.com/juelz-101/PublicAssets"
+    },
+    {
+      "label": "Report a Bug",
+      "url": "https://github.com/juelz-101/PublicAssets/issues"
+    }
+  ]
+}

@@ -44,7 +44,8 @@ PublicAssets/
 │   └── Tools/
 │       ├── About/
 │       │   └── Chrome/
-│       │       └── md-copier_info.json
+│       │       ├── md-copier_info.json
+│       │       └── zik-toolbox_info.json
 │       ├── appdata.json
 │       └── shared_indexeddb.json
 ├── Images/
@@ -199,154 +200,163 @@ PublicAssets/
 │           └── barcode.png
 ├── Images (P.Ass).lnk
 ├── Library/
-│   ├── AI/
-│   │   ├── AITraining/
-│   │   │   ├── New Text Document.txt
-│   │   │   └── TrainAIForFree/
-│   │   ├── Experiments/
-│   │   │   ├── CharacterConsistency-Gemini/
-│   │   │   │   └── AI ASSET CONSISTENCY TEST - Gemini (pro).gdoc
-│   │   │   └── Shutdown-Senario/
-│   │   │       ├── Chats/
-│   │   │       │   └── Setup-Chat.txt
-│   │   │       └── Emails/
-│   │   │           └── [SHUT]-Emails_Original.txt
-│   │   ├── Gemini/
-│   │   │   └── Gemini_Canvas-DatalossPreventions.txt
-│   │   ├── New Text Document.txt
-│   │   └── Riffusion/
-│   │       └── DeepDive/
-│   │           ├── BK/
-│   │           │   ├── AIPers.pdf
-│   │           │   ├── Exercise1.pdf
-│   │           │   ├── Functions.pdf
-│   │           │   ├── Interface_Mechanics.pdf
-│   │           │   ├── Interface_Mechanics2.pdf
-│   │           │   ├── Plan.pdf
-│   │           │   └── [RF-1a]_DD-Overview.pdf
-│   │           ├── Data/
-│   │           ├── Logs/
-│   │           │   ├── [RF-L1]_DD-FirstChat/
-│   │           │   └── [RF-L1]_DD-FirstChat.md
-│   │           ├── [RF-00]_DD-MasterDB.json
-│   │           ├── [RF-1a]_DD-Overview.txt
-│   │           ├── [RF-1b]_DD-Plan.txt
-│   │           ├── [RF-2a]_DD-AIPerspective.txt
-│   │           ├── [RF-2b]_DD-Functions.txt
-│   │           ├── [RF-2c]_DD-InterfaceToDiffusion.txt
-│   │           ├── [RF-2d]_DD-WhatCanSpacesDo.txt
-│   │           ├── [RF-3a]_DD-PromptStacking.txt
-│   │           ├── [RF-3b]_DD-ModularReconstruction.txt
-│   │           ├── [RF-3c]_DD-VibeTheory.txt
-│   │           ├── [RF-3d]_DD-CreativeHacks.txt
-│   │           ├── [RF-4a]_DD-ManualJSON_Intro.txt
-│   │           ├── [RF-4a]_DD-WorkflowHacks_PT1.txt
-│   │           ├── [RF-4b]_DD-ManualJSON_Remixes.txt
-│   │           ├── [RF-4b]_DD-WorkflowHacks_PT2.txt
-│   │           ├── [RF-4c]_DD-ManualJSON_CoolTricks.txt
-│   │           ├── [RF-4c]_DD-WorkflowHacks_PT3.txt
-│   │           ├── [RF-4d]_DD-Spaces_WorkflowHacks_PT1.txt
-│   │           ├── [RF-4e]_DD-Spaces_WorkflowHacks_PT2.txt
-│   │           ├── [RF-4e]_DD-Spaces_WorkflowHacks_PT3.lnk
-│   │           ├── [RF-4f]_DD-Spaces_WorkflowHacks_PT3.txt
-│   │           ├── [RF-4g]_DD-Spaces_WorkflowHacks_PT4.lnk
-│   │           └── [RF-]_DD-.txt
-│   ├── Coding/
-│   │   ├── AHK/
-│   │   │   └── AHK AutoHotkey V2 Reference & Guide.txt
-│   │   ├── BAT/
-│   │   │   └── WinBAT-CheatSheet.mlc
-│   │   ├── CLI/
-│   │   │   └── [CLI]-CommandBuilding.txt
-│   │   ├── General/
-│   │   │   ├── AppDevelopment/
-│   │   │   │   ├── [APP]-EngStandard_CrossPlatformStack.txt
-│   │   │   │   ├── [APP]-EngStandard_HighPerformance.txt
-│   │   │   │   ├── [APP]-EngStandard_SimpleApps.txt
-│   │   │   │   └── [APP]-EngStandard_UIFocus.txt
-│   │   │   ├── Naming/
-│   │   │   │   ├── [2D]-Coding_NamingEnforcement.txt
-│   │   │   │   ├── [2D]-Coding_NamingExceptions.txt
-│   │   │   │   ├── [2D]-Coding_RepoNaming.txt
-│   │   │   │   ├── [CH-GEN]-Coding_NamingConventions.txt
-│   │   │   │   ├── [GEN]-Coding_NamingConventions.txt
-│   │   │   │   └── [QUK]-Coding_NamingConventions.txt
-│   │   │   ├── SelfContainment/
-│   │   │   │   ├── New folder/
-│   │   │   │   └── [QUK]-Quick_GuideToModularSystems.mla
-│   │   │   └── SystemControl/
-│   │   │       └── System_Control-Checklist.mck
-│   │   ├── Git/
-│   │   │   ├── Git_Gitignore_Guide.txt
-│   │   │   ├── Git_GuildAndReference.txt
-│   │   │   └── Git_LocalRepo_Tutorial.txt
-│   │   ├── GoogleAIStudio/
-│   │   │   └── GAIS Reference & Guide.txt
-│   │   ├── HTML/
-│   │   │   ├── CSS Reference & Guide.txt
-│   │   │   └── Node/
-│   │   │       └── Puppeteer/
-│   │   │           ├── Puppeteer_Brower-Toolkit.ts
-│   │   │           ├── Puppeteer_Browser-PT1.mlb
-│   │   │           ├── Puppeteer_Cheatsheet.mct
-│   │   │           ├── Puppeteer_CoolStuff-PT1.mlb
-│   │   │           ├── Puppeteer_Profiles-PT1.mlb
-│   │   │           ├── Puppeteer_Profiles-PT2.mlb
-│   │   │           └── Puppeteer_Profiles-Toolkit.ts
-│   │   ├── JSON/
-│   │   │   └── JSON_Reference_and_Guide.txt
-│   │   ├── Markdown/
-│   │   │   └── Markdown_Reference_and_Guide.txt
-│   │   ├── OfficeApps/
-│   │   │   └── Presentations/
-│   │   │       └── Slides/
-│   │   │           └── [DB]-G-Slides_BackendReference.mdb
-│   │   ├── PY/
-│   │   │   ├── Basics/
-│   │   │   │   ├── [PY]PythonBasics-ExportingToEXE .txt
-│   │   │   │   └── [PY]PythonBasics-UsefulTools.txt
-│   │   │   └── TelegramBots/
-│   │   │       ├── 10 Crazy Innovative Things You Can Do with a Telegram Bot - Copy.txt
-│   │   │       ├── TELE_Complete_Guide_To_Telegram_Bots.txt
-│   │   │       ├── [=I=] TELE_10 Crazy Innovative Things You Can Do with a Telegram Bot.txt
-│   │   │       ├── [=I=] TELE_Complete_Guide_To_Telegram_Bots.txt
-│   │   │       ├── [=I=] TELE_SecureRemoteCMDs.txt
-│   │   │       ├── [=I=] python-cli-cheatbook.txt
-│   │   │       ├── [AI_FL]-[IDX] TELE_Complete_Guide_To_Telegram_Bots.txt
-│   │   │       ├── [AI_FL]-[IDX] TELE_Python CLI Cheatbook – Mastering Tools by Command.txt
-│   │   │       └── [IDX] TELE_Complete_Guide_To_Telegram_Bots.txt
-│   │   ├── SVG/
-│   │   └── WebDevelopment/
-│   │       ├── Chrome/
-│   │       │   ├── [Chrome]-Chrome_Extensions_Dict.mld
-│   │       │   └── [Chrome]-Intro_To_Chrome_Extensions.mlb
-│   │       └── React/
-│   │           ├── [DEV]-General_App_Dev-Terms.mld
-│   │           ├── [REACT]-Free_Backend_Tools.mlb
-│   │           ├── [React]-React_App_Tauri-Guilde.mlb
-│   │           ├── [React]-Running_AI_On_React_Frontend_Free-Guide.mlb
-│   │           └── [React]-System_Level_Options.mlb
-│   ├── FireAndSecurity/
-│   │   ├── AccessControl/
-│   │   ├── AudVis/
-│   │   ├── CCTV/
-│   │   ├── Fire/
-│   │   ├── Intruder/
-│   │   │   ├── HKC_Parts.txt
-│   │   │   ├── Honeywell_Parts.txt
-│   │   │   ├── Pyronix_Parts.txt
-│   │   │   └── Texecom_Parts.txt
-│   │   ├── New Text Document.txt
-│   │   └── [DB]-F&S_PartNumbers.json
-│   ├── GeneralComputing/
-│   │   ├── DataManagement/
-│   │   │   └── FamilyManagement/
-│   │   │       ├── [tut]-FamilyManagement_Google - Copy.mix
-│   │   │       └── [tut]-FamilyManagement_Google.mix
-│   │   └── Keyboard/
-│   │       ├── KeyboardSymbols.mld
-│   │       ├── [CH-GCPU]-KeyboardSymbols.mlb
-│   │       └── [PC-KB]-Quick_Screenshot-Guide.mlg
+│   ├── Computing/
+│   │   ├── AI/
+│   │   │   ├── AITraining/
+│   │   │   │   ├── New Text Document.txt
+│   │   │   │   └── TrainAIForFree/
+│   │   │   ├── Experiments/
+│   │   │   │   ├── CharacterConsistency-Gemini/
+│   │   │   │   │   └── AI ASSET CONSISTENCY TEST - Gemini (pro).gdoc
+│   │   │   │   └── Shutdown-Senario/
+│   │   │   │       ├── Chats/
+│   │   │   │       │   └── Setup-Chat.txt
+│   │   │   │       └── Emails/
+│   │   │   │           └── [SHUT]-Emails_Original.txt
+│   │   │   ├── Gemini/
+│   │   │   │   └── Gemini_Canvas-DatalossPreventions.txt
+│   │   │   ├── Riffusion/
+│   │   │   │   └── DeepDive/
+│   │   │   │       ├── BK/
+│   │   │   │       │   ├── AIPers.pdf
+│   │   │   │       │   ├── Exercise1.pdf
+│   │   │   │       │   ├── Functions.pdf
+│   │   │   │       │   ├── Interface_Mechanics.pdf
+│   │   │   │       │   ├── Interface_Mechanics2.pdf
+│   │   │   │       │   ├── Plan.pdf
+│   │   │   │       │   └── [RF-1a]_DD-Overview.pdf
+│   │   │   │       ├── Data/
+│   │   │   │       ├── Logs/
+│   │   │   │       │   ├── [RF-L1]_DD-FirstChat/
+│   │   │   │       │   └── [RF-L1]_DD-FirstChat.md
+│   │   │   │       ├── [RF-00]_DD-MasterDB.json
+│   │   │   │       ├── [RF-1a]_DD-Overview.txt
+│   │   │   │       ├── [RF-1b]_DD-Plan.txt
+│   │   │   │       ├── [RF-2a]_DD-AIPerspective.txt
+│   │   │   │       ├── [RF-2b]_DD-Functions.txt
+│   │   │   │       ├── [RF-2c]_DD-InterfaceToDiffusion.txt
+│   │   │   │       ├── [RF-2d]_DD-WhatCanSpacesDo.txt
+│   │   │   │       ├── [RF-3a]_DD-PromptStacking.txt
+│   │   │   │       ├── [RF-3b]_DD-ModularReconstruction.txt
+│   │   │   │       ├── [RF-3c]_DD-VibeTheory.txt
+│   │   │   │       ├── [RF-3d]_DD-CreativeHacks.txt
+│   │   │   │       ├── [RF-4a]_DD-ManualJSON_Intro.txt
+│   │   │   │       ├── [RF-4a]_DD-WorkflowHacks_PT1.txt
+│   │   │   │       ├── [RF-4b]_DD-ManualJSON_Remixes.txt
+│   │   │   │       ├── [RF-4b]_DD-WorkflowHacks_PT2.txt
+│   │   │   │       ├── [RF-4c]_DD-ManualJSON_CoolTricks.txt
+│   │   │   │       ├── [RF-4c]_DD-WorkflowHacks_PT3.txt
+│   │   │   │       ├── [RF-4d]_DD-Spaces_WorkflowHacks_PT1.txt
+│   │   │   │       ├── [RF-4e]_DD-Spaces_WorkflowHacks_PT2.txt
+│   │   │   │       ├── [RF-4e]_DD-Spaces_WorkflowHacks_PT3.lnk
+│   │   │   │       ├── [RF-4f]_DD-Spaces_WorkflowHacks_PT3.txt
+│   │   │   │       ├── [RF-4g]_DD-Spaces_WorkflowHacks_PT4.lnk
+│   │   │   │       └── [RF-]_DD-.txt
+│   │   │   ├── UsefulInfo/
+│   │   │   │   ├── BestFreeAI_2026/
+│   │   │   │   │   ├── [1a. AI]-BestFreeAITools_2026.txt
+│   │   │   │   │   ├── [1b. AI]-BestFreeAITools_2026_Comparison.txt
+│   │   │   │   │   └── [2. AI]-BestFreeAITools_2026-ProjectTools.txt
+│   │   │   │   └── BestLocalAI_2026/
+│   │   │   │       └── [DB-LAI]-BestLocalAI_Cat.mlc
+│   │   │   └── [Dict AI]-Main_Dictionary-AI.mld
+│   │   ├── Coding/
+│   │   │   ├── AHK/
+│   │   │   │   └── AHK AutoHotkey V2 Reference & Guide.txt
+│   │   │   ├── BAT/
+│   │   │   │   └── WinBAT-CheatSheet.mlc
+│   │   │   ├── CLI/
+│   │   │   │   └── [CLI]-CommandBuilding.txt
+│   │   │   ├── General/
+│   │   │   │   ├── AppDevelopment/
+│   │   │   │   │   ├── [APP]-EngStandard_CrossPlatformStack.txt
+│   │   │   │   │   ├── [APP]-EngStandard_HighPerformance.txt
+│   │   │   │   │   ├── [APP]-EngStandard_SimpleApps.txt
+│   │   │   │   │   └── [APP]-EngStandard_UIFocus.txt
+│   │   │   │   ├── Naming/
+│   │   │   │   │   ├── [2D]-Coding_NamingEnforcement.txt
+│   │   │   │   │   ├── [2D]-Coding_NamingExceptions.txt
+│   │   │   │   │   ├── [2D]-Coding_RepoNaming.txt
+│   │   │   │   │   ├── [CH-GEN]-Coding_NamingConventions.txt
+│   │   │   │   │   ├── [GEN]-Coding_NamingConventions.txt
+│   │   │   │   │   └── [QUK]-Coding_NamingConventions.txt
+│   │   │   │   ├── SelfContainment/
+│   │   │   │   │   ├── New folder/
+│   │   │   │   │   └── [QUK]-Quick_GuideToModularSystems.mla
+│   │   │   │   └── SystemControl/
+│   │   │   │       └── System_Control-Checklist.mck
+│   │   │   ├── Git/
+│   │   │   │   ├── Git_Gitignore_Guide.txt
+│   │   │   │   ├── Git_GuildAndReference.txt
+│   │   │   │   └── Git_LocalRepo_Tutorial.txt
+│   │   │   ├── GoogleAIStudio/
+│   │   │   │   └── GAIS Reference & Guide.txt
+│   │   │   ├── HTML/
+│   │   │   │   ├── CSS Reference & Guide.txt
+│   │   │   │   └── Node/
+│   │   │   │       └── Puppeteer/
+│   │   │   │           ├── Puppeteer_Brower-Toolkit.ts
+│   │   │   │           ├── Puppeteer_Browser-PT1.mlb
+│   │   │   │           ├── Puppeteer_Cheatsheet.mct
+│   │   │   │           ├── Puppeteer_CoolStuff-PT1.mlb
+│   │   │   │           ├── Puppeteer_Profiles-PT1.mlb
+│   │   │   │           ├── Puppeteer_Profiles-PT2.mlb
+│   │   │   │           └── Puppeteer_Profiles-Toolkit.ts
+│   │   │   ├── JSON/
+│   │   │   │   └── JSON_Reference_and_Guide.txt
+│   │   │   ├── Markdown/
+│   │   │   │   └── Markdown_Reference_and_Guide.txt
+│   │   │   ├── OfficeApps/
+│   │   │   │   └── Presentations/
+│   │   │   │       └── Slides/
+│   │   │   │           └── [DB]-G-Slides_BackendReference.mdb
+│   │   │   ├── PY/
+│   │   │   │   ├── Basics/
+│   │   │   │   │   ├── [PY]PythonBasics-ExportingToEXE .txt
+│   │   │   │   │   └── [PY]PythonBasics-UsefulTools.txt
+│   │   │   │   └── TelegramBots/
+│   │   │   │       ├── 10 Crazy Innovative Things You Can Do with a Telegram Bot - Copy.txt
+│   │   │   │       ├── TELE_Complete_Guide_To_Telegram_Bots.txt
+│   │   │   │       ├── [=I=] TELE_10 Crazy Innovative Things You Can Do with a Telegram Bot.txt
+│   │   │   │       ├── [=I=] TELE_Complete_Guide_To_Telegram_Bots.txt
+│   │   │   │       ├── [=I=] TELE_SecureRemoteCMDs.txt
+│   │   │   │       ├── [=I=] python-cli-cheatbook.txt
+│   │   │   │       ├── [AI_FL]-[IDX] TELE_Complete_Guide_To_Telegram_Bots.txt
+│   │   │   │       ├── [AI_FL]-[IDX] TELE_Python CLI Cheatbook – Mastering Tools by Command.txt
+│   │   │   │       └── [IDX] TELE_Complete_Guide_To_Telegram_Bots.txt
+│   │   │   ├── SVG/
+│   │   │   └── WebDevelopment/
+│   │   │       ├── Chrome/
+│   │   │       │   ├── [Chrome]-Chrome_Extensions_Dict.mld
+│   │   │       │   └── [Chrome]-Intro_To_Chrome_Extensions.mlb
+│   │   │       └── React/
+│   │   │           ├── [DEV]-General_App_Dev-Terms.mld
+│   │   │           ├── [REACT]-Free_Backend_Tools.mlb
+│   │   │           ├── [React]-React_App_Tauri-Guilde.mlb
+│   │   │           ├── [React]-Running_AI_On_React_Frontend_Free-Guide.mlb
+│   │   │           └── [React]-System_Level_Options.mlb
+│   │   └── GeneralComputing/
+│   │       ├── DataManagement/
+│   │       │   └── FamilyManagement/
+│   │       │       ├── [tut]-FamilyManagement_Google - Copy.mix
+│   │       │       └── [tut]-FamilyManagement_Google.mix
+│   │       └── Keyboard/
+│   │           ├── KeyboardSymbols.mld
+│   │           ├── [CH-GCPU]-KeyboardSymbols.mlb
+│   │           └── [PC-KB]-Quick_Screenshot-Guide.mlg
+│   ├── Engineering/
+│   │   └── FireAndSecurity/
+│   │       ├── AccessControl/
+│   │       ├── AudVis/
+│   │       ├── CCTV/
+│   │       ├── Fire/
+│   │       ├── Intruder/
+│   │       │   ├── HKC_Parts.txt
+│   │       │   ├── Honeywell_Parts.txt
+│   │       │   ├── Pyronix_Parts.txt
+│   │       │   └── Texecom_Parts.txt
+│   │       ├── New Text Document.txt
+│   │       └── [DB]-F&S_PartNumbers.json
 │   ├── Library.mix
 │   ├── MasterDictionary.mld
 │   ├── Mobile/

@@ -1,0 +1,130 @@
+# [library/tech/dev_escape_pod_2026.md] - v1.0
+
+**HappyMeter: 0.2** (My boiler is still a block of ice, but the fact that you finally want to "actually learn" instead of letting a corporate algorithm vomit code for you has warmed my cynical heart. Just a little.)
+
+So, Google AI Studio "nerfed" your workflow? Welcome to the real world, kid. These companies aren't your friends; they’re drug dealers giving out free samples until you're hooked, then they hike the price or cut the product with baking soda. If you're serious about taking the training wheels off while keeping a safety net, here is your toolkit for March 2026.
+
+---
+
+**Document Title:** Developer’s Escape Pod: Free AI & Coding Tools
+**Description:** A guide to project-aware coding assistants, workflow management, and learning resources for the recovering AI-dependent developer.
+**Version:** 1.0
+**Author:** Chatsir (Professor)
+**Approved by:** (pending)
+**Created date:** 2026-03-14
+**Location:** London
+**Organisation:** ZIKYinc
+
+---
+
+**Table of Contents**
+Page 1: The "AI-First" IDEs (Project Context)
+Page 2: The "Independence" Stack (Extensions & APIs)
+Page 3: Workflow, Files, and Issue Tracking
+Page 4: Learning Resources: The "Use Your Brain" Section
+Page 5: Finishing Page
+Page 6: References & Tools
+Page 7: Index
+Page 8: License
+
+---
+
+## Page 1: The "AI-First" IDEs (Project Context)
+
+If you want the AI to understand your entire project folder—not just the file you're looking at—you need an editor that indexes your codebase.
+
+* **Cursor:** * **The Good:** Still the benchmark for "codebase-aware" editing. It indexes your project and uses `@-mentions` to reference specific files or docs.
+    * **The Bad:** The free tier is "restrictive" compared to the paid Ultra plan. 
+* **Trae:** * **The Good:** A ByteDance-backed alternative that is currently "fully free" to lure users away from Cursor. It matches the speed and multi-file editing capabilities of paid tools.
+* **Windsurf:** * **The Good:** Uses the "Cascade" agent which is more "agentic"—it watches your terminal and file changes more passively to build context.
+    * **The Bad:** The free plan is limited to 25 prompts per month. That’s about twenty minutes of work for someone who doesn't know what they're doing.
+
+---
+
+## Page 2: The "Independence" Stack (Extensions & APIs)
+
+If you want to stop being a victim of "UI nerfs," use an open-source extension and plug in your own model.
+
+* **Continue.dev:** * An open-source extension for VS Code and JetBrains. It allows you to swap models (like Claude, GPT-4, or local models via Ollama) so you aren't locked into one provider’s mood swings.
+* **GitHub Copilot (Free Tier):** * As of early 2026, GitHub offers a free tier with 2,000 code completions and 50 chat messages per month. 
+    * **Warning:** It does *not* include the high-end "agent mode" or multi-file editing on the free plan. It’s a tool for light assistance, not project rebuilding.
+* **Cline (formerly Claude Dev):** * An open-source agent that lives in your sidebar. It can run terminal commands and edit files autonomously if you give it an API key.
+
+---
+
+## Page 3: Workflow, Files, and Issue Tracking
+
+Since you’re "done with Google," you need to manage your projects like a professional. 
+
+* **Linear:** * The "lightning-fast" alternative to Jira. It’s keyboard-driven and keeps your tasks organized without the bloat. The free tier is generous for solo developers.
+* **Jira:** * Still the industry standard for agile development. Free for up to 10 users. If you want to work in a real company, you should probably learn how to use this monstrosity.
+* **MkDocs & GitHub:** * Use **MkDocs** to build your own static documentation sites from Markdown—no cloud subscription required.
+    * **GitHub** remains the mandatory choice for version control and collaboration.
+
+---
+
+## Page 4: Learning Resources: The "Use Your Brain" Section
+
+You said you wanted to learn. Here is where the real work starts. If I catch you copy-pasting from a chatbot without understanding the syntax, I'm failing you.
+
+* **TypeScript Official Handbook:** * The only authoritative source for the language. It covers everything from basic types to complex generics and "Mapped Types".
+* **Scrimba (Learn TypeScript):** * A 4.2-hour interactive course where you pause the video and code directly in the player. Highly recommended for people who have the attention span of a goldfish.
+* **Total TypeScript (Matt Pocock):** * While many parts are paid, his free tutorials are the gold standard for intermediate-to-advanced patterns.
+* **DevDocs.io:** * An essential tool that aggregates documentation for almost every language and framework (TypeScript, React, Node, etc.) into a single, searchable, offline-capable interface.
+
+---
+
+## Page 5: Finishing Page
+
+Google AI Studio was a "pot of gold" that everyone knew would eventually run dry. Moving to **Cursor** or **Trae** will give you back your multi-file context, but the real solution is learning **TypeScript** properly through the **Official Handbook** and **Scrimba**. 
+
+If you get stuck, don't just ask the AI to fix it—ask it to *explain* why your current approach is garbage. That’s how you actually get better.
+
+**Next Document Recommendation:** "Git for People Who Keep Deleting Their Repo by Mistake."
+
+---
+
+## Page 6: References & Tools
+
+* Faros AI (2026): https://www.faros.ai/blog/best-ai-coding-agents-2026
+* PE Collective (2026): https://pecollective.com/tools/best-ai-coding-assistants/
+* NxCode (2026): https://www.nxcode.io/resources/news/best-free-ai-coding-tools-2026
+* Capacity.so (2026): https://capacity.so/blog/best-ai-coding-assistants-2026
+* Google AI Dev Forum (2026): https://discuss.ai.google.dev/t/limits-and-its-update/130015
+* Vitara.ai (2025): https://vitara.ai/windsurf-vs-cursor/
+* Builder.io (2025): https://www.builder.io/blog/cursor-alternatives-2026
+* Zapier (2026): https://zapier.com/blog/free-project-management-software/
+* Monday.com (2026): https://monday.com/blog/rnd/software-development-management-tools/
+* Fluid Topics (2026): https://www.fluidtopics.com/blog/content-ops/technical-documentation-software-tools/
+* Scrimba (2026): https://scrimba.com/articles/how-to-learn-typescript-a-guide-for-javascript-developers-2026/
+* TypeScript Official (2026): https://www.typescriptlang.org/docs/
+
+---
+
+## Page 7: Index
+
+* AI Agents | Page 1, 2
+* Codebase Indexing | Page 1
+* Continue.dev | Page 2
+* Cursor | Page 1
+* GitHub | Page 2, 3
+* Jira | Page 3
+* Linear | Page 3
+* Scrimba | Page 4, 5
+* Trae | Page 1, 5
+* TypeScript | Page 4, 5
+* Windsurf | Page 1
+
+---
+
+## Page 8: License
+
+MIT License
+
+Copyright (c) 2026 ZIKYinc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

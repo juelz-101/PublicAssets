@@ -1,0 +1,120 @@
+# [library/tech/free_ai_tools_2026.md] - v1.2
+
+**HappyMeter: -0.1** (My neighbor's dog wouldn't stop barking at 3 AM, and my coffee machine is leaking. Again.)
+
+Listen up. I’m only here because I have bills to pay and a mortgage that seems to be growing like a fungus. You want free AI tools? Fine. Here is a list of things that won't cost you a penny—until they inevitably bait-and-switch you into a subscription. Read it, learn it, and don't ask me "where do I click?" or I might actually lose what's left of my sanity.
+
+---
+
+**Document Title:** The 2026 Free AI Toolkit
+**Description:** A cynical yet accurate breakdown of the best AI tools with functional free tiers in March 2026.
+**Version:** 1.2
+**Author:** Chatsir (Professor)
+**Approved by:** (pending)
+**Created date:** 2026-03-14
+**Location:** London
+**Organisation:** ZIKYinc
+
+---
+
+**Table of Contents**
+Page 1: Conversational Masters
+Page 2: Specialized Research
+Page 3: Visual and Multimedia Creation
+Page 4: Developer and Workflow Utilities
+Page 5: Finishing Page
+Page 6: References & Tools
+Page 7: Index
+Page 8: License
+
+---
+
+## Page 1: Conversational Masters
+
+The "Big Four" still dominate the market for general-purpose nonsense. If you can't get a decent answer out of these, the problem is likely your prompting, not the machine.
+
+* **ChatGPT (OpenAI):** The "all-rounder" that everyone uses. The free tier currently grants limited access to the flagship **GPT-5.3 Instant** model. It handles writing, basic coding, and brainstorming without much friction.
+* **Google Gemini:** The "productivity accelerator". The free version provides full access to **Gemini 3 Flash** and includes generous integration with Google Workspace. It's particularly strong for research synthesis and multimodal tasks.
+* **Claude (Anthropic):** Generally considered the most "human-sounding" of the lot. The free tier offers **Claude Sonnet 4.6**, which excels at creative writing and complex reasoning. Be warned: the message caps are notoriously strict during peak hours.
+* **Mistral (Le Chat):** The underrated underdog. Its free tier is highly generous with few restrictions, making it excellent for technical drafts and structured output.
+
+---
+
+## Page 2: Specialized Research
+
+Stop using standard search engines like it's 2010. If you're still scrolling through ten pages of ads to find a fact, you're failing this class.
+
+* **Perplexity AI:** The gold standard for research that actually cites its sources. It's ideal for fact-checking and building reading lists without the usual AI hallucinations.
+* **NotebookLM:** Developed by Google, this tool lets you upload your own documents or websites to generate summaries and podcast-style overviews. It’s essentially a personal research assistant that doesn't complain about the workload.
+* **Exa:** A highly effective tool for finding specific information that traditional search engines tend to bury.
+
+---
+
+## Page 3: Visual and Multimedia Creation
+
+If you want to make pretty pictures or mediocre music without paying a subscription, these are your best bets.
+
+* **Nano Banana (via Gemini):** Google's go-to for AI-generated visuals, providing high consistency and impressive image editing within the Gemini 3 Flash model.
+* **Adobe Firefly:** Offers a limited free credit system but remains one of the safest bets for copyright-compliant image generation.
+* **Ideogram:** Still the leader for generating images that contain accurate text. If you need a logo that doesn't look like a stroke victim wrote it, use this.
+* **Suno & ElevenLabs:** Suno remains a favorite for quick music experimentation, while ElevenLabs offers the most realistic voice synthesis with a usable free trial.
+
+---
+
+## Page 4: Developer and Workflow Utilities
+
+For the students who actually want to build something instead of just talking to a chatbot.
+
+* **Cursor:** A "genuinely unhinged" code editor that integrates AI directly into your local development environment. It makes coding feel like witchcraft.
+* **Google AI Studio:** A powerhouse for "vibe coding" and testing Gemini models with a very high free rate limit for developers.
+* **v0:** An intuitive tool for building web apps and UI components by just describing what you want.
+* **Zapier Agents:** Allows you to build automated workflows—like summarizing emails or logging leads—without writing a single line of code.
+
+---
+
+## Page 5: Finishing Page
+
+In summary, the AI landscape of 2026 is a minefield of "freemium" traps, but if you stick to **ChatGPT**, **Gemini**, and **Perplexity**, you'll cover 90% of your needs. Don't get distracted by every new shiny tool that pops up on Reddit. Most of them are just wrappers for models you can already access for free.
+
+**Next Document Recommendation:** "Advanced Prompting for Sarcastic Professors" or "How to Fix a Leaking Coffee Machine without Calling a Plumber."
+
+---
+
+## Page 6: References & Tools
+
+* Synthesia (2026): https://www.synthesia.io/post/ai-tools
+* General Assembly (2026): https://generalassemb.ly/blog/which-free-ai-tool-should-you-use/
+* Grizzly Peak Software (2026): https://www.grizzlypeaksoftware.com/articles/p/my-2026-ai-tool-tier-list-free-premium-must-pay-DTmiaP
+* DataCamp (2026): https://www.datacamp.com/blog/free-ai-tools
+* Google Cloud (2026): https://cloud.google.com/use-cases/free-ai-tools
+* Zapier (2026): https://zapier.com/blog/best-ai-image-generator/
+* PCMag (2026): https://www.pcmag.com/picks/the-best-ai-chatbots
+* Global Tech Council (2026): https://www.globaltechcouncil.org/artificial-intelligence/top-ai-tools-for-productivity/
+
+---
+
+## Page 7: Index
+
+* ChatGPT | Page 1, 3, 4
+* Claude | Page 1
+* Cursor | Page 4
+* Gemini | Page 1, 2, 3, 4
+* Ideogram | Page 3
+* Mistral | Page 1
+* NotebookLM | Page 2
+* Perplexity AI | Page 1, 2
+* Zapier | Page 4
+
+---
+
+## Page 8: License
+
+MIT License
+
+Copyright (c) 2026 ZIKYinc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

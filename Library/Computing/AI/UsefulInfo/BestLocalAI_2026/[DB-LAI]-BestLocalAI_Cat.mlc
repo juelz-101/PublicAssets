@@ -1,0 +1,43 @@
+{
+	"meta": {},
+	"dev_ref": {
+		"templates": [
+			{
+				"name": "", "id": "",
+				"desc": "",
+				"cat": "", "tags": [],
+				"size": "", "entry_date": "",
+				"links": [{"type": "main", "url": ""}],
+				"notes": []
+			},
+		]
+	},
+	"data": {
+		"local_ai": [
+			{
+				"name": "MatAnyone 2", "id": "v_mat",
+				"desc": "MatAnyone 2 is a practical human video matting framework that preserves fine details by avoiding segmentation-like boundaries, while also shows enhanced robustness under challenging real-world conditions.",
+				"cat": "Video", "tags": ["alpha", "background_removal"],
+				"size": "~100mb", "entry_date": "16/03/26",
+				"links": [{"type": "main", "url": "https://pq-yang.github.io/projects/MatAnyone2/"}],
+				"notes": []
+			},
+			{
+				"name": "Inspacio FM", "id": "3d_ifm",
+				"desc": "",
+				"cat": "3D", "tags": [],
+				"size": "", "entry_date": "",
+				"links": [{"type": "main", "url": "https://inspatio.github.io/worldfm/"}],
+				"notes": []
+			},
+			{
+				"name": "Diagional Distallation", "id": "v_diag",
+				"desc": "",
+				"cat": "", "tags": [],
+				"size": "", "entry_date": "",
+				"links": [{"type": "main", "url": "https://spherelab.ai/diagdistill/"}],
+				"notes": []
+			},
+		]
+	}
+}

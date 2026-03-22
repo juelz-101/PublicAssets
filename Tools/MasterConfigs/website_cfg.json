@@ -160,7 +160,7 @@
 			{ "icon": "🤝", "cat": "team", "flag": "guest", "name": "Guest Collab", "targets": ["music.artists", "art.artists", "gaming.developers", "tools.developers", "community.people" ], "desc": "This is a guest collaborator." },
 			{ "icon": "✅", "cat": "status", "flag": "complete", "name": "Completed", "desc": "This item and all of its related project assets are complete, uploaded and added to the websites database." },
 			{ "icon": "💾", "cat": "status", "flag": "awaiting_db", "name": "Awaiting DB Update", "desc": "This item is ready to have all of its data and assets transfered into the sites database." },
-			{ "icon": "📤", "cat": "status", "flag": "awaiting_upload", "name": "Awaiting Upload", "desc": "This item and all of its related assets are ready to upload." },
+			{ "icon": "📤", "cat":  "status", "flag": "awaiting_upload", "name": "Awaiting Upload", "desc": "This item and all of its related assets are ready to upload." },
 			{ "icon": "📦", "cat": "status", "flag": "building_assets", "name": "Building Release-Assets", "desc": "This item is complete but release-assets are not yet complete (ie: Documentation, Cover-Art, etc." },
 			{ "icon": "📈", "cat": "status", "flag": "finishing_up", "name": "Finishing Up", "desc": "This item is almost complete." },
 			{ "icon": "🧪", "cat": "status", "flag": "testing", "name": "Testing", "desc": "This item is currently being tested for quality control." },

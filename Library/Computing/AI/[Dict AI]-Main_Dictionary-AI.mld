@@ -1,0 +1,222 @@
+{
+    "meta": {},
+    "data": {
+        "dictionary": {
+            "skillsets": {
+                "ai_tools": {
+                    "levels": [
+                        {"name": "Novice", "desc": "Basic chat interaction and single-prompt tasks.", "example": "Asking ChatGPT for a recipe or a summary."},
+                        {"name": "Practitioner", "desc": "Utilizing multi-modal features and basic file uploads.", "example": "Using Gemini to summarize a PDF or generate a chart."},
+                        {"name": "Specialist", "desc": "Applying advanced reasoning and prompt engineering techniques.", "example": "Using Claude for complex code refactoring or creative writing."},
+                        {"name": "Integrator", "desc": "Coordinating multiple AI tools for complex project workflows.", "example": "Building a site with Cursor while using Perplexity for research."},
+                        {"name": "Architect", "desc": "Designing and maintaining AI-augmented systems and local models.", "example": "Configuring Continue.dev with local Ollama instances for secure dev."}
+                    ],
+                    "difficulties": [
+                        {"name": "Trivial", "desc": "Simple natural language queries with immediate answers.", "example": "What is the capital of France?"},
+                        {"name": "Easy", "desc": "Tasks requiring minor context or formatting instructions.", "example": "Summarize this article into five bullet points."},
+                        {"name": "Moderate", "desc": "Multi-step reasoning or technical drafting.", "example": "Generate a TypeScript interface for a user profile object."},
+                        {"name": "Hard", "desc": "Context-heavy tasks involving multi-file analysis or debugging.", "example": "Fixing a circular dependency in a large React project via Cursor."},
+                        {"name": "Expert", "desc": "Autonomous agent management and deep technical troubleshooting.", "example": "Using Cline to execute terminal commands and fix build errors."}
+                    ]
+                }
+            },
+            "collections": [
+                {
+                    "name": "2026 AI Tool Suite", "id": "COLL_AI_26", "s_set": "ai_tools",
+                    "desc": "A curated collection of the most effective free and freemium AI tools for research, creativity, and software development as of March 2026.",
+                    "terms": [
+                        {"name": "ChatGPT", "others": ["OpenAI", "GPT-5"], "category": "LLM Chatbots", "sub": "General Purpose", "definition": "Industry-standard conversational AI known for versatility and custom GPTs.", "example": "Creating a custom GPT for project management.", "level": 1, "difficulty": 1},
+                        {"name": "Claude", "others": ["Anthropic", "Claude 4"], "category": "LLM Chatbots", "sub": "Reasoning", "definition": "High-reasoning model preferred for coding and complex instructional following.", "example": "Debugging complex logic in a TypeScript build tool.", "level": 3, "difficulty": 3},
+                        {"name": "Gemini", "others": ["Google AI", "Gemini 3"], "category": "LLM Chatbots", "sub": "Productivity", "definition": "Fast, multi-modal AI integrated into the Google ecosystem with large context windows.", "example": "Analyzing a 500-page document in seconds.", "level": 2, "difficulty": 2},
+                        {"name": "Perplexity", "others": ["AI Search"], "category": "Research", "sub": "Fact-Checking", "definition": "Search-oriented AI that provides real-time citations and source links.", "example": "Verifying the current price of a stock with sources.", "level": 2, "difficulty": 2},
+                        {"name": "NotebookLM", "others": ["Personal AI"], "category": "Research", "sub": "Knowledge Synthesis", "definition": "A grounded AI tool that uses user-uploaded documents to generate summaries and audio.", "example": "Turning project notes into a briefing podcast.", "level": 3, "difficulty": 2},
+                        {"name": "Cursor", "others": ["AI Code Editor"], "category": "Development", "sub": "IDEs", "definition": "A fork of VS Code with deep codebase-indexing and AI-native editing features.", "example": "Refactoring an entire folder of code with a single prompt.", "level": 4, "difficulty": 4},
+                        {"name": "Trae", "others": ["ByteDance AI"], "category": "Development", "sub": "IDEs", "definition": "An adaptive AI IDE currently offering extensive free multi-file editing features.", "example": "Building a full-stack dashboard from scratch.", "level": 4, "difficulty": 4},
+                        {"name": "Continue.dev", "others": ["Open Source AI"], "category": "Development", "sub": "Extensions", "definition": "Open-source VS Code extension allowing users to plug in any LLM API or local model.", "example": "Connecting a local Llama model for offline coding.", "level": 5, "difficulty": 5},
+                        {"name": "Cline", "others": ["Claude Dev"], "category": "Development", "sub": "Agents", "definition": "An autonomous coding agent that can read/write files and run terminal commands.", "example": "Asking the AI to fix all linter errors in a project.", "level": 5, "difficulty": 4},
+                        {"name": "TypeScript", "others": ["TS"], "category": "Development", "sub": "Languages", "definition": "A typed superset of JavaScript that is essential for robust, AI-assisted development.", "example": "Defining strict interfaces to prevent runtime errors.", "level": 3, "difficulty": 3}
+                    ],
+                    "categories": [
+                        {
+                            "name": "LLM Chatbots", "desc": "General-purpose conversational agents.",
+                            "subs": [
+                                {"name": "General Purpose", "desc": "Balanced tools for everyday tasks.", "example": "ChatGPT"},
+                                {"name": "Reasoning", "desc": "Models optimized for logic and coding.", "example": "Claude"}
+                            ]
+                        },
+                        {
+                            "name": "Research", "desc": "Tools focused on information retrieval and synthesis.",
+                            "subs": [
+                                {"name": "Fact-Checking", "desc": "Real-time search with citations.", "example": "Perplexity"},
+                                {"name": "Knowledge Synthesis", "desc": "Summarizing internal documents.", "example": "NotebookLM"}
+                            ]
+                        },
+                        {
+                            "name": "Development", "desc": "Software engineering and coding utilities.",
+                            "subs": [
+                                {"name": "IDEs", "desc": "Full code editors with AI integration.", "example": "Cursor"},
+                                {"name": "Agents", "desc": "Autonomous assistants that can execute tasks.", "example": "Cline"}
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "datasets": [
+                {
+                    "name": "Free AI Tools", "id": "DS_AI_FREE-TOOLS",
+                    "description": "Collection of free to use AI tools",
+                    "category": "Tools", "tags": ["Development", "Free", "No Subscription"],
+                    "data": [
+                        {
+                            "name": "Meta AI",
+                            "link": "https://meta.ai",
+                            "description": "A powerful general chatbot and image generator built on the latest Llama models.",
+                            "allowance": "Completely Free. No paid plans exist.",
+                            "restrictions": "No easy way to opt out of your data being used for model training."
+                        },
+                        {
+                            "name": "DeepSeek",
+                            "link": "https://chat.deepseek.com",
+                            "description": "Highly capable AI featuring the breakthrough R1 reasoning model. Excellent for coding and complex logic.",
+                            "allowance": "Completely Free. Open-source framework.",
+                            "restrictions": "Data is stored on Chinese servers; subject to political censorship guardrails."
+                        },
+                        {
+                            "name": "Google NotebookLM",
+                            "link": "https://notebooklm.google.com",
+                            "description": "A personalized research assistant that turns uploaded PDFs, URLs, and videos into notes or realistic 'Audio Overview' podcasts.",
+                            "allowance": "Completely Free. 100 notebooks, 50 sources per notebook.",
+                            "restrictions": "Sources are capped at 500,000 words each (which is still massive)."
+                        },
+                        {
+                            "name": "Duck.ai",
+                            "link": "https://duck.ai",
+                            "description": "DuckDuckGo's privacy wrapper for major AI models (like GPT-4o mini and Claude Haiku). Anonymizes your prompts.",
+                            "allowance": "Completely Free.",
+                            "restrictions": "Limited to lighter, faster models rather than the flagship heavy-reasoning models."
+                        },
+                        {
+                            "name": "Google Gemini",
+                            "link": "https://gemini.google.com",
+                            "description": "Multimodal AI assistant deeply integrated with Google Workspace. Great for research and image generation.",
+                            "allowance": "Generous Free Tier. Unlimited Gemini 3 Flash, limited daily access to Gemini 3 Pro and Deep Research.",
+                            "restrictions": "Pro model and image generation access is capped daily."
+                        },
+                        {
+                            "name": "ChatGPT",
+                            "link": "https://chatgpt.com",
+                            "description": "The industry-standard chatbot. Excellent all-rounder for writing, coding, and basic data analysis.",
+                            "allowance": "Generous Free Tier. Unlimited GPT-4o mini, dynamic daily access to GPT-5 / GPT-4o.",
+                            "restrictions": "Access to flagship models is strictly throttled during high-traffic peak hours."
+                        },
+                        {
+                            "name": "Claude",
+                            "link": "https://claude.ai",
+                            "description": "Anthropic's flagship AI model. Unmatched for long-form writing, natural tone, and complex multi-file coding tasks.",
+                            "allowance": "Dynamic Free Tier. Gives you access to Claude 3.5/3.7 Sonnet.",
+                            "restrictions": "Usage limits are strictly enforced and reset every few hours. Highly sensitive to peak traffic."
+                        },
+                        {
+                            "name": "Perplexity AI",
+                            "link": "https://perplexity.ai",
+                            "description": "An AI-powered search engine that actually cites its sources. Perfect for fact-checking and research.",
+                            "allowance": "Generous Free Tier. Unlimited standard searches; a few free 'Pro' deep-searches daily.",
+                            "restrictions": "Pro searches (which read more sources and use advanced models) are heavily limited on the free tier."
+                        },
+                        {
+                            "name": "Codeium",
+                            "link": "https://codeium.com",
+                            "description": "The best genuinely free alternative to GitHub Copilot. An AI coding assistant that plugs directly into your IDE (VS Code, JetBrains, etc.).",
+                            "allowance": "Completely Free for Individuals. Unlimited code completions.",
+                            "restrictions": "Access to premium models (like Claude 3.5 Sonnet for chat) is capped at 50 prompts per month on the free tier."
+                        },
+                        {
+                            "name": "GitHub Copilot Free",
+                            "link": "https://github.com/features/copilot",
+                            "description": "Microsoft's industry-standard AI coding assistant, which recently introduced a base free tier for solo developers.",
+                            "allowance": "Generous Free Tier. 2,000 code completions and 50 chat requests per month.",
+                            "restrictions": "Once you hit 2,000 completions (usually lasts a week or two for heavy coders), it stops until the next month."
+                        },
+                        {
+                            "name": "v0 by Vercel",
+                            "link": "https://v0.dev",
+                            "description": "A generative UI tool that turns text prompts or images into functional React, HTML, and Tailwind CSS code.",
+                            "allowance": "Generous Free Tier. Approx. 100 messages per day (backed by a monthly credit pool).",
+                            "restrictions": "All code generated on the free tier is public. Primarily optimized for Tailwind and React."
+                        },
+                        {
+                            "name": "Recraft",
+                            "link": "https://recraft.ai",
+                            "description": "An AI graphic design tool specializing in vector art, icons, and brand assets with native SVG output.",
+                            "allowance": "Daily Replenishing Tier. 30 free credits renewed every single day.",
+                            "restrictions": "Once you burn through your 30 daily credits, you must wait 24 hours or pay."
+                        },
+                        {
+                            "name": "Sora",
+                            "link": "https://sora.com",
+                            "description": "OpenAI's state-of-the-art AI video generator, great for creating highly realistic or stylized short clips.",
+                            "allowance": "Generous Free Tier available via their web app for standard clips.",
+                            "restrictions": "Subject to high traffic wait times and heavy content safety guardrails. Outputs are watermarked."
+                        },
+                        {
+                            "name": "Kling AI",
+                            "link": "https://klingai.com",
+                            "description": "A top-tier cinematic AI video generator capable of incredibly realistic physics, camera movements, and audio.",
+                            "allowance": "Daily Replenishing Tier. 66 free credits daily (enough for a few 5-second videos).",
+                            "restrictions": "Free videos are capped at 5-10 seconds, have a watermark, and render at lower resolutions (720p)."
+                        },
+                        {
+                            "name": "Suno",
+                            "link": "https://suno.com",
+                            "description": "An AI music generator that can create full, radio-quality songs complete with vocals and instrumentation from a simple prompt.",
+                            "allowance": "Daily Replenishing Tier. 50 free credits every day (enough to generate up to 10 songs).",
+                            "restrictions": "You cannot commercially monetize songs generated on the free tier."
+                        },
+                        {
+                            "name": "ElevenLabs",
+                            "link": "https://elevenlabs.io",
+                            "description": "The industry leader for hyper-realistic AI voiceovers, text-to-speech, and audio generation.",
+                            "allowance": "Generous Free Tier. 10,000 characters of text-to-speech generation per month.",
+                            "restrictions": "You are legally required to attribute ElevenLabs if you publish the audio anywhere online."
+                        },
+                        {
+                            "name": "Ninja AI",
+                            "link": "https://ninjatech.ai",
+                            "description": "A highly capable AI coding assistant and agentic platform for developers to automate repetitive workflows.",
+                            "allowance": "Daily Replenishing Tier. 5 free complex/autonomous tasks every day. No credit card required.",
+                            "restrictions": "Limited to 5 major autonomous tasks per day before needing to upgrade."
+                        },
+                        {
+                            "name": "LanguageTool",
+                            "link": "https://languagetool.org",
+                            "description": "A fantastic, open-source friendly alternative to Grammarly that supports over 25 languages.",
+                            "allowance": "Generous Free Tier. Checks up to 10,000 characters per text field (~3-4 pages).",
+                            "restrictions": "Advanced sentence rephrasing and style tweaks are locked behind a premium plan."
+                        },
+                        {
+                            "name": "Google Colab",
+                            "link": "https://colab.research.google.com",
+                            "description": "Cloud-based Jupyter notebook environment. As of late 2025, it officially integrates with local IDEs like VS Code and Cursor for remote AI model training.",
+                            "allowance": "Generous Free Tier. 15-30 hours of free T4 GPU access per week.",
+                            "restrictions": "Sessions can disconnect after 90 minutes of inactivity. GPU availability fluctuates based on peak demand."
+                        },
+                        {
+                            "name": "Kaggle Notebooks",
+                            "link": "https://www.kaggle.com/code",
+                            "description": "Data science platform by Google offering robust cloud notebooks specifically tailored for machine learning and model training.",
+                            "allowance": "Generous Free Tier. 30 hours of GPU (T4/P100) and 20 hours of TPU usage every week.",
+                            "restrictions": "Maximum session length is 12 hours. Primarily designed for experimentation rather than live production deployment."
+                        },
+                        {
+                            "name": "Lightning AI",
+                            "link": "https://lightning.ai",
+                            "description": "A highly developer-centric platform for building, training, and deploying AI models, heavily optimized for PyTorch workflows.",
+                            "allowance": "Monthly Replenishing Tier. 80 free GPU hours per month.",
+                            "restrictions": "Free tier studio instances require a mandatory restart every 4 hours to prevent resource hoarding."
+                        }
+                    ]
+                 }
+            ]   
+        }
+    }
+}
