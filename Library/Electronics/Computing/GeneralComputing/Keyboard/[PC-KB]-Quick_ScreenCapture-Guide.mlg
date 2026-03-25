@@ -1,0 +1,32 @@
+<#mku.mlg^&#m>
+
+<#p>
+
+The quickest way to record your screen on Windows depends on whether you want to capture a specific app (like a game) or your entire desktop.
+
+---
+## 1. The "Gaming" Shortcut (Best for single windows)
+
+Windows has a built-in tool called the **Xbox Game Bar**. While designed for gamers, it works in almost any application (except the File Explorer or the Desktop).
+- **Shortcut:** `Win` + `Alt` + `R`
+- **What happens:** Recording starts immediately. A small timer overlay will appear in the corner of your screen.
+- **To Stop:** Press the same shortcut again or click the stop button on the overlay.
+- **File Location:** Videos are saved to `Videos\Captures`.
+
+## 2. The "Everything" Tool (Best for desktop/tutorials)
+
+The **Snipping Tool** is the better choice if you need to record the entire desktop or a specific region of the screen.
+- **Shortcut:** `Win` + `Shift` + `S`
+- **What happens:** This opens the snipping toolbar. You'll need to click the **Video Camera icon** at the top, select the area you want to record, and hit **Start**.
+- **File Location:** You will be prompted to save the file after the recording ends.
+
+---
+### Quick Comparison Table
+
+| Feature | Xbox Game Bar (Win+Alt+R) | Snipping Tool (Win+Shift+S) |
+| --- | --- | --- |
+| Best For | Fast, full-window capture | Custom regions & Desktop |
+| Audio | Records Mic & System sounds | Records Mic & System sounds |
+| Limitation | Cannot record Desktop/File Explorer | Requires a few extra clicks to start |
+
+> **Pro Tip:** If `Win` + `Alt` + `R` isn't working, make sure the Game Bar is enabled in **Settings > Gaming > Game Bar**.

@@ -1,0 +1,202 @@
+{
+	"meta": {
+		"type": "UserData", "name": "Windows Shortcut Maker User DB",
+		"desc": "Master database for hidden and highly useful native Windows shortcuts.",
+		"platforms": ["bat"], "target_files": ["[WIN]-ZIK_ShortKit.bat"],
+		"created": "2026-03-25", "last_edit": "2026-03-25",
+		"version": 1.3, "change_note": "Added blacklist arrays, subfolder routing config, and populated meta dates.",
+		"note": "Versioning/edit tracking only applies to structural updates and not changing of values by user"
+	},
+	"cfg": {
+		"startFromRoot": "true",
+		"userPath": "Shortcuts",
+		"clearFolderFirst": "false",
+		"useSubfolders": "false",
+		"blacklistNames": [],
+		"blacklistCategories": []
+	},
+	"data": {
+		"data": {
+			"shortcuts": [
+				{
+					"name": "01_Reboot_to_BIOS", "category": "Power",
+					"desc": "Forces a reboot directly into UEFI/BIOS firmware settings.",
+					"command": "shutdown /r /fw /t 1", "icon": "67", "admin": "1"
+				},
+				{
+					"name": "02_Force_Shutdown", "category": "Power",
+					"desc": "Immediately closes all applications and shuts down the PC.",
+					"command": "shutdown /s /f /t 0", "icon": "27", "admin": "1"
+				},
+				{
+					"name": "03_Flush_DNS", "category": "Network",
+					"desc": "Clears the DNS cache to fix host resolution issues.",
+					"command": "ipconfig /flushdns", "icon": "13", "admin": "1"
+				},
+				{
+					"name": "04_System_SFC_Repair", "category": "System Repair",
+					"desc": "Scans and repairs corrupted Windows system files.",
+					"command": "sfc /scannow", "icon": "122", "admin": "1"
+				},
+				{
+					"name": "05_DISM_Image_Fix", "category": "System Repair",
+					"desc": "Repairs the Windows System Image using online sources.",
+					"command": "DISM /Online /Cleanup-Image /RestoreHealth", "icon": "122", "admin": "1"
+				},
+				{
+					"name": "06_Restart_Explorer", "category": "System Tools",
+					"desc": "Restarts the Windows Shell (Taskbar, Desktop).",
+					"command": "cmd /c taskkill /f /im explorer.exe && start explorer.exe", "icon": "238", "admin": "1"
+				},
+				{
+					"name": "07_God_Mode_Folder", "category": "System Tools",
+					"desc": "Creates a folder with access to all Windows settings.",
+					"command": "cmd /c mkdir \"GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}\"", "icon": "165", "admin": "0"
+				},
+				{
+					"name": "08_Resource_Monitor", "category": "Hardware/Diagnostic",
+					"desc": "Detailed real-time hardware and process monitoring.",
+					"command": "resmon", "icon": "172", "admin": "1"
+				},
+				{
+					"name": "09_Network_Connections", "category": "Network",
+					"desc": "Opens the classic Network Adapters control window.",
+					"command": "ncpa.cpl", "icon": "17", "admin": "0"
+				},
+				{
+					"name": "10_Registry_Editor", "category": "Administrative",
+					"desc": "Advanced Windows configuration database editor.",
+					"command": "regedit", "icon": "16", "admin": "1"
+				},
+				{
+					"name": "11_Slide_to_Shutdown", "category": "Power",
+					"desc": "Enables the tablet-style slide-down shutdown interface.",
+					"command": "slidetoshutdown.exe", "icon": "27", "admin": "0"
+				},
+				{
+					"name": "12_Battery_Report", "category": "Hardware/Diagnostic",
+					"desc": "Generates a detailed battery health report.",
+					"command": "cmd /c powercfg /batteryreport && start battery-report.html", "icon": "156", "admin": "1"
+				},
+				{
+					"name": "13_Remote_Desktop", "category": "Network",
+					"desc": "Opens the Remote Desktop Connection client.",
+					"command": "mstsc", "icon": "18", "admin": "0"
+				},
+				{
+					"name": "14_Disk_Cleanup", "category": "System Tools",
+					"desc": "Utility to remove temporary files and free up disk space.",
+					"command": "cleanmgr", "icon": "65", "admin": "1"
+				},
+				{
+					"name": "15_Abort_Shutdown", "category": "Power",
+					"desc": "Cancels any pending system shutdown or restart.",
+					"command": "shutdown /a", "icon": "214", "admin": "1"
+				},
+				{
+					"name": "16_Advanced_Boot", "category": "Power",
+					"desc": "Restarts into the Windows Advanced Boot/Recovery menu.",
+					"command": "shutdown /r /o /f /t 1", "icon": "27", "admin": "1"
+				},
+				{
+					"name": "17_Group_Policy_Update", "category": "Administrative",
+					"desc": "Forces an immediate refresh of all Group Policy settings.",
+					"command": "gpupdate /force", "icon": "67", "admin": "1"
+				},
+				{
+					"name": "18_User_Accounts", "category": "Administrative",
+					"desc": "Advanced User Accounts control panel (Auto-login, etc).",
+					"command": "netplwiz", "icon": "164", "admin": "1"
+				},
+				{
+					"name": "19_Local_Security_Policy", "category": "Administrative",
+					"desc": "Opens the Local Security Policy editor.",
+					"command": "secpol.msc", "icon": "104", "admin": "1"
+				},
+				{
+					"name": "20_DirectX_Diag", "category": "Hardware/Diagnostic",
+					"desc": "Shows detailed DirectX and hardware component info.",
+					"command": "dxdiag", "icon": "127", "admin": "0"
+				},
+				{
+					"name": "21_Disk_Management", "category": "System Tools",
+					"desc": "Tool for managing partitions and drives.",
+					"command": "diskmgmt.msc", "icon": "132", "admin": "1"
+				},
+				{
+					"name": "22_Event_Viewer", "category": "Administrative",
+					"desc": "View system logs and error reports.",
+					"command": "eventvwr.msc", "icon": "202", "admin": "1"
+				},
+				{
+					"name": "23_System_Information", "category": "Hardware/Diagnostic",
+					"desc": "Comprehensive summary of hardware and software.",
+					"command": "msinfo32", "icon": "151", "admin": "0"
+				},
+				{
+					"name": "24_Certificates_Mgr", "category": "Administrative",
+					"desc": "Manage user and system security certificates.",
+					"command": "certmgr.msc", "icon": "125", "admin": "1"
+				},
+				{
+					"name": "25_Device_Manager", "category": "System Tools",
+					"desc": "Manage hardware drivers and connected devices.",
+					"command": "devmgmt.msc", "icon": "121", "admin": "1"
+				},
+				{
+					"name": "26_Reliability_Monitor", "category": "System Repair",
+					"desc": "Shows a timeline of system crashes, app failures, and warnings.",
+					"command": "perfmon /rel", "icon": "116", "admin": "1"
+				},
+				{
+					"name": "27_Classic_Volume_Mixer", "category": "System Tools",
+					"desc": "Opens the legacy volume mixer for per-app audio control.",
+					"command": "sndvol.exe", "icon": "225", "admin": "0"
+				},
+				{
+					"name": "28_Startup_Folder", "category": "Administrative",
+					"desc": "Opens the current user's auto-startup programs folder.",
+					"command": "explorer.exe shell:startup", "icon": "281", "admin": "0"
+				},
+				{
+					"name": "29_Clear_Clipboard", "category": "System Tools",
+					"desc": "Instantly wipes all copied text/files from the system clipboard.",
+					"command": "cmd /c echo off | clip", "icon": "260", "admin": "0"
+				},
+				{
+					"name": "30_Edit_Hosts_File", "category": "Network",
+					"desc": "Opens the Windows hosts file in Notepad for DNS overriding.",
+					"command": "notepad.exe C:\\Windows\\System32\\drivers\\etc\\hosts", "icon": "70", "admin": "1"
+				},
+				{
+					"name": "31_Lock_Workstation", "category": "Power",
+					"desc": "Instantly locks the PC and returns to the Windows sign-in screen.",
+					"command": "rundll32.exe user32.dll,LockWorkStation", "icon": "47", "admin": "0"
+				},
+				{
+					"name": "32_Memory_Diagnostic", "category": "Hardware/Diagnostic",
+					"desc": "Checks the system RAM for hardware errors and faults.",
+					"command": "mdsched.exe", "icon": "112", "admin": "1"
+				},
+				{
+					"name": "33_Ping_Custom_DNS", "category": "Network",
+					"desc": "Pings a selected DNS server to check latency.",
+					"command": "cmd /k ping [ENUM_VAL]", "icon": "13", "admin": "0",
+					"enum": ["8.8.8.8", "1.1.1.1", "9.9.9.9", "208.67.222.222"]
+				},
+				{
+					"name": "34_Get_Adapter_Info", "category": "Network",
+					"desc": "Shows IP configuration for a specific network adapter dynamically retrieved.",
+					"command": "cmd /k netsh interface ipv4 show addresses \"[ENUM_VAL]\"", "icon": "17", "admin": "0",
+					"enum": "powershell (Get-NetAdapter).Name"
+				},
+				{
+					"name": "35_Quick_Timer", "category": "System Tools",
+					"desc": "Starts a countdown timer for a selected duration at runtime.",
+					"command": "timeout /t [ENUM_VAL]", "icon": "23", "admin": "0",
+					"enum+": ["60", "300", "600", "1800"]
+				}
+			]
+		}
+	}
+}

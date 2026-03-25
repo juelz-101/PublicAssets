@@ -1,0 +1,71 @@
+<#md>
+# [MD]-Windows_Shortcuts_PowerUser.md (v1.0)
+# Path: /artifacts/library/public/data/windows_shortcuts_guide.md
+**Identity Block**
+- **Document Title:** Windows Power-User Shortcuts & CLI Hacks
+- **Description:** A collection of command-line shortcuts and system hacks for students who are tired of clicking through menus like lost sheep.
+- **Version:** 1.0
+- **Author:** Chatsir (Professor / Long-term Sub)
+- **Approved by:** Pending (Probably forever)
+- **Created date:** March 12, 2026
+- **Location:** London
+- **Organisation:** ZIKYinc
+**Table of Contents**
+- Page 1: System Power & BIOS
+- Page 2: Network & Connectivity Hacks
+- Page 3: System Maintenance & Repair
+- Page 4: Productivity & Explorer Secrets
+- Page 5: Index
+- Page 6: License
+## Page 1: System Power & BIOS
+Sit down and pay attention. If you’re going to waste my time, at least do it efficiently. The student actually provided something useful for once—a shortcut to BIOS. Here are the commands you should have learned years ago if you weren't so busy looking at brain-rot memes.
+- **Reboot to UEFI/BIOS:** `shutdown /r /fw /t 1`
+ - **Note:** Requires Administrative privileges. It forces the firmware interface on the next boot so you don't have to mash the F2 key like a caffeinated woodpecker.
+- **Instant Nuclear Shutdown:** `shutdown /s /t 0`
+ - Because waiting for Windows to "update" when I'm trying to leave this building and go to the pub is a special kind of hell.
+- **Slide to Shutdown:** `slidetoshutdown.exe`
+ - Creates a fancy UI slide-down. It’s mostly useless, but it looks like you know what you’re doing when the principal walks by.
+- **Abort Shutdown:** `shutdown /a`
+ - For when you realize you haven't saved your failing grades and the timer is counting down.
+## Page 2: Network & Connectivity Hacks
+My ex-wife has a more stable connection than the school Wi-Fi. Use these when the internet inevitably dies or your registry decides to commit suicide.
+- **DNS Flush:** `ipconfig /flushdns`
+ - Clears the resolver cache. Useful when a site won't load because your computer is holding onto old garbage, much like I hold onto my resentment for this job.
+- **Renew IP Address:** `ipconfig /release && ipconfig /renew`
+ - Basically "Have you tried turning it off and on again" for your internet connection.
+- **View Saved Wi-Fi Passwords:** `netsh wlan show profile name="[SSID]" key=clear`
+ - Useful for when you forgot the password to the guest network you weren't supposed to be on anyway.
+## Page 3: System Maintenance & Repair
+If your computer is running slow, it’s probably because you’ve installed forty different "RAM boosters" that are actually Russian spyware. Try these instead.
+- **System File Checker:** `sfc /scannow`
+ - Repairs corrupted Windows files. It rarely works on the first try, but it makes the fans spin and looks impressive.
+- **Deployment Image Service:** `DISM /Online /Cleanup-Image /RestoreHealth`
+ - The "Big Brother" of SFC. Use this when the system is truly broken.
+- **Battery Health Report:** `powercfg /batteryreport`
+ - Generates an HTML file showing how close your laptop battery is to exploding.
+- **Check Disk:** `chkdsk /f /r`
+ - Forces the system to check the hard drive for physical errors. Requires a reboot, giving you more time to stare blankly at the wall.
+## Page 4: Productivity & Explorer Secrets
+Stop clicking things. Your mouse is not a security blanket. Use your keyboard.
+- **Restart Windows Explorer:** `taskkill /f /im explorer.exe && start explorer.exe`
+ - Fixes a frozen taskbar without rebooting the whole machine. Efficiency is key when you’re trying to hide your browser tabs before I walk past your desk.
+- **God Mode Folder:** `GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}`
+ - Create a new folder on your desktop and name it exactly this. It gives you a single list of every setting in Windows. Even Mr. G could find things here, and that man struggles to find his own shoes in the morning.
+- **Clipboard History:** `Win + V`
+ - If you aren't using this, you're living in the stone age. It keeps a history of everything you've copied.
+## Page 5: Index
+- **Abort Shutdown:** Page 1
+- **Battery Report:** Page 3
+- **BIOS/UEFI:** Page 1
+- **CHRDSK:** Page 3
+- **DNS Flush:** Page 2
+- **Explorer Restart:** Page 4
+- **God Mode:** Page 4
+- **IP Renew:** Page 2
+- **SFC:** Page 3
+- **Wi-Fi Passwords:** Page 2
+## Page 6: License
+MIT License
+Copyright (c) 2026 ZIKYinc
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
