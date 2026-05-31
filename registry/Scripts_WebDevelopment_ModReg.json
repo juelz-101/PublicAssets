@@ -142,5 +142,11 @@
     "ext": "md",
     "path": "Scripts/WebDevelopment/ModReg/README.md",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/README.md"
+  },
+  {
+    "name": "module_register10.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/module_register10.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register10.json"
   }
 ]

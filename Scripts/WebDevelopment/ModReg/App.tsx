@@ -113,7 +113,8 @@ const App: React.FC = () => {
       './module_register6.json', 
       './module_register7.json',
       './module_register8.json',
-      './module_register9.json'
+      './module_register9.json',
+      './module_register10.json'
     ];
 
     const systemFiles = [

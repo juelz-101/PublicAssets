@@ -1,0 +1,59 @@
+<#mku.mlg^&#m>
+
+<#p>
+
+Quick Setup Guide To Mocking GPS Free (Android - 2026)
+By Juelz-101 - ZIKYinc London
+
+Wanna set your location to somewhere else? Havent got much time?
+
+I too dont have much time so lets get right into this.
+
+---
+
+1. A Free App
+
+`but if you literally just want to set your current location to a location of your choice and nothing fancier, I got you:
+	- "GPS Emulater": Coveniently named. Free tier with ads, gets the job done though.
+
+Once your tool have been installed, we can move to step 2.
+
+---
+2. Developer Mode
+
+Open settings, scroll all the way to bottom and select "About Phone"
+Scroll to Software Infomation.
+
+Tap on One UI Version 8 times to turn on Developer Mode. 
+
+Turn it on and return to main settings window, Search "Mock" and scroll to bottom to select "Select Mock Location App".
+
+Select your chosen GPS Emulator. 
+
+---
+
+3. Select Location
+
+Exit back to the homescreen and find your chosen GPS Emulator app.
+Open it and Set location to your chosen location.
+Apply/Confirm your location and you are done.
+
+4. Confirm Its Working
+
+Easiest way is to open up Maps, if it shows you are at your chosen location then well done.
+Mess around with the options in your GPS Emulator to see what you can do.
+As stated our goal was just to set a custom location, so I just recommeded the first free app that worked for me.
+
+Notes:
+Dont forget to turn off Developer Mode when it isnt being used as it will drain your battery.
+Further tricks would be things like "Mock Movement", "Scheduling Mock GPS" and that sort of stuff. 
+
+Will we ever get to that? Or have I just achived what we needed and wont ever look further into this? I dont know, maybe I could make it look like I'm out jogging while I'm playing video games so my gf doesnt bother me?
+Nah Id rather just woop her ass at Smash Bros.
+Peace.
+
+---
+
+ZIKYinc London 2026
+3/5/26 15:33
+

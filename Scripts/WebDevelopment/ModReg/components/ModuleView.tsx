@@ -66,6 +66,18 @@ import GoogleDriveUtilsExample from '../examples/cloud/GoogleDriveUtilsExample';
 import DropboxExample from '../examples/cloud/DropboxExample';
 import FirebaseStorageExample from '../examples/cloud/FirebaseStorageExample';
 import IDBHandlerExample from '../examples/ziky_inc/I-DB_Handler';
+import SupaDBHandlerExample from '../examples/ziky_inc/SupaDB_Handler';
+import GoogleAuthExample from '../examples/google/GoogleAuthExample';
+import GoogleDriveExample from '../examples/google/GoogleDriveExample';
+import GoogleSheetsExample from '../examples/google/GoogleSheetsExample';
+import GoogleCalendarExample from '../examples/google/GoogleCalendarExample';
+import YouTubeExample from '../examples/google/YouTubeExample';
+import GmailExample from '../examples/google/GmailExample';
+import GoogleTasksExample from '../examples/google/GoogleTasksExample';
+import GooglePeopleExample from '../examples/google/GooglePeopleExample';
+import GooglePhotosExample from '../examples/google/GooglePhotosExample';
+import GoogleDocsExample from '../examples/google/GoogleDocsExample';
+import GoogleTranslateExample from '../examples/google/GoogleTranslateExample';
 import IpcWrapperExample from '../examples/electron/IpcWrapperExample';
 import WindowShellExample from '../examples/electron/WindowShellExample';
 import FsWrapperExample from '../examples/electron/FsWrapperExample';
@@ -144,6 +156,18 @@ const exampleComponentRegistry: { [key: string]: React.ComponentType } = {
   'examples/web-apis/IndexedDBUtilsExample.tsx': IndexedDBUtilsExample,
   'examples/web-apis/StorageUtilsExample.tsx': StorageUtilsExample,
   'examples/ziky_inc/I-DB_Handler.tsx': IDBHandlerExample,
+  'examples/ziky_inc/SupaDB_Handler.tsx': SupaDBHandlerExample,
+  'examples/google/GoogleAuthExample.tsx': GoogleAuthExample,
+  'examples/google/GoogleDriveExample.tsx': GoogleDriveExample,
+  'examples/google/GoogleSheetsExample.tsx': GoogleSheetsExample,
+  'examples/google/GoogleCalendarExample.tsx': GoogleCalendarExample,
+  'examples/google/YouTubeExample.tsx': YouTubeExample,
+  'examples/google/GmailExample.tsx': GmailExample,
+  'examples/google/GoogleTasksExample.tsx': GoogleTasksExample,
+  'examples/google/GooglePeopleExample.tsx': GooglePeopleExample,
+  'examples/google/GooglePhotosExample.tsx': GooglePhotosExample,
+  'examples/google/GoogleDocsExample.tsx': GoogleDocsExample,
+  'examples/google/GoogleTranslateExample.tsx': GoogleTranslateExample,
   'examples/electron/IpcWrapperExample.tsx': IpcWrapperExample,
   'examples/electron/WindowShellExample.tsx': WindowShellExample,
   'examples/electron/FsWrapperExample.tsx': FsWrapperExample,

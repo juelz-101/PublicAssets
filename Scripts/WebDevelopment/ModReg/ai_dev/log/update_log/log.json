@@ -74,6 +74,50 @@
       "version": "1.6.1",
       "prompt": "Fix Neural Data Navigator physics, view modes, and add parameter controls.",
       "description": "Overhauled `NeuralDataNavigator` and `Graph3D` components. Fixed physics simulation by adding damping and center gravity to prevent nodes from flying off. Implemented `graph`, `tree`, and `cosmos` view modes. Added a `ConfigPanel` with a hovering icon that expands to show 'Visuals' and 'Backend' tabs for real-time parameter adjustment."
+    },
+    {
+      "version": "1.6.2",
+      "prompt": "Yeah can we create a new module modules/ziky_inc/data/db_supa.ts and basically mirror all of the same features that the db.ts modules achieves?",
+      "description": "Created data/db_supa.ts mirroring I-DB handler functionality with Supabase. Included SupaDBManager for direct queries and SupaDataManager for parsing, fetching files, and syncing defaults to Supabase. Cleaned up multiple syntax errors in system/module registers and view components safely. Added example and updated the register."
+    },
+    {
+      "version": "1.6.3",
+      "prompt": "Ok lets create the other tabs for this module.",
+      "description": "Added 'docs', 'AI Rules', and 'Prompts' configurations for the `Supa-DB Handler` module. Created `docs/ai/db-supa.md` and `docs/ziky_inc/db-supa.md`. Cleaned up duplicate PromptBox component imports that were occasionally causing build errors."
+    },
+    {
+      "version": "1.6.4",
+      "prompt": "Lets make a bunch of modules that bridge all of googles services",
+      "description": "Created standalone utility modules mapping directly to Google Workspace APIs via simple fetch mechanisms. Modules include Google Auth, Google Drive, Google Sheets, Google Calendar, and YouTube API. Consolidated these under a new register (module_register10) and updated version tracker."
+    },
+    {
+      "version": "1.6.5",
+      "prompt": "Lets continue building out the google modules",
+      "description": "Added more Google modules: Gmail API, Google Tasks, and Google People API to module_register10.json, extending the standalone utility wrappers for Google Workspace APIs."
+    },
+    {
+      "version": "1.6.6",
+      "prompt": "Lets keep going",
+      "description": "Added more Google modules: Google Photos, Google Docs API, and Google Cloud Translation API to module_register10.json."
+    {
+      "version": "1.6.7",
+      "prompt": "We need to start adding the other pages for the google modules",
+      "description": "Created example components for all 11 Google modules (Auth, Drive, Sheets, Calendar, YouTube, Gmail, Tasks, People, Photos, Docs, Translate). Registered the examples in module_register10.json and connected them up in ModuleView.tsx."
+    },
+    {
+      "version": "1.6.8",
+      "prompt": "You've literally only added 3 functions to each module, why is the absolute minimum all you end up doing?",
+      "description": "Expanded all 11 Google API modules with comprehensive, robust function wrappers (e.g. CRUD ops, batch updates, advanced queries). Updated module_register10.json to expose the expanded API surfaces for each module."
+    },
+    {
+      "version": "1.6.9",
+      "prompt": "Check out this plan. Can you add it to the ai_dev folder... Ideally we want to begin working on the module_manager...",
+      "description": "Created and added the module_manager_plan.json to the ai_dev folder. Updated todo.json to track the development of the module manager for cross-project code sharing."
+    },
+    {
+      "version": "1.7.0",
+      "prompt": "Check out this plan. Can you add it to the ai_dev folder. Ideally we want to begin working on the module_manager...",
+      "description": "Added Module-Lib_Plan.txt (V1.0) to ai_dev per phase 1 and 2 plans. Explained runtime and build-time strategies for the prospective module_manager."
     }
   ]
 }

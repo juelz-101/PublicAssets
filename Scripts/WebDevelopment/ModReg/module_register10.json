@@ -1,0 +1,594 @@
+[
+  {
+    "category": "Google Services",
+    "description": "Standalone modules linking directly to Google Workspace APIs via simple fetch mechanisms.",
+    "modules": [
+      {
+        "name": "Google Auth",
+        "description": "Utilities for managing Google OAuth2 headers and parsing auth responses.",
+        "path": "modules/google/google-auth.ts",
+        "examplePath": "examples/google/GoogleAuthExample.tsx",
+        "functions": [
+          {
+            "name": "getGoogleAuthHeaders",
+            "description": "Returns headers containing the Bearer token for Google APIs.",
+            "params": ["accessToken: string"],
+            "returns": "HeadersInit"
+          },
+          {
+            "name": "validateGoogleToken",
+            "description": "Validates the Google access token.",
+            "params": ["accessToken: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "revokeGoogleToken",
+            "description": "Revokes the Google access token.",
+            "params": ["accessToken: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "getUserInfo",
+            "description": "Gets user information from the access token.",
+            "params": ["accessToken: string"],
+            "returns": "Promise<any>"
+          }
+        ]
+      },
+      {
+        "name": "Google Drive",
+        "description": "Interact with Google Drive files (list, get metadata, delete, create folder, move, copy, share, empty trash).",
+        "path": "modules/google/google-drive.ts",
+        "examplePath": "examples/google/GoogleDriveExample.tsx",
+        "functions": [
+          {
+            "name": "listGoogleDriveFiles",
+            "description": "List files from Google Drive matching an optional query.",
+            "params": ["accessToken: string", "query?: string"],
+            "returns": "Promise<GoogleDriveFile[]>"
+          },
+          {
+            "name": "getGoogleDriveFileMetadata",
+            "description": "Retrieve comprehensive metadata for a specific file ID.",
+            "params": ["accessToken: string", "fileId: string"],
+            "returns": "Promise<Record<string, any>>"
+          },
+          {
+            "name": "deleteGoogleDriveFile",
+            "description": "Deletes a Google Drive file permanently.",
+            "params": ["accessToken: string", "fileId: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "createGoogleDriveFolder",
+            "description": "Creates a folder in Google Drive.",
+            "params": ["accessToken: string", "name: string", "parentId?: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "copyGoogleDriveFile",
+            "description": "Copies a file in Google Drive.",
+            "params": ["accessToken: string", "fileId: string", "name: string", "parentId?: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "moveGoogleDriveFile",
+            "description": "Moves a file from one parent folder to another.",
+            "params": ["accessToken: string", "fileId: string", "newParentId: string", "currentParentId: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "emptyGoogleDriveTrash",
+            "description": "Empties the Google Drive trash.",
+            "params": ["accessToken: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "shareGoogleDriveFile",
+            "description": "Shares a file with specified permissions.",
+            "params": ["accessToken: string", "fileId: string", "role: string", "type: string", "emailAddress?: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "downloadGoogleDriveMedia",
+            "description": "Downloads the contents of a media file as a Blob.",
+            "params": ["accessToken: string", "fileId: string"],
+            "returns": "Promise<Blob>"
+          }
+        ]
+      },
+      {
+        "name": "Google Sheets",
+        "description": "Read, append, clear, batch get, and create Google Sheets.",
+        "path": "modules/google/google-sheets.ts",
+        "examplePath": "examples/google/GoogleSheetsExample.tsx",
+        "functions": [
+          {
+            "name": "getGoogleSheetValues",
+            "description": "Reads data from a specific range.",
+            "params": ["accessToken: string", "spreadsheetId: string", "range: string"],
+            "returns": "Promise<any[][]>"
+          },
+          {
+            "name": "appendGoogleSheetValues",
+            "description": "Appends a 2D array of rows to a sheet.",
+            "params": ["accessToken: string", "spreadsheetId: string", "range: string", "values: any[][]"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "updateGoogleSheetValues",
+            "description": "Updates a specific range of values.",
+            "params": ["accessToken: string", "spreadsheetId: string", "range: string", "values: any[][]"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "clearGoogleSheetValues",
+            "description": "Clears a specific range of values.",
+            "params": ["accessToken: string", "spreadsheetId: string", "range: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "batchGetGoogleSheetValues",
+            "description": "Reads multiple ranges from a spreadsheet in one batch.",
+            "params": ["accessToken: string", "spreadsheetId: string", "ranges: string[]"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "createGoogleSpreadsheet",
+            "description": "Creates a new Google Spreadsheet.",
+            "params": ["accessToken: string", "title: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "getGoogleSpreadsheetMetadata",
+            "description": "Gets metadata about the spreadsheet.",
+            "params": ["accessToken: string", "spreadsheetId: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "batchUpdateGoogleSpreadsheet",
+            "description": "Applies a list of batch updates (requests) to a spreadsheet.",
+            "params": ["accessToken: string", "spreadsheetId: string", "requests: any[]"],
+            "returns": "Promise<any>"
+          }
+        ]
+      },
+      {
+        "name": "Google Calendar",
+        "description": "List, create, delete calendar events, list calendars, and quick add events.",
+        "path": "modules/google/google-calendar.ts",
+        "examplePath": "examples/google/GoogleCalendarExample.tsx",
+        "functions": [
+          {
+            "name": "listGoogleCalendarEvents",
+            "description": "Fetches upcoming events for a specified calendar.",
+            "params": ["accessToken: string", "calendarId?: string", "maxResults?: number", "timeMin?: string", "timeMax?: string"],
+            "returns": "Promise<GoogleCalendarEvent[]>"
+          },
+          {
+            "name": "getGoogleCalendarEvent",
+            "description": "Fetches a specific event from a calendar.",
+            "params": ["accessToken: string", "calendarId: string", "eventId: string"],
+            "returns": "Promise<GoogleCalendarEvent>"
+          },
+          {
+            "name": "createGoogleCalendarEvent",
+            "description": "Inserts a new event into the specfied calendar.",
+            "params": ["accessToken: string", "calendarId?: string", "event: GoogleCalendarEvent"],
+            "returns": "Promise<GoogleCalendarEvent>"
+          },
+          {
+            "name": "updateGoogleCalendarEvent",
+            "description": "Updates a specific Google Calendar event.",
+            "params": ["accessToken: string", "calendarId: string", "eventId: string", "event: GoogleCalendarEvent"],
+            "returns": "Promise<GoogleCalendarEvent>"
+          },
+          {
+            "name": "deleteGoogleCalendarEvent",
+            "description": "Deletes a specific Google Calendar event.",
+            "params": ["accessToken: string", "calendarId?: string", "eventId: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "listGoogleCalendars",
+            "description": "Lists all calendars for the active user.",
+            "params": ["accessToken: string"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "createGoogleCalendar",
+            "description": "Creates a new calendar.",
+            "params": ["accessToken: string", "summary: string", "timeZone?: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "quickAddGoogleCalendarEvent",
+            "description": "Quickly adds an event by natural language text.",
+            "params": ["accessToken: string", "calendarId: string", "text: string"],
+            "returns": "Promise<GoogleCalendarEvent>"
+          }
+        ]
+      },
+      {
+        "name": "YouTube API",
+        "description": "Search YouTube videos, list user playlists, get video details, comment, rate.",
+        "path": "modules/google/youtube-api.ts",
+        "examplePath": "examples/google/YouTubeExample.tsx",
+        "functions": [
+          {
+            "name": "searchYouTubeVideos",
+            "description": "Search for YouTube videos by query.",
+            "params": ["accessToken: string", "query: string", "maxResults?: number"],
+            "returns": "Promise<YouTubeVideoItem[]>"
+          },
+          {
+            "name": "getYouTubeVideoDetails",
+            "description": "Fetches details for a specific video.",
+            "params": ["accessToken: string", "videoId: string"],
+            "returns": "Promise<YouTubeVideoItem>"
+          },
+          {
+            "name": "listYouTubePlaylists",
+            "description": "Lists the authenticated user's YouTube playlists.",
+            "params": ["accessToken: string", "maxResults?: number"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "getYouTubePlaylistItems",
+            "description": "Lists the items in a specific YouTube playlist.",
+            "params": ["accessToken: string", "playlistId: string", "maxResults?: number"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "listYouTubeSubscriptions",
+            "description": "Lists the authenticated user's subscriptions.",
+            "params": ["accessToken: string", "maxResults?: number"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "rateYouTubeVideo",
+            "description": "Rates a YouTube video (like/dislike/none).",
+            "params": ["accessToken: string", "videoId: string", "rating: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "listYouTubeComments",
+            "description": "Lists top level comments for a YouTube video.",
+            "params": ["accessToken: string", "videoId: string", "maxResults?: number"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "insertYouTubeComment",
+            "description": "Inserts a comment on a YouTube video.",
+            "params": ["accessToken: string", "videoId: string", "textOriginal: string"],
+            "returns": "Promise<any>"
+          }
+        ]
+      },
+      {
+        "name": "Gmail API",
+        "description": "List, retrieve, trash, send emails, modify labels via Gmail API.",
+        "path": "modules/google/google-gmail.ts",
+        "examplePath": "examples/google/GmailExample.tsx",
+        "functions": [
+          {
+            "name": "listGmailMessages",
+            "description": "List messages from Gmail matching an optional query.",
+            "params": ["accessToken: string", "query?: string", "maxResults?: number"],
+            "returns": "Promise<GmailMessage[]>"
+          },
+          {
+            "name": "getGmailMessage",
+            "description": "Retrieve content and metadata for a specific message.",
+            "params": ["accessToken: string", "messageId: string", "format?: string"],
+            "returns": "Promise<GmailMessage>"
+          },
+          {
+            "name": "trashGmailMessage",
+            "description": "Moves a specified message to the trash.",
+            "params": ["accessToken: string", "messageId: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "sendGmailMessage",
+            "description": "Sends an email using a raw Base64 encoded RFC 2822 formatted string.",
+            "params": ["accessToken: string", "rawBase64EncodedEmail: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "listGmailThreads",
+            "description": "List threads from Gmail matching an optional query.",
+            "params": ["accessToken: string", "query?: string", "maxResults?: number"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "getGmailThread",
+            "description": "Retrieve content and metadata for a specific thread.",
+            "params": ["accessToken: string", "threadId: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "modifyGmailMessageLabels",
+            "description": "Adds or removes labels from a specific message.",
+            "params": ["accessToken: string", "messageId: string", "addLabelIds: string[]", "removeLabelIds: string[]"],
+            "returns": "Promise<GmailMessage>"
+          },
+          {
+            "name": "listGmailLabels",
+            "description": "List all labels available to the user in Gmail.",
+            "params": ["accessToken: string"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "createGmailLabel",
+            "description": "Creates a new label in Gmail.",
+            "params": ["accessToken: string", "name: string", "labelListVisibility: string", "messageListVisibility: string"],
+            "returns": "Promise<any>"
+          }
+        ]
+      },
+      {
+        "name": "Google Tasks",
+        "description": "Manage task lists and tasks within Google Tasks (CRUD operations, clear, move).",
+        "path": "modules/google/google-tasks.ts",
+        "examplePath": "examples/google/GoogleTasksExample.tsx",
+        "functions": [
+          {
+            "name": "listGoogleTaskLists",
+            "description": "Lists all task lists owned by the authenticated user.",
+            "params": ["accessToken: string", "maxResults?: number"],
+            "returns": "Promise<GoogleTaskList[]>"
+          },
+          {
+            "name": "getGoogleTaskList",
+            "description": "Gets an existing task list.",
+            "params": ["accessToken: string", "taskListId: string"],
+            "returns": "Promise<GoogleTaskList>"
+          },
+          {
+            "name": "createGoogleTaskList",
+            "description": "Creates a new task list.",
+            "params": ["accessToken: string", "title: string"],
+            "returns": "Promise<GoogleTaskList>"
+          },
+          {
+            "name": "updateGoogleTaskList",
+            "description": "Updates an existing task list.",
+            "params": ["accessToken: string", "taskListId: string", "title: string"],
+            "returns": "Promise<GoogleTaskList>"
+          },
+          {
+            "name": "deleteGoogleTaskList",
+            "description": "Deletes the specified task list.",
+            "params": ["accessToken: string", "taskListId: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "listGoogleTasks",
+            "description": "Lists all tasks in the specified task list.",
+            "params": ["accessToken: string", "taskListId: string", "maxResults?: number", "showCompleted?: boolean"],
+            "returns": "Promise<GoogleTask[]>"
+          },
+          {
+            "name": "getGoogleTask",
+            "description": "Gets an existing task.",
+            "params": ["accessToken: string", "taskListId: string", "taskId: string"],
+            "returns": "Promise<GoogleTask>"
+          },
+          {
+            "name": "createGoogleTask",
+            "description": "Creates a new task on the specified task list.",
+            "params": ["accessToken: string", "taskListId: string", "task: GoogleTask"],
+            "returns": "Promise<GoogleTask>"
+          },
+          {
+            "name": "updateGoogleTask",
+            "description": "Updates an existing task.",
+            "params": ["accessToken: string", "taskListId: string", "taskId: string", "task: GoogleTask"],
+            "returns": "Promise<GoogleTask>"
+          },
+          {
+            "name": "deleteGoogleTask",
+            "description": "Deletes the specified task from the task list.",
+            "params": ["accessToken: string", "taskListId: string", "taskId: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "clearCompletedGoogleTasks",
+            "description": "Clears all completed tasks from the specified task list.",
+            "params": ["accessToken: string", "taskListId: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "moveGoogleTask",
+            "description": "Moves the specified task to another position in the task list.",
+            "params": ["accessToken: string", "taskListId: string", "taskId: string", "parent?: string", "previous?: string"],
+            "returns": "Promise<GoogleTask>"
+          }
+        ]
+      },
+      {
+        "name": "Google People API",
+        "description": "Retrieve profile information and contact lists, perform CRUD operations using People API.",
+        "path": "modules/google/google-people.ts",
+        "examplePath": "examples/google/GooglePeopleExample.tsx",
+        "functions": [
+          {
+            "name": "getGoogleProfile",
+            "description": "Gets information about the authenticated user's profile.",
+            "params": ["accessToken: string", "personFields?: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "getGoogleContact",
+            "description": "Gets details of a specific contact resource.",
+            "params": ["accessToken: string", "resourceName: string", "personFields?: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "listGoogleContacts",
+            "description": "Provides a list of the authenticated user's contacts.",
+            "params": ["accessToken: string", "maxResults?: number", "personFields?: string"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "createGoogleContact",
+            "description": "Creates a new contact.",
+            "params": ["accessToken: string", "contact: any"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "updateGoogleContact",
+            "description": "Updates an existing contact.",
+            "params": ["accessToken: string", "resourceName: string", "contact: any", "updatePersonFields: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "deleteGoogleContact",
+            "description": "Deletes an existing contact.",
+            "params": ["accessToken: string", "resourceName: string"],
+            "returns": "Promise<void>"
+          },
+          {
+            "name": "searchGoogleContacts",
+            "description": "Searches for contacts matching a query.",
+            "params": ["accessToken: string", "query: string", "readMask?: string", "pageSize?: number"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "listGoogleContactGroups",
+            "description": "Lists the authenticated user's contact groups.",
+            "params": ["accessToken: string", "pageSize?: number"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "createGoogleContactGroup",
+            "description": "Creates a new contact group.",
+            "params": ["accessToken: string", "name: string"],
+            "returns": "Promise<any>"
+          }
+        ]
+      },
+      {
+        "name": "Google Photos",
+        "description": "List albums, create albums, search media items, and batch upload in Google Photos.",
+        "path": "modules/google/google-photos.ts",
+        "examplePath": "examples/google/GooglePhotosExample.tsx",
+        "functions": [
+          {
+            "name": "listGooglePhotosAlbums",
+            "description": "Lists the authenticated user's albums.",
+            "params": ["accessToken: string", "pageSize?: number"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "getGooglePhotosAlbum",
+            "description": "Gets details of a specific album.",
+            "params": ["accessToken: string", "albumId: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "createGooglePhotosAlbum",
+            "description": "Creates a new album.",
+            "params": ["accessToken: string", "title: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "searchGooglePhotosMediaItems",
+            "description": "Searches for media items in a specific album or all items.",
+            "params": ["accessToken: string", "albumId?: string", "pageSize?: number"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "getGooglePhotosMediaItem",
+            "description": "Gets details of a specific media item.",
+            "params": ["accessToken: string", "mediaItemId: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "batchGetGooglePhotosMediaItems",
+            "description": "Gets multiple media items by ID.",
+            "params": ["accessToken: string", "mediaItemIds: string[]"],
+            "returns": "Promise<any[]>"
+          },
+          {
+            "name": "uploadGooglePhotosMedia",
+            "description": "Uploads media bytes and gets an upload token.",
+            "params": ["accessToken: string", "fileBytes: ArrayBuffer", "mimeType: string", "filename?: string"],
+            "returns": "Promise<string>"
+          },
+          {
+            "name": "batchCreateGooglePhotosMediaItems",
+            "description": "Creates media items from upload tokens.",
+            "params": ["accessToken: string", "newMediaItems: Array<any>", "albumId?: string"],
+            "returns": "Promise<any>"
+          }
+        ]
+      },
+      {
+        "name": "Google Docs API",
+        "description": "Create, get, and batch update Google Docs documents including text replacement.",
+        "path": "modules/google/google-docs.ts",
+        "examplePath": "examples/google/GoogleDocsExample.tsx",
+        "functions": [
+          {
+            "name": "getGoogleDoc",
+            "description": "Retrieves the full specified document.",
+            "params": ["accessToken: string", "documentId: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "createGoogleDoc",
+            "description": "Creates a blank document with the specified title.",
+            "params": ["accessToken: string", "title: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "batchUpdateGoogleDoc",
+            "description": "Applies a list of batch updates (requests) to a document.",
+            "params": ["accessToken: string", "documentId: string", "requests: any[]"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "insertTextGoogleDoc",
+            "description": "Inserts text at a specific index.",
+            "params": ["accessToken: string", "documentId: string", "text: string", "index: number"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "replaceAllTextGoogleDoc",
+            "description": "Replaces all occurrence of text within a document.",
+            "params": ["accessToken: string", "documentId: string", "containsText: string", "replaceText: string"],
+            "returns": "Promise<any>"
+          }
+        ]
+      },
+      {
+        "name": "Google Cloud Translation API",
+        "description": "Translate text and detect languages using Google Cloud Translation.",
+        "path": "modules/google/google-translate.ts",
+        "examplePath": "examples/google/GoogleTranslateExample.tsx",
+        "functions": [
+          {
+            "name": "translateText",
+            "description": "Translates text to a target language.",
+            "params": ["accessToken: string", "q: string | string[]", "target: string", "source?: string", "format?: string"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "detectLanguage",
+            "description": "Detects the language of text.",
+            "params": ["accessToken: string", "q: string | string[]"],
+            "returns": "Promise<any>"
+          },
+          {
+            "name": "getSupportedLanguages",
+            "description": "Gets languages supported by the Cloud Translation API.",
+            "params": ["accessToken: string", "target?: string"],
+            "returns": "Promise<any>"
+          }
+        ]
+      }
+    ]
+  }
+]

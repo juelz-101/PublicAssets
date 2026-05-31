@@ -4,5 +4,11 @@
     "ext": "tsx",
     "path": "Scripts/WebDevelopment/ModReg/examples/ziky_inc/I-DB_Handler.tsx",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/ziky_inc/I-DB_Handler.tsx"
+  },
+  {
+    "name": "SupaDB_Handler.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/ziky_inc/SupaDB_Handler.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/ziky_inc/SupaDB_Handler.tsx"
   }
 ]

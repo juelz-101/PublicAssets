@@ -214,6 +214,14 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Engineering/FireAndSecurity/Intruder/HKC_Parts.txt"
     }
   ],
+  "Library/Engineering/FireAndSecurity/Intruder/Texecom": [
+    {
+      "name": "Texecom_SignallingTest.txt",
+      "ext": "txt",
+      "path": "Library/Engineering/FireAndSecurity/Intruder/Texecom/Texecom_SignallingTest.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Engineering/FireAndSecurity/Intruder/Texecom/Texecom_SignallingTest.txt"
+    }
+  ],
   "Library/Engineering/FireAndSecurity/CCTV": [],
   "Library/Engineering/FireAndSecurity/AccessControl": [],
   "Library/Art&Creativity": [],
@@ -935,6 +943,14 @@
       "ext": "txt",
       "path": "Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-AutomatedTimesheets.txt",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-AutomatedTimesheets.txt"
+    }
+  ],
+  "Library/Electronics/Computing/Mobile/Android/SamsungApps/GPS": [
+    {
+      "name": "QuickSetupMockGPSLocFree_2026.txt",
+      "ext": "txt",
+      "path": "Library/Electronics/Computing/Mobile/Android/SamsungApps/GPS/QuickSetupMockGPSLocFree_2026.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/Mobile/Android/SamsungApps/GPS/QuickSetupMockGPSLocFree_2026.txt"
     }
   ],
   "Library/Geographical": [],
@@ -3025,6 +3041,12 @@
       "ext": "json",
       "path": "Tools/MasterConfigs/website_cfg.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/website_cfg.json"
+    },
+    {
+      "name": "ShellCob_Cfg.json",
+      "ext": "json",
+      "path": "Tools/MasterConfigs/ShellCob_Cfg.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Tools/MasterConfigs/ShellCob_Cfg.json"
     }
   ],
   "Tools/MasterConfigs/backup": [
@@ -3255,6 +3277,12 @@
       "ext": "zip",
       "path": "Scripts/WebDevelopment/v.2.0-react-module-reg_1.zip",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/v.2.0-react-module-reg_1.zip"
+    },
+    {
+      "name": "v.2.0-react-module-2.zip",
+      "ext": "zip",
+      "path": "Scripts/WebDevelopment/v.2.0-react-module-2.zip",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/v.2.0-react-module-2.zip"
     }
   ],
   "Scripts/WebDevelopment/ModReg": [
@@ -3401,6 +3429,12 @@
       "ext": "md",
       "path": "Scripts/WebDevelopment/ModReg/README.md",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/README.md"
+    },
+    {
+      "name": "module_register10.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/module_register10.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/module_register10.json"
     }
   ],
   "Scripts/WebDevelopment/ModReg/ai_dev": [
@@ -3421,6 +3455,18 @@
       "ext": "json",
       "path": "Scripts/WebDevelopment/ModReg/ai_dev/todo.json",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/todo.json"
+    },
+    {
+      "name": "module_manager_plan.json",
+      "ext": "json",
+      "path": "Scripts/WebDevelopment/ModReg/ai_dev/module_manager_plan.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/module_manager_plan.json"
+    },
+    {
+      "name": "Module-Lib_Plan.txt",
+      "ext": "txt",
+      "path": "Scripts/WebDevelopment/ModReg/ai_dev/Module-Lib_Plan.txt",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/Module-Lib_Plan.txt"
     }
   ],
   "Scripts/WebDevelopment/ModReg/ai_dev/log": [],
@@ -3710,6 +3756,12 @@
       "ext": "md",
       "path": "Scripts/WebDevelopment/ModReg/docs/ai/i18n.md",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ai/i18n.md"
+    },
+    {
+      "name": "db-supa.md",
+      "ext": "md",
+      "path": "Scripts/WebDevelopment/ModReg/docs/ai/db-supa.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ai/db-supa.md"
     }
   ],
   "Scripts/WebDevelopment/ModReg/docs/systems": [
@@ -3734,6 +3786,12 @@
       "ext": "md",
       "path": "Scripts/WebDevelopment/ModReg/docs/ziky_inc/db-handler.md",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ziky_inc/db-handler.md"
+    },
+    {
+      "name": "db-supa.md",
+      "ext": "md",
+      "path": "Scripts/WebDevelopment/ModReg/docs/ziky_inc/db-supa.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ziky_inc/db-supa.md"
     }
   ],
   "Scripts/WebDevelopment/ModReg/examples": [],
@@ -4245,6 +4303,80 @@
       "ext": "tsx",
       "path": "Scripts/WebDevelopment/ModReg/examples/ziky_inc/I-DB_Handler.tsx",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/ziky_inc/I-DB_Handler.tsx"
+    },
+    {
+      "name": "SupaDB_Handler.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/ziky_inc/SupaDB_Handler.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/ziky_inc/SupaDB_Handler.tsx"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/examples/google": [
+    {
+      "name": "GoogleAuthExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleAuthExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleAuthExample.tsx"
+    },
+    {
+      "name": "GoogleSheetsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleSheetsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleSheetsExample.tsx"
+    },
+    {
+      "name": "YouTubeExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/YouTubeExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/YouTubeExample.tsx"
+    },
+    {
+      "name": "GoogleDriveExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleDriveExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleDriveExample.tsx"
+    },
+    {
+      "name": "GoogleCalendarExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleCalendarExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleCalendarExample.tsx"
+    },
+    {
+      "name": "GoogleTasksExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleTasksExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleTasksExample.tsx"
+    },
+    {
+      "name": "GooglePeopleExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/GooglePeopleExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GooglePeopleExample.tsx"
+    },
+    {
+      "name": "GooglePhotosExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/GooglePhotosExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GooglePhotosExample.tsx"
+    },
+    {
+      "name": "GmailExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/GmailExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GmailExample.tsx"
+    },
+    {
+      "name": "GoogleTranslateExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleTranslateExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleTranslateExample.tsx"
+    },
+    {
+      "name": "GoogleDocsExample.tsx",
+      "ext": "tsx",
+      "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleDocsExample.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleDocsExample.tsx"
     }
   ],
   "Scripts/WebDevelopment/ModReg/modules": [],
@@ -4779,6 +4911,80 @@
       "ext": "ts",
       "path": "Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.ts",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.ts"
+    },
+    {
+      "name": "db_supa.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db_supa.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db_supa.ts"
+    }
+  ],
+  "Scripts/WebDevelopment/ModReg/modules/google": [
+    {
+      "name": "google-auth.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/google-auth.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-auth.ts"
+    },
+    {
+      "name": "google-drive.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/google-drive.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-drive.ts"
+    },
+    {
+      "name": "youtube-api.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/youtube-api.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/youtube-api.ts"
+    },
+    {
+      "name": "google-sheets.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/google-sheets.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-sheets.ts"
+    },
+    {
+      "name": "google-gmail.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/google-gmail.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-gmail.ts"
+    },
+    {
+      "name": "google-tasks.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/google-tasks.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-tasks.ts"
+    },
+    {
+      "name": "google-calendar.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/google-calendar.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-calendar.ts"
+    },
+    {
+      "name": "google-people.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/google-people.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-people.ts"
+    },
+    {
+      "name": "google-docs.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/google-docs.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-docs.ts"
+    },
+    {
+      "name": "google-translate.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/google-translate.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-translate.ts"
+    },
+    {
+      "name": "google-photos.ts",
+      "ext": "ts",
+      "path": "Scripts/WebDevelopment/ModReg/modules/google/google-photos.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-photos.ts"
     }
   ],
   "Scripts/WebDevelopment/ModReg/ref": [

@@ -10,5 +10,11 @@
     "ext": "ts",
     "path": "Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.ts",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db.ts"
+  },
+  {
+    "name": "db_supa.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db_supa.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/ziky_inc/data/db_supa.ts"
   }
 ]

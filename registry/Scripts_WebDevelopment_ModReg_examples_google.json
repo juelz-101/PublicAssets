@@ -1,0 +1,68 @@
+[
+  {
+    "name": "GoogleAuthExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleAuthExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleAuthExample.tsx"
+  },
+  {
+    "name": "GoogleSheetsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleSheetsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleSheetsExample.tsx"
+  },
+  {
+    "name": "YouTubeExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/YouTubeExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/YouTubeExample.tsx"
+  },
+  {
+    "name": "GoogleDriveExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleDriveExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleDriveExample.tsx"
+  },
+  {
+    "name": "GoogleCalendarExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleCalendarExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleCalendarExample.tsx"
+  },
+  {
+    "name": "GoogleTasksExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleTasksExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleTasksExample.tsx"
+  },
+  {
+    "name": "GooglePeopleExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/GooglePeopleExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GooglePeopleExample.tsx"
+  },
+  {
+    "name": "GooglePhotosExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/GooglePhotosExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GooglePhotosExample.tsx"
+  },
+  {
+    "name": "GmailExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/GmailExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GmailExample.tsx"
+  },
+  {
+    "name": "GoogleTranslateExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleTranslateExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleTranslateExample.tsx"
+  },
+  {
+    "name": "GoogleDocsExample.tsx",
+    "ext": "tsx",
+    "path": "Scripts/WebDevelopment/ModReg/examples/google/GoogleDocsExample.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/examples/google/GoogleDocsExample.tsx"
+  }
+]

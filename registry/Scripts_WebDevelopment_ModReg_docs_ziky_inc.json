@@ -4,5 +4,11 @@
     "ext": "md",
     "path": "Scripts/WebDevelopment/ModReg/docs/ziky_inc/db-handler.md",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ziky_inc/db-handler.md"
+  },
+  {
+    "name": "db-supa.md",
+    "ext": "md",
+    "path": "Scripts/WebDevelopment/ModReg/docs/ziky_inc/db-supa.md",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ziky_inc/db-supa.md"
   }
 ]

@@ -365,6 +365,8 @@ PublicAssets/
 │   │       └── Mobile/
 │   │           └── Android/
 │   │               └── SamsungApps/
+│   │                   ├── GPS/
+│   │                   │   └── QuickSetupMockGPSLocFree_2026.txt
 │   │                   └── Routines/
 │   │                       ├── SamsungRoutines-AutomatedTimesheets.txt
 │   │                       ├── SamsungRoutines-DB.json
@@ -379,6 +381,8 @@ PublicAssets/
 │   │       │   ├── HKC_Parts.txt
 │   │       │   ├── Honeywell_Parts.txt
 │   │       │   ├── Pyronix_Parts.txt
+│   │       │   ├── Texecom/
+│   │       │   │   └── Texecom_SignallingTest.txt
 │   │       │   └── Texecom_Parts.txt
 │   │       ├── New Text Document.txt
 │   │       └── [DB]-F&S_PartNumbers.json
@@ -431,6 +435,7 @@ PublicAssets/
 │       │   ├── App.tsx
 │       │   ├── README.md
 │       │   ├── ai_dev/
+│       │   │   ├── Module-Lib_Plan.txt
 │       │   │   ├── ai_commands.json
 │       │   │   ├── ai_rules.json
 │       │   │   ├── log/
@@ -442,6 +447,7 @@ PublicAssets/
 │       │   │   │   │   └── layout.json
 │       │   │   │   └── update_log/
 │       │   │   │       └── log.json
+│       │   │   ├── module_manager_plan.json
 │       │   │   └── todo.json
 │       │   ├── app/
 │       │   │   ├── systems/
@@ -493,6 +499,7 @@ PublicAssets/
 │       │   │   ├── README_TEMPLATE.md
 │       │   │   ├── ai/
 │       │   │   │   ├── db-handler.md
+│       │   │   │   ├── db-supa.md
 │       │   │   │   ├── i18n.md
 │       │   │   │   └── particle-background.md
 │       │   │   ├── internationalization/
@@ -500,7 +507,8 @@ PublicAssets/
 │       │   │   ├── systems/
 │       │   │   │   └── particle-background.md
 │       │   │   └── ziky_inc/
-│       │   │       └── db-handler.md
+│       │   │       ├── db-handler.md
+│       │   │       └── db-supa.md
 │       │   ├── examples/
 │       │   │   ├── ai/
 │       │   │   │   └── GeminiChatExample.tsx
@@ -557,6 +565,18 @@ PublicAssets/
 │       │   │   │   └── WindowShellExample.tsx
 │       │   │   ├── file-system/
 │       │   │   │   └── FileUtilsExample.tsx
+│       │   │   ├── google/
+│       │   │   │   ├── GmailExample.tsx
+│       │   │   │   ├── GoogleAuthExample.tsx
+│       │   │   │   ├── GoogleCalendarExample.tsx
+│       │   │   │   ├── GoogleDocsExample.tsx
+│       │   │   │   ├── GoogleDriveExample.tsx
+│       │   │   │   ├── GooglePeopleExample.tsx
+│       │   │   │   ├── GooglePhotosExample.tsx
+│       │   │   │   ├── GoogleSheetsExample.tsx
+│       │   │   │   ├── GoogleTasksExample.tsx
+│       │   │   │   ├── GoogleTranslateExample.tsx
+│       │   │   │   └── YouTubeExample.tsx
 │       │   │   ├── graphics/
 │       │   │   │   ├── AnimationLoopExample.tsx
 │       │   │   │   ├── AttractorExample.tsx
@@ -604,12 +624,14 @@ PublicAssets/
 │       │   │   │   ├── IndexedDBUtilsExample.tsx
 │       │   │   │   └── StorageUtilsExample.tsx
 │       │   │   └── ziky_inc/
-│       │   │       └── I-DB_Handler.tsx
+│       │   │       ├── I-DB_Handler.tsx
+│       │   │       └── SupaDB_Handler.tsx
 │       │   ├── index.html
 │       │   ├── index.tsx
 │       │   ├── metadata.json
 │       │   ├── module_register.json
 │       │   ├── module_register1.json
+│       │   ├── module_register10.json
 │       │   ├── module_register2.json
 │       │   ├── module_register3.json
 │       │   ├── module_register4.json
@@ -675,6 +697,18 @@ PublicAssets/
 │       │   │   │   └── window-shell-utils.ts
 │       │   │   ├── file-system/
 │       │   │   │   └── file-utils.ts
+│       │   │   ├── google/
+│       │   │   │   ├── google-auth.ts
+│       │   │   │   ├── google-calendar.ts
+│       │   │   │   ├── google-docs.ts
+│       │   │   │   ├── google-drive.ts
+│       │   │   │   ├── google-gmail.ts
+│       │   │   │   ├── google-people.ts
+│       │   │   │   ├── google-photos.ts
+│       │   │   │   ├── google-sheets.ts
+│       │   │   │   ├── google-tasks.ts
+│       │   │   │   ├── google-translate.ts
+│       │   │   │   └── youtube-api.ts
 │       │   │   ├── graphics/
 │       │   │   │   ├── animation-loop.ts
 │       │   │   │   ├── attractor-utils.ts
@@ -725,7 +759,8 @@ PublicAssets/
 │       │   │   └── ziky_inc/
 │       │   │       └── data/
 │       │   │           ├── db.data.json
-│       │   │           └── db.ts
+│       │   │           ├── db.ts
+│       │   │           └── db_supa.ts
 │       │   ├── package-lock.json
 │       │   ├── package.json
 │       │   ├── ref/
@@ -738,6 +773,7 @@ PublicAssets/
 │       │   ├── types.ts
 │       │   ├── version.ts
 │       │   └── vite.config.ts
+│       ├── v.2.0-react-module-2.zip
 │       └── v.2.0-react-module-reg_1.zip
 ├── Templates/
 │   └── PromptData/
@@ -765,6 +801,7 @@ PublicAssets/
 │   └── MasterConfigs/
 │       ├── Alldio_Cfg.json
 │       ├── QRG_Cfg.json
+│       ├── ShellCob_Cfg.json
 │       ├── backup/
 │       │   └── website_cfg.json
 │       ├── config.json

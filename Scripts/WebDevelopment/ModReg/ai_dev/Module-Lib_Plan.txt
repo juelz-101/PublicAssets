@@ -1,0 +1,69 @@
+# Module-Lib_Plan.txt
+# Updates and issues we will be tackling in next phase.
+# V1.0 - Created file and recouped at phase 1 to match version.
+---
+
+PHASE 1:
+
+1. Integrate userdata saving/loading and add debug tools
+    a. Utilise the db.ts module to save/load user data
+    b. Create a custom expandable console with local messages being diverted away from the browser consoleq
+    c. Add a debug toolbar which can be toggled from within the settings. Most recent line of console shows on left, icon buttons on the right for debug tools and to expand console. Full console view and tools can be accessed via settings. These should be made as Reusable modules and systems.
+
+2. Add a "Tools" section to main menu
+    a. Includes a hidable toolbar so can be accessed at any time
+    b. Add a notepad tool. Notes can be named, saved and deleted. Can also have pages,modules,ect linked to them.
+    c. Create a tool to print list of Created modules/etc. Checkboxes to select what gets printed and how much detail. Can also compare current data with existing data to determine what files have been backed up and removed
+    d. Allow for bookmarks to be placed and highlighting of text.
+    e. Add a ranking system (stars out of 5), allow for favouriting, attaching comments, and adding to custom lists.
+    
+3. Create a new system called systems/ziky_inc/module_manager
+    a. Will manage the importing of modules and other files from online sources, utilizing our db.ts and file-utils.ts modules and creating more if needed
+    b. Will include functions for bulk importing via the appdata, or singular via string input. Might aswell include an import all option.
+    c. Is also for duplicating templates ready for the user (ie: appdata starter template)
+    d. Our app will be using it to import modules/files from our git rather than having a massive database stored directly in this app.
+    
+4. Redesign the menu layout
+    a. Seperate Systems and Modules into their own sections
+    b. Add the tools section
+    c. Add a search bar and filters to each section
+    d. Homepage should actually be interactive.
+    e. Sections and categories should be laid out much better
+    
+5. Fix the background screen
+    a. Its fucked. AI just couldnt get the floor to sync up with the rest.
+    b. Enhance the 3D terrain and shapes
+    c. Make it more interactive
+    
+6. Fix the bulk exporter
+    a. it doesn't work at all.
+    
+7. Add support for additional page types to modules/Systems
+    a. Allow for scripts to be viewed from within a modules view page
+    b. Add a new page type for viewing and downloading full sample scripts
+    c. Add a assets page, assets for modules/systems will be imported from our git repository
+    
+8. Backup and Assess current files
+    a. Add all modules and systems to our git repository once we have made module manager
+    b. Print a list of all files and functions for the AI to be able to read
+    c. Build some proper systems utilising the module library
+    d. Build out more modules where necessar
+    
+-----    
+    
+PHASE 2
+
+1. Modules to build
+    a.
+    
+2. Modules to expand
+    a.
+    
+3. Systems to build
+    a. 
+    
+4. Systems to Expand
+    a.
+    
+5. Anything else (ie: tools, UI, etc)
+    a.

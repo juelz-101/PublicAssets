@@ -84,6 +84,40 @@
             "returns": "any"
           }
         ]
+      },
+      {
+        "name": "Supa-DB Handler",
+        "description": "A comprehensive data and Supabase handler for initializing application state from a configuration file, mirroring I-DB Handler logic.",
+        "path": "modules/ziky_inc/data/db_supa.ts",
+        "examplePath": "examples/ziky_inc/SupaDB_Handler.tsx",
+        "docPath": "docs/ziky_inc/db-supa.md",
+        "aiRulesPath": "docs/ai/db-supa.md",
+        "prompts": [
+          {
+            "title": "Setup New Project Data",
+            "description": "Initialize a new project with a basic data structure using Supabase.",
+            "content": "Create a new `appdata.json` file with a basic structure for a task management app, mapping a database to Supabase."
+          },
+          {
+            "title": "Add New Supabase Store",
+            "description": "Add a new store to an existing database configuration.",
+            "content": "Add a 'Users' store to the 'AppDB' database in `appdata.json`, mapped to a Supabase table."
+          }
+        ],
+        "functions": [
+          {
+            "name": "new SupaDataManager()",
+            "description": "Creates a new instance of the SupaDataManager.",
+            "params": [],
+            "returns": "SupaDataManager"
+          },
+          {
+            "name": "manager.init(configUrl, supabaseUrl, supabaseAnonKey)",
+            "description": "Initializes the entire data system by fetching the config, setting up databases, and loading default data.",
+            "params": ["configUrl: string", "supabaseUrl: string", "supabaseAnonKey: string"],
+            "returns": "Promise<void>"
+          }
+        ]
       }
     ]
   }

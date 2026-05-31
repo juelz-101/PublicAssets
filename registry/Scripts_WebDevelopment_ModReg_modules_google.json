@@ -1,0 +1,68 @@
+[
+  {
+    "name": "google-auth.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/google-auth.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-auth.ts"
+  },
+  {
+    "name": "google-drive.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/google-drive.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-drive.ts"
+  },
+  {
+    "name": "youtube-api.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/youtube-api.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/youtube-api.ts"
+  },
+  {
+    "name": "google-sheets.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/google-sheets.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-sheets.ts"
+  },
+  {
+    "name": "google-gmail.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/google-gmail.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-gmail.ts"
+  },
+  {
+    "name": "google-tasks.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/google-tasks.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-tasks.ts"
+  },
+  {
+    "name": "google-calendar.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/google-calendar.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-calendar.ts"
+  },
+  {
+    "name": "google-people.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/google-people.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-people.ts"
+  },
+  {
+    "name": "google-docs.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/google-docs.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-docs.ts"
+  },
+  {
+    "name": "google-translate.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/google-translate.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-translate.ts"
+  },
+  {
+    "name": "google-photos.ts",
+    "ext": "ts",
+    "path": "Scripts/WebDevelopment/ModReg/modules/google/google-photos.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/modules/google/google-photos.ts"
+  }
+]

@@ -16,5 +16,11 @@
     "ext": "md",
     "path": "Scripts/WebDevelopment/ModReg/docs/ai/i18n.md",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ai/i18n.md"
+  },
+  {
+    "name": "db-supa.md",
+    "ext": "md",
+    "path": "Scripts/WebDevelopment/ModReg/docs/ai/db-supa.md",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/docs/ai/db-supa.md"
   }
 ]

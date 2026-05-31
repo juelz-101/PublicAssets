@@ -1,0 +1,400 @@
+{
+	"meta": {
+		"type": "appdata", "title": "ShellCobra-AppData", "read_only":  true,
+		"desc": "This is where we plan ideas for tools to include, set global guides to be followed and register the tools and their purposes",
+		"creator": "Juelz-101", "organization":  "ZIKYinc",
+		"main_parent": "ShellCobra", "main_platform": "wpf", "others": [],
+		"root": "Data/", "file": "Tools.json", "handler": "TODO", "targets": ["app", "user", "dev", "ai"],
+		"ref": {"meta": "mta_wpf:1.0", "struct": "json_struc:1.2", "db": "db_wpf:1.0", "styling": "sty_wpf:1.0"},
+		"version": 1.0, "version_note":  "Began Building",
+		"dev_version": 0.0, "dev_version_note":  "No AI adjustments as of yet",
+		"status": "Started", "status_note": "Lets gooo",
+		"next_step": "Begin feeding AI", "next_step_note": "Once we've got the main layout of this file done we will show ai and begin planning development",
+		"todo": [],
+		"mark_as_ready": false, "mark_as_complete": false,
+		"flags": [],
+		"files": {
+			"info": "For importing/updating data from external sources. Supports web and a local fallback. Can point to specific file info or to a map of files",
+			"update": {"use": false, "update_type": "auto", "point_to": "data.files", "id": "GLOB", "priority": "web", "path": "data/global_configs/wpf/shell_cobra_AD.json", "method": "swap_out"},
+			"merge": {"use": false, "merge_type": "auto", "point_to": "data.files", "id": "MERG", "priority": "web", "method": "missing_keys_only" }
+		},
+		"dev_notes": [
+			"-**	DEV KEYS:	**-",
+			"-	^-->	DEV_REF		:	Keys labelled 'dev_ref' provide nested infomation for development and will be removed either once it has been properly documented elsewhere or when it is no longer useful or needed",
+			"-	^-->	INFO		:	Keys labelled 'info' are dev_ref's that may also help the user so may not be removed. Mostly for holding instructions on what/how data is required",
+			"-	^-->	DESC		:	Keys labelled 'desc' are user-focused descriptions for the item in question, and are likely to be displayed in menus or tooltips so wont be removed. ",
+			".			",
+			"-**	DATA STRUCTURE:	**-",
+			"-	1.	All JSON files will share similar root stuctures, to allow for familiarity and auto-merging of data:",
+			"-	^-->	meta/		:	Details about the file, its status and its purpose.		",
+			"-	^-->	settings/	:	Generally for dev-level backend settings.				",
+			"-	^-->	data/		:	This is where we put the main data to be read.			",
+			"-	^-->	user/		:	Information and schemas about how userdata is built, stored, manipulated and referenced.1	",
+			".			",
+			"*- We will try to keep familiar structures beyond these root files but this is to always be the root structure",
+			"**- Root keys can be removed if they are not used. For example if we dont need any backend settings we wont include the settings key ",
+			"***- This root structure is used throughout all of our projects, spanning across all platforms and usages, following this structure allows for limitless integration and cross-platform oppotunities."
+		],
+		"ai": {
+			"info": [
+				"-	1. Vars are adjustable variables to change how the AI manages data",
+				"-	2. Guides are instructions for the AI on how to DO certain tasks",
+				"-	3. Restrictions are to set boundaries for what the ai NOT to do.",
+				"-	4: Blocks contain paths to data and/or files that the AI cannot change"
+			],
+			"vars": {
+				"meta_edits":  {"update_status": "allow", "next_step": "ask", "todo": "block", "marks": "block", "flags": "ask"}
+			},
+			"guides": [ "Only update versions that are labelled 'dev_version' unless asked otherwise" ],
+			"restrictions": [ "" ],
+			"blocks": [ "" ]
+		}
+	},
+	"data": {
+		"instructions": [
+			"**	--> INTRO -->	**",
+			" The idea behind this app is to try to make each tool/feature follow this global pattern:",
+			" The Three means of access: ",
+			"-	1. App:					- Setup and trigger tools by using the UI/Window-based layouts for indepth adjusting, monitoring and/or selecting. Also where you go for full advanced settings.",
+			"-	2. Shell-Menu:			- Allows for you to browse to file/folder, selection or root and use our options in the right click shell menu to apply your desired tool to selection",
+			"-	3. Tray icon:			- For quick access on repeat/sequenced tasks, you can set certain actions, commands, selections, ect to the icons menu for easy triggering",
+			"=			",
+			" In addition to the Three main methods, some tools might utilise things like custom toolbars, or redesigned context menus.",
+			" Edit: We will also be building the 'Bucket Tool' which is an AlwaysOnTop toolbar for assigning actions, it will also utilise MKU tag parsing to automatically detect and handle data.",
+			" Custom/Redesigned systems are to be built with adaptability in mind so that any future tool can utilise it with its own parameters and design logic.",
+			" NOTE: We will add a icon-based visual indicator that will be displayed to show where the tool can be accessed from.",
+			".			",
+			".----------",
+			"**	--> TOOLS --> **",
+			"-	Most tools are likely to be categorised/grouped based on their purpose, with each group having it own dedicated menus, controls and global settings.",
+			"-	Each specific tool within a group will have its own dedicated page(s) with its own controls and settings.",
+			"-	Each tool must be structured to allow for other tools to utilise it. In order to achive this, each tool must have its main functions in a dedicated helper/service script or scripts, seperate from any UI/user-based code.",
+			"-  For each tool, the helper/service scripts should have a 'master'/'main' function for each task so that other tools can easily call them.",
+			"-	Additionally, each task should have its functions structured to be as modular as possible, ensuring that any of the tools functionality can be called by other tools for their specific needs. Obviously I'm speaking generally, if a tool can be used elsewhere, we will be using it elsewhere.'",
+			".			",
+			"*----------",
+			"**	--> MAIN MENU --> **",
+			"-	We plan to have a dynamic menu system with unique and inturative mechanisms to make the app engaging, easy to navigate and fun.",
+			"-	The main menu will have the following pages:		",
+			"^	^-->	- Home						:	Main homepage with quick navigation to fav/recent tools, quick config controls like profiles and automation, info on latest tools and community activity, etc.",
+			"^	^-->	- Dashboard					:	Control station for live monitoring and quick controls",
+			"^	^-->	- Tool-Browser				:	The directory where all of the tools can be searched, categorised, etc. Selecting a tool should bring up infomation about the tool with a button to use it (double click to skip info and go straight to tool)",
+			"^	^-->	- Lab						:	This is where the user can manage all of their stuff, like presets, sequences, profiles, etc.",
+			"^	^-->	- Users Toolboxes			:	Custom pages with groups of tools that the user has picked. These have the option to only be displayed under certain conditions (ie: When a specific profile/task is active, etc)",
+			"^	^-->	- Community					:	Hub for sharing ideas, requesting help, showcasing achivements, etc.",
+			"^	^-->	- Settings					:	The settings for the main app. Tab control. Each tool will have its own settings within the tools UI, but these settings can also be accessed here under the tools tab.",
+			"^	^-->	- Info						:	Another tab system with app details, instructions, credits, etc",
+			"+	Note: We will utilise collapsable draws/side panels so that these areas can be accessed at any time while within a tools window.",
+			".			",
+			"*----------",
+			"**	--> MAIN DASHBOARD --> **",
+			"-	This is where you can manage, organize, group and configure specific tools for specific purposes.",
+			"^	^-->	Dashboard layouts can be saved/loaded, aswell as any tool-specific configurations",
+			"-	We will try to give all tools dash-level widgets, controls and indicators to provide access/live display of multiple tools/groups without having to leave the dashboard.",
+			".			",
+			"*----------",
+			"**	--> QUICK VARIABLES --> **",
+			"-	We will allow for certain things throughout the app and its tools to be conditional, many conditions will be pointed towards a variables current state. The user is free to add as many conditions and variables as they like and each variable can be flagged as a 'Quick Variable'",
+			"-	Assign variables as 'Quick Variables' for easy access at any time to the variable to change its value, and in-turn, will change every condition that is pointed at the variable.",
+			"-	It is worth noting that variables can also be set as conditional, this opens a new level of advanced automation, but at the very basic level, variables can be linked to act dependant to another variables state.",
+			"-	User-Made variables aside, the app will come with 3 main Quick Variables, ready to have conditions linked to it, and can be accessed and controlled at any time",
+			"^	^-->	- Profile					:	We will have an internal user system that allows for muiltiple 'profiles'. Doesnt necessarily need to be used for different users, just might be useful to be able to create seperate databases.",
+			"^	^-->	- Subject					:	This is for assigning things to a broad usage, for example one may set it to 'Video Editing' and add conditions to things in the app that they found useful while working eith video files.",
+			"^	^-->	- Task						:	This is for assigning things to a specific usage, this is where the user is likely to set a condition for this variable, and link specific values to a value shown by the Subject variable. And example would assigning Task values 'Effects', 'Video Cutting' and 'Adding Subtitles' to only be shown when the Subject variable is set to 'Video Editing'",
+			".			",
+			"*----------",
+			"**	--> MKU INTEGRATION --> **",
+			"-	We are currently working on a custom parsing system called 'MarkUnder' (MKU) and we plan to integrate it into various features in this app.",
+			"-	The MKU data will be in its own dedicated json file(s) in MKU/Data so only important elements that are crutial to the apps functionality will be mentioned here.",
+			"-	We are intentionally avoiding listing specific file extensions and tags as they may change during development, they will only be listed in the MKU datafiles.",
+			"-	We are still early in development and have nothing developed for use with WPF so we will be developing a lot of MKU scripts while working on this app.",
+			"-	All MKU files are to be contained within the MKU folder in the project root.",
+			"-	 File Types:				:	MKU filetypes used by this app.",
+			"^	^-->	- Indexes				:		Indexes are datafiles that hold info for the parent folder, contained files and can be set to manage or not manage subfolders. These are used for many things outside and inside of this app (things like automation, file tracking, auto-filling, etc).",
+			"-	Tags:						:	Tags are text-level commands that control the parser.",
+			".			",
+			"*----------",
+			"**	--> USERDATA --> **",
+			"-	We will allow for f ",
+			"-	As mentioned briefly earlier - each section, tool, setup and layout will have custom user-made presets, as well as default system presets",
+			"-	Userdata is generated on startup if it doesnt already exist, and stored in the Users Documents folder under:	",
+			"-	^--> /Documents/ZIKYinc/ShellCobra/	",
+			"--		^-->	- UserSettings.json		:	For the users general app settings, and any additional user-set grouping, labelling, etc.",
+			"--		^-->	- Dashes/				:	Stores the users saved dashboards (Widgets to display, How to display them, Etc)",
+			"--		^-->	- Widgets/				:	Stores the users saved Tool-Widgets and their configurations (each tool has 2 internal slots: 1. Layout: Acts as a root preset slot. 2. Config: Parameters saved and assigned to specific layout(s) ",
+			"--		^-->	- Shells/				:	Stores saved shell menu setups",
+			"--		^-->	- Cues/					:	Stores saved taskbar menu setups, referred to as cues as they are for pre-configuring based on tasks and sequences and triggering later with ease.",
+			"--		^-->	- Functions/			:	Stores saved custom logic",
+			"--		^-->	- Triggers/				:	Stores saved activators, listeners and other trigger logic",
+			"--		^-->	- Sequences/			:	Stores saved event chains containing Triggers and function",
+			"--		^-->	- Collections/			:	Stores lists of grouped items from any of the other types to build ",
+			"--		^-->	- ToolData/				:	User data for specific tools and collections. ",
+			"---				^-->	- FileForest/		:	User data and settings for the File-Based tool collection.",
+			"----					^-->	- FileTreeMaker/		:	User data and settings for the File-Tree generator tool.",
+			"----	",
+			"-	Notes:				<--^	",
+			"--		- 1. File/data types will only be contained within their dedicated folder, and only be referenced elsewhere.:				<--^	",
+			"--		- 2. The user can easily change the root of their folder away from their Documents folder, or even use multiple roots, which all get processed into one space once read by the app..:				<--^	",
+			"--		- 3. We'll build the tools and log them as we go. Just remember this file and its contents is for user reference, ai assistance and read by the app.'..:				<--^	",
+			"--		- 4. Some of the sections mentioned in the users db may be better being stored in the users data under the tool it was built for, although some types may allow for mixing items/data between tools, if thats the case then the main store will be for global save data and anything tool-specific is saved to the store for that tool",
+			"x_____x"
+		],
+		"dev_notes": [
+			"For the tools, we are prioritissing organising/grouping the files for each individual tool (or set of tools) into their own folder in Tools/ .",
+			"For many elements, we will be ignoring the conventional WPF way of structuring files and instead store all of the files for each specific element contained within its root folder. (The project root, and main app stuff will still follow conventional WPF structuring)",
+			"Where applicable, we will use globalised methods and techniques to help keep development and user interaction easy to learn and follow",
+			"The globalisation is only to apply to scripting, data handling, naming and readability. Never applied to design. All layouts are to be distinctive and unique",
+			"Generally speaking, In tool-containers, to ensure full design freedom we will use toggle-buttons(and other components) as a custom tab system and change pages by hiding/showing the target pages root component.",
+			"The pages within tool-containers will use globalised tags in the names of their root components for easy handling and development"
+		],
+		"global": {
+			"desc": "Anything stated here is to be applied throught the entire app development",
+			"design": {
+				"theme": "80's/90's 8 bit pixelart, with empasis on badass, overkill and the golden age of having a catchphrase",
+				"ui_sound": "80's overkill, but subtle",
+				"characters": {
+					"main_characters": {
+						"desc": "Each tool is likely to have its own dedicated character(s) but the app itself has 2 main characters"
+						"cobra": {
+							"name": "Kenny Cobra", "id": "COB",
+							"role": "App Mascot", "appearences": "Throughout entire app",
+							"traits": "Smart, Cunning, Agile, Uses Finesse",
+							"appearence": "Tall, Lanky, Flashy, Wealthy",
+							"inventory_example": "Pen-Knife, Pack of Playing cards shaped as shells, cigerettes, matches, photo of his girlfriend 'Michelle'",
+							"vehicles": "His vehicle is a Shelby Cobra, warm ivory off-white body paint with deep British Racing Green racing stripes, vintage motorsport colour palette, 1960s racing aesthetic. Any other vehicle he uses are variants of the Shelby Cobra but adapted to the current theme/situation in ridiculous ways.",
+							"attack_style": "Undetected, mess with your head, victim gets taste of own medicine, lots of eleborate pranking and making victim think they are going crazy.",
+							"defence_style": "Uses enviroment to his advantage, confuses attacker, leads them to their own doom",
+							"full_bio": "Assets/Lore/Characters/KennyCobra.md"
+						},
+						"agent_u": {
+							"name": "Agent-U", "id": "USR",
+							"alias": "U-Ser",
+							"role": "User Avatar / Player Proxy",
+							"appearences": "User icon, cursor focus, banners, background animations, navigation indicators",
+							"traits": "Brute Force, Overkill, Fearless, Loud, Instinct-Driven",
+							"appearence": "Massive build, Hulk-Hogan style vest, camo cargo pants, permanently dirty from explosions and BBQ smoke",
+							"personality": "Unintentionally confident, aggressively simple logic, communicates almost exclusively through bad catchphrases and escalation",
+							"inventory_example": "Unlimited heavy weapons, portable BBQ with perfectly cooked steaks, oversized cigars, beer, explosives of every category",
+							"vehicles": "Uses absurdly oversized and militarised vehicles chosen purely by escalation logic (tank, jet, submarine, etc). All vehicles feature light camo with redneck-style spray paint.",
+							"attack_style": "Direct, loud, excessive. Solves all problems by applying increasingly disproportionate firepower.",
+							"defence_style": "Does not defend. Removes threats entirely.",
+							"logic_rule": "The less he understands something, the harder he destroys it.",
+							"meta_function": "Represents the user’s presence, focus, and actions within the app UI",
+							"full_bio": "Assets/Lore/Characters/AgentU.md"
+						}
+
+					}
+				}
+			},
+			"naming": {
+				"components": {
+					"pages": {"tag": "PG_", "type": "StartWith", "desc": "Containers using our system that shows/hides parent grids to display correct page should use this tag when naming the parent gridsPages", "example": "PG_Grid_Page1"},
+					"-": {"tag": "", "type": "", "desc": "", "example": ""},
+					"": {"tag": "", "type": "", "desc": "", "example": ""}
+				}
+			}
+		},
+		"rules": {
+			"design": [
+				"We cant directly mention or copy any real characters or items that we are referencing, we need to add slight variation. The last thing we need is Nintendos army of super lawyers on our case."
+			]
+		},
+		"main_app": {
+			"desc": "The details listed here are for the apps main menus, dashboard and any misc menus that are not within any of the containers or sub-tools.",
+			"meta": {
+				"version":  0.0, "version_changed": "10/11/12 10:11", "version_note": "Hi", 
+				"dev_version":  0.0, "last_edit": "12/11/10 11:10", "dev_version_note": "Ai",
+				"status": "Structuring Plan", "status_note": "Not started yet",
+				"next_step": "", "next_step_note": "",
+				"todo": [],
+				"flags": []
+			},
+			"files": {
+				"main_root": "App/",
+				"main_tool_window": "App/MainMenu.xaml",
+				"usage_of_main_tool_window.cs": "Menu navigation and triggers",
+				"additional_files": [
+					
+				],
+				"assets": {}
+			},
+			"design": {
+				"overall_styling": "Based on Mario Kart 64 and Mario 64",
+				"main_ui": "Reference the classic Mario Metal colored panel style with the screws in each corner, each panel will be added for each subsection of each menu, each with a stylised and color coded asset/item that acts as subtle background art. ",
+				"icons_and_buttons": "Styled after many assets of the game depending on context, mainly context specific items made to look like MK64 items, M64 Enemies, or menu assets from both games, would like to have them with simple animations depending on item/context/current situation, like when items are unselected, do a subtle idling animation like waiting impatiently, nodding left and right to a rhythm, flickering a no power icon, trying to power up, or the classic "badass retro character gets bored and looks at fists that he wrapped barbed wire around for extra POW and pulls some off and begins flossing teeth with it in a bored unamused manner", all depends on the item/character in question, when highlighted the animations should do a "activating" or "getting ready" kind of animation, these can be things like start spinning, or start bouncing, boot up, or the good old "badass retro character pulls out a mingun and lights cig with it, smoke it all in 1 toke, and does a kung fu style "come here" hand gesture while in a fighting stance ready to fight", and when confirming selection do things like Turbo Spin, Charged super bounce, or everybody's favourite "Badass Retro Character pulls out an AK and shoots his laces to tie them". These trigger animations will be short and unintrusive, but if items remain on screen aft",
+				"logo": "Cobra Snake, driving a mario kart style shelby cobra, with 3 shells around the car like the 3 shells item in mario kart.",
+				"banner": "Styled like a Billboard on a Mario Kart 64 racetrack."
+			},
+			"instructions": [],
+			"dev_notes": [],
+			"children": []
+		},
+		"tools": [
+			{
+				"name": "File Forest",
+				"id": "FF",
+				"category": "DataManagement",
+				"desc": "File/Folder based tools including batch processing, map generating, backups and templates",
+				"type": "Container",
+				"meta": {
+					"version": 0.0,
+					"version_changed": "10/11/12 10:11",
+					"version_note": "Hi",
+					"dev_version": 0.0,
+					"last_edit": "12/11/10 11:10",
+					"dev_version_note": "Ai",
+					"status": "Building UI",
+					"status_note": "Began UI",
+					"next_step": "",
+					"next_step_note": "",
+					"todo": [],
+					"flags": []
+				},
+				"files": {},
+				"windows": {
+					"main_root": "Tools/FileForest/",
+					"main_tool_window": "Tools/FileForest/FileForest.xaml",
+					"usage_of_main_tool_window.cs": "Menu navigation and triggers",
+					"additional_files": [],
+					"assets": {}
+				},
+				"design": {
+					"overall_styling": "ALTTP style forest",
+					"window": {},
+					"color_schemes": {},
+					"logo": {},
+					"banner": {}
+				},
+				"instructions": [],
+				"dev_notes": [],
+				"children": [
+					{
+						"name": "File-Tree Maker",
+						"id": "FTM",
+						"desc": "Advanced generator that builds visual text-symbol structures to visually view your folder/file layout, especially useful for requesting AI help",
+						"type": "Page",
+						"meta": {},
+						"files": {},
+						"features": [
+							"Default and Custom presets for the symbols to be used to represent the folder layout",
+							"Supports further mapping of data structures and libraries",
+							"Automatic filetype detection with emojis assigned to filetype",
+							"Additional infomation can be attached to items using in-app inputs, or including a specific file which act as the parent folders meta-info and can hold meta-info for files it is holding",
+							"Dedicated Folder-Meta Builder for managing these files within the app",
+							"Include multiple directories, skip specific files and folders, or only include specific files and folders",
+							"Supports live monitoring to update the File-Tree when changes are made to the files/folders",
+							"Advanced viewing tools for useful tasks like grabbing snippets while maintaining the overall structure",
+							"Use bookmarks and markers to create and switch between multiple variations or snippets all while leaving the master file untouched. Variations can also be exported to new files or set as the new master file.",
+							"Reverse Polarity: Meaning File-Trees can be given and the app will build the files and folders for you. Includes parameters to set advanced logic for generating new items, like only adding missing files, empty files, files last editied before a timeframe",
+							"Full integration with other tools to allow for even more complex detection and logic.",
+							"Include an addtional tool to simplify the process of creating File-Trees manually. Will include shortcuts and quick access buttons for adding a file/folder/file-meta, returning to previous folder, etc and the tool will automatically add the correct symbols based on the current theme."
+						],
+						"usage_examples": {
+							"window": [
+								"Keep config inputs in view while switching back and forth between apps while setting up",
+								"Building a new preset using some funky characters you found on a website",
+								"Editing a folder layout using our suite of easy to use tools and then applying the changes to the folder and files",
+								"Carefully selecting areas of your project files to give to an assisting AI without overloading it with irrelivent data",
+								"Creating and saving presets, snippets, templates and structures for easy access by other means, or in other tools"
+							],
+							"shell": [
+								"Right click a file/folder and generate a tree for it.",
+								"Or add it to another tree",
+								"Or compare it to another tree and create a tree of what files are found in both.",
+								"Compare folder with another folder and generate files that dont exist in one",
+								"Set folder to be monitored and linked to a tree file to update when changes are made",
+								"Create a quick tree from folder that goes straight to the users clipboard instead of saving as a file",
+								"Mark a tree file to allow for easy access from the taskbar menu",
+								"Covert highlighted text, etc"
+							],
+							"tray": [
+								"For quick access to marked trees, files and folders",
+								"Trigger an update after changes have been made to a layout"
+							]
+
+						},
+						"notes": [
+							"MKU Index files can be used to assign descriptions to files and folders to be displayed within the generated tree next to the item.",
+							""
+						]
+
+					}
+				]
+			},
+			{
+				"name": "Media-Menace",
+				"id": "MM",
+				"category": "Media",
+				"desc": "Tools for media-based tasks",
+				"type": "Conntainer",
+				"meta": {
+					"version": 0.0, "version_changed": "--/--/-- --:--", "version_note": "Placeholder", "dev_version": 0.0,
+					"last_edit": "--/--/-- --:--", "dev_version_note": "For AI to update with each edit",
+					"status": "Planning", "status_note": "Planning and laying out register item.",
+					"next_step": "", "next_step_note": "",
+					"todo": [],
+					"flags": []
+				},
+				"files": {
+					"main_root": "Tools/MediaM/",
+					"main_tool_window": "Tools/MediaM/MediaM.xaml",
+					"usage_of_main_tool_window.cs": "Menu navigation and triggers",
+					"additional_files": [],
+					"assets": {}
+				},
+				"design": {
+					"overall_styling": "Top down GTA style",
+					"window": {},
+					"color_schemes": {},
+					"logo": {},
+					"banner": {},
+					"characters": []
+},
+				"instructions": [],
+				"dev_notes": [],
+				"children": [
+					{
+						"name": "TurboSlicer",
+						"id": "TBOS",
+						"desc": "Handy tool for cutting, converting or merging media files, with speed and easy access being priority.",
+						"category": "Post-Production", "tags": ["Cut", "convert", "merge"],
+						"type": "Page",
+						"meta": {},
+						"features": [
+							"Quickly cut audio and video files via a timeline+marker-base interface, by setting conditions like target memory size for example, or via a premade preset made either by the user or by the devs by default presets.",
+							"Options to convert to different file-types, or reduce quality.",
+							"Support for bulk actions, either by selection, folder, or script",
+							"Utilises other tools for automation and monitoring. An example would be setting a folder to automatically convert any .mp3 that gets placed into a set folder to a .wav file - this will use utilise a folder-meta to hold the config",
+							"Use the dedicated UI to view progress, or background processing with toast notifications, or completely silent log-only.",
+							"Advanced Notification control, examples are notifiy when all complete, notify when new file is found for automated control, error notifications only, etc.",
+							"Support for a huge library of popular file types",
+							"All of the standard features you expect, like control over naming, subfolders, encoding parameters, all of the usual stuff.",
+							"Handling of original files once complete - Examples: Delete original, Move original, Rename original, etc.",
+							"Pre-made widgets for Logs, monitored folders, etc that integrate with the main dashboard"
+						],
+						"usage_examples": {
+							"window": [
+								"Precise cutting of a video clip using markers on the timeline",
+								"Using the timeline editor to set multiple markers to cut a large audio file into individual sections of various lengths",
+								"Reviewing logs to ensure all files converted properly", 
+								"Viewing existing automation processes and toggling ones you dont need running right now",
+								"Building new conditions, assigning folder-metas and setting the output parameters.",
+								"Managing presets, assigning groups of presets to specific subjects/tasks, so that switching tasks immediently displays desired presets throuout the menus."
+],
+							"shell": [
+								"Highlight files and select action from presets, or choose to open in editor.",
+								"Select a folder and "
+							],
+							"tray": [
+								"For quick access to marked trees, files and folders",
+								""
+							]
+
+						}
+
+					}
+				]
+			}
+		]
+	}
+}

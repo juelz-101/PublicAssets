@@ -1,0 +1,27 @@
+{
+  "title": "Module Manager Plan",
+  "goal": "Create a centralized system to export, store, and manage TS/React modules so they can be reused across different projects without manual copying.",
+  "core_concepts": {
+    "problem": "AI Studio applications run in isolated containers. Code written in this app does not automatically transfer to new apps. The module manager must serve as an external bridge.",
+    "solutions": [
+      {
+        "name": "Supabase Remote Registry",
+        "rationale": "Since the app already integrates db_supa.ts, modules and their metadata can be pushed directly to a Supabase database. New projects can dynamically fetch these scripts via Supabase API."
+      },
+      {
+        "name": "GitHub Sync (Recommended)",
+        "rationale": "Pushing modules to a centralized GitHub repository allows new projects to fetch the code using raw URLs. This integrates well with existing AI tools (like read_url_content) to natively read in modules."
+      },
+      {
+        "name": "NPM Package Workflow",
+        "rationale": "The module manager could bundle selected scripts and provide commands to publish them to NPM (e.g., @ziky_inc/modules). New apps would just 'npm install' the package."
+      }
+    ],
+    "implementation_steps": [
+      "Step 1: Choose the storage medium (e.g., GitHub or Supabase).",
+      "Step 2: Build an 'Export Engine' in the current app that grabs the raw code of selected modules (using fetch on the file path) and pushes it to the storage.",
+      "Step 3: Define a standard 'Importer Prompt/Snippet' that you can paste into any **new** AI Studio environment to instruct the AI to pull and recreate the needed modules from the central registry.",
+      "Step 4: Gradually migrate existing modules out of this app and clear them locally, relying entirely on the manager's remote registry."
+    ]
+  }
+}

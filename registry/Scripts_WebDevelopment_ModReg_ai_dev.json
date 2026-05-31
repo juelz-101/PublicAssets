@@ -16,5 +16,17 @@
     "ext": "json",
     "path": "Scripts/WebDevelopment/ModReg/ai_dev/todo.json",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/todo.json"
+  },
+  {
+    "name": "module_manager_plan.json",
+    "ext": "json",
+    "path": "Scripts/WebDevelopment/ModReg/ai_dev/module_manager_plan.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/module_manager_plan.json"
+  },
+  {
+    "name": "Module-Lib_Plan.txt",
+    "ext": "txt",
+    "path": "Scripts/WebDevelopment/ModReg/ai_dev/Module-Lib_Plan.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/ModReg/ai_dev/Module-Lib_Plan.txt"
   }
 ]

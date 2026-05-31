@@ -1,0 +1,20 @@
+
+
+1. Enter Engineer mode and select option 9 Engineer Utilities and press "YES
+
+2. Scroll up (TWICE) to the option 'Signalling Test" and press "YES".
+
+3. Select the Area(s) you wish to test using keys 1-8 then press "YES',
+
+4. Next Select Zone(s) you wish to test by scrolling down and selecting each Zone you wish to use
+by pressing the CHIME button. (A * symbol will indicate on the Zone(s) selected).
+
+5. Press "YES' and system will show: Log off Engineer and Arm System.
+
+6. Press 'NO' to Arm the System as an Engineer - (This will enable the Engineer to disarm the
+system with the Engineer Code)
+
+7. Activate each of the Zone(s) selected above.
+
+8. Disarm the system with Engineer Code and then check that the signals have been sent correctly.
+
