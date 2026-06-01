@@ -1,86 +1,84 @@
-# Computer Symbols Reference: Names, Usage, and Origins
-
-This document lists common symbols encountered in programming, computing, and general tech usage. It includes **names**, **primary uses**, and **historical or origin notes**.
-
----
-
-## Arithmetic Symbols
-
-| Symbol | Name                  | Usage                             | Origin / Notes                                          |
-| ------ | --------------------- | --------------------------------- | ------------------------------------------------------- |
-| +      | Plus                  | Addition, concatenation           | Latin plus; used in math since 15th century             |
-| -      | Minus                 | Subtraction, negation             | Latin minus; math notation                              |
-| *      | Asterisk              | Multiplication, pointer, wildcard | Medieval manuscript mark; multiplication in programming |
-| /      | Slash / Forward Slash | Division, path separator          | Originated as fraction bar; paths in Unix systems       |
-| %      | Percent / Modulus     | Percentage, modulo operation      | Latin per centum, "per hundred"                         |
-| **     | Exponent / Power      | Exponentiation (Python)           | Programming convention, visual doubling for clarity     |
-
----
-
-## Comparison & Logic Symbols
-
-| Symbol | Name                  | Usage            | Origin / Notes                                                   |
-| ------ | --------------------- | ---------------- | ---------------------------------------------------------------- |
-| ==     | Equal to              | Comparison       | Programming equality operator; distinguishes from assignment (=) |
-| !=     | Not equal             | Comparison       | C-style inequality                                               |
-| >      | Greater than          | Comparison       | Standard math symbol                                             |
-| <      | Less than             | Comparison       | Standard math symbol                                             |
-| >=     | Greater than or equal | Comparison       | Programming adaptation                                           |
-| <=     | Less than or equal    | Comparison       | Programming adaptation                                           |
-| &&     | Logical AND           | Boolean logic    | C language convention                                            |
-| ||     | Logical OR            | Boolean logic    | C language convention                                            |
-| !      | Logical NOT           | Boolean negation | C / shell convention                                             |
-
----
-
-## Assignment & Punctuation Symbols
-
-| Symbol | Name                              | Usage                       | Origin / Notes                            |
-| ------ | --------------------------------- | --------------------------- | ----------------------------------------- |
-| =      | Assignment / Equals               | Assign values               | Ancient math; adapted to programming      |
-| +=     | Plus-equals                       | Increment assignment        | Derived from = operator usage             |
-| -=     | Minus-equals                      | Decrement assignment        | Derived from = operator usage             |
-| :=     | Walrus / Assignment (Python 3.8+) | Assign in expressions       | Nickname due to resemblance               |
-| ;      | Semicolon                         | Statement terminator        | Latin; used in programming for separation |
-| ,      | Comma                             | Separates items             | Latin punctuation                         |
-| :      | Colon                             | Key-value separator, labels | Latin punctuation                         |
-| .      | Dot / Period                      | Member access, decimal      | Originated as punctuation                 |
-| ..     | Double dot                        | Parent directory, range     | Filesystem notation                       |
-| ...    | Ellipsis                          | Variable args, continuation | Literal punctuation usage                 |
-
----
-
-## Grouping & Brackets
-
-| Symbol | Name                  | Usage                    | Origin / Notes                                          |                                   |
-| ------ | --------------------- | ------------------------ | ------------------------------------------------------- | --------------------------------- |
-| ()     | Parentheses           | Function calls, grouping | Latin punctuation                                       |                                   |
-| []     | Square brackets       | Arrays, indexing         | Medieval mathematical notation                          |                                   |
-| {}     | Curly braces / Braces | Code blocks, objects     | Programming adaptation                                  |                                   |
-| <>     | Angle brackets        | Generics, HTML tags      | Mathematical symbol for inequalities, adapted in markup |                                   |
-|        |                       | Pipe / Vertical bar      | Streams, OR                                             | Unix convention, logical operator |
-| \      | Backslash             | Escape sequences, paths  | Windows paths, escape character                         |                                   |
-| /      | Forward slash         | Paths, division          | Filesystem and math                                     |                                   |
-| @      | At                    | Decorators, email        | Commercial use, programming conventions                 |                                   |
-
----
-
-## Miscellaneous Symbols
-
-| Symbol | Name                      | Usage                          | Origin / Notes                               |
-| ------ | ------------------------- | ------------------------------ | -------------------------------------------- |
-| #      | Hash / Pound / Octothorpe | Comments, numbers, social tags | Early typewriters, telephony, C preprocessor |
-| $      | Dollar                    | Variables, currency            | Currency symbol, shell variables (Bash)      |
-| &      | Ampersand                 | Concatenation, logical AND     | Latin 'et' for "and"                         |
-| ^      | Caret                     | Exponentiation, bitwise XOR    | Proofreading mark, programming adaptation    |
-| ~      | Tilde                     | Bitwise NOT, home dir          | Spanish abbreviation, Unix home shortcut     |
-| `      | Backtick / Grave          | Command substitution           | Keyboard notation, shell usage               |
-| "      | Double quotes             | Strings, quotations            | Standard punctuation                         |
-| '      | Single quote              | Strings, char literals         | Standard punctuation                         |
-| ?      | Question mark             | Conditional, ternary operator  | Standard punctuation                         |
-| _      | Underscore                | Variable names, spacing        | Low line, typewriter adaptation              |
-| !      | Exclamation mark          | Boolean NOT, emphasis          | Standard punctuation, adapted                |
-
----
-
-This list is **not exhaustive**. Symbols vary by programming language, context, and era. The goal here is to provide a **comprehensive quick reference** for the most commonly used symbols in coding, configuration, and computing environments.
+{
+	"meta": {
+		"name": "Keyboard Symbols Dictionary",
+		"desc": "A comprehensive database of keyboard symbols, typographical marks, and code syntax characters.",
+		"version": "1.4"
+	},
+	"data": {
+		"dev_ref": {
+			"current_skillsets": {
+				"kb_sym_01": "Typographical Literacy"
+			}
+		},
+		"dictionary": {
+			"skillsets": {
+				"kb_sym_01": {
+					"levels": [
+						{"name": "Novice", "desc": "Can identify standard sentence ending punctuation.", "example": "Period, comma, question mark."},
+						{"name": "Beginner", "desc": "Understands structural and basic modifier keys.", "example": "Exclamation, slash, hyphen."},
+						{"name": "Intermediate", "desc": "Comfortable with enclosure characters and syntax operators.", "example": "Curly braces, square brackets, pipe."},
+						{"name": "Advanced", "desc": "Recognizes formatting, escaping, and bitwise operators.", "example": "Backtick, backslash, tilde."},
+						{"name": "Expert", "desc": "Deep knowledge of low-level character encoding, dead keys, and combining marks.", "example": "Caret, octothorpe, combining diacritics."}
+					],
+					"difficulties": [
+						{"name": "Trivial", "desc": "Standard single-key press, universally located.", "example": "Period key (.)."},
+						{"name": "Easy", "desc": "Requires a standard Shift modification.", "example": "Shift + 1 for Exclamation (!)."},
+						{"name": "Medium", "desc": "Requires AltGr, Option, or non-obvious shift combos.", "example": "Shift + ` for Tilde (~)."},
+						{"name": "Hard", "desc": "Inconsistent layout placement depending on ISO/ANSI standard.", "example": "Backslash (\\) or Pipe (|)."},
+						{"name": "Extreme", "desc": "Requires manual character encoding inputs or dead key combinations.", "example": "Alt + codes or Unicode hex input."}
+					]
+				}
+			},
+			"collections": [
+				{
+					"name": "Standard Prose Punctuation",
+					"id": "prose_punct",
+					"s_set": "kb_sym_01",
+					"desc": "Punctuation marks primarily used for structural flow and sentence termination in natural languages.",
+					"terms": [
+						{"name": "Period", "others": ["Full stop", "Dot"], "category": "Punctuation", "sub": "Terminators", "definition": "Used to mark the end of a declarative sentence, or as a decimal separator.", "example": "This is a sentence. 3.14", "level": 1, "difficulty": 1},
+						{"name": "Comma", "others": ["Tail mark"], "category": "Punctuation", "sub": "Pauses", "definition": "Indicates a slight pause, separates list items, or distinguishes clauses.", "example": "Apple, banana, and orange.", "level": 1, "difficulty": 1},
+						{"name": "Question Mark", "others": ["Query"], "category": "Punctuation", "sub": "Terminators", "definition": "Placed at the end of a sentence to denote a direct inquiry or doubt.", "example": "Who wrote this trash?", "level": 1, "difficulty": 2},
+						{"name": "Exclamation Mark", "others": ["Bang", "Screamer"], "category": "Punctuation", "sub": "Terminators", "definition": "Indicates strong emotion, high volume, or command; also used as a logical NOT in code.", "example": "Shut up! or !isTrue", "level": 2, "difficulty": 2},
+						{"name": "Semicolon", "others": ["Greek question mark"], "category": "Punctuation", "sub": "Pauses", "definition": "Links closely related independent clauses, or terminates statements in many programming languages.", "example": "I hate teaching; it pays horribly; let x = 5;", "level": 3, "difficulty": 2}
+					],
+					"categories": [
+						{
+							"name": "Punctuation",
+							"desc": "Standard marks used to format written prose and simple code dividers.",
+							"subs": [
+								{"name": "Terminators", "desc": "Symbols used to signify the complete end of an expression.", "example": ". or ?"},
+								{"name": "Pauses", "desc": "Symbols that break up or structure clauses.", "example": ", or ;"}
+							]
+						}
+					]
+				},
+				{
+					"name": "Programming & Syntax Symbols",
+					"id": "code_syntax",
+					"s_set": "kb_sym_01",
+					"desc": "Crucial symbols used heavily in code blocks, escape sequences, command-line arguments, and directory paths.",
+					"terms": [
+						{"name": "Backtick", "others": ["Grave accent", "Backquote"], "category": "Syntax", "sub": "Operators", "definition": "Used for template literals, system command execution, or markdown code fencing.", "example": "`code block`", "level": 4, "difficulty": 3},
+						{"name": "Pipe", "others": ["Vertical bar", "Broken bar"], "category": "Syntax", "sub": "Operators", "definition": "Used as a bitwise or logical OR operator, or to pipe terminal command output to another process.", "example": "cat logs.txt | grep error", "level": 3, "difficulty": 4},
+						{"name": "Tilde", "others": ["Swung dash", "Squiggly"], "category": "Syntax", "sub": "Operators", "definition": "Represents home directories in UNIX paths, bitwise NOT in programming, or approximation in math.", "example": "~/Documents or ~100", "level": 4, "difficulty": 3},
+						{"name": "Backslash", "others": ["Escape character", "Reverse solidus"], "category": "Syntax", "sub": "Pathways", "definition": "Used as a path separator in Windows environments and to escape special characters in string literals.", "example": "C:\\Windows or \\n", "level": 4, "difficulty": 4},
+						{"name": "Hash", "others": ["Pound", "Octothorpe", "Sharp"], "category": "Syntax", "sub": "Identifiers", "definition": "Denotes comments in scripting languages, ID selectors in CSS, preprocessor directives, or metadata tags.", "example": "#comment or #main-div", "level": 2, "difficulty": 2},
+						{"name": "Caret", "others": ["Hat", "Circumflex"], "category": "Syntax", "sub": "Operators", "definition": "Represents exponentiation, bitwise XOR, or regex anchors marking the beginning of a line.", "example": "2 ^ 8 or ^[A-Z]", "level": 5, "difficulty": 3}
+					],
+					"categories": [
+						{
+							"name": "Syntax",
+							"desc": "Characters utilized for lexical parsing, programmatic operators, and logical evaluations.",
+							"subs": [
+								{"name": "Operators", "desc": "Logical, mathematical, or terminal pipelines.", "example": "| or ~"},
+								{"name": "Pathways", "desc": "Characters formatting directory addresses.", "example": "\\"},
+								{"name": "Identifiers", "desc": "Prefixes signifying special variables, comments, or targets.", "example": "#"}
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+}
