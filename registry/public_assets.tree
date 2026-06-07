@@ -353,10 +353,10 @@ PublicAssets/
 │   │   │   │   │       ├── [tut]-FamilyManagement_Google - Copy.mix
 │   │   │   │   │       └── [tut]-FamilyManagement_Google.mix
 │   │   │   │   ├── Keyboard/
-│   │   │   │   │   ├── KeyboardSymbols.mld
 │   │   │   │   │   ├── [CH-GCPU]-KeyboardSymbols.mlb
 │   │   │   │   │   ├── [PC-KB]-Quick_ScreenCapture-Guide.mlg
-│   │   │   │   │   └── [PC-KB]-Quick_Screenshot-Guide.mlg
+│   │   │   │   │   ├── [PC-KB]-Quick_Screenshot-Guide.mlg
+│   │   │   │   │   └── [PC-KB]_KeyboardSymbols.mld
 │   │   │   │   └── ShortcutLinks/
 │   │   │   │       ├── KeyboardSymbols.mld
 │   │   │   │       ├── [CH-GCPU]-KeyboardSymbols.mlb
