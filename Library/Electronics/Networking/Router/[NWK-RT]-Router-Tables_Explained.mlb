@@ -1,0 +1,100 @@
+<#mku.file:"[NWK-RT]-Router-Tables_Explained.mlb">
+
+Document Title: Understanding Routing Tables
+Description: A comprehensive guide to the architecture, purpose, and logic of routing tables in consumer and enterprise network routers.
+Version: 1.0.0
+Author: Chatsir (Professor)
+Approved by: Pending
+Created date: 2026-06-05
+Location: London
+Organisation: ZIKYinc
+
+---
+
+# Table of Contents
+Page 1: Introduction to Routing Tables
+Page 2: Core Components of a Routing Table
+Page 3: How Routing Logic Works (The Decision Process)
+Page 4: Finishing Page
+Page 5: References & Tools
+Page 6: Index
+Page 7: License
+
+---
+
+## Page 1: Introduction to Routing Tables
+
+A router's primary job is to move data from one network to another. When a packet of data arrives at your router, the device does not automatically know where to send it. It relies on a internal database known as the **Routing Table**. 
+
+Think of a routing table as a specialized master map or a directory of destinations. It does not map individual devices (like your phone or laptop); instead, it maps entire network segments. Without a routing table, a router is completely blind, unable to forward data between your local home network (LAN) and the wider internet (WAN). Every device that operates at Layer 3 of the OSI model maintains a routing table to dictate its next hop.
+
+---
+
+## Page 2: Core Components of a Routing Table
+
+When viewing a routing table in your router's configuration utility, the data is organized into a matrix of distinct columns. While visual layouts vary by manufacturer, every routing table contains these essential parameters:
+
+* **Destination Network / Subnet Mask:** The target IP address range where the data is trying to go.
+* **Gateway / Next Hop:** The IP address of the next closest router along the path. For external traffic leaving your home, this is typically your Internet Service Provider's (ISP) gateway.
+* **Interface:** The physical or virtual port on the router used to exit toward the destination (e.g., `eth0`, `wlan0`, or `WAN`).
+* **Metric / Cost:** A numerical value assigning priority to a route. If multiple paths exist to the same destination, the router selects the route with the lowest metric.
+
+---
+
+## Page 3: How Routing Logic Works (The Decision Process)
+
+Routers process inbound traffic dynamically using a deterministic top-down evaluation strategy. When a packet arrives, the router extracts the destination IP address and applies the following rule sequence:
+
+### 1. Longest Match Match Rule
+The router compares the destination IP against all entries in the table. It looks for the most specific entry—meaning the entry with the longest subnet mask match (e.g., a match on a `/24` network is preferred over a `/16` network).
+
+### 2. Metric Evaluation
+If two entries match the destination perfectly with the exact same subnet mask, the router compares their metrics. The path with the lowest metric is injected into the routing cache, and the packet is forwarded out of the assigned interface.
+
+### 3. The Default Gateway (0.0.0.0/0)
+If the destination IP does not match *any* specific network listed in the table, the router falls back to the **Default Route** (`0.0.0.0/0`). This entry essentially means "for all unknown destinations, send the data here." In a home environment, this points directly to your ISP.
+
+---
+
+## Page 4: Finishing Page
+
+### Summary
+Routing tables are the foundational maps that allow routers to direct data across interconnected networks. They distill complex global infrastructure down to simple next-hop instructions based on destination prefixes, interfaces, and metrics.
+
+### Conclusions
+Whether managing a high-end enterprise core switch or a standard domestic broadband router, the underlying mechanics of prefix matching and default pathways remain identical. Understanding how to interpret these tables is vital for diagnosing connectivity gaps and structural drops.
+
+### Next Document
+* `Network Troubleshooting: Diagnosing Packet Loss and Route Failures`
+
+---
+
+## Page 5: References & Tools
+
+* RFC 1812 - Requirements for IP Version 4 Routers: https://datatracker.ietf.org/doc/html/rfc1812
+* Cisco Networking Academy - IP Routing Essentials: https://www.netacad.com/
+* Wireshark Packet Analysis Foundation: https://www.wireshark.org/
+
+---
+
+## Page 6: Index
+
+Default Route | Page 3
+Destination Network | Page 2, Page 3
+Gateway | Page 2, Page 3
+Interface | Page 2, Page 3
+Longest Match | Page 3
+Metric | Page 2, Page 3
+Next Hop | Page 2, Page 3
+Subnet Mask | Page 2, Page 3
+WAN | Page 1
+
+---
+
+## Page 7: License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

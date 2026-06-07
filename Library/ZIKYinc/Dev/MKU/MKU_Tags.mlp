@@ -14,13 +14,19 @@
 	
 ----.
 
+!!!!!!!!!!!!!!!!!-- 07/06/26 -- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--!!!!!!!!!!!!!!!!!
+-----------------!! Decided to stop confusing shit so no longer editing this until the Parser json is complete !!-----------------
+'''''''''''''''''__''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''__'''''''''''''''''
+
 	- TAGS - - - - 
 	UseWhere:
 	
 		Name:				Type:				Desc:
 		All					Any					Applies to any MKU file.
+		
 		Viewer				Modules				Refering to the MKU document viewer/editor
-		Win					Modules				Windows-accessable Tools
+		OS					Modules				Any OS system-level control
+		Win					Modules				Windows OS system-level control
 		Prompter			Modules				Power-Prompt Tools
 		HL					Modules				Our Homelearning app
 		ADJ					Modules				AI Radio-DJ Tool
@@ -90,7 +96,7 @@
 		inp			Input			Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a textbox
 		slid		Slider			Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a Slider
 		but			Button			Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a Button
-		comb		Combobox		Component		Dynamic			All				[]				[]						us[Y]				Create/Manipulate a multi-choice dropdown
+		comb		Combobox		Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a multi-choice dropdown
 		toolb		Toolbar			Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a textbox
 		comb		Combobox		Component		Dynamic			All				[]				[]						[Y]				Create/Manipulate a multi-choice dropdown
 		

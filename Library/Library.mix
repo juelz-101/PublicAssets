@@ -2,39 +2,47 @@
 	"meta": {
 		"type": "Index", "name": "LOBBY", "desc": "INDEX file for the Library's root folder.",
 		"file": "lobby.mix", "root": "PublicAssets", "path": "Library/",
-		"version": 1.0, "change_note": "Created file.", "change_date": "11/11/25"
+		"version": 2.0, "change_note": "Updated structure for future MKU features.", "change_date": "07/06/26"
 	},
 	"idx": {
-		"folder": {
+		"name": "Lib", "display_name": "Library Docs", "icon": "",
+		"desc": "Library Documents of random stuff",
+		"cfg": {"apply_to_subfolders": "on", "block_parent_indexes": "off", "fallback": "last" },
+		"flags": { "access": [], "status": [], "misc": [] },
+		"viewer": {
 			"header": "ZLIB_Lob",
 			"title": "ZIKYinc Library Lobby",
 			"subtitle": "Where would you like to take a peek at?",
+			"footer": "ZIKYinc 2025",
 			"img": {
 				"banner": [],
 				"main": [],
 				"acordian": [],
 				"bg": []
 			},
-			"footer": "ZIKYinc 2025",
-			"hidden": {
-				"desc": "files and folders that are hidden",
-				"files": [],
-				"folders": []
-			},
-			"debug": {
-				"desc": "files and folders that are only shown when debug mode is on.",
-				"files": [],
-				"folders": []
-			},
-			"admin": {
-				"desc": "files and folders that are only visible to Admin",
-				"files": [],
-				"folders": []
-			},
-			"subscriber": {
-				"desc": "files and folders that are only visible to subscribers",
-				"files": [],
-				"folders": []
+			"contents": {
+				"inc_subfolders": true,
+				"init": { "allow_digging": true, "flags": [ "+recent_changed:5@<", "+recent_comments:5@<" ], "LOOK": "d_<------ Remember to document this jump to fdb" },
+				"hidden": {
+					"desc": "files and folders that are hidden",
+					"files": [],
+					"folders": []
+				},
+				"debug": {
+					"desc": "files and folders that are only shown when debug mode is on.",
+					"files": [],
+					"folders": []
+				},
+				"admin": {
+					"desc": "files and folders that are only visible to Admin",
+					"files": [],
+					"folders": []
+				},
+				"subscriber": {
+					"desc": "files and folders that are only visible to subscribers",
+					"files": [],
+					"folders": []
+				}
 			}
 		}
 	}

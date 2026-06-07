@@ -77,7 +77,7 @@ Music:
 	- Tracks are assigned to disks in albums - (ie: music.albums[n].tracklist.cd1[])
 
 Flags:
-	Some flags are assumed if its opposite tag doesnt exist, I will list the assumed tags here:
+	Some flags are assumed if its opposite tag(s) doesnt exist, I will list the assumed tags here:
 		- Team: If the guest flag isnt used then they are a full time member of ZIKYinc.
-		- Free: If the purchase flag isnt used then the item is considered as it has a "free" flag.
+		- Free: If the purchase, sub or trial flag isnt used then the item is free.
 		- More: Im spending way too long on what AI can do in seconds, lets just build and work as we go.

@@ -953,6 +953,15 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/Mobile/Android/SamsungApps/GPS/QuickSetupMockGPSLocFree_2026.txt"
     }
   ],
+  "Library/Electronics/Networking": [],
+  "Library/Electronics/Networking/Router": [
+    {
+      "name": "[NWK-RT]-Router-Tables_Explained.mlb",
+      "ext": "mlb",
+      "path": "Library/Electronics/Networking/Router/[NWK-RT]-Router-Tables_Explained.mlb",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Networking/Router/[NWK-RT]-Router-Tables_Explained.mlb"
+    }
+  ],
   "Library/Geographical": [],
   "Library/Entertainment": [],
   "Library/Science": [],
@@ -3283,6 +3292,12 @@
       "ext": "zip",
       "path": "Scripts/WebDevelopment/v.2.0-react-module-2.zip",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/v.2.0-react-module-2.zip"
+    },
+    {
+      "name": "Library.mix",
+      "ext": "mix",
+      "path": "Scripts/WebDevelopment/Library.mix",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Scripts/WebDevelopment/Library.mix"
     }
   ],
   "Scripts/WebDevelopment/ModReg": [
