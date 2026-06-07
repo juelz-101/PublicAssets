@@ -1,5 +1,11 @@
 [
   {
+    "name": "[RF-00]_DD-MasterDB.json",
+    "ext": "json",
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-00]_DD-MasterDB.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-00]_DD-MasterDB.json"
+  },
+  {
     "name": "[RF-1a]_DD-Overview.txt",
     "ext": "txt",
     "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-1a]_DD-Overview.txt",
@@ -30,16 +36,16 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-2c]_DD-InterfaceToDiffusion.txt"
   },
   {
-    "name": "[RF-00]_DD-MasterDB.json",
-    "ext": "json",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-00]_DD-MasterDB.json",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-00]_DD-MasterDB.json"
+    "name": "[RF-2d]_DD-WhatCanSpacesDo.txt",
+    "ext": "txt",
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-2d]_DD-WhatCanSpacesDo.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-2d]_DD-WhatCanSpacesDo.txt"
   },
   {
-    "name": "[RF-]_DD-.txt",
+    "name": "[RF-3a]_DD-PromptStacking.txt",
     "ext": "txt",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-]_DD-.txt",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-]_DD-.txt"
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-3a]_DD-PromptStacking.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-3a]_DD-PromptStacking.txt"
   },
   {
     "name": "[RF-3b]_DD-ModularReconstruction.txt",
@@ -54,10 +60,16 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-3c]_DD-VibeTheory.txt"
   },
   {
-    "name": "[RF-3a]_DD-PromptStacking.txt",
+    "name": "[RF-3d]_DD-CreativeHacks.txt",
     "ext": "txt",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-3a]_DD-PromptStacking.txt",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-3a]_DD-PromptStacking.txt"
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-3d]_DD-CreativeHacks.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-3d]_DD-CreativeHacks.txt"
+  },
+  {
+    "name": "[RF-4a]_DD-ManualJSON_Intro.txt",
+    "ext": "txt",
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4a]_DD-ManualJSON_Intro.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4a]_DD-ManualJSON_Intro.txt"
   },
   {
     "name": "[RF-4a]_DD-WorkflowHacks_PT1.txt",
@@ -66,28 +78,28 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4a]_DD-WorkflowHacks_PT1.txt"
   },
   {
+    "name": "[RF-4b]_DD-ManualJSON_Remixes.txt",
+    "ext": "txt",
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4b]_DD-ManualJSON_Remixes.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4b]_DD-ManualJSON_Remixes.txt"
+  },
+  {
     "name": "[RF-4b]_DD-WorkflowHacks_PT2.txt",
     "ext": "txt",
     "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4b]_DD-WorkflowHacks_PT2.txt",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4b]_DD-WorkflowHacks_PT2.txt"
   },
   {
+    "name": "[RF-4c]_DD-ManualJSON_CoolTricks.txt",
+    "ext": "txt",
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4c]_DD-ManualJSON_CoolTricks.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4c]_DD-ManualJSON_CoolTricks.txt"
+  },
+  {
     "name": "[RF-4c]_DD-WorkflowHacks_PT3.txt",
     "ext": "txt",
     "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4c]_DD-WorkflowHacks_PT3.txt",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4c]_DD-WorkflowHacks_PT3.txt"
-  },
-  {
-    "name": "[RF-3d]_DD-CreativeHacks.txt",
-    "ext": "txt",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-3d]_DD-CreativeHacks.txt",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-3d]_DD-CreativeHacks.txt"
-  },
-  {
-    "name": "[RF-2d]_DD-WhatCanSpacesDo.txt",
-    "ext": "txt",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-2d]_DD-WhatCanSpacesDo.txt",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-2d]_DD-WhatCanSpacesDo.txt"
   },
   {
     "name": "[RF-4d]_DD-Spaces_WorkflowHacks_PT1.txt",
@@ -108,21 +120,9 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4f]_DD-Spaces_WorkflowHacks_PT3.txt"
   },
   {
-    "name": "[RF-4a]_DD-ManualJSON_Intro.txt",
+    "name": "[RF-]_DD-.txt",
     "ext": "txt",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4a]_DD-ManualJSON_Intro.txt",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4a]_DD-ManualJSON_Intro.txt"
-  },
-  {
-    "name": "[RF-4b]_DD-ManualJSON_Remixes.txt",
-    "ext": "txt",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4b]_DD-ManualJSON_Remixes.txt",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4b]_DD-ManualJSON_Remixes.txt"
-  },
-  {
-    "name": "[RF-4c]_DD-ManualJSON_CoolTricks.txt",
-    "ext": "txt",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4c]_DD-ManualJSON_CoolTricks.txt",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-4c]_DD-ManualJSON_CoolTricks.txt"
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-]_DD-.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/[RF-]_DD-.txt"
   }
 ]

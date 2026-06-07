@@ -1,9 +1,9 @@
 [
   {
-    "name": "SamsungRoutines-Reference.txt",
+    "name": "SamsungRoutines-AutomatedTimesheets.txt",
     "ext": "txt",
-    "path": "Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-Reference.txt",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-Reference.txt"
+    "path": "Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-AutomatedTimesheets.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-AutomatedTimesheets.txt"
   },
   {
     "name": "SamsungRoutines-DB.json",
@@ -12,9 +12,9 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-DB.json"
   },
   {
-    "name": "SamsungRoutines-AutomatedTimesheets.txt",
+    "name": "SamsungRoutines-Reference.txt",
     "ext": "txt",
-    "path": "Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-AutomatedTimesheets.txt",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-AutomatedTimesheets.txt"
+    "path": "Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-Reference.txt",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/Mobile/Android/SamsungApps/Routines/SamsungRoutines-Reference.txt"
   }
 ]

@@ -1,9 +1,9 @@
 [
   {
-    "name": "Interface_Mechanics.pdf",
+    "name": "AIPers.pdf",
     "ext": "pdf",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Interface_Mechanics.pdf",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Interface_Mechanics.pdf"
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/AIPers.pdf",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/AIPers.pdf"
   },
   {
     "name": "Exercise1.pdf",
@@ -12,10 +12,22 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Exercise1.pdf"
   },
   {
-    "name": "[RF-1a]_DD-Overview.pdf",
+    "name": "Functions.pdf",
     "ext": "pdf",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/[RF-1a]_DD-Overview.pdf",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/[RF-1a]_DD-Overview.pdf"
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Functions.pdf",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Functions.pdf"
+  },
+  {
+    "name": "Interface_Mechanics.pdf",
+    "ext": "pdf",
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Interface_Mechanics.pdf",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Interface_Mechanics.pdf"
+  },
+  {
+    "name": "Interface_Mechanics2.pdf",
+    "ext": "pdf",
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Interface_Mechanics2.pdf",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Interface_Mechanics2.pdf"
   },
   {
     "name": "Plan.pdf",
@@ -24,21 +36,9 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Plan.pdf"
   },
   {
-    "name": "AIPers.pdf",
+    "name": "[RF-1a]_DD-Overview.pdf",
     "ext": "pdf",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/AIPers.pdf",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/AIPers.pdf"
-  },
-  {
-    "name": "Functions.pdf",
-    "ext": "pdf",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Functions.pdf",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Functions.pdf"
-  },
-  {
-    "name": "Interface_Mechanics2.pdf",
-    "ext": "pdf",
-    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Interface_Mechanics2.pdf",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/Interface_Mechanics2.pdf"
+    "path": "Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/[RF-1a]_DD-Overview.pdf",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/AI/Riffusion/DeepDive/BK/[RF-1a]_DD-Overview.pdf"
   }
 ]

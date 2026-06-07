@@ -1,15 +1,15 @@
 [
   {
-    "name": "[PC-KB]_KeyboardSymbols.mld",
-    "ext": "mld",
-    "path": "Library/Electronics/Computing/GeneralComputing/Keyboard/[PC-KB]_KeyboardSymbols.mld",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/GeneralComputing/Keyboard/[PC-KB]_KeyboardSymbols.mld"
-  },
-  {
     "name": "[CH-GCPU]-KeyboardSymbols.mlb",
     "ext": "mlb",
     "path": "Library/Electronics/Computing/GeneralComputing/Keyboard/[CH-GCPU]-KeyboardSymbols.mlb",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/GeneralComputing/Keyboard/[CH-GCPU]-KeyboardSymbols.mlb"
+  },
+  {
+    "name": "[PC-KB]-Quick_ScreenCapture-Guide.mlg",
+    "ext": "mlg",
+    "path": "Library/Electronics/Computing/GeneralComputing/Keyboard/[PC-KB]-Quick_ScreenCapture-Guide.mlg",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/GeneralComputing/Keyboard/[PC-KB]-Quick_ScreenCapture-Guide.mlg"
   },
   {
     "name": "[PC-KB]-Quick_Screenshot-Guide.mlg",
@@ -18,9 +18,9 @@
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/GeneralComputing/Keyboard/[PC-KB]-Quick_Screenshot-Guide.mlg"
   },
   {
-    "name": "[PC-KB]-Quick_ScreenCapture-Guide.mlg",
-    "ext": "mlg",
-    "path": "Library/Electronics/Computing/GeneralComputing/Keyboard/[PC-KB]-Quick_ScreenCapture-Guide.mlg",
-    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/GeneralComputing/Keyboard/[PC-KB]-Quick_ScreenCapture-Guide.mlg"
+    "name": "[PC-KB]_KeyboardSymbols.mld",
+    "ext": "mld",
+    "path": "Library/Electronics/Computing/GeneralComputing/Keyboard/[PC-KB]_KeyboardSymbols.mld",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Library/Electronics/Computing/GeneralComputing/Keyboard/[PC-KB]_KeyboardSymbols.mld"
   }
 ]
