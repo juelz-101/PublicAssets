@@ -3,7 +3,7 @@
   "name": "QR Gem Generator",
   "category": "Web Tool",
   "source_type": "local",
-  "app_path": "apps/qr_gem/index.html",
+  "app_path": "public/apps/qr_gem/index.html",
   "banner_image": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
   "summary": "The ultimate internal QR code generator. Fast, clean, and locally hosted for maximum privacy.",
   "description": "QR Gem is our bespoke internal tool for creating high-quality QR codes for use in marketing, creative projects, and quick data sharing. It features instant generation, multiple export formats, and zero-tracking for your peace of mind. Built by Juelz-101 for the ZIKYinc crew.",
