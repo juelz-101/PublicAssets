@@ -1,0 +1,20 @@
+[
+  {
+    "name": "contentService.ts",
+    "ext": "ts",
+    "path": "Website/apps/hub/services/contentService.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/services/contentService.ts"
+  },
+  {
+    "name": "ToolBridge.ts",
+    "ext": "ts",
+    "path": "Website/apps/hub/services/ToolBridge.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/services/ToolBridge.ts"
+  },
+  {
+    "name": "dbService.ts",
+    "ext": "ts",
+    "path": "Website/apps/hub/services/dbService.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/services/dbService.ts"
+  }
+]

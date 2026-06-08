@@ -1,0 +1,32 @@
+[
+  {
+    "name": "CreatorTab.tsx",
+    "ext": "tsx",
+    "path": "Website/apps/hub/components/debug/CreatorTab.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/debug/CreatorTab.tsx"
+  },
+  {
+    "name": "DataTab.tsx",
+    "ext": "tsx",
+    "path": "Website/apps/hub/components/debug/DataTab.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/debug/DataTab.tsx"
+  },
+  {
+    "name": "FloatingOverridesCard.tsx",
+    "ext": "tsx",
+    "path": "Website/apps/hub/components/debug/FloatingOverridesCard.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/debug/FloatingOverridesCard.tsx"
+  },
+  {
+    "name": "OverridesTab.tsx",
+    "ext": "tsx",
+    "path": "Website/apps/hub/components/debug/OverridesTab.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/debug/OverridesTab.tsx"
+  },
+  {
+    "name": "SafeModeTab.tsx",
+    "ext": "tsx",
+    "path": "Website/apps/hub/components/debug/SafeModeTab.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/debug/SafeModeTab.tsx"
+  }
+]

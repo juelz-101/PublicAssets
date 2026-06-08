@@ -1,0 +1,53 @@
+{
+	"meta": {
+		"name": "HOMEPAGE", "desc": "Website landing page",
+		"file": "home.json", "root": "PublicAssets", "path": "website/lib/",
+		"version": 2.1, "change_note": "Moved 'Who We Are' to about.json", "change_date": "11/11/25"
+	},
+	"welcome": {
+		"title": "Welcome to ZIKYinc",
+		"image": "Website/img/photos/ZIKYinc-Header_FX.jpeg",
+		"subtitle": "Amplifying Underground Creativity",
+		"text": "Established in 2023 by Juelz-101, ZIKYinc is a groundbreaking record label and art publisher dedicated to discovering and elevating emerging talent. Supporting bedroom producers and developers."
+	},
+	"about": {
+		"whatWeDo": {
+			"title": "What We Do",
+			"logos": [
+				"Images/Logos/Main/[D]SimpleNoteDark.png",
+				"Images/Logos/Main/[C]ZIKYinc_Wave2.png",
+				"Images/Logos/Main/[C]ZIKYinc_Node.jpeg",
+				"Images/Logos/Main/[L]Juelz-FM-Logo.jpeg"
+			],
+			"services": [
+				"Produce and distribute music across diverse genres.",
+				"Publish and promote visual art.",
+				"Create platforms for emerging artists.",
+				"Develop creative apps and tools to help artists reach their full potential.",
+				"Promote homebrewed games and mods."
+			]
+		}
+	},
+	"featured": {
+		"title": "Latest Collaborations",
+		"images": [
+			"Images/Covers/AlbumArt/Dancing-In-The-Sunlight-JuelzFM-EmmaMT-Juelz-101-RIP-ZIKY--ZIKYinc-Inc.jpeg",
+			"Images/Covers/AlbumArt/Juelz-101-Lost-in-Trance-Alice-S-Cape-Juelz-FM-RIP-ZIKY-ZIKYinc-Inc.jpg",
+			"Images/Covers/AlbumArt/Juelz-101-ft-Tina-Triad-Move-To-The-Rhythm-RIP-Ziky-Juelz-FM-ZIKYinc-Inc.jpg"
+		]
+	},
+	"cta": {
+		"title": "Join Our Creative Journey",
+		"text": "Whether you're an artist seeking a platform or a fan discovering new talent, ZIKYinc welcomes you.",
+		"buttons": [
+			{
+				"text": "Explore Artists",
+				"link_url": "/artists"
+			},
+			{
+				"text": "Submit Your Work",
+				"link_url": "/about.json#submit"
+			}
+		]
+	}
+}

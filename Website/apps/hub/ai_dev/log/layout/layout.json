@@ -1,0 +1,5 @@
+
+{
+  "main_app": "Tabbed navigation with a HUD-style header and dynamic background. Content area uses a SectionPanel with blur and glassmorphism.",
+  "tool_launcher": "Full-screen (within content area) iframe container with an amber 'ZIKY_OS' control bar at the top and a status bar at the bottom. Uses a sandbox for security."
+}

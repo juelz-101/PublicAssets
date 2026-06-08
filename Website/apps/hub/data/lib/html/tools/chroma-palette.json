@@ -1,0 +1,26 @@
+
+{
+  "name": "Chroma Palette Generator",
+  "category": "Web Tool",
+  "source_type": "local",
+  "app_path": "apps/chroma-palette/index.html",
+  "banner_image": "Website/images/tools/Chroma-Palette-Banner.png",
+  "summary": "Instantly generate beautiful, accessible color palettes for your design projects.",
+  "description": "Chroma Palette Generator is a simple yet powerful tool for designers and developers. Generate harmonious color schemes with ease, check for accessibility contrast ratios, and export your palettes in various formats. This tool is built to be fast, intuitive, and run directly in your browser.",
+  "release_date": "2024-07-20",
+  "tags": ["design", "color", "utility", "web", "accessibility"],
+  "image_gallery": [
+    "Website/images/tools/gallery/chroma_1.png",
+    "Website/images/tools/gallery/chroma_2.png"
+  ],
+  "links": [
+    {
+      "title": "GitHub Repository",
+      "link": "https://github.com/juelz-101/PublicAssets"
+    }
+  ],
+  "behind_the_scenes": {
+    "concept": "The idea was to create a zero-install, highly responsive color tool that helps creatives make better design choices faster.",
+    "tech_stack": [ "HTML", "CSS", "JavaScript" ]
+  }
+}

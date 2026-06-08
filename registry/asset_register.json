@@ -1822,12 +1822,6 @@
       "ext": "txt",
       "path": "Website/AI_Setup.txt",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/AI_Setup.txt"
-    },
-    {
-      "name": "index.html",
-      "ext": "html",
-      "path": "Website/index.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/index.html"
     }
   ],
   "Website/lib": [
@@ -2924,18 +2918,738 @@
   "Website/apps": [],
   "Website/apps/qr_gem": [
     {
+      "name": "App.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/qr_gem/App.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/App.tsx"
+    },
+    {
+      "name": "config.json",
+      "ext": "json",
+      "path": "Website/apps/qr_gem/config.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/config.json"
+    },
+    {
       "name": "index.html",
       "ext": "html",
       "path": "Website/apps/qr_gem/index.html",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/index.html"
+    },
+    {
+      "name": "index.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/qr_gem/index.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/index.tsx"
+    },
+    {
+      "name": "metadata.json",
+      "ext": "json",
+      "path": "Website/apps/qr_gem/metadata.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/metadata.json"
+    },
+    {
+      "name": "package.json",
+      "ext": "json",
+      "path": "Website/apps/qr_gem/package.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/package.json"
+    },
+    {
+      "name": "presets.ts",
+      "ext": "ts",
+      "path": "Website/apps/qr_gem/presets.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/presets.ts"
+    },
+    {
+      "name": "README.md",
+      "ext": "md",
+      "path": "Website/apps/qr_gem/README.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/README.md"
+    },
+    {
+      "name": "tsconfig.json",
+      "ext": "json",
+      "path": "Website/apps/qr_gem/tsconfig.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/tsconfig.json"
+    },
+    {
+      "name": "types.ts",
+      "ext": "ts",
+      "path": "Website/apps/qr_gem/types.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/types.ts"
+    },
+    {
+      "name": "vite.config.ts",
+      "ext": "ts",
+      "path": "Website/apps/qr_gem/vite.config.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/vite.config.ts"
     }
   ],
-  "Website/apps/qr_gem/assets": [
+  "Website/apps/qr_gem/components": [
     {
-      "name": "index-C0Ja5kcY.js",
-      "ext": "js",
-      "path": "Website/apps/qr_gem/assets/index-C0Ja5kcY.js",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/assets/index-C0Ja5kcY.js"
+      "name": "QrSettings.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/qr_gem/components/QrSettings.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/components/QrSettings.tsx"
+    },
+    {
+      "name": "svg-presets.ts",
+      "ext": "ts",
+      "path": "Website/apps/qr_gem/components/svg-presets.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/components/svg-presets.ts"
+    },
+    {
+      "name": "Debug.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/qr_gem/components/Debug.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/components/Debug.tsx"
+    },
+    {
+      "name": "SavePresetModal.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/qr_gem/components/SavePresetModal.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/components/SavePresetModal.tsx"
+    }
+  ],
+  "Website/apps/qr_gem/components/ui": [
+    {
+      "name": "icons.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/qr_gem/components/ui/icons.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/components/ui/icons.tsx"
+    }
+  ],
+  "Website/apps/qr_gem/modules": [],
+  "Website/apps/qr_gem/modules/io": [
+    {
+      "name": "import-utils.ts",
+      "ext": "ts",
+      "path": "Website/apps/qr_gem/modules/io/import-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/modules/io/import-utils.ts"
+    }
+  ],
+  "Website/apps/qr_gem/modules/theme": [
+    {
+      "name": "theme.ts",
+      "ext": "ts",
+      "path": "Website/apps/qr_gem/modules/theme/theme.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/modules/theme/theme.ts"
+    }
+  ],
+  "Website/apps/qr_gem/modules/db": [
+    {
+      "name": "idb-utils.ts",
+      "ext": "ts",
+      "path": "Website/apps/qr_gem/modules/db/idb-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/modules/db/idb-utils.ts"
+    }
+  ],
+  "Website/apps/hub": [
+    {
+      "name": "metadata.json",
+      "ext": "json",
+      "path": "Website/apps/hub/metadata.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/metadata.json"
+    },
+    {
+      "name": "App.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/App.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/App.tsx"
+    },
+    {
+      "name": "appdata.json",
+      "ext": "json",
+      "path": "Website/apps/hub/appdata.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/appdata.json"
+    },
+    {
+      "name": "index.html",
+      "ext": "html",
+      "path": "Website/apps/hub/index.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/index.html"
+    },
+    {
+      "name": "index.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/index.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/index.tsx"
+    },
+    {
+      "name": "package.json",
+      "ext": "json",
+      "path": "Website/apps/hub/package.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/package.json"
+    },
+    {
+      "name": "types.ts",
+      "ext": "ts",
+      "path": "Website/apps/hub/types.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/types.ts"
+    },
+    {
+      "name": "tsconfig.json",
+      "ext": "json",
+      "path": "Website/apps/hub/tsconfig.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/tsconfig.json"
+    },
+    {
+      "name": "vite.config.ts",
+      "ext": "ts",
+      "path": "Website/apps/hub/vite.config.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/vite.config.ts"
+    },
+    {
+      "name": "README.md",
+      "ext": "md",
+      "path": "Website/apps/hub/README.md",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/README.md"
+    }
+  ],
+  "Website/apps/hub/ai_dev": [
+    {
+      "name": "todo.json",
+      "ext": "json",
+      "path": "Website/apps/hub/ai_dev/todo.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/ai_dev/todo.json"
+    }
+  ],
+  "Website/apps/hub/ai_dev/log": [],
+  "Website/apps/hub/ai_dev/log/layout": [
+    {
+      "name": "layout.json",
+      "ext": "json",
+      "path": "Website/apps/hub/ai_dev/log/layout/layout.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/ai_dev/log/layout/layout.json"
+    }
+  ],
+  "Website/apps/hub/ai_dev/log/update_log": [
+    {
+      "name": "log.json",
+      "ext": "json",
+      "path": "Website/apps/hub/ai_dev/log/update_log/log.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/ai_dev/log/update_log/log.json"
+    }
+  ],
+  "Website/apps/hub/apps": [],
+  "Website/apps/hub/apps/shared": [
+    {
+      "name": "tool-client.ts",
+      "ext": "ts",
+      "path": "Website/apps/hub/apps/shared/tool-client.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/apps/shared/tool-client.ts"
+    }
+  ],
+  "Website/apps/hub/components": [
+    {
+      "name": "CategoryDashboard.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/CategoryDashboard.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/CategoryDashboard.tsx"
+    },
+    {
+      "name": "DebugMenu.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/DebugMenu.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/DebugMenu.tsx"
+    },
+    {
+      "name": "GitHubImage.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/GitHubImage.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/GitHubImage.tsx"
+    },
+    {
+      "name": "Header.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/Header.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/Header.tsx"
+    },
+    {
+      "name": "ImageGallery.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/ImageGallery.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/ImageGallery.tsx"
+    },
+    {
+      "name": "MarkdownRenderer.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/MarkdownRenderer.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/MarkdownRenderer.tsx"
+    },
+    {
+      "name": "SearchAndFilter.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/SearchAndFilter.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/SearchAndFilter.tsx"
+    },
+    {
+      "name": "SectionPanel.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/SectionPanel.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/SectionPanel.tsx"
+    },
+    {
+      "name": "SideNav.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/SideNav.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/SideNav.tsx"
+    },
+    {
+      "name": "ViewSwitcher.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/ViewSwitcher.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/ViewSwitcher.tsx"
+    }
+  ],
+  "Website/apps/hub/components/about": [
+    {
+      "name": "ContactUsTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/about/ContactUsTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/about/ContactUsTab.tsx"
+    },
+    {
+      "name": "DynamicForm.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/about/DynamicForm.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/about/DynamicForm.tsx"
+    },
+    {
+      "name": "JoinOurCrewTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/about/JoinOurCrewTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/about/JoinOurCrewTab.tsx"
+    },
+    {
+      "name": "MeetTheTeamTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/about/MeetTheTeamTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/about/MeetTheTeamTab.tsx"
+    },
+    {
+      "name": "SubmitWorkTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/about/SubmitWorkTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/about/SubmitWorkTab.tsx"
+    },
+    {
+      "name": "WhoWeAreTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/about/WhoWeAreTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/about/WhoWeAreTab.tsx"
+    }
+  ],
+  "Website/apps/hub/components/art": [
+    {
+      "name": "ArtCard.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/art/ArtCard.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/art/ArtCard.tsx"
+    }
+  ],
+  "Website/apps/hub/components/community": [
+    {
+      "name": "CommunityCard.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/community/CommunityCard.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/community/CommunityCard.tsx"
+    }
+  ],
+  "Website/apps/hub/components/creator": [
+    {
+      "name": "AlbumForm.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/creator/AlbumForm.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/creator/AlbumForm.tsx"
+    },
+    {
+      "name": "ArtistForm.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/creator/ArtistForm.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/creator/ArtistForm.tsx"
+    },
+    {
+      "name": "DataTypeSelector.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/creator/DataTypeSelector.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/creator/DataTypeSelector.tsx"
+    },
+    {
+      "name": "JsonPreview.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/creator/JsonPreview.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/creator/JsonPreview.tsx"
+    },
+    {
+      "name": "SongForm.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/creator/SongForm.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/creator/SongForm.tsx"
+    }
+  ],
+  "Website/apps/hub/components/creator/form": [
+    {
+      "name": "FormComponents.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/creator/form/FormComponents.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/creator/form/FormComponents.tsx"
+    },
+    {
+      "name": "JsonTextArea.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/creator/form/JsonTextArea.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/creator/form/JsonTextArea.tsx"
+    },
+    {
+      "name": "ObjectArrayInput.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/creator/form/ObjectArrayInput.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/creator/form/ObjectArrayInput.tsx"
+    },
+    {
+      "name": "StringArrayInput.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/creator/form/StringArrayInput.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/creator/form/StringArrayInput.tsx"
+    }
+  ],
+  "Website/apps/hub/components/debug": [
+    {
+      "name": "CreatorTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/debug/CreatorTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/debug/CreatorTab.tsx"
+    },
+    {
+      "name": "DataTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/debug/DataTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/debug/DataTab.tsx"
+    },
+    {
+      "name": "FloatingOverridesCard.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/debug/FloatingOverridesCard.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/debug/FloatingOverridesCard.tsx"
+    },
+    {
+      "name": "OverridesTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/debug/OverridesTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/debug/OverridesTab.tsx"
+    },
+    {
+      "name": "SafeModeTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/debug/SafeModeTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/debug/SafeModeTab.tsx"
+    }
+  ],
+  "Website/apps/hub/components/gaming": [
+    {
+      "name": "GamingCard.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/gaming/GamingCard.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/gaming/GamingCard.tsx"
+    }
+  ],
+  "Website/apps/hub/components/library": [
+    {
+      "name": "AislesTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/library/AislesTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/library/AislesTab.tsx"
+    },
+    {
+      "name": "DictionaryTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/library/DictionaryTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/library/DictionaryTab.tsx"
+    },
+    {
+      "name": "MarkdownViewer.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/library/MarkdownViewer.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/library/MarkdownViewer.tsx"
+    }
+  ],
+  "Website/apps/hub/components/music": [
+    {
+      "name": "ConveyorView.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/music/ConveyorView.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/music/ConveyorView.tsx"
+    },
+    {
+      "name": "DynamicLayout.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/music/DynamicLayout.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/music/DynamicLayout.tsx"
+    },
+    {
+      "name": "IntroductionTab.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/music/IntroductionTab.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/music/IntroductionTab.tsx"
+    },
+    {
+      "name": "ItemDetailView.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/music/ItemDetailView.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/music/ItemDetailView.tsx"
+    },
+    {
+      "name": "ListView.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/music/ListView.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/music/ListView.tsx"
+    },
+    {
+      "name": "MusicCard.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/music/MusicCard.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/music/MusicCard.tsx"
+    }
+  ],
+  "Website/apps/hub/components/tools": [
+    {
+      "name": "StandaloneLoader.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/tools/StandaloneLoader.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/tools/StandaloneLoader.tsx"
+    },
+    {
+      "name": "ToolCard.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/tools/ToolCard.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/tools/ToolCard.tsx"
+    },
+    {
+      "name": "ToolDetailView.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/tools/ToolDetailView.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/tools/ToolDetailView.tsx"
+    },
+    {
+      "name": "ToolManager.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/components/tools/ToolManager.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/components/tools/ToolManager.tsx"
+    }
+  ],
+  "Website/apps/hub/data": [
+    {
+      "name": "Library.mix",
+      "ext": "mix",
+      "path": "Website/apps/hub/data/Library.mix",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/Library.mix"
+    },
+    {
+      "name": "about.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/about.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/about.json"
+    },
+    {
+      "name": "home.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/home.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/home.json"
+    },
+    {
+      "name": "appdata.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/appdata.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/appdata.json"
+    },
+    {
+      "name": "art.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/art.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/art.json"
+    },
+    {
+      "name": "community.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/community.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/community.json"
+    },
+    {
+      "name": "gaming.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/gaming.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/gaming.json"
+    },
+    {
+      "name": "library.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/library.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/library.json"
+    },
+    {
+      "name": "manifest.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/manifest.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/manifest.json"
+    },
+    {
+      "name": "music.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/music.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/music.json"
+    },
+    {
+      "name": "tools.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/tools.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/tools.json"
+    }
+  ],
+  "Website/apps/hub/data/lib": [],
+  "Website/apps/hub/data/lib/html": [],
+  "Website/apps/hub/data/lib/html/tools": [
+    {
+      "name": "chroma-palette.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/lib/html/tools/chroma-palette.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/lib/html/tools/chroma-palette.json"
+    },
+    {
+      "name": "waveform-converter.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/lib/html/tools/waveform-converter.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/lib/html/tools/waveform-converter.json"
+    }
+  ],
+  "Website/apps/hub/data/lib/tools": [
+    {
+      "name": "qrg.json",
+      "ext": "json",
+      "path": "Website/apps/hub/data/lib/tools/qrg.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/lib/tools/qrg.json"
+    }
+  ],
+  "Website/apps/hub/migrated_prompt_history": [
+    {
+      "name": "prompt_2026-02-01T05_11_33.993Z.json",
+      "ext": "json",
+      "path": "Website/apps/hub/migrated_prompt_history/prompt_2026-02-01T05_11_33.993Z.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/migrated_prompt_history/prompt_2026-02-01T05_11_33.993Z.json"
+    },
+    {
+      "name": "prompt_2026-02-01T07_10_26.490Z.json",
+      "ext": "json",
+      "path": "Website/apps/hub/migrated_prompt_history/prompt_2026-02-01T07_10_26.490Z.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/migrated_prompt_history/prompt_2026-02-01T07_10_26.490Z.json"
+    },
+    {
+      "name": "prompt_2026-02-10T00_35_23.831Z.json",
+      "ext": "json",
+      "path": "Website/apps/hub/migrated_prompt_history/prompt_2026-02-10T00_35_23.831Z.json",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/migrated_prompt_history/prompt_2026-02-10T00_35_23.831Z.json"
+    }
+  ],
+  "Website/apps/hub/pages": [
+    {
+      "name": "CreatorPage.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/pages/CreatorPage.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/pages/CreatorPage.tsx"
+    },
+    {
+      "name": "AboutPage.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/pages/AboutPage.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/pages/AboutPage.tsx"
+    },
+    {
+      "name": "ArtPage.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/pages/ArtPage.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/pages/ArtPage.tsx"
+    },
+    {
+      "name": "CommunityPage.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/pages/CommunityPage.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/pages/CommunityPage.tsx"
+    },
+    {
+      "name": "GamingPage.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/pages/GamingPage.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/pages/GamingPage.tsx"
+    },
+    {
+      "name": "HomePage.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/pages/HomePage.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/pages/HomePage.tsx"
+    },
+    {
+      "name": "LibraryPage.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/pages/LibraryPage.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/pages/LibraryPage.tsx"
+    },
+    {
+      "name": "ToolsPage.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/pages/ToolsPage.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/pages/ToolsPage.tsx"
+    },
+    {
+      "name": "MusicPage.tsx",
+      "ext": "tsx",
+      "path": "Website/apps/hub/pages/MusicPage.tsx",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/pages/MusicPage.tsx"
+    }
+  ],
+  "Website/apps/hub/modules": [],
+  "Website/apps/hub/modules/data": [
+    {
+      "name": "db.ts",
+      "ext": "ts",
+      "path": "Website/apps/hub/modules/data/db.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/modules/data/db.ts"
+    }
+  ],
+  "Website/apps/hub/modules/io": [
+    {
+      "name": "import-utils.ts",
+      "ext": "ts",
+      "path": "Website/apps/hub/modules/io/import-utils.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/modules/io/import-utils.ts"
+    }
+  ],
+  "Website/apps/hub/services": [
+    {
+      "name": "contentService.ts",
+      "ext": "ts",
+      "path": "Website/apps/hub/services/contentService.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/services/contentService.ts"
+    },
+    {
+      "name": "ToolBridge.ts",
+      "ext": "ts",
+      "path": "Website/apps/hub/services/ToolBridge.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/services/ToolBridge.ts"
+    },
+    {
+      "name": "dbService.ts",
+      "ext": "ts",
+      "path": "Website/apps/hub/services/dbService.ts",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/services/dbService.ts"
+    }
+  ],
+  "Website/apps/hub/public": [],
+  "Website/apps/hub/public/apps": [],
+  "Website/apps/hub/public/apps/qr_gem": [
+    {
+      "name": "index.html",
+      "ext": "html",
+      "path": "Website/apps/hub/public/apps/qr_gem/index.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/public/apps/qr_gem/index.html"
     }
   ],
   "Website/public": [],
@@ -2954,14 +3668,6 @@
       "ext": "js",
       "path": "Website/public/apps/qr_gem/assets/index-C0Ja5kcY.js",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/assets/index-C0Ja5kcY.js"
-    }
-  ],
-  "Website/assets": [
-    {
-      "name": "index-B5tlvprf.js",
-      "ext": "js",
-      "path": "Website/assets/index-B5tlvprf.js",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/assets/index-B5tlvprf.js"
     }
   ],
   "Templates": [],

@@ -1,0 +1,69 @@
+{
+  "updates": [
+    {
+      "version": 1.3,
+      "description": "Implemented a centralized Bridge pattern. Created ToolManager.tsx to map through tools and StandaloneLoader.tsx to render them. All communication happens via ToolBridge.ts and tool-client.ts using postMessage. Replaced ToolsPage.tsx content with ToolManager.",
+      "prompt": "Change of plan, as the QR-Gem still isnt loading: We are using a centralized Bridge pattern. Create a single ToolManager.tsx component that imports appdata.json. It should map through the tools and, when one is selected, render it inside a single reusable StandaloneLoader component. All communication between the main app and the tool must happen via the ToolBridge.ts service using postMessage"
+    },
+    {
+      "version": 1.2,
+      "description": "Implemented a failsafe in fetchManifest to ensure manifest.git exists by falling back to manifest.data.git if necessary. Reverted manifest.json structure to the intended restructured state.",
+      "prompt": "Implement a failsafe that searches the root if manifest.git fails."
+    },
+    {
+      "version": 1.1,
+      "description": "Temporarily moved 'git' configuration back to the root of manifest.json to resolve access errors. Added a reminder to todo.json to fix paths later.",
+      "prompt": "Move it all back into the root upon start up and add an entry to the to-do list to remind me to change the paths manually."
+    },
+    {
+      "version": 1.0,
+      "description": "Integrated db.ts module, created dbService.ts, created appdata.json, and initialized todo.json.",
+      "prompt": "Ive added the db.ts module and updated the manifest with our template user section, feel free to add to it. Lets intedgrate the new db.ts script. Note: We will still be using the file-utils for managing the git imports"
+    },
+    {
+      "version": 1.4,
+      "description": "Fixed library fetching bug by pointing code to use manifest.data.library.dir instead of manifest.library.dir. Also updated master_dictionary.mld fetch step to be case-insensitive to ensure dictionary files resolve on GitHub API responses.",
+      "prompt": "Hmmm i think some data may have been removed from appdata.json, causing the library to not work. Can you check and try to find out why the library docs and dictionaries arent loading (it just says \"this folder is empty\")"
+    },
+    {
+      "version": 1.5,
+      "description": "Updated AislesTab and contentService to support the new .mix file structure containing 'idx' instead of 'cfg'. Allowed .mld files to be listed in the Aisles Tab.",
+      "prompt": "Ok so the .mix structure has changed slightly. Heres what it looks like now: ... "
+    },
+    {
+      "version": 1.6,
+      "description": "Fixed dictionary merging logic. It was failing because the 'collections' property in 'Library/MasterDictionary.mld' was defined as an empty object '{}' instead of an empty array '[]', which caused a 'push is not a function' error. Also clarified error handling to show actual fetch URLs during data loads.",
+      "prompt": "Im getting this error: 'Failed to process library:' 'Could not fetch the file from GitHub.' What file isnt loading?"
+    },
+    {
+      "version": 1.7,
+      "description": "Updated MarkdownViewer to categorize files. Text-based files (md, txt, log, etc) render as documents. DB scripts and code display wrapped in Markdown codeblocks for styling.",
+      "prompt": "There will be many custom filetypes for many dfifferent useful workflows and tools, but that'll be sorted out later, for now we just want to ensure that all  filetypes are read, text based files show as documents, db based scripts show as databases and scripts show as code."
+    },
+    {
+      "version": 1.8,
+      "description": "Fixed an issue in contentService where an empty JSON document could crash the whole library loading process. Implemented try-catch logic around file fetches for resilience. Restored the SideNav UI pattern to the ToolsPage (similar to MusicPage) and strictly configured the StandaloneLoader Sandbox iframe parameters for the tools.",
+      "prompt": "The entire library breaks because 1 doc is left empty lol can we do something about that?\nWe need to get some tools integrated into the tools section, which we should be fetching from the git and displaying in an iframe.. I just noticed the UI is messed up for the Tools section, we need to put it back to how it was before like the other tabs..."
+    },
+    {
+      "version": 1.9,
+      "description": "Fixed the mix file errors by suppressing missing file logs to warnings (preventing console error toasts) and ensuring empty JSON arrays are not applied as meta data. Included a placeholder QR Gem build inside local public/ directory to resolve the 404 iframe white screen.",
+      "prompt": "Its not loading the qr gem app properly, no warnings, but still getting the faailed to fetch mix errors for the 2 files (the copy ones deleted and the other is just an empty array in file)"
+    },
+    {
+      "version": 1.10,
+      "description": "Resolved 'removed script still referencing' issue by stripping 'force-cache' from the GitHub Tree fetch logic. Also enhanced StandaloneLoader to correctly combine GitHub Page repository domain parameters for remotely hosted tools.",
+      "prompt": "Wait the link to the qr app is to the repo, well it needs to be combined with the rest of the repo params"
+    },
+    {
+      "version": 1.11,
+      "description": "Applet has been pre-configured to automatically construct GitHub Pages URLs for dynamically launched tools. Clarified the 1-to-many relationship of GitHub Pages and repository subdirectories to the user.",
+      "prompt": "github pages isnt set up, although the plan was to eventually learn how github pages works and get this website on it. Shall we do that? You'll have to guide me through it"
+    },
+    {
+      "version": 1.13,
+      "description": "Advised the user on folder structure for exporting the Hub app and provided a step-by-step guide for setting up GitHub Actions to automate GitHub Pages deployments for a Vite application.",
+      "prompt": "Yeah lets get it all set up so we can continue building new tools and stuff later. I'm about to export, should i put it in PublicAssets/Website/apps/hub, PublicAssets/Website/hub/ or is there a standard practice i should be using?\n\nYou might aswell begin explaining how we set up the automation while we are here"
+    }
+  ]
+}

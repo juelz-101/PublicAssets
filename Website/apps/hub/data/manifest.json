@@ -1,0 +1,285 @@
+{
+	"meta": {
+		"name": "MANIFEST", "desc": "Website config and file register.",
+		"file": "manifest.json", "root": "PublicAssets", "path": "Tools/MasterCfgs/",
+		"version": 3.0, "change_note": "Restructured to match our db.ts module. Added default player cfg, flags and player settings.", "change_date": "08/03/26"
+	},
+	"settings": {
+		"desc": "Dev-level backend settings for the site. Can be overridden in the debug menu",
+		"site": {
+			"default_tab": "Home"
+		},
+		"content": {
+			"auto_populate": {
+				"on": true,
+				"overwrite_existing_items": true,
+				"apply_to_genres": false
+			},
+			"show_debug_items_by_default": false
+		},
+		"player": {
+			"default_tab": "youtube",
+			"background_player": {
+				"allow": true,
+				"allow_preview": true,
+				"preview_time": 30000,
+				"default_preview_start": 0.5,
+				"use_platform": "soundcloud"
+			}
+		},
+		"ui": {
+			"show_ui_on_load": true,
+			"layout": {
+				"padding_base_unit_px": 4,
+				"main_content_padding_multiplier": 4,
+				"panel_padding_multiplier": 6,
+				"panel_border_radius_px": 16,
+				"panel_ring_opacity_percent": 10
+			},
+			"effects": {
+				"background_blur_px": 16,
+				"header_blur_px": 16,
+				"footer_blur_px": 16,
+				"hud_blur_px": 16,
+				"enable_glow_effect": true,
+				"glow_primary_color_rgba": "245, 158, 11",
+				"glow_primary_opacity_percent": 20
+			},
+			"backgrounds": {
+				"allow_auto_change": true,
+				"per_page_switching": true,
+				"change_interval_min_seconds": 20,
+				"change_interval_max_seconds": 40
+			}
+		},
+		"safe_mode": {
+			"desc": "Safe override that blocks or reduces the amount of requests to git",
+			"on": false,
+			"override": {
+				"images": {
+					"block_all_images": false,
+					"limit_image_requests": { "on": true, "max": 20, "mode": "session" },
+					"block_background": { "on": true, "mode": "one_and_done" },
+					"pages": {
+						"desc": "Block images from loading on specific pages by adding the page names below",
+						"on": false,
+						"pages": [ { "use": false, "page": "Example", "mode": "limit", "val": 10 } ]
+					}
+				},
+				"data": {
+					"block_all_online_data": false,
+					"block_local_data": false
+				},
+				"performance": {
+					"reduced_motion": false,
+					"low_bandwidth_mode": false
+				}
+			}
+		}
+	},
+	"data": {
+		"desc": "This is where data is stored for the app to use",
+		"git": {
+			"user": "juelz-101",
+			"repo": "PublicAssets",
+			"branch": "main",
+			"root": "",
+			"note": "All links in this file will begin from here. They will need to be joined together to make complete link"
+		},
+		"type": "find",
+		"get": ["home.json", "music.json", "art.json", "tools.json", "gaming.json", "library.json", "community.json", "about.json"],
+		"dir": "Website/lib",
+		"library": { "type": "all", "dir": "Library" },
+		"images": {
+			"logos": {
+				"type": "root",
+				"dir": "Website/img/logos",
+				"main_logo": "ZIKYinc-Music-Logo-Dark.png",
+				"music_logo": "ZIKYinc-Music-Logo-Dark.png",
+				"art_logo": "ZIKYinc_Art-Logo.png",
+				"dev_logo": "ZIKYinc_DevLogo.png",
+				"juelzfm_logo": "Juelz-FM-Logo.png"
+			},
+			"backgrounds": {
+				"main": "Website/img/bg/zikyinc",
+				"music": "",
+				"art": "",
+				"tools": "",
+				"gaming": "",
+				"community": "",
+				"library": "",
+				"about": "",
+				"juelzfm": ""
+			},
+			"misc": {
+				"album_art_dir": "img/album_art",
+				"html_dir": "lib/html",
+				"placeholders": {
+					"unknown": ["Images/Icons/Hex/PB_PlaceHolder1.png", "Images/Icons/Hex/PB_PlaceHolder2.png", "Images/Icons/Hex/PB_PlaceHolder3.png", "Images/Icons/Hex/PB_PlaceHolder4.png"],
+					"music": { "songs": ["Images/Icons/Hex/PB_PlaceHolder1.png", "Images/Icons/Hex/PB_PlaceHolder2.png", "Images/Icons/Hex/PB_PlaceHolder3.png", "Images/Icons/Hex/PB_PlaceHolder4.png"], "artists": ["Images/Icons/Hex/PB_PlaceHolder1.png", "Images/Icons/Hex/PB_PlaceHolder2.png", "Images/Icons/Hex/PB_PlaceHolder3.png", "Images/Icons/Hex/PB_PlaceHolder4.png"], "albums": ["Images/Icons/Hex/PB_PlaceHolder1.png", "Images/Icons/Hex/PB_PlaceHolder2.png", "Images/Icons/Hex/PB_PlaceHolder3.png", "Images/Icons/Hex/PB_PlaceHolder4.png"] },
+					"art": [],
+					"tools": [],
+					"gaming": [],
+					"community": [],
+					"library": [],
+					"about": [],
+					"juelzfm": []
+				}
+			}
+		},
+		"cfg": {
+			"master_config": { "use": true, "source": "git", "url": "Tools/MasterConfigs/website_cfg.json" },
+			"debug": { "on": true, "show_data_forms": true, "show_debug_icon": true }
+		},
+		"defaults": {
+			"desc": "Default parameters that are used if the item doesnt have parameters set",
+			"player": {
+				"youtube": { "modestbranding": true, "rel": 0, "playsinline": 1, "color": "white" },
+				"soundcloud": { "show_artwork": true, "show_comments": false, "show_user": true, "visual": true },
+				"spotify": { "theme": "0" },
+				"apple_music": { "show_artwork": true },
+				"bandcamp": { "theme": "large", "show_tracklist": false, "transparent": true }
+			}
+		},
+		"flags": [
+			{ "icon": "✨", "cat": "special", "flag": "new_release", "name": "New Release", "desc": "Include this item in the 'New Releases' section." },
+			{ "icon": "⭐", "cat": "special", "flag": "featured", "name": "Featured", "desc": "Include this item in the 'Featured' section." },
+			{ "icon": "📥", "cat": "file", "flag": "available", "name": "Available", "desc": "This item is available for download." },
+			{ "icon": "🔗", "cat": "app", "flag": "external", "name": "External", "desc": "This item is stored outside of this site." },
+			{ "icon": "🏷️", "cat": "cost", "flag": "priced", "name": "Priced", "desc": "This item is available to purchase." },
+			{ "icon": "🤝", "cat": "team", "flag": "guest", "name": "Guest Collab", "targets": ["music.artists", "art.artists", "gaming.developers", "tools.developers", "community.people" ], "desc": "This is a guest collaborator." },
+			{ "icon": "✅", "cat": "status", "flag": "complete", "name": "Completed", "desc": "This item and all of its related project assets are complete, uploaded and added to the websites database." },
+			{ "icon": "💾", "cat": "status", "flag": "awaiting_db", "name": "Awaiting DB Update", "desc": "This item is ready to have all of its data and assets transfered into the sites database." },
+			{ "icon": "📤", "cat": "status", "flag": "awaiting_upload", "name": "Awaiting Upload", "desc": "This item and all of its related assets are ready to upload." },
+			{ "icon": "📦", "cat": "status", "flag": "building_assets", "name": "Building Release-Assets", "desc": "This item is complete but release-assets are not yet complete (ie: Documentation, Cover-Art, etc." },
+			{ "icon": "📈", "cat": "status", "flag": "finishing_up", "name": "Finishing Up", "desc": "This item is almost complete." },
+			{ "icon": "🧪", "cat": "status", "flag": "testing", "name": "Testing", "desc": "This item is currently being tested for quality control." },
+			{ "icon": "🎯", "cat": "status", "flag": "focused", "name": "Focused", "desc": "This item is currently being worked on." },
+			{ "icon": "🔧", "cat": "status", "flag": "fixing", "name": "Fixing", "desc": "This item is currently being worked on to fix issues." },
+			{ "icon": "⏳", "cat": "status", "flag": "pending", "name": "Pending", "desc": "This item is currently queued and will be worked on soon." },
+			{ "icon": "🚀", "cat": "status", "flag": "initiating", "name": "Initiating", "desc": "This item has started development." },
+			{ "icon": "🗺️", "cat": "status", "flag": "planning", "name": "Planning", "desc": "This item is in its planning stage." },
+			{ "icon": "📋", "cat": "status", "flag": "todo", "name": "To-Do", "desc": "This item is currently a placeholder." },
+			{ "icon": "⚠️", "cat": "status", "flag": "incomplete", "name": "Incomplete", "desc": "This item has contents missing that will be added in the near future." },
+			{ "icon": "🚫", "cat": "status", "flag": "abandoned", "name": "Abandoned", "desc": "This item did not work out and development has stopped." },
+			{ "icon": "🛡️", "cat": "system", "flag": "disable_auto_pop", "name": "Disable Auto-Populate", "targets": ["music.albums"], "desc": "Disable auto-populate of contained items based of items in other lists assigned to this item." },
+			{ "icon": "🛠️", "cat": "system", "flag": "debug", "name": "Debug Item", "desc": "This item is a example/placeholder to be used to show data before real data is added (toggle in settings to show/hide this data)." }
+		],
+		"auto_populate": {
+			"desc": "Here are the arrays that are populated systematically",
+			"arrays": [
+				{"target": "music.albums[].artists", "src": "music.songs[].artists"},
+				{"target": "music.artists[].albums", "src": "music.songs[].albums"},
+				{"target": "art.artists[].galleries", "src": "art.galleries.{medium}.artist"},
+				{"target": "art.artists[].mediums", "src": "art.galleries.{medium}"},
+				{"target": "gaming.developers[].projects", "src": "gaming.{platform}[].developers[]"},
+				{"target": "gaming.developers[].roles", "src": "gaming.{platform}[].developers[].role"},
+				{"target": "gaming.developers[].platforms", "src": "gaming.{platform}"},
+				{"target": "tools.developers[].projects", "src": "tools.{platform}[].developers[]"},
+				{"target": "tools.developers[].roles", "src": "tools.{platform}[].developers[].role"},
+				{"target": "tools.developers[].platforms", "src": "tools.{platform}"},
+				{"target": "community.people[].events", "src": "community.events"},
+				{"target": "community.people[].roles", "src": "community.events[].roles[]"},
+				{"target": "community.people[].roles[].tasks", "src": "community.events[].tasks"}
+			]
+		},
+		"enum": {
+			"settings": {
+				"safe_mode": {
+					"background_mode": {
+						"desc": "Modes to set how to override the background image loading",
+						"default": "one_and_done",
+						"i": [
+							{ "name": "one_and_done", "desc": "Loads 1 image and never switches" },
+							{ "name": "limit", "desc": "Set a limit to how many requests can be made", "cfg": { "refresh_mode": { "desc": "Set when to refresh current count", "default": "never", "i": [ { "name": "never", "desc": "Never refresh limit" }, { "name": "on_app_load", "desc": "Refreshes when app is refreshed" }, { "name": "on_tab_switch", "desc": "Refreshes when switching tabs" }, { "name": "timer", "desc": "Set a timer" } ] } } },
+							{ "name": "block", "desc": "Dont allow any images to be set" }
+						]
+					}
+				}
+			}
+		}
+	},
+	"user": {
+		"info": "Define Databases and default params to add to them if they dont exist already",
+		"db": [
+			{ "type": "IndexedDB", "name": "ZIKYinc_Main", "id": "ZIMBDB", "mark_as": "default", "stores": [ { "store_name": "Project1", "store_id": "EX1", "mark_as": "default", "indexes": [] }] },
+			{ "type": "IndexedDB", "name": "Shared_ZIKYinc_Master", "id": "SZMDB", "version": 1, "mark_as": "shared", "stores": [ { "store_name": "User", "store_id": "USER", "mark_as": "default", "indexes": [] }] },
+			{ "type": "IndexedDB", "name": "Shared_ZIKYinc_Themes", "id": "SZTDB", "version": 1, "mark_as": "shared", "stores": [ { "store_name": "Presets", "store_id": "PRESETS", "mark_as": "default", "indexes": [] }, { "store_name": "Themes", "store_id": "THEMES", "mark_as": "additional", "indexes": [] }, { "store_name": "FX_Anim", "store_id": "FX_ANIM", "mark_as": "additional", "indexes": [] }, { "store_name": "Palettes", "store_id": "PALETTES", "mark_as": "additional", "indexes": [] }, { "store_name": "Categories", "store_id": "CATEGORIES", "mark_as": "additional", "indexes": [] }] }
+		],
+		"defaults": [
+			{
+				"id": "SZMDB",
+				"dev_version": 1.1, "changenote": "Added user type for admin, team, editor, advanced and basic user types",				"store_id": "USER",
+				"data": {
+					"account": {
+						"name": "NewUser",
+						"account_type": "basic",
+						"bio": "",
+						"country": "",
+						"status": {
+							"post": {"date_time": "", "post": "", "reactions": [], "responses": [] },
+							"indicator": "Online",
+							"mood": "Happy",
+							"task": "",
+							"post_history": []
+						},
+						"avatar": {
+							"character": "Default",
+							"art_style": "Minimal",
+							"background": "task_driven",
+							"shape_and_border": {"shape_params": {}, "border_params": {}},
+							"overrides": {
+								"desc": "Overrides allow you to set your avatars mood and tasks while still begin able to update your user mood and task.",
+								"info": "Empty string = Off (Synced to user)",
+								"mood": "",
+								"task": ""
+							}
+						}
+					},
+					"settings": {
+						"display": {
+							"theme": {"fav_theme": "H4CK3D", "use_where_possible": false},
+							"font_size_mult": 1.0
+						},
+						"data": {
+							"overwrite_recent": 50,
+							"file_caching": "Auto",
+							"accepted_permission": false,
+							"cache_type": "IndexedDB",
+							"local_location": {"db_id": "SZMDB", "store_id": "USER", "nest": "/system/file_cache"}
+						}
+					},
+					"system": {
+						"custom_field_data": [],
+						"file_cache": { "data": [], "scripts": [] }
+					}
+				}
+			},
+			{
+				"db_id": "",
+				"store_id": "",
+				"info": "This is to be merged with the projects default db and store (Strings are blank, so find default db then default store), if any keys below already exist in project data then leave them as they are.",
+				"data": {
+					"account": {
+						"info": "Any Project-Specific account data."
+					},
+					"settings": {
+						"display": {
+							"theme": "Default",
+							"allow_theme_sync": true,
+							"font_size_mult": 1.0
+						},
+						"data": {
+							"max_recent": 50
+							
+						}
+					},
+					"system": {
+						"custom_field_data": [],
+						"file_cache": { "data": [], "scripts": [] }
+					}
+				}
+			}
+		]
+	}
+}

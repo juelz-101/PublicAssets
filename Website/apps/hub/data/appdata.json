@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "name": "ZIKYinc_App",
+    "desc": "Main application data",
+    "date_made": "2026-03-08",
+    "version": 1.0,
+    "dev_version": 1.0
+  },
+  "settings": {
+    "display": {
+      "theme": "default"
+    },
+    "data": {
+      "cache": "IndexedDB"
+    }
+  },
+  "data": {
+    "app_data": {}
+  },
+  "user": {
+    "db": [
+      {
+        "type": "IndexedDB",
+        "name": "ZIKYinc_Apps",
+        "id": "ZIKAPPS",
+        "version": 1,
+        "mark_as": "default",
+        "shared": false,
+        "stores": [
+          {
+            "store_name": "THISAPPNAME",
+            "store_id": "ID",
+            "mark_as": "default"
+          }
+        ]
+      }
+    ],
+    "def": [
+      {
+        "desc": "The default user data template that gets transfered into the indexeddb store if it doesnt exist already.",
+        "db": "ZIKAPPS",
+        "store": "ID",
+        "data": {
+          "settings": {
+            "account": {}
+          },
+          "projects": {
+            "myproject": {}
+          }
+        }
+      }
+    ]
+  }
+}

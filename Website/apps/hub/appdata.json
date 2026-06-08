@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "name": "ZIKYinc Creative Showcase",
+    "desc": "A portal for music, art, and creative tools.",
+    "date_made": "2024-05-12",
+    "user_version": 1.0,
+    "dev_version": 2.8
+  },
+  "settings": {
+    "theme": "dark",
+    "auto_update_tools": false
+  },
+  "data": {},
+  "user_data": {
+    "user_database": [
+      {
+        "type": "IndexedDB",
+        "db_name": "ZIKYinc_Apps",
+        "db_id": "ZIKAPPS",
+        "version": 1,
+        "mark_as": "default",
+        "stores": [
+          {
+            "store_name": "CreativeShowcase",
+            "store_id": "USER",
+            "mark_as": "default",
+            "indexes": []
+          }
+        ]
+      }
+    ],
+    "user_defaults": {
+      "db_id": "ZIKAPPS",
+      "store_id": "USER",
+      "data": {
+        "favorites": [],
+        "recent_tools": []
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "chroma-palette.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/lib/html/tools/chroma-palette.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/lib/html/tools/chroma-palette.json"
+  },
+  {
+    "name": "waveform-converter.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/lib/html/tools/waveform-converter.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/lib/html/tools/waveform-converter.json"
+  }
+]

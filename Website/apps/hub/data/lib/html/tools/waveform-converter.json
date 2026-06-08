@@ -1,0 +1,30 @@
+{
+  "name": "WaveForm Audio Converter",
+  "category": "Windows Tool",
+  "banner_image": "Website/images/tools/Waveform-Converter-Banner.png",
+  "summary": "A lightweight, powerful tool to convert, trim, and apply effects to audio files.",
+  "description": "WaveForm is the essential utility for any audio producer on Windows. It offers batch conversion for multiple audio formats (WAV, MP3, FLAC, OGG), precise audio trimming, and a suite of basic effects like normalization and fading. Its intuitive interface and high-performance backend make audio processing a breeze.",
+  "release_date": "2024-08-01",
+  "tags": ["audio", "utility", "converter", "windows", "production"],
+  "downloads": [
+    {
+      "version": "1.0.0",
+      "path": "Website/downloads/tools/WaveformConverter_v1.0.0.zip",
+      "release_notes": "Initial release."
+    }
+  ],
+  "image_gallery": [
+    "Website/images/tools/gallery/waveform_1.png",
+    "Website/images/tools/gallery/waveform_2.png"
+  ],
+  "links": [
+    {
+      "title": "View Source on GitHub",
+      "link": "https://github.com/juelz-101/PublicAssets"
+    }
+  ],
+  "behind_the_scenes": {
+    "development": "Built with C# and the .NET Framework for maximum performance and compatibility on Windows systems.",
+    "motivation": "Created to fill a need for a simple, no-nonsense audio converter without the bloat of larger digital audio workstations."
+  }
+}

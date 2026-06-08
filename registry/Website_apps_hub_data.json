@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Library.mix",
+    "ext": "mix",
+    "path": "Website/apps/hub/data/Library.mix",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/Library.mix"
+  },
+  {
+    "name": "about.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/about.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/about.json"
+  },
+  {
+    "name": "home.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/home.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/home.json"
+  },
+  {
+    "name": "appdata.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/appdata.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/appdata.json"
+  },
+  {
+    "name": "art.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/art.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/art.json"
+  },
+  {
+    "name": "community.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/community.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/community.json"
+  },
+  {
+    "name": "gaming.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/gaming.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/gaming.json"
+  },
+  {
+    "name": "library.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/library.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/library.json"
+  },
+  {
+    "name": "manifest.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/manifest.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/manifest.json"
+  },
+  {
+    "name": "music.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/music.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/music.json"
+  },
+  {
+    "name": "tools.json",
+    "ext": "json",
+    "path": "Website/apps/hub/data/tools.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/data/tools.json"
+  }
+]

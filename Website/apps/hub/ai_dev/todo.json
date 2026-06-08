@@ -1,0 +1,17 @@
+{
+  "tasks": [],
+  "completedTasks": [
+    {
+      "instruction": "Integrate db.ts module and setup DataManager service.",
+      "status": "completed"
+    },
+    {
+      "instruction": "Update Git path references in components and services to use manifest.data.git instead of manifest.git.",
+      "status": "completed"
+    },
+    {
+      "instruction": "Create a single ToolManager.tsx component that imports appdata.json. It should map through the tools and, when one is selected, render it inside a single reusable StandaloneLoader component. All communication between the main app and the tool must happen via the ToolBridge.ts service using postMessage",
+      "status": "completed"
+    }
+  ]
+}

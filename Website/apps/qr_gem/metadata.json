@@ -1,0 +1,5 @@
+{
+  "name": "QR_Gem: AI QR Code Generator",
+  "description": "An advanced QR code generator that allows users to customize the design of their QR codes, including shapes, colors, gradients, and logos. Instantly preview your changes and download the final QR code in various formats.",
+  "requestFramePermissions": []
+}

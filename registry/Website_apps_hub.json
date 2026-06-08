@@ -1,0 +1,62 @@
+[
+  {
+    "name": "metadata.json",
+    "ext": "json",
+    "path": "Website/apps/hub/metadata.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/metadata.json"
+  },
+  {
+    "name": "App.tsx",
+    "ext": "tsx",
+    "path": "Website/apps/hub/App.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/App.tsx"
+  },
+  {
+    "name": "appdata.json",
+    "ext": "json",
+    "path": "Website/apps/hub/appdata.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/appdata.json"
+  },
+  {
+    "name": "index.html",
+    "ext": "html",
+    "path": "Website/apps/hub/index.html",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/index.html"
+  },
+  {
+    "name": "index.tsx",
+    "ext": "tsx",
+    "path": "Website/apps/hub/index.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/index.tsx"
+  },
+  {
+    "name": "package.json",
+    "ext": "json",
+    "path": "Website/apps/hub/package.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/package.json"
+  },
+  {
+    "name": "types.ts",
+    "ext": "ts",
+    "path": "Website/apps/hub/types.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/types.ts"
+  },
+  {
+    "name": "tsconfig.json",
+    "ext": "json",
+    "path": "Website/apps/hub/tsconfig.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/tsconfig.json"
+  },
+  {
+    "name": "vite.config.ts",
+    "ext": "ts",
+    "path": "Website/apps/hub/vite.config.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/vite.config.ts"
+  },
+  {
+    "name": "README.md",
+    "ext": "md",
+    "path": "Website/apps/hub/README.md",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/hub/README.md"
+  }
+]
