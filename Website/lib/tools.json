@@ -20,7 +20,7 @@
 				"developers": [{"name": "Juelz-101", "role": "Full-stack Developer"}],
 				"summary": "Internal QR Code generator for professional creative assets and high-speed links.",
 				"tags": ["utility", "web", "qr"],
-				"flags": ["debug", "featured"]
+				"flags": ["featured"]
 			},
 			{
 				"name": "Chroma Palette",
