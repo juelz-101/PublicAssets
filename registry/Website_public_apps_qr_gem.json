@@ -4,5 +4,65 @@
     "ext": "html",
     "path": "Website/public/apps/qr_gem/index.html",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/index.html"
+  },
+  {
+    "name": "config.json",
+    "ext": "json",
+    "path": "Website/public/apps/qr_gem/config.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/config.json"
+  },
+  {
+    "name": "index.tsx",
+    "ext": "tsx",
+    "path": "Website/public/apps/qr_gem/index.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/index.tsx"
+  },
+  {
+    "name": "metadata.json",
+    "ext": "json",
+    "path": "Website/public/apps/qr_gem/metadata.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/metadata.json"
+  },
+  {
+    "name": "package.json",
+    "ext": "json",
+    "path": "Website/public/apps/qr_gem/package.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/package.json"
+  },
+  {
+    "name": "presets.ts",
+    "ext": "ts",
+    "path": "Website/public/apps/qr_gem/presets.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/presets.ts"
+  },
+  {
+    "name": "README.md",
+    "ext": "md",
+    "path": "Website/public/apps/qr_gem/README.md",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/README.md"
+  },
+  {
+    "name": "tsconfig.json",
+    "ext": "json",
+    "path": "Website/public/apps/qr_gem/tsconfig.json",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/tsconfig.json"
+  },
+  {
+    "name": "types.ts",
+    "ext": "ts",
+    "path": "Website/public/apps/qr_gem/types.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/types.ts"
+  },
+  {
+    "name": "vite.config.ts",
+    "ext": "ts",
+    "path": "Website/public/apps/qr_gem/vite.config.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/vite.config.ts"
+  },
+  {
+    "name": "App.tsx",
+    "ext": "tsx",
+    "path": "Website/public/apps/qr_gem/App.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/App.tsx"
   }
 ]

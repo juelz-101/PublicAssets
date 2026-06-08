@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       plugins: [react()],
-	  base: '/PublicAssets/hub/', // Needs to exactly match the GitHub Pages URL path
+	  base: '/PublicAssets/Website/Public/apps/qr_gem/',
       define: {
         'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
         'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)

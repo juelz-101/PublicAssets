@@ -1,0 +1,26 @@
+[
+  {
+    "name": "QrSettings.tsx",
+    "ext": "tsx",
+    "path": "Website/public/apps/qr_gem/components/QrSettings.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/components/QrSettings.tsx"
+  },
+  {
+    "name": "svg-presets.ts",
+    "ext": "ts",
+    "path": "Website/public/apps/qr_gem/components/svg-presets.ts",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/components/svg-presets.ts"
+  },
+  {
+    "name": "Debug.tsx",
+    "ext": "tsx",
+    "path": "Website/public/apps/qr_gem/components/Debug.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/components/Debug.tsx"
+  },
+  {
+    "name": "SavePresetModal.tsx",
+    "ext": "tsx",
+    "path": "Website/public/apps/qr_gem/components/SavePresetModal.tsx",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/components/SavePresetModal.tsx"
+  }
+]

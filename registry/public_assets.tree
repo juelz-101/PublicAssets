@@ -813,156 +813,128 @@ ZIKYinc_PublicData/
 │   ├── AI_Setup.txt
 │   ├── Website IMG (P.Ass).lnk
 │   ├── apps/
-│   │   ├── hub/
-│   │   │   ├── .gitignore
-│   │   │   ├── App.tsx
-│   │   │   ├── README.md
-│   │   │   ├── ai_dev/
-│   │   │   │   ├── log/
-│   │   │   │   │   ├── layout/
-│   │   │   │   │   │   └── layout.json
-│   │   │   │   │   └── update_log/
-│   │   │   │   │       └── log.json
-│   │   │   │   └── todo.json
-│   │   │   ├── appdata.json
-│   │   │   ├── apps/
-│   │   │   │   └── shared/
-│   │   │   │       └── tool-client.ts
-│   │   │   ├── components/
-│   │   │   │   ├── CategoryDashboard.tsx
-│   │   │   │   ├── DebugMenu.tsx
-│   │   │   │   ├── GitHubImage.tsx
-│   │   │   │   ├── Header.tsx
-│   │   │   │   ├── ImageGallery.tsx
-│   │   │   │   ├── MarkdownRenderer.tsx
-│   │   │   │   ├── SearchAndFilter.tsx
-│   │   │   │   ├── SectionPanel.tsx
-│   │   │   │   ├── SideNav.tsx
-│   │   │   │   ├── ViewSwitcher.tsx
-│   │   │   │   ├── about/
-│   │   │   │   │   ├── ContactUsTab.tsx
-│   │   │   │   │   ├── DynamicForm.tsx
-│   │   │   │   │   ├── JoinOurCrewTab.tsx
-│   │   │   │   │   ├── MeetTheTeamTab.tsx
-│   │   │   │   │   ├── SubmitWorkTab.tsx
-│   │   │   │   │   └── WhoWeAreTab.tsx
-│   │   │   │   ├── art/
-│   │   │   │   │   └── ArtCard.tsx
-│   │   │   │   ├── community/
-│   │   │   │   │   └── CommunityCard.tsx
-│   │   │   │   ├── creator/
-│   │   │   │   │   ├── AlbumForm.tsx
-│   │   │   │   │   ├── ArtistForm.tsx
-│   │   │   │   │   ├── DataTypeSelector.tsx
-│   │   │   │   │   ├── JsonPreview.tsx
-│   │   │   │   │   ├── SongForm.tsx
-│   │   │   │   │   └── form/
-│   │   │   │   │       ├── FormComponents.tsx
-│   │   │   │   │       ├── JsonTextArea.tsx
-│   │   │   │   │       ├── ObjectArrayInput.tsx
-│   │   │   │   │       └── StringArrayInput.tsx
-│   │   │   │   ├── debug/
-│   │   │   │   │   ├── CreatorTab.tsx
-│   │   │   │   │   ├── DataTab.tsx
-│   │   │   │   │   ├── FloatingOverridesCard.tsx
-│   │   │   │   │   ├── OverridesTab.tsx
-│   │   │   │   │   └── SafeModeTab.tsx
-│   │   │   │   ├── gaming/
-│   │   │   │   │   └── GamingCard.tsx
-│   │   │   │   ├── library/
-│   │   │   │   │   ├── AislesTab.tsx
-│   │   │   │   │   ├── DictionaryTab.tsx
-│   │   │   │   │   └── MarkdownViewer.tsx
-│   │   │   │   ├── music/
-│   │   │   │   │   ├── ConveyorView.tsx
-│   │   │   │   │   ├── DynamicLayout.tsx
-│   │   │   │   │   ├── IntroductionTab.tsx
-│   │   │   │   │   ├── ItemDetailView.tsx
-│   │   │   │   │   ├── ListView.tsx
-│   │   │   │   │   └── MusicCard.tsx
-│   │   │   │   └── tools/
-│   │   │   │       ├── StandaloneLoader.tsx
-│   │   │   │       ├── ToolCard.tsx
-│   │   │   │       ├── ToolDetailView.tsx
-│   │   │   │       └── ToolManager.tsx
-│   │   │   ├── data/
-│   │   │   │   ├── Library.mix
-│   │   │   │   ├── about.json
-│   │   │   │   ├── appdata.json
-│   │   │   │   ├── art.json
-│   │   │   │   ├── community.json
-│   │   │   │   ├── gaming.json
-│   │   │   │   ├── home.json
-│   │   │   │   ├── lib/
-│   │   │   │   │   ├── html/
-│   │   │   │   │   │   └── tools/
-│   │   │   │   │   │       ├── chroma-palette.json
-│   │   │   │   │   │       └── waveform-converter.json
-│   │   │   │   │   └── tools/
-│   │   │   │   │       └── qrg.json
-│   │   │   │   ├── library.json
-│   │   │   │   ├── manifest.json
-│   │   │   │   ├── music.json
-│   │   │   │   └── tools.json
-│   │   │   ├── index.html
-│   │   │   ├── index.tsx
-│   │   │   ├── metadata.json
-│   │   │   ├── migrated_prompt_history/
-│   │   │   │   ├── prompt_2026-02-01T05_11_33.993Z.json
-│   │   │   │   ├── prompt_2026-02-01T07_10_26.490Z.json
-│   │   │   │   └── prompt_2026-02-10T00_35_23.831Z.json
-│   │   │   ├── modules/
-│   │   │   │   ├── data/
-│   │   │   │   │   └── db.ts
-│   │   │   │   └── io/
-│   │   │   │       └── import-utils.ts
-│   │   │   ├── package.json
-│   │   │   ├── pages/
-│   │   │   │   ├── AboutPage.tsx
-│   │   │   │   ├── ArtPage.tsx
-│   │   │   │   ├── CommunityPage.tsx
-│   │   │   │   ├── CreatorPage.tsx
-│   │   │   │   ├── GamingPage.tsx
-│   │   │   │   ├── HomePage.tsx
-│   │   │   │   ├── LibraryPage.tsx
-│   │   │   │   ├── MusicPage.tsx
-│   │   │   │   └── ToolsPage.tsx
-│   │   │   ├── public/
-│   │   │   │   └── apps/
-│   │   │   │       └── qr_gem/
-│   │   │   │           └── index.html
-│   │   │   ├── services/
-│   │   │   │   ├── ToolBridge.ts
-│   │   │   │   ├── contentService.ts
-│   │   │   │   └── dbService.ts
-│   │   │   ├── tsconfig.json
-│   │   │   ├── types.ts
-│   │   │   └── vite.config.ts
-│   │   └── qr_gem/
-│   │       ├── .env.local
+│   │   └── hub/
 │   │       ├── .gitignore
 │   │       ├── App.tsx
 │   │       ├── README.md
+│   │       ├── ai_dev/
+│   │       │   ├── log/
+│   │       │   │   ├── layout/
+│   │       │   │   │   └── layout.json
+│   │       │   │   └── update_log/
+│   │       │   │       └── log.json
+│   │       │   └── todo.json
+│   │       ├── appdata.json
+│   │       ├── apps/
+│   │       │   └── shared/
+│   │       │       └── tool-client.ts
 │   │       ├── components/
-│   │       │   ├── Debug.tsx
-│   │       │   ├── QrSettings.tsx
-│   │       │   ├── SavePresetModal.tsx
-│   │       │   ├── svg-presets.ts
-│   │       │   └── ui/
-│   │       │       └── icons.tsx
-│   │       ├── config.json
+│   │       │   ├── CategoryDashboard.tsx
+│   │       │   ├── DebugMenu.tsx
+│   │       │   ├── GitHubImage.tsx
+│   │       │   ├── Header.tsx
+│   │       │   ├── ImageGallery.tsx
+│   │       │   ├── MarkdownRenderer.tsx
+│   │       │   ├── SearchAndFilter.tsx
+│   │       │   ├── SectionPanel.tsx
+│   │       │   ├── SideNav.tsx
+│   │       │   ├── ViewSwitcher.tsx
+│   │       │   ├── about/
+│   │       │   │   ├── ContactUsTab.tsx
+│   │       │   │   ├── DynamicForm.tsx
+│   │       │   │   ├── JoinOurCrewTab.tsx
+│   │       │   │   ├── MeetTheTeamTab.tsx
+│   │       │   │   ├── SubmitWorkTab.tsx
+│   │       │   │   └── WhoWeAreTab.tsx
+│   │       │   ├── art/
+│   │       │   │   └── ArtCard.tsx
+│   │       │   ├── community/
+│   │       │   │   └── CommunityCard.tsx
+│   │       │   ├── creator/
+│   │       │   │   ├── AlbumForm.tsx
+│   │       │   │   ├── ArtistForm.tsx
+│   │       │   │   ├── DataTypeSelector.tsx
+│   │       │   │   ├── JsonPreview.tsx
+│   │       │   │   ├── SongForm.tsx
+│   │       │   │   └── form/
+│   │       │   │       ├── FormComponents.tsx
+│   │       │   │       ├── JsonTextArea.tsx
+│   │       │   │       ├── ObjectArrayInput.tsx
+│   │       │   │       └── StringArrayInput.tsx
+│   │       │   ├── debug/
+│   │       │   │   ├── CreatorTab.tsx
+│   │       │   │   ├── DataTab.tsx
+│   │       │   │   ├── FloatingOverridesCard.tsx
+│   │       │   │   ├── OverridesTab.tsx
+│   │       │   │   └── SafeModeTab.tsx
+│   │       │   ├── gaming/
+│   │       │   │   └── GamingCard.tsx
+│   │       │   ├── library/
+│   │       │   │   ├── AislesTab.tsx
+│   │       │   │   ├── DictionaryTab.tsx
+│   │       │   │   └── MarkdownViewer.tsx
+│   │       │   ├── music/
+│   │       │   │   ├── ConveyorView.tsx
+│   │       │   │   ├── DynamicLayout.tsx
+│   │       │   │   ├── IntroductionTab.tsx
+│   │       │   │   ├── ItemDetailView.tsx
+│   │       │   │   ├── ListView.tsx
+│   │       │   │   └── MusicCard.tsx
+│   │       │   └── tools/
+│   │       │       ├── StandaloneLoader.tsx
+│   │       │       ├── ToolCard.tsx
+│   │       │       ├── ToolDetailView.tsx
+│   │       │       └── ToolManager.tsx
+│   │       ├── data/
+│   │       │   ├── Library.mix
+│   │       │   ├── about.json
+│   │       │   ├── appdata.json
+│   │       │   ├── art.json
+│   │       │   ├── community.json
+│   │       │   ├── gaming.json
+│   │       │   ├── home.json
+│   │       │   ├── lib/
+│   │       │   │   ├── html/
+│   │       │   │   │   └── tools/
+│   │       │   │   │       ├── chroma-palette.json
+│   │       │   │   │       └── waveform-converter.json
+│   │       │   │   └── tools/
+│   │       │   │       └── qrg.json
+│   │       │   ├── library.json
+│   │       │   ├── manifest.json
+│   │       │   ├── music.json
+│   │       │   └── tools.json
 │   │       ├── index.html
 │   │       ├── index.tsx
 │   │       ├── metadata.json
+│   │       ├── migrated_prompt_history/
+│   │       │   ├── prompt_2026-02-01T05_11_33.993Z.json
+│   │       │   ├── prompt_2026-02-01T07_10_26.490Z.json
+│   │       │   └── prompt_2026-02-10T00_35_23.831Z.json
 │   │       ├── modules/
-│   │       │   ├── db/
-│   │       │   │   └── idb-utils.ts
-│   │       │   ├── io/
-│   │       │   │   └── import-utils.ts
-│   │       │   └── theme/
-│   │       │       └── theme.ts
+│   │       │   ├── data/
+│   │       │   │   └── db.ts
+│   │       │   └── io/
+│   │       │       └── import-utils.ts
 │   │       ├── package.json
-│   │       ├── presets.ts
+│   │       ├── pages/
+│   │       │   ├── AboutPage.tsx
+│   │       │   ├── ArtPage.tsx
+│   │       │   ├── CommunityPage.tsx
+│   │       │   ├── CreatorPage.tsx
+│   │       │   ├── GamingPage.tsx
+│   │       │   ├── HomePage.tsx
+│   │       │   ├── LibraryPage.tsx
+│   │       │   ├── MusicPage.tsx
+│   │       │   └── ToolsPage.tsx
+│   │       ├── public/
+│   │       │   └── apps/
+│   │       │       └── qr_gem/
+│   │       │           └── index.html
+│   │       ├── services/
+│   │       │   ├── ToolBridge.ts
+│   │       │   ├── contentService.ts
+│   │       │   └── dbService.ts
 │   │       ├── tsconfig.json
 │   │       ├── types.ts
 │   │       └── vite.config.ts
@@ -1174,9 +1146,33 @@ ZIKYinc_PublicData/
 │   └── public/
 │       └── apps/
 │           └── qr_gem/
-│               ├── assets/
-│               │   └── index-C0Ja5kcY.js
-│               └── index.html
+│               ├── .env.local
+│               ├── .gitignore
+│               ├── App.tsx
+│               ├── README.md
+│               ├── components/
+│               │   ├── Debug.tsx
+│               │   ├── QrSettings.tsx
+│               │   ├── SavePresetModal.tsx
+│               │   ├── svg-presets.ts
+│               │   └── ui/
+│               │       └── icons.tsx
+│               ├── config.json
+│               ├── index.html
+│               ├── index.tsx
+│               ├── metadata.json
+│               ├── modules/
+│               │   ├── db/
+│               │   │   └── idb-utils.ts
+│               │   ├── io/
+│               │   │   └── import-utils.ts
+│               │   └── theme/
+│               │       └── theme.ts
+│               ├── package.json
+│               ├── presets.ts
+│               ├── tsconfig.json
+│               ├── types.ts
+│               └── vite.config.ts
 ├── auto_update.py
 ├── public_assets.tree
 └── run_auto_update.bat
