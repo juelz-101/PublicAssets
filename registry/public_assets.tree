@@ -812,6 +812,11 @@ ZIKYinc_PublicData/
 ├── Website/
 │   ├── AI_Setup.txt
 │   ├── Website IMG (P.Ass).lnk
+│   ├── apps/
+│   │   └── qr_gem/
+│   │       ├── assets/
+│   │       │   └── index-C0Ja5kcY.js
+│   │       └── index.html
 │   ├── img/
 │   │   ├── bg/
 │   │   │   ├── art/
@@ -937,92 +942,86 @@ ZIKYinc_PublicData/
 │   │   └── placeholders/
 │   │       ├── event.jpg
 │   │       └── placeholder.jpg
-│   ├── lib/
-│   │   ├── about.json
-│   │   ├── art.json
-│   │   ├── community/
-│   │   │   ├── events/
-│   │   │   │   ├── test_event.json
-│   │   │   │   └── test_event2.json
-│   │   │   └── people/
-│   │   │       ├── lisa/
-│   │   │       │   └── lol.json
-│   │   │       └── lisa.json
-│   │   ├── community.json
-│   │   ├── cur_projects.json
-│   │   ├── forms/
-│   │   │   ├── join-us.json
-│   │   │   └── submit.json
-│   │   ├── gallery/
-│   │   │   └── test.html
-│   │   ├── games/
-│   │   │   └── test.html
-│   │   ├── gaming.json
-│   │   ├── home.json
-│   │   ├── library.json
-│   │   ├── misc.json
-│   │   ├── music/
-│   │   │   ├── albums/
-│   │   │   │   ├── brut.json
-│   │   │   │   ├── btwn.html
-│   │   │   │   ├── final.html
-│   │   │   │   ├── ftbt.html
-│   │   │   │   ├── hith.html
-│   │   │   │   ├── lfl04.html
-│   │   │   │   ├── lfl24.html
-│   │   │   │   ├── ofrv.html
-│   │   │   │   ├── totb.html
-│   │   │   │   └── www.html
-│   │   │   ├── artists/
-│   │   │   │   ├── alic.html
-│   │   │   │   ├── cams.html
-│   │   │   │   ├── egbx.html
-│   │   │   │   ├── emil.html
-│   │   │   │   ├── emma.json
-│   │   │   │   ├── esta.html
-│   │   │   │   ├── face.html
-│   │   │   │   ├── gekk.html
-│   │   │   │   ├── hotc.html
-│   │   │   │   ├── imp.json
-│   │   │   │   ├── jayc.html
-│   │   │   │   ├── jevh.html
-│   │   │   │   ├── juelz.html
-│   │   │   │   ├── juelz.json
-│   │   │   │   ├── kenf.html
-│   │   │   │   ├── kevh.html
-│   │   │   │   ├── kris.html
-│   │   │   │   ├── kurv.html
-│   │   │   │   ├── kylm.html
-│   │   │   │   ├── mark.html
-│   │   │   │   ├── mayc.html
-│   │   │   │   ├── meld.html
-│   │   │   │   ├── mick.html
-│   │   │   │   ├── miss.html
-│   │   │   │   ├── plam.html
-│   │   │   │   ├── synt.html
-│   │   │   │   ├── teec.html
-│   │   │   │   ├── tina.html
-│   │   │   │   └── vect.html
-│   │   │   └── songs/
-│   │   │       ├── disl.json
-│   │   │       ├── placeholder.html
-│   │   │       ├── ssos.json
-│   │   │       ├── sumn.html
-│   │   │       └── takeov.html
-│   │   ├── music.json
-│   │   ├── old/
-│   │   │   └── music.json
-│   │   ├── tools/
-│   │   │   └── qrg.json
-│   │   ├── tools.json
-│   │   ├── webdata.json
-│   │   └── website_restructuring.txt
-│   └── public/
-│       └── apps/
-│           └── qr_gem/
-│               ├── assets/
-│               │   └── index-C0Ja5kcY.js
-│               └── index.html
+│   └── lib/
+│       ├── about.json
+│       ├── art.json
+│       ├── community/
+│       │   ├── events/
+│       │   │   ├── test_event.json
+│       │   │   └── test_event2.json
+│       │   └── people/
+│       │       ├── lisa/
+│       │       │   └── lol.json
+│       │       └── lisa.json
+│       ├── community.json
+│       ├── cur_projects.json
+│       ├── forms/
+│       │   ├── join-us.json
+│       │   └── submit.json
+│       ├── gallery/
+│       │   └── test.html
+│       ├── games/
+│       │   └── test.html
+│       ├── gaming.json
+│       ├── home.json
+│       ├── library.json
+│       ├── misc.json
+│       ├── music/
+│       │   ├── albums/
+│       │   │   ├── brut.json
+│       │   │   ├── btwn.html
+│       │   │   ├── final.html
+│       │   │   ├── ftbt.html
+│       │   │   ├── hith.html
+│       │   │   ├── lfl04.html
+│       │   │   ├── lfl24.html
+│       │   │   ├── ofrv.html
+│       │   │   ├── totb.html
+│       │   │   └── www.html
+│       │   ├── artists/
+│       │   │   ├── alic.html
+│       │   │   ├── cams.html
+│       │   │   ├── egbx.html
+│       │   │   ├── emil.html
+│       │   │   ├── emma.json
+│       │   │   ├── esta.html
+│       │   │   ├── face.html
+│       │   │   ├── gekk.html
+│       │   │   ├── hotc.html
+│       │   │   ├── imp.json
+│       │   │   ├── jayc.html
+│       │   │   ├── jevh.html
+│       │   │   ├── juelz.html
+│       │   │   ├── juelz.json
+│       │   │   ├── kenf.html
+│       │   │   ├── kevh.html
+│       │   │   ├── kris.html
+│       │   │   ├── kurv.html
+│       │   │   ├── kylm.html
+│       │   │   ├── mark.html
+│       │   │   ├── mayc.html
+│       │   │   ├── meld.html
+│       │   │   ├── mick.html
+│       │   │   ├── miss.html
+│       │   │   ├── plam.html
+│       │   │   ├── synt.html
+│       │   │   ├── teec.html
+│       │   │   ├── tina.html
+│       │   │   └── vect.html
+│       │   └── songs/
+│       │       ├── disl.json
+│       │       ├── placeholder.html
+│       │       ├── ssos.json
+│       │       ├── sumn.html
+│       │       └── takeov.html
+│       ├── music.json
+│       ├── old/
+│       │   └── music.json
+│       ├── tools/
+│       │   └── qrg.json
+│       ├── tools.json
+│       ├── webdata.json
+│       └── website_restructuring.txt
 ├── auto_update.py
 ├── public_assets.tree
 └── run_auto_update.bat

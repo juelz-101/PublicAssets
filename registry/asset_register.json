@@ -2915,22 +2915,21 @@
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/img/placeholders/event.jpg"
     }
   ],
-  "Website/public": [],
-  "Website/public/apps": [],
-  "Website/public/apps/qr_gem": [
+  "Website/apps": [],
+  "Website/apps/qr_gem": [
     {
       "name": "index.html",
       "ext": "html",
-      "path": "Website/public/apps/qr_gem/index.html",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/index.html"
+      "path": "Website/apps/qr_gem/index.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/index.html"
     }
   ],
-  "Website/public/apps/qr_gem/assets": [
+  "Website/apps/qr_gem/assets": [
     {
       "name": "index-C0Ja5kcY.js",
       "ext": "js",
-      "path": "Website/public/apps/qr_gem/assets/index-C0Ja5kcY.js",
-      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/assets/index-C0Ja5kcY.js"
+      "path": "Website/apps/qr_gem/assets/index-C0Ja5kcY.js",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/apps/qr_gem/assets/index-C0Ja5kcY.js"
     }
   ],
   "Templates": [],
