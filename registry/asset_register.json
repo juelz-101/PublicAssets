@@ -1822,6 +1822,12 @@
       "ext": "txt",
       "path": "Website/AI_Setup.txt",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/AI_Setup.txt"
+    },
+    {
+      "name": "index.html",
+      "ext": "html",
+      "path": "Website/index.html",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/index.html"
     }
   ],
   "Website/lib": [
@@ -2948,6 +2954,14 @@
       "ext": "js",
       "path": "Website/public/apps/qr_gem/assets/index-C0Ja5kcY.js",
       "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/public/apps/qr_gem/assets/index-C0Ja5kcY.js"
+    }
+  ],
+  "Website/assets": [
+    {
+      "name": "index-B5tlvprf.js",
+      "ext": "js",
+      "path": "Website/assets/index-B5tlvprf.js",
+      "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/Website/assets/index-B5tlvprf.js"
     }
   ],
   "Templates": [],
