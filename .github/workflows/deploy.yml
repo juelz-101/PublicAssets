@@ -1,0 +1,80 @@
+name: Deploy AI Studio Apps to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch: # Allows you to manually click "Run workflow" in GitHub Actions
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 1. Create a clean master deployment folder
+      - name: Prepare Site Directory
+        run: |
+          mkdir _site
+          
+          # Copy your core website assets (images, libs, maybe an index.html)
+          # We purposefully exclude the 'apps' folder so we don't accidentally host raw code files!
+          rsync -av --exclude='apps' Website/ _site/
+          
+          # Pre-create our apps directory structure
+          mkdir -p _site/apps
+
+      # 2. Build the Hub App
+      - name: Build Hub App
+        working-directory: ./Website/apps/hub
+        run: |
+          npm install
+          npm run build
+          # Move Vite's compiled 'dist' output directly into our live hosting folder
+          cp -r dist ../../../_site/apps/hub
+
+      # 3. Build the QR Gem App
+      - name: Build QR Gem App
+        working-directory: ./Website/apps/qr_gem
+        run: |
+          # If it's a Vite project (has package.json), we build it properly.
+          if [ -f "package.json" ]; then
+            npm install
+            npm run build
+            cp -r dist ../../../_site/apps/qr_gem
+          else
+            # If it's just raw HTML/JS/CSS without NPM, we copy it over as-is
+            cd ..
+            cp -r qr_gem ../../_site/apps/qr_gem
+          fi
+
+      # 4. Upload and Deploy to Pages!
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site' # We deploy our perfectly crafted staging folder, not the whole raw repo!
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
