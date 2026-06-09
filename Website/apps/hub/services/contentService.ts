@@ -127,7 +127,7 @@ const fetchAndMergeDictionaries = async (
 
 
 export const fetchManifest = async (): Promise<Manifest> => {
-  const localManifestResponse = await fetch('/data/manifest.json');
+  const localManifestResponse = await fetch(`${import.meta.env.BASE_URL}data/manifest.json`);
   if (!localManifestResponse.ok) {
     throw new Error(`Failed to fetch local manifest.json: ${localManifestResponse.statusText}`);
   }
