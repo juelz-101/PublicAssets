@@ -2,7 +2,7 @@ name: Deploy Multiple Vite Apps to GitHub Pages
 
 on:
   push:
-    branches: ["main"]   # or "master" depending on your default branch name
+    branches: ["main"]   # Change to "master" if your default branch is named master
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -28,12 +28,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24 # Node 24 keeps your pipeline warning-free and future-proof
 
       # 1. Build the Main Hub App
       - name: Install dependencies (Hub)
         working-directory: Website/apps/hub
-        run: npm ci
+        run: npm install # Standard npm install dynamically resolves packages even without a lockfile
 
       - name: Build Hub App
         working-directory: Website/apps/hub
@@ -42,7 +42,7 @@ jobs:
       # 2. Build the QR Gem App
       - name: Install dependencies (QR Gem)
         working-directory: Website/public/apps/qr_gem
-        run: npm ci
+        run: npm install # Standard npm install dynamically resolves packages even without a lockfile
 
       - name: Build QR Gem App
         working-directory: Website/public/apps/qr_gem
@@ -54,7 +54,7 @@ jobs:
           # Create a temporary staging directory
           mkdir -p combined_dist
           
-          # Option A: Move Hub into a sub-folder if you want it accessible at /PublicAssets/hub/
+          # Move Hub into the expected sub-folder /PublicAssets/hub/
           mkdir -p combined_dist/hub
           cp -r Website/apps/hub/dist/* combined_dist/hub/
           
@@ -62,7 +62,7 @@ jobs:
           mkdir -p combined_dist/public/apps/qr_gem
           cp -r Website/public/apps/qr_gem/dist/* combined_dist/public/apps/qr_gem/
           
-          # Optional: Add a root redirect index.html
+          # Copy the root redirect index.html into the publishing root directory
           cp index.html combined_dist/
 
       - name: Setup Pages
