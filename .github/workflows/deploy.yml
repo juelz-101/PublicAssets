@@ -2,15 +2,13 @@ name: Deploy Multiple Vite Apps to GitHub Pages
 
 on:
   push:
-    branches: ["main"]   # Change to "master" if your default branch is named master
+    branches: ["main"]
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -28,12 +26,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24 # Node 24 keeps your pipeline warning-free and future-proof
+          node-version: 24
 
       # 1. Build the Main Hub App
       - name: Install dependencies (Hub)
         working-directory: Website/apps/hub
-        run: npm install # Standard npm install dynamically resolves packages even without a lockfile
+        run: npm install
 
       - name: Build Hub App
         working-directory: Website/apps/hub
@@ -42,7 +40,7 @@ jobs:
       # 2. Build the QR Gem App
       - name: Install dependencies (QR Gem)
         working-directory: Website/public/apps/qr_gem
-        run: npm install # Standard npm install dynamically resolves packages even without a lockfile
+        run: npm install
 
       - name: Build QR Gem App
         working-directory: Website/public/apps/qr_gem
@@ -57,6 +55,16 @@ jobs:
           # Move Hub into the expected sub-folder /PublicAssets/hub/
           mkdir -p combined_dist/hub
           cp -r Website/apps/hub/dist/* combined_dist/hub/
+          
+          # ======================================================================
+          # AUTOMATION HACK: Inject the data folders into the built deployment paths
+          # This saves us from having to modify the AI Studio source code!
+          # ======================================================================
+          cp -r Website/apps/hub/data combined_dist/hub/
+          
+          # (If QR Gem or future apps also have a data folder in their root, just copy it here too!)
+          # cp -r Website/public/apps/qr_gem/data combined_dist/public/apps/qr_gem/
+          # ======================================================================
           
           # Move QR Gem into its expected sub-folder /PublicAssets/public/apps/qr_gem/
           mkdir -p combined_dist/public/apps/qr_gem
