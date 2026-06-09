@@ -1174,5 +1174,6 @@ ZIKYinc_PublicData/
 │               ├── types.ts
 │               └── vite.config.ts
 ├── auto_update.py
+├── index.html
 ├── public_assets.tree
 └── run_auto_update.bat

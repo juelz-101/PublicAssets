@@ -22,5 +22,11 @@
     "ext": "bat",
     "path": "run_auto_update.bat",
     "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/run_auto_update.bat"
+  },
+  {
+    "name": "index.html",
+    "ext": "html",
+    "path": "index.html",
+    "url": "https://raw.githubusercontent.com/juelz-101/PublicAssets/main/index.html"
   }
 ]

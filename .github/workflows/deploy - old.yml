@@ -1,0 +1,58 @@
+name: Deploy Hub and Public Apps to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install Hub Dependencies
+        working-directory: ./PublicAssets/Website/apps/hub
+        run: npm install
+
+      - name: Build Hub
+        working-directory: ./PublicAssets/Website/apps/hub
+        run: npm run build
+
+      - name: Combine Files for Deployment
+        run: |
+          # 1. Create a master deployment directory
+          mkdir -p dist_deploy
+          
+          # 2. Copy the built Hub directly into a 'hub' subfolder
+          cp -R ./PublicAssets/Website/apps/hub/dist ./dist_deploy/hub
+          
+          # 3. Copy your entire public apps structure (including qr_gem) into the deploy root
+          # This ensures 'public/apps/qr_gem' becomes available at 'apps/qr_gem'
+          cp -R ./PublicAssets/public/* ./dist_deploy/
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist_deploy
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
